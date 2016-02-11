@@ -1017,7 +1017,9 @@ footer {
 .foooter_data span {
 	font-family: 'robotobold';
 }
-
+.foooter_data .fphone {
+    color:#fff;
+}
 .addr {
 	line-height: 1.5;
 	margin: 44px 0 0 75px;
@@ -1055,6 +1057,14 @@ footer {
 	line-height: 1.4em;
 	margin: 42px 0 0 0;
 	text-align: center;
+        
+}
+ .copy .link {
+            text-decoration: underline;
+            color:#fff;
+    }
+.copy .link:hover {
+    text-decoration: none;
 }
 .copy br {
     display:none;
@@ -3234,6 +3244,7 @@ footer {
 	.block_3 {padding-bottom: 70px;}
 	.block_4 {padding-top: 45px;}
 	.copy {margin-top: 0;}
+       
 	.ul_4 {
 		margin-left: auto;
 		margin-right: auto;
@@ -3768,7 +3779,7 @@ footer {
 		padding-bottom: 17px;
 		text-align: center;
 	}
-	.flexnav .advbox .tel {font-size: 65px; }
+	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 65px; }
 	.flexnav .advbox  .items a {
 		font-family: RobotoRegular;
 		border: 1px solid #c0a35f;
