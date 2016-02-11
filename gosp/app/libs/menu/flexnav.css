@@ -1,0 +1,231 @@
+/* Flexnav Base Styles */
+    .flexnav {
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      transition: none;
+      -webkit-transform-style: preserve-3d;
+      overflow: hidden;
+      margin: 0 auto;
+      max-height: 0;
+      float:right;
+      margin-right:125px;
+      position:relative;
+      z-index:1;
+    }
+ 
+
+
+  .flexnav li {
+    font-size: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+  }
+
+  .flexnav li a {
+    color:#fff;
+    position: relative;
+    display: block;
+    padding: .96em 1.4em 1.65em 1.2em;
+    z-index: 2;
+    overflow: hidden;
+    text-decoration: none;
+  }
+    .flexnav li > ul li a {
+      padding: .28em 1.4em .28em 1.4em;
+    }
+
+  .flexnav li > ul {
+    width: 100%;
+  }
+    .flexnav li > ul {
+      background-color:#000000;
+      padding:0.6em 0px;
+      width:190px;
+    }
+
+    .flexnav li > ul li {
+      font-size: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+  
+
+  .flexnav li > ul li a {
+    display: block;
+    background: #000;
+    color:#fff;
+    font-size:16px;
+  }
+    .flexnav li > ul li a:hover {
+       color:#ffbf00;
+    }
+
+  .flexnav  ul li ul li a {
+    background: #bfbfbc; }
+
+  .flexnav ul li > ul li ul li a {
+    background: #cbcbc9; }
+
+  .flexnav .touch-button {
+    position: absolute;
+    z-index: 999;
+    top: 18px;
+    right:4px;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+  }
+
+    .flexnav .touch-button .navicon {
+      background:url(arrow_menu.png) no-repeat 50% 3px;
+    }
+    .flexnav .touch-button {
+      width:25px;
+      height:16px;
+      background:none;
+    }
+
+    .flexnav .touch-button:hover {
+      cursor: pointer; }
+    .flexnav .touch-button .navicon {
+     font-size: 12px;
+      color: transparent;
+
+    }
+
+.menu-button {
+	position: relative;
+	display: block;
+	height: 61px;
+	padding: 16px;
+	color: #222222;
+	cursor: pointer;
+	width: 72px;
+}
+
+  .menu-button.one-page {
+    position: fixed;
+    top: 0;
+    right: 5%;
+    padding-right: 45px;
+  }
+
+  .menu-button .touch-button {
+    padding:22px 20px;
+    position: absolute;
+    z-index: 999;
+    top: -23px;
+    right: 0;
+    width: 50px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+  }
+    .menu-button .touch-button .navicon {
+      font-size: 16px;
+      position: relative;
+      top: 1em;
+      color: #666;
+    }
+    
+    .menu-button .touch-button .navicon {
+      display:none;
+    }
+
+    .item-with-ul {
+      position:relative;
+    }
+
+
+@media only screen and (min-width: 807px) {
+    body.one-page {
+      padding-top: 70px; 
+    }
+
+    .flexnav {
+      z-index:2; 
+      overflow: visible;
+    }
+
+    .flexnav li {
+      position: relative;
+      list-style: none;
+      float: left;
+      display: block;
+      overflow: visible;
+
+    }
+    .flexnav li a {
+      color:#000;
+      border-bottom: none;
+    }
+    .flexnav li > ul {
+      position: absolute;
+      top: auto;
+      left: 0;
+      display:none;
+    }
+    .flexnav li:hover > ul {
+      display:block;
+    }
+      .flexnav li > ul li {
+        width: 100%;
+       z-index: 5;
+      }
+    .flexnav li > ul li > ul {
+      margin-left: 100%;
+      top: 0;
+    }
+    .flexnav li > ul li a {
+      border-bottom: none;
+    }
+
+    .menu-button {
+      display: none; 
+    }
+}
+
+@media only screen and (max-width: 806px) {
+ 
+    .flexnav.flexnav-show {
+       max-height: 8000px;
+       opacity: 1;
+       -webkit-transition: all .0s ease-in-out;
+       -moz-transition: all .0s ease-in-out;
+       -ms-transition: all .0s ease-in-out;
+       transition: all .0s ease-in-out;
+     }
+    .flexnav.flexnav-show {
+      text-align:center;
+      padding: .78em 1.4em .78em 1.4em;
+    }
+
+    .flexnav-show.flexnav li > ul.show_with {
+      display:block;
+    } 
+    .flexnav-show.flexnav li > ul {
+        position:relative;
+        left:-50px;
+        border-right:1px solid #fff;
+        padding: 0em 0px;
+        margin:5px auto;
+        display:none;
+    }
+   .flexnav-show.flexnav .touch-button {
+    width: 100px;
+    left:50%;
+    margin-left:-50px;
+    position:absolute;
+    top:0px;
+    height:25px;
+    
+    }
+    
+    
+}
+
+
+
