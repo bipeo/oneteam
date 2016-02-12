@@ -642,7 +642,7 @@ h4{font-size: 18px;}
 	content: "";
 	height: 100%;
 	position: absolute;
-	right: 0;
+	right: -1px;
 	width: 6px;
 }
 
@@ -941,8 +941,8 @@ h4{font-size: 18px;}
 }
 
 .call::-webkit-input-placeholder {color:#002e5c;}
-.call::-moz-placeholder          {color:#002e5c;}/* Firefox 19+ */
-.call:-moz-placeholder           {color:#002e5c;}/* Firefox 18- */
+.call::-moz-placeholder          {color: #fc0b0b; font-family: Arial;}
+.call:-moz-placeholder           {color: #fc0b0b; font-family: Arial;}
 .call:-ms-input-placeholder      {color:#002e5c;}
 
 .call_submit {
@@ -1603,7 +1603,77 @@ footer {
 .doctors.block_1 {
         background-image: url(img/bg_page_program.jpg);
 	color: #fff;
-} 
+}
+.gallery .place_descript.center_2 {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    padding-top: 152px;
+    text-align:center;
+}
+.gallery .place_descript.center_2 .h2:after {
+    display:none;
+}
+.gallery.block_1 {
+        background-image: url(img/bg_page_gallery.png);
+	color: #fff;
+}
+/*fancygal */
+.photo-fancy .fancybox-next span, .photo-fancy .fancybox-prev span {
+    visibility:visible;
+    width:8px;
+    height:14px;
+    background-image:url(img/fancy_arrows_1.png);
+    background-repeat: no-repeat;
+}
+.photo-fancy  .fancybox-nav span {
+    margin-top:-7px;
+}
+.photo-fancy  .fancybox-nav span:hover {
+    
+}
+.photo-fancy .fancybox-next span {
+    right:22px;
+    background-position:0px -14px;
+}
+.photo-fancy .fancybox-prev span {
+     left:22px;
+     background-position:0px -28px;
+}
+ .photo-fancy   .fancybox-nav.fancybox-next {
+     background-color:rgba(192,168,95,1);
+}
+ .photo-fancy  .fancybox-nav.fancybox-prev {
+    left:auto;
+    right:54px;
+    background-color:#fff;
+}
+.photo-fancy .fancybox-nav {
+     top:auto;
+     bottom:0px;
+     width:54px;
+     height:54px;
+}
+.photo-fancy .fancybox-close {
+    top:0px;
+    right:0px;
+    width:54px;
+    height:54px;
+    background-image: url(img/fancyclose_ic.png);
+    background-color:#fff;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+.photo-fancy .fancybox-close:hover {
+    background-color:rgba(192,168,95,1);
+    background-image: url(img/fancyclose_ic_hov.png);
+}
+
+
+
+
+
+/*fancygal */
 .page_programs .block_1 .center_2 {
 	padding-bottom: 85px;
 	padding-top: 172px;	
@@ -1876,7 +1946,7 @@ footer {
     color:#2d3e50;
 }
 
-.departs_block, .workers_block {
+.departs_block, .workers_block, .gall_block {
     border-bottom:1px solid #bbc5ce; 
     margin:0 0% 64px 0%;
     padding:0px 0px 50px 0px
@@ -2580,13 +2650,13 @@ footer {
 	margin: 58px 0 0 0;
 }
 
-.doctors_content .cardio_ul {
+.doctors_content .cardio_ul, .bg_top {
 	margin-left: 39px;
 	padding-bottom: 5px;
 	padding-right: 80px;
 }
 
-.doctors_content .cardio_ul > li {
+.doctors_content .cardio_ul > li, .bg_top > li {
 	background-position: left 3px;
 	font-size: 16px;
 	line-height: 1.6;
@@ -2604,6 +2674,19 @@ footer {
 
 .wrap_btn_1 {
 	display: block;
+}
+
+.pt {
+	padding-top: 60px!important;
+}
+
+.bg_top {
+	padding-top: 39px;
+}
+
+.bg_top > li {
+	line-height: 1.5;
+	margin-bottom: 20px;
 }
 
 /*========================== END doctors_item ==========================*/
@@ -3035,26 +3118,22 @@ footer {
     
     
     .galpane {
+        margin:0px 0px 0px 0px;
         overflow:hidden;
     }
     .galpane .cats  {
         float:right;
     }
     .galpane .cats ul {
-        width:220px;
+        margin:0px 0px 25px 0px
     }
-    .picks .item {
-        width:320px;
-        margin:0px 15px 30px 15px;
-        float:left;
-    }
-    .picks .item:nth-child(2n + 1) {
-        clear:left;
-    }
+    
     .galpane .cats ul li {
-        margin:4px 0px 6px 0px;
+        margin:10px 25px 17px 15px;
     }
     .galpane .cats ul li a {
+        display:inline-block;
+        margin-right:22px;
         color:#002e5c;
         text-decoration:underline;
     }
@@ -3063,23 +3142,289 @@ footer {
         text-decoration:none;
     }
     .galpane .cats ul li .sum {
-        color:#bdc3c7;
         float:right;
+        color:#bdc3c7;
+        display:inline-block;
         font-size:16px;
     }
     .galpane .picks {
-       width:640px;
        overflow:hidden;
     }
-    .picks .item .shad {
+    .galpane .picks .item {
+        overflow:hidden;
+        width:320px;
+        position:relative;
+        margin:0px 15px 30px 15px;
+        float:left;
+    }
+  
+    .galpane .picks .item:after {
+        content:'';
+        bottom:-21px;
         position:absolute;
-        width:314px;
+        width:100%;
         height:23px;
         display:block;
-        background:url(img/tpick_shad.png);
+        background:url(img/tpick_shad.png) no-repeat;
+        background-size:contain;
     }
 
+
 /*========================== END ginekolog page ==========================*/
+
+/*========================== program_white page ==========================*/
+
+.program_white_bg {
+	background-image: url(img/program_white_bg.jpg);
+	margin-bottom: 60px;
+}
+
+.program_white__block {
+	padding-bottom: 62px ;
+	padding-top: 182px;
+	color: #fff;
+}
+
+.program_white__title {
+	padding: 43px 0 0 10px;
+	width: 570px;
+}
+
+.program_white__link {
+	width: 310px;
+}
+
+.program_white__link li {
+	line-height: 1.4;
+	margin: 0 0 12px 0;
+}
+
+.program_white__link li a {
+	color: #fff;
+	display: block;
+}
+
+.program_white__link li a span {
+	border-bottom: 2px solid #a6b1bf;
+}
+
+.style_title {
+	font: normal 24px/1.5 'robotolight';
+	margin: 0 0 5px 0;
+	text-transform: uppercase;
+}
+
+.style_h1 {
+	color: #c0a35f;
+	font-size: 72px;
+	margin: 0 0 21px 0;
+}
+
+.style_h1 span {
+	color: #fff;
+}
+
+.program_white__price {
+	color: #fdfdfd;
+}
+
+.program_white__price span {
+	font-family: RobotoBold;
+	font-size: 28px;
+}
+
+.program_white__descript {
+	margin: 37px 20px 0 20px;
+}
+
+.program_white__descript p {
+	margin: 0 0 24px 0;
+}
+
+.program_white__content {
+	line-height: 1.5;
+	padding: 0 10px;
+}
+
+/*========================== margin padding ==========================*/
+
+.pb {
+	padding-bottom: 55px;
+}
+
+.pb_1 {
+	padding-bottom: 71px;
+}
+
+.pt { padding-top: 10px;}
+
+.pt_1 {
+	padding-bottom: 47px;
+	padding-top: 61px;
+}
+
+.p0 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.p1 {
+	padding-bottom: 51px;
+	padding-top: 17px;
+}
+
+.pb_0 {padding-bottom: 0;}
+
+.pb_2 {padding-bottom: 45px;}
+
+.mb {
+	margin-bottom: 54px;
+}
+
+.mb_2 {margin-bottom: 44px;}
+
+/*========================== END margin padding ==========================*/
+
+
+.program_white__accord {
+	margin-left: 0;
+	margin-top: 21px;
+	width: 480px;
+}
+
+.accord_item {
+	background: #fff;
+	border-bottom: 1px solid #d4d8d7;
+	border-right: 1px solid #d4d8d7;
+}
+
+.accord_item .program_item {
+	background-position: right 30px top 23px;
+	display: block;
+	height: 53px;
+	line-height: 53px;
+	padding: 0 0 0 30px;
+}
+
+
+.accord_item .program_answer > div {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.clear {clear: both;}
+
+.ml_2 {
+	margin-left: 50px;
+	margin-top: 18px;
+}
+
+.ml_2 > li {
+	margin-bottom: 26px;
+	padding-left: 28px;
+}
+
+.block_7 {
+	padding: 53px 10px 0 10px;
+}
+
+.services_list {
+	margin: 36px 0 0 0;
+}
+
+.services_list li {
+	background: #fff;
+	border-bottom: 1px solid #d4d8d7;
+	font-family: RobotoMedium;
+	font-size: 18px;
+	line-height: 1.3;
+	padding: 14px 0 15px 30px;
+	width: 540px;
+}
+
+.services_list li .procent {
+	color: #c0a35f;
+}
+
+.services_list li:first-child {
+	background: #c0a35f;
+	border-bottom: none;
+	color: #fff;
+	padding-bottom: 17px;
+	padding-top: 15px;
+	text-transform: uppercase;
+}
+
+.services_descript {
+	display: block;
+	font-size: 16px;
+}
+
+.width_1 li {
+	width: 380px;
+}
+
+.ul_9 {
+	margin: 40px 0 38px 20px;
+	overflow: hidden;
+}
+
+.ul_9 > li {
+	float: left;
+	line-height: 1.5;
+	width: 440px;
+}
+
+.ul_9 > li a {
+	font-family: RobotoBold;
+	text-decoration: underline;
+}
+
+.ul_9 > li + li {
+	margin-left: 19px;
+}
+
+.style_5 {
+	padding: 60px 0 53px 0;
+}
+
+.phone_serv {
+	display: block;
+	font-family: RobotoBold;
+	font-size: 24px;
+	margin: 15px 0 0 0;
+}
+
+.adr_serv {
+	display: block;
+	margin: 23px 0 0 0;
+}
+
+.style_6 {
+	line-height: 1.5;
+	margin: 0 0 24px 20px;
+}
+
+.style_7 {
+	padding: 60px 0 0 0;
+}
+
+.box_shadow_mini {
+	position: relative;
+}
+
+.box_shadow_mini:before {
+	background: rgba(0, 0, 0, 0) url("img/box_shadow_mini.png") no-repeat scroll center top / contain ;
+    bottom: -45px;
+    content: "";
+    height: 45px;
+    left: 0;
+	opacity: .9;
+    position: absolute;
+    right: 0;
+}
+
+/*========================== END program_white page ==========================*/
 
 /*========================== media ==========================*/
 
@@ -3211,7 +3556,7 @@ footer {
 	.style_4, .blue_bg .h3::after {
 		margin-left: 2%;
 	}
-	.blue_bg .title_under_2, .blue_bg .h3 {
+	.blue_bg .title_under_2, .blue_bg .h3, .pt_1 .title_under_2, .style_7 .title_under_2, .block_7 .title_under_2, .program_white__content .title_under_2 {
 		margin-left: 0;
 		padding-left: 2%;
 	}
@@ -3419,6 +3764,35 @@ footer {
 		margin-left: 10px;
 	}
 	.wrap_doctors_content {width: 520px;}
+	.left.program_white__accord  {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 957px) {
+      .galpane .cats {
+        float:none;
+       }
+       .galpane .cats ul {
+           width:auto;
+       }
+       .galpane .cats ul li {
+           display:inline-block;
+          
+       }
+       .galpane .cats ul li a {
+         margin-right:6px; 
+       }
+       .galpane .picks {
+           width:auto;
+       }
+       .galpane .picks .item {
+           margin-left:1.5%;
+           margin-right:1.5%;
+           width:30.3%;
+       }
+     
 }
 
 @media only screen and (max-width: 925px) {
@@ -3478,7 +3852,18 @@ footer {
 	.ginekolog_photo {
 		max-width: 350px;
 	}
-        
+	.services_list.left, .services_list.right {
+		float: none;
+	}
+	.width_1 li, .services_list li {width: 100%;}
+	
+	.ul_9 > li {float: none; margin-right: 2%; width: 98%;}
+	
+	.ul_9 > li + li {margin-left: 0;}
+	
+	.style_6 {margin-right: 2%;}
+	.ul_9 > li {margin-bottom: 50px;}
+	.ul_9 > li:last-child {margin-bottom: 0;}
 }
 
 @media only screen and (max-width: 900px) {
@@ -3513,6 +3898,12 @@ footer {
 	/*========================== doctors_item ==========================*/
 	.descript_doctors {max-width: 400px;}
 	/*========================== END doctors_item ==========================*/
+	.program_white__title.left, .program_white__link.right {
+		float: none;
+	}
+	.program_white__title.left {margin-bottom: 50px;}
+	.program_white__link.right {margin-left: 2%; width: 98%;}
+	.program_white__block {padding-top: 100px;}
 }
 
 @media only screen and (max-width: 880px) {
@@ -3595,6 +3986,7 @@ footer {
 	.ginekolog_photo .block_link {margin-left: 20px;}
 	.ginekolog_photo .title_under_2 {margin-top: 40px;}
 }
+
 
 @media only screen and (max-width: 820px) {
     
@@ -3779,7 +4171,8 @@ footer {
 		padding-bottom: 17px;
 		text-align: center;
 	}
-	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 65px; }
+	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 55px; }
+	.flexnav .advbox .tel a {padding: 0; }
 	.flexnav .advbox  .items a {
 		font-family: RobotoRegular;
 		border: 1px solid #c0a35f;
@@ -4156,9 +4549,13 @@ footer {
 	.blue_bg__content .btn_3 {
 		border: 2px solid #c0a35f;
 		 height: 36px;
-    	line-height: 36px;
+                line-height: 36px;
 		text-decoration: none;
 	}
+        
+        .galpane .picks .item {
+            width:47%;
+        }
 }
 
 @media only screen and (max-width: 658px) {
@@ -4253,6 +4650,7 @@ footer {
 	.news_list > div:nth-child(3n) {margin-right: 0;}
 	.news_list {margin-top: 60px; margin-bottom: 75px;}
 	.blue_bg__content img {display: none;}
+	.program_white__title {width: 100%;}
 }
 
 @media only screen and (max-width: 550px) {
@@ -4467,6 +4865,13 @@ footer {
 }
 
 @media only screen and (max-width: 449px) {
+       .galpane .picks .item {
+            width:auto;
+            float:none;
+        }
+        .galpane .picks .item  img {
+            width:100%;
+        }
 	.slide_descript {top:90px; }
 	.block_6__1 {width: 100%;}
 	.foto_descript {left: 3%;}
@@ -4560,6 +4965,11 @@ footer {
     }
 }
 @media only screen and (max-width: 350px) {
+    
+        .galpane .picks .item  {
+            width:93%;
+        }
+        
     
     .descript_doctors .btn_1 em {
         display:block;
