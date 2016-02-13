@@ -133,7 +133,7 @@ body {
 
 i {font-family: 'robotobold_italic'; font-style: normal;}
 
-strong {font-family: 'robotobold';}
+strong {font-family: 'robotobold'; font-weight: normal;}
 
 img {max-width: 100%;}
 
@@ -3241,6 +3241,15 @@ footer {
 	margin: 0 0 24px 0;
 }
 
+.program_white__descript p strong {
+	color: #002e5c;	
+}
+
+.program_white__descript p a {
+	color: #002e5c;
+	text-decoration: underline;
+}
+
 .program_white__content {
 	line-height: 1.5;
 	padding: 0 10px;
@@ -3301,9 +3310,8 @@ footer {
 .accord_item .program_item {
 	background-position: right 30px top 23px;
 	display: block;
-	height: 53px;
-	line-height: 53px;
-	padding: 0 0 0 30px;
+	line-height: 1.4;
+	padding: 12px 0 16px 30px;
 }
 
 
@@ -3357,6 +3365,7 @@ footer {
 
 .services_descript {
 	display: block;
+	font-family: RobotoRegular;
 	font-size: 16px;
 }
 
@@ -3425,6 +3434,8 @@ footer {
 }
 
 /*========================== END program_white page ==========================*/
+
+.blue_title span {color: #00ccff;}
 
 /*========================== media ==========================*/
 
@@ -3756,6 +3767,7 @@ footer {
 	.ul_8 > li {
 		padding-bottom: 22px;
 	}
+	.program_white__accord {width: 50%;}
 }
 
 @media only screen and (max-width: 969px) {
@@ -3763,11 +3775,7 @@ footer {
 	.ul_1 li:last-child {
 		margin-left: 10px;
 	}
-	.wrap_doctors_content {width: 520px;}
-	.left.program_white__accord  {
-		float: none;
-		width: 100%;
-	}
+		.wrap_doctors_content {width: 520px;}
 }
 
 @media only screen and (max-width: 957px) {
@@ -4277,6 +4285,12 @@ footer {
 	}
 	.content_item {margin-left: 2%; margin-right: 1%;}
 	.title_7, .descript_doctors {margin-left: 2%;}
+	
+	.left.program_white__accord  {
+		float: none;
+		width: 100%;
+	}
+
 }
 
 @media only screen and (max-width: 760px) {
