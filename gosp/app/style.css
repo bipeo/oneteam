@@ -940,9 +940,10 @@ h4{font-size: 18px;}
 	width: 353px;
 }
 
-.call::-webkit-input-placeholder {color:#002e5c;}
-.call::-moz-placeholder          {color: #fc0b0b; font-family: Arial;}
-.call:-moz-placeholder           {color: #fc0b0b; font-family: Arial;}
+/* #bbc4ce */
+.call::-webkit-input-placeholder {color:#758EA7;}
+.call::-moz-placeholder          {color: #002e5c; }
+.call:-moz-placeholder           {color: #002e5c; }
 .call:-ms-input-placeholder      {color:#002e5c;}
 
 .call_submit {
@@ -1786,7 +1787,7 @@ footer {
 
 .search_main::-webkit-input-placeholder {color:#bbc5ce;}
 .search_main::-moz-placeholder          {color:#bbc5ce;}/* Firefox 19+ */
-.search_main:-moz-placeholder           {color:#000000;}/* Firefox 18- */
+.search_main:-moz-placeholder           {color:#bbc5ce;}/* Firefox 18- */
 .search_main:-ms-input-placeholder      {color:#bbc5ce;}
 
 .search_main input[type=image] {
@@ -3081,10 +3082,10 @@ footer {
          width:67%;
       }
       
-    .form5 ::-webkit-input-placeholder {color:#fff;}
-    .form5 ::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
-    .form5 :-moz-placeholder           {color:#fff;}/* Firefox 18- */
-    .form5 :-ms-input-placeholder      {color:#fff;}
+    .pushme::-webkit-input-placeholder {color:#fff;}
+    .pushme::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+    .pushme:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+    .pushme:-ms-input-placeholder      {color:#fff;}
 
   .form5 input[type=submit] {
      font-size:18px;
@@ -4600,7 +4601,10 @@ footer {
 		margin-left: 0;
 	}
 	.cardio_ul {
+                margin-left:20px;
 		padding-left: 0;
+                padding-right:20px;
+                
 	}
 	.btn_3 {
 		border: none;
