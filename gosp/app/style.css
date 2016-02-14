@@ -3081,10 +3081,11 @@ footer {
       .form5 label:nth-child(2) input[type=text] {
          width:67%;
       }
-      
+      .pushme {
+      }  
     .pushme::-webkit-input-placeholder {color:#fff;}
-    .pushme::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
-    .pushme:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+    .pushme::-moz-placeholder          {opacity:1; color:#fff;}/* Firefox 19+ */
+    .pushme:-moz-placeholder           {opacity:1; color:#fff;}/* Firefox 18- */
     .pushme:-ms-input-placeholder      {color:#fff;}
 
   .form5 input[type=submit] {
