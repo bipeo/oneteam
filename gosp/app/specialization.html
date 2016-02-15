@@ -176,6 +176,23 @@
 			</ul>
 		</div>
 	</nav>
+	<nav class="menu_mobile">
+		<a href="#" class="pull">Подробнее об отделении</a>
+		<ul>
+			<li><a href="#">Об отделении</a></li>
+			<li><a href="#">МРТ</a></li>
+			<li class="active"><a href="#">КТ</a></li>
+			<li><a href="#">Мамография</a></li>
+			<li><a href="#">Рентген</a></li>
+			<li><a href="#">УЗИ</a></li>
+		</ul>
+	</nav>
+	<script>
+		$('.menu_mobile ul').css('display', 'none');
+		$('.menu_mobile .pull').click(function() {
+			$('.menu_mobile ul').slideToggle();
+		});
+	</script>
 	<!-- block_8 -->
 	<div class="block_8 center_3 clearfix">
 		<!-- block_8_1 -->
