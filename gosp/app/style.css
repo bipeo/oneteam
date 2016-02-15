@@ -5329,7 +5329,8 @@ footer {
             margin-right:0px;
         }
 	/*========================== specialization page ==========================*/
-	.block_8_2 .wrap_ginekolog_photo {float: none;}
+	.block_8_2 .wrap_ginekolog_photo {float: none; margin-left: auto;
+	margin-right: auto;}
 	.block_8_2 .specialization__title, .block_8_2 .style_3.mb_3, .block_8_2 .mb_4 {
 		margin-left: 2%;
 	}
