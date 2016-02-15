@@ -5210,6 +5210,11 @@ footer {
 		background-position: center 18%;
 	}
 	.news_content .news_btn {margin-top: 0;}	
+	
+	/*========================== specialization page ==========================*/
+	.specialization__block h2 {font-size: 36px;}
+	.specialization__block {padding-top: 173px;}
+	/*========================== END specialization page ==========================*/
 }
 
 @media only screen and (max-width: 529px) {
@@ -5492,6 +5497,6 @@ footer {
 		width: auto;
 	}
 	.slide_descript {
-		top: 40px;
+		top: 30px;
 	}
 }
