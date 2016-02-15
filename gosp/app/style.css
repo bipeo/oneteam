@@ -3764,6 +3764,10 @@ footer {
 	display: none;
 }
 
+.pl {
+	padding-left: 2%;
+}
+
 /*========================== END specialization page ==========================*/
 
 /*========================== media ==========================*/
@@ -4478,7 +4482,6 @@ footer {
 		overflow-y:scroll;
 		 position:fixed;
 		 top:77px;
-/*             top:81px;*/
 		background: #002e5c;
 		left: 0;
 		padding: 0px 0px 80px 0px;
@@ -4698,6 +4701,22 @@ footer {
 		width: 100%;
 	}
 	.block_8_2 .box_shadow_mini:before {display: none;}
+	.block_8_2 .wrap_ginekolog_photo  {
+		float: left;
+		width: 230px;
+	}
+	.block_8_2 .title_under_2 {
+		clear: both;
+	}
+	.block_8_2 .specialization__title, .block_8_2 .style_3.mb_3, .block_8_2 .mb_4 {
+		margin-left: 250px;
+	}
+	.block_8_2 .style_specialization {
+		display: inline-block;
+	}
+	.block_8_2 .style_specialization .btn_1 {
+		padding: 0 20px;
+	}
 
 	/*========================== END specialization page ==========================*/
 }
@@ -5309,6 +5328,12 @@ footer {
         .contpane .phonebox .form5 {
             margin-right:0px;
         }
+	/*========================== specialization page ==========================*/
+	.block_8_2 .wrap_ginekolog_photo {float: none;}
+	.block_8_2 .specialization__title, .block_8_2 .style_3.mb_3, .block_8_2 .mb_4 {
+		margin-left: 2%;
+	}
+	/*========================== УТВ specialization page ==========================*/
 	
 }
 
@@ -5404,15 +5429,7 @@ footer {
     .form5 label  textarea {
         padding:10px 12px 10px 12px;
     }
-    
-    
-
-   
-   
-    
-    
-    
-    
+ 
 	.wrap_foto_doctors {
 		margin-top: 50px;
 		width: 315px;
