@@ -188,11 +188,7 @@
 		</ul>
 	</nav>
 	<script>
-		$('.menu_mobile ul').css('display', 'none');
-		$('.menu_mobile .pull').click(function(e) {
-			e.preventDefault();
-			$(this).toggleClass('menu_mobile_show');
-		});
+		
 	</script>
 	<!-- block_8 -->
 	<div class="block_8 center_3 clearfix">
@@ -671,6 +667,13 @@ $(function() {
 	});
 	
 	$('.srecialization_block > div').matchHeight();
+	
+	// menu_mobile
+	$('.menu_mobile ul').css('display', 'none');
+		$('.menu_mobile .pull').click(function(e) {
+			e.preventDefault();
+			$(this).toggleClass('menu_mobile_show');
+		});
 });
 
 function gotocoord(val){
