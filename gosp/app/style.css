@@ -131,7 +131,7 @@ body {
     overflow-y:hidden;
 }
 
-i {font-family: 'robotobold_italic'; font-style: normal;}
+i {font-family: 'robotobold_italic'; font-style: normal; }
 
 strong {font-family: 'robotobold'; font-weight: normal;}
 
@@ -2631,6 +2631,7 @@ footer {
 }
 
 .title_under_2 {
+	color: #002e5c;
 	line-height: 1.4;
 }
 
@@ -2640,7 +2641,9 @@ footer {
     display: block;
     height: 5px;
     margin: 20px 0 0;
+	position: relative;
     width: 80px;
+	z-index: 100;
 }
 
 .doctors_content {
@@ -3454,6 +3457,7 @@ footer {
 .menu {
 	background: #c0a35f;
 	font-size: 18px;
+	margin: 0 0 60px 0;
 }
 
 .menu ul {
@@ -3481,11 +3485,241 @@ footer {
 }
 
 .block_8_1 {
-	width: 650px;
+	line-height: 1.5;
+	width: 640px;
 }
 
 .block_8_2 {
+	line-height: 1.5;
+	margin: 10px 0 0 0;
+	padding: 0 0 50px 0;
 	width: 300px;
+}
+
+.block_8_2 .wrap_foto_doctors {
+	max-width: 300px;
+	position: static;
+}
+
+.specialization__title {
+	font-family: RobotoBold;;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+.specialization__title.title_7 {
+	margin-bottom: 20px;
+}
+
+.specialization__title.title_7::after {
+	margin-top: 25px;
+	width: 120px;
+}
+
+.block_8_2 .wrap_ginekolog_photo {
+	margin-bottom: 43px;
+}
+
+.mb_3 {
+	margin-bottom: 4px!important;
+}
+
+.mb_4 {margin-bottom: 26px!important;}
+
+.style_specialization {
+	margin-right: 20px;
+}
+
+.style_specialization .btn_1 {
+	display: block;
+	padding: 0;
+	text-align: center;
+}
+
+.mb_5 {margin-bottom: 0!important; margin-top: 60px!important;}
+
+.srecialization_accord {
+	margin-right: 20px;
+	margin-left: 19px;
+	margin-top: 0;
+	width: 260px;
+}
+
+.srecialization_accord .accord_item {
+	border-right: none;
+}
+
+.srecialization_accord .open {
+	background-color: #002e5c;
+	color: #FFF;
+}
+
+.srecialization_accord .accord_item {
+	background: #ebefee;
+	border-bottom-color: #fff;
+}
+
+.srecialization_accord .program_answer {
+	background: #c0a35f;
+}
+
+.srecialization_accord .program_answer > div {
+	padding: 22px 0 24px 40px;
+}
+
+.srecialization_accord .program_answer a {
+	color: #fff;
+	margin-bottom: 2px;
+	text-decoration: underline;
+}
+
+.srecialization_accord .program_item {
+	background-position: right 21px top 23px;
+	padding: 17px 0 12px 21px;
+}
+
+.content_specialization {
+	padding: 38px 35px 19px 29px;
+	margin: -5px 0 0 0;
+}
+
+.content_specialization p {
+	margin: 0 0 23px 0;
+}
+
+.ul_10 {
+	margin: 43px 21px 0 21px;
+}
+
+.ul_10 > li {
+	background: #fff;
+	border-bottom: 1px solid #d4d8d7;
+	font-family: RobotoMedium;
+	font-size: 18px;
+	line-height: 1.4;
+	padding: 13px 10px 15px 28px;
+}
+
+.ul_10 > li:first-child {
+	background: #c0a35f;
+	border-bottom: none;
+	color: #fff;
+	height: 54px;
+	line-height: 54px;
+	padding: 0 0 0 28px;
+	text-transform: uppercase;
+}
+
+.fz_small {
+	font-size: 14px;
+}
+
+.width_2 {
+	display: inline-block;
+	width: 763px;
+}
+
+.width_3 {
+	display: inline-block;
+	color: #002e5c;
+}
+
+.srecialization_block {
+	width: 100%;
+}
+
+.srecialization_block p {
+	line-height: 1.5;
+}
+
+.ul_11 {
+	margin: 0 0 54px 0;
+	overflow: hidden;
+}
+
+.ul_11 > li {
+	float: left;
+	width: 460px;
+}
+
+.ul_11 > li + li {
+	margin-left: 19px;
+}
+
+.ul_11 > li .style_4 {
+	margin: 0 0 20px 21px;
+}
+
+.ul_11 .title_under_2 {
+	margin-bottom: 38px;
+}
+
+.ul_11 .bg_top {
+	margin-left: 21px;
+	padding-right: 15px;
+	padding-top: 13px;
+}
+
+.ul_11 .bg_top > li {
+	margin-bottom: 10px;
+}
+
+.mt_1 {
+	margin-top: 54px;
+}
+
+.style_8 {
+	margin-left: 0;
+}
+
+.style_8 > li {
+	margin-bottom: 6px;
+}
+
+.style_9 {
+	margin-bottom: 57px;
+	padding-right: 20px;
+}
+
+.style_9 > li {
+	margin-bottom: 10px;
+}
+
+.mb_6 {
+	margin-bottom: 77px!important;
+}
+
+.pt_5 {
+	padding-bottom: 92px;
+	padding-top: 46px !important;
+}
+
+.ml_1 {
+	margin-left: 10px;
+}
+
+.pt_6 {
+	padding-bottom: 73px;
+	padding-top: 62px;
+}
+
+.ml_3 {
+	line-height: 1.5;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.block_9 {
+	line-height: 1.5;
+	padding: 61px 0 25px 0;
+}
+
+.block_9 .title_under_2 {
+	margin-bottom: 19px;
+}
+
+.block_9 p {
+	margin: 0 0 0 20px;
 }
 
 /*========================== END specialization page ==========================*/
@@ -3501,6 +3735,12 @@ footer {
 @media only screen and (max-width: 1439px) {
 	.block_diagnost {
 		width: 960px;
+	}
+	.srecialization_block {
+		width: 100%;
+	}
+	.srecialization_block > div {
+		background-color: #ebefee;
 	}
 }
 
