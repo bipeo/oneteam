@@ -3060,6 +3060,9 @@ footer {
     .contpane  .fplace5 ul li span {
      display:inline-block;    
     }
+    .contpane  .fplace5 ul li span a {
+        color:#fff;
+    }
     .contpane  .fplace5 ul li .key {
         margin:0px 4px 0px 0px;
     }
