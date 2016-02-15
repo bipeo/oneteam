@@ -4111,7 +4111,7 @@ footer {
 	.program_white__accord {width: 50%;}
 	/*========================== specialization page ==========================*/
 	.block_8_1 .title_under_2, .block_9 .title_under_2, .ul_11 >li:first-child {
-		margin-left: 2%;
+		margin-left: 3%;
 	}
 	.block_8_1 {
 		width: 67%;
@@ -5441,6 +5441,13 @@ footer {
 	}
 	.descript_doctors {
 		margin-top: 130px;
+	}
+	.block_8_2 .ginekolog_photo .title_under_2 {
+		margin-left: 0;
+	}
+	.block_8_2 .wrap_foto_doctors {
+		margin-left: 3%;
+		width: 97%;
 	}
 }
 
