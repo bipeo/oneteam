@@ -2657,9 +2657,7 @@ footer {
 	color: #002e5c;
 	line-height: 1.4;
 }
-.pogramm_ctx .title_under_2 {
-    color:#002e5c;
-}
+
 .title_under_2:after {
 	background: #c0a35f none repeat scroll 0 0;
     content: "";
