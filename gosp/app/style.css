@@ -3760,6 +3760,10 @@ footer {
 	background-color: #ebefee;
 }
 
+.menu_mobile {
+	display: none;
+}
+
 /*========================== END specialization page ==========================*/
 
 /*========================== media ==========================*/
@@ -5147,7 +5151,10 @@ footer {
 	/*========================== specialization page ==========================*/
 	.menu {display: none;}
 	.menu_mobile {
+		display: block;
 		font-size: 18px;
+		margin: 0 0 60px 0;
+		position: relative;
 	}
 	.menu_mobile a {
 		color: #fff;
@@ -5164,6 +5171,16 @@ footer {
 		background: #c0a35f url(img/ico_pull.png) no-repeat right 32px center;
 		border-bottom: 1px solid #fff;
 		padding-left: 20px;
+	}
+	.menu_mobile_show {
+		background-color: #002e5c;
+		background-image: url(img/menu_mobile_close.png);
+	}
+	.menu_mobile_show + ul {
+		display: block !important;
+		position: absolute;
+		z-index: 200;
+		width: 100%;
 	}
 	/*========================== END specialization page ==========================*/
 }
