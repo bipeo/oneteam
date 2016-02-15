@@ -3655,16 +3655,13 @@ footer {
 	color: #002e5c;
 }
 
-.srecialization_block {
-	width: 100%;
-}
-
-.srecialization_block p {
+.spec_descript {
 	line-height: 1.5;
+	padding: 35px 15px 35px 29px;
 }
 
 .ul_11 {
-	margin: 0 0 54px 0;
+	margin: 60px 0 54px 0;
 	overflow: hidden;
 }
 
@@ -3753,6 +3750,16 @@ footer {
 	margin: 0 0 0 20px;
 }
 
+.slide_descript_2 {
+	color: #e0ba61 !important;
+	font-size: 21px!important;
+	margin-top: 0 !important;
+}
+
+.srecialization_block > div {
+	background-color: #ebefee;
+}
+
 /*========================== END specialization page ==========================*/
 
 /*========================== media ==========================*/
@@ -3766,12 +3773,6 @@ footer {
 @media only screen and (max-width: 1439px) {
 	.block_diagnost {
 		width: 960px;
-	}
-	.srecialization_block {
-		width: 100%;
-	}
-	.srecialization_block > div {
-		background-color: #ebefee;
 	}
 }
 
