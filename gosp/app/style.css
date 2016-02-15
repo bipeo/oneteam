@@ -4246,6 +4246,17 @@ footer {
 	.style_6 {margin-right: 2%;}
 	.ul_9 > li {margin-bottom: 50px;}
 	.ul_9 > li:last-child {margin-bottom: 0;}
+	
+	.width_2 {
+		float: left;
+		width: 70%;
+	}
+	.width_3 {
+		float: right;
+		text-align: center;
+		width: 25%;
+	}
+	.ul_10 > li {overflow: hidden;}
 }
 
 @media only screen and (max-width: 900px) {
@@ -4669,7 +4680,6 @@ footer {
 	.block_8_2 .wrap_foto_doctors.ginekolog_photo {
 		margin-top: 0;
 	}
-	.width_2 {width: 100%;}
 	/*========================== END specialization page ==========================*/
 
 }
@@ -5296,6 +5306,7 @@ footer {
 	.block_diagnost, .block_diagnost > div {
 		width: 100%;
 	}
+	.block_diagnost {display: block;}
 }
 
 @media only screen and (max-width: 475px) {
@@ -5500,5 +5511,8 @@ footer {
 	}
 	.slide_descript {
 		top: 30px;
+	}
+	.ul_10 > li, .ul_10 > li:first-child {
+		padding-left: 15px;
 	}
 }
