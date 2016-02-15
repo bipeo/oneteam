@@ -4972,7 +4972,7 @@ footer {
 	.blue_bg__content .btn_3 {
 		border: 2px solid #c0a35f;
 		 height: 36px;
-                line-height: 36px;
+		line-height: 36px;
 		text-decoration: none;
 	}
         
@@ -5468,11 +5468,10 @@ footer {
 }
 @media only screen and (max-width: 350px) {
     
-        .galpane .picks .item  {
-            width:93%;
-        }
+	.galpane .picks .item  {
+		width:93%;
+	}
         
-    
     .descript_doctors .btn_1 em {
         display:block;
     }
@@ -5491,5 +5490,8 @@ footer {
 	}
 	.ul_6 > li:nth-child(2) {
 		width: auto;
+	}
+	.slide_descript {
+		top: 40px;
 	}
 }
