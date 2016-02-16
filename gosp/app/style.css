@@ -184,6 +184,8 @@ h4{font-size: 18px;}
 .left {float: left;}
 .right {float: right;}
 
+.clear {clear: both;}
+
 .center_1, .center_2, .center_3, .center_4, .center_5 {
 	margin-left: auto;
 	margin-right: auto;
@@ -1823,7 +1825,9 @@ footer {
 	color: #002e5c;
 	text-decoration: underline;
 }
-
+.programs_services a:hover {
+	color:#c0a35f;
+}
 .program .h3, .services .h3 {
 	color: #002e5c;
 }
@@ -1834,9 +1838,12 @@ footer {
 }
 
 .program_answer {
+	display:none;
 	line-height: 1.4;
 }
-
+.program_answer.act {
+	display:block;
+}
 .program_answer > div {
 	padding: 0 0 23px 20px;
 }
@@ -2657,16 +2664,18 @@ footer {
 	color: #002e5c;
 	line-height: 1.4;
 }
-
+.pogramm_ctx .title_under_2 {
+    color:#002e5c;
+}
 .title_under_2:after {
-    background: #c0a35f none repeat scroll 0 0;
+	background: #c0a35f none repeat scroll 0 0;
     content: "";
     display: block;
     height: 5px;
     margin: 20px 0 0;
-    position: relative;
+	position: relative;
     width: 80px;
-    z-index: 100;
+	z-index: 100;
 }
 
 .doctors_content {
@@ -3353,8 +3362,6 @@ footer {
 	padding-right: 30px;
 }
 
-.clear {clear: both;}
-
 .ml_2 {
 	margin-left: 50px;
 	margin-top: 18px;
@@ -3501,11 +3508,11 @@ footer {
 	width: 160px;
 }
 
-.menu li.active {
+.menu li.active, .menu li:hover {
 	background: #fff;
 }
 
-.menu li.active a {color: #002e5c;}
+.menu li.active a, .menu li:hover a {color: #002e5c;}
 
 .menu li a {
 	color: #fff;
@@ -3598,10 +3605,12 @@ footer {
 
 .srecialization_accord .program_answer a {
 	color: #fff;
-	margin-bottom: 2px;
+	margin-bottom: 3px;
 	text-decoration: underline;
 }
-
+.srecialization_accord .program_answer span {
+	display:block;
+}
 .srecialization_accord .program_item {
 	background-position: right 21px top 23px;
 	padding: 17px 0 12px 21px;
@@ -3645,12 +3654,14 @@ footer {
 
 .width_2 {
 	display: inline-block;
+	vertical-align: top;
 	width: 763px;
 }
 
 .width_3 {
-	display: inline-block;
 	color: #002e5c;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .spec_descript {
@@ -3762,17 +3773,66 @@ footer {
 	display: none;
 }
 
-.pl {
-	padding-left: 2%;
-}
-
 /*========================== END specialization page ==========================*/
 
+.breadcrumbs {
+	margin: 38px 0 20px 0;
+	overflow: hidden;
+}
+
+.breadcrumbs li {
+	color: #95a6a7;
+	font-size: 14px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.breadcrumbs li a {
+	color: #002e5c;
+	display: inline-block;
+	margin-right: 9px;
+}
+
+.width_4 {
+	margin-left: 0;
+	width: 50%;
+}
+
+.service_item_pad {
+	padding-bottom: 121px;
+	padding-top: 166px;
+}
+
+.service_item_mar .title_under_2 {
+	margin-top: 13px;
+}
+
+.service_item_mar2 {
+	margin-bottom: 0;
+}
+
+.service_item_mar3 {
+	line-height: 1.5;
+	margin-bottom: 67px;
+	margin-top: 22px;
+}
+
+.service_item_mar4 {
+	margin-bottom: 26px;
+}
+
+.serive_item1 {
+	padding-bottom: 60px;
+}
 /*========================== media ==========================*/
 
 @media only screen and (min-width: 1440px) {
 	.block_diagnost {
 		width: 1440px;
+	}
+	.ul_1 > li:first-child {
+		left: -31px;
+		position: relative;
 	}
 }
 
@@ -4124,7 +4184,9 @@ footer {
 	}
 	
 	/*========================== END specialization page ==========================*/
-	
+	.pl, .serive_item1 .title_under_2 {
+		padding-left: 2%;
+	}
 }
 
 @media only screen and (max-width: 969px) {
@@ -4376,6 +4438,8 @@ footer {
 	}
 	.ginekolog_photo .block_link {margin-left: 20px;}
 	.ginekolog_photo .title_under_2 {margin-top: 40px;}
+	.breadcrumbs {margin-left: 2%;}
+	.breadcrumbs li {line-height: 1.3;}
 }
 
 
@@ -4469,6 +4533,20 @@ footer {
 		padding-left: 2%;
 	}
 	/*========================== END specialization page ==========================*/
+	.serive_item1 .cardio_ul {
+		float: none;
+		margin-bottom: 0;
+		margin-left: 2%;
+		margin-right: 2%;
+		padding-bottom: 0;
+		width: 96%;
+	}
+	.serive_item1 .title_under_2 {
+		margin-bottom: 30px;
+	}
+	.media_mt {
+		margin-top: 30px!important;
+	}
 }
 
 @media only screen and (max-width: 806px) {
@@ -4567,7 +4645,7 @@ footer {
 		padding-bottom: 17px;
 		text-align: center;
 	}
-	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 55px; }
+	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 50px; }
 	.flexnav .advbox .tel a {padding: 0; }
 	.flexnav .advbox  .items a {
 		font-family: RobotoRegular;
@@ -5301,6 +5379,8 @@ footer {
 	}
 }
 @media only screen and (max-width: 480px) {
+	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 43px; }
+
 	.block_diagnost, .block_diagnost > div {
 		width: 100%;
 	}
@@ -5481,6 +5561,8 @@ footer {
     .flexnav .advbox .items a em {
         display:none;
     }
+	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 34px; }
+
 }
 @media only screen and (max-width: 350px) {
     
