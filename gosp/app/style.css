@@ -1825,7 +1825,9 @@ footer {
 	color: #002e5c;
 	text-decoration: underline;
 }
-
+.programs_services a:hover {
+	color:#c0a35f;
+}
 .program .h3, .services .h3 {
 	color: #002e5c;
 }
@@ -1836,9 +1838,12 @@ footer {
 }
 
 .program_answer {
+	display:none;
 	line-height: 1.4;
 }
-
+.program_answer.act {
+	display:block;
+}
 .program_answer > div {
 	padding: 0 0 23px 20px;
 }
@@ -3503,11 +3508,11 @@ footer {
 	width: 160px;
 }
 
-.menu li.active {
+.menu li.active, .menu li:hover {
 	background: #fff;
 }
 
-.menu li.active a {color: #002e5c;}
+.menu li.active a, .menu li:hover a {color: #002e5c;}
 
 .menu li a {
 	color: #fff;
@@ -3600,10 +3605,12 @@ footer {
 
 .srecialization_accord .program_answer a {
 	color: #fff;
-	margin-bottom: 2px;
+	margin-bottom: 3px;
 	text-decoration: underline;
 }
-
+.srecialization_accord .program_answer span {
+	display:block;
+}
 .srecialization_accord .program_item {
 	background-position: right 21px top 23px;
 	padding: 17px 0 12px 21px;
@@ -4638,7 +4645,7 @@ footer {
 		padding-bottom: 17px;
 		text-align: center;
 	}
-	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 55px; }
+	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 50px; }
 	.flexnav .advbox .tel a {padding: 0; }
 	.flexnav .advbox  .items a {
 		font-family: RobotoRegular;
@@ -5372,6 +5379,8 @@ footer {
 	}
 }
 @media only screen and (max-width: 480px) {
+	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 43px; }
+
 	.block_diagnost, .block_diagnost > div {
 		width: 100%;
 	}
@@ -5552,6 +5561,8 @@ footer {
     .flexnav .advbox .items a em {
         display:none;
     }
+	.flexnav .advbox .tel, .flexnav .advbox .tel a {font-size: 34px; }
+
 }
 @media only screen and (max-width: 350px) {
     

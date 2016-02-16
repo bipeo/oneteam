@@ -192,13 +192,13 @@
 			<!-- srecialization_accord -->
 			<div class="wrap_accord program_white__accord box_shadow_mini srecialization_accord">
 				<div class="accord_item">
-					<h4 class="program_item">МРТ</h4>
-					<div class="program_answer">
+					<h4 class="program_item open">МРТ</h4>
+					<div class="program_answer act">
 						<div>
-							<a href="#">МРТ головного мозга</a>
-							<a href="#">МРТ гипофеза</a>
-							<a href="#">МРТ глазных орбит</a>
-							<a href="#">МРТ носовой полости</a>
+							<span><a href="#">МРТ головного мозга</a></span>
+							<span><a href="#">МРТ гипофеза</a></span>
+							<span><a href="#">МРТ глазных орбит</a></span>
+							<span><a href="#">МРТ носовой полости</a></span>
 						</div>
 					</div>
 				</div>
@@ -206,10 +206,10 @@
 					<h4 class="program_item">КТ</h4>
 					<div class="program_answer">
 						<div>
-							<a href="#">МРТ головного мозга</a>
-							<a href="#">МРТ гипофеза</a>
-							<a href="#">МРТ глазных орбит</a>
-							<a href="#">МРТ носовой полости</a>
+							<span><a href="#">МРТ головного мозга</a></span>
+							<span><a href="#">МРТ гипофеза</a></span>
+							<span><a href="#">МРТ глазных орбит</a></span>
+							<span><a href="#">МРТ носовой полости</a></span>
 						</div>
 					</div>
 				</div>
@@ -217,10 +217,10 @@
 					<h4 class="program_item">Рентген</h4>
 					<div class="program_answer">
 						<div>
-							<a href="#">МРТ головного мозга</a>
-							<a href="#">МРТ гипофеза</a>
-							<a href="#">МРТ глазных орбит</a>
-							<a href="#">МРТ носовой полости</a>
+							<span><a href="#">МРТ головного мозга</a></span>
+							<span><a href="#">МРТ гипофеза</a></span>
+							<span><a href="#">МРТ глазных орбит</a></span>
+							<span><a href="#">МРТ носовой полости</a></span>
 						</div>
 					</div>
 				</div>
@@ -228,10 +228,10 @@
 					<h4 class="program_item">Узи</h4>
 					<div class="program_answer">
 						<div>
-							<a href="#">МРТ головного мозга</a>
-							<a href="#">МРТ гипофеза</a>
-							<a href="#">МРТ глазных орбит</a>
-							<a href="#">МРТ носовой полости</a>
+							<span><a href="#">МРТ головного мозга</a></span>
+							<span><a href="#">МРТ гипофеза</a></span>
+							<span><a href="#">МРТ глазных орбит</a></span>
+							<span><a href="#">МРТ носовой полости</a></span>
 						</div>
 					</div>
 				</div>
@@ -421,7 +421,7 @@
 <script src="js/common.js"></script>
 <script>
 $(function() {
-	$('.program_answer').css({'display':'none'});
+	//$('.program_answer').css({'display':'none'});
 			
 	$('.program_item').click(function(){
 		$('.program_item').not($(this)).removeClass('open');
@@ -429,6 +429,15 @@ $(function() {
 		$(this).next('.program_answer').slideToggle(500);
 		$(this).toggleClass('open');
 	});
+	
+	/*
+	$('.program_item').click(function(){
+		$('.program_item').not($(this)).removeClass('open');
+		$('.program_answer').not($(this).next('.program_answer')).slideUp(500);
+		$(this).next('.program_answer').slideToggle(500);
+		$(this).toggleClass('open');
+	});
+	*/
 
 	$('.srecialization_block > div').matchHeight();
 		
