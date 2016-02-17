@@ -854,17 +854,19 @@ h4{font-size: 18px;}
 	border-right: 0;
 	width: 318px;
 }
-
+.ul_4 > li.ahrhover {
+    background:#002e5c;;
+}
 .ul_4 > li:last-child a {
 	width: 318px;
 }
 
-.ul_4 a:hover, .ul_4  a.attn {
+ .ul_4  a.attn, .ul_4  a.hover {
 	background: #002e5c;
 	color: #fff;
 }
 
-.ul_4 a:hover h4, .ul_4  a.attn h4 {
+ .ul_4  a.attn h4, .ul_4  a.hover h4 {
 	color: #fff;
 }
 

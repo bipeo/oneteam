@@ -1,6 +1,61 @@
 $(document).ready(function(){
-	
-	
+  /*detect browser*/	
+    var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+    var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+    var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+    var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+    var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
+    if ((is_chrome)&&(is_safari)) {is_safari=false;}
+    if ((is_chrome)&&(is_opera)) {is_chrome=false;}
+   /* end detect browser*/	
+
+    
+    if(is_opera) {
+        $('body').addClass('is_opera');
+    }
+    if(is_chrome) {
+        $('body').addClass('is_chrome');
+    }
+    if(is_firefox) {
+        $('body').addClass('is_firefox');
+    }
+    if(is_safari) {
+        $('body').addClass('is_safari');
+    }
+ 
+    $('.ul_4 li').each(function(i, val) {
+        
+    
+        $(val).on('mouseleave',function() {
+          $(this).removeClass('ahrhover');
+          $(val).find('a:last-child').not('.attn').removeClass('hover');
+        });
+        
+        $(val).not('.attn').find('a').on('mouseleave',function() {
+        $(this).removeClass('hover');
+        });
+        
+         $(val).not('.attn').find('a').on('mouseenter',function() {
+           $(this).addClass('hover');
+           if ($(this).is(':last-child')) {
+             $(this).parent().addClass('ahrhover');
+           }
+        });
+      /*add hover class to ul_4 */
+    })
+    
+ /*detect browser*/
+ 
+ 
+ //plugin end
+ 
+ 
+
+// Warn if the code tries to get jQuery.browser
+
+ /*detect browser end*/   
+ 
+    
 	// popup 2
     $('.show_search').click(function(e) {
          e.preventDefault();
