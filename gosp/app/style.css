@@ -3904,12 +3904,17 @@ footer {
 	.ul_1 > li:first-child {
 		left: -93px;
 	}
-       
+	.is_chrome .ul_1 > li:first-child {
+		left: -82px;
+	}
 }
 
 @media only screen and (max-width: 1259px) {
 	.ul_1 > li:first-child {
 		left: -83px;
+	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -82px;
 	}
 }
 
@@ -3917,11 +3922,17 @@ footer {
 	.ul_1 > li:first-child {
 		left: -73px;
 	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -69px;
+	}
 }
 
 @media only screen and (max-width: 1219px) {
 	.ul_1 > li:first-child {
 		left: -63px;
+	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -58px;
 	}
 }
 
@@ -3929,11 +3940,17 @@ footer {
 	.ul_1 > li:first-child {
 		left: -53px;
 	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -45px;
+	}
 }
 
 @media only screen and (max-width: 1179px) {
 	.ul_1 > li:first-child {
 		left: -43px;
+	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -49px;
 	}
 }
 
@@ -3941,11 +3958,17 @@ footer {
 	.ul_1 > li:first-child {
 		left: -33px;
 	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -38px;
+	}
 }
 
 @media only screen and (max-width: 1139px) {
 	.ul_1 > li:first-child {
 		left: -33px;
+	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -30px;
 	}
         
 }
@@ -3954,19 +3977,37 @@ footer {
 	.ul_1 > li:first-child {
 		left: -23px;
 	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -30px;
+	}
 }
 
 @media only screen and (max-width: 1099px) {
 	.ul_1 > li:first-child {
 		left: -13px;
 	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -21px;
+	}
+}
+
+@media only screen and (max-width: 1079px)  {
+	.is_chrome .ul_1 > li:first-child {
+		left: -10px;
+	}
 }
 
 @media only screen and (max-width: 1060px) {
-        html, body {
-            max-width: 100%;
-            overflow-x: hidden;
-        }
+	html, body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+	
+	.is_chrome .ul_1 > li:first-child {
+		left: -21px;
+	}
+	
+	
 	
 	.menu-button span {
 		background: #fff;
@@ -4036,9 +4077,21 @@ footer {
 	}
 }
 
+@media only screen and (min-width: 1101px) and (max-width: 1114px) {
+	.is_opera .ul_1 > li:first-child {
+		left: -22px;
+	}
+}
+
 @media only screen and (max-width: 1100px) {
 	.ul_1 > li:first-child {
 		left: -39px;
+	}
+}
+
+@media only screen and (min-width: 1096px) and (max-width: 1099px) {
+	.is_opera .ul_1 > li:first-child {
+		left: -22px;
 	}
 }
 
@@ -4050,6 +4103,7 @@ footer {
 		left: -12px;
 	}
 }
+
 
 @media only screen and (max-width: 1080px) {
 	.ul_1 > li:first-child {
@@ -4066,6 +4120,12 @@ footer {
 	}
          .is_chrome  .ul_1 > li:first-child {
 		left: -7px;
+	}
+}
+
+@media only screen and (min-width: 1061px) and (max-width: 1089px) {
+	.is_opera .ul_1 > li:first-child {
+		left: -8px;
 	}
 }
 
@@ -4087,9 +4147,18 @@ footer {
 	}
 }
 
+@media only screen and (min-width: 1041px) and (max-width: 1059px) {
+	.is_opera .ul_1 > li:first-child {
+		left: -22px;
+	}
+}
+
 @media only screen and (max-width: 1040px) {
 	.ul_1 > li:first-child {
 		left: -29px;
+	}
+	.is_chrome .ul_1 > li:first-child, .is_opera .ul_1 > li:first-child {
+		left: -10px;
 	}
          .is_chrome  .ul_1 > li:first-child {
 		left: -11px;
@@ -4103,11 +4172,20 @@ footer {
         .is_chrome  .ul_1 > li:first-child {
 		left: -7px;
 	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -4px;
+	}
 }
 
 @media only screen and (max-width: 1020px) {
 	.ul_1 > li:first-child {
+		left: -9px;
+	}
+	.is_chrome .ul_1 > li:first-child {
 		left: -2px;
+	}
+	.is_opera .ul_1 > li:first-child {
+		left: -0;
 	}
         .is_chrome  .ul_1 > li:first-child {
 		left: -1px;
@@ -4137,6 +4215,8 @@ footer {
 	.ul_1 > li:first-child {
 		left: -29px;
 	}
+	.is_chrome .ul_1 > li:first-child, .is_opera .ul_1 > li:first-child {
+		left: -21px;
         .is_chrome  .ul_1 > li:first-child {
 		left: -14px;
 	}
@@ -4155,11 +4235,17 @@ footer {
         .is_firefox .ul_1 > li:first-child {
 		left: 0px;
 	}
+	.is_chrome .ul_1 > li:first-child {
+		left: -15px;
+	}
 }
 
 @media only screen and (max-width: 985px) {
 	.ul_1 > li:first-child {
 		left: -18px;
+	}
+	.is_chrome .ul_1 > li:first-child, .is_opera .ul_1 > li:first-child {
+		left: -8px;
 	}
 	.is_chrome .ul_1 > li:first-child {
 		left: -3px;
@@ -4238,6 +4324,12 @@ footer {
 	}
 	.flexnav li > ul div ul {position: relative; z-index: 5;}
 	.ul_1 > li:first-child {left: 0;}
+	.is_chrome .ul_1 > li:first-child {
+		left: 13px;
+	}
+	.is_opera .ul_1 > li:first-child {
+		left: 13px;
+	}
 	
 	/*========================== внутренние ==========================*/
 	.data_fakt {
