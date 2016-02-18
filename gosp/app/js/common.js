@@ -33,6 +33,8 @@ $(document).ready(function(){
         
         $(val).not('.attn').find('a').on('mouseleave',function() {
         $(this).removeClass('hover');
+         $(this).parent().removeClass('ahrhover'); /*added*/
+         
         });
         
          $(val).not('.attn').find('a').on('mouseenter',function() {

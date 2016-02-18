@@ -3904,6 +3904,10 @@ footer {
 	.ul_1 > li:first-child {
 		left: -93px;
 	}
+        .is_chrome .ul_1 > li:first-child {
+		left: -93px;
+              
+	}
 }
 
 @media only screen and (max-width: 1259px) {
