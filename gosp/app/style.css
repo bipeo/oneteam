@@ -5535,6 +5535,14 @@ footer {
 		border-bottom: 1px solid #fff;
 		padding-left: 20px;
 	}
+        .menu_mobile li:hover {
+            background-color:#fff;
+            background-image:url(img/menu_mobile_ico_hover.png);
+        }
+        .menu_mobile li:hover a {
+            color: #002e5c
+        }
+       
 	.pull {
 		background: #c0a35f url(img/ico_pull.png) no-repeat right 32px center;
 		border-bottom: 1px solid #fff;
