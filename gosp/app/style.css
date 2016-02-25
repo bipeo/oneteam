@@ -1959,7 +1959,6 @@ footer {
 }
 .departs_block ul li {
     line-height: 2em;
-/*    padding:0px 0% 6px 0% */
 }
 .departs_block ul li a {
     text-transform: uppercase;
@@ -1970,6 +1969,10 @@ footer {
     border-bottom:1px solid #bbc5ce; 
     margin:0 0% 64px 0%;
     padding:0px 0px 50px 0px
+}
+
+.departs_block {
+	margin-bottom: 0;
 }
 .departs_block {
     padding-left:2%;
@@ -3875,6 +3878,31 @@ footer {
 	margin-bottom: 15px;
 }
 
+.otdel_ul li {
+	margin-bottom: 20px;
+	width: 45%;
+}
+
+.otdel_ul .ul_3 > li span {
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: 96px;
+}
+
+.otdel_ul .ul_3 > li a {
+	padding-bottom: 50px;
+	padding-top: 45px;
+	height: auto;
+}
+
+.otdel_ul .ul_3 > li:nth-child(2n+1) {
+	margin-left: 0;
+}
+
+.otdel_ul .ul_3 > li + li {
+	margin-left: 25px;
+}
+
 
 
 /*========================== media ==========================*/
@@ -4206,6 +4234,11 @@ footer {
 	.is_chrome .ul_1 > li:first-child {
 		left: -4px;
 	}
+	.otdel_ul .ul_3 > li {
+		float: none;
+		width: 90%;
+	}
+	.otdel_ul .ul_3 > li + li {margin-left: 0;}
 }
 
 @media only screen and (max-width: 1020px) {
