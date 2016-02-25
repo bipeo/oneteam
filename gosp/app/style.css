@@ -2229,7 +2229,7 @@ footer {
 .decimal > li {
 	font-size: 18px;
 	list-style-type: decimal;
-	margin-left: 38px;
+	margin-left: 59px;
 }
 
 .cardio_price > span {
@@ -5395,7 +5395,7 @@ footer {
 	.title_under, .cardio_content, .descript_foto_cardio, h3.title_6.title_under, .cardio_item p {
 		margin-left: 0;
 	}
-	.cardio_ul {
+	.cardio_ul, .decimal li {
                 margin-left:20px;
 		padding-left: 0;
                 padding-right:20px;
