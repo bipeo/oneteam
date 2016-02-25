@@ -888,7 +888,9 @@ h4{font-size: 18px;}
 	color: #fff;
 	line-height: 1.4;
 }
-
+.block_news .wrap_2 {
+     margin-right:12px;
+}
 .block_news .date {
 	background: #c0a35f;
 	display: block;
@@ -5586,6 +5588,14 @@ footer {
 		border-bottom: 1px solid #fff;
 		padding-left: 20px;
 	}
+        .menu_mobile li:hover {
+            background-color:#fff;
+            background-image:url(img/menu_mobile_ico_hover.png);
+        }
+        .menu_mobile li:hover a {
+            color: #002e5c
+        }
+       
 	.pull {
 		background: #c0a35f url(img/ico_pull.png) no-repeat right 32px center;
 		border-bottom: 1px solid #fff;

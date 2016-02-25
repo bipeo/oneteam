@@ -114,20 +114,7 @@ $(document).ready(function(){
 	});
 	
 });
-function window_resize() {
-//	var li_first = $('.ul_1 > li:first').outerWidth();
-//	var width_left = $('.logo').outerWidth();
-//	var width_menu = $('.main_menu').outerWidth();
-//	var width_phone = $('.ul_1 li:last').outerWidth();
-//	var summa_1 = width_left + width_menu + width_phone;
-//	var result = $(window).width() - summa_1;
-//		$('.ul_1 > li:first').css({
-//			'position' : 'relative',
-//			'left' : - + (result / 2) - (li_first / 2) + 'px'
-//		});
-//	return(result);
-//		alert(result);
-}
+
 
 
 
