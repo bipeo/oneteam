@@ -2398,7 +2398,10 @@ footer {
 /*========================== news ==========================*/
 
 .news_bg {
-	background-image: url(img/news_bg.jpg);
+	background-image: url(img/news_shad.png),  url(img/news_bg3.jpg);
+        background-repeat: repeat-x, no-repeat;
+        background-size:contain, cover;
+        background-position:center 3px, center top;
 }
 
 .page_news_small {
