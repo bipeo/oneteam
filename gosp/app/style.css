@@ -1640,9 +1640,7 @@ footer {
 .photo-fancy  .fancybox-nav:hover {
     background-color:rgba(192,168,95,1) !important;
 }
-.photo-fancy  .fancybox-nav span:hover {
-     
-}
+
 .photo-fancy .fancybox-prev:hover span {
     background-position:0 -42px;
 }
@@ -1688,9 +1686,6 @@ footer {
     background-color:rgba(192,168,95,1);
     background-image: url(img/fancyclose_ic_hov.png);
 }
-
-
-
 
 
 /*fancygal */
@@ -2214,18 +2209,24 @@ footer {
 	width: 150px;
 }
 
-.cardio_ul {
+.cardio_ul, .bullit, .decimal {
 	padding: 35px 0 64px 21px;
 }
 
-.cardio_ul > li {
+.cardio_ul > li, .bullit > li {
 	background: url(img/ico_14.png) no-repeat left center;
 	font-size: 18px;
 	padding: 0 0 0 38px;
 }
 
-.cardio_ul li + li {
+.cardio_ul li + li, .bullit > li + li, .decimal > li + li {
 	margin-top: 8px;
+}
+
+.decimal > li {
+	font-size: 18px;
+	list-style-type: decimal;
+	margin-left: 38px;
 }
 
 .cardio_price > span {
@@ -3824,6 +3825,56 @@ footer {
 	padding-bottom: 60px;
 }
 
+.bg_4 {
+	background-image: url(img/bg_4.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.bx_slider_descr {
+	background: #c0a35f;
+	color: #fff;
+	line-height: 24px;
+	min-height: 195px;
+	padding: 35px 40px 40px 25px;
+}
+
+.bx_style .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	bottom: 197px!important;
+}
+
+.bg_5 {
+	background-image: url(img/bg_5.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.bg_6 {
+	background-image: url(img/bg_6.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+.bg_6 .title_under_2 {
+	color: #fff;
+}
+
+.otdel__block {
+	text-transform: uppercase;
+	width: 25%;
+}
+
+.otdel__block h3 {
+	margin-bottom: 40px;
+}
+
+.otdel__block a {
+	display: block;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
 
 
 /*========================== media ==========================*/
@@ -4697,7 +4748,7 @@ footer {
 	.cardio_block {
 		background-position: center 16%;
 	}
-
+	.otdel__block.right {float: left;}
 	/*========================== ginekolog page ==========================*/
 	.wrap_foto_doctors.ginekolog_photo {
 		max-width: 250px;
@@ -4768,7 +4819,7 @@ footer {
 		margin-bottom: 29px;
 		padding-top: 23px;
 	}
-	.cardio_ul {
+	.cardio_ul, .decimal, .bullit {
 		padding-bottom: 32px;
 		padding-left: 0;
 		padding-top: 17px;
@@ -5280,7 +5331,7 @@ footer {
             margin-left:12px;
         }
         
-        .cardio_ul {
+        .cardio_ul, .decimal {
             padding-left:16px;
         }
         
@@ -5713,14 +5764,13 @@ footer {
 	.departs_block ul:nth-child(2n + 1 ) {
 		clear:none;
 	}
-	.departs_block ul {
+	.departs_block ul, .otdel__block.right {
 		float:none;
 		width:80%;
 		margin:0 auto;
-	}
-	.departs_block ul {
 		text-align:center;
 	}
+	.otdel__block h3 {text-align: left;}
 	.departs_block ul:last-child  {
 	   float:none;
 	   width:80%;

@@ -192,7 +192,7 @@
 		</div>
 	</div><!-- END program_white__content -->
 	<!-- blue_bg -->
-	<div class="blue_bg pt pb_0">
+	<div class="blue_bg bg_4 pt pb_0">
 		<!-- center_2 -->
 		<div id="link_2" class="center_2 program_white__content">
 			<h3 class="title_under_2">Состав диагностической программы:</h3>
@@ -208,6 +208,38 @@
 				<li>Комплексная программа «Генетический паспорт онкологического риска»;</li>
 				<li>Комплексная программа «Сосудистый паспорт».</li>
 			</ul>
+			<ul class="decimal">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quaerat veniam quibusdam, harum facilis vel quod totam explicabo, numquam adipisci! Eveniet tempora, culpa, quam repellat obcaecati iste dolore quisquam amet!</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor tempore dolorum ab quisquam quaerat ex atque aut odio ut laborum iure corporis modi velit ullam facilis laboriosam, alias. Inventore, quisquam.</li>
+				<li>lorem15</li>
+				<li>lorem15</li>
+				<li>lorem15</li>
+			</ul>			
+			<!-- bx_slider_2 -->
+			<div id="bx_slider_2" class="bx_style">
+				<ul>
+					<li>
+						<img src="img/demo_otdelenia_item.jpg" alt="">
+						<p class="bx_slider_descr">Наш операционный блок построен и оснащён по строгим международным  стандартам  - бесшовные монолитные конструкции, устойчивые к любым инфекциям, сложная система вентиляции, обеспечивающая многократную фильтрацию и обмен воздуха и поддержание пяти уровней стерильности, требуемых для разных зон, инновационное оборудование. Операционные оснащены централизованной подачей медицинских газов для проведения наркоза и эндоскопических операций.</p>
+					</li>
+					<li>
+						<img src="http://lorempixel.com/940/557/sports/" alt="">
+						<p class="bx_slider_descr">Наш операционный блок построен и оснащён по строгим международным  стандартам  - бесшовные монолитные конструкции, устойчивые к любым инфекциям, сложная система вентиляции, обеспечивающая многократную фильтрацию и обмен воздуха и поддержание пяти уровней стерильности, .</p>
+					</li>
+					<li>
+						<img src="http://lorempixel.com/940/557/business/" alt="">
+						<p class="bx_slider_descr">Наш операционный блок построен и оснащён по строгим международным  стандартам  - бесшовные монолитные конструкции, устойчивые к любым инфекциям, сложная система вентиляции, обеспечивающая многократную фильтрацию и обмен воздуха и поддержание пяти уровней стерильности, требуемых для разных зон, инновационное оборудование. Операционные оснащены централизованной подачей медицинских газов для проведения наркоза и эндоскопических операций.</p>
+					</li>
+					<li>
+						<img src="http://lorempixel.com/940/557/animals/" alt="">
+						<p class="bx_slider_descr">Наш операционный блок построен и оснащён по строгим международным  стандартам  - бесшовные монолитные конструкции, устойчивые к любым инфекциям, сложная система вентиляции, обеспечивающая многократную фильтрацию и обмен воздуха и поддержание пяти уровней стерильности, требуемых для разных зон, инновационное оборудование. Операционные оснащены централизованной подачей медицинских газов для проведения наркоза и эндоскопических операций.</p>
+					</li>
+					<li>
+						<img src="http://lorempixel.com/940/557/city/" alt="">
+						<p class="bx_slider_descr">Наш операционный блок построен и оснащён по строгим международным  стандартам  - бесшовные монолитные конструкции, устой</p>
+					</li>
+				</ul>
+			</div><!-- END bx_slider_2 -->
 			<h3 id="link_3" class="title_under_2">Состав лечебной программы:</h3>
 			<p class="style_4">Возможности врачей-специалистов в рамках программы «Yauza White»</p>
 		</div><!-- END center_2 -->
@@ -390,7 +422,7 @@
 		</ul>
 	</div><!-- END block_7 -->
 	<!-- blue_bg -->
-	<div class="blue_bg pt pb_1">
+	<div class="blue_bg pt pb_1 bg_5">
 		<div class="center_3">
 			<h3 id="link_5" class="title_under_2">Специальные <strong>скидки</strong></h3>
 			<div class="clearfix">
@@ -433,7 +465,7 @@
 		</ul>
 	</div>
 	<!-- blue_bg -->
-	<div class="blue_bg style_5">
+	<div class="blue_bg style_5 bg_6">
 		<!-- center_3 -->
 		<div class="center_3">
 			<h3 id="link_7" class="title_under_2">Порядок оказания медицинских услуг</h3>
@@ -588,9 +620,18 @@
 <!-- matchHeight -->
 <script src="libs/jquery.matchHeight-min.js"></script>
 <!-- bxslider -->
+<script src="libs/jquery.bxslider/dist/jquery.bxslider.min.js"></script>
 <script src="js/common.js"></script>
 <script>
 $(function() {
+
+	$('#bx_slider_2 ul').bxSlider({
+		controls: false,
+		mode: 'fade',
+			auto:true
+	});
+	
+	// accordeon
 	$('.program_answer').css({'display':'none'});
 			
 	$('.program_item').click(function(){
@@ -622,7 +663,6 @@ function gotoblock(id){
 	var destination = obj.offset().top - height1;
 	$("html,body").stop(true, true).animate({'scrollTop':  destination + 'px'}, 1000);
 }
-</script>
 </script>
 <!-- DELETE DELETE DELETE DELETE DELETE DELETE DELETE -->
 <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
