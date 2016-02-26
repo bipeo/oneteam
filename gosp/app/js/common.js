@@ -114,7 +114,7 @@ $(document).ready(function(){
                         var top = - 45;
 			var name_1 = $('.bx_style  .bx-wrapper li:visible').find('img').outerHeight();
                         $('.bx_style .bx-wrapper .bx-pager').show().css('top', name_1 + top + 'px')
-		}, 1000);
+		}, 0);
 	});
 	
 });
