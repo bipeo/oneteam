@@ -4228,6 +4228,12 @@ footer {
 	.is_chrome .ul_1 > li:first-child, .is_opera .ul_1 > li:first-child {
 		left: -10px;
 	}
+	.otdel_ul .ul_3 > li {
+		float: none;
+		width: 90%;
+               
+	}
+	.otdel_ul .ul_3 > li + li {margin-left: 0;}
 }
 
 @media only screen and (max-width: 1030px) {
@@ -4237,12 +4243,6 @@ footer {
 	.is_chrome .ul_1 > li:first-child {
 		left: -4px;
 	}
-	.otdel_ul .ul_3 > li {
-		float: none;
-		width: 90%;
-               
-	}
-	.otdel_ul .ul_3 > li + li {margin-left: 0;}
 }
 
 @media only screen and (max-width: 1020px) {
