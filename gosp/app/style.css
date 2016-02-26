@@ -3842,11 +3842,15 @@ footer {
 	color: #fff;
 	line-height: 24px;
 	min-height: 195px;
+	margin-top: -1px;
 	padding: 35px 40px 40px 25px;
+	position: relative;
+	top: -1px;
 }
 
 .bx_style .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
-	bottom: 197px!important;
+	bottom: auto!important;
+	top: 68.5%;
 }
 
 .bg_5 {
@@ -3859,6 +3863,8 @@ footer {
 	background-image: url(img/bg_6.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 	color: #fff;
 }
 
@@ -4632,18 +4638,18 @@ footer {
 		padding-right: 40px;
 	}
         
-        .contpane .phonebox {
-            width:440px;
-        }
-        .form5 label:nth-child(1) input[type=text] {
-            width: 84%;
-        }
-        .form5 label:nth-child(2) input[type=text] {
-            width: 63%;
-        }
-        .form5 label:nth-child(3) textarea {
-            width: 70%;
-        }
+	.contpane .phonebox {
+		width:440px;
+	}
+	.form5 label:nth-child(1) input[type=text] {
+		width: 84%;
+	}
+	.form5 label:nth-child(2) input[type=text] {
+		width: 63%;
+	}
+	.form5 label:nth-child(3) textarea {
+		width: 70%;
+	}
 
 	/*========================== ginekolog page ==========================*/
 	.ginekolog_photo {
@@ -4672,6 +4678,11 @@ footer {
 		width: 25%;
 	}
 	.ul_10 > li {overflow: hidden;}
+/*
+	.bx_style .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+		top: 68%;
+	}
+*/
 }
 
 @media only screen and (max-width: 900px) {
@@ -4712,6 +4723,7 @@ footer {
 	.program_white__title.left {margin-bottom: 50px;}
 	.program_white__link.right {margin-left: 2%; width: 98%;}
 	.program_white__block {padding-top: 100px;}
+/*	.bx_style .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {top: 67%;}*/
 }
 
 @media only screen and (max-width: 880px) {
@@ -4738,7 +4750,6 @@ footer {
 	.block_2 {padding-bottom: 70px;}
 	.main_menu.left {
 		margin-left: 0;
-/*		left: 3%;*/
 	}
 	.center_4 {
 		margin-left: 5%;
@@ -4760,20 +4771,20 @@ footer {
 		max-width: 95%;
 	}
         
-         .departs_block ul:nth-child(3n + 1 ) {
-            clear:left;
-        }
-        .departs_block ul {
-            width:33.3%;
-        }
-        
-        .departs_block ul:last-child {
-            width:auto;
-        }
-        .departs_block ul:last-child li {
-            float:left;
-            width:33.3%;
-        }
+	 .departs_block ul:nth-child(3n + 1 ) {
+		clear:left;
+	}
+	.departs_block ul {
+		width:33.3%;
+	}
+
+	.departs_block ul:last-child {
+		width:auto;
+	}
+	.departs_block ul:last-child li {
+		float:left;
+		width:33.3%;
+	}
 	.one, .two, .three {
 		background-image: none;
 	}
@@ -4797,12 +4808,24 @@ footer {
 	.breadcrumbs li {line-height: 1.3;}
 }
 
+@media only screen and (max-width: 864px) {
+	.is_chrome .bx_style .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+		top: 63%;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.bx_style .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+		top: 66%;
+	}
+}
+
 
 @media only screen and (max-width: 820px) {
     
-        .contpane .contbox {
-           width:40%;      
-        }
+	.contpane .contbox {
+	   width:40%;      
+	}
 
 	.block_6__1 {
 		width: 380px;
@@ -4905,6 +4928,11 @@ footer {
 }
 
 @media only screen and (max-width: 806px) {
+/*
+	.bx_style .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+		top: 62%!important;
+	}
+*/
 	/*========================== top_menu ==========================*/
 	.ul_1, .link_2 {display: none;}
 	.main_menu.left {left: 0;}
@@ -5816,6 +5844,12 @@ footer {
 		margin:0 auto;
 		text-align:center;
 	}
+	.otdel__block.right {
+		margin-top: 35px;
+		text-align: left;
+		width: 90%;
+	}
+	.departs_block ul li {text-align: center;}
 	.otdel__block h3 {text-align: left;}
 	.departs_block ul:last-child  {
 	   float:none;

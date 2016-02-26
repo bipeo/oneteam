@@ -109,8 +109,12 @@ $(document).ready(function(){
         
 	 $('.for_mask').mask('+7 (000) 000-00-00');
 	
-	$(window).on('resize', function(result) {
-//		window_resize();
+	$(window).on('load', function() {
+		setTimeout(function() {
+			var name_1 = $('#bx_slider_2').height();
+			
+			
+		}, 1000);
 	});
 	
 });
