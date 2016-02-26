@@ -3330,7 +3330,7 @@ footer {
 	padding-top: 17px;
 }
 
-.pb_0 {padding-bottom: 0;}
+.pb_0 {padding-bottom: 0!important;}
 
 .pb_2 {padding-bottom: 45px;}
 
@@ -3708,7 +3708,7 @@ footer {
 }
 
 .mt_1 {
-	margin-top: 54px;
+	margin-top: 54px!important;
 }
 
 .style_8 {
@@ -3981,6 +3981,10 @@ footer {
 
 .bg_8 {
 	background-image: url(img/bg_8.jpg);
+}
+
+.mt_2 {
+	margin-top: 30px !important;
 }
 
 /*========================== END cooperation ==========================*/
