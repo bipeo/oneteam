@@ -3852,6 +3852,9 @@ footer {
 	bottom: auto!important;
 	top: 68.5%;
 }
+ .bx_style .bx-wrapper .bx-pager {
+            display:none;
+   }
 
 .bg_5 {
 	background-image: url(img/bg_5.png);
@@ -4544,9 +4547,7 @@ footer {
 		width: 95%;
 	}
         
-        .bx_style .bx-wrapper .bx-pager {
-            display:none;
-        }
+       
 	
 	/*========================== END specialization page ==========================*/
 	.pl, .serive_item1 .title_under_2 {
