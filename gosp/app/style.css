@@ -3918,6 +3918,7 @@ footer {
 
 .nav_page {
 	background: #c0a35f;
+	margin: 0 0 65px 0;
 }
 
 .nav_page ul {
@@ -4404,6 +4405,10 @@ footer {
 	}
 	.special .style_4 {margin-left: 0;}
 	.ul_1 > li:first-child {left: -21px;}
+	.nav_page li {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 }
 
 @media only screen and (max-width: 970px) {
@@ -4613,9 +4618,7 @@ footer {
 		margin-right: 0;
 		width: 95%;
 	}
-        
-       
-	
+
 	/*========================== END specialization page ==========================*/
 	.pl, .serive_item1 .title_under_2 {
 		padding-left: 2%;
@@ -5235,6 +5238,9 @@ footer {
 	.block_8_2 .style_specialization .btn_1 {
 		padding: 0 20px;
 	}
+	.nav_page li {
+		width: 50%;
+	}
 
 	/*========================== END specialization page ==========================*/
 }
@@ -5360,7 +5366,10 @@ footer {
 }
 
 @media only screen and (max-width: 699px) {
-
+	.coop_ul li {
+		display: block;
+		width: 100%;
+	}
 	/*========================== внутренние ==========================*/
 
 	.page_about_us  .h2:after {
@@ -6057,5 +6066,9 @@ footer {
 	}
 	.ul_10 > li, .ul_10 > li:first-child {
 		padding-left: 15px;
+	}
+	.nav_page li {
+		float: none;
+		width: 100%;
 	}
 }
