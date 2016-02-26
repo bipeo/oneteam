@@ -625,11 +625,13 @@
 <script>
 $(function() {
 
-	$('#bx_slider_2 ul').bxSlider({
+	var bx_slider_2 = $('#bx_slider_2 ul').bxSlider({
 		controls: false,
 		mode: 'fade',
-			auto:true
+		auto:true,
 	});
+    
+    
 	
 	// accordeon
 	$('.program_answer').css({'display':'none'});

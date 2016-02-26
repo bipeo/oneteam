@@ -109,11 +109,11 @@ $(document).ready(function(){
         
 	 $('.for_mask').mask('+7 (000) 000-00-00');
 	
-	$(window).on('load', function() {
+	 $(window).on('load resize', function() {
 		setTimeout(function() {
-			var name_1 = $('#bx_slider_2').height();
-			
-			
+                        var top = - 45;
+			var name_1 = $('.bx_style  .bx-wrapper li:visible').find('img').outerHeight();
+                        $('.bx_style .bx-wrapper .bx-pager').show().css('top', name_1 + top + 'px')
 		}, 1000);
 	});
 	

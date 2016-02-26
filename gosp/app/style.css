@@ -4543,6 +4543,10 @@ footer {
 		margin-right: 0;
 		width: 95%;
 	}
+        
+        .bx_style .bx-wrapper .bx-pager {
+            display:none;
+        }
 	
 	/*========================== END specialization page ==========================*/
 	.pl, .serive_item1 .title_under_2 {
