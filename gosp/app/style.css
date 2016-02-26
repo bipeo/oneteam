@@ -5849,6 +5849,7 @@ footer {
 		text-align: left;
 		width: 90%;
 	}
+	.departs_block ul li {text-align: center;}
 	.otdel__block h3 {text-align: left;}
 	.departs_block ul:last-child  {
 	   float:none;
