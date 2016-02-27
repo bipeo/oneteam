@@ -5860,6 +5860,10 @@ footer {
 }
 
 @media only screen and (max-width: 475px) {
+        .nav_page li {
+            float: none;
+            width: 100%;
+        }
 	.slide_descript {top: 110px; }
 	.flexnav .advbox .tel {font-size: 35px; }
 	
