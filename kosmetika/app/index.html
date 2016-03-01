@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Заголовок</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<header class="header center clearfix">
+		<div class="left header_adr">
+			<span>г. Челябинск, ул. С. Кривой, 28</span>
+			<i>ближайший к вам магазин</i>
+		</div>
+		<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+		<div class="right_header right">
+			+7 (351) 744 44 44
+			<i>работаем с 9:00 до 22:00</i>
+		</div>
+	</header>
+	<ul class="ul_1">
+		<li class="block_1">
+			<h2>Интернет-магазин</h2>
+			<a href="#" class="btn">Перейти к магазину</a>
+		</li>
+		<li class="block_2">
+			<h2>Партнерская программа</h2>
+			<p>Для частных мастеров и салонов красоты</p>
+			<a href="#" class="btn">Перейти к предложению</a>
+		</li>
+		<li class="block_3">
+			<h2>Учебный центр</h2>
+			<a href="#" class="btn">Перейти к предложению</a>
+		</li>
+	</ul>
+	<div class="shop_addr">Адреса магазинов</div>
+	<div class="map"></div>
+</div><!-- END wrapper -->
+<script src="js/common.js"></script>
+<script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$.pixlayout({clip: true, src: "maket_1.jpg", show:true, center:true, top:0, left:0, pervious: false});
+}); 
+</script>
+</body>
+</html>
