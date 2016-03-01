@@ -2688,6 +2688,16 @@ footer {
 	margin: 20px 0 90px 10px;
 }
 
+.doctors_content p {
+	line-height: 1.6;
+	margin: 35px 0 8px 21px;
+}
+
+.doctors_content p a {
+	color: #e1d3b8;
+	text-decoration: underline;
+}
+
 .doctors_content .title_under_2 {
 	margin: 58px 0 0 0;
 }
@@ -2907,6 +2917,27 @@ footer {
 
 .cardio_ul > li > ul > li {
 	position: relative;
+}
+
+.cardio_ul > li > ul > li > ul {
+	margin-bottom: 30px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.cardio_ul > li > ul > li > ul > li {
+	position: relative;
+}
+
+.cardio_ul > li > ul > li > ul > li:before {
+	background: #c0a35f;
+	border-radius: 50%;
+	content: "";
+	height: 7px;
+	left: -15px;
+	position: absolute;
+	top: 10px;
+	width: 7px;
 }
 
 .cardio_ul > li > ul > li:before {
