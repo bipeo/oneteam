@@ -267,3 +267,40 @@ body {
 .map {
 	min-height: 316px;
 }
+
+.ul_2 > li {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.label {
+	background: url(img/ico_2.png) no-repeat left center;
+	display: block;
+	font-size: 14px;
+	padding: 0 0 0 20px;
+}
+
+/*========================== selecter ==========================*/
+
+.selecter {
+	max-width: 193px;
+	width: 193px;
+}
+
+.open .selecter-selected {
+	background: #edf1f2!important;
+}
+
+.selecter-selected {
+	border-color: #d7d6d6;
+	border-radius: 18px;
+	color: #000000;
+}
+
+.selecter-selected:after { /* стрелочка */
+	background: url(img/arrow_select.png) no-repeat;
+	border: none;
+	height: 10px;
+	width: 9px;
+}
+/*========================== END selecter ==========================*/
