@@ -444,10 +444,25 @@ body {
 
 .footer_2 {
 	background-color: #201b1a;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px;
 	padding: 35px 0;
+}
+
+.footer_2 a {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: underline;
 }
 
 .footer_2 .center {
 	overflow: hidden;
+}
+
+.footer_2 p {
+	line-height: 1.2;
+}
+
+.footer_logo {
+	margin-right: 20px;
 }
 
