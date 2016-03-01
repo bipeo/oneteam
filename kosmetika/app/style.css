@@ -415,10 +415,39 @@ body {
 }
 
 .footer_block_1 {
+	padding: 3px 20px 0 0;
 	width: 320px;
 }
 
 .footer_phone {
-	background: url(img/phone_ico.png) no-repeat left top;
+	background: url(img/phone_ico.png) no-repeat left 7px;
+	padding: 3px 0 0 20px;
+	width: 150px;
+}
+
+.full_red {
+	background-color: #e8342c;
+	-moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+	display: block;
+	font-family: 'latoheavy';
+	height: 34px;
+	line-height: 34px;
+	padding: 0 17px;
+}
+
+.footer_block_2 {
+	margin: 0 0 0 20px;
+	width: 130px;
+}
+
+.footer_2 {
+	background-color: #201b1a;
+	padding: 35px 0;
+}
+
+.footer_2 .center {
+	overflow: hidden;
 }
 
