@@ -551,6 +551,7 @@ body {
 .block_6 {
 	background: url(img/girl.png) no-repeat left top;
 	overflow: hidden;
+	padding-bottom: 97px;
 }
 
 .wrap_content {
@@ -586,6 +587,31 @@ body {
 	background: #ffffff;
 	color: #000000;
 	font-size: 15px;
+}
+
+.accordeon_title {
+	background: url(img/tick-green.png) no-repeat 27px center, url(img/arrow_down.png) no-repeat right 23px center;
+	border: 1px solid #d7d6d6;
+	-moz-border-radius: 23px / 24px;
+	-webkit-border-radius: 23px / 24px;
+	border-radius: 23px / 24px;
+	cursor: pointer;
+	font-family: 'open_sansregular';
+	font-size: 16px;
+	line-height: 1.2;
+	margin: 0 0 -1px 0;
+	padding: 13px 45px 13px 64px;
+}
+
+.wrap_accord {
+	font-family: 'open_sansregular';
+	margin: 55px 0 0 0;
+}
+
+.accorderon_answer {
+	font-size: 15px;
+	line-height: 1.2;
+	padding: 5px 15px;
 }
 /*========================== footer ==========================*/
 
