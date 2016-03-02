@@ -33,7 +33,7 @@
 	<div class="part_progr">
 		<h1>Партнерская программа</h1>
 		<p class="partner_descript">Партнерская программа «Косметик’PRO» будет полезна вам, если вы частный мастер и хотите получать продукцию по специальным ценам. Если вы собираетесь открыть салон и вам нужно всё для его оснащения. Если у вас есть салон красоты, и вы хотите приобретать продукцию у надежного партнёра.</p>
-		<a href="#" class="orange_btn">Оставить заявку</a>
+		<a href="#" class="orange_btn show_popup">Оставить заявку</a>
 	</div><!-- END part_progr -->
  	<!-- block_4 -->
 	<div class="block_4 center">
@@ -134,13 +134,45 @@
 		</div>
 	</footer>
 </div><!-- END wrapper -->
-<!-- END selecter -->
+<div class="overlay"></div>
+<div class="popup">
+	<span class="close_popup"></span>
+	<h3>Оставить заявку</h3>
+	<p>Ваше имя: <span>*</span></p>
+	<input type="text">
+	<p>Телефон: <span>*</span></p>
+	<input type="text">
+	<input class="orange_btn" type="submit" value="Оставить заявку">
+	<span class="span_1"><img src="img/popup_ico.png" alt=""> – обязательный поля</span>
+</div>
 <script src="js/common.js"></script>
-<script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
-<script type="text/javascript">
-	$(function(){
-//		$.pixlayout({clip: true, src: "maket_1.jpg", show:true, center:true, top:0, left:0, pervious: false});
-}); 
+<script>
+	// popup
+    $('.show_popup').click(function(e) {
+         e.preventDefault();
+        $('.overlay, .popup').fadeIn(150);
+        $('.popup').center();
+	});
+
+	$('.close_popup').click(function() {
+		$('.overlay, .popup').fadeOut(150);
+	});
+
+$(document).keydown(function(e) {
+    // ESCAPE key pressed
+    if (e.keyCode == 27) {
+        $(".popup, .overlay").fadeOut(500);
+    }
+});
+
+jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+                                                $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+    return this;
+}
 </script>
 </body>
 </html>
