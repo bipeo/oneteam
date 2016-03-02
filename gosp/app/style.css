@@ -2688,12 +2688,12 @@ footer {
 	margin: 20px 0 90px 10px;
 }
 
-.doctors_content p {
+.doctors_content p, .center_2.special p, .blue_bg p, .center_2.block_7 p, .center_3.style_7 p, .service_item_mar3, .serive_item1 p, .center_3 p {
 	line-height: 1.6;
 	margin: 35px 0 8px 21px;
 }
 
-.doctors_content p a {
+.doctors_content p a, .center_2.special p a {
 	color: #e1d3b8;
 	text-decoration: underline;
 }
@@ -4432,7 +4432,10 @@ footer {
 		padding-left: 2%;
 		padding-right: 1%;
 	}
-	.style_4, .blue_bg .h3::after {
+	.doctors_content p, .center_2.special p, .blue_bg p, .center_2.block_7 p, .center_3.style_7 p, .service_item_mar3, .serive_item1 p, .center_3 p  {
+		margin-left: 2%;		
+	}
+	.blue_bg .h3::after {
 		margin-left: 2%;
 	}
 	.blue_bg .title_under_2, .blue_bg .h3, .pt_1 .title_under_2, .style_7 .title_under_2, .block_7 .title_under_2, .program_white__content .title_under_2 {
