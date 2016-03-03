@@ -178,4 +178,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'pf_beausans_proregular';
+    src: url('PFBeauSansPro-Regular/pfbeausanspro-regular-webfont.eot');
+    src: url('PFBeauSansPro-Regular/pfbeausanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PFBeauSansPro-Regular/pfbeausanspro-regular-webfont.woff2') format('woff2'),
+         url('PFBeauSansPro-Regular/pfbeausanspro-regular-webfont.woff') format('woff'),
+         url('PFBeauSansPro-Regular/pfbeausanspro-regular-webfont.ttf') format('truetype'),
+         url('PFBeauSansPro-Regular/pfbeausanspro-regular-webfont.svg#pf_beausans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
