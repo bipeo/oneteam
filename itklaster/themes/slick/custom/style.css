@@ -1,0 +1,71 @@
+.wrap_slider .slick-slider {
+    margin-bottom: 0;
+}
+.wrap_slider .slick-slider .tit {
+    letter-spacing: 0.03em;
+    color:#fff;
+    font-size:35px;
+    position:absolute;
+    width:365px;
+    right:45px;
+    top:192px;
+}
+.wrap_slider .slick-slider .tit em {
+    font-family: 'PFDinTextCondProMedium';
+    font-style: normal;
+}
+
+.slick-next, .slick-next:hover, .slick-prev, .slick-prev:hover {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    width: 20%;
+    height: 433px;
+    z-index: 2;
+}
+
+.slick-prev {
+    left:0px;
+}
+.slick-next {
+    right:0px;
+}
+.slick-prev,
+.slick-next
+{
+    top: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+.slick-dots {
+    bottom: -22px;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-dots li.slick-active button {
+    border-color: #d9e007;
+}
+/*slick fix end :after */
+
+
+.slick-prev:before, .slick-next:before {
+    display:none; /*!imporrrrrtant***********/
+    cursor: pointer;
+    content: "";
+    height: 32px;
+    margin-top: -16px;
+    position: absolute;
+    text-indent: 9999px;
+    width: 18px;
+    z-index: 999;
+
+}
+.slick-next:before {
+    background-position:-18px 0px;
+}
+
+.slick-slide {
+    position: relative;
+}
