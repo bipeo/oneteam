@@ -442,12 +442,36 @@ html, body {
 	color: #008ab7;
 	display: block;
 	font-size: 25px;
-	margin: 60px 0 0 0;
+	margin: 60px 0 47px 0;
 	text-align: center;
 }
 
 .footer {
-	background: url("../img/block_3_gray_bg.jpg") repeat;
+	background: url(../img/girl_bg.png) no-repeat right 21% bottom,  url("../img/block_3_gray_bg.jpg") repeat;
+	border-bottom: 320px solid #215f8f;
+	padding: 114px 0;
+}
+
+.footer .p_3 {
+	color: #0075ac;
+	font-size: 24px;
+	line-height: 1.1;
+	margin: 0 0 48px 132px;
+	text-align: center;
+	width: 560px;
+}
+
+.footer .lonk_5 {
+	background: #008ab7 url(../img/footer_ico_1.png) no-repeat 16px center;
+	color: #ffffff;
+	display: inline-block;
+	font-family: 'PFDinTextCompProRegular';
+	font-size: 28px;
+	height: 69px;
+	line-height: 69px;
+	margin: 0 0 0 188px;
+	padding: 0 11px 0 65px;
+	text-decoration: none;
 }
 
 
