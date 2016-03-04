@@ -185,6 +185,11 @@ html, body {
 	background: #a6451a;
 }
 
+.block_2 {
+	margin-bottom: 56px;
+	overflow: hidden;
+}
+
 .block_2 .ul_1 {
 	list-style-type: none;
 	margin: 0 0 49px 3px;
@@ -314,11 +319,11 @@ html, body {
 	margin: 0 0 9px 0;
 }
 
-.block_news > div {
-	margin: 0 0 30px 0;
+.block_news > .block_news_item {
+	margin: 0 0 31px 0;
 }
 
-.block_news > div a {
+.block_news > .block_news_item a {
 	color: #000000;
 	display: block;
 	line-height: 1.45;
@@ -331,7 +336,142 @@ html, body {
 }
 
 .block_3_gray {
-	background: url(../img/block_1_bg.jpg) repeat;
+	background: url(../img/block_3_gray_bg.jpg) repeat;
+	clear: both;
+	overflow: hidden;
+	padding: 31px 0 0 0;
+}
+
+.block_3_gray .block_3_youtube {
+	width: 498px;
+}
+
+.block_3_gray .block_3_right {
+	background: url(../img/building_bg.png) no-repeat right bottom;
+	padding: 0 0 84px 0;
+	width: 755px;
+}
+
+.block_3_gray .block_3_right .p_1 {
+	color: #0075ac;
+	font-size: 24px;
+	line-height: 1.1;
+	margin: 6px 0 47px 0;
+	text-align: center;
+}
+
+.block_3_gray .block_3_right .ul_3 {
+	margin: 0 0 0 29px;
+}
+
+.block_3_gray .block_3_right .ul_3 > li {
+	display: table-cell;
+	font-family: 'PFDinTextCondProRegular';
+	font-size: 21px;
+	line-height: 1.2;
+	padding: 0 46px 0 0;
+	text-align: center;
+	vertical-align: top;
+	width: 95px;
+}
+
+
+.block_3_gray .block_3_right .ul_3 > li span {
+	color: #015f8c;
+	display: block;
+	font-size: 73px;
+	line-height: 1;
+}
+
+.block_3_gray .block_3_right .p_2 {
+	font-size: 21px;
+	line-height: 1.3;
+	margin: 25px 0 0 0;
+	width: 165px;
+}
+
+.block_3_gray .block_3_right .p_2 a {
+	color: #0075ac;
+}
+
+.menu_2 {
+	background: url(../img/menu_2_bg.jpg) repeat;
+	margin: 0 0 62px 0;
+}
+
+.menu_2 ul {
+	list-style-type: none;
+	margin: 0 0 0 262px;
+	overflow: hidden;
+}
+
+.menu_2 ul li {
+	float: left;
+	height: 66px;
+	line-height: 66px;
+}
+
+.menu_2 ul li + li {
+	margin-left: 44px;
+}
+
+.menu_2 ul li a {
+	color: #008ab7;
+	display: block;
+	font-size: 20px;
+	text-decoration: undeline;
+}
+
+.ul_4 {
+	margin: 0 0 38px 26px;
+}
+
+.ul_4 > li {
+	display: inline-block;
+	*zoom: 1;
+	overflow: hidden;
+	*display: inline;
+	vertical-align: middle;
+}
+
+.ul_4 > li + li {
+	margin-left: 121px;
+}
+
+.link_4 {
+	color: #008ab7;
+	display: block;
+	font-size: 25px;
+	margin: 60px 0 47px 0;
+	text-align: center;
+}
+
+.footer {
+	background: url(../img/girl_bg.png) no-repeat right 21% bottom,  url("../img/block_3_gray_bg.jpg") repeat;
+	border-bottom: 320px solid #215f8f;
+	padding: 114px 0;
+}
+
+.footer .p_3 {
+	color: #0075ac;
+	font-size: 24px;
+	line-height: 1.1;
+	margin: 0 0 48px 132px;
+	text-align: center;
+	width: 560px;
+}
+
+.footer .lonk_5 {
+	background: #008ab7 url(../img/footer_ico_1.png) no-repeat 16px center;
+	color: #ffffff;
+	display: inline-block;
+	font-family: 'PFDinTextCompProRegular';
+	font-size: 28px;
+	height: 69px;
+	line-height: 69px;
+	margin: 0 0 0 188px;
+	padding: 0 11px 0 65px;
+	text-decoration: none;
 }
 
 
