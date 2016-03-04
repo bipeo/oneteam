@@ -235,6 +235,11 @@ h4 {
 	color: #e8342c;
 }
 
+.red_btn:hover {
+	background: #fc5d0d;
+	color: #fff;
+}
+
 /*========================== END ==========================*/
 
 body {
@@ -305,6 +310,11 @@ body {
 
 .block_1 {
 	background: url(img/shading.png) no-repeat;
+}
+
+.ul_1 .btn:hover {
+	background: #fff;
+	color: #000;
 }
 
 .ul_1 > li h2 {
@@ -687,6 +697,10 @@ body {
 	height: 34px;
 	line-height: 34px;
 	padding: 0 17px;
+}
+
+.full_red:hover {
+	background: #ce2d26;
 }
 
 .footer_block_2 {
