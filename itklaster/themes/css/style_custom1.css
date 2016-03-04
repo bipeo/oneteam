@@ -83,7 +83,7 @@ html, body {
 .header_ul .logo_kamsk {
 	background: url(../img/kamsk_logo.png) no-repeat left top;
 	margin: 0 110px 0 0;
-	padding: 9px 0 0 65px;
+	padding: 8px 0 0 65px;
 	width: 260px;
 }
 
@@ -92,6 +92,8 @@ html, body {
 }
 
 .header_ul .logo_kamsk .logo_kamsk_txt {
+	font-family: Arial;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 
@@ -107,7 +109,6 @@ html, body {
 .header_ul .header_data .header_phone {
 	font-size: 27.88px;
 }
-
 .header_ul .header_data a {
 	color: #008ab7;
 	display: block;
@@ -343,11 +344,12 @@ html, body {
 }
 
 .block_3_gray .block_3_youtube {
+	margin: 0 0 0 10px;
 	width: 498px;
 }
 
 .block_3_gray .block_3_right {
-	background: url(../img/building_bg.png) no-repeat right bottom;
+	background: url(../img/building_bg.jpg) no-repeat right bottom;
 	padding: 0 0 84px 0;
 	width: 755px;
 }
@@ -392,6 +394,41 @@ html, body {
 
 .block_3_gray .block_3_right .p_2 a {
 	color: #0075ac;
+}
+
+.graybox {
+	margin: 21px 8px 0;
+	width: 768px;
+}
+
+.slick-prev, .slick-next {
+	background: url(../img/slider_arrow.png) no-repeat;
+	height: 37px;
+	top: 38px;
+	width: 36px;	
+	z-index: 20;
+}
+
+.slick-prev {
+	background-position: 0 0;
+	left: 478px;
+}
+
+.slick-next {
+	background-position: -36px 0;
+	right: 218px;
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+	background: url(../img/slider_arrow.png) no-repeat;
+}
+
+.slick-next:hover, .slick-next:focus {
+	background-position: -36px 0;
+}
+
+.slick-prev::before, .slick-next::before {
+	display: none;
 }
 
 .menu_2 {
@@ -447,7 +484,7 @@ html, body {
 }
 
 .footer {
-	background: url(../img/girl_bg.png) no-repeat right 21% bottom,  url("../img/block_3_gray_bg.jpg") repeat;
+	background: url(../img/girl_bg.jpg) no-repeat right 21% bottom,  url("../img/block_3_gray_bg.jpg") repeat;
 	border-bottom: 320px solid #215f8f;
 	padding: 114px 0;
 }
