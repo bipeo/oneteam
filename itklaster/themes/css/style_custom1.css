@@ -185,6 +185,11 @@ html, body {
 	background: #a6451a;
 }
 
+.block_2 {
+	margin-bottom: 56px;
+	overflow: hidden;
+}
+
 .block_2 .ul_1 {
 	list-style-type: none;
 	margin: 0 0 49px 3px;
@@ -314,11 +319,11 @@ html, body {
 	margin: 0 0 9px 0;
 }
 
-.block_news > div {
-	margin: 0 0 30px 0;
+.block_news > .block_news_item {
+	margin: 0 0 31px 0;
 }
 
-.block_news > div a {
+.block_news > .block_news_item a {
 	color: #000000;
 	display: block;
 	line-height: 1.45;
@@ -331,9 +336,45 @@ html, body {
 }
 
 .block_3_gray {
-	background: url(../img/block_1_bg.jpg) repeat;
+	background: url(../img/block_3_gray_bg.jpg) repeat;
+	clear: both;
+	overflow: hidden;
+	padding: 31px 0 0 0;
 }
 
+.block_3_gray .block_3_youtube {
+	width: 498px;
+}
+
+.block_3_gray .block_3_right {
+	background: url(../img/building_bg.png) no-repeat right bottom;
+	width: 755px;
+}
+
+.block_3_gray .block_3_right .p_1 {
+	color: #0075ac;
+	font-size: 24px;
+	line-height: 1.1;
+	margin: 6px 0 41px 0;
+	text-align: center;
+}
+
+.block_3_gray .block_3_right .ul_3 > li {
+	display: table-cell;
+	font-family: 'PFDinTextCondProRegular';
+	font-size: 21px;
+	line-height: 1.2;
+	padding: 0;
+	text-align: center;
+	vertical-align: top;
+	width: 95px;
+}
+
+.block_3_gray .block_3_right .ul_3 > li span {
+	color: #015f8c;
+	display: block;
+	font-size: 73px;
+}
 
 
 
