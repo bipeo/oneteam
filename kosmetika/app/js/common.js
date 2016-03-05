@@ -8,4 +8,7 @@ $(document).ready(function(){
 		$(this).next('.accorderon_answer').slideToggle(500);
 		$(this).toggleClass('open');
 	});
+        
+        $('.for_mask').mask('+7 (000) 000-00-00');
+
 });
