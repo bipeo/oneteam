@@ -117,11 +117,7 @@ $(document).ready(function(){
 		}, 0);
 	});
         
-       var maxHeight = 0;
-        $('.flexnav > li > ul').each(function(){
-           maxHeight = $(this).height() > maxHeight ? $(this).height() : maxHeight;
-        });
-        $('.flexnav > li > ul').css('height',maxHeight + 'px');
+   
 	
 });
 

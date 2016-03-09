@@ -90,8 +90,25 @@ $(window).bind('orientationchange', function() {
                
 
           }
+          
+          
+          /*set height (optional)*/
+          var mh = $(".flexnav > li >  ul");
+          var dh = $(window).outerHeight();
+           mh.each(function(b, a) {
+               
+               var ah = $(a).height() ;
+               if (dh > ah) {
+                     $(a).height(ah + 25 + 'px');
+               } else {
+                     $(a).height(dh + 25 + 'px');
+               }
+            }); 
+        /*set height end */ 
+          
 
       }
+        
          
 }
 

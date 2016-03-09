@@ -380,6 +380,8 @@ h4{font-size: 18px;}
 }
 
 .flexnav > li > ul {
+        overflow-x:hidden;
+        overflow-y:auto;
 	left: -120px;
 	width: auto;
 }
