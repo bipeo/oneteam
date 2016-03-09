@@ -1630,10 +1630,12 @@ footer {
 /*fancygal */
 .photo-fancy .fancybox-next span, .photo-fancy .fancybox-prev span {
     visibility:visible;
+    display:block;
     width:8px;
     height:14px;
     background-image:url(img/fancy_arrows_1.png);
     background-repeat: no-repeat;
+    background-size:auto;
 }
 .photo-fancy  .fancybox-nav span {
     margin-top:-7px;
@@ -1682,7 +1684,8 @@ footer {
     background-color:#fff;
     background-position:center;
     background-repeat:no-repeat;
-
+    background-size:auto;
+    display:block;
 }
 .photo-fancy .fancybox-close:hover {
     background-color:rgba(192,168,95,1);
