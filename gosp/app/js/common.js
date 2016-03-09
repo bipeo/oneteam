@@ -116,6 +116,12 @@ $(document).ready(function(){
                         $('.bx_style .bx-wrapper .bx-pager').show().css('top', name_1 + top + 'px')
 		}, 0);
 	});
+        
+       var maxHeight = 0;
+        $('.flexnav > li > ul').each(function(){
+           maxHeight = $(this).height() > maxHeight ? $(this).height() : maxHeight;
+        });
+        $('.flexnav > li > ul').css('height',maxHeight + 'px');
 	
 });
 
