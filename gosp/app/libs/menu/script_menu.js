@@ -96,17 +96,18 @@ $(window).bind('orientationchange', function() {
           var mh = $(".flexnav > li >  ul");
          
            mh.each(function(b, a) {
+               var distance = 40;
                var dh = $(window).outerHeight();      
                var ah = $(a).height() ;
                if (dh > ah) {
-                  $(a).height(ah + 'px');
+                  $(a).height(ah  + 'px');
                } else {
-                     $(a).height(dh + 'px');
+                     $(a).height(dh - distance  + 'px');
                }
             }); 
         /*set height end */ 
           
-            console.log(3)
+           
       }
         
          

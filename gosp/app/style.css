@@ -5094,9 +5094,13 @@ footer {
 	.flexnav-show.flexnav li > ul.show_with {left: 0;}
 	.flexnav li > ul div ul:first-child {padding-top: 34px;}
 	.flexnav li > ul div ul {
+             
 		width: 100%;
                 display:block !important;
 	}
+        .flexnav > li >  ul {
+               height:auto !important;
+        }
         .flexnav li > ul div ul {
             margin-bottom:25px;
         }
@@ -5167,6 +5171,7 @@ footer {
 		top: 35px;
 		right: 2%;
 	}
+        
 	.bg_header .menu-button {
 		top: 6px;
 	}
