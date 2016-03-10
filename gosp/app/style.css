@@ -667,6 +667,7 @@ h4{font-size: 18px;}
 
 .h2 {
 	display: block;
+	font-size: 42px;
 	margin: 0 0 90px 0;
 	position: relative;
 }
@@ -2721,6 +2722,7 @@ footer {
 }
 
 .doctors_content .title_under_2 {
+	font-size: 28px;
 	margin: 58px 0 0 0;
 }
 
@@ -3094,12 +3096,12 @@ footer {
     }
 
     .special .workers_block {
-            border-bottom: none;
-            margin-bottom: 0;
+		border-bottom: none;
+		margin-bottom: 0;
     }
 
     .contacts_bg {
-    background-image: url(img/contacts_bg.png);
+    	background-image: url(img/contacts_bg.png);
     }
     .contacts_bg .center_2 {
      margin-bottom: 0px; 
@@ -3108,11 +3110,15 @@ footer {
     }
     
     .contpane .contbox .h2 {
-        margin-bottom:23px;
+        font-size: 42px;
+		margin-bottom:23px;
     }
     
-    .contpane  .phonebox h3 {
-         margin:0px 10px 36px 10px;
+    .contpane  .phonebox .phonebox__title {
+        display: block;
+		font-size: 28px;
+		margin:0px 10px 36px 10px;
+		text-transform: uppercase;
     }
     .contpane .contbox {
         width:45%;
@@ -3549,6 +3555,8 @@ footer {
 	text-align: center;
 }
 
+.specialization__block h1 {font-size: 42px;}
+
 .menu {
 	background: #c0a35f;
 	font-size: 18px;
@@ -3584,6 +3592,8 @@ footer {
 	width: 640px;
 }
 
+.block_8_1 .title_under_2, #sotr, #mezd, #work_company {font-size: 28px;}
+
 .block_8_2 {
 	line-height: 1.5;
 	margin: 10px 0 0 0;
@@ -3603,6 +3613,7 @@ footer {
 }
 
 .specialization__title.title_7 {
+	display: block;
 	margin-bottom: 20px;
 }
 
