@@ -2548,6 +2548,8 @@ footer {
 .news_content_title {
 	font-family: 'robotobold';	
 	font-size: 21px;
+	margin: 0 5px 45px 31px;
+	text-transform: none;
 }
 
 .news_content .news_btn {
