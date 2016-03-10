@@ -90,12 +90,6 @@ $(document).ready(function(){
 		$('.overlay, .popup').fadeOut(150);
 	});
 	
-	// popup 
-    $('.details').click(function(e) {
-         e.preventDefault();
-        $('.overlay, .popup_otdel_item').fadeIn(150);
-        $('.popup_otdel_item').center();
-	});
 	
 	
         

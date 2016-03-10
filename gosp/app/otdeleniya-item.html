@@ -16,6 +16,8 @@
 	<!-- bxslider -->
 	<link rel="stylesheet" href="libs/jquery.bxslider/jquery.bxslider.css">
 	<link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="libs/fancyBox-master/source/jquery.fancybox.css" type="text/css" media="screen" />
+
 </head>
 <body class="">
 <!-- wrapper -->
@@ -159,7 +161,7 @@
 				</ul>
 			</header><!-- END center_1 --></div>
 		<div class="center_2 place_descript">
-			<h2 class="h2 ginekolog_title">Отделение <br> Гинекологии</h2>
+			<h1 class="h2 ginekolog_title">Отделение <br> Гинекологии</h1>
 			<!-- wrap_foto_doctors -->
 			<div class="wrap_foto_doctors ginekolog_photo">
 				<div class="wrap_ginekolog_photo">
@@ -292,7 +294,7 @@
 			</div><!-- END div -->
 			<!-- div -->
 			<div>
-				<img class="details" src="img/demo_otdel.jpg" alt="">
+                            <a href="#labotdel" class="fancotdel"><img class="details" src="img/demo_otdel.jpg" alt=""></a>
 				<h4 class="title_8">Лаборатории и операционный блок </h4>
 				<p>Аппарат для хирургической амбулаторной практики всемирно известной немецкой компании «ERBE Elektromedizin», крупнейшего производителя медицинской техники. Используется при проведении операций в различных областях медицины, включая гинекологию.</p>
 				<a href="#" class="btn_3 details">подробнее</a>
@@ -577,7 +579,7 @@
 		<input type="submit" value="найти">
 	</form>
 </div>
-<div class="popup popup_otdel_item">
+<div class="fancydiv popup_otdel_item" id="labotdel">
 	<span class="close_popup"></span>
 	<div>
 		<h2>Лаборатории и операционный блок</h2>
@@ -595,6 +597,24 @@
 <script src="libs/jquery.matchHeight-min.js"></script>
 <!-- bxslider -->
 <script src="libs/jquery.bxslider/dist/jquery.bxslider.min.js"></script>
+   <script src="libs/fancyBox-master/source/jquery.fancybox.js" ></script>
+   
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+      $(".fancotdel").fancybox({
+        wrapCSS : 'photo-fancy',
+        padding: 0,
+        maxWidth: 821,
+        helpers : {
+            overlay: {
+             css: {'background': 'rgba(0,46,92, 0.9)'} 
+            }
+        } 
+
+    });
+    });
+    </script>
 <script src="js/common.js"></script>
 <script>
 $('#bx_slider_2 ul').bxSlider({
