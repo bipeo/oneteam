@@ -1627,10 +1627,12 @@ footer {
 /*fancygal */
 .photo-fancy .fancybox-next span, .photo-fancy .fancybox-prev span {
     visibility:visible;
+    display:block;
     width:8px;
     height:14px;
     background-image:url(img/fancy_arrows_1.png);
     background-repeat: no-repeat;
+    background-size:auto;
 }
 .photo-fancy  .fancybox-nav span {
     margin-top:-7px;
@@ -1679,7 +1681,8 @@ footer {
     background-color:#fff;
     background-position:center;
     background-repeat:no-repeat;
-
+    background-size:auto;
+    display:block;
 }
 .photo-fancy .fancybox-close:hover {
     background-color:rgba(192,168,95,1);
@@ -5088,9 +5091,13 @@ footer {
 	.flexnav-show.flexnav li > ul.show_with {left: 0;}
 	.flexnav li > ul div ul:first-child {padding-top: 34px;}
 	.flexnav li > ul div ul {
+             
 		width: 100%;
                 display:block !important;
 	}
+        .flexnav > li >  ul {
+               height:auto !important;
+        }
         .flexnav li > ul div ul {
             margin-bottom:25px;
         }
@@ -5161,6 +5168,7 @@ footer {
 		top: 35px;
 		right: 2%;
 	}
+        
 	.bg_header .menu-button {
 		top: 6px;
 	}
