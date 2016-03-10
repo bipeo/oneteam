@@ -1796,7 +1796,12 @@ footer {
 	margin: 0 0 57px 0;
 	text-align: center;
 }
-
+.title_3.head3 {
+    display:block;
+    font-size:28px;
+    font-family: RobotoRegular;
+    text-transform: uppercase;
+}
 .page_programs .top_slwrap {
 	margin-bottom: 76px;
 }
