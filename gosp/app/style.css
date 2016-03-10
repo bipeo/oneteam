@@ -2925,6 +2925,8 @@ footer {
 	position: relative;
 }
 
+#bx_slider_2 p {margin: 0;}
+
 #bx_slider_2 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
 	bottom: 6px;
 }
