@@ -790,6 +790,7 @@ h4{font-size: 18px;}
 
 .h3 {
 	color: #fff;
+	display: block;
 	margin: 2px 0 68px 10px;
 	position: relative;
 }
@@ -860,7 +861,7 @@ h4{font-size: 18px;}
 	color: #fff;
 }
 
- .ul_4  a.attn h4, .ul_4  a.hover h4 {
+.ul_4  a.attn .h4, .ul_4  a.hover .h4 {
 	color: #fff;
 }
 
@@ -918,6 +919,9 @@ h4{font-size: 18px;}
 
 .block_5 .h3_style {
 	color: #002e5c;
+	display: block;
+	font-size: 28px;
+	text-transform: uppercase;
 }
 
 .descript_4 {
@@ -1351,9 +1355,12 @@ footer {
 }
 
 .mis .h3 {
+	font-family: RobotoRegular;
+	font-size: 28px;
 	line-height: 1;
 	margin-bottom: 60px;
 	margin-top: 0;
+	text-transform: uppercase;
 }
 
 .mis .h3:after {
@@ -1366,7 +1373,9 @@ footer {
 
 .fakt .h3 {
 	color: #002e5c;
+	font-size: 28px;
 	margin: 0 0 77px 8px;
+	text-transform: uppercase;
 }
 
 .fakt .h3:after {
@@ -1477,7 +1486,9 @@ footer {
 
 .plus .h3 {
 	color: #002e5c;
+	font-size: 28px;
 	margin: 0 0 28px 8px;
+	text-transform: uppercase;
 }
 
 .plus .h3:after {
@@ -1531,10 +1542,14 @@ footer {
 	padding-bottom: 56px;
 }
 
-.list_plus h3 {
+.list_plus .list_plus__title {
 	color: #002e5c;
+	display: block;
 	font-family: 'robotobold';
+	font-size: 28px;
+	line-height: 1.2;
 	margin: 0 0 9px 0;
+	text-transform: uppercase;
 }
 
 .history {
@@ -1557,12 +1572,14 @@ footer {
 
 .history .h3 {
 	color: #002e5c;
+	font-size: 28px;
 	margin-top: -5px;
+	text-transform: uppercase;
 }
 
 .history .h3:after {
+	background:#c0a35f;
 	top: 55px;
-        background:#c0a35f;
 }
 
 .descript_history {
@@ -1577,7 +1594,9 @@ footer {
 }
 
 .page_about_us .block_4 .h3 {
+	font-size: 28px;
 	margin-bottom: 27px;
+	text-transform: uppercase;
 }
 .page_about_us .block_4 .descript_3 {
     display:none;
@@ -1587,7 +1606,8 @@ footer {
 }
 
 .page_about_us .block_4 .h4 {
-	/*font-family: 'robotobold'; */
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 .page_about_us .block_4 {
