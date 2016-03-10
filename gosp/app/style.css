@@ -493,7 +493,7 @@ h4{font-size: 18px;}
 	.flexnav > li .hpad2 > .item-with-ul {
 		background-position: 164px 0,482px 0;
 	}
-	.flexnav li > ul div ul li {
+	.flexnav li > ul div ul:last-child li {
 		padding-right: 3px;
 	}
 }
