@@ -475,6 +475,9 @@ h4{font-size: 18px;}
 	.flexnav > li .hpad2 > .item-with-ul {
 		background-position: 198px 0, 596px 0;
 	}
+        .flexnav li > ul div ul:last-child li {
+		padding-right: 3px;
+	}
 }
 
 @media only screen and (max-width: 880px ) {
@@ -493,9 +496,7 @@ h4{font-size: 18px;}
 	.flexnav > li .hpad2 > .item-with-ul {
 		background-position: 164px 0,482px 0;
 	}
-	.flexnav li > ul div ul:last-child li {
-		padding-right: 3px;
-	}
+	
 }
 
 @media only screen and (max-width: 550px )  {
@@ -1751,8 +1752,10 @@ footer {
         color: #fff;
         margin-bottom: 54px;
 	margin-left: 8px;
+        
 }
 .place_descript .h2 {
+        text-transform: uppercase;
         color: #fff;
         margin-bottom: 45px;
 	margin-left: 8px;
