@@ -1620,9 +1620,10 @@ footer {
 	top: 55px;
 }
 
-.page_about_us .block_4 .h4 {
+ .block_4 .ul_4  .h4 {
 	font-size: 18px;
 	text-transform: uppercase;
+        font-family: 'robotobold';
 }
 
 .page_about_us .block_4 {
