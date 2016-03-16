@@ -1148,7 +1148,9 @@ footer {
 }
 
 .popup.visit .h2 {
+	font-size: 32px;
 	line-height: 1.2;
+	text-transform: uppercase;
 }
 
 .popup.visit .h2 span, .enter .h2 span {
@@ -1159,6 +1161,22 @@ footer {
 
 .popup.visit .h2:before, .popup.enter h2:before {
 	top: 95px;
+}
+
+.popup.visit .h2:before {display: none;}
+
+.popup.visit .h2:after {
+	background: #c0a35f;
+	content: "";
+	display: block;
+	height: 5px;
+	margin: 20px 0 0 0;
+	position: static;
+	width: 160px;
+}
+
+.popup.visit .h2 {
+	margin-bottom: 40px;
 }
 
 .visit label, .enter label, .popup .input_search {
