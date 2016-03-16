@@ -1,7 +1,8 @@
 $(document).ready(function () {   
 	
 	// menu
-    $('#menu ul li').hover(
+	$('.menu ul li ul').css('display', 'none');  
+    $('.menu ul li').hover(
         function () {
             $('ul:first', this).slideDown(150);  
         },
