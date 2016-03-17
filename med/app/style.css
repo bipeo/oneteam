@@ -338,19 +338,59 @@ h2, h3, h4 {
 }
 
 .slider_2 {
-	margin: 0 0 900px 0;
+	margin: 0 0 564px 0;
 }
 
 .slider_2 .h2 {
 	margin: 0 0 0 82px;
 }
 
-/*
-.wrap_products {
-	margin: 242px 690px 0 0;
-	transform: rotate(90deg);
+.gord {
+	margin: 0 0 36px 0;
+	overflow: hidden;
 }
-*/
+
+.gord > li {
+	float: left;
+	height: 300px;
+	width: 300px;
+}
+
+.gord > li:first-child {
+	background: url(img/gord_1.jpg) no-repeat;
+}
+
+.gord > li:nth-child(2) {
+	background: url(img/gord_2.jpg) no-repeat;
+}
+
+.gord > li:nth-child(3) {
+	background: url(img/gord_3.jpg) no-repeat;
+}
+
+.gord > li:nth-child(4) {
+	background: url(img/gord_4.jpg) no-repeat;
+}
+
+.gord_txt {
+	background: url(img/gord_txt_bg.png) no-repeat;
+	color: #fff;
+	font-family: 'pf_beausans_probbook';
+	font-size: 18px;
+	line-height: 1.3;
+	margin: 22px auto 0;
+	text-align: center;
+	width: 224px;
+}
+
+.gord_txt > div {
+	height: 258px;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/*========================== content ==========================*/
 
 .content {
 	margin: 0 0 43px 0;
@@ -423,6 +463,8 @@ h2, h3, h4 {
 	line-height: 1.2;
 	margin: 13px 0 5px 0;
 }
+
+/*========================== footer ==========================*/
 
 .footer {
 	background: #b73218;
@@ -526,34 +568,4 @@ h2, h3, h4 {
 }
 
 
-/*
-.figure { 
-	width: 230px; 
-	height: 140px; 
-	background: red; 
-	position: relative; 
-} 
-.figure:before { 
-	content: ""; 
-	position: absolute; 
-	top: -25px; 
-	left: 0; 
-	width: 0; 
-	height: 0; 
-	border-left: 50px solid transparent; 
-	border-right: 50px solid transparent; 
-	border-bottom: 25px solid red; 
-} 
-.figure:after { 
-	content: "";
-	position: absolute; 
-	bottom: -25px; 
-	left: 0; 
-	width: 0; 
-	height: 0; 
-	border-left: 50px solid transparent; 
-	border-right: 50px solid transparent; 
-	border-top: 25px solid red; 
-} 
-*/
 
