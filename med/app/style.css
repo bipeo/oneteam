@@ -391,6 +391,14 @@ h2, h3, h4 {
 	left: 225px;
 }
 
+#slider_2 .slider_2_ul > li:nth-child(3) {
+	left: 454px;
+}
+
+#slider_2 .slider_2_ul > li:nth-child(4) {
+	left: 680px;
+}
+
 /*========================== odd ==========================*/
 
 .slider_2_ul > li:nth-child(odd) {
@@ -424,6 +432,14 @@ h2, h3, h4 {
 	height: 45px;
 	margin-bottom: 5px;
 	width: 175px;
+}
+
+.slider_2_ul > li:nth-child(even) .box {
+	margin-bottom: 26px;
+}
+
+.slider_2_ul > li:nth-child(even) img {
+	margin: 0 0 0 14px;
 }
 
 /*========================== END even ==========================*/
