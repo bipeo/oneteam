@@ -189,9 +189,7 @@ h2, h3, h4 {
 	background: url(img/menu_bg.png) no-repeat left top;
 	height: 90px;
 	padding-top: 30px;
-	position: relative;
 	width: 515px;
-	z-index: 3;
 }
 
 .menu.left {
@@ -229,7 +227,7 @@ h2, h3, h4 {
 	left: 4px;
 	top: 42px;
 	width: 225px;
-	z-index: 2;
+	z-index: 200;
 }
 
 .menu > ul > li + li {
