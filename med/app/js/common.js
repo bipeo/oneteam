@@ -1,6 +1,6 @@
 $(document).ready(function () {   
 	 $('.slider_1').slick({
-		 arrows: false,
+		 arrows: true,
 		 dots: true
 	 });
 	$('#slider_2').slick({
