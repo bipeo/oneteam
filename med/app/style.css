@@ -241,7 +241,7 @@ h2, h3, h4 {
 }
 
 .menu > ul > li > ul > li {
-	margin: 0 0 13px 0;
+	padding: 0 0 13px 0;
 }
 
 .menu > ul > li > ul > li:first-child {
