@@ -1154,8 +1154,7 @@ footer {
 }
 
 .popup.visit .h2 span, .enter .h2 span {
-	font-family: 'robotolight';
-        
+	font-family: 'robotolight';     
 }
 
 .visit .h2, .enter .h2 {line-height: 1.3; }
@@ -1288,6 +1287,10 @@ footer {
 	height: 5px;
 	margin: 15px 0 0 0;
 	width: 107px;
+}
+
+.popup.search .h2 {
+	margin-bottom: 60px;
 }
 
 /*preload yourtube start*/
@@ -2308,9 +2311,7 @@ footer {
 	line-height: 48px;
 	padding: 0 48px;
 }
-.cardio_item .btn_1 em {
-    
-}
+
 .cardio_price {
 	display: inline-block;
 	margin: 0 32px 0 0;
