@@ -165,7 +165,6 @@ i {font-family: 'pf_beausans_proitalic'; font-style: normal;}
 h2, .h2 {
 	font-family: 'pf_beausans_probold';
 	font-size: 24px;
-	letter-spacing: 1px.figure
 	text-transform: uppercase;
 }
 
@@ -343,6 +342,55 @@ h2, h3, h4 {
 
 .slider_2 .h2 {
 	margin: 0 0 0 82px;
+}
+
+#slider_2 {
+	position: relative;
+}
+
+#slider_2:before {
+	background: url(img/slider_2_left.png) no-repear;
+	content: "";
+	left: 0;
+	position: absolute;
+	height: 400px;
+	width: 175px;
+}
+
+#slider_2:after {
+	background: url(img/slider_2_right.png) no-repear;
+	content: "";
+	height: 400px;
+	position: absolute;
+	right: 0;
+	width: 186px;
+}
+
+.slider_2_ul > li {
+	float: left;
+	width: 292px;
+}
+
+.slider_2_ul > li:nth-child(odd) {
+	background: url(img/slider_2_bg_1.png) no-repeat;
+}
+
+.slider_2_ul > li:nth-child(even) {
+	background: url(img/slider_2_bg_2.png) no-repeat;
+}
+
+.slider_2_ul > li a, .slider_2_ul > li img {
+	display: block;
+}
+
+.slider_2_ul__title {
+	color: rgba(0, 0, 0, .8);
+	font-family: 'pf_beausans_problack';
+	font-size: 18px;
+}
+
+.slider_2_ul > li a:hover .slider_2_ul__title {
+	color: #e83d1b;
 }
 
 .gord {
