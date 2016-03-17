@@ -3,5 +3,8 @@ $(document).ready(function () {
 		 arrows: false,
 		 dots: true
 	 });
-	
+	$('#slider_2').slick({
+		 arrows: true,
+		 dots: false
+	 });
 });
