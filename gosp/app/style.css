@@ -1155,9 +1155,10 @@ footer {
 
 .popup.visit .h2 span, .enter .h2 span {
 	font-family: 'robotolight';
+        
 }
 
-.visit .h2, .enter .h2 {line-height: 1.3;}
+.visit .h2, .enter .h2 {line-height: 1.3; }
 
 .popup.visit .h2:before, .popup.enter h2:before {
 	top: 95px;

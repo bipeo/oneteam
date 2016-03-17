@@ -5,6 +5,7 @@ $(document).ready(function () {
 	 });
 	$('#slider_2').slick({
 		 arrows: true,
-		 dots: false
+		 dots: false,
+                 fade: true,
 	 });
 });
