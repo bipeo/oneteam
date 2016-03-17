@@ -406,6 +406,28 @@ h2, h3, h4 {
 	left: 680px;
 }
 
+#slider_2 .slick-prev, #slider_2 .slick-next {
+	background: url(img/slider_2_arrow.png) no-repeat;
+	height: 34px;
+	top: 32%;
+	transform: none;
+	width: 34px;
+}
+
+#slider_2 .slick-prev {
+	background-position: 0 0;
+	left: -91px;
+}
+
+#slider_2 .slick-next {
+	background-position: -34px 0;
+	right: -113px;
+	z-index: 10;
+}
+
+#slider_2 .slick-prev:before, #slider_2 .slick-next:before {
+	content: "";
+}
 /*========================== odd ==========================*/
 
 .slider_2_ul > li:nth-child(odd) {
