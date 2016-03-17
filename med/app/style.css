@@ -345,7 +345,9 @@ h2, h3, h4 {
 }
 
 #slider_2 {
+	margin: 46px 0 0 108px;
 	position: relative;
+	width: 975px;
 }
 
 #slider_2:before {
@@ -366,31 +368,121 @@ h2, h3, h4 {
 	width: 186px;
 }
 
-.slider_2_ul > li {
-	float: left;
-	width: 292px;
+#slider_2 > div {
+	position: relative;
 }
+
+#slider_2 .slider_2_ul > li {
+	position: absolute;
+	top: 0;
+	width: 292px;
+	z-index: 2;
+}
+
+#slider_2 .slider_2_ul > li:hover {
+	z-index: 4;
+}
+
+#slider_2 .slider_2_ul > li:first-child {
+	left: 0;
+}
+
+#slider_2 .slider_2_ul > li:nth-child(2) {
+	left: 225px;
+}
+
+/*========================== odd ==========================*/
 
 .slider_2_ul > li:nth-child(odd) {
 	background: url(img/slider_2_bg_1.png) no-repeat;
 }
 
-.slider_2_ul > li:nth-child(even) {
-	background: url(img/slider_2_bg_2.png) no-repeat;
+.slider_2_ul > li:nth-child(odd) .slider_2_ul__title {
+	margin: 0 0 7px 0;
 }
+
+.slider_2_ul > li:nth-child(odd) .descript_products {
+	height: 42px;	
+}
+
+.slider_2_ul > li:nth-child(odd) img {
+	margin: 11px 0 25px 12px;
+}
+
+/*========================== even ==========================*/
+
+#slider_2 .slider_2_ul > li:nth-child(even) {
+	background: url(img/slider_2_bg_2.png) no-repeat;
+	top: -14px;
+}
+
+.slider_2_ul > li:nth-child(even) .slider_2_ul__title {
+	padding: 22px 0 5px 0;
+}
+
+.slider_2_ul > li:nth-child(even) .descript_products {
+	height: 45px;
+	margin-bottom: 5px;
+	width: 175px;
+}
+
+/*========================== END even ==========================*/
 
 .slider_2_ul > li a, .slider_2_ul > li img {
 	display: block;
 }
 
+
 .slider_2_ul__title {
 	color: rgba(0, 0, 0, .8);
 	font-family: 'pf_beausans_problack';
-	font-size: 18px;
+	font-size: 18px;	
+	letter-spacing: 1px;
+	line-height: 1.2;	
+	overflow: hidden;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .slider_2_ul > li a:hover .slider_2_ul__title {
 	color: #e83d1b;
+}
+
+.descript_products {
+	color: #000;
+	display: block;
+	font-size: 14px;
+	line-height: 1;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	width: 180px;
+}
+
+.box {
+	height: 0;
+	margin: 0 auto 9px;
+	width: 0;	
+}
+
+.slider_2_ul > li:nth-child(odd) .box {
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 9px solid #4a4a4a;
+}
+
+.slider_2_ul > li:nth-child(odd) a:hover .box {
+	border-bottom-color: #e83d1b;
+}
+
+.slider_2_ul > li:nth-child(even) .box {
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 9px solid #4a4a4a;
+}
+
+.slider_2_ul > li:nth-child(even) a:hover .box {
+	border-top-color: #e83d1b;
 }
 
 .gord {
