@@ -219,7 +219,7 @@ h2, h3, h4 {
 }
 
 .menu > ul > li > ul {
-	background: transparent;
+	background: #fff url(img/pod_menu_bg.png) repeat-x left top;
 	-moz-box-shadow: 0 5px 10px rgba(0,0,0,.47);
 	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,.47);
 	box-shadow: 0 5px 10px rgba(0,0,0,.47);
@@ -241,8 +241,7 @@ h2, h3, h4 {
 }
 
 .menu > ul > li > ul > li {
-	background: #fff;
-	padding: 0 0 13px 0;
+	margin: 0 0 13px 0;
 }
 
 .menu > ul > li > ul > li > a {
