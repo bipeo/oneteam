@@ -341,11 +341,13 @@ h2, h3, h4 {
 }
 
 .slider_2 .h2 {
+	font-family: 'pf_beausans_problack';
+	letter-spacing: 1px;
 	margin: 0 0 0 82px;
 }
 
 #slider_2 {
-	margin: 31px 0 0 108px;
+	margin: 31px 0 19px 108px;
 	position: relative;
 	width: 975px;
 }
@@ -428,6 +430,7 @@ h2, h3, h4 {
 #slider_2 .slick-prev:before, #slider_2 .slick-next:before {
 	content: "";
 }
+
 /*========================== odd ==========================*/
 
 .slider_2_ul > li:nth-child(odd) {
@@ -531,6 +534,30 @@ h2, h3, h4 {
 	border-top-color: #e83d1b;
 }
 
+.link_1 {
+	margin: 16px 0 19px 84px;
+	overflow: hidden;
+}
+
+.link_1 a {
+	color: #010101;
+	float: left;
+	font-family: 'pf_beausans_probbook';
+	font-size: 18px;
+	height: 25px;
+	letter-spacing: 1px;
+	line-height: 25px;
+	margin: 0 5px 0 0;
+	padding: 0 10px;
+}
+
+a.active {
+	border: 1px solid #000;
+	-moz-border-radius: 13px / 12px;
+	-webkit-border-radius: 13px / 12px;
+	border-radius: 13px / 12px;
+}
+
 .gord {
 	margin: 0 0 36px 0;
 	overflow: hidden;
@@ -589,6 +616,7 @@ h2, h3, h4 {
 	letter-spacing: 1px;
 	margin: 0 0 24px 0;
 	text-align: center;
+	text-transform: none;
 }
 
 .content .article, .content .news {
