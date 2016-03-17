@@ -429,16 +429,59 @@ h2, h3, h4 {
 	color: #fff;
 	font-family: 'pf_beausans_probbook';
 	overflow: hidden;
-	padding: 20px 0 0 70px;
+	padding: 17px 0 0 77px;
 }
 
 .footer a {color: #fff;}
 
 .footer_ul_1 {
+	margin: 0 225px 0 0;
 	width: 200px;
 }
 
+.footer_ul_1 span {
+	background-image: url(img/footer_sprite.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+}
+
+.footer_phone {
+	margin: 0 0 15px 0;
+}
+
+.footer_phone span {
+	background-position: 0 0;
+	height: 16px;
+	margin: 0 19px 0 0;
+	top: 5px;
+	width: 10px;
+}
+
+.footer_addr {
+	line-height: 1.4;
+	margin: 0 0 17px 0;
+	padding: 0 0 0 26px;
+}
+
+.footer_addr span {
+	background-position: -10px 0;
+	height: 16px;
+	left: -25px;
+	margin: 0 0 0 0;
+	top: 12px;
+	width: 9px;
+}
+
+.footer_email span {
+	background-position: -19px 0;
+	height: 12px;
+	margin: 0 10px 0 0;
+	width: 15px;
+}
+
 .footer_menu {
+	margin: 6px 0 0 0;
 	overflow: hidden;
 	width: 250px;
 }
@@ -446,7 +489,7 @@ h2, h3, h4 {
 .footer_menu a {
 	font-size: 10px;
 	float: left;
-	line-height: 1.2;
+	line-height: 1.4;
 	margin: 0 35px 20px 0;
 	text-transform: uppercase;
 	width: 100px;
@@ -454,6 +497,32 @@ h2, h3, h4 {
 
 .footer_menu a:nth-child(2n) {
 	margin-right: 0;
+}
+
+.soc_btn {
+	margin: 36px 77px 0 0;
+	overflow: hidden;
+}
+
+.soc_btn a {
+	background-image: url(img/sprite_soc_ico.png);
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	height: 29px;
+	width: 30px;
+}
+
+.soc_btn a + a {
+	margin-left: 14px;
+}
+
+.soc_btn a.vk {
+	background-position: 0 0;
+}
+
+.soc_btn a.fb {
+	background-position: -30px 0;
 }
 
 
