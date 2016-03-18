@@ -345,8 +345,10 @@ h2, h3, h4 {
 
 .slider_descript {
 	font-size: 18px;
+	height: 92px;
 	line-height: 1.3;
 	margin: 0 0 34px 0;
+	overflow: hidden;
 }
 
 .more {
