@@ -614,7 +614,6 @@ a.active {
 }
 
 .gord_txt {
-	position:relative;
 	background: url(img/gord_txt_bg.png) no-repeat;
 	color: #fff;
 	font-family: 'pf_beausans_probbook';
@@ -630,13 +629,6 @@ a.active {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
-}
-.gord_txt  a {
-	width:100%;
-	height:100%;
-	position:absolute;
-	display:block;
-	color:#fff;
 }
 
 .gord .slick-prev, .gord .slick-next {
@@ -826,9 +818,8 @@ a.active {
 }
 
 .soc_btn {
-	margin:7px 32px 0px 0px;
-	
-	
+	margin: 36px 77px 0 0;
+	overflow: hidden;
 }
 
 .soc_btn a {
@@ -852,19 +843,5 @@ a.active {
 	background-position: -30px 0;
 }
 
-.soc_btn .rwr {
-	clear:both;
-}
 
-.soc_btn .copy {
-	position:relative;
-	left:-45px;
-	margin:62px 0px 0px 0px;
-	width:119px;
-	height:30px;
-	clear:both;
-}
-.soc_btn .copy  a {
-	background:none;
-}
 
