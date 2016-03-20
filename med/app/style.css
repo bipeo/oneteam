@@ -265,7 +265,7 @@ h2, h3, h4 {
 	font-family: 'pf_beausans_probbook';
 	font-size: 14px;
 	letter-spacing: 1px;
-	padding: 0 0 0 22px;
+	padding: 0 5px 0 22px;
 }
 
 .menu > ul > li > ul > li > a:hover {color: #b73218;}
@@ -278,6 +278,10 @@ h2, h3, h4 {
 
 .menu.right > ul > li > a {
 	line-height: 1.2;
+}
+
+.menu.right > ul > li > ul > li {
+	text-align: left;
 }
 
 .slider_1 {
