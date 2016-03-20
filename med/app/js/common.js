@@ -32,13 +32,32 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-prodnav'
   });
     $('.slider-prodnav').slick({
       arrows:false,
       slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: '.slider-forprod',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+      centerPadding: '0px',
+    });
+        
+    
+    $('.slider-innew').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-navinnew'
+  });
+    $('.slider-navinnew').slick({
+      arrows:true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.slider-innew',
       dots: false,
       centerMode: true,
       focusOnSelect: true,
