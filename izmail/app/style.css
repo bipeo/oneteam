@@ -118,12 +118,115 @@ input[type=submit] {
 h1, h2, h3 {font-family: 'pt_sansbold';}
 
 a {
-	color: #cd171e;
+	color: #cb1b26;
 	text-decoration: none;
 }
 
 body {
     font-family: Arial;
 	font-size: 13px;
+}
+
+.block_1 {
+	height: 648px;
+	position: relative;
+}
+
+.background.img_1 {
+	background: url('img/bg_1.jpg') center top no-repeat;
+}
+
+.background.img_2 {
+	background: url('img/cats.jpg') center top no-repeat;
+}
+
+.background {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.header {
+	background: rgba(205, 23, 30, .9);
+	color: #fff;
+	font-family: 'pt_sansregular';
+	left: 0;
+	padding: 10px 0 10px 5px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.logo {
+	background: url(img/logo.png) no-repeat left top;
+	color: #ffffff;
+	display: block;
+    font-family: 'pt_sansregular';
+	font-size: 12px;
+	margin: 0 33px 0 0;
+	padding: 14px 0 7px 67px;
+}
+
+.logo span {
+	display: block;
+	font-family: 'pt_sansbold';
+	font-size: 16px;
+	padding: 0 0 2px 0;
+	text-transform: uppercase;
+}
+
+.header_menu {
+	margin: 0 25px 0 0;
+	overflow: hidden;
+	padding: 19px 0 0 0;
+}
+
+.header_menu > li {
+	float: left;
+}
+
+.header_menu > li + li {
+	margin-left: 18px;
+}
+
+.header_menu > li a {
+	color: #ffffff;
+	font-family: 'pt_sansbold';
+	font-size: 16px;
+}
+
+.header_contact {
+	padding: 10px 0 0 0;
+}
+
+.header_contact > li {
+	float: left;
+	font-size: 12px;
+}
+
+.header_contact > li + li {
+	border-left: 1px solid rgba(255, 255, 255, .3);
+	margin-left: 15px;
+	padding-left: 15px;
+}
+
+.header_contact > li p {
+	text-align: right;
+}
+
+.header_phone {
+	display: block;
+	font-family: 'pt_sansbold';
+	font-size: 21px;
+	margin: 0 0 1px 0;
+}
+
+.header_ico_1 {
+	display: block;
+	margin: 5px 3% 0px 0;
 }
 
