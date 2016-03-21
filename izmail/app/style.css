@@ -187,6 +187,19 @@ body {
 	text-transform: uppercase;
 }
 
+.btn_red_border {
+	border: 2px solid #cb1b26;
+	border-radius: 5px;
+	color: #cd171e;
+	display: inline-block;
+	font-family: 'pt_sansbold';
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 17px;
+	text-transform: uppercase;
+}
+
 .block_1 {
 	height: 648px;
 	margin: 0 0 55px 0;
@@ -430,7 +443,7 @@ body {
 }
 
 .block_preim_wrap {
-	margin: 32px 0 0 0;
+	margin: 32px 0 46px 0;
 }
 
 .block_preim__item {
@@ -451,7 +464,6 @@ body {
 .block_preim strong {
 	font-family: 'pt_sans_captionbold';	
 }
-
 
 .price_1 {
 	color: #cd171e;
@@ -510,6 +522,43 @@ body {
 
 .block_preim .ico_6 {
 	background-position: -320px 0;
+}
+
+.sidebar_news {
+	background: #fff7dd;
+	border-radius: 5px;
+	font-family: Arial;
+	margin: 0 0 56px 0;
+	padding: 28px 20px 18px 23px;
+}
+
+.news_date {
+	color: #000000;
+	display: block;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.news_title {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 0 0 16px 0;
+}
+
+.news_title span {
+	border-bottom: 2px solid #cd171e;
+}
+
+.news_title:hover span {border-bottom-color: transparent;}
+
+.news_descript {
+	line-height: 18px;
+}
+
+.sidebar_news_item {
+	margin: 0 0 40px 0;
 }
 
 .menu_right {
