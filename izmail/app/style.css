@@ -385,7 +385,7 @@ body {
 }
 
 .hotel_list {
-	margin: 28px 0 0 0;
+	margin: 28px 0 15px 0;
 	overflow: hidden;
 }
 
@@ -561,6 +561,11 @@ body {
 	margin: 0 0 40px 0;
 }
 
+.payment {
+	display: block;
+	margin: 14px 0 0 0;
+}
+
 .menu_right {
 	border-radius: 10px;
 	margin: 0 0 17px 0;
@@ -635,7 +640,7 @@ body {
 	margin-bottom: 17px;
 }
 
-.hotel_list__block ul li {
+.hotel_list__block ul li, .article ul li {
 	color: #666666;
 	font-family: Arial;
 	line-height: 18px;
@@ -649,7 +654,7 @@ body {
 	font-weight: 700;
 }
 
-.hotel_list__block ul li:before {
+.hotel_list__block ul li:before, .article ul li:before {
 	background: #cd171e;
 	border-radius: 50%;
 	content: "";
@@ -658,6 +663,64 @@ body {
 	position: absolute;
 	top: 6px;
 	width: 5px;
+}
+
+.article {
+	color: #666666;
+	font-family: Arial;
+}
+
+.article h2 {
+	color: #000000;
+	font-family: 'pt_sansbold';
+	font-size: 24px;
+	margin: 0 0 18px 0;
+}
+
+.article h3 {
+	color: #cd171e;
+	font-family: 'pt_sansbold';
+	font-size: 21px;
+	margin: 0 0 18px 0;
+}
+
+.article p {
+	line-height: 18px;
+	margin: 0 0 18px 0;
+}
+
+.article strong {
+	font-family: Arial;
+	font-weight: 700;
+}
+
+.article .hotel_list {
+	margin-top: 48px;
+}
+
+.article .hotel_list > div {
+	margin-bottom: 16px;
+}
+
+.article .hotel_list > div:nth-last-child(1), .article .hotel_list > div:nth-last-child(2) {
+	margin-bottom: 0;
+}
+
+.article .btn_red_border {
+	margin-bottom: 58px;
+}
+
+.article ul {
+	margin: 27px 0 0 6px;
+}
+
+.article ul li {
+	padding-bottom: 10px;
+	padding-left: 24px;
+}
+
+.youtube {
+	margin: 42px 0 48px 0;
 }
 
 
