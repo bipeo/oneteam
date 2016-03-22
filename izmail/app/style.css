@@ -64,6 +64,31 @@ input[type=submit] {
 /*========================== END reset.css ==========================*/
 
 @font-face {
+    font-family: 'als_rublregular';
+    src: url('fonts/rouble/rouble-webfont.eot');
+    src: url('fonts/rouble/rouble-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rouble/rouble-webfont.woff2') format('woff2'),
+         url('fonts/rouble/rouble-webfont.woff') format('woff'),
+         url('fonts/rouble/rouble-webfont.ttf') format('truetype'),
+         url('fonts/rouble/rouble-webfont.svg#als_rublregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sans_captionbold';
+    src: url('fonts/pt_sans_captionbold/ptsans-captionbold-webfont.eot');
+    src: url('fonts/pt_sans_captionbold/ptsans-captionbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pt_sans_captionbold/ptsans-captionbold-webfont.woff2') format('woff2'),
+         url('fonts/pt_sans_captionbold/ptsans-captionbold-webfont.woff') format('woff'),
+         url('fonts/pt_sans_captionbold/ptsans-captionbold-webfont.ttf') format('truetype'),
+         url('fonts/pt_sans_captionbold/ptsans-captionbold-webfont.svg#pt_sans_captionbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'pt_sansbold';
     src: url('fonts/pt_sansbold/pt_sans-web-bold-webfont.eot');
     src: url('fonts/pt_sansbold/pt_sans-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -111,11 +136,31 @@ input[type=submit] {
 .center {
 	margin-left: auto;
 	margin-right: auto;
+	width: 960px;
+}
+
+.rouble {
+	font-family: 'als_rublregular';
+	text-transform: lowercase;
 }
 
 /*========================== END ==========================*/
 
 h1, h2, h3 {font-family: 'pt_sansbold';}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+strong {font-family: 'pt_sansbold';}
 
 a {
 	color: #cb1b26;
@@ -123,12 +168,41 @@ a {
 }
 
 body {
-    font-family: Arial;
+	background: #fff;
+	color: #000000;
+	font-family: 'pt_sansregular';
 	font-size: 13px;
+}
+
+.red_btn {
+	background-color: #cd171e;
+	border-radius: 5px;
+	color: #ffffff;
+	display: inline-block;
+	font-family: 'pt_sansbold';
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 23px;
+	text-transform: uppercase;
+}
+
+.btn_red_border {
+	border: 2px solid #cb1b26;
+	border-radius: 5px;
+	color: #cd171e;
+	display: inline-block;
+	font-family: 'pt_sansbold';
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 17px;
+	text-transform: uppercase;
 }
 
 .block_1 {
 	height: 648px;
+	margin: 0 0 55px 0;
 	position: relative;
 }
 
@@ -152,7 +226,6 @@ body {
 .header {
 	background: rgba(205, 23, 30, .9);
 	color: #fff;
-	font-family: 'pt_sansregular';
 	left: 0;
 	padding: 10px 0 10px 5px;
 	position: absolute;
@@ -165,7 +238,6 @@ body {
 	background: url(img/logo.png) no-repeat left top;
 	color: #ffffff;
 	display: block;
-    font-family: 'pt_sansregular';
 	font-size: 12px;
 	margin: 0 33px 0 0;
 	padding: 14px 0 7px 67px;
@@ -230,3 +302,506 @@ body {
 	margin: 5px 3% 0px 0;
 }
 
+.block_2 {
+	color: #ffffff;
+	position: absolute;
+	top: 227px;
+	width: 100%;
+	z-index: 2;
+}
+
+.block_2 .h1 {
+	font-size: 32px;
+	margin: 0 0 14px 0;
+	text-align: center;
+}
+
+.descipt_1 {
+	color: #ffffff;
+	font-size: 18px;
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+.block_2_1 {
+	border-top: 1px solid rgba(255, 255, 255, .4);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 36px;
+	overflow: hidden;
+	padding: 17px 0 0 0;
+	width: 683px;
+}
+
+.block_2_1 > li {
+	float: left;
+	font-size: 18px;
+	height: 36px;
+	line-height: 36px;
+}
+
+.block_2_1 > li:first-child {
+	width: 235px;
+}
+
+.block_2_1 > li:last-child {
+	width: 415px;
+}
+
+.block_2_1 > li + li {
+	margin-left: 29px;
+}
+
+.block_2_1 > li.ico_time {
+	background: url(img/ico_1.png) no-repeat;
+	padding: 0 0 0 45px;
+}
+
+.block_2_1 > li.skidka {
+	background: url(img/ico_2.png) no-repeat;
+}
+
+.block_2_1 > li.skidka span {
+	display: inline-block;
+	font-family: 'pt_sansbold';
+	margin: 0 10px 0 0;
+	text-align: center;
+	width: 54px;
+}
+
+.demo_img_1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content_main .h2 {
+	font-size: 28px;
+}
+
+.hotel {
+	padding: 14px 0 0 0;
+	width: 634px;
+}
+
+.hotel_list {
+	margin: 28px 0 15px 0;
+	overflow: hidden;
+}
+
+.hotel_list > div {
+	float: left;
+	margin: 0 20px 54px 0;
+	width: 307px;
+}
+
+.hotel_list > div:nth-child(2n) {
+	margin-right: 0;
+}
+
+.hotel_list > div:nth-child(2n+1) {clear: both;}
+
+.hotel_list__foto {
+	border-radius: 4px;
+	display: block;
+	margin: 0 0 19px 0;
+	width: 100%;
+}
+
+.hotel_list .h3 {
+	color: #cd171e;
+	font-family: 'pt_sansbold';
+	font-size: 24px;
+	margin: 0 0 19px 0;
+}
+
+.hotel_sidebar {
+	width: 307px;
+}
+
+.hotel_sidebar .h3 {
+	color: #000000;
+	font-size: 24px;
+	margin: 0 0 0 20px;
+}
+
+.block_link {
+	margin: 0 0 44px 0;
+}
+
+.block_link > a, .block_link > a > img {
+	border-radius: 5px;
+	display: block;
+}
+
+.block_link > a {
+	margin: 0 0 18px 0;
+}
+
+.block_link > a:last-child {
+	margin-bottom: 0;
+}
+
+.block_preim_wrap {
+	margin: 32px 0 46px 0;
+}
+
+.block_preim__item {
+	margin: 0 0 22px 0;	
+}
+
+.block_preim {
+	display: table-cell;
+	font-size: 16px;
+	line-height: 21px;
+	height: 65px;
+	padding: 0 0 0 75px;
+	position: relative;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.block_preim strong {
+	font-family: 'pt_sans_captionbold';	
+}
+
+.price_1 {
+	color: #cd171e;
+	font-family: 'pt_sansbold';
+}
+
+.price_1 .rouble {
+	font-weight: bold;
+}
+
+.title_1, .title_2 {
+	color: #cd171e;
+	display: block;
+	font-family: 'pt_sansbold';
+	text-transform: uppercase;
+}
+
+.title_1 {
+	position: relative;
+	top: 2px;
+}
+
+.title_2 {
+	font-family: 'pt_sans_captionbold';	
+	font-size: 15px;
+}
+
+.block_preim__ico {
+	background: url(img/sprite_1.png) no-repeat;
+	height: 65px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 64px;
+}
+
+.block_preim .ico_1 {
+	background-position: 0 0;
+}
+
+.block_preim .ico_2 {
+	background-position: -64px 0;
+}
+
+.block_preim .ico_3 {
+	background-position: -128px 0;
+}
+
+.block_preim .ico_4 {
+	background-position: -192px 0;
+}
+
+.block_preim .ico_5 {
+	background-position: -256px 0;
+}
+
+.block_preim .ico_6 {
+	background-position: -320px 0;
+}
+
+.sidebar_news {
+	background: #fff7dd;
+	border-radius: 5px;
+	font-family: Arial;
+	margin: 0 0 56px 0;
+	padding: 28px 20px 18px 23px;
+}
+
+.news_date {
+	color: #000000;
+	display: block;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.news_title {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 0 0 16px 0;
+}
+
+.news_title span {
+	border-bottom: 2px solid #cd171e;
+}
+
+.news_title:hover span {border-bottom-color: transparent;}
+
+.news_descript {
+	line-height: 18px;
+}
+
+.sidebar_news_item {
+	margin: 0 0 40px 0;
+}
+
+.payment {
+	display: block;
+	margin: 14px 0 0 0;
+}
+
+.menu_right {
+	border-radius: 10px;
+	margin: 0 0 17px 0;
+}
+
+.menu_right > li {
+	background: url(img/menu_right_bg.png) repeat-x;
+	border-bottom: 1px solid rgba(203, 27, 38, .3);
+	height: 54px;
+	line-height: 55px;
+}
+
+.menu_right > li:last-child {
+	border-bottom: none;
+}
+
+.menu_right > li a {
+	background: url(img/ico_3.png) no-repeat right 20px top 20px;
+	color: #cd171e;
+	display: block;
+	font-family: 'pt_sansbold';
+	font-size: 14px;
+	padding: 0 0 0 20px;
+	text-transform: uppercase;
+}
+
+.hotel .hotel_ul {
+	margin: 0 33px 11px 0;
+}
+
+.hotel_ul li {
+	background: url(img/ico_4.png) no-repeat left center;
+	color: #666666;
+	font-family: Arial;
+	font-weight: 400;
+	font-size: 13px;
+	margin: 0 0 5px 0;
+	padding: 0 0 0 14px;
+}
+
+.wrap_1 {
+	clear: both;
+	overflow: hidden;
+}
+
+.price_yellow {
+	background: url(img/price_yellow_bg.png) no-repeat;
+	color: #000000;
+	display: block;
+	font-family: 'pt_sansbold';
+	font-size: 21px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 11px 0 0;
+	padding: 0 0 0 10px;
+	width: 117px;
+}
+
+.price_yellow .style_1 {
+	display: inline-block;
+	font-size: 13px;
+	padding-right: 7px;
+}
+
+.hotel_list__block {
+	background: #fff7dd;
+	border-radius: 5px;
+	padding: 23px 20px 35px 20px;
+}
+
+.hotel_list__block .h3 {
+	margin-bottom: 17px;
+}
+
+.hotel_list__block ul li, .article ul li {
+	color: #666666;
+	font-family: Arial;
+	line-height: 18px;
+	padding: 0 0 20px 22px;
+	position: relative;
+}
+
+.hotel_list__block ul li strong {
+	color: #000000;
+	font-family: Arial;
+	font-weight: 700;
+}
+
+.hotel_list__block ul li:before, .article ul li:before {
+	background: #cd171e;
+	border-radius: 50%;
+	content: "";
+	height: 5px;
+	left: 8px;
+	position: absolute;
+	top: 6px;
+	width: 5px;
+}
+
+.article {
+	color: #666666;
+	font-family: Arial;
+	padding: 0 0 28px 0;
+}
+
+.article a {
+	text-decoration: underline;
+}
+
+.article h2 {
+	color: #000000;
+	font-family: 'pt_sansbold';
+	font-size: 24px;
+	margin: 0 0 18px 0;
+}
+
+.article h3 {
+	color: #cd171e;
+	font-family: 'pt_sansbold';
+	font-size: 21px;
+	margin: 0 0 18px 0;
+}
+
+.article p {
+	line-height: 18px;
+	margin: 0 0 18px 0;
+}
+
+.article strong {
+	font-family: Arial;
+	font-weight: 700;
+}
+
+.article .hotel_list {
+	margin-top: 48px;
+}
+
+.article .hotel_list > div {
+	margin-bottom: 16px;
+}
+
+.article .hotel_list > div:nth-last-child(1), .article .hotel_list > div:nth-last-child(2) {
+	margin-bottom: 0;
+}
+
+.article .btn_red_border {
+	margin-bottom: 58px;
+}
+
+.article ul {
+	margin: 27px 0 0 6px;
+}
+
+.article ul li {
+	padding-bottom: 10px;
+	padding-left: 24px;
+}
+
+.youtube {
+	margin: 42px 0 48px 0;
+}
+
+/*========================== footer ==========================*/
+
+.footer {
+	background: #8e131b;
+	color: #ffffff;
+	padding: 31px 0 50px 0;
+}
+
+.footer a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.footer_1 {
+	width: 375px;
+}
+
+.footer .logo {
+	margin: 0 0 29px 0;
+	text-decoration: none;
+}
+
+.footer_ul {
+	margin: 0 0 46px 0;
+}
+
+.footer_ul li {
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.footer_ul li + li {
+	margin-top: 12px;
+}
+
+.footer_ul li strong {
+	display: block;
+	font-size: 16px;
+}
+
+.copyright {
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 18px;
+	width: 205px;
+}
+
+.footer_2 {
+	padding: 5px 0 0 0;
+}
+
+.footer_ul_1 {
+	margin: 0 0 24px 0;
+}
+
+.footer_ul_1 > li a {
+	display: block;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.maps {
+	padding: 4px 0 0 0;
+	width: 307px;
+}
+
+.maps iframe {
+	border-radius: 5px;
+	margin: 0 0 23px 0;
+}
+
+.maps p {
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 18px;
+}
