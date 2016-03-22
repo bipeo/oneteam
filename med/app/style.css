@@ -1055,7 +1055,7 @@ a.active {
 
 .slider-forprod  {
     margin:10px 0px 0px 0px;
-    border:1px solid #e3e3e3;
+    border:0px solid #e3e3e3;
  
 }
 .slick-prev,  .slick-next {
@@ -1132,7 +1132,7 @@ a.active {
       margin-left:19px;
 }
 .slider-prodnav .slick-current .detail {
-    border:1px solid green;
+    border:1px solid #f66d00;
 }
 
 .honeysld .detail {
