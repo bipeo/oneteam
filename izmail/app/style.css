@@ -169,6 +169,8 @@ a {
 	text-decoration: none;
 }
 
+a:hover {color: #000;}
+
 body {
 	background: #fff;
 	color: #000000;
@@ -207,6 +209,11 @@ body {
 	padding: 0 17px;
 	text-decoration: none!important;
 	text-transform: uppercase;
+}
+
+.btn_red_border:hover {
+	background-color: #cb1b26;
+	color: #fff;
 }
 
 .block_1 {
@@ -289,6 +296,10 @@ body {
 	display: block;
 	font-family: 'pt_sansbold';
 	font-size: 16px;
+}
+
+.header_menu > li a:hover, .header_menu > li a:active, .header_menu_deskt > li a:hover, .header_menu_deskt > li a:active {
+	color: #ffe68e;
 }
 
 .header_menu_deskt > li a {
@@ -856,6 +867,21 @@ body {
 	.header_contact {
 		margin-left: 3%;
 	}
+}
+
+/*========================== fancybox ==========================*/
+
+.fancybox-overlay {
+	background: rgba(102,0,0,.9);
+}
+
+.fancybox-opened .fancybox-skin {
+	box-shadow: none;
+/*	padding: 0 !important;*/
+}
+
+.fancybox-skin {
+	border-radius: none;	
 }
 
 @media only screen and (max-width: 989px) {
