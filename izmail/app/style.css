@@ -197,6 +197,14 @@ body {
 	text-transform: uppercase;
 }
 
+.red_btn:hover {
+	background: #ffe58d;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #cd171e;
+}
+
 .btn_red_border {
 	border: 2px solid #cb1b26;
 	border-radius: 5px;
