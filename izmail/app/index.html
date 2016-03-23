@@ -11,6 +11,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
@@ -31,6 +32,17 @@
 				<li><a href="#">Конференц зацы</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
+			<ul class="header_menu_deskt left">
+				<li>
+					<a href="#">Номера</a>
+					<a href="#">Цены</a>
+				</li>
+				<li>
+					<a href="#">Бронирование</a>
+					<a href="#">Конференц зацы</a>
+				</li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
 			<ul class="header_contact left">
 				<li>
 					<span class="header_phone">+7 495 505-20-28</span>
@@ -43,6 +55,34 @@
 			</ul>
 			<img class="right header_ico_1" src="img/header_ico_1.png" alt=""/>
 		</header>
+		<div class="header_mobile">
+			<a href="/" class="logo left">
+				<span>ГОСТИНИЦА ИЗМАЙЛОВО</span>
+				ООО «Олимпик Тур».
+			</a>
+			<ul id="menu_mobile" class="header_menu left">
+				<li><a href="#">Номера</a></li>
+				<li><a href="#">Цены</a></li>
+				<li><a href="#">Бронирование</a></li>
+				<li><a href="#">Конференц зацы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="btn_menu right">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<ul class="header_contact visibility left">
+			<li>
+				<span class="header_phone">+7 495 505-20-28</span>
+				<p>Круглосуточно без выходных</p>
+			</li>
+			<li>
+				<span class="header_phone">8-800-555-20-28</span>
+				<p>Бесплатный звонок по России</p>
+			</li>
+		</ul>
 		<div class="block_2">
 			<h1 class="h1">Бронирование номеров гостиницы Измайлово</h1>
 			<p class="descipt_1">Получите гарантированное заселение прямо сейчас</p>
@@ -53,6 +93,16 @@
 			</ul>
 		</div>
 	</div><!-- END block_1 -->
+	<ul class="menu_right visibility_2">
+		<li><a href="#">О гостинице</a></li>
+		<li><a href="#">О компании</a></li>
+		<li><a href="#">Отзывы</a></li>
+		<li><a href="#">Конференц-залы</a></li>
+		<li><a href="#">Ресторан гостиницы Измайлово</a></li>
+		<li><a href="#">Сотрудничество</a></li>
+		<li><a href="#">Авиа и Ж.Д. расписания</a></li>
+		<li><a href="#">Наши реквизиты</a></li>
+	</ul>
  	<!-- content_main -->
 	<div class="content_main center clearfix">
  		<!-- hotel -->
@@ -172,16 +222,16 @@
 				<p>Вблизи ТГК «Измайлово» расположены локальные достопримечательности: Измайловский Кремль, Храм Покрова Пресвятой Богородицы и Серебряно-Виноградный пруд.</p>
 				<div class="hotel_list">
 					<div>
-						<img src="img/article_img_1.jpg" alt="" />
+						<a href="img/article_img_1.jpg" class="fancybox" data-fancybox-group="gallery"><img src="img/article_img_1.jpg" alt="" /></a>
 					</div>
 					<div>
-						<img src="img/article_img_2.jpg" alt="" />
+						<a href="img/article_img_2.jpg" class="fancybox" data-fancybox-group="gallery"><img src="img/article_img_2.jpg" alt="" /></a>
 					</div>
 					<div>
-						<img src="img/article_img_3.jpg" alt="" />
+						<a href="img/article_img_3.jpg" class="fancybox" data-fancybox-group="gallery"><img src="img/article_img_3.jpg" alt="" /></a>
 					</div>
 					<div>
-						<img src="img/article_img_4.jpg" alt="" />
+						<a href="img/article_img_4.jpg" class="fancybox" data-fancybox-group="gallery"><img src="img/article_img_4.jpg" alt="" /></a>
 					</div>
 				</div>
 				<a href="#" class="btn_red_border">Все фотографии гостиницы</a>
@@ -332,7 +382,7 @@
 					гостиницы Измайлово,
 				</p>
 			</div>
-			<div class="footer_2 left">
+			<nav class="footer_2 left">
 				<ul class="footer_ul_1">
 					<li><a href="#">Номера</a></li>
 					<li><a href="#">Цены</a></li>
@@ -352,7 +402,7 @@
 					<li><a href="#">Наши реквизиты</a></li>
 					<li><a href="#">Новости гостиницы Измайлово</a></li>
 				</ul>
-			</div>
+			</nav>
 			<div class="maps right">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2179.3492973869984!2d37.74562527706443!3d55.78960711716592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535226205cecf%3A0x19fd92fde7dc6b02!2z0JPQvtGB0YLQuNC90LjRhtCwINCY0LfQvNCw0LnQu9C-0LLQvg!5e0!3m2!1sru!2sru!4v1458569258502" width="307" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
 				<p>105613 г. Москва,<br> 
@@ -371,6 +421,7 @@
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
+<script src="libs/fancybox/jquery.fancybox.js"></script>
 <script src="js/common.js"></script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">

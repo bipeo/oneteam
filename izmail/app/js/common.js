@@ -16,5 +16,26 @@ $(document).ready(function(){
            obj.css({opacity: 0});
        });
     }, 6000);
+	
+	///////////////////////////////////////////////////////////////////////// menu_mobile
+	
+	var pull 		= $('.btn_menu');
+		menu 		= $('#menu_mobile');
+		menuHeight	= menu.height();
+
+	$(pull).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+
+	$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 320 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	});
+	
+	/////////////////////////////////////////////////////////////////////////////
+	$('.fancybox').fancybox();
     
 });//конец ready
