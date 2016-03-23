@@ -752,6 +752,10 @@ body {
 	margin: 42px 0 48px 0;
 }
 
+.visibility_2, .header_contact.visibility {
+	display: none;
+}
+
 /*========================== footer ==========================*/
 
 .footer {
@@ -928,6 +932,7 @@ body {
 		position: absolute;
 		right: 2%;
 		top: 83px;
+		z-index: 500;
 	}
 	.header_mobile .header_menu > li {
 		background: url(img/header_mobile_menu_bg.png) repeat-x;
@@ -944,6 +949,39 @@ body {
 		background: url(img/ico_right_white.png) no-repeat right 20px center;
 		font-size: 14px;
 		text-transform: uppercase;
+	}
+	.header_contact.visibility {
+		display: block;
+		float: none;
+		left: 2%;
+		position: absolute;
+		right: 2%;
+		top: 80px;
+		z-index: 3;
+	}
+	.header_contact.visibility > li {
+		color: #fff;
+		width: 45%;
+	}
+	.header_contact.visibility > li:first-child {
+		float: left;
+		text-align: right;
+	}
+	.header_contact.visibility > li:last-child {
+		float: right;
+		text-align: left;
+	}
+	.header_contact.visibility > li:last-child p {
+		text-align: left;
+	}
+	.header_contact.visibility > li + li {
+		margin-top: 0;
+	}
+	.header_contact.visibility > li p {
+		display: block;
+	}
+	.header_contact.visibility .header_phone {
+		font-size: 18px;
 	}
  	/*========================== END header_mobile ==========================*/
 	.footer_2.left {display: none;}
@@ -1002,6 +1040,9 @@ body {
 		float: left;
 		width: 50%;
 	}
+	.visibility_2 {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 669px) {
@@ -1014,5 +1055,54 @@ body {
 	}
 	.article .hotel_list > div {
 		float: left;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.block_link > a {
+		float: none;
+	}
+	.block_preim__item {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	.footer_1 {
+		float: none;
+		width: 100%;
+	}
+	.maps.right {
+		float: none;
+		padding-top: 50px;
+		width: 100%;
+	}
+	.block_2 .h1 {
+		font-size: 24px;
+	}
+	.descipt_1 {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.logo {
+		margin-right: 10px;
+	}
+	.article .hotel_list > div {
+		float: none;
+		margin-right: 0;
+		width: 100%;
+	}
+	.article .hotel_list > div:nth-last-child(1), .article .hotel_list > div:nth-last-child(2) {
+		margin-bottom: 16px;
+	}
+}
+
+@media only screen and (max-width: 319px) {
+	body {
+		overflow-x: scroll;
+		min-width: 320px;
 	}
 }
