@@ -621,6 +621,15 @@ body {
 	line-height: 55px;
 }
 
+.menu_right > li:hover {
+	background-image: url(img/header_mobile_menu_bg.png);
+}
+
+.menu_right > li:hover a {
+	background-image: url(img/ico_right_white.png);
+	color: #fff;
+}
+
 .menu_right > li:last-child {
 	border-bottom: none;
 }
@@ -1000,7 +1009,9 @@ body {
 	}
 	.btn_menu {
 		cursor: pointer;
+		height: 22px;
 		margin: 12px 0 0 0;
+		width: 26px;
 	}
 	.btn_menu > span {
 		background: #fff;
@@ -1010,6 +1021,13 @@ body {
 	}
 	.btn_menu > span + span {
 		margin-top: 8px;
+	}
+	.close_menu {
+		background: url(img/close_menu.png) no-repeat center center;
+		height: 22px;
+	}
+	.close_menu span {
+		display: none;
 	}
 	.header_mobile .header_menu {
 		border-radius: 5px;
@@ -1029,6 +1047,13 @@ body {
 		height: 52px;
 		line-height: 52px;
 		padding: 0 0 0 20px;
+	}
+	.header_mobile .header_menu > li:hover {
+		background: url(img/menu_right_bg.png) repeat-x;
+	}
+	.header_mobile .header_menu > li:hover a {
+		background-image: url(img/ico_3.png);
+		color: #cd171e;
 	}
 	.header_menu > li + li {
 		border-top: 1px solid #dc5d62;
