@@ -892,7 +892,7 @@ body {
 	background: #fff;
 	border-radius: 0;
 	color: #333333;
-	padding: 25px;
+	padding: 27px 25px;
 	text-shadow: none;
 }
 
@@ -937,17 +937,24 @@ body {
 }
 
 .photo-fancy  .fnc_btns .fbtn {
-    background: url(img/fancybox_nav.png) no-repeat;
 	height: 72px;
 	width: 72px;
 }
 
 .photo-fancy .fnc_btns .fancy_prev {
-	background-position: 0 0;
+	background: #fff url(img/arrow_left_red.png) no-repeat center center;
+}
+
+.photo-fancy .fnc_btns .fancy_prev:hover {
+	background: #cb1b26 url(img/arrow_left_white.png) no-repeat center center;	
+}
+
+.photo-fancy .fnc_btns .fancy_next:hover {
+	background: #cb1b26 url(img/arrow_right_white.png) no-repeat center center;
 }
 
 .photo-fancy .fnc_btns .fancy_next {
-	background-position: -72px 0;	
+	background: #fff url(img/arrow_right_red.png) no-repeat center center;
 }
 
 .fancybox_relative {
@@ -1035,7 +1042,7 @@ body {
 	.btn_menu {
 		cursor: pointer;
 		height: 22px;
-		margin: 12px 0 0 0;
+		margin: 12px 5px 0 0;
 		width: 26px;
 	}
 	.btn_menu > span {
@@ -1090,6 +1097,7 @@ body {
 		text-transform: uppercase;
 	}
 	.header_contact.visibility {
+		background: url(img/border.png) no-repeat center 12px;
 		display: block;
 		float: none;
 		left: 2%;
@@ -1121,6 +1129,9 @@ body {
 	}
 	.header_contact.visibility .header_phone {
 		font-size: 18px;
+	}
+	.header_contact > li + li {
+		border: none;
 	}
  	/*========================== END header_mobile ==========================*/
 	.footer_2.left {display: none;}
