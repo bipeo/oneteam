@@ -891,7 +891,7 @@ body {
 	border-radius: 0;	
 }
 
-.fancybox-title-float-wrap .child {
+.fancybox-title-float-wrap .child, .fancybox-descript {
 	background: #fff;
 	border-radius: 0;
 	color: #333333;
@@ -899,7 +899,7 @@ body {
 	text-shadow: none;
 }
 
-.fancybox-title {
+.fancybox-title, .fancybox-descript {
 	color: #333333;
 	font: italic normal 14px Arial;	
 }
@@ -938,7 +938,11 @@ body {
 	display: none;
 }
 
-
+.fancybox-close {
+	background: #fff url(img/fancyclose_ic.png) no-repeat center center;
+	right: 0;
+	top: 0;
+}
 
 @media only screen and (max-width: 989px) {
 	.header_menu {display: none;}
@@ -992,7 +996,7 @@ body {
 		padding: 11px 2%;
 		position: fixed;
 		width: 100%;
-		z-index: 3;
+		z-index: 300;
 	}
 	.btn_menu {
 		cursor: pointer;
