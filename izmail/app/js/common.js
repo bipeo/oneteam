@@ -37,8 +37,26 @@ $(document).ready(function(){
 	
 	/////////////////////////////////////////////////////////////////////////////
 	$('.fancybox').fancybox({
-		padding: 0,
-		showNavArrows: true
+            wrapCSS : 'photo-fancy',
+            padding: 0,
+            maxWidth: 821,
+            helpers : {
+                overlay: {
+               //  css: {'background': 'rgba(0,46,92, 0.9)'} 
+             }
+           } 
+		
+		
 	});
+        
+        $('.fnc_btns .fancy_prev').click(function(){
+        $.fancybox.prev();
+        });
+        
+         $('.fnc_btns .fancy_next').click(function(){
+        $.fancybox.next();
+        });
+        
+        
     
 });//конец ready
