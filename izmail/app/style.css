@@ -863,29 +863,6 @@ body {
 	line-height: 18px;
 }
 
-@media only screen and (max-width: 1208px) { 
-	.header_contact > li p {
-		display: none;
-	}
-	.header_contact > li {
-		float: none;
-	}
-	.header_contact > li + li {
-		margin-left: 0;
-		margin-top: 3px;
-		padding-left: 0;
-	}
-	.header_menu {
-		margin-right: 0;
-	}
-	.header_contact .header_phone {
-		font-size: 16px;
-	}
-	.header_contact {
-		margin-left: 3%;
-	}
-}
-
 /*========================== fancybox ==========================*/
 
 .fancybox-overlay {
@@ -910,7 +887,8 @@ body {
 
 .photo-fancy  .fancybox-title, .photo-fancy  .fancybox-descript {
 	color: #333333;
-	font: italic normal 14px Arial;	
+	font: italic normal 14px Arial;
+	width: calc(100% - 144px);
 }
 
 .photo-fancy  .fancybox-title-float-wrap {
@@ -925,46 +903,69 @@ body {
 	font-weight: normal;
 }
 
-.photo-fancy .fancybox-nav {
-	background: url(img/fancybox_nav.png) no-repeat;
-	bottom: -72px;
-	height: 72px;
-	top: auto;
-	width: 72px;
-}
-
-.photo-fancy .fancybox-prev {
-	background-position: 0 0;
-	left: auto;
-	right: 72px;
-}
-
-.photo-fancy .fancybox-next {
-	background-position: -72px 0;	
-}
-
 .photo-fancy .fancybox-nav span {
 	display: none;
 }
 
 .photo-fancy .fancybox-close {
-        width:50px;
-        height:50px;
+	width:50px;
+	height:50px;
 	background: #fff url(img/fancyclose_ic.png) no-repeat center center;
 	right: 0;
 	top: 0;
 }
 
+.photo-fancy  .fnc_btns {
+	bottom: 0;
+	cursor: pointer;
+	height: 72px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	width: 144px;
+}
+
 .photo-fancy  .fnc_btns .fbtn {
-    width:40px;
-    height:40px;  
+    background: url(img/fancybox_nav.png) no-repeat;
+	height: 72px;
+	width: 72px;
 }
-.photo-fancy  .fnc_btns .fancy_prev {
-  background:green;
+
+.photo-fancy .fnc_btns .fancy_prev {
+	background-position: 0 0;
 }
-.photo-fancy  .fnc_btns .fancy_next {
-   background:red;
+
+.photo-fancy .fnc_btns .fancy_next {
+	background-position: -72px 0;	
 }
+
+.fancybox_relative {
+	position: relative;
+}
+
+@media only screen and (max-width: 1208px) { 
+	.header_contact > li p {
+		display: none;
+	}
+	.header_contact > li {
+		float: none;
+	}
+	.header_contact > li + li {
+		margin-left: 0;
+		margin-top: 3px;
+		padding-left: 0;
+	}
+	.header_menu {
+		margin-right: 0;
+	}
+	.header_contact .header_phone {
+		font-size: 16px;
+	}
+	.header_contact {
+		margin-left: 3%;
+	}
+}
+
 
 @media only screen and (max-width: 989px) {
 	.header_menu {display: none;}

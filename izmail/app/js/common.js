@@ -40,7 +40,7 @@ $(document).ready(function(){
 	$('.fancybox').fancybox({
             wrapCSS : 'photo-fancy',
             padding: 0,
-            maxWidth: 821,
+//            maxWidth: 821,
             helpers : {
                 overlay: {
                //  css: {'background': 'rgba(0,46,92, 0.9)'} 
@@ -51,11 +51,11 @@ $(document).ready(function(){
 	});
         
         $('.fnc_btns .fancy_prev').click(function(){
-        $.fancybox.prev();
+        	$.fancybox.prev();
         });
         
-         $('.fnc_btns .fancy_next').click(function(){
-        $.fancybox.next();
+		$('.fnc_btns .fancy_next').click(function(){
+        	$.fancybox.next();
         });
         
         
