@@ -37,7 +37,8 @@ $(document).ready(function(){
 	
 	/////////////////////////////////////////////////////////////////////////////
 	$('.fancybox').fancybox({
-		padding: 0
+		padding: 0,
+		showNavArrows: true
 	});
     
 });//конец ready
