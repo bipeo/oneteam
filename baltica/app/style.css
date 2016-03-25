@@ -91,9 +91,103 @@ input[type=submit] {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 /*========================== END ==========================*/
 
+@font-face {
+	font-family: 'MyriadPro-BoldCond';
+	src: url('fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.eot');
+	src: local('☺'), url('fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.woff') format('woff'), 
+		url('fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.ttf') format('truetype'), 
+		url('fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* font-family: "MyriadProCondRegular"; */
+@font-face {
+    font-family: "MyriadProCondRegular";
+    src: url("fonts/MyriadProCondRegular/MyriadProCondRegular.eot");
+    src: url("fonts/MyriadProCondRegular/MyriadProCondRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/MyriadProCondRegular/MyriadProCondRegular.woff") format("woff"),
+    url("fonts/MyriadProCondRegular/MyriadProCondRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
-    
+	color: #fff;
+	font-family: Arial;
+	font-size: 13px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.wrapper {
+    background: url(img/body_bg.jpg) no-repeat 0 0 / cover;
+	height: 100vh;
+	position: relative;
+}
+
+.header {
+	background: #00732f;
+	-moz-box-shadow: 0 1px 4px rgba(21,9,10,.17);
+	-webkit-box-shadow: 0 1px 4px rgba(21,9,10,.17);
+	box-shadow: 0 1px 4px rgba(21,9,10,.17);
+	height: 45px;
+	line-height: 45px;
+	padding: 0 45px 0 0;
+}
+
+.warning {
+	bottom: 10px;
+	position: absolute;
+	z-index: 999;
+}
+
+a.reg {
+	background-color: #008937;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMTQlIiB4Mj0iNTAlIiB5Mj0iLTE0JSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmYmM3MjciIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhOTdmMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+	background-image: -moz-linear-gradient(bottom, #fbc727 -14%, #a97f00 114%);
+	background-image: -o-linear-gradient(bottom, #fbc727 -14%, #a97f00 114%);
+	background-image: -webkit-linear-gradient(bottom, #fbc727 -14%, #a97f00 114%);
+	background-image: linear-gradient(bottom, #fbc727 -14%, #a97f00 114%);
+	border: 1px solid #fbc727;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	height: 33px;
+	line-height: 33px;
+	padding: 0 15px;
+	text-shadow: 0 1px 2px rgba(146,50,8,.35);
+	text-transform: uppercase;
+}
+
+a.reg img {
+	padding: 0 10px 0 0;
+	vertical-align: middle;
+}
+
+a.reg:hover {
+	border: 1px solid #fbc727;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #008937;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSItMTQlIiB4Mj0iNTAlIiB5Mj0iMTE0JSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmYmM3MjciIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhOTdmMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+	background-image: -moz-linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+	background-image: -o-linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+	background-image: -webkit-linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+	background-image: linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+}
+
+.name_authoriz {
+	background: url(img/ico_2.png) no-repeat left center;
 }
 
