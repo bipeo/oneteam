@@ -130,16 +130,33 @@ a {
     background: url(img/body_bg.jpg) no-repeat 0 0 / cover;
 	height: 100vh;
 	position: relative;
+	max-width: 1366px;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
-.header {
-	background: #00732f;
-	-moz-box-shadow: 0 1px 4px rgba(21,9,10,.17);
-	-webkit-box-shadow: 0 1px 4px rgba(21,9,10,.17);
-	box-shadow: 0 1px 4px rgba(21,9,10,.17);
+.wrap_bootle {
+	background: url(img/bottle.png) no-repeat center top / cover, url(img/green_bg.png) repeat-x;	
+	height: 100vh;
+}
+
+.green_bg {
+	background: url(img/green_bg.png) repeat-x;
 	height: 45px;
 	line-height: 45px;
-	padding: 0 45px 0 0;
+	padding: 0 44px 0 0;
+	width: 340px;
+}
+
+.logo {
+	left: 87px;
+	position: absolute;
+	top: 12px;
+	z-index: 10;
+}
+
+.top_menu a, .top_menu span {
+	border-bottom: 1px solid rgba(255, 255, 255, .25);
 }
 
 .warning {
@@ -164,6 +181,7 @@ a.reg {
 	font-weight: bold;
 	height: 33px;
 	line-height: 33px;
+	margin: 6px 0 0 203px;
 	padding: 0 15px;
 	text-shadow: 0 1px 2px rgba(146,50,8,.35);
 	text-transform: uppercase;
@@ -187,7 +205,61 @@ a.reg:hover {
 	background-image: linear-gradient(top, #fbc727 -14%, #a97f00 114%);
 }
 
+.ml_1 {
+	margin: 0 0 0 24px;
+}
+
 .name_authoriz {
 	background: url(img/ico_2.png) no-repeat left center;
+	margin: 0 0 0 15px;
+	padding: 0 0 0 24px;
+}
+
+.out {
+	margin: 0 0 0 25px;
+	position: relative;
+}
+
+.out:before {
+	background: #fbc727;
+	content: "";
+	height: 24px;
+	left: -15px;
+	position: absolute;
+	top: -4px;
+	width: 1px;
+}
+
+.block_left {
+	position: relative;
+	width: 545px;
+}
+
+.block_left .img_1 {
+    left: -45px;
+    position: absolute;
+    top: -77px;
+    z-index: 2;
+}
+
+.menu_left {
+	margin: 350px 0 0 0;
+/*	transform: rotate(-12deg);*/
+}
+
+.menu_left > li {
+	background: #004f1f url(img/ico_3.png) no-repeat left center;
+	clear: both;
+	float: left;
+	-webkit-transform: skew(10deg); -moz-transform: skew(10deg); -o-transform: skew(10deg);
+}
+
+.menu_left > li a {
+	font-family: 'MyriadPro-BoldCond';
+	font-size: 35px;
+	display: block;
+	line-height: 1.2;
+	padding: 0 10px 0 35px;
+	text-transform: uppercase;
 }
 
