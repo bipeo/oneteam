@@ -243,16 +243,15 @@ a.reg:hover {
 }
 
 .menu_left {
-	margin: 222px 0 0 0;
+	margin: 228px 0 0 40px;
 	position: relative;
-	transform: rotate(-12deg);
+	transform: rotate(-10deg);
 }
 
 .menu_left > li {
-	background: #004f1f url(img/ico_3.png) no-repeat left center;
+	background: #004f1f;
 	clear: both;
 	float: left;
-	left: 0;
 	position: absolute;
 	-webkit-transform: skew(-12deg); 
 	-moz-transform: skew(-12deg); 
@@ -260,8 +259,44 @@ a.reg:hover {
 	transform: skew(-12deg);
 }
 
+.menu_left > li:before {
+	background: url(img/ico_3.png) no-repeat left center;
+	content: "";
+	left: -20px;
+	position: absolute;
+	height: 39px;
+	width: 39px;
+	
+}
+
+.menu_left > li:nth-child(1) {
+	left: 4px;
+	top: 0;
+}
+
 .menu_left > li:nth-child(2) {
-	top: 20px;
+	left: -4px;
+	top: 42px;
+}
+
+.menu_left > li:nth-child(3) {
+	left: -11px;
+	top: 82px;
+}
+
+.menu_left > li:nth-child(4) {
+	left: -19px;
+	top: 124px;
+}
+
+.menu_left > li:nth-child(5) {
+	left: -26px;
+	top: 166px;
+}
+
+.menu_left > li:nth-child(6) {
+	left: -36px;
+	top: 207px;
 }
 
 .menu_left > li a {
@@ -269,9 +304,10 @@ a.reg:hover {
 	font-size: 35px;
 	display: block;
 	line-height: 1.2;
-	padding: 0 10px 0 69px;
+	padding: 0 10px 0 29px;
 	text-transform: uppercase;
 }
+
 
 /*========================== 003 page ==========================*/
 
