@@ -848,6 +848,7 @@ body {
 	color: #666;
 	font-family: Arial;
 	line-height: 1.2;
+	margin: 0 0 72px 0;
 	overflow: hidden;
 }
 
@@ -898,6 +899,11 @@ body {
 	left: 14px;
 }
 
+.footer_rooms_item {
+	margin: 140px 0 0 0;	
+	overflow: hidden;
+}
+
 .ul_2 {
 	background: url(img/bg_3.png) no-repeat left bottom;
 	clear: both;
@@ -906,6 +912,25 @@ body {
 
 .ul_2 > li {
 	float: left;
+	padding: 0 0 5px 8px;
+	width: 110px;
+}
+
+.ul_2 .title_ul {
+	color: #000;
+	display: block;
+	margin: 0 0 13px 0;
+}
+
+.ul_2 .rooms_price {
+	color: #000;
+	font-family: 'pt_sansbold';
+	font-size: 21px;
+}
+
+.ul_2 .rouble {
+	color: #000;
+	font-size: 21px;
 }
 
 /*========================== END rooms page ==========================*/
