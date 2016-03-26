@@ -728,7 +728,7 @@ h4{font-size: 18px;}
 }
 
 .block_3 {
-	background: #123c65 url(img/bg_for_block_3.jpg) no-repeat center top;
+	background: #123c65 url(img/bg_for_block_3.jpg) no-repeat center top / cover;
 	color: #ffffff;
 	padding: 143px 0 145px 0;
 }
@@ -1340,7 +1340,7 @@ footer {
 /*========================== внутренние ==========================*/
 
 .page_about_us .block_1 {
-	background: url(img/man.png) no-repeat right -89px top 47px;	
+	background: url(img/man.png) no-repeat right -89px bottom;	
 	padding-top: 160px;
 }
 
@@ -2284,7 +2284,7 @@ footer {
 }
 
 .cardio_ul > li, .bullit > li {
-	background: url(img/ico_14.png) no-repeat left center;
+	background: url(img/ico_14.png) no-repeat left 5px;
 	font-size: 18px;
 	padding: 0 0 0 38px;
 }
@@ -2855,6 +2855,10 @@ footer {
 
 .content_item p {
 	margin: 0 0 24px 0;
+}
+
+.content_item p a {
+	text-decoration: underline;
 }
 
 .ginekolog_photo {
