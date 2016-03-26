@@ -115,6 +115,15 @@ input[type=submit] {
     font-weight: normal;
 }
 
+.row:before, .row:after {
+    content:'';
+    display:table;
+}
+.row:after {
+    clear:both;
+}    
+
+
 body {
 	color: #fff;
 	font-family: Arial;
@@ -126,9 +135,15 @@ a {
 	text-decoration: none;
 }
 
+html, body {
+    min-width:1024px;
+    height:100%;
+}
+
 .wrapper {
-    background: url(img/body_bg.jpg) no-repeat 0 0 / cover;
-	height: 100vh;
+        min-height: 100%;
+        background: url(img/body_bg.jpg) no-repeat 0 0 / cover;
+	/*height: 100vh; */
 	position: relative;
 	max-width: 1920px;
 	margin: 0 auto;
@@ -315,4 +330,266 @@ a.reg:hover {
 	width: 522px;
 }
 /*========================== END 003 page ==========================*/
+
+    
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+
+.checkbox + label {
+  color:rgba(0,0,0,.9);  
+  cursor: pointer;
+}
+
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative; 
+  padding: 0 0px  0px 25px; 
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 14px;
+  background-repeat:no-repeat;
+  background-image:url(img/unchecked.png);
+}
+
+.checkbox:checked + label:before {
+    background-repeat:no-repeat;
+      background-image:url(img/checked.png);
+
+
+}
+.option-group {
+    float:left;
+    margin:16px 27px 10px 0;
+}
+.logform {
+
+}
+    .logform .form  {
+        text-align:left;
+        background-color:#004f1f;
+        border:2px dashed #fbc727;
+        position:relative;
+        padding:15px 89px 34px 89px;
+        margin:0 auto;
+        max-width:818px;
+        box-sizing:border-box;
+        border-style:dashed !important ;
+        font-family: "MyriadProCondRegular";
+    }
+   
+    .logform .form input[type=text], .logform .form input[type=password], .logform .form textarea {
+        letter-spacing: 1px;
+        font-family: '';
+        color: #000; 
+        display: inline-block;
+        font-size: 18px;
+        height: 46px;
+        padding: 0px 12px 0px 12px;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        width:100%;
+        margin:6px auto 15px auto;
+        box-sizing:border-box;
+        background-repeat: no-repeat;
+
+    }
+    .logform .form input[type=text], .logform .form input[type=password], .logform .form textarea, .logform .form input[type=submit] {
+        font-weight:bold;
+        font-family: Arial; 
+    }
+    .logform .form input[type=text], .logform .form input[type=password] {
+        text-transform: uppercase;
+    }
+    .logform .form input[type=text]:focus, .logform .form input[type=password]:focus, .logform .form textarea:focus   {
+            color:rgba(0,0,0,1);
+           
+           /* border-color:#fbc727;*/
+           
+    }
+    .logform .form input[type=text]:focus::-webkit-input-placeholder, .logform .form input[type=password]:focus::-webkit-input-placeholder  {
+         color:rgba(0,0,0,1);
+
+    }
+
+    .logform .form input[type=text]::-webkit-input-placeholder, .logform .form input[type=password]::-webkit-input-placeholder {color:#000;   opacity:1;}
+    .logform .form input[type=text]::-moz-placeholder, .logform .form input[type=password]::-moz-placeholder           {color:#000;   opacity:1;}/* Firefox 19+ */
+    .logform .form input[type=text]:-moz-placeholder, .logform .form input[type=password]:-moz-placeholder            {color:#000;   opacity:1;}/* Firefox 18- */
+    .logform .form input[type=text]:-ms-input-placeholder, .logform .form input[type=password]:-ms-input-placeholder      {color:#000;   opacity:1;}
+
+    .logform .form input[type=submit] {
+        color:#fff;
+        display:inline-block;
+        font-size: 14px;
+        padding:16px 53px 15px 53px;
+        margin: 20px 0 0 0;
+        background: transparent; 
+        text-transform: uppercase;
+    }
+    .outsubmit {
+        text-align:right;
+    }
+    .logform .form input[type=submit]:focus   {
+      
+    }
+    .logform .form input[type=submit]:hover {
+        background: #597533;
+        color:#fff;
+ 
+    }
+    .logform .form .line {
+        overflow:hidden;
+    }
+ 
+    .logform .form .label {
+    display:block;    
+     /* font-family: 'Conv_pfbeausanspro-light'; */
+     font-size:20px;   
+     color:#fff;   
+    }
+    
+  
+.logform .vercode, .logform  .refresh,
+.logform .form input[type=text], 
+.logform .form input[type=password], 
+.logform .form textarea  {
+    height:50px;
+    
+}
+.logform .form, .logform .vercode, .logform  .refresh,
+.logform .form input[type=text], 
+.logform .form input[type=password],
+.logform .form input[type=submit],
+.logform .form textarea  {
+    border: 2px solid rgba(251,199,39,1);
+    border-radius: 7px;
+} 
+.logform .form textarea {
+    width:347px;
+    padding: 10px 12px 10px 12px;
+    margin:5px auto 19px auto;
+    height:231px;
+}
+
+
+.h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: 'MyriadPro-BoldCond';
+    font-size:54px;
+}
+
+.logform .vercode {
+    float:left;
+    margin: 5px 0px 15px 0px;
+    width:194px;
+    background:url(img/vercode.png) no-repeat;
+    background-size:cover;
+}
+
+.logform  .refresh {
+    cursor:pointer;
+    position: relative;
+    float:right;
+    margin: 5px 0px 15px 0px;
+    width:50px;
+  
+}
+
+.logform .form input[type=submit], .logform  .refresh {
+    background: #a98000; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a98000 0%, #fbc727 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #a98000 0%,#fbc727 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #a98000 0%,#fbc727 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a98000', endColorstr='#fbc727',GradientType=0 ); /* IE6-9 */
+
+}
+
+.logform  .refresh:hover, .logform .form input[type=submit]:hover, .logform .form input[type=submit]:active  {
+        background: #fbc727; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fbc727 0%, #a98000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #fbc727 0%,#a98000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #fbc727 0%,#a98000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbc727', endColorstr='#a98000',GradientType=0 ); /* IE6-9 */
+}
+.logform  .refresh:after {
+    content:'';
+    display:block;
+    width:29px;
+    height:29px;
+    position:absolute;
+    left:50%;
+    margin-left:-15.5px;
+    top:50%;
+    margin-top:-15.5px;
+    background-image:url(img/refresh_icon.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+.logform .col {
+   
+}
+.logform .col.one {
+    float:left;
+    width:268px;
+    margin-right:20px;
+}
+.logform .col.two {
+    margin-left:288px;
+}  
+.logform  .h2 {
+   margin:25px 0px 20px 0px; 
+   text-align:center; 
+   color:#f5e700;
+}
+.logform .close_btn {
+    right: -37px;
+    top: -18px;
+    position:absolute;
+}
+.close_btn {
+    display:block;
+    background:url(img/close_ic.png) no-repeat;
+    width:71px;
+    height:50px;
+}
+ 
+body {
+    color:#000; /*remove*/
+}
+ 
+ /* centring  */
+  .wrapper .area {
+    text-align:center;  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .wrapper .area:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  .wrapper .area  .ctd {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+   /* centring end  */
+
 
