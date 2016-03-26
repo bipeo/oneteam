@@ -460,6 +460,7 @@ body {
 
 .hotel_list .h3 {
 	color: #cd171e;
+	display: block;
 	font-family: 'pt_sansbold';
 	font-size: 24px;
 	margin: 0 0 19px 0;
@@ -791,6 +792,40 @@ body {
 	display: none;
 }
 
+/*========================== rooms page ==========================*/
+
+.bg_2 {
+	background: url(img/bg_2.jpg) no-repeat center top / cover;	
+}
+
+.rooms_param li {
+	text-align: center;	
+}
+
+.rooms_param li + li {
+	margin-top: 19px;
+}
+
+.rooms_param a {
+	border: 2px solid #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	font-family: 'pt_sansbold';
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 20px;
+	text-transform: uppercase;
+}
+
+.rooms_param a + a {
+	margin-left: 19px;
+}
+
+/*========================== END rooms page ==========================*/
 /*========================== footer ==========================*/
 
 .footer {
