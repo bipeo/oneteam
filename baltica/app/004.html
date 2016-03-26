@@ -14,59 +14,76 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
+   
 <div class="wrapper">
-	<div class="recovery">
-            <div class="logform">
-                
-                <div class="logform">
+  <div class="area">
+      <div class="ctd">
+
+          <div class="logform">
                            
                           
                       
                           <form class="form">
-                               <h3 class="h3 or">Связаться со специалистом</h3>
-        <div class="line">
-            <div class="sect">       
-         <label class="label"  for="log">Ваше имя</label>         
-        <input id="log"  type="text" placeholder="" value="">
-            </div>
-            <div class="sect right">  
-          <label class="label" for="mail">E-mail / Телефон</label>   
-   <input id="mail"   type="text" placeholder="" value="">
+                              <span class="close_btn"></span>        
+                               <h2 class="h2">Обратная связь</h2>
+                              
+                              
+                              <div class="row">                    
+        <div class="col one">
+                  
+         <label class="label"  for="log">Фамилия и Имя</label>         
+        <input id="log"  type="text" placeholder="Фамилия и Имя" value="">
+            
+            
+          <label class="label" for="mail">E-mail</label>   
+   <input id="mail"   type="text" placeholder="E-mail" value="">
+         
+          
+           
+          <label class="label" for="verify">Проверочный код</label>
+          
+          <div class="row ">
+              <span class="vercode"></span>
+              <span class="refresh grad_01"></span>
           </div>
+          
+          
+          <label class="label" for="verify">Введите проверочный код</label>   
+          <input id="verify"   type="text" placeholder="7G3Y798H" value="">
+                  
+  
+          
         </div>
      
-         <div class="line">
-             <label class="label"   for="mess">Сообщение</label> 
+         <div class="col two">
+             <label class="label"   for="mess">Ваше сообщение</label> 
              <textarea id="mess"></textarea>
-       
-         </div><label class="label" for="mess">Я хочу связаться с:</label> 
-         <div class="line">
-             
-             
-              <div class="option-group">
-      <input class="checkbox" type="radio" checked="checked" value="Brainfuck" name="prog_lang" id="Brainfuck" />
-      <label for="Brainfuck">Апитерапевтом</label>
+             <div class="outsubmit">     
+              <input type="submit" value="Отправить" />
+            </div> 
          </div>
-              <div class="option-group">
-      <input class="checkbox" type="radio" value="Brainfuck" name="prog_lang" id="Brainfuck2" />
-      <label for="Brainfuck2">Пчеловодом</label>
-         </div>
-             
-       
-         </div>
+        
                               
-        <input type="submit" value="Отправить">
-            
+       
+            </div> 
     </form>
-                          </div>
+                         
                 
                 
             </div>
 		
-	</div>
 	
+      </div>
+  </div>
+    
+    <img class="warning" src="img/warning.png" alt="">
+    
+    <div class="content" style="min-height: 720px;">
+    <!-- Задаем минимальную высоту для  страници  -->
+  </div>
+    
 </div>
-	
+   
 <!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -76,7 +93,7 @@
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
-		//$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left: 0, pervious: false});
+		//$.pixlayout({clip: true, src: "design/004.jpg", show:true, center:true, top:0, left: 0, pervious: false});
 }); 
 </script>
 </body>
