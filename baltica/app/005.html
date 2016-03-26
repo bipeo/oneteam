@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>005</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+        <link href="libs/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+        <script src="libs/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+        <script type="text/javascript">
+                $(function(){
+                    $('.datepicker').datepicker({
+                        inline: true
+                    });
+        }); 
+        </script>
+</head>
+<body>
+   
+<div class="wrapper">
+  <div class="area">
+      <div class="ctd">
+
+          <div class="logform">
+                           
+                          
+                      
+                          <form class="form">
+                              <span class="close_btn"></span>        
+                               <h2 class="h2">Регистрация</h2>
+                              
+                              
+                              <div class="row">                    
+        <div class="itm">
+         <label class="label"  for="lastname">Фамилия</label>         
+        <input id="lastname"  type="text" placeholder="Фамилия" value="">
+          </div> 
+                                  
+        
+            <div class="itm">
+          <label class="label" for="mail">E-mail</label>   
+   <input id="mail"   type="text" placeholder="E-mail" value="">
+            </div>
+         
+          
+         <div class="itm">
+          <label class="label" for="pass">Пароль</label>   
+          <input id="pass" type="password" placeholder="********" value="">
+            </div>
+           
+               </div> 
+                               
+                                <div class="row">                    
+        <div class="itm">
+         <label class="label"  for="name">Имя</label>         
+        <input id="name"  type="text" placeholder="Имя" value="">
+          </div> 
+                                  
+        
+            <div class="itm">
+          <label class="label " for="phone">Телефон</label>   
+   <input id="phone"   class="for_mask" type="text" placeholder="+7(___) ___-__-__"  value="">
+            </div>
+         
+          
+         <div class="itm">
+          <label class="label" for="pass_2">Пароль</label>   
+          <input id="pass_2" type="password" placeholder="********" value="">
+            </div>
+           
+               </div> 
+                               
+                               
+            <div class="row">                    
+        <div class="itm">
+         <label class="label"  for="birthday">Дата рождения</label>         
+        <input id="birthday" class="datepicker"  type="text" placeholder="01/01/1970" value="">
+          </div>
+                
+                
+                
+            <div class="radio-group" >
+                <div class="item">    
+           <input class="radio" type="radio" checked="checked"  value="" name="selector" id="men">
+     <label for="men">Вы мужчина</label>
+      </div>
+
+       <div class="item">
+           <input class="radio" type="radio"  value="" name="selector" id="women">
+     <label for="women">Вы женщина</label>
+      </div>
+       </div>
+                
+                
+             </div> 
+                               
+           <div class="row">
+               <div class="checkbox-group">
+                   <div class="item">    
+      <input class="checkbox" type="checkbox" checked="checked" value="" name="" id="nletter">
+      <label for="nletter">Я согласен получать новостную рассылку</label>
+         </div>
+                   
+          <div class="item">
+      <input class="checkbox" type="checkbox" value="" name="" id="agree">
+      <label for="agree">Я принимаю условия <a href="#">публичной оферты</a></label>
+         </div>
+               
+               
+               </div>
+               
+               
+                <div class="rbox">
+             <div class="outsubmit">     
+              <input type="submit" value="РЕГИСТРАЦИЯ" />
+            </div>
+                <span class="sbt">Вход 
+с помошью 
+соц.сети:</span> 
+                    <div class="soclist">
+                        <a class="vk" href="#"></a>
+                        <a class="fb" href="#"></a>
+                        <a class="klass" href="#"></a>
+
+                    </div>       
+                </div>
+               
+              
+               
+           </div>
+          
+          
+                  
+  
+          
+       
+     
+        
+        
+                              
+       
+           
+    </form>
+                         
+                
+                
+            </div>
+		
+	
+      </div>
+  </div>
+    
+    <img class="warning" src="img/warning.png" alt="">
+    
+    <div class="page_mh register">
+    <!-- Задаем минимальную высоту для  страници  -->
+  </div>
+    
+</div>
+   
+<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+<script src="libs/jquery.mask.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
+<script type="text/javascript">
+	$(function(){
+		///$.pixlayout({clip: true, src: "design/005.jpg", show:true, center:true, top:0, left: 0, pervious: false});
+}); 
+</script>
+</body>
+</html>
