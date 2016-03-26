@@ -177,6 +177,11 @@ a {
 
 a:hover {color: #000;}
 
+i {
+	font-family: Arial;
+	font-style: italic;
+}
+
 body {
 	background: #fff;
 	color: #000000;
@@ -458,8 +463,9 @@ body {
 	width: 100%;
 }
 
-.hotel_list .h3 {
+.hotel_list .h3, .rooms_item .h3 {
 	color: #cd171e;
+	display: block;
 	font-family: 'pt_sansbold';
 	font-size: 24px;
 	margin: 0 0 19px 0;
@@ -707,13 +713,13 @@ body {
 	position: relative;
 }
 
-.hotel_list__block ul li strong {
+.hotel_list__block ul li strong, .rooms_ul li strong {
 	color: #000000;
 	font-family: Arial;
 	font-weight: 700;
 }
 
-.hotel_list__block ul li:before, .article ul li:before {
+.hotel_list__block ul li:before, .article ul li:before, .rooms_ul li:before {
 	background: #cd171e;
 	border-radius: 50%;
 	content: "";
@@ -791,6 +797,118 @@ body {
 	display: none;
 }
 
+/*========================== rooms page ==========================*/
+
+.bg_2 {
+	background: url(img/bg_2.jpg) no-repeat center top / cover;
+	height: 470px;
+	margin-bottom: 70px;
+}
+
+.block_2_pos {
+	top: 193px;
+}
+
+.rooms {
+	padding-top: 0!important;
+}
+
+.rooms_param {
+	margin: 27px 0 0 0;
+}
+
+.rooms_param li {
+	text-align: center;	
+}
+
+.rooms_param li + li {
+	margin-top: 19px;
+}
+
+.rooms_param a {
+	border: 2px solid #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	font-family: 'pt_sansbold';
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 20px;
+	text-transform: uppercase;
+}
+
+.rooms_param a + a {
+	margin-left: 19px;
+}
+
+.rooms_item {
+	color: #666;
+	font-family: Arial;
+	line-height: 1.2;
+	overflow: hidden;
+}
+
+.bron_img {
+	display: block;
+	margin: 0 0 15px 0;
+}
+
+.rooms_foto li {
+	text-align: center;
+	width: 307px;
+}
+
+.rooms_foto li img {
+	border-radius: 4px;
+	display: block;
+}
+
+.rooms_foto li i {
+	color: #666666;
+	display: block;
+	margin: 8px 0 12px 0;
+}
+
+.rooms_item .h3 {
+	margin-bottom: 13px;
+}
+
+.rooms_item p {
+	margin: 0 0 23px 0;
+}
+
+.rooms_ul {
+	margin: 13px 0 31px 0;
+}
+
+.rooms_ul li {
+	padding-bottom: 12px;	
+	padding-left: 28px;
+	position: relative;
+}
+
+.rooms_ul li:last-child {
+	padding-bottom: 0;
+}
+
+.rooms_ul li::before {
+	left: 14px;
+}
+
+.ul_2 {
+	background: url(img/bg_3.png) no-repeat left bottom;
+	clear: both;
+	overflow: hidden;
+}
+
+.ul_2 > li {
+	float: left;
+}
+
+/*========================== END rooms page ==========================*/
 /*========================== footer ==========================*/
 
 .footer {
