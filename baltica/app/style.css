@@ -135,6 +135,14 @@ a {
 	text-decoration: none;
 }
 
+.page_mh.register {
+     min-height: 790px;
+}
+.page_mh.contform {
+ min-height: 720px;   
+}
+
+
 html, body {
     min-width:1024px;
     height:100%;
@@ -331,61 +339,161 @@ a.reg:hover {
 }
 /*========================== END 003 page ==========================*/
 
-    
-.checkbox {
+  /* checkbox  */
+.checkbox, .radio  {
   vertical-align: top;
   margin: 0 3px 0 0;
-  width: 17px;
-  height: 17px;
+  width: 37px;
+  height: 37px;
 }
 
-.checkbox + label {
-  color:rgba(0,0,0,.9);  
+
+.checkbox + label, .radio + label {
+  font-family: Arial;  
+  color:#fff;  
   cursor: pointer;
 }
 
-.checkbox:not(checked) {
+.checkbox:not(checked), .radio:not(checked) {
   position: absolute;
   opacity: 0;
 }
-.checkbox:not(checked) + label {
+
+.checkbox:not(checked) + label, .radio:not(checked) + label {
   position: relative; 
-  padding: 0 0px  0px 25px; 
-}
+  padding: 12px 0px  12px 60px; 
+ }
+ 
 .checkbox:not(checked) + label:before {
   content: '';
   position: absolute;
-  left: 0;
-  width: 18px;
-  height: 14px;
+  z-index:2;
+  left: 3px;
+  top:-5px;
+  width: 42px;
+  height: 38px;
   background-repeat:no-repeat;
-  background-image:url(img/unchecked.png);
+  background-image:url(img/arrow_check.png);
 }
-
 .checkbox:checked + label:before {
-    background-repeat:no-repeat;
-      background-image:url(img/checked.png);
-
+     background:none;
+}
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top:0px;
+  width: 37px;
+  height: 37px;
+  background-repeat:no-repeat;
+  background-color:#fff;
+  border: 2px solid rgba(251,199,39,1);
+  border-radius: 7px;
 
 }
-.option-group {
-    float:left;
+
+
+.checkbox-group {
     margin:16px 27px 10px 0;
 }
-.logform {
-
+.checkbox-group .item {
+    
 }
+  /* checkbox end  */
+  
+  
+  /* radio  */
+  
+.radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top:7px;
+  width:27px;
+  height:27px;
+  background:none;
+  border-radius: 50%;
+}
+.radio:checked + label:before {
+   background:#e72118;
+    
+}
+.radio:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top:0px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid rgba(251,199,39,1);
+  border-radius: 50%;
+}
+.radio-group {
+    margin:16px 0px 10px 0;
+}
+.radio-group .item {
+    float:left;
+    margin:29px 39px 30px 0;
+}
+.radio-group .item:last-child {
+    margin-right:0px;
+}
+/* radio end  */  
+.logform .radio-group  {
+    float:right;
+}
+.logform .checkbox-group {
+    float:left;
+}
+.checkbox-group .item {
+    margin:18px 39px 63px 0;
+}
+.checkbox-group .item:last-child {
+    margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+.logform .form .rbox {
+    color:#fff;
+    
+    float:right;
+}
+.logform .form .rbox .sbt {
+    display:block;
+    float:left;
+    width:54px;
+    line-height: 17px;
+    margin: 29px 0px 0px 0px;
+}
+
+.logform .form .rbox input[type=submit] {
+    padding-left:44px;
+    padding-right:44px;
+    margin-top:17px;
+    
+}
+
+    
+
+
     .logform .form  {
+        
+        font-size:14px;
         text-align:left;
         background-color:#004f1f;
         border:2px dashed #fbc727;
         position:relative;
         padding:15px 89px 34px 89px;
         margin:0 auto;
-        max-width:818px;
         box-sizing:border-box;
         border-style:dashed !important ;
-        font-family: "MyriadProCondRegular";
+        font-family: Arial;
     }
    
     .logform .form input[type=text], .logform .form input[type=password], .logform .form textarea {
@@ -453,10 +561,10 @@ a.reg:hover {
     }
  
     .logform .form .label {
-    display:block;    
-     /* font-family: 'Conv_pfbeausanspro-light'; */
-     font-size:20px;   
-     color:#fff;   
+    display:block;   
+    font-family: "MyriadProCondRegular";
+    font-size:20px;   
+    color:#fff;   
     }
     
   
@@ -476,9 +584,9 @@ a.reg:hover {
     border-radius: 7px;
 } 
 .logform .form textarea {
-    width:347px;
+    width:100%;
     padding: 10px 12px 10px 12px;
-    margin:5px auto 19px auto;
+    margin:5px 0px 19px 0px;
     height:231px;
 }
 
@@ -538,8 +646,13 @@ a.reg:hover {
     background-repeat: no-repeat;
 }
 
-.logform .col {
-   
+.logform .row .itm  {
+   width:194px;
+   float:left;
+   margin-right:20px;
+}
+.logform .row .itm:last-child {
+    margin-right:0px;
 }
 .logform .col.one {
     float:left;
@@ -547,7 +660,9 @@ a.reg:hover {
     margin-right:20px;
 }
 .logform .col.two {
-    margin-left:288px;
+    width:347px;
+    float:left;
+   
 }  
 .logform  .h2 {
    margin:25px 0px 20px 0px; 
@@ -591,5 +706,90 @@ body {
   }
   
    /* centring end  */
+   
+   
+   
+   .soclist {
+       float:right;
+   }
+   
+   .soclist a {
+     margin:38px 7px 10px 0px;  
+     width: 29px;
+    height: 29px;   
+    background-image: url(img/soclinks.png);
+    background-repeat: no-repeat;
+    float:left;    
+   }
+     
+   .soclist a:last-child {
+       margin-right:0px;
+   }
+   .soclist a.vk {
+    background-position: -83px -44px;
+   }
+   .soclist a.vk:hover {
+    background-position: -83px -5px;
+   }
+   .soclist a.fb {
+    background-position: -44px -5px;
+   }
+   .soclist a.fb:hover {
+    background-position: -5px -5px;
+   }
+  .soclist a.klass {
+    background-position: -44px -44px;
+   }
+  .soclist a.klass:hover {
+    background-position: -5px -44px;
+   }
+
+   
+   
+   .sprite {
+   
+}
+
+.sprite-fb_a {
+    width: 29px;
+    height: 29px;
+    background-position: -5px -5px;
+}
+
+.sprite-fb_d {
+    width: 29px;
+    height: 29px;
+    background-position: -44px -5px;
+}
+
+.sprite-klass_a {
+    width: 29px;
+    height: 29px;
+    background-position: -5px -44px;
+}
+
+.sprite-klass_d {
+    width: 29px;
+    height: 29px;
+    background-position: -44px -44px;
+}
+
+.sprite-vk_a {
+    width: 29px;
+    height: 29px;
+    background-position: -83px -5px;
+}
+
+.sprite-vk_d {
+    width: 29px;
+    height: 29px;
+    background-position: -83px -44px;
+}
+
+.datepicker {
+  position:relative;
+  z-index:10000;
+}
+
 
 
