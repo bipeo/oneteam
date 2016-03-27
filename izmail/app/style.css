@@ -858,7 +858,7 @@ body {
 }
 
 .rooms_foto {
-	margin: 0 0 0 20px;
+	margin: 0 0 35px 20px;
 }
 
 .rooms_foto > li {
@@ -914,23 +914,23 @@ body {
 
 .ul_2 > li {
 	float: left;
-	padding: 0 0 5px 8px;
+	padding: 0 0 4px 8px;
 	width: 110px;
 }
 
-.ul_2 .title_ul {
+.ul_2 .title_ul, .ul_3 .title_ul, .ul_4 .title_ul {
 	color: #000;
 	display: block;
 	margin: 0 0 13px 0;
 }
 
-.ul_2 .rooms_price {
+.ul_2 .rooms_price, .ul_4 .rooms_price {
 	color: #000;
 	font-family: 'pt_sansbold';
 	font-size: 21px;
 }
 
-.ul_2 .rouble {
+.ul_2 .rouble, .ul_4 .rouble {
 	color: #000;
 	font-size: 21px;
 }
@@ -945,6 +945,59 @@ body {
 	height: 36px;
 	line-height: 36px;
 	text-align: center;
+}
+
+.ul_3 {
+	margin: -2px 0 0 15px;
+	overflow: hidden;
+}
+
+.ul_3 > li {
+	float: left;
+	position: relative;
+}
+
+.ul_3 > li .red_btn {
+	margin-top: 26px;
+}
+
+.ul_3 > li:last-child {
+	margin-left: 10px;
+}
+
+.ul_3 .title_ul {
+	margin-bottom: 12px;
+}
+
+.price_bg {
+	background: #ffe68e url(img/yellow.png) no-repeat right top;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+	font-family: 'pt_sansbold';
+	font-size: 16px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 20px 0 9px;
+	position: relative;
+	text-align: center;
+}
+
+.ul_4 {
+	overflow: hidden;
+}
+
+.ul_4 > li {
+	float: left;
+}
+
+.ul_4 > li + li {
+	margin-left: 10px;
+}
+
+.ul_4 .red_btn {
+	margin: 28px 0 0 0;
 }
 
 /*========================== END rooms page ==========================*/
