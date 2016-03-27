@@ -857,20 +857,22 @@ body {
 	margin: 0 0 15px 0;
 }
 
-.rooms_foto li {
-	text-align: center;
+.rooms_foto {
+	margin: 0 0 0 20px;
+}
+
+.rooms_foto > li {
 	width: 307px;
 }
 
-.rooms_foto li img {
+.rooms_foto > li img {
 	border-radius: 4px;
 	display: block;
 }
 
-.rooms_foto li i {
+.rooms_foto > li i {
 	color: #666666;
-	display: block;
-	margin: 8px 0 12px 0;
+	text-align: center;
 }
 
 .rooms_item .h3 {
@@ -900,7 +902,7 @@ body {
 }
 
 .footer_rooms_item {
-	margin: 140px 0 0 0;	
+	clear: both;
 	overflow: hidden;
 }
 
@@ -931,6 +933,18 @@ body {
 .ul_2 .rouble {
 	color: #000;
 	font-size: 21px;
+}
+
+.rooms_descript {
+	margin: 0 0 20px 0;
+	overflow: hidden;
+	width: 307px;
+}
+
+.rooms_foto_descript {
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
 }
 
 /*========================== END rooms page ==========================*/
