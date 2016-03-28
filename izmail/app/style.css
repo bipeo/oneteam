@@ -1005,6 +1005,141 @@ body {
 }
 
 /*========================== END rooms page ==========================*/
+
+/*========================== price page ==========================*/
+
+.bg_3 {
+	background: url(img/price_bg.png) no-repeat;
+	margin-bottom: 35px;
+}
+
+.header_descript {
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.header_descript a {
+	color: #ffe68e;
+	text-decoration: underline;
+}
+
+.bg_3 .block_2_pos {
+	top: 210px;
+}
+
+.block_price {
+	color: #666;
+	line-height: 18px;
+	padding-top: 20px;
+}
+
+.price_table {
+	margin: 0 0 24px 0;
+	width: 100%;
+}
+
+.price_table th {
+	border-bottom: 2px solid #cd171e;
+	color: #000;
+	font-family: Arial;
+	height: 47px;
+	line-height: 18px;
+	text-align: left;
+}
+
+.price_table td {
+	border-bottom: 1px solid #cccccc;
+	font-size: 16px;
+	height: 54px;
+	vertical-align: middle;
+}
+
+.price_table strong, .price_table .rouble, .p_2 strong, .p_2 .rouble {
+	color: #000;
+}
+
+.price_table .rouble {
+	font-weight: bold;
+}
+
+.price_table a {
+	font-family: 'pt_sansbold';
+	text-decoration: underline;
+}
+
+.p_1 {
+	margin: 19px 0 20px 0;
+}
+
+.tac {
+	text-align: center;
+}
+
+.p_2 {
+	font-family: 'pt_sansbold';
+	font-size: 16px;
+	margin: 0 0 16px 0;
+}
+
+.p_3 {
+	margin: 0 0 30px 0;
+}
+
+.ul_5 {
+	font-family: Arial;
+	line-height: 18px;
+	margin: 42px 0 41px 0;
+	overflow: hidden;
+}
+
+.ul_5 a {
+	text-decoration: underline;
+}
+
+.ul_5 li:nth-child(1) {
+	float: left;
+	width: 43%;
+}
+
+.ul_5 li:nth-child(2) {
+	float: right;
+	width: 47%;
+}
+
+.ul_5 .btn_red_border {
+	margin-top: 12px;
+}
+
+.wrap_pay {
+	display: block;
+	margin: 23px 0 0 0;
+}
+
+.wrap_pay img {
+	vertical-align: middle;
+}
+
+.wrap_pay img + img {
+	margin-left: 40px;
+}
+
+.content_price {
+	font-family: Arial;
+	line-height: 18px;	
+}
+
+.content_price p {
+	margin: 0 0 18px 0;
+}
+
+.content_price strong {
+	font-family: Arial;
+	font-weight: bold;
+}
+
+/*========================== END price page ==========================*/
+
 /*========================== footer ==========================*/
 
 .footer {
@@ -1207,10 +1342,10 @@ body {
 	.rooms_foto > li {
 		width: 49%;
 	}
-	.rooms_foto > li:first-child {
+	.rooms_foto > li:nth-child(1) {
 		float: left;
 	}
-	.rooms_foto > li:last-child {
+	.rooms_foto > li:nth-child(2) {
 		float: right;
 	}
 	.rooms_descript {
