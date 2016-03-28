@@ -168,6 +168,8 @@ h3 {
 	font-size: 24px;
 }
 
+h4 {font-size: 18px;}
+
 strong {font-family: 'pt_sansbold'; font-weight: normal;}
 
 a {
@@ -233,6 +235,10 @@ body {
 .btn_red_border:hover {
 	background-color: #cb1b26;
 	color: #fff;
+}
+
+.red_text {
+	color: #cb1b26;
 }
 
 .block_1 {
@@ -1004,6 +1010,16 @@ body {
 	margin: 28px 0 0 0;
 }
 
+.content_price .red_text {
+	text-transform: uppercase;
+}
+
+.h4 {
+	color: #000;
+	font-family: 'pt_sansbold';
+	font-size: 18px;
+}
+
 /*========================== END rooms page ==========================*/
 
 /*========================== price page ==========================*/
@@ -1109,6 +1125,7 @@ body {
 
 .ul_5 .btn_red_border {
 	margin-top: 12px;
+	white-space: nowrap;
 }
 
 .wrap_pay {
@@ -1127,6 +1144,7 @@ body {
 .content_price {
 	font-family: Arial;
 	line-height: 18px;	
+	margin: 0 0 53px 0;
 }
 
 .content_price p {
@@ -1136,6 +1154,70 @@ body {
 .content_price strong {
 	font-family: Arial;
 	font-weight: bold;
+}
+
+.block_date {
+	margin: 20px 0 69px 0;
+	overflow: hidden;
+}
+
+.ul_6 li {
+	font-family: Arial;
+}
+
+.ul_6 li span {
+	display: inline-block;
+}
+
+.ul_6 .first_date {
+	margin: 0 8px 0 0;
+	width: 80px;
+}
+
+.ul_6 .two_date {
+	width: 110px;
+}
+
+.ul_6 .symbol {
+	margin: 0 17px 0 0;
+}
+
+.ul_6.right {
+	margin: 0 77px 0 0;
+}
+
+.price_preim {
+	overflow: hidden;
+}
+
+.price_preim .block_preim__item {
+	float: left;
+	width: 50%;
+}
+
+.price_preim .block_preim__item:nth-child(2n+1) {
+	clear: both;
+}
+
+.block_payment_ico {
+	clear: both;
+	padding: 20px 0 59px 0;
+}
+
+.payment_ico {
+	margin: 29px 0 0 10px;
+}
+
+.payment_ico > li {
+	display: inline-block;
+	*zoom: 1;
+	overflow: hidden;
+	*display: inline;
+	vertical-align: middle;
+}
+
+.payment_ico > li + li {
+	margin-left: 7%;
 }
 
 /*========================== END price page ==========================*/
@@ -1405,6 +1487,17 @@ body {
 	}
 }
 
+@media only screen and (max-width: 950px) {
+	.block_payment_ico {display: none;}
+	.ul_5 > li {
+		float: none!important;
+		width: 100%!important;
+	}
+	.ul_5 .btn_red_border {
+		margin-bottom: 30px;
+	}
+}
+
 @media only screen and (max-width: 900px) {
 	.footer_1 {
 		width: 285px;
@@ -1621,6 +1714,8 @@ body {
 	.descipt_1 {
 		font-size: 15px;
 	}
+	.ul_6.right, .ul_6.left {float: none; margin: 0;}
+	.price_preim .block_preim__item {float: none; width: 100%;}
 }
 
 @media only screen and (max-width: 330px) {
