@@ -2238,6 +2238,12 @@ body {
 	.conference .block_2 {
 		top: 150px;
 	}
+	.header_mobile .logo {
+		margin-right: 0;
+	}
+	.bg_2 {
+		height: 500px;
+	}
 }
 
 @media only screen and (max-width: 350px) {
@@ -2247,9 +2253,6 @@ body {
 }
 
 @media only screen and (max-width: 330px) {
-	.logo {
-		margin-right: 10px;
-	}
 	.article .hotel_list > div {
 		float: none;
 		margin-right: 0;
