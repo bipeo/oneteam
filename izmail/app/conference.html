@@ -84,35 +84,57 @@
 		</ul>
 		<div class="block_2 block_2_pos">
 			<h1 class="h1">Online бронирование конференц-залов <span>гостиницы Измайлово</span></h1>
-			<ul class="block_select clearfix">
-				<li class="select_mest">
-					<span class="select_title">Конференц-зал:</span>
-					<select id="selectmenu">
-						<option>10 мест</option>
-						<option>20 мест</option>
-						<option selected="selected">30 мест</option>
-						<option>40 мест</option>
-					</select>
-				</li>
-				<li>
-					<span class="select_title">Переговорная комната:</span>
-					<select id="selectmenu_2">
-						<option>Не требуется</option>
-						<option>Требуется</option>
-					</select>
-				</li>
-				<li>
-					<span class="select_title">Количество дней:</span>
-					<select id="selectmenu_3">
-						<option>1</option>
-						<option>2</option>
-					</select>
-				</li>
-				<li>
-					<span class="select_title">Начальная дата:</span>
-					<input type="text" placeholder="1 марта 2016" id="datepicker">
-				</li>
-			</ul>
+			<div class="wrap_ui">
+				<ul class="block_select clearfix">
+					<li>
+						<span class="select_title">Конференц-зал:</span>
+						<select id="selectmenu">
+							<option>10 мест</option>
+							<option>20 мест</option>
+							<option selected="selected">30 мест</option>
+							<option>40 мест</option>
+						</select>
+					</li>
+					<li>
+						<span class="select_title">Переговорная комната:</span>
+						<select id="selectmenu_2">
+							<option>Не требуется</option>
+							<option>Требуется</option>
+						</select>
+					</li>
+					<li>
+						<span class="select_title">Количество дней:</span>
+						<select id="selectmenu_3">
+							<option>1</option>
+							<option>2</option>
+						</select>
+					</li>
+					<li>
+						<span class="select_title">Начальная дата:</span>
+						<input type="text" placeholder="1 марта 2016" id="datepicker">
+					</li>
+				</ul>
+				<ul class="block_radio_btn clearfix">
+					<li class="radio_btn_1">
+						<span class="radio_title">Требуется перенос мебели?</span>
+						<input checked name="radio" id="radio_1" type="radio">
+						<label for="radio_1">Да</label>
+						<input name="radio" id="radio_2" type="radio">
+						<label for="radio_2">Нет</label>
+					</li>
+					<li class="radio_btn_2">
+						<span class="radio_title">Схемы рассадки:</span>
+						<input name="radio rassadk" id="radio_3" type="radio">
+						<label for="radio_3">Театр</label>
+						<input name="radio rassadk" id="radio_4" type="radio">
+						<label for="radio_4">Класс</label>
+						<input name="radio rassadk" id="radio_5" type="radio">
+						<label for="radio_5">П-рассадка</label>
+						<input name="radio rassadk" id="radio_6" type="radio">
+						<label for="radio_6">Периметр</label>
+					</li>
+				</ul>
+			</div>
 			
 		</div>
 	</div><!-- END block_1 -->

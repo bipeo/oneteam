@@ -184,6 +184,8 @@ i {
 	font-style: italic;
 }
 
+label {cursor: pointer;}
+
 body {
 	background: #fff;
 	color: #000000;
@@ -1244,11 +1246,122 @@ body {
 	font-size: 18px;
 }
 
+.block_select > li + li {
+	margin-left: 20px;
+}
+
 .block_select .select_title {
 	display: block;
 	font-size: 13px;
 	margin: 0 0 7px 0;
 }
+
+.wrap_ui {
+	margin: 0 auto;
+	max-width: 680px;
+}
+
+.block_radio_btn > li {
+	float: left;
+}
+
+.radio_title {
+	display: block;
+	font-size: 16px;
+}
+
+.radio_btn_1 {
+	overflow: hidden;
+}
+
+.radio_btn_1 label {
+	background: #fff;
+	color: #000;
+	display: block;
+	float: left;
+	font-size: 18px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	width: 52px;
+}
+
+.radio_btn_1 label:nth-of-type(1) {
+	border-radius: 5px 0 0 5px;
+}
+
+.radio_btn_1 label:nth-of-type(2) {
+	border-radius: 0 5px 5px 0;
+}
+
+.radio_btn_1 input[type=radio] {
+	display: none;
+}
+
+.radio_btn_1 input[type=radio]:checked + label {
+	background: #cd171e;
+	color: #fff;
+}
+
+.radio_btn_2 {
+	overflow: hidden;
+}
+
+.radio_btn_2 input[type=radio] {
+	display: none;
+}
+
+.radio_btn_2 label {
+	background-color: #fff;
+	background-position: 9px center;
+	background-repeat: no-repeat;
+	color: #000;
+	float: left;
+	font-size: 16px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 10px 0 52px;
+	text-align: right;;
+}
+
+.radio_btn_2 input[type=radio]:checked + label {
+	background-color: #cd171e;
+	color: #fff;
+}
+
+.radio_btn_2 #radio_3 + label {
+	background-image: url(img/radio_ico_1.png);
+}
+
+.radio_btn_2 #radio_3:checked + label {
+	background-image: url(img/radio_ico_1_hover.png);
+}
+
+.radio_btn_2 #radio_4 + label {
+	background-image: url(img/radio_ico_2.png);
+}
+
+.radio_btn_2 #radio_4:checked + label {
+	background-image: url(img/radio_ico_2_hover.png);
+}
+
+.radio_btn_2 #radio_5 + label {
+	background-image: url(img/radio_ico_3.png);
+}
+
+.radio_btn_2 #radio_5:checked + label {
+	background-image: url(img/radio_ico_3_hover.png);
+}
+
+.radio_btn_2 #radio_6 + label {
+	background-image: url(img/radio_ico_4.png);
+}
+
+.radio_btn_2 #radio_6:checked + label {
+	background-image: url(img/radio_ico_4_hover.png);
+}
+
+/*========================== jQuery ui ==========================*/
 
 #datepicker {
 	background: #fff url(img/datepicker_ico_2.png) no-repeat right 2px center;
@@ -1263,8 +1376,6 @@ body {
 	padding: 0 0 0 15px;
 	width: 200px;
 }
-
-/*========================== jQuery ui ==========================*/
 
 .ui-widget {
 	font-family: 'pt_sansregular';	
