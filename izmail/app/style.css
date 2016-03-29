@@ -2060,6 +2060,31 @@ body {
 	.footer_2.left {display: none;}
 }
 
+@media only screen and (max-width: 750px) {
+	.block_radio_btn > li {
+		float: none;
+	}
+	.block_radio_btn > li + li {
+		margin-top: 15px;
+	}
+	.block_select > li:nth-child(3) {clear: both; margin-left: 0;}
+	.wrap_ui {
+		padding-left: 2%;
+		padding-right: 2%;
+		max-width: 100%;
+	}
+	.block_select > li {
+		float: none;
+	}
+	.block_select > li + li {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.conference {
+		height: 1400px;
+	}
+}
+
 @media only screen and (max-width: 695px) { /* 689 */
 	.block_2_1 {
 		width: 100%;
@@ -2159,6 +2184,30 @@ body {
 	}
 	.ul_6.right, .ul_6.left {float: none; margin: 0;}
 	.price_preim .block_preim__item {float: none; width: 100%;}
+}
+
+@media only screen and (max-width: 490px) {
+	.conference {
+		height: 1500px;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	.input_1 {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	.conference {
+		height: 1600px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.conference .block_2 {
+		top: 150px;
+	}
 }
 
 @media only screen and (max-width: 330px) {
