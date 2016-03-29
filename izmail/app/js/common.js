@@ -50,14 +50,32 @@ $(document).ready(function(){
 		
 	});
         
-        $('.fnc_btns .fancy_prev').click(function(){
-        	$.fancybox.prev();
-        });
+	$('.fnc_btns .fancy_prev').click(function(){
+		$.fancybox.prev();
+	});
+
+	$('.fnc_btns .fancy_next').click(function(){
+		$.fancybox.next();
+	});
         
-		$('.fnc_btns .fancy_next').click(function(){
-        	$.fancybox.next();
-        });
-        
-        
+    // перемотка
+    $('.rooms_param a').click(function(event) {
+        event.preventDefault();
+
+        var my_attr = $(this).attr('href').substring(1);
+        gotoblock(my_attr);
+    });
     
 });//конец ready
+
+function gotocoord(val){
+    $("html,body").stop(true, true).animate({'scrollTop': val-80}, 1500);
+}
+
+function gotoblock(id){
+    var obj = $('#'+id);
+    var destination = obj.offset().top;
+    $("html,body").stop(true, true).animate({'scrollTop': destination-80}, 1500);
+}
+
+
