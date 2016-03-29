@@ -134,6 +134,44 @@
 						<label for="radio_6">Периметр</label>
 					</li>
 				</ul>
+				<ul class="block_select clearfix">
+					<li>
+						<span class="select_title">Кофе брейк (200 руб./чел.)</span>
+						<select id="selectmenu_4">
+							<option>100 чел.</option>
+							<option>200 чел.</option>
+							<option selected="selected">300 чел.</option>
+							<option>400 чел.</option>
+						</select>
+					</li>
+					<li>
+						<span class="select_title">Обед (420 руб./чел.)</span>
+						<select id="selectmenu_5">
+							<option>25 чел.</option>
+							<option>30 чел.</option>
+							<option>35 чел.</option>
+							<option>40 чел.</option>
+						</select>
+					</li>
+					<li class="block_select_link"><a href="#">Меню кофе-брейков</a></li>
+					<li class="block_select_link"><a href="#">Все тарифы на аренду</a></li>
+				</ul>
+				<hr class="white_line">
+				<ul class="block_select">
+					<li>
+						<span class="select_title">Контактное лицо:</span>
+						<input class="input_1" type="text" placeholder="Владимир Кириенко">
+					</li>
+					<li>
+						<span class="select_title">Телефон или e-mail для связи:</span>
+						<input class="input_1 width_1" type="text" placeholder="+7 915 6783456">						
+					</li>
+				</ul>
+				<div class="checkbox_1">
+					<input id="checkbox_1" type="checkbox" name="check_1">
+					<label for="checkbox_1"><span></span>Некоторым гостям также требуется проживание</label>
+				</div>
+				<hr class="white_line">
 			</div>
 			
 		</div>
@@ -293,7 +331,7 @@
 <script src="libs/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
 <script src="js/common.js"></script>
 <script>
-	$( "#selectmenu, #selectmenu_2, #selectmenu_3" ).selectmenu();
+	$( "#selectmenu, #selectmenu_2, #selectmenu_3, #selectmenu_4, #selectmenu_5" ).selectmenu();
 	$( "#datepicker" ).datepicker({
 		dateFormat: 'd MM yy'
 	});

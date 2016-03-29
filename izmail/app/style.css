@@ -1228,6 +1228,7 @@ body {
 
 .conference {
 	background: url(img/bg_4.jpg) no-repeat center top / cover;
+	height: 864px;
 }
 
 .conference .h1 {
@@ -1361,6 +1362,61 @@ body {
 	background-image: url(img/radio_ico_4_hover.png);
 }
 
+.block_select_link a {
+	color: #fff;
+	font-size: 15px;
+	text-decoration: underline;
+}
+
+.white_line {
+	background: #fff;
+    border: none;
+    color: #fff;
+    height: 1px;
+	opacity: .4;
+}
+
+.input_1 {
+	background: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #000;
+	font-family: 'pt_sansregular';
+	font-size: 18px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 15px;
+	width: 386px;
+}
+
+.input_1::-webkit-input-placeholder {color:#000000;}
+.input_1::-moz-placeholder          {color:#000000; opacity: 1}
+.input_1:-moz-placeholder           {color:#000000; opacity: 1}
+.input_1:-ms-input-placeholder      {color:#000000;}
+
+.width_1 {
+	width: 273px;
+}
+
+.checkbox_1 {
+	font-size: 16px;
+}
+
+.checkbox_1 input[type=checkbox] {
+	display: none;
+}
+
+.checkbox_1 label span {
+	background: url(img/checkbox_1_bg.png) no-repeat -19px 0;
+	display: inline-block;
+	height: 18px;
+	width: 19px;
+}
+
+.checkbox_1 input[type=checkbox]:checked + label span {
+	background-position: 0 0;
+}
 /*========================== jQuery ui ==========================*/
 
 #datepicker {
@@ -1382,7 +1438,7 @@ body {
 }
 
 #selectmenu {
-	width: 140px!important;	
+	width: 140px;	
 }
 
 #selectmenu_2 {
@@ -1391,6 +1447,10 @@ body {
 
 #selectmenu_3 {
 	width: 110px;
+}
+
+#selectmenu_4, #selectmenu_5 {
+	width: 160px;
 }
 
 .ui-selectmenu-button span.ui-selectmenu-text {
