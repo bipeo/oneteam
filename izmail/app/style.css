@@ -1222,6 +1222,196 @@ body {
 
 /*========================== END price page ==========================*/
 
+/*========================== conference ==========================*/
+
+.conference {
+	background: url(img/bg_4.jpg) no-repeat center top / cover;
+}
+
+.conference .h1 {
+	line-height: 1.3;
+}
+
+.conference .h1 span {
+	display: block;
+	font-family: 'pt_sansregular';
+	font-size: 18px;
+	text-align: center;
+}
+
+.block_select > li {
+	float: left;
+	font-size: 18px;
+}
+
+.block_select .select_title {
+	display: block;
+	font-size: 13px;
+	margin: 0 0 7px 0;
+}
+
+#datepicker {
+	background: #fff url(img/datepicker_ico_2.png) no-repeat right 2px center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #000;
+	font-family: 'pt_sansregular';
+	font-size: 18px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 0 0 15px;
+	width: 200px;
+}
+
+/*========================== jQuery ui ==========================*/
+
+.ui-widget {
+	font-family: 'pt_sansregular';	
+}
+
+#selectmenu {
+	width: 140px!important;	
+}
+
+#selectmenu_2 {
+	width: 170px;
+}
+
+#selectmenu_3 {
+	width: 110px;
+}
+
+.ui-selectmenu-button span.ui-selectmenu-text {
+	height: 35px;
+	line-height: 35px;
+	padding: 0 0 0 14px;
+}
+
+.ui-selectmenu-button {
+	background: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+	color: #000;
+}
+
+.ui-state-default .ui-icon {
+	background: url(img/select_ico_1.png) no-repeat center center;
+}
+
+.ui-state-hover, .ui-state-focus {
+	background: #fff;
+}
+
+.ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	background: #cd171e;
+	border: none;
+	color: #fff;
+}
+
+.ui-menu .ui-menu-item {
+	font-size: 18px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 14px;
+}
+
+.ui-widget-content {
+	border: none;
+	margin: 10px 0 0 0;
+}
+
+.ui-widget-header .ui-icon {
+	background: url(img/datepicker_ico_1.png) no-repeat;
+}
+
+.ui-datepicker-prev .ui-icon {
+	background-position: 0 0;
+}
+
+.ui-datepicker-next .ui-icon {
+	background-position: -6px 0;
+}
+
+.ui-widget-header .ui-icon {
+	height: 11px;
+	width: 6px;
+}
+
+.ui-datepicker {
+	padding: 0;
+}
+
+.ui-widget-header {
+	background: #fff;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #cd171e;
+	color: #000;
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.ui-datepicker th {
+	background: #fff7dd;
+	color: #666666;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: normal;
+	height: 33px;
+	line-height: 33px;
+	padding: 0;
+	width: 33px;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled{
+	background: #e6e6e6;
+	opacity: 1;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	color: #333333;
+}
+
+.ui-datepicker td {
+	padding: 0;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+	font-size: 13px;
+	height: 32px;
+	line-height: 32px;
+	padding: 0;
+	text-align: center;
+	width: 31px;
+}
+
+.ui-datepicker-calendar .ui-state-hover, .ui-datepicker-calendar .ui-state-focus {
+	background: #cd171e;
+	color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+	cursor: pointer;
+	top: 4px;
+}
+
+.ui-datepicker-header .ui-state-hover, .ui-datepicker-header .ui-state-focus {
+	background: #fff;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+	margin-left: -4px;
+	margin-top: -5px;
+}
+
+/*========================== END jQuery ui ==========================*/
+/*========================== END conference ==========================*/
 /*========================== footer ==========================*/
 
 .footer {
