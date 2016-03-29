@@ -1499,6 +1499,21 @@ body {
 .style_article .article {
 	padding-bottom: 70px;
 }
+
+#krovat {
+	display: none;
+}
+
+#krovat + label {
+	background: url(img/togglessswitch.jpg) no-repeat 0 0;
+	display: block;
+	height: 36px;
+	width: 140px;
+}
+
+#krovat:checked + label {
+	background-position: -140px 0;
+}
 /*========================== jQuery ui ==========================*/
 
 #datepicker {
