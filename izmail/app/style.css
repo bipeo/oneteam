@@ -1053,8 +1053,11 @@ body {
 }
 
 .price_table {
-	margin: 0 0 24px 0;
 	width: 100%;
+}
+
+.wrap_table {
+	margin: 0 0 24px 0;	
 }
 
 .price_table th {
