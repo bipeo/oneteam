@@ -2083,6 +2083,9 @@ body {
 	.conference {
 		height: 1400px;
 	}
+	#selectmenu, #selectmenu_2, #selectmenu_3, #selectmenu_4, #selectmenu_5 {
+		width: 90%;	
+	}
 }
 
 @media only screen and (max-width: 695px) { /* 689 */
@@ -2189,6 +2192,12 @@ body {
 @media only screen and (max-width: 490px) {
 	.conference {
 		height: 1500px;
+	}
+	.itog .red_btn {
+		display: block;
+		margin-top: 10px;
+		top: 0;
+		width: 90%;
 	}
 }
 
