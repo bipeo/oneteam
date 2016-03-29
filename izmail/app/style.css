@@ -2083,8 +2083,8 @@ body {
 	.conference {
 		height: 1400px;
 	}
-	#selectmenu, #selectmenu_2, #selectmenu_3, #selectmenu_4, #selectmenu_5 {
-		width: 90%;	
+	#selectmenu, #selectmenu_2, #selectmenu_3, #selectmenu_4, #selectmenu_5, .ui-selectmenu-button {
+		width: 90%!important;	
 	}
 }
 
@@ -2201,6 +2201,15 @@ body {
 	}
 }
 
+@media only screen and (max-width: 480px) {
+	.wrap_table {
+		overflow-x: auto;
+	}
+	.price_table {
+		width: 480px;
+	}
+}
+
 @media only screen and (max-width: 430px) {
 	.input_1 {
 		width: 100%;
@@ -2210,6 +2219,9 @@ body {
 @media only screen and (max-width: 370px) {
 	.conference {
 		height: 1600px;
+	}
+	.conference .block_2 {
+		top: 150px;
 	}
 }
 
