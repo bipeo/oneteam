@@ -870,7 +870,7 @@ a.reg:hover {
         display:block;
         color:#e72118;
         font-size:14px;
-        margin:0px 0px 14px 0px;
+        margin:5px 0px 14px 0px;
     }
   
 .logform .vercode, .logform  .refresh,
@@ -947,7 +947,7 @@ a.reg:hover {
 .logform .form .line_mask {
     position:relative;
 }
-.logform .form  .inpmask {
+.logform .form  .inpmask   {
     padding:17px 14px 19px 14px;
     border-radius:7px;
     font-size:18px;
@@ -961,7 +961,7 @@ a.reg:hover {
 .logform .form .inpmask.hidden {
     display:none;
 }
-.logform .form .inpmask.error {
+.logform .form .inpmask.err {
      background-color:#e72118;
 }   
 

@@ -9,7 +9,7 @@ $(document).ready(function(){
                 maxlength: 50,
 		required: true,
 	    },
-            pswd: {
+            verify: {
                 required:true,
                 minlength: 6,
                 maxlength: 50,
@@ -41,8 +41,8 @@ $(document).ready(function(){
             },
             phonenum: {
                 required:true,
-                minlength: 3,
-                maxlength: 50,
+                minlength: 12,
+                maxlength: 14,
                
             },
              pswd: {
@@ -55,6 +55,12 @@ $(document).ready(function(){
                 required:true,
                 minlength: 6,
                 maxlength: 50,
+            },
+            nletter:{
+              //  required:true,
+            },
+            agree:{
+               // required:true,
             },
              birthday: {
                 required:true,
@@ -73,10 +79,10 @@ $(document).ready(function(){
                 maxlength: 50,
 		required: true,
 	    },
-            verify:{
+            pswd:{
                 required: true,
-                minlength: 2,
-                maxlength: 16,
+                minlength: 6,
+                maxlength: 50,
             },
        },
 
