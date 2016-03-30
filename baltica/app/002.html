@@ -19,7 +19,7 @@
  
 
           <div class="logform">
-                          <form class="form enter_form">
+                          <form class="form enter_form" id="enterTosite">
                                     
                               <h2 class="h2 big">ВХОД НА САЙТ</h2>
                               
@@ -27,12 +27,12 @@
                                                  
         <div class="col single">
                   
-         <label class="label"  for="log">Ваш номер телефона или E-mail</label>         
-        <input id="log"  type="text" placeholder="ivanov@ivanov@gmail.com" value="">
+         <label class="label"  for="nameemail">Ваш номер телефона или E-mail</label>         
+        <input id="nameemail" name="nameemail"  type="text" placeholder="ivanov@ivanov@gmail.com" value="">
           
           <div class="line_mask">       
-          <label class="label" for="pass">Ваш пароль</label>   
-          <input id="pass"  class="verify_01_____5555"  type="password" placeholder="******" value="">
+          <label class="label" for="pswd">Ваш пароль</label>   
+          <input id="pswd" name="pswd"   type="password" placeholder="******" value="">
           <span class="inpmask error">Ошибка при вводе пароля</span>
           </div>
         
@@ -102,6 +102,9 @@
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
+<script src="libs/formvalidation/dist/jquery.validate.js"></script>
+<script src="libs/formvalidation/dist/localization/messages_ru.js"></script>
+<script src="js/forform.js"></script>
 <script src="js/common.js"></script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">

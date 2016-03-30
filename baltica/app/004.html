@@ -12,6 +12,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<link rel="stylesheet" href="style.css" type="text/css" />
+        
 </head>
 <body>
    
@@ -19,7 +20,7 @@
  
 
           <div class="logform">
-                          <form class="form st_1">
+                          <form class="form st_1" id="contactForm">
                               <span class="close_btn"></span>        
                                <h2 class="h2">Обратная связь</h2>
                               
@@ -28,11 +29,11 @@
         <div class="col one">
                   
          <label class="label"  for="log">Фамилия и Имя</label>         
-        <input id="log"  type="text" placeholder="Фамилия и Имя" value="">
+        <input id="log" name="namelastname"  type="text" placeholder="Фамилия и Имя" value="">
             
             
-          <label class="label" for="mail">E-mail</label>   
-   <input id="mail"   type="text" placeholder="E-mail" value="">
+          <label class="label" for="email">E-mail</label>   
+          <input id="email" name="email"  data-rule-email="true"  type="text" placeholder="E-mail" value="">
          
           
            
@@ -45,7 +46,7 @@
           
           
           <label class="label" for="verify">Введите проверочный код</label>   
-          <input id="verify"   type="text" placeholder="7G3Y798H" value="">
+          <input id="verify" name="verify"  type="text" placeholder="7G3Y798H" value="">
                   
   
           
@@ -53,7 +54,7 @@
      
          <div class="col two">
              <label class="label"   for="mess">Ваше сообщение</label> 
-             <textarea id="mess"></textarea>
+             <textarea name="mess" id="mess"></textarea>
              <div class="outsubmit">     
               <input type="submit" value="Отправить" />
             </div> 
@@ -83,6 +84,9 @@
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
+<script src="libs/formvalidation/dist/jquery.validate.js"></script>
+<script src="libs/formvalidation/dist/localization/messages_ru.js"></script>
+<script src="js/forform.js"></script>
 <script src="js/common.js"></script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">

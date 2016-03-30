@@ -571,6 +571,12 @@ a.reg:hover {
     .logform .form input[type=text]:-moz-placeholder, .logform .form input[type=password]:-moz-placeholder            {color:#000;   opacity:1;}/* Firefox 18- */
     .logform .form input[type=text]:-ms-input-placeholder, .logform .form input[type=password]:-ms-input-placeholder      {color:#000;   opacity:1;}
 
+
+    .logform .form input[type=text]:focus::-webkit-input-placeholder, .logform .form input[type=password]:focus::-webkit-input-placeholder {color:transparent;   opacity:1;}
+    .logform .form input[type=text]:focus::-moz-placeholder, .logform .form input[type=password]:focus::-moz-placeholder           {color:transparent;   opacity:1;}/* Firefox 19+ */
+    .logform .form input[type=text]:focus:-moz-placeholder, .logform .form input[type=password]:focus:-moz-placeholder            {color:transparent;   opacity:1;}/* Firefox 18- */
+    .logform .form input[type=text]:focus:-ms-input-placeholder, .logform .form input[type=password]:focus:-ms-input-placeholder      {color:transparent;   opacity:1;}
+
     .logform .form input[type=submit], .logform .form .hrefsub {
         color:#fff;
         display:inline-block;
@@ -608,7 +614,14 @@ a.reg:hover {
     font-size:20px;   
     color:#fff;   
     }
-    
+    .logform .form .error {
+        line-height: 1.3em;
+        position:relative;
+        display:block;
+        color:#e72118;
+        font-size:14px;
+        margin:0px 0px 14px 0px;
+    }
   
 .logform .vercode, .logform  .refresh,
 .logform .form input[type=text], 
@@ -733,6 +746,7 @@ a.reg:hover {
   
 }
 
+
 .logform .form input[type=submit], .logform  .refresh {
     background: #a98000; /* Old browsers */
     background: -moz-linear-gradient(top,  #a98000 0%, #fbc727 100%); /* FF3.6-15 */
@@ -772,9 +786,9 @@ a.reg:hover {
     height:29px;
     position:absolute;
     left:50%;
-    margin-left:-15.5px;
-    top:50%;
-    margin-top:-15.5px;
+    margin-left:-14.5px;
+    top:51%;
+    margin-top:-14px;
     background-image:url(img/refresh_icon.png);
     background-position:center center;
     background-repeat: no-repeat;
@@ -942,28 +956,58 @@ body {
         
         .notif_tit  .el_eleven {
          margin:0 auto;    
-         display:block;    
+         display:block;
          width: 430px;
          height: 158px;
          background:no-repeat url(img/is_eleven.png);
          }
         .notif_tit .bts {
+            overflow:hidden;
+            position:relative;
             float:left;
             background-repeat: no-repeat;
+          
+            
+        }
+        
+        .notif_tit .bts:hover:before {
+            content:'';
+            position:absolute;
+            width:100%;
+            height:4px;
+            top:3px;
+            left:0px;
+            -ms-transform: rotate(-8.2deg); /* Для IE */
+            -webkit-transform: rotate(-8.2deg);
+            transform: rotate(-8.2deg);
+            -ms-box-shadow:0px 19px 38px rgba(0,0,0,.82);
+            -webkit-box-shadow:0px 19px 38px rgba(0,0,0,.82);
+            box-shadow: 0px 19px 38px rgba(0,0,0,.82); 
+   
+        }
+        .notif_tit .bts a {
+            content:'';
+            position:absolute;
+            z-index: 4;
+            left:0px;
+            top:12px;
+            width:175px;
+            height:56px;
+            transform: rotate(-8.2deg);
         }
         .notif_tit  .bts.yes {
             -ms-transform: translate(0px,-46px); /* IE 9 */
             -webkit-transform: translate(0px,-46px); /* Safari */
             transform: translate(0px,-46px);
-            width:192px;
-            height:105px;
+            width:168px;
+            height:81px;
             background-image: url(img/bts_yes.png);
             margin:0px 42px 0px 4px;
         }
         .notif_tit .bts.no {
-            -ms-transform: translate(0px,-78px); /* IE 9 */
-            -webkit-transform: translate(0px,-78px); /* Safari */
-            transform: translate(0px,-78px);
+            -ms-transform: translate(0px,-75px); /* IE 9 */
+            -webkit-transform: translate(0px,-75px); /* Safari */
+            transform: translate(0px,-75px);
             width:168px;
             height:81px;
             background-image: url(img/bts_no.png);
