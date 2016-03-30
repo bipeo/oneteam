@@ -370,7 +370,7 @@ a.reg:hover {
 }
 /*========================== END 003 page ==========================*/
 
-/*========================== 008 page ==========================*/
+/*========================== 007 008 009 page ==========================*/
 
 .bg_style {
 	background: url(img/bg.jpg) no-repeat center top / cover;
@@ -481,9 +481,113 @@ a.reg:hover {
 	margin-left: 6px;
 }
 
+.block_link {
+	margin: 0 0 30px 0;
+}
 
+.block_link a {
+	color: #fff3d6;
+	font-family: 'MyriadPro-BoldCond';
+	font-size: 24px;
+	margin: 0 25px 0 0;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
 
-/*========================== END 008 page ==========================*/
+.block_link a:hover, .block_link a.active {
+	color: #f5e700;
+	text-decoration: none;
+}
+
+.kod_title {
+	color: #f5e700;
+	display: block;
+	margin: 0 0 14px 0;
+	text-transform: uppercase;
+}
+
+.p_1 {
+	line-height: 1.2;
+	margin: 0 0 65px 0;
+}
+
+.akc_products > li {
+	border: 2px dashed #fbc727;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	height: 145px;
+	margin: 0 72px 53px 0;
+	position: relative;
+	width: 192px;
+}
+
+.akc_products > li:last-child {
+	margin-right: 0;
+}
+
+.akc_products > li .akc_products_img {
+	left: 0;
+	position: absolute;
+	top: -57px;
+	z-index: 10;
+}
+
+.akc_descript {
+	position: absolute;
+	right: -55px;
+	top: 17px;
+	z-index: 20;
+}
+
+.input_txt {
+	background-color: #ffffff;
+	border: 2px solid #fbc727;
+	border-radius: 5px;
+	color: #000000;
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: 700;
+	height: 45px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 193px;
+}
+
+.submit {
+	background: -webkit-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
+	background: -moz-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
+	background: -o-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
+	background: -ms-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
+	background: linear-gradient(0deg, #fbc727 0%, #a98000 100%);
+	border: 2px solid #fbc727;
+	border-radius: 5px;
+	color: #ffffff;
+	font: 700 14px Arial;
+	height: 45px;
+	padding: 0 20px;
+	text-transform: uppercase;
+}
+
+.submit:hover {
+	border: 2px solid #fbc727;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #008937;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSItMTQlIiB4Mj0iNTAlIiB5Mj0iMTE0JSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmYmM3MjciIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhOTdmMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+	background-image: -moz-linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+	background-image: -o-linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+	background-image: -webkit-linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+	background-image: linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+}
+
+.form_1 .input_txt {
+	margin: 0 17px 0 0;
+}
+
+/*========================== END 007 008 009 page ==========================*/
   /* checkbox  */
 .checkbox, .radio  {
   vertical-align: top;
