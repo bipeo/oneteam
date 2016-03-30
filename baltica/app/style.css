@@ -92,6 +92,18 @@ input[type=submit] {
 	margin-right: auto;
 }
 
+.tooltip {
+	background: #e72118;
+	border: 1px dashed #fff!important;
+	border-radius: 5px;
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	position: absolute;
+	text-align: center;
+	width: 245px;
+}
+
 /*========================== END ==========================*/
 
 @font-face {
@@ -155,6 +167,11 @@ html, body {
 	max-width: 1920px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+.header_other {
+	background: url("img/green_bg.png") repeat-x;
+	height: 45px;
 }
 
 .wrap_bootle {
@@ -233,6 +250,7 @@ a.reg:hover {
 
 .name_authoriz {
 	background: url(img/ico_2.png) no-repeat left center;
+	color: #fff;
 	margin: 0 0 0 15px;
 	padding: 0 0 0 24px;
 }
@@ -330,14 +348,76 @@ a.reg:hover {
 	text-transform: uppercase;
 }
 
+.menu_left > li:hover {
+	background: #e72118;
+}
 
+.menu_left > li:hover a {
+	color: #f5e700;
+}
+
+.play {
+	height: 160px;
+	left: 62%;
+	position: fixed;
+	top: 48%;
+	width: 275px;
+	z-index: 100;
+}
 /*========================== 003 page ==========================*/
-
 .recovery {
 	width: 522px;
 }
 /*========================== END 003 page ==========================*/
 
+/*========================== 008 page ==========================*/
+
+.bg_style {
+	background: url(img/bg.jpg) no-repeat center top / cover;
+	
+}
+
+.product_descript {
+	color: #fff;
+	font-family: "MyriadProCondRegular";
+	font-size: 20px;
+	line-height: 1.2;
+	padding: 30px 70px 0 0;
+	position: relative;
+	width: calc(100% - 545px);
+}
+
+.product_descript .h1 {
+	color: #f5e700;
+	font-family: 'MyriadPro-BoldCond';
+	font-size: 72px;
+	line-height: 1.2;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+}
+
+.product_foto {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px dashed #fbc727;
+	display: block;
+	margin: 0 36px 25px 0;
+}
+
+.product_descript .close_btn {
+	position: absolute;
+	right: 46px;
+	top: 50px;
+}
+
+.game {
+	bottom: 105px;
+	left: 138px;
+	position: fixed;
+}
+
+/*========================== END 008 page ==========================*/
   /* checkbox  */
 .checkbox, .radio  {
   vertical-align: top;
