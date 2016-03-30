@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Main</title>
+	<title>О ПРОДУКТЕ</title>
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +15,8 @@
 </head>
 <body>
 <div class="wrapper">
-	<div class="wrap_bootle clearfix">		
-		<header class="header">
+	<div class="wrap_bootle bg_style clearfix">		
+		<header class="header header_other">
 			<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
 			<nav class="top_menu right">
 				<a href="#">Правила акции</a>
@@ -25,7 +25,7 @@
 				<div class="green_bg right">
 					<span class="name_authoriz">
 						Немцов Александр Юрьевич
-						<span class="tooltip">Вы выиграли приз!</span>					
+						<span style="display: none" class="tooltip">Вы выиграли приз!</span>					
 					</span>
 					<a href="#" class="out">Выход</a>
 				</div>
@@ -41,8 +41,40 @@
 				<li><a href="">Победители</a></li>
 				<li><a href="">О продукте</a></li>
 			</ul>
+			<a href="#" class="game"><img src="img/game.png" alt=""></a>
 		</nav>
-		<a href="#" class="play"></a>
+		<div class="product_descript left">
+			<span class="close_btn"></span>
+			<h1 class="h1">Об акции</h1>
+			<div class="block_link">
+				<a href="">Супер-приз</a>
+				<a href="">Ежедневный розыгрыш</a><br>
+				<a class="active" href="">Деньги на мобильный</a>
+				<a href="">об Игре «Мужской Отдых!»</a>
+			</div>
+			<p class="p_1">Регистрируй коды с промо-крышек Арсенальное и получай деньги на мобильный, размер приза зависит от объема промо-продукта.</p>
+			<ul class="akc_products clearfix">
+				<li>
+					<img class="akc_products_img" src="img/akc_products.png" alt="">
+					<img class="akc_descript" src="img/but_1.png" alt="">
+				</li>
+				<li>
+					<img class="akc_products_img" src="img/akc_products.png" alt="">
+					<img class="akc_descript" src="img/but_2.png" alt="">
+				</li>
+				<li>
+					<img class="akc_products_img" src="img/akc_products.png" alt="">
+					<img class="akc_descript" src="img/but_3.png" alt="">
+				</li>
+			</ul>
+			<form action="#">
+				<div class="form_1">
+					<span class="kod_title">ВВЕДИТЕ КОД С УПАКОВИ</span>
+					<input class="input_txt left" type="text" value="" placeholder="AX7B62UYQ1">
+					<input class="submit left" type="submit" value="отправить код">
+				</div>
+			</form> 
+		</div>
 	</div>
 	<img class="warning" src="img/warning.png" alt="" />
 </div>

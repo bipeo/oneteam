@@ -92,6 +92,18 @@ input[type=submit] {
 	margin-right: auto;
 }
 
+.tooltip {
+	background: #e72118;
+	border: 1px dashed #fff!important;
+	border-radius: 5px;
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	position: absolute;
+	text-align: center;
+	width: 245px;
+}
+
 /*========================== END ==========================*/
 
 @font-face {
@@ -155,6 +167,11 @@ html, body {
 	max-width: 1920px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+.header_other {
+	background: url("img/green_bg.png") repeat-x;
+	height: 45px;
 }
 
 .wrap_bootle {
@@ -233,6 +250,7 @@ a.reg:hover {
 
 .name_authoriz {
 	background: url(img/ico_2.png) no-repeat left center;
+	color: #fff;
 	margin: 0 0 0 15px;
 	padding: 0 0 0 24px;
 }
@@ -330,14 +348,246 @@ a.reg:hover {
 	text-transform: uppercase;
 }
 
+.menu_left > li:hover {
+	background: #e72118;
+}
 
+.menu_left > li:hover a {
+	color: #f5e700;
+}
+
+.play {
+	height: 160px;
+	left: 62%;
+	position: fixed;
+	top: 48%;
+	width: 275px;
+	z-index: 100;
+}
 /*========================== 003 page ==========================*/
-
 .recovery {
 	width: 522px;
 }
 /*========================== END 003 page ==========================*/
 
+/*========================== 007 008 009 page ==========================*/
+
+.bg_style {
+	background: url(img/bg.jpg) no-repeat center top / cover;
+	
+}
+
+.product_descript {
+	color: #fff;
+	font-family: "MyriadProCondRegular";
+	font-size: 20px;
+	line-height: 1.2;
+	padding: 30px 70px 0 0;
+	position: relative;
+	width: calc(100% - 545px);
+}
+
+.product_descript .h1 {
+	color: #f5e700;
+	font-family: 'MyriadPro-BoldCond';
+	font-size: 72px;
+	line-height: 1.2;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+}
+
+.product_foto {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px dashed #fbc727;
+	display: block;
+	margin: 0 36px 25px 0;
+}
+
+.product_descript .close_btn {
+	position: absolute;
+	right: 46px;
+	top: 50px;
+}
+
+.game {
+	bottom: 105px;
+	left: 138px;
+	position: fixed;
+}
+
+.table_1 {
+	margin: 0 0 35px 0;
+	width: 100%;
+}
+
+.table_1 a {
+	color: #ebe4c6;
+	text-decoration: underline;
+}
+
+.table_1 th {
+	border-right: 2px dashed #fbc727;
+	color: #f5e700;
+	font-family: 'MyriadPro-BoldCond';
+	font-size: 24px;
+	padding: 0 0 25px 0;
+	text-align: left;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+
+.table_1 td {
+	border-right: 2px dashed #fbc727;
+	color: #fff;
+	padding: 0 0 15px 0;
+	vertical-align: top;
+}
+
+.table_1 td:last-child, .table_1 th:nth-child(3) {
+	border-right: none;
+}
+
+.table_1 td:nth-child(2), .table_1 td:nth-child(3), .table_1 th:nth-child(2), .table_1 th:nth-child(3) {
+	padding-left: 20px;
+}
+
+.pagination {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pagination > li {
+	display: inline-block;
+	text-align: center;
+}
+
+.pagination > li a {
+	color: #ebe4c6;
+	display: block;
+	font-family: 'MyriadPro-BoldCond';
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+.pagination > li a:hover, .pagination > li a.active {
+	color: #f5e700;
+	text-decoration: none;
+}
+
+.pagination > li + li {
+	margin-left: 6px;
+}
+
+.block_link {
+	margin: 0 0 30px 0;
+}
+
+.block_link a {
+	color: #fff3d6;
+	font-family: 'MyriadPro-BoldCond';
+	font-size: 24px;
+	margin: 0 25px 0 0;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.block_link a:hover, .block_link a.active {
+	color: #f5e700;
+	text-decoration: none;
+}
+
+.kod_title {
+	color: #f5e700;
+	display: block;
+	margin: 0 0 14px 0;
+	text-transform: uppercase;
+}
+
+.p_1 {
+	line-height: 1.2;
+	margin: 0 0 65px 0;
+}
+
+.akc_products > li {
+	border: 2px dashed #fbc727;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	height: 145px;
+	margin: 0 72px 53px 0;
+	position: relative;
+	width: 192px;
+}
+
+.akc_products > li:last-child {
+	margin-right: 0;
+}
+
+.akc_products > li .akc_products_img {
+	left: 0;
+	position: absolute;
+	top: -57px;
+	z-index: 10;
+}
+
+.akc_descript {
+	position: absolute;
+	right: -55px;
+	top: 17px;
+	z-index: 20;
+}
+
+.input_txt {
+	background-color: #ffffff;
+	border: 2px solid #fbc727;
+	border-radius: 5px;
+	color: #000000;
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: 700;
+	height: 45px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 193px;
+}
+
+.submit {
+	background: -webkit-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
+	background: -moz-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
+	background: -o-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
+	background: -ms-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
+	background: linear-gradient(0deg, #fbc727 0%, #a98000 100%);
+	border: 2px solid #fbc727;
+	border-radius: 5px;
+	color: #ffffff;
+	font: 700 14px Arial;
+	height: 45px;
+	padding: 0 20px;
+	text-transform: uppercase;
+}
+
+.submit:hover {
+	border: 2px solid #fbc727;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #008937;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSItMTQlIiB4Mj0iNTAlIiB5Mj0iMTE0JSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmYmM3MjciIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhOTdmMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+	background-image: -moz-linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+	background-image: -o-linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+	background-image: -webkit-linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+	background-image: linear-gradient(top, #fbc727 -14%, #a97f00 114%);
+}
+
+.form_1 .input_txt {
+	margin: 0 17px 0 0;
+}
+
+/*========================== END 007 008 009 page ==========================*/
   /* checkbox  */
 .checkbox, .radio  {
   vertical-align: top;
