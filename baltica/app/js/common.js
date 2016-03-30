@@ -4,4 +4,6 @@
            minh = boxs.outerHeight();
           
            $('body').css('min-height',minh + addmar +'px'); 
-        });
+		
+		
+	});
