@@ -44,7 +44,7 @@ $(document).ready(function(){
             phonenum: {
                 required:true,
                 minlength: 12,
-                maxlength: 14,
+                maxlength: 16,
                
             },
              pswd: {
