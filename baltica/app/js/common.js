@@ -29,16 +29,16 @@
                 
             }
              function checkHeight() {
-                var boxs = $('.logform .form, .product_descript'),
+                var boxs = $('.logform .form, .pscrbox'),
                minh = boxs.outerHeight();
                var addmar = 0;
                if($('.logform .form').length) {
                     addmar = 150;
                     $('body').css('min-height',minh + addmar +'px');
                }
-               if($('.product_descript').length) {
-                    addmar = 50;
-                    $('.product_descript').css('height',minh - addmar +'px');
+               if($('.pscrbox').length) {
+                    addmar = 100;
+                    $('.pscrbox').css('height',minh - addmar +'px');
                }
             
               
