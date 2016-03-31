@@ -1264,4 +1264,15 @@ body {
             height:81px;
             background-image: url(img/bts_no.png);
         }
+        
+        .bavar .mCSB_scrollTools .mCSB_draggerRail {
+            width:6px;
+        }
+        .bavar .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+            background-color:#4d8464
+        }
+        .bavar .mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+            background:#feffff;
+        }
+        
 
