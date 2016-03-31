@@ -275,6 +275,9 @@ a.reg:hover {
 	position: relative;
 	width: 545px;
 }
+.block_left.w_01 {
+    width:514px;
+}
 
 .block_left .img_1 {
     left: -45px;
@@ -387,6 +390,9 @@ a.reg:hover {
 	position: relative;
 	width: calc(100% - 545px);
        
+}
+.product_descript.w_01 {
+        width: calc(100% - 514px);
 }
 
 .product_descript .h1 {
@@ -913,6 +919,17 @@ a.reg:hover {
         transform: translate(-50%, -40%);
     }
     
+    .product_descript .logform .form {
+        position:relative;
+        top:auto;
+        left:auto;
+        margin-left:0px;
+        margin-right: 0px;
+        transform: translate(0%, -0%);
+        padding: 0px 0px 34px 0px;
+    }
+    
+    
     .logform .form.enter_form {
         background:none;
         border:0px;    
@@ -1188,6 +1205,9 @@ a.reg:hover {
    width:194px;
    float:left;
    margin-right:20px;
+}
+.product_descript .logform .row .itm  {
+    width:191px;
 }
 .logform .row .itm:last-child {
     margin-right:0px;
