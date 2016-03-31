@@ -1,19 +1,10 @@
-	$(function(){
-           var boxs = $('.logform .form'),
-           addmar = 150,
-           minh = boxs.outerHeight();
-          
-           $('body').css('min-height',minh + addmar +'px'); 
-        });
-        
-        
-        
         $(document).ready(function()
         {
 
             $(window).load(function()
                 {
                     getWidthAndHeight()
+                    checkHeight()
                 }
             );
 
@@ -21,6 +12,7 @@
             $(window).resize(function()
                 {
                     getWidthAndHeight()
+                   
                 }
             );
 
@@ -35,6 +27,21 @@
                  //  scrollHeight -=  bar;
                 $(".wrap_bootle").css("min-height", scrollHeight + "px");
                 
+            }
+             function checkHeight() {
+                var boxs = $('.logform .form, .product_descript'),
+               minh = boxs.outerHeight();
+               var addmar = 0;
+               if($('.logform .form').length) {
+                    addmar = 150;
+                    $('body').css('min-height',minh + addmar +'px');
+               }
+               if($('.product_descript').length) {
+                    addmar = 50;
+                    $('.product_descript').css('height',minh - addmar +'px');
+               }
+            
+              
             }
             
         }

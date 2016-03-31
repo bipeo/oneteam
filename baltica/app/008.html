@@ -12,6 +12,8 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<link rel="stylesheet" href="style.css" type="text/css" />
+     	<link rel="stylesheet" href="libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" type="text/css" />
+
 </head>
 <body>
 <div class="wrapper">
@@ -59,6 +61,21 @@
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
+<script src="libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+		(function($){
+			$(window).load(function(){
+				
+				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+				$.mCustomScrollbar.defaults.axis="y"; //enable 2 axis scrollbars by default
+								
+				$(".product_descript").mCustomScrollbar({theme:"dark"});
+				
+				
+				
+			});
+		})(jQuery);
+</script>
 <script src="js/common.js"></script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
