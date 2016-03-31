@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>О ПРОДУКТЕ</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+     	<link rel="stylesheet" href="libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" type="text/css" />
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="wrap_bootle bg_style clearfix">		
+		<header class="header header_other">
+			<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+			<nav class="top_menu right">
+				<a href="#">Правила акции</a>
+				<a class="ml_1" href="#">Обратная связь</a>
+				<a href="#" class="reg"><img src="img/ico_1.png" alt="" />зарегистрируй код!</a>
+				<div class="green_bg right">
+					<span class="name_authoriz">
+						Немцов Александр Юрьевич
+						<span style="display: none" class="tooltip">Вы выиграли приз!</span>					
+					</span>
+					<a href="#" class="out">Выход</a>
+				</div>
+			</nav>
+		</header>
+		<nav class="block_left left">
+			<img class="img_1" src="img/img_1.png" alt="">
+			<ul class="menu_left">
+				<li><a href="">Об акции</a></li>
+				<li><a href="">получи деньги на мобильный</a></li>
+				<li><a href="">Ежедневный розыгрыш</a></li>
+				<li><a href="">Голосуй за супер-приз</a></li>
+				<li><a href="">Победители</a></li>
+				<li><a href="">О продукте</a></li>
+			</ul>
+			<a href="#" class="game"><img src="img/game.png" alt=""></a>
+		</nav>
+  		<!-- product_descript -->  
+		<div class="product_descript left">
+			<span class="close_btn"></span>
+			<h1 class="h1">Личный кабинет</h1>
+			<!-- form -->
+			<form id="regform" class="form st_1" novalidate="novalidate">
+                              <span class="close_btn"></span>        
+                               <h2 class="h2">Регистрация</h2>
+                              
+                              
+                              <div class="row">                    
+        <div class="itm">
+         <label for="lastname" class="label">Фамилия</label>         
+        <input type="text" value="" placeholder="Фамилия" name="lastname" id="lastname">
+          </div> 
+                                  
+        
+            <div class="itm">
+          <label for="email" class="label">E-mail</label>   
+   <input type="text" value="" placeholder="E-mail" data-rule-email="true" name="email" id="email">
+            </div>
+         
+          
+         <div class="itm">
+          <label for="pswd" class="label">Пароль</label>   
+          <input type="password" value="" placeholder="********" name="pswd" id="pswd">
+            </div>
+           
+               </div> 
+                               
+                                <div class="row">                    
+        <div class="itm">
+         <label for="firstname" class="label">Имя</label>         
+        <input type="text" value="" placeholder="Имя" name="firstname" id="name">
+          </div> 
+                                  
+        
+            <div class="itm">
+          <label for="phonenum" class="label">Телефон</label>   
+   <input type="text" value="" placeholder="+7(___) ___-__-__" class="for_mask" name="phonenum" id="phonenum">
+            </div>
+         
+          
+         <div class="itm">
+          <label for="pswd_2" class="label">Пароль</label>   
+          <input type="password" value="" placeholder="********" name="pswd_2" id="pswd_2">
+            </div>
+           
+               </div> 
+                               
+                               
+            <div class="row">                    
+        <div class="itm">
+         <label for="birthday" class="label">Дата рождения</label>         
+        <input type="text" value="" placeholder="01/01/1970" class="datepicker hasDatepicker" name="birthday" id="birthday">
+          </div>
+                
+                
+                
+            <div class="radio-group">
+                <div class="item">    
+           <input type="radio" id="men" name="selector" value="" checked="checked" class="radio">
+     <label for="men">Вы мужчина</label>
+      </div>
+
+       <div class="item">
+           <input type="radio" id="women" name="selector" value="" class="radio">
+     <label for="women">Вы женщина</label>
+      </div>
+       </div>
+                
+                
+             </div> 
+                               
+           <div class="row">
+               <div class="checkbox-group">
+                   <div class="item">    
+      <input type="checkbox" name="nletter" value="" id="nletter" class="checkbox">
+      <label for="nletter">Я согласен получать новостную рассылку</label>
+         </div>
+                   
+          <div class="item">
+      <input type="checkbox" id="agree" name="agree" value="" class="checkbox">
+      <label for="agree">Я принимаю условия <a href="#">публичной оферты</a></label>
+         </div>
+               
+               
+               </div>
+               
+               
+                <div class="rbox">
+             <div class="outsubmit">     
+              <input type="submit" value="РЕГИСТРАЦИЯ">
+            </div>
+                <span class="sbt">Вход 
+с помощью 
+соц.сети:</span> 
+                    <div class="soclist min right">
+                        <a href="#" class="vk"></a>
+                        <a href="#" class="fb"></a>
+                        <a href="#" class="klass"></a>
+
+                    </div>       
+                </div>
+               
+              
+               
+           </div>
+          
+          
+                  
+  
+          
+       
+     
+        
+        
+                              
+       
+           
+    </form>
+    <!-- END form -->
+		</div><!-- END product_descript --> 
+	</div>
+	<img class="warning" src="img/warning.png" alt="" />
+</div>
+	
+<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+<script src="libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+		(function($){
+			$(window).load(function(){
+				
+				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+				$.mCustomScrollbar.defaults.axis="y"; //enable 2 axis scrollbars by default
+								
+				$(".product_descript").mCustomScrollbar({theme:"dark"});
+				
+				
+				
+			});
+		})(jQuery);
+</script>
+<script src="js/common.js"></script>
+<script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
+<script type="text/javascript">
+	$(function(){
+//		$.pixlayout({clip: true, src: "design/maket.jpg", show:true, center:false, top:0, left: 0, pervious: false});
+}); 
+</script>
+</body>
+</html>
