@@ -45,7 +45,6 @@ $(document).ready(function(){
                 required:true,
                 minlength: 12,
                 maxlength: 16,
-               
             },
              pswd: {
                 required:true,
