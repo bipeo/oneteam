@@ -19,39 +19,41 @@
 	<!-- block_1 -->
 	<div class="block_1 bg_2">
 		<header class="header clearfix">
-			<a href="/" class="logo left">
-				<span>ГОСТИНИЦА ИЗМАЙЛОВО</span>
-				ООО «Олимпик Тур».
-			</a>
-			<ul class="header_menu left">
-				<li><a href="#">Номера</a></li>
-				<li><a href="#">Цены</a></li>
-				<li><a href="#">Бронирование</a></li>
-				<li><a href="#">Конференц зацы</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="header_menu_deskt left">
-				<li>
-					<a href="#">Номера</a>
-					<a href="#">Цены</a>
-				</li>
-				<li>
-					<a href="#">Бронирование</a>
-					<a href="#">Конференц зацы</a>
-				</li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="header_contact left">
-				<li>
-					<span class="header_phone">+7 495 505-20-28</span>
-					<p>Круглосуточно без выходных</p>
-				</li>
-				<li>
-					<span class="header_phone">8-800-555-20-28</span>
-					<p>Бесплатный звонок по России</p>
-				</li>
-			</ul>
-			<img class="right header_ico_1" src="img/header_ico_1.png" alt=""/>
+			<div class="center_2">
+				<a href="/" class="logo left">
+					<span>ГОСТИНИЦА ИЗМАЙЛОВО</span>
+					ООО «Олимпик Тур».
+				</a>
+				<ul class="header_menu left">
+					<li><a href="#">Номера</a></li>
+					<li><a href="#">Цены</a></li>
+					<li><a href="#">Бронирование</a></li>
+					<li><a href="#">Конференц зацы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="header_menu_deskt left">
+					<li>
+						<a href="#">Номера</a>
+						<a href="#">Цены</a>
+					</li>
+					<li>
+						<a href="#">Бронирование</a>
+						<a href="#">Конференц зацы</a>
+					</li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="header_contact left">
+					<li>
+						<span class="header_phone">+7 495 505-20-28</span>
+						<p>Круглосуточно без выходных</p>
+					</li>
+					<li>
+						<span class="header_phone">8-800-555-20-28</span>
+						<p>Бесплатный звонок по России</p>
+					</li>
+				</ul>
+				<img class="right header_ico_1" src="img/header_ico_1.png" alt=""/>
+			</div>
 		</header>
 		<div class="header_mobile">
 			<a href="/" class="logo left">
@@ -115,13 +117,29 @@
 				<h2 id="standart" class="h3 left">Стандарт</h2>
 				<ul class="rooms_foto right">
 					<li>
-						<img src="img/article_img_1.jpg" alt="">
+						<a href="#inline1" class="fancybox" class="fancybox"><img src="img/article_img_1.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline1" style="display: none;">
+							<img src="img/demo-fancybox.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript">
 							<i>Две кровати</i>
 						</div>
 					</li>
 					<li>
-						<img src="img/article_img_2.jpg" alt="">
+						<a href="#inline2" class="fancybox"><img src="img/article_img_2.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline2" style="display: none;">
+							<img src="img/demo-fancybox_2.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript">
 							<i>1 широкая кровать</i>
 						</div>
@@ -165,11 +183,11 @@
 					<ul class="ul_3 left">
 						<li>
 							<span class="title_ul">Кроватей:</span>
-							<input type="checkbox" id="krovat">
+							<input type="checkbox" id="krovat" class="checkbox_2">
 							<label for="krovat"></label>
 						</li>
 						<li>
-							<a href="#" class="red_btn right">Бронировать</a>					
+							<a href="#" class="red_btn right">Бронировать</a>				
 						</li>
 					</ul>
 				</div>
@@ -179,13 +197,29 @@
 				<h2 id="business" class="h3 left">Бизнес-класс</h2>
 				<ul class="rooms_foto right">
 					<li>
-						<img src="img/article_img_1.jpg" alt="">
+						<a href="#inline2" class="fancybox"><img src="img/article_img_2.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline2" style="display: none;">
+							<img src="img/demo-fancybox_2.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript">
 							<i>Две кровати</i>
 						</div>
 					</li>
 					<li>
-						<img src="img/article_img_2.jpg" alt="">
+						<a href="#inline2" class="fancybox"><img src="img/article_img_2.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline2" style="display: none;">
+							<img src="img/demo-fancybox_2.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript">
 							<i>1 широкая кровать</i>
 						</div>
@@ -229,7 +263,8 @@
 					<ul class="ul_3 left">
 						<li>
 							<span class="title_ul">Кроватей:</span>
-							<img src="img/ico_5.png" alt="">
+							<input type="checkbox" id="krovat_1" class="checkbox_2">
+							<label for="krovat_1"></label>
 						</li>
 						<li>
 							<a href="#" class="red_btn right">Бронировать</a>					
@@ -242,13 +277,29 @@
 				<h2 id="first_klass" class="h3 left">Первый класс с кондиционером</h2>
 				<ul class="rooms_foto right">
 					<li>
-						<img src="img/article_img_1.jpg" alt="">
+						<a href="#inline2" class="fancybox"><img src="img/article_img_2.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline2" style="display: none;">
+							<img src="img/demo-fancybox_2.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript">
 							<i>Две кровати</i>
 						</div>
 					</li>
 					<li>
-						<img src="img/article_img_2.jpg" alt="">
+						<a href="#inline2" class="fancybox"><img src="img/article_img_2.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline2" style="display: none;">
+							<img src="img/demo-fancybox_2.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript">
 							<i>1 широкая кровать</i>
 						</div>
@@ -300,7 +351,8 @@
 					<ul class="ul_3 left">
 						<li>
 							<span class="title_ul">Кроватей:</span>
-							<img src="img/ico_5.png" alt="">
+							<input type="checkbox" id="krovat_2" class="checkbox_2">
+							<label for="krovat_2"></label>
 						</li>
 						<li>
 							<a href="#" class="red_btn right">Бронировать</a>					
@@ -313,11 +365,27 @@
 				<h2 id="luks" class="h3 left">Люкс</h2>
 				<ul class="rooms_foto right">
 					<li>
-						<img src="img/article_img_1.jpg" alt="">
+						<a href="#inline2" class="fancybox"><img src="img/article_img_2.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline2" style="display: none;">
+							<img src="img/demo-fancybox_2.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript"></div>
 					</li>
 					<li>
-						<img src="img/article_img_2.jpg" alt="">
+						<a href="#inline2" class="fancybox"><img src="img/article_img_2.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline2" style="display: none;">
+							<img src="img/demo-fancybox_2.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript"></div>
 					</li>
 				</ul>
@@ -343,7 +411,8 @@
 						</li>
 						<li>
 							<span class="title_ul">Кроватей:</span>
-							<img src="img/ico_5.png" alt="">
+							<input type="checkbox" id="krovat_3" class="checkbox_2">
+							<label for="krovat_3"></label>
 						</li>
 						<li>
 							<a href="#" class="red_btn">Бронировать</a>					
@@ -356,11 +425,27 @@
 				<h2 id="number" class="h3 left">Свадебный номер</h2>
 				<ul class="rooms_foto right">
 					<li>
-						<img src="img/article_img_1.jpg" alt="">
+						<a href="#inline2" class="fancybox"><img src="img/article_img_2.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline2" style="display: none;">
+							<img src="img/demo-fancybox_2.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript"></div>
 					</li>
 					<li>
-						<img src="img/article_img_2.jpg" alt="">
+						<a href="#inline2" class="fancybox"><img src="img/article_img_2.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline2" style="display: none;">
+							<img src="img/demo-fancybox_2.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript"></div>
 					</li>
 				</ul>
@@ -389,7 +474,15 @@
 				<h2 id="studio" class="h3 left">Студио</h2>
 				<ul class="rooms_foto right">
 					<li>
-						<img src="img/article_img_1.jpg" alt="">
+						<a href="#inline2" class="fancybox"><img src="img/article_img_2.jpg" alt="" /></a>
+						<div class="fancybox_relative" id="inline2" style="display: none;">
+							<img src="img/demo-fancybox_2.jpg" alt="">
+							<p class="fancybox-descript">Далеко-далеко за словесными горами в стране, гласных.</p>
+							<div class="fnc_btns">
+								<div class="fbtn fancy_prev left"></div>
+								<div class="fbtn fancy_next right"></div>
+							</div>  
+						</div>
 						<div class="rooms_foto_descript"></div>
 					</li>
 				</ul>
