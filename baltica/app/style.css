@@ -593,8 +593,13 @@ a.reg:hover {
 
 .form_1 .input_txt {
 	margin: 0 17px 0 0;
+        padding-left:12px;
+        padding-right:12px;
 }
-
+.form_1 {
+    margin-bottom:140px;
+    z-index: 2;
+}
 .ul_1 {
 	margin: 0 0 20px 0;
 }
