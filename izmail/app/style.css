@@ -251,10 +251,14 @@ body {
 
 .background.img_1 {
 	background: url('img/bg_1.jpg') center top no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .background.img_2 {
 	background: url('img/cats.jpg') center top no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .background {
@@ -1027,7 +1031,7 @@ body {
 /*========================== price page ==========================*/
 
 .bg_3 {
-	background: url(img/price_bg.png) no-repeat;
+	background: url(img/price_bg.png) no-repeat center top / cover;
 	margin-bottom: 35px;
 }
 
@@ -1503,18 +1507,18 @@ body {
 	padding-bottom: 70px;
 }
 
-#krovat {
+.checkbox_2 {
 	display: none;
 }
 
-#krovat + label {
+.checkbox_2 + label {
 	background: url(img/togglessswitch.jpg) no-repeat 0 0;
 	display: block;
 	height: 36px;
 	width: 140px;
 }
 
-#krovat:checked + label {
+.checkbox_2:checked + label {
 	background-position: -140px 0;
 }
 /*========================== jQuery ui ==========================*/
@@ -1694,6 +1698,10 @@ body {
 .footer a {
 	color: #ffffff;
 	text-decoration: underline;
+}
+
+.footer a:hover {
+	text-decoration: none;
 }
 
 .footer_1 {

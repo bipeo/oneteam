@@ -69,13 +69,13 @@ $(document).ready(function(){
 });//конец ready
 
 function gotocoord(val){
-    $("html,body").stop(true, true).animate({'scrollTop': val-80}, 1500);
+    $("html,body").stop(true, true).animate({'scrollTop': val-80}, 750);
 }
 
 function gotoblock(id){
     var obj = $('#'+id);
     var destination = obj.offset().top;
-    $("html,body").stop(true, true).animate({'scrollTop': destination-80}, 1500);
+    $("html,body").stop(true, true).animate({'scrollTop': destination-80}, 750);
 }
 
 
