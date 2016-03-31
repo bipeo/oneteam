@@ -11,9 +11,10 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" type="text/css" />
+	<link rel="stylesheet" href="libs/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick/slick-theme.css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-     	<link rel="stylesheet" href="libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" type="text/css" />
-
 </head>
 <body>
 <div class="wrapper">
@@ -166,7 +167,30 @@
        
            
     </form>
-    <!-- END form -->
+			<!-- END form -->
+    		<div class="slider">
+    			<span class="title_1">Мои призы</span>
+    			<div id="slider">
+    				<div>
+    					<img src="img/slide1.jpg" alt="">
+    				</div>
+    				<div>
+    					<img src="img/slide2.jpg" alt="">
+    				</div>
+    				<div>
+    					<img src="img/slide3.jpg" alt="">
+    				</div>
+    				<div>
+    					<img src="img/slide1.jpg" alt="">
+    				</div>
+    				<div>
+    					<img src="img/slide2.jpg" alt="">
+    				</div>
+    				<div>
+    					<img src="img/slide3.jpg" alt="">
+    				</div>
+    			</div>
+    		</div>		
 		</div><!-- END product_descript --> 
 	</div>
 	<img class="warning" src="img/warning.png" alt="" />
@@ -178,6 +202,7 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
 <script src="libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
 <script>
 		(function($){
 			$(window).load(function(){
@@ -190,6 +215,15 @@
 				
 				
 			});
+			
+			$('#slider').slick({
+				arrows: true,
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+//				centerMode: true,
+				dots: false
+			 });
 		})(jQuery);
 </script>
 <script src="js/common.js"></script>
