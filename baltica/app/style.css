@@ -712,7 +712,10 @@ a.reg:hover {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+	height: 170px;
 	margin: 0 11px 0 0;
+	text-align: center;
+	width: 160px!important;
 }
 
 .slick-prev, .slick-next {
@@ -730,6 +733,18 @@ a.reg:hover {
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
 	background-image: url(img/slide_arrows.png);
 }
+
+.slick-initialized .slick-slide img {
+    display: inline;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-list {
+	padding: 0 20px;
+}
+
 
 /*========================== END 007 008 009 page ==========================*/
   /* checkbox  */
