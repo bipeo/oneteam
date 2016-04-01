@@ -2,15 +2,20 @@
         {
             
             
-            
-            $('.logform .form .error').on('click',function() {
-                alert(3);
-       //     $('.logform .form .error').fadeOut(1000);
-            
-            });
-            
-            $('.myDiv').bind('DOMNodeInserted DOMNodeRemoved', function() {
-                    alert(3);
+            $('.logform .form').bind('DOMNodeInserted DOMNodeRemoved', function() {
+                $(this).find('.itm').on('click',function() {
+               $(this).find('.error:not(input)').fadeOut(100)     
+                });
+                
+                $(this).find('input').on('input', function() {
+                // $(this).find('.error:not(input)').fadeOut(100)  
+                });
+                
+                
+                $(this).find('input').on('keypress', function() {
+               //  $(this).find('.error:not(input)').fadeOut(100)  
+                });
+                
                 });
 
             

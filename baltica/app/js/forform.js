@@ -21,6 +21,24 @@ $(document).ready(function(){
 
     });
         $("#regform").validate({
+            
+          	/* errorPlacement: function(error, element) {
+			// Append error within linked label
+			$( element )
+				.closest( "form" )
+					.find( "label[for='" + element.attr( "id" ) + "']" )
+						.append( error );
+		},
+                errorElement: "span", */
+                
+               /* errorPlacement: function(error, element) {
+			// Append error within linked label
+			$( element )
+				.closest( "form" ).find("input")
+					//.find("input[id='"+element.attr("id") +"']")  
+						.val( error );
+		},
+                errorElement: "input",*/
 
        rules:{
             email: {
