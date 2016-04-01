@@ -710,7 +710,7 @@ a.reg:hover {
 }
 
 .slider .slick-slider {
-        margin:0px 0px;
+        
         /*25*/
 }
 .title_1 {
@@ -729,7 +729,7 @@ a.reg:hover {
 }
 
 .sliderout .slick-slider {
-	margin-bottom: 0;
+/*	margin-bottom: 0;*/
 }
 
 .slick-initialized .slick-slide {
@@ -738,14 +738,14 @@ a.reg:hover {
 }
 .sliderout .slick-initialized .slick-slide span {
     display:block;
-    position:relative;
+    position:absolute;
     border: 2px dashed #fbc727;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     width:100%;
     height:145px;
-    margin:0 auto;
+    margin:0 auto; 
 }
 
 /* the slides */
@@ -781,7 +781,7 @@ a.reg:hover {
 
 .sliderout .slick-initialized .slick-slide img {
     display: inline;
-	position: relative;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
