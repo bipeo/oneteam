@@ -53,7 +53,7 @@ img, input {
 	max-width: 100%;
 }
 
-input[type=submit] {
+input[type=submit], .subm {
     cursor: pointer;
 }
 
@@ -275,6 +275,9 @@ a.reg:hover {
 	position: relative;
 	width: 545px;
 }
+.block_left.w_01 {
+    width:514px;
+}
 
 .block_left .img_1 {
     left: -45px;
@@ -387,6 +390,9 @@ a.reg:hover {
 	position: relative;
 	width: calc(100% - 545px);
        
+}
+.product_descript.w_01 {
+        width: calc(100% - 514px);
 }
 
 .product_descript .h1 {
@@ -587,8 +593,13 @@ a.reg:hover {
 
 .form_1 .input_txt {
 	margin: 0 17px 0 0;
+        padding-left:12px;
+        padding-right:12px;
 }
-
+.form_1 {
+    margin-bottom:140px;
+    z-index: 2;
+}
 .ul_1 {
 	margin: 0 0 20px 0;
 }
@@ -691,9 +702,13 @@ a.reg:hover {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	padding: 25px 0 25px 23px;
+	padding: 25px 23px 25px 23px;
+        max-width:635px;
 }
 
+.slider .slick-slider {
+        margin:0px 25px;
+}
 .title_1 {
 	color: #004f1f;
 	display: block;
@@ -708,14 +723,19 @@ a.reg:hover {
 }
 
 .slick-initialized .slick-slide {
-	border: 2px dashed #fbc727;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	height: 170px;
-	margin: 0 11px 0 0;
-	text-align: center;
-	width: 160px!important;
+	
+/*	margin: 0 11px 0 0;*/
+}
+.slick-initialized .slick-slide span {
+    display:block;
+    position:relative;
+    border: 2px dashed #fbc727;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width:161px;
+    height:161px;
+    margin:0 auto;
 }
 
 .slick-prev, .slick-next {
@@ -723,8 +743,11 @@ a.reg:hover {
 	height: 42px;
 	width: 30px;
 }
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    
+}
 
-.slick-next {
+.slick-next, .slick-next:hover, .slick-next:focus {
 	background-position: -30px 0;
 }
 
@@ -911,6 +934,13 @@ a.reg:hover {
     margin-top:17px;
     
 }
+.logform .form .rbox .subm {
+    width:194px;
+    padding-bottom:7px;
+    padding-top:7px;
+    text-shadow:0px 1px 0px rgba(0,0,0,.8);
+}
+
 
     .logform .form  {
         font-size:14px;
@@ -924,13 +954,28 @@ a.reg:hover {
         border-style:dashed !important ;
         font-family: Arial;
     }
-    .logform .form {
-         position: absolute;
+    .logform .form, .slick-initialized .slick-slide span img {
+        position: absolute;
         top: 40%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -40%);
     }
+    
+    .product_descript .logform .form {
+        max-width:625px;
+        position:relative;
+        top:auto;
+        left:auto;
+        margin-left:0px;
+        margin-right: 0px;
+        transform: translate(0%, -0%);
+        padding: 0px 0px 34px 0px;
+    }
+    .product_descript.w_01  .logform .form {
+        border:0px;
+    }
+    
     
     .logform .form.enter_form {
         background:none;
@@ -955,7 +1000,7 @@ a.reg:hover {
 
     }
     .logform .form input[type=text], .logform .form input[type=password], 
-    .logform .form textarea, .logform .form input[type=submit],
+    .logform .form textarea, .logform .form input[type=submit], .logform .form .subm,
     .logform .form  .hrefsub {
         font-weight:bold;
         font-family: Arial; 
@@ -986,7 +1031,7 @@ a.reg:hover {
     .logform .form input[type=text]:focus:-moz-placeholder, .logform .form input[type=password]:focus:-moz-placeholder            {color:transparent;   opacity:1;}/* Firefox 18- */
     .logform .form input[type=text]:focus:-ms-input-placeholder, .logform .form input[type=password]:focus:-ms-input-placeholder      {color:transparent;   opacity:1;}
 
-    .logform .form input[type=submit], .logform .form .hrefsub {
+    .logform .form input[type=submit], .logform .form .subm, .logform .form .hrefsub {
         color:#fff;
         display:inline-block;
         font-size: 14px;
@@ -1008,7 +1053,7 @@ a.reg:hover {
     .logform .form input[type=submit]:focus   {
       
     }
-    .logform .form input[type=submit]:hover {
+    .logform .form input[type=submit]:hover, .logform .form .subm:hover {
         background: #597533;
         color:#fff;
  
@@ -1046,6 +1091,7 @@ a.reg:hover {
 .logform .form input[type=text], 
 .logform .form input[type=password],
 .logform .form input[type=submit],
+.logform .form .subm,
 .logform .form textarea  {
     border: 2px solid rgba(251,199,39,1);
     border-radius: 7px;
@@ -1156,7 +1202,7 @@ a.reg:hover {
 }
 
 
-.logform .form input[type=submit], .logform  .refresh {
+.logform .form input[type=submit], .logform .form .subm,.logform  .refresh {
     background: #a98000; /* Old browsers */
     background: -moz-linear-gradient(top,  #a98000 0%, #fbc727 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  #a98000 0%,#fbc727 100%); /* Chrome10-25,Safari5.1-6 */
@@ -1181,8 +1227,8 @@ a.reg:hover {
 
 }
 
-.logform  .refresh:hover, .logform .form input[type=submit]:hover, .logform .form input[type=submit]:active  {
-        background: #fbc727; /* Old browsers */
+.logform  .refresh:hover, .logform .form input[type=submit]:hover, .logform .form .subm:hover, .logform .form input[type=submit]:active, .logform .form .subm:active  {
+    background: #fbc727; /* Old browsers */
     background: -moz-linear-gradient(top,  #fbc727 0%, #a98000 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  #fbc727 0%,#a98000 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #fbc727 0%,#a98000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -1207,6 +1253,9 @@ a.reg:hover {
    width:194px;
    float:left;
    margin-right:20px;
+}
+.product_descript .logform .row .itm  {
+   
 }
 .logform .row .itm:last-child {
     margin-right:0px;

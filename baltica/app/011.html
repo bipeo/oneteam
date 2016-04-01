@@ -34,7 +34,7 @@
 				</div>
 			</nav>
 		</header>
-		<nav class="block_left left">
+		<nav class="block_left w_01 left">
 			<img class="img_1" src="img/img_1.png" alt="">
 			<ul class="menu_left">
 				<li><a href="">Об акции</a></li>
@@ -47,13 +47,14 @@
 			<a href="#" class="game"><img src="img/game.png" alt=""></a>
 		</nav>
   		<!-- product_descript -->  
-		<div class="product_descript left">
+		<div class="product_descript w_01 left">
 			<span class="close_btn"></span>
 			<h1 class="h1">Личный кабинет</h1>
+                        <div class="">
 			<!-- form -->
+                        <div class="logform">
 			<form id="regform" class="form st_1" novalidate="novalidate">
-                              <span class="close_btn"></span>        
-                               <h2 class="h2">Регистрация</h2>
+                            
                               
                               
                               <div class="row">                    
@@ -76,7 +77,7 @@
            
                </div> 
                                
-                                <div class="row">                    
+               <div class="row">                    
         <div class="itm">
          <label for="firstname" class="label">Имя</label>         
         <input type="text" value="" placeholder="Имя" name="firstname" id="name">
@@ -95,30 +96,8 @@
             </div>
            
                </div> 
-                               
-                               
-            <div class="row">                    
-        <div class="itm">
-         <label for="birthday" class="label">Дата рождения</label>         
-        <input type="text" value="" placeholder="01/01/1970" class="datepicker hasDatepicker" name="birthday" id="birthday">
-          </div>
-                
-                
-                
-            <div class="radio-group">
-                <div class="item">    
-           <input type="radio" id="men" name="selector" value="" checked="checked" class="radio">
-     <label for="men">Вы мужчина</label>
-      </div>
-
-       <div class="item">
-           <input type="radio" id="women" name="selector" value="" class="radio">
-     <label for="women">Вы женщина</label>
-      </div>
-       </div>
-                
-                
-             </div> 
+                   
+                            
                                
            <div class="row">
                <div class="checkbox-group">
@@ -127,10 +106,7 @@
       <label for="nletter">Я согласен получать новостную рассылку</label>
          </div>
                    
-          <div class="item">
-      <input type="checkbox" id="agree" name="agree" value="" class="checkbox">
-      <label for="agree">Я принимаю условия <a href="#">публичной оферты</a></label>
-         </div>
+         
                
                
                </div>
@@ -138,17 +114,9 @@
                
                 <div class="rbox">
              <div class="outsubmit">     
-              <input type="submit" value="РЕГИСТРАЦИЯ">
+                 <div onClick="document.forms['regform'].submit();" class="subm">Сохранить изменения</div>
             </div>
-                <span class="sbt">Вход 
-с помощью 
-соц.сети:</span> 
-                    <div class="soclist min right">
-                        <a href="#" class="vk"></a>
-                        <a href="#" class="fb"></a>
-                        <a href="#" class="klass"></a>
-
-                    </div>       
+                    
                 </div>
                
               
@@ -167,27 +135,30 @@
        
            
     </form>
+                         </div>
 			<!-- END form -->
+                        </div>
+                        
     		<div class="slider">
     			<span class="title_1">Мои призы</span>
     			<div id="slider">
     				<div>
-    					<img src="img/slide1.jpg" alt="">
+                                    <span><img src="img/slide1.jpg" alt=""></span>
     				</div>
     				<div>
-    					<img src="img/slide2.jpg" alt="">
+    					<span><img src="img/slide2.jpg" alt=""></span>
     				</div>
     				<div>
-    					<img src="img/slide3.jpg" alt="">
+                                    <span><img src="img/slide3.jpg" alt=""></span>
     				</div>
     				<div>
-    					<img src="img/slide1.jpg" alt="">
+    					<span><img src="img/slide1.jpg" alt=""></span>
     				</div>
     				<div>
-    					<img src="img/slide2.jpg" alt="">
+    					<span><img src="img/slide2.jpg" alt=""></span>
     				</div>
     				<div>
-    					<img src="img/slide3.jpg" alt="">
+    					<span><img src="img/slide3.jpg" alt=""></span>
     				</div>
     			</div>
     		</div>		
@@ -210,7 +181,7 @@
 				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
 				$.mCustomScrollbar.defaults.axis="y"; //enable 2 axis scrollbars by default
 								
-				$(".product_descript").mCustomScrollbar({theme:"dark"});
+				//$(".pscrbox").mCustomScrollbar({theme:"dark bavar"});
 				
 				
 				
@@ -226,6 +197,9 @@
 			 });
 		})(jQuery);
 </script>
+<script src="libs/formvalidation/dist/jquery.validate.js"></script>
+<script src="libs/formvalidation/dist/localization/messages_ru.js"></script>
+<script src="js/forform.js"></script>
 <script src="js/common.js"></script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
