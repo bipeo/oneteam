@@ -1,5 +1,19 @@
         $(document).ready(function()
         {
+            
+            
+            
+            $('.logform .form .error').on('click',function() {
+                alert(3);
+       //     $('.logform .form .error').fadeOut(1000);
+            
+            });
+            
+            $('.myDiv').bind('DOMNodeInserted DOMNodeRemoved', function() {
+                    alert(3);
+                });
+
+            
 
             $(window).load(function()
                 {
@@ -40,8 +54,6 @@
                     addmar = 100;
                     $('.pscrbox').css('height',minh - addmar +'px');
                }
-            
-              
             }
             
         }
