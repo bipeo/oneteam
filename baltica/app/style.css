@@ -306,6 +306,7 @@ a.reg:hover {
 	margin: 228px 0 0 40px;
 	position: relative;
 	transform: rotate(-10deg);
+	z-index: 10;
 }
 
 .menu_left > li {
