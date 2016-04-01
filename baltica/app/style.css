@@ -378,8 +378,6 @@ a.reg:hover {
 }
 
 .play {
-        background-color:rgba(0,0,0,.5);
-	/*height: 160px;*/
         height:330px;
 	left: 52%;
 	position: absolute;
@@ -396,7 +394,7 @@ a.reg:hover {
 /*========================== 007 008 009 page ==========================*/
 
 .bg_style {
-	background: url(img/bg2.png) no-repeat center top / cover;
+	background: url(img/bg.jpg) no-repeat center top / cover;
 	
 }
 
