@@ -422,7 +422,7 @@ a.reg:hover {
 .game {
 	bottom: 105px;
 	left: 138px;
-	position: fixed;
+	position: absolute;
 }
 
 .table_1 {
