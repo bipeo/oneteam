@@ -1,5 +1,13 @@
         $(document).ready(function()
         {
+            
+            
+            
+            $('.close_btn').on('click',function() {
+               $('.logform').hide(); 
+            });
+
+            
 
             $(window).load(function()
                 {
@@ -40,8 +48,6 @@
                     addmar = 100;
                     $('.pscrbox').css('height',minh - addmar +'px');
                }
-            
-              
             }
             
         }
