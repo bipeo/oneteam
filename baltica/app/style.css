@@ -361,11 +361,13 @@ a.reg:hover {
 }
 
 .play {
-	height: 160px;
-	left: 62%;
-	position: fixed;
-	top: 48%;
-	width: 275px;
+        background-color:rgba(0,0,0,.5);
+	/*height: 160px;*/
+        height:330px;
+	left: 52%;
+	position: absolute;
+	top: 36%;
+	width: 400px;
 	z-index: 100;
 }
 /*========================== 003 page ==========================*/
@@ -377,11 +379,12 @@ a.reg:hover {
 /*========================== 007 008 009 page ==========================*/
 
 .bg_style {
-	background: url(img/bg.jpg) no-repeat center top / cover;
+	background: url(img/bg2.png) no-repeat center top / cover;
 	
 }
 
 .product_descript {
+      
 	color: #fff;
 	font-family: "MyriadProCondRegular";
 	font-size: 20px;
@@ -747,11 +750,11 @@ a.reg:hover {
 
 /* the slides */
 .sliderout .slick-slide {
-    margin: 0 10px;
+   
 }
 /* the parent */
 .sliderout .slick-list {
-    margin: 0 -10px;
+/*    margin: 0 -10px;*/
 }
 
 .sliderout .slick-prev, .sliderout .slick-next {
@@ -1087,7 +1090,7 @@ a.reg:hover {
     font-size:20px;   
     color:#fff;   
     }
-    .logform .form .error:not(input) {
+    .logform .form  label.error {
         line-height: 1.3em;
         background-color: #e72118;    
         /*padding: 10px 14px 19px 14px; */
@@ -1286,6 +1289,12 @@ a.reg:hover {
    float:left;
    margin-right:20px;
 }
+.logform .row .itm.c_1 {
+    width:auto;
+    float:none;
+    margin-right:0px;
+    height:auto;
+}
 .product_descript .logform .row .itm  {
    
 }
@@ -1316,6 +1325,7 @@ a.reg:hover {
     right: -37px;
     top: -18px;
     position:absolute;
+    cursor: pointer;
 }
 .close_btn {
     display:block;
@@ -1513,4 +1523,38 @@ body {
             background:#feffff;
         }
         
+        
+        @media only screen and (min-height:1100px) {
+            .play {
+            left:54%;
+            top: 35%;
+            width: 450px;
+            background: rgba(25,80,32, .8);
+            }
+        }
+        
+        
+         @media only screen and (min-height:1200px) {
+            .play {
+             top: 37%;
+             left:54%;
+             background: rgba(49,162,32, .8);
+            }
+        }
 
+        @media only screen and (min-height:1300px) {
+            .play {
+            left: 57%;
+            top: 46%;
+            background: rgba(49,162,32, .8);
+            }
+        }
+         @media only screen and (min-height:1400px) {
+            .play {
+            width:500px;
+            height:400px;
+            left: 60%;
+            top: 41%;
+            background: rgba(49,15,45, .8);
+            }
+        }

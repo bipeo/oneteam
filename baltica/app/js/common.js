@@ -2,21 +2,10 @@
         {
             
             
-            $('.logform .form').bind('DOMNodeInserted DOMNodeRemoved', function() {
-                $(this).find('.itm').on('click',function() {
-               $(this).find('.error:not(input)').fadeOut(100)     
-                });
-                
-                $(this).find('input').on('input', function() {
-                // $(this).find('.error:not(input)').fadeOut(100)  
-                });
-                
-                
-                $(this).find('input').on('keypress', function() {
-               //  $(this).find('.error:not(input)').fadeOut(100)  
-                });
-                
-                });
+            
+            $('.close_btn').on('click',function() {
+               $('.logform').hide(); 
+            });
 
             
 
