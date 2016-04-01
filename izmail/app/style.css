@@ -2263,6 +2263,9 @@ body {
 	.conference .block_2 {
 		top: 160px;
 	}
+	.header_phone {
+		white-space: nowrap;
+	}
 }
 
 @media only screen and (max-width: 330px) {
