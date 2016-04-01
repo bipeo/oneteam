@@ -725,10 +725,6 @@ a.reg:hover {
         max-width:635px;
 }
 
-.slider .slick-slider {
-        
-        /*25*/
-}
 .title_1 {
 	color: #004f1f;
 	display: block;
@@ -744,33 +740,20 @@ a.reg:hover {
  
 }
 
-.sliderout .slick-slider {
-/*	margin-bottom: 0;*/
-}
-
-.slick-initialized .slick-slide {
-	
-/*	margin: 0 11px 0 0;*/
-}
 .sliderout .slick-initialized .slick-slide span {
     display:block;
-/*    position:absolute;*/
     border: 2px dashed #fbc727;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    width:100%;
-    height:145px;
-    margin:0 auto; 
+	width: 160px;
+    height:160px;
+    margin: 0 15px;
+	text-align: center;
 }
 
-/* the slides */
-.sliderout .slick-slide {
-   
-}
-/* the parent */
-.sliderout .slick-list {
-/*    margin: 0 -10px;*/
+.sliderout .slick-next {
+	right: -35px;
 }
 
 .sliderout .slick-prev, .sliderout .slick-next {
@@ -801,10 +784,6 @@ a.reg:hover {
     top: 50%;
     transform: translateY(-50%);
 }
-
-/*.slick-list {
-	padding: 0 20px;
-} */
 
 
 /*========================== END 007 008 009 page ==========================*/
@@ -919,12 +898,6 @@ a.reg:hover {
 }
 
 
-
-
-
-
-
-
 .logform .form .rbox {
     color:#fff;
     
@@ -985,19 +958,10 @@ a.reg:hover {
         text-align:left;
         background-color:#004f1f;
         border:2px dashed #fbc727;
-      /*  position:relative;*/
         padding:15px 89px 34px 89px;
-        /* margin:0 auto; */
         box-sizing:border-box;
         border-style:dashed !important ;
         font-family: Arial;
-    }
-    .logform .form, .slick-initialized .slick-slide span img {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -40%);
     }
     
     .product_descript .logform .form {
@@ -1050,7 +1014,6 @@ a.reg:hover {
     .logform .form input[type=text]:focus, .logform .form input[type=password]:focus, .logform .form textarea:focus   {
             color:rgba(0,0,0,1);
            
-           /* border-color:#fbc727;*/
            
     }
     .logform .form input[type=text]:focus::-webkit-input-placeholder, .logform .form input[type=password]:focus::-webkit-input-placeholder  {
@@ -1109,7 +1072,6 @@ a.reg:hover {
     .logform .form  label.error {
         line-height: 1.3em;
         background-color: #e72118;    
-        /*padding: 10px 14px 19px 14px; */
         padding:3px;
         border-radius: 7px;
         
@@ -1118,10 +1080,8 @@ a.reg:hover {
         position: absolute;
         top: -25px;
         display: block;
-/*        height:100%;*/
         
         max-height: 49px;
-/*        max-height:20px;*/
         width: 100%;
         
     }
