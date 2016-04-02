@@ -982,6 +982,15 @@ a.reg:hover {
         background:none;
         border:0px;    
     }
+    
+ 
+    .logform .form  {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -40%);
+    }
    
     .logform .form input[type=text], .logform .form input[type=password], .logform .form textarea {
         letter-spacing: 1px;
