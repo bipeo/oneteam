@@ -1506,39 +1506,105 @@ body {
         .bavar .mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
             background:#feffff;
         }
+/*========================== media height ==========================*/
         
-        
-        @media only screen and (min-height:1100px) {
-            .play {
-            left:54%;
-            top: 35%;
-            width: 450px;
-            background: rgba(25,80,32, .8);
-            }
-        }
-        
-        
-         @media only screen and (min-height:1200px) {
-            .play {
-             top: 37%;
-             left:54%;
-             background: rgba(49,162,32, .8);
-            }
-        }
+@media only screen and (min-height:1100px) {
+	.play {
+	left:54%;
+	top: 35%;
+	width: 450px;
+	background: rgba(25,80,32, .8);
+	}
+}
 
-        @media only screen and (min-height:1300px) {
-            .play {
-            left: 57%;
-            top: 46%;
-            background: rgba(49,162,32, .8);
-            }
-        }
-         @media only screen and (min-height:1400px) {
-            .play {
-            width:500px;
-            height:400px;
-            left: 60%;
-            top: 41%;
-            background: rgba(49,15,45, .8);
-            }
-        }
+
+ @media only screen and (min-height:1200px) {
+	.play {
+		 top: 37%;
+		 left:54%;
+		 background: rgba(49,162,32, .8);
+	}
+}
+
+@media only screen and (min-height:1300px) {
+	.play {
+	left: 57%;
+	top: 46%;
+	background: rgba(49,162,32, .8);
+	}
+}
+ @media only screen and (min-height:1400px) {
+	.play {
+	width:500px;
+	height:400px;
+	left: 60%;
+	top: 41%;
+	background: rgba(49,15,45, .8);
+	}
+}
+
+/*========================== media width ==========================*/
+
+@media only screen and (max-width: 1260px) {
+	a.reg {
+		margin-left: 100px;
+	}
+}
+
+@media only screen and (max-width: 799px) {
+	.bg_mobile {
+		background: url(img/bg_mobile.jpg) no-repeat center top / cover;
+	}
+	.warning {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.notif_tit .el_eleven {
+		background-size: contain;
+		width: 100%;
+	}
+	.notif_tit .bts.yes {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.logform .col.single {
+		width: 100%;
+	}
+	.logform .form {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.logform .form .r_3 input[type="submit"] {
+		display: block;
+		float: none;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.logform .form .r_3 .hrefsub {
+		display: block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.logform .checkbox-group, .logform .form .hlink {
+		float: none;
+	}
+	.logform .form .hlink {
+		display: block;
+		margin-bottom: 30px;
+		margin-top: 50px;
+	}
+	
+}
+
+@media only screen and (max-width: 319px) {
+	body {
+		overflow-x: auto;
+		width: 320px;
+	}
+}
