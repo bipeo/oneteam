@@ -1321,6 +1321,10 @@ a.reg:hover {
 body {
     color:#000; /*remove*/
 }
+
+.recovery_pasw .mil {
+	display: none;
+}
  
  /* centring  */
   .wrapper .area {
@@ -1558,6 +1562,31 @@ body {
 	.warning {
 		display: none;
 	}
+	.logform .form .mil a {
+		background: #00742f;
+		color: #fff;
+		display: block;
+		font-size: 30px;
+		height: 100px;
+		line-height: 100px;
+	}
+	.logform .form {
+		background-color: transparent;
+		border: none!important;
+		border-radius: 0;
+	}
+	.logform .close_btn {right: 0;}
+	.recovery_pasw .mil {
+		display: block;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.form.st_2 {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -1567,6 +1596,12 @@ body {
 	}
 	.notif_tit .bts.yes {
 		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.logform .h2 {
+		font-size: 50px;
 	}
 }
 
@@ -1598,6 +1633,9 @@ body {
 		display: block;
 		margin-bottom: 30px;
 		margin-top: 50px;
+	}
+	.logform .h2 {
+		font-size: 45px;
 	}
 	
 }
