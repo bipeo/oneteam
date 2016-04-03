@@ -1551,6 +1551,28 @@ body {
 	}
 }
 
-@media only screen and (max-width: 1180px) {
-	
+@media only screen and (max-width: 799px) {
+	.bg_mobile {
+		background: url(img/bg_mobile.jpg) no-repeat center top / cover;
+	}
+	.warning {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.notif_tit .el_eleven {
+		background-size: contain;
+		width: 100%;
+	}
+	.notif_tit .bts.yes {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 319px) {
+	body {
+		overflow-x: auto;
+		width: 320px;
+	}
 }
