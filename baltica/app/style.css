@@ -1570,6 +1570,38 @@ body {
 	}
 }
 
+@media only screen and (max-width: 350px) {
+	.logform .col.single {
+		width: 100%;
+	}
+	.logform .form {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.logform .form .r_3 input[type="submit"] {
+		display: block;
+		float: none;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.logform .form .r_3 .hrefsub {
+		display: block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.logform .checkbox-group, .logform .form .hlink {
+		float: none;
+	}
+	.logform .form .hlink {
+		display: block;
+		margin-bottom: 30px;
+		margin-top: 50px;
+	}
+	
+}
+
 @media only screen and (max-width: 319px) {
 	body {
 		overflow-x: auto;
