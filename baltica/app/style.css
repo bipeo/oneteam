@@ -1560,6 +1560,19 @@ body {
 	}
 }
 
+@media only screen and (max-width: 580px) {
+	.form.st_2 {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.logform .close_btn {
+		right: -6px;
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	.notif_tit .el_eleven {
 		background-size: contain;
@@ -1567,6 +1580,12 @@ body {
 	}
 	.notif_tit .bts.yes {
 		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.logform .h2 {
+		font-size: 50px;
 	}
 }
 
@@ -1598,6 +1617,9 @@ body {
 		display: block;
 		margin-bottom: 30px;
 		margin-top: 50px;
+	}
+	.logform .h2 {
+		font-size: 45px;
 	}
 	
 }
