@@ -1555,6 +1555,13 @@ body {
 	}
 }
 
+@media only screen and (max-width: 900px) {
+	.feedback .form.st_1 {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
 @media only screen and (max-width: 799px) {
 	.bg_mobile {
 		background: url(img/bg_mobile.jpg) no-repeat center top / cover;
@@ -1579,6 +1586,26 @@ body {
 	.recovery_pasw .mil {
 		display: block;
 		text-align: center;
+	}
+ 	/*========================== feedback ==========================*/
+	.feedback .form.st_1 {
+		background: #224c23;
+	}
+	.feedback {
+		background: #00742f;
+	}
+	.feedback .outsubmit {text-align: center;}
+}
+
+@media only screen and (max-width: 710px) {
+	.logform .col.two {
+		float: none;
+		width: 100%;
+	}
+	.feedback .logform .col.one {
+		float: none;
+		margin-right: 0;
+		width: 100%;
 	}
 }
 
