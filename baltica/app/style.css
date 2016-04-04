@@ -581,6 +581,11 @@ a.reg:hover {
 	width: 193px;
 }
 
+.input_txt::-webkit-input-placeholder {color:#000000;}
+.input_txt::-moz-placeholder          {color:#000000; opacity: 1;}/* Firefox 19+ */
+.input_txt:-moz-placeholder           {color:#000000; opacity: 1;}/* Firefox 18- */
+.input_txt:-ms-input-placeholder      {color:#000000;}
+
 .submit {
 	background: -webkit-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
 	background: -moz-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
