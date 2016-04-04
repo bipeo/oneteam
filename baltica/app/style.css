@@ -581,6 +581,11 @@ a.reg:hover {
 	width: 193px;
 }
 
+.input_txt::-webkit-input-placeholder {color:#000000;}
+.input_txt::-moz-placeholder          {color:#000000; opacity: 1;}/* Firefox 19+ */
+.input_txt:-moz-placeholder           {color:#000000; opacity: 1;}/* Firefox 18- */
+.input_txt:-ms-input-placeholder      {color:#000000;}
+
 .submit {
 	background: -webkit-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
 	background: -moz-linear-gradient(90deg, #fbc727 0%, #a98000 100%);
@@ -1325,6 +1330,15 @@ body {
 .recovery_pasw .mil {
 	display: none;
 }
+
+.ttu {
+	text-transform: uppercase;
+}
+
+.thank_you .submit {
+	display: block;
+	line-height: 45px;
+}
  
  /* centring  */
   .wrapper .area {
@@ -1556,7 +1570,7 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-	.feedback .form.st_1 {
+	.feedback .form.st_1, .reg_page .form.st_1 {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
@@ -1577,7 +1591,7 @@ body {
 		height: 100px;
 		line-height: 100px;
 	}
-	.logform .form {
+	.recovery_pasw .logform .form, .feedback .logform .form, .reg_page .logform .form {
 		background-color: transparent;
 		border: none!important;
 		border-radius: 0;
@@ -1588,10 +1602,10 @@ body {
 		text-align: center;
 	}
  	/*========================== feedback ==========================*/
-	.feedback .form.st_1 {
+	.feedback .form.st_1, .reg_page .form.st_1 {
 		background: #224c23;
 	}
-	.feedback {
+	.feedback, .reg_page {
 		background: #00742f;
 	}
 	.feedback .outsubmit {text-align: center;}
@@ -1607,12 +1621,48 @@ body {
 		margin-right: 0;
 		width: 100%;
 	}
+	.reg_page .logform .row .itm {
+		float: none;
+		width: 100%;
+	}
+	.reg_page .logform .radio-group, .logform .form .rbox {
+		float: none;
+	}
+	.outsubmit {text-align: center;}
+	.logform .form .rbox .sbt {
+		color: #f5e700;
+		text-align: center;
+		width: 100%;
+	}
+	.soclist.min.right {
+		float: none;
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 580px) {
 	.form.st_2 {
 		padding-left: 2%;
 		padding-right: 2%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.thank_you .logform .form {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	.pad_l {
+		display: block; 
+		padding-left: 61px;
+		position: relative;
+		top: -20px;
+	}
+	.reg_page .checkbox-group .item {
+		margin-bottom: 35px;
 	}
 }
 
@@ -1663,7 +1713,7 @@ body {
 	}
 	.logform .h2 {
 		font-size: 45px;
-	}
+	}	
 	
 }
 
