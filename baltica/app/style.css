@@ -1577,7 +1577,7 @@ body {
 		height: 100px;
 		line-height: 100px;
 	}
-	.logform .form {
+	.recovery_pasw .logform .form, .feedback .logform .form, .reg_page .logform .form {
 		background-color: transparent;
 		border: none!important;
 		border-radius: 0;
@@ -1628,6 +1628,13 @@ body {
 
 @media only screen and (max-width: 580px) {
 	.form.st_2 {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.thank_you .logform .form {
 		padding-left: 2%;
 		padding-right: 2%;
 	}
