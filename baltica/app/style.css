@@ -1325,6 +1325,15 @@ body {
 .recovery_pasw .mil {
 	display: none;
 }
+
+.ttu {
+	text-transform: uppercase;
+}
+
+.thank_you .submit {
+	display: block;
+	line-height: 45px;
+}
  
  /* centring  */
   .wrapper .area {
