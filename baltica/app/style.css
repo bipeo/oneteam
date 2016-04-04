@@ -843,10 +843,7 @@ a.reg:hover {
 
 
 .checkbox-group {
-    margin:16px 27px 10px 0;
-}
-.checkbox-group .item {
-    
+    margin: 0 27px 10px 0;
 }
   /* checkbox end  */
   
@@ -895,7 +892,7 @@ a.reg:hover {
     float:left;
 }
 .checkbox-group .item {
-    margin:18px 39px 63px 0;
+    margin:18px 39px 30px 0;
 }
 .checkbox-group .item:last-child {
     margin-bottom:10px;
@@ -924,9 +921,7 @@ a.reg:hover {
     float:none;
    
 }
-.logform .form .mil {
-    
-}
+
 .logform .form .mil a {
     text-decoration: underline;
     color:#f5e700;
@@ -1524,6 +1519,26 @@ body {
         .bavar .mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
             background:#feffff;
         }
+
+#nletter, #agree {
+	display: none;
+	position: static;
+}
+
+#nletter + label, #agree + label {
+	background: url(img/radio_bg.png) no-repeat 0 0;
+	display: block;
+	height: 48px;
+	overflow: hidden;
+}
+
+#nletter:checked + label, #agree:checked + label {
+	background-position: 0 -49px;
+}
+
+#nletter + label:before, #nletter + label:after, #agree + label:before, #agree + label:after {
+	display: none;
+}
 /*========================== media height ==========================*/
         
 @media only screen and (min-height:1100px) {
@@ -1655,14 +1670,14 @@ body {
 }
 
 @media only screen and (max-width: 430px) {
-	.pad_l {
-		display: block; 
-		padding-left: 61px;
-		position: relative;
-		top: -20px;
-	}
 	.reg_page .checkbox-group .item {
 		margin-bottom: 35px;
+	}
+	.checkbox-group {
+		
+	}
+	.checkbox:not(checked) + label:after {
+		top: -33px;
 	}
 }
 
