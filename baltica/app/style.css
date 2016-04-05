@@ -1133,7 +1133,7 @@ a.reg:hover {
     display:inline-block;
     position:relative;
     line-height: 1.3em;
-    top:9px;
+/*    top:9px;*/
 }
 .logform .form  .single  input[type=submit] {
        margin: 7px 0px 0 0;
@@ -1673,11 +1673,11 @@ body {
 	.reg_page .checkbox-group .item {
 		margin-bottom: 35px;
 	}
-	.checkbox-group {
-		
-	}
 	.checkbox:not(checked) + label:after {
-		top: -33px;
+/*		top: -33px;*/
+	}
+	.logform .form .r_2 .checkbox-group label span {
+/*		top: 0;*/
 	}
 }
 
