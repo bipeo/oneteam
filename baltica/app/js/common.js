@@ -11,15 +11,16 @@
 
             $(window).load(function()
                 {
-                    getWidthAndHeight()
-                    checkHeight()
+                    getWidthAndHeight();
+                    checkHeight();
                 }
             );
 
 
             $(window).resize(function()
                 {
-                    getWidthAndHeight()
+                    getWidthAndHeight();
+                    checkHeight();
                    
                 }
             );
