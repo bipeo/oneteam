@@ -1539,6 +1539,20 @@ body {
 #nletter + label:before, #nletter + label:after, #agree + label:before, #agree + label:after {
 	display: none;
 }
+
+.thank_you .submit {
+	line-height: 44px;
+	padding: 0 95px!important;
+}
+
+.reg_form .form_1 {
+	margin-bottom: 0;
+}
+
+.reg_form {
+	margin-left: auto;
+	margin-right: auto;
+}
 /*========================== media height ==========================*/
         
 @media only screen and (min-height:1100px) {
@@ -1694,6 +1708,13 @@ body {
 @media only screen and (max-width: 380px) {
 	.logform .h2 {
 		font-size: 50px;
+	}
+	.reg_form {
+		width: 100%;
+	}
+	.thank_you .submit {
+		padding-left: 9% !important;
+		padding-right: 9% !important;
 	}
 }
 
