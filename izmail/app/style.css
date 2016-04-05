@@ -491,6 +491,7 @@ body {
 .hotel_sidebar .h3 {
 	color: #000000;
 	display: block;
+	font-family: 'pt_sansbold';
 	font-size: 24px;
 	margin: 0 0 0 20px;
 }

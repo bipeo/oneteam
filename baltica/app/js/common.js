@@ -1,13 +1,30 @@
-        $(document).ready(function()
+$(document).ready(function()
         {
-            
-            
-            
-            $('.close_btn').on('click',function() {
+ 
+		///////////////////////////////////////////////////////////////////////// menu_mobile
+
+		var pull 		= $('.btn_menu');
+			menu 		= $('#menu_mobile');
+			menuHeight	= menu.height();
+
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+			$(this).toggleClass('close_menu');
+		});
+
+		$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+			
+			
+			$('.close_btn').on('click',function() {
                $('.logform').hide(); 
             });
-
-            
+ 
 
             $(window).load(function()
                 {
@@ -48,7 +65,9 @@
                     addmar = 100;
                     $('.pscrbox').css('height',minh - addmar +'px');
                }
-            }
-            
+            } 
         }
+						  
+	  
+
     );
