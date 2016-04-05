@@ -490,6 +490,7 @@ body {
 
 .hotel_sidebar .h3 {
 	color: #000000;
+	display: block;
 	font-size: 24px;
 	margin: 0 0 0 20px;
 }
@@ -1860,6 +1861,10 @@ body {
 
 .fancybox_relative {
 	position: relative;
+}
+
+.fancybox-skin {
+	background: #fff;
 }
 
 @media only screen and (max-width: 1208px) { 
