@@ -1553,6 +1553,28 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.mobile_menu {
+	display: none;
+	float: right;
+}
+
+.btn_menu {
+	cursor: pointer;
+	margin: 10px 25px 0 0;
+}
+
+.btn_menu span {
+	background: #fff;
+	display: block;
+	height: 5px;
+	width: 49px;
+}
+
+.btn_menu span + span {
+	margin-top: 5px;
+}
+
 /*========================== media height ==========================*/
         
 @media only screen and (min-height:1100px) {
@@ -1598,6 +1620,21 @@ body {
 	}
 }
 
+@media only screen and (max-width: 1160px) {
+	a.reg {
+		margin-left: 20px;
+	}
+}
+
+@media only screen and (max-width: 1080px) { /* mobile menu */
+	.top_menu {display: none;}
+	.mobile_menu {
+		display: block;
+	}
+	
+}
+
+
 @media only screen and (max-width: 900px) {
 	.feedback .form.st_1, .reg_page .form.st_1 {
 		padding-left: 3%;
@@ -1616,9 +1653,9 @@ body {
 		background: #00742f;
 		color: #fff;
 		display: block;
-		font-size: 30px;
-		height: 100px;
-		line-height: 100px;
+		font-size: 20px;
+		height: 60px;
+		line-height: 60px;
 	}
 	.recovery_pasw .logform .form, .feedback .logform .form, .reg_page .logform .form {
 		background-color: transparent;
