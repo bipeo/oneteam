@@ -2054,6 +2054,9 @@ body {
 	.product_descript .h1 {
 		font-size: 60px;
 	}
+	.header_other .logo, .header .logo {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 500px) {
