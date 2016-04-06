@@ -1672,6 +1672,20 @@ body {
 .ul_link > li a {
 	color: #fff;
 }
+
+.mobile_img, .list_pobed {display: none;}
+.list_pobed {
+	
+}
+.list_pobed > li {
+	list-style-type: decimal;
+	list-style-position: inside;
+	padding-left: 5%;
+}
+
+.name_pobed {
+	display: block;
+}
 /*========================== media height ==========================*/
         
 @media only screen and (min-height:1100px) {
@@ -1728,7 +1742,44 @@ body {
 	.mobile_menu {
 		display: block;
 	}
-	
+	.product_descript .close_btn {
+		right: 20px;
+	}
+	.product_foto.left {
+		float: none;
+	}
+	.wrapper {background: none;}
+	.wrap_bootle.bg_style {
+		background: #004f1f;
+	}
+	.img_1, .menu_left {display: none;}
+	.header_other {
+		background: #00742f;
+		height: 120px;
+	}
+	.header_other .logo img {
+		width: 244px;
+	}
+	.header_other .logo {
+		left: 50%;
+		margin-left: -122px;
+		top: 28px;
+	}
+	.mobile_img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.close_btn {display: none;}
+	.table_1, .game {display: none;}
+	.product_descript.left {
+		float: none;
+		padding: 0 2%;
+		width: 100%;
+	}
+	.list_pobed {
+		display: block;
+	}
 }
 
 
