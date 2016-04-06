@@ -1696,6 +1696,7 @@ body {
 
 .name_pobed {
 	display: block;
+	font-size: 25px;
 }
 
 .btn_menu, .game_mobile, .reg_kod {display: none;}
@@ -1725,7 +1726,7 @@ body {
 }
 
 .descript_pobed {
-	font-size: 13px;
+	font-size: 15px;
 }
 .color_yellow {
 	color: #efe837;
@@ -1920,6 +1921,9 @@ body {
 	}
 	.bg_mobile {
 		background: url(img/bg_mobile.jpg) no-repeat center top / cover;
+	}
+	.pscrbox.mCustomScrollbar {
+		height: auto !important;
 	}
 }
 
