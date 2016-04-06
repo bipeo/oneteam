@@ -262,7 +262,7 @@ a.reg:hover {
 }
 
 .tooltip:before {
-	background: url(img/ico_4.png) no-repeat;
+	background: url(img/ico_4.png) no-repeat 0 0;
 	content: "";
 	display: block;
 	height: 17px;
@@ -1555,8 +1555,10 @@ body {
 }
 
 .mobile_menu {
+	background: #2d5027;
 	display: none;
 	float: right;
+	padding: 155px 0 0 0;
 }
 
 .btn_menu {
@@ -1575,6 +1577,101 @@ body {
 	margin-top: 5px;
 }
 
+.wrap_item_menu {
+	border-bottom: 2px dashed #edc63d;
+	padding: 0 50px 40px;
+}
+
+.mobile_menu .out {
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.mobile_menu .out::before {
+	background: #fff;
+	bottom: 2px;
+	height: 26px;
+	top: auto;
+}
+
+.mobile_menu {
+	position: absolute;
+	top: 0;
+	z-index: 999;
+}
+
+.mobile_menu .tooltip {
+	font-family: "MyriadProCondRegular";
+	height: auto;
+	left: 0;
+	line-height: 1.2;
+	padding-left: 22px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	top: -135px;
+	width: 452px;
+}
+
+.mobile_menu .tooltip::before {
+	background-position: -22px 0;
+	bottom: -17px;
+	left: 40px;
+	right: auto;
+	top: auto;
+}
+
+.menu_mobile_ul {
+	border-bottom: 2px dashed #edc63d;
+	padding: 80px 0;
+}
+
+.menu_mobile_ul > li {
+	text-align: center;
+}
+
+.menu_mobile_ul > li a {
+	display: block;
+	font-family: 'MyriadPro-BoldCond';
+	font-size: 48px;
+	height: 100px;
+	line-height: 100px;
+	padding: 0 50px;
+	text-transform: uppercase;
+}
+
+.menu_mobile_ul > li a.active {
+	color: #f5e600;
+}
+
+.menu_mobile_ul > li:hover, .menu_mobile_ul > li:active {
+	background: #c6261e;
+	color: #fff;
+}
+
+.mobile_menu .name_authoriz {
+	font-size: 30px;
+}
+
+.mobile_menu .name_authoriz a {
+	text-decoration: underline;
+}
+
+.ul_link {
+	background: #00742f;
+	overflow: hidden;
+}
+
+.ul_link > li {
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	width: 50%;
+}
+
+.ul_link > li a {
+	color: #fff;
+}
 /*========================== media height ==========================*/
         
 @media only screen and (min-height:1100px) {
