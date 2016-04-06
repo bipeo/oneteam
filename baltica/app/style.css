@@ -255,6 +255,7 @@ a.reg:hover {
 	top: 40px;
 	text-align: center;
 	width: 245px;
+	z-index: 10;
 }
 
 .tooltip:before {
@@ -1732,6 +1733,34 @@ body {
 .pagination_top {
 	display: none;
 }
+
+.sort {
+	display: none;
+	overflow: hidden;
+	margin: 0 0 40px 0;
+}
+
+.sort > li {
+	color: #f4e534;
+	float: left;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.sort > li + li:before {
+	content: "/";
+	left: -7px;
+	position: absolute;
+	top: 0;
+}
+
+.sort > li + li {
+	margin-left: 10px;
+}
+
+.sort > li a {
+	text-decoration: underline;
+}
 /*========================== media height ==========================*/
         
 @media only screen and (min-height:1100px) {
@@ -1884,6 +1913,9 @@ body {
 	}
 	.product_descript .h1 {
 		margin-top: 50px;
+	}
+	.sort {
+		display: block;
 	}
 }
 

@@ -14,6 +14,11 @@ $(document).ready(function()
 
 //                    $(this).toggleClass('close_menu');
 		});
+	
+		$('.close_menu').on('click', function(e) {
+			e.preventDefault();
+			$('#menu_mobile').hide(500);
+		});
 
 		$(window).resize(function(){
 			var w = $(window).width();
