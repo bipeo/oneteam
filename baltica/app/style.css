@@ -1634,7 +1634,6 @@ body {
 	display: block;
 	font-family: 'MyriadPro-BoldCond';
 	font-size: 48px;
-	height: 100px;
 	line-height: 100px;
 	padding: 0 50px;
 	text-transform: uppercase;
@@ -1741,6 +1740,7 @@ body {
 	.top_menu {display: none;}
 	.mobile_menu {
 		display: block;
+                display:none;
 	}
 	.product_descript .close_btn {
 		right: 20px;
