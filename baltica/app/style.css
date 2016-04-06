@@ -1882,6 +1882,9 @@ body {
 		background-image: url(img/ico_2_mobile.png);
 		padding-left: 65px;
 	}
+	.product_descript .h1 {
+		margin-top: 50px;
+	}
 }
 
 
@@ -1979,6 +1982,10 @@ body {
 	}
 	.close_menu {
 		right: 2%;
+	}
+	.logform .row .itm {
+		float: none;
+		width: 100%;
 	}
 }
 
