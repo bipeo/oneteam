@@ -1961,6 +1961,10 @@ body {
 		background: #00742f;
 	}
 	.feedback .outsubmit {text-align: center;}
+	
+	.akc_products > li {
+		margin-bottom: 100px;
+	}
 }
 
 @media only screen and (max-width: 710px) {
@@ -2061,12 +2065,12 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-	.pris {
+	.pris, .akc_products {
 		display: table;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.pris > li {
+	.pris > li, .akc_products > li {
 		float: none;
 		margin-bottom: 150px;
 	}
