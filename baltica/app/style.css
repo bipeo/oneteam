@@ -1563,18 +1563,18 @@ body {
 
 .btn_menu {
 	cursor: pointer;
-	margin: 10px 25px 0 0;
+	margin: 38px 0 0 48px;
 }
 
 .btn_menu span {
 	background: #fff;
 	display: block;
-	height: 5px;
-	width: 49px;
+	height: 7px;
+	width: 58px;
 }
 
 .btn_menu span + span {
-	margin-top: 5px;
+	margin-top: 11px;
 }
 
 .wrap_item_menu {
@@ -1596,6 +1596,7 @@ body {
 
 .mobile_menu {
 	position: absolute;
+	right: 0;
 	top: 0;
 	z-index: 999;
 }
@@ -1606,6 +1607,7 @@ body {
 	left: 0;
 	line-height: 1.2;
 	padding-left: 22px;
+	padding-right: 22px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: left;
@@ -1634,8 +1636,7 @@ body {
 	display: block;
 	font-family: 'MyriadPro-BoldCond';
 	font-size: 48px;
-	line-height: 100px;
-	padding: 0 50px;
+	padding: 25px 50px;
 	text-transform: uppercase;
 }
 
@@ -1664,8 +1665,22 @@ body {
 .ul_link > li {
 	float: left;
 	font-size: 30px;
+	height: 100px;
+	line-height: 100px;
+	position: relative;
 	text-align: center;
 	width: 50%;
+}
+
+.ul_link > li:last-child:before {
+	background: #fff;
+	content: "";
+	height: 28px;
+	left: 0;
+	margin-top: -14px;
+	position: absolute;
+	top: 50%;
+	width: 2px;
 }
 
 .ul_link > li a {
@@ -1684,6 +1699,32 @@ body {
 
 .name_pobed {
 	display: block;
+}
+
+.btn_menu, .game_mobile, .reg_kod {display: none;}
+
+.reg_kod {
+	background: url(img/reg_kod_ico.png) no-repeat 15px center;
+	border: 1px solid #fff;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	color: #fff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 35px 12px 0 0;
+	padding: 10px 20px 10px 46px;
+	text-transform: uppercase;
+	width: 198px;
+}
+
+.close_menu {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	right: 50px;
+	top: 28px;
 }
 /*========================== media height ==========================*/
         
@@ -1737,10 +1778,9 @@ body {
 }
 
 @media only screen and (max-width: 1080px) { /* mobile menu */
-	.top_menu {display: none;}
-	.mobile_menu {
+	.top_menu, .mobile_menu {display: none;}
+	.btn_menu {
 		display: block;
-                display:none;
 	}
 	.product_descript .close_btn {
 		right: 20px;
@@ -1752,15 +1792,18 @@ body {
 	.wrap_bootle.bg_style {
 		background: #004f1f;
 	}
+	.wrap_bootle {
+		background-image: url(img/bottle_mobile.jpg);
+	}
 	.img_1, .menu_left {display: none;}
-	.header_other {
+	.header_other, .header {
 		background: #00742f;
 		height: 120px;
 	}
-	.header_other .logo img {
+	.header_other .logo img, .header .logo img {
 		width: 244px;
 	}
-	.header_other .logo {
+	.header_other .logo, .header .logo {
 		left: 50%;
 		margin-left: -122px;
 		top: 28px;
@@ -1778,6 +1821,14 @@ body {
 		width: 100%;
 	}
 	.list_pobed {
+		display: block;
+	}
+	.play {display: none;}
+	.game_mobile {
+		display: block;
+		margin: 65px 0 0 0;
+	}
+	.reg_kod {
 		display: block;
 	}
 }
@@ -1852,12 +1903,41 @@ body {
 		float: none;
 		text-align: center;
 	}
+	.mobile_menu {
+		left: 0;
+	}
+	.mobile_menu .out {
+		display: block;
+		margin-top: 30px;
+		margin-left: 77px;
+	}
+	.mobile_menu .out::before {display: none;}
+	.name_authoriz {
+		background-image: url(img/ico_2_mobile.png);
+		padding-left: 65px;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	.wrap_item_menu, .menu_mobile_ul > li a {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.close_menu {
+		right: 2%;
+	}
 }
 
 @media only screen and (max-width: 580px) {
 	.form.st_2 {
 		padding-left: 2%;
 		padding-right: 2%;
+	}
+	.mobile_menu .tooltip {
+		width: auto;
+	}
+	.name_authoriz a {
+		display: block;
 	}
 }
 

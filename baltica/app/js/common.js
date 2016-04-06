@@ -12,7 +12,7 @@ $(document).ready(function()
                     
                     menu.slideToggle();
 
-                    $(this).toggleClass('close_menu');
+//                    $(this).toggleClass('close_menu');
 		});
 
 		$(window).resize(function(){
