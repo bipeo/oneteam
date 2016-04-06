@@ -147,7 +147,7 @@ html, body {
     height:100%;
 }
 
-.wrapper {
+.wrapper, .wrapper.wrap_2 {
 	min-height: 100%;
 	background: url(img/body_bg.jpg) no-repeat 0 0 / cover;
 	position: relative;
@@ -1917,6 +1917,9 @@ body {
 	.sort {
 		display: block;
 	}
+	.bg_mobile {
+		background: url(img/bg_mobile.jpg) no-repeat center top / cover;
+	}
 }
 
 
@@ -1928,9 +1931,7 @@ body {
 }
 
 @media only screen and (max-width: 799px) {
-	.bg_mobile {
-		background: url(img/bg_mobile.jpg) no-repeat center top / cover;
-	}
+	
 	.warning {
 		display: none;
 	}
