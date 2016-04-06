@@ -1878,6 +1878,10 @@ body {
 	.pagination > li a.tochka {
 		width: auto;
 	}
+	.name_authoriz {
+		background-image: url(img/ico_2_mobile.png);
+		padding-left: 65px;
+	}
 }
 
 
@@ -1959,10 +1963,7 @@ body {
 		margin-left: 77px;
 	}
 	.mobile_menu .out::before {display: none;}
-	.name_authoriz {
-		background-image: url(img/ico_2_mobile.png);
-		padding-left: 65px;
-	}
+	
 	.header_other .logo img, .header .logo img {
 		width: 202px
 	}
@@ -2016,6 +2017,18 @@ body {
 	}
 }
 
+@media only screen and (max-width: 500px) {
+	.pris {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.pris > li {
+		float: none;
+		margin-bottom: 150px;
+	}
+}
+
 @media only screen and (max-width: 430px) {
 	.reg_page .checkbox-group .item {
 		margin-bottom: 35px;
@@ -2025,6 +2038,17 @@ body {
 	}
 	.logform .form .r_2 .checkbox-group label span {
 /*		top: 0;*/
+	}
+	.form_1 .input_txt {
+		display: block;
+		float: none;
+		margin: 0 2% 20px 2%;
+		width: 96%;
+	}
+	.form_1 .submit {
+		margin-left: 2%;
+		margin-right: 2%;
+		width: 96%;
 	}
 }
 
