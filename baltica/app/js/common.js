@@ -14,6 +14,18 @@ $(document).ready(function()
 
 //                    $(this).toggleClass('close_menu');
 		});
+                
+                 $(document).mouseup(function (e)
+    {
+        var container = menu.add(pull);
+
+        if (!container.is(e.target) 
+            && container.has(e.target).length === 0) 
+        {
+            $('#menu_mobile').hide(500);
+         
+        }
+    });
 	
 		$('.close_menu').on('click', function(e) {
 			e.preventDefault();

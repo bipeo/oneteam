@@ -143,6 +143,11 @@
 				
 				
 			});
+                        $(window).resize(function(){
+			$(".scrollable").each(function(){
+            $('.pscrbox').mCustomScrollbar("update");
+        });
+		});
 		})(jQuery);
 </script>
 <script src="js/common.js"></script>
