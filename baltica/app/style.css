@@ -2129,12 +2129,12 @@ body {
 	}
 	#nletter + label, #agree + label {
 		background: url(img/radio_bg_2.png) no-repeat 0 0;
-		height: 80px;
+		height: 84px;
 		padding-left: 100px;
 		font-size: 24px;
 	}
 	#nletter:checked + label, #agree:checked + label {
-		background-position: 0 -80px;
+		background-position: 0 -84px;
 	}
 	/* form */
 	.logform .h2 {
@@ -2180,7 +2180,34 @@ body {
 		height: 87px;
 		font-size: 24px;
 	}
+	.logform .form textarea {
+		min-height: 350px;
+	}
+	.logform .form .rbox .sbt {
+		font-size: 30px;
+	}
 	/* END form */
+	.notif_tit .el_eleven {
+		background-image: url(img/is_eleven_big.png);
+		-webkit-background-size: contain;
+		background-size: contain;
+		height: 214px;
+		width: 100%;
+	}
+	.notif_tit .bts.yes {
+		background-image: url(img/bts_yes_big.png);
+		-webkit-background-size: contain;
+		background-size: contain;
+		height: 129px;
+		width: 40%;
+	}
+	.notif_tit .bts.no {
+		background-image: url(img/bts_no_big.png);
+		-webkit-background-size: contain;
+		background-size: contain;
+		height: 129px;
+		width: 40%;
+	}
 }
 
 @media only screen and (max-width: 710px) {
@@ -2352,6 +2379,7 @@ body {
 	.close_menu {
 		z-index: 100;
 	}
+	/* обычная форма */
 	.logform .vercode, .logform .refresh, .logform .form input[type="text"], .logform .form input[type="password"], .logform .form textarea {
 		height: 49px;
 	}
@@ -2390,6 +2418,12 @@ body {
 	.logform .outsubmit input[type=submit] {
 		height: auto;
 		font-size: 14px;
+	}
+	.logform .form textarea {
+		min-height: 230px;
+	}
+	.logform .form .rbox .sbt {
+		font-size: 20px;
 	}
 }
 
