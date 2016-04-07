@@ -2169,6 +2169,17 @@ body {
 		height: 92px;
 		width: 92px;
 	}
+	.logform .refresh::after {
+		background-image: url(img/refresh_icon_big.png);
+		height: 52px;
+		margin-left: -26px;
+		margin-top: -26px;
+		width: 52px;
+	}
+	.logform .outsubmit input[type=submit] {
+		height: 87px;
+		font-size: 24px;
+	}
 	/* END form */
 }
 
@@ -2361,6 +2372,24 @@ body {
 	}
 	.logform .h2 {
 		font-size: 50px;
+	}
+	.logform .vercode {
+		width: calc(100% - 80px);
+	}
+	.logform .refresh {
+		height: 49px;
+    	width: 50px;
+	}
+	.logform .refresh::after {
+		background-image: url("img/refresh_icon.png");
+		height: 29px;
+		margin-left: -14.5px;
+   		margin-top: -14px;
+		width: 29px;
+	}
+	.logform .outsubmit input[type=submit] {
+		height: auto;
+		font-size: 14px;
 	}
 }
 
