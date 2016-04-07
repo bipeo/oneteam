@@ -2079,6 +2079,7 @@ body {
 		border-bottom: 2px dashed #edc63d;
 	}
 	.slider .title_1 {
+		border-bottom: 2px dashed #edc63d;
 		color: #f1e636;
 		font-size: 72px;
 		text-align: center;
@@ -2172,6 +2173,11 @@ body {
 		float: none;
 		width: 100%;
 	}
+	.sliderout .slick-initialized .slick-slide span {
+		height: 302px;
+		margin: 0 auto;
+		width: 299px;
+	}
 }
 
 @media only screen and (max-width: 630px) {
@@ -2240,6 +2246,25 @@ body {
 	}
 	.header_other .logo, .header .logo {
 		display: none;
+	}
+	.sliderout .slick-initialized .slick-slide span {
+		height: 202px;
+		margin: 0 auto;
+		width: 199px;
+	}
+	.sliderout .slick-prev, .sliderout .slick-next {
+		background: url(img/slide_arrows.png) no-repeat 0 0;
+		height: 42px;
+		width: 30px;
+	}
+	.sliderout .slick-next, .sliderout .slick-next:hover, .sliderout .slick-next:focus {
+		background-position: -30px 0;
+	}
+	.sliderout .slick-prev:hover, .sliderout .slick-prev:focus, .sliderout .slick-next:hover, .sliderout .slick-next:focus {
+		background-image: url(img/slide_arrows.png);
+	}
+	.slider .title_1 {
+		font-size: 40px;
 	}
 }
 
@@ -2365,6 +2390,9 @@ body {
 	}
 	.bottle_2 {
 		display: none;
+	}
+	.slick-prev {
+		left: -38px;
 	}
 	
 }
