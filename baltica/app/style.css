@@ -1861,11 +1861,7 @@ body {
 	.wrap_bootle.bg_style {
 		background: #004f1f;
 	}
-	.mobile_bg {
-		background-image: url(img/mobile_bg.png)!important;
-		background-repeat: no-repeat!important;
-		background-position: center bottom!important;
-	}
+	
 	.wrap_bootle {
 		background-image: url(img/bottle_mobile.jpg);
 	}
@@ -1983,6 +1979,12 @@ body {
 	.product_descript .close_btn {
 		top: 0;
 	}
+	.feedback .form.st_1, .reg_page .form.st_1 {
+		background: #224c23;
+	}
+	.feedback, .reg_page {
+		background: #00742f;
+	}
 }
 
 
@@ -2017,12 +2019,7 @@ body {
 		text-align: center;
 	}
  	/*========================== feedback ==========================*/
-	.feedback .form.st_1, .reg_page .form.st_1 {
-		background: #224c23;
-	}
-	.feedback, .reg_page {
-		background: #00742f;
-	}
+	
 	.feedback .outsubmit {text-align: center;}
 	
 	.akc_products > li {
@@ -2031,6 +2028,12 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+	.mobile_bg {
+		background-image: url(img/mobile_bg.png)!important;
+		background-repeat: no-repeat!important;
+		background-position: center bottom!important;
+		background-size: contain;
+	}
 	.product_descript .h1 {
 		font-size: 100px;
 		line-height: 1;
@@ -2133,9 +2136,10 @@ body {
 	#nletter:checked + label, #agree:checked + label {
 		background-position: 0 -80px;
 	}
-}
-
-@media only screen and (max-width: 710px) {
+	/* form */
+	.logform .h2 {
+		font-size: 100px;
+	}
 	.logform .col.two {
 		float: none;
 		width: 100%;
@@ -2158,6 +2162,18 @@ body {
 		text-align: center;
 		width: 100%;
 	}
+	.logform .vercode {
+		width: calc(100% - 150px);
+	}
+	.logform .refresh {
+		height: 92px;
+		width: 92px;
+	}
+	/* END form */
+}
+
+@media only screen and (max-width: 710px) {
+	
 	.soclist.min.right {
 		float: none;
 		text-align: center;
@@ -2285,6 +2301,7 @@ body {
 	.slider .title_1 {
 		font-size: 40px;
 	}
+	
 }
 
 @media only screen and (max-width: 500px) {
@@ -2313,6 +2330,7 @@ body {
 	.ul_link > li:last-child::before {
 		display: none;
 	}
+	
 }
 
 @media only screen and (max-width: 450px) {
@@ -2341,17 +2359,14 @@ body {
 	.logform .form input[type=text], .logform .form input[type=password], .logform .form textarea {
 		font-size: 18px;
 	}
+	.logform .h2 {
+		font-size: 50px;
+	}
 }
 
 @media only screen and (max-width: 430px) {
 	.reg_page .checkbox-group .item {
 		margin-bottom: 35px;
-	}
-	.checkbox:not(checked) + label:after {
-/*		top: -33px;*/
-	}
-	.logform .form .r_2 .checkbox-group label span {
-/*		top: 0;*/
 	}
 	.form_1 .input_txt {
 		display: block;
