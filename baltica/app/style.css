@@ -2114,6 +2114,25 @@ body {
 	.product_descript .h1 {
 		padding-right: 10px;
 	}
+	.logform .vercode, .logform .refresh, .logform .form input[type="text"], .logform .form input[type="password"], .logform .form textarea {
+		height: 88px;
+		font-size: 30px;
+	}
+	.logform .form .label {
+		font-size: 36px;
+	}
+	.logform .row .itm {
+		height: auto;
+	}
+	#nletter + label, #agree + label {
+		background: url(img/radio_bg_2.png) no-repeat 0 0;
+		height: 80px;
+		padding-left: 100px;
+		font-size: 24px;
+	}
+	#nletter:checked + label, #agree:checked + label {
+		background-position: 0 -80px;
+	}
 }
 
 @media only screen and (max-width: 710px) {
@@ -2303,6 +2322,24 @@ body {
 	}
 	.close_menu {
 		z-index: 100;
+	}
+	.logform .vercode, .logform .refresh, .logform .form input[type="text"], .logform .form input[type="password"], .logform .form textarea {
+		height: 49px;
+	}
+	.logform .form .label {
+		font-size: 20px;
+	}
+	#nletter + label, #agree + label {
+		background: url("img/radio_bg.png") no-repeat scroll 0 0;
+		height: 48px;
+		font-size: 13px;
+		padding-left: 60px;
+	}
+	#nletter:checked + label, #agree:checked + label {
+		background-position: 0 -49px;
+	}
+	.logform .form input[type=text], .logform .form input[type=password], .logform .form textarea {
+		font-size: 18px;
 	}
 }
 
