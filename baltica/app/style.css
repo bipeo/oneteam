@@ -2079,6 +2079,7 @@ body {
 		border-bottom: 2px dashed #edc63d;
 	}
 	.slider .title_1 {
+		border-bottom: 2px dashed #edc63d;
 		color: #f1e636;
 		font-size: 72px;
 		text-align: center;
@@ -2112,6 +2113,25 @@ body {
 	}
 	.product_descript .h1 {
 		padding-right: 10px;
+	}
+	.logform .vercode, .logform .refresh, .logform .form input[type="text"], .logform .form input[type="password"], .logform .form textarea {
+		height: 88px;
+		font-size: 30px;
+	}
+	.logform .form .label {
+		font-size: 36px;
+	}
+	.logform .row .itm {
+		height: auto;
+	}
+	#nletter + label, #agree + label {
+		background: url(img/radio_bg_2.png) no-repeat 0 0;
+		height: 80px;
+		padding-left: 100px;
+		font-size: 24px;
+	}
+	#nletter:checked + label, #agree:checked + label {
+		background-position: 0 -80px;
 	}
 }
 
@@ -2171,6 +2191,11 @@ body {
 	.logform .row .itm {
 		float: none;
 		width: 100%;
+	}
+	.sliderout .slick-initialized .slick-slide span {
+		height: 302px;
+		margin: 0 auto;
+		width: 299px;
 	}
 }
 
@@ -2241,6 +2266,25 @@ body {
 	.header_other .logo, .header .logo {
 		display: none;
 	}
+	.sliderout .slick-initialized .slick-slide span {
+		height: 202px;
+		margin: 0 auto;
+		width: 199px;
+	}
+	.sliderout .slick-prev, .sliderout .slick-next {
+		background: url(img/slide_arrows.png) no-repeat 0 0;
+		height: 42px;
+		width: 30px;
+	}
+	.sliderout .slick-next, .sliderout .slick-next:hover, .sliderout .slick-next:focus {
+		background-position: -30px 0;
+	}
+	.sliderout .slick-prev:hover, .sliderout .slick-prev:focus, .sliderout .slick-next:hover, .sliderout .slick-next:focus {
+		background-image: url(img/slide_arrows.png);
+	}
+	.slider .title_1 {
+		font-size: 40px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -2278,6 +2322,24 @@ body {
 	}
 	.close_menu {
 		z-index: 100;
+	}
+	.logform .vercode, .logform .refresh, .logform .form input[type="text"], .logform .form input[type="password"], .logform .form textarea {
+		height: 49px;
+	}
+	.logform .form .label {
+		font-size: 20px;
+	}
+	#nletter + label, #agree + label {
+		background: url("img/radio_bg.png") no-repeat scroll 0 0;
+		height: 48px;
+		font-size: 13px;
+		padding-left: 60px;
+	}
+	#nletter:checked + label, #agree:checked + label {
+		background-position: 0 -49px;
+	}
+	.logform .form input[type=text], .logform .form input[type=password], .logform .form textarea {
+		font-size: 18px;
 	}
 }
 
@@ -2365,6 +2427,9 @@ body {
 	}
 	.bottle_2 {
 		display: none;
+	}
+	.slick-prev {
+		left: -38px;
 	}
 	
 }
