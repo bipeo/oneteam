@@ -1849,7 +1849,9 @@ body {
 }
 
 @media only screen and (max-width: 1080px) { /* mobile menu */
-	.top_menu, .mobile_menu {display: none;}
+	.top_menu, .mobile_menu, .product_descript .close_btn {
+		display: none;
+	}
 	.btn_menu {
 		display: block;
 	}
@@ -2211,11 +2213,7 @@ body {
 		margin-top: -8px;
 		width: 40%;
 	}
-	/*
-	.checkbox, .radio {
-		height: 70px;
-		width: 70px;
-	} */
+	
 	.radio:not(checked) + label::after {
 		height: 70px;
 		width: 70px;
@@ -2231,6 +2229,70 @@ body {
 	}
 	.radio:not(checked) + label {
 		padding-left: 110px;
+	}
+	.pris, .akc_products {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 175px;
+	}
+	.pris > li, .akc_products > li {
+		float: none;
+		height: 362px;
+		margin-bottom: 320px;
+		width: 480px;
+	}
+	.pris > li:last-child, .akc_products > li:last-child {
+		margin-bottom: 150px;
+	}
+	.foto_pris {
+		height: 304px;
+		top: -152px;
+	}
+	.name_pris {
+		font-size: 207px;
+		margin-top: 217px;
+	}
+	.pris.akc_products .btn_1 {
+		bottom: -57.5px;
+		font-size: 30px;
+		height: 115px;
+		line-height: 115px;
+		margin-left: -207.5px;
+		padding: 0;
+		width: 415px;
+	}
+	.golos {
+		bottom: -115px;
+		font-size: 24px;
+	}
+	.btn_2 {
+		font-size: 30px;
+		height: 117px;
+		line-height: 117px;
+		bottom: -58.5px;
+		margin-left: -207.5px;
+		width: 415px;
+	}
+	.kod_title {
+		text-align: center;
+	}
+	.form_1 .input_txt {
+		display: block;
+		float: none;
+		font-size: 48px;
+		height: 88px;
+		margin: 0 2% 72px 2%;
+		width: 96%;
+	}
+	.form_1 .submit {
+		display: block;
+		float: none;
+		font-size: 30px;
+		height: 104px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 517px;
 	}
 }
 
@@ -2396,18 +2458,64 @@ body {
 	.logform .h2 {
 		font-size: 54px;
 	}
+	.pris, .akc_products {
+		margin-top: 75px;
+	}
+	.pris > li, .akc_products > li {
+		height: 145px;
+		margin-bottom: 200px;
+		width: 192px;
+	}
+	.pris > li:last-child, .akc_products > li:last-child {
+		margin-bottom: 150px;
+	}
+	.foto_pris {
+		height: 122px;
+		top: -61px;
+	}
+	.name_pris {
+		font-size: 118.85px;
+		margin-top: 73px;
+	}
+	.pris.akc_products .btn_1 {
+		bottom: -23px;
+		font-size: 14px;
+		height: 45px;
+		line-height: 45px;
+		margin-left: -83px;
+		padding: 0;
+		width: 166px;
+	}
+	.golos {
+		bottom: -60px;
+		font-size: 12px;
+	}
+	.btn_2 {
+		bottom: -23px;
+		font-size: 14px;
+		height: 45px;
+		line-height: 45px;
+		margin-left: -83px;
+		width: 166px;
+	}
+	.kod_title {
+		text-align: center;
+	}
+	.form_1 .input_txt {
+		font-size: 24px;
+		height: 45px;
+		margin: 0 2% 30px 2%;
+		width: 96%;
+	}
+	.form_1 .submit {
+		font-size: 14px;
+		height: 45px;
+		width: 96%;
+	}
 }
 
 @media only screen and (max-width: 500px) {
-	.pris, .akc_products {
-		display: table;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.pris > li, .akc_products > li {
-		float: none;
-		margin-bottom: 150px;
-	}
+	
 	.product_descript .h1 {
 		font-size: 55px;
 	}
@@ -2514,17 +2622,7 @@ body {
 	.reg_page .checkbox-group .item {
 		margin-bottom: 35px;
 	}
-	.form_1 .input_txt {
-		display: block;
-		float: none;
-		margin: 0 2% 20px 2%;
-		width: 96%;
-	}
-	.form_1 .submit {
-		margin-left: 2%;
-		margin-right: 2%;
-		width: 96%;
-	}
+	
 }
 
 @media only screen and (max-width: 400px) {
