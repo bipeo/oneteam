@@ -2379,6 +2379,26 @@ body {
 	.recovery_pasw  .logform .col.single {
 		width: 100%;
 	}
+	.soclist.min a {
+		background-image: url(img/socsprite_23.png);
+		height: 87px;
+		width: 87px;
+	}
+	.soclist.min a.vk {
+		background-position: -199px -102px;
+	}
+	.soclist.min a.vk:focus, .soclist.min a.vk:hover {
+		background-position: -199px -5px;
+	}
+	.soclist.min a.fb {
+		background-position: -102px -5px;
+	}
+	.soclist.min a.klass {
+		background-position: -102px -102px;
+	}
+	.soclist.min a.klass:hover, .soclist.min a.klass:focus {
+		background-position: -5px -102px;
+	}
 }
 
 @media only screen and (max-width: 710px) {
@@ -2402,6 +2422,9 @@ body {
 	}
 	.header_other .logo, .header .logo {
 		top: 45px;
+	}
+	.recovery_pasw .logform .h2 {
+		font-size: 54px;
 	}
 }
 
