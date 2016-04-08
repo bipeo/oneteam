@@ -85,8 +85,8 @@ $(document).ready(function()
                     addmar = 100;
                     $('.pscrbox').css('height',minh - addmar +'px');
                }
-               if($('#menu_mobile').length) {
-                    addmar = 100;
+               if($('.menu_psec').length) {
+                   addmar = 100;
                     $('.wrap_bootle').css('min-height',minh + addmar +'px');
                }
             } 
