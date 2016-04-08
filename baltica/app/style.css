@@ -2560,6 +2560,12 @@ body {
 	}
 }
 
+@media only screen and (max-width: 570px) {
+	.radio-group .item {
+		margin-bottom: 45px;
+	}
+}
+
 @media only screen and (max-width: 550px) {
 	.thank_you .logform .form {
 		padding-left: 2%;
