@@ -1816,6 +1816,7 @@ body {
 	position: absolute;
 }
 
+/*
 .wrap_mobile_menu {
 	overflow-y: scroll!important;
 }
@@ -1824,6 +1825,7 @@ body {
 	height: 1100px!important;
 	
 }
+*/
 
 /*========================== media height ==========================*/
         
@@ -1993,8 +1995,11 @@ body {
 		width: auto;
 	}
 	.name_authoriz {
-		background-image: url(img/ico_2_mobile.png);
+/*		background: url(img/ico_2_mobile.png) no-repeat left center;*/
+		-webkit-background-size: 44px 42px;
+		background-size: 44px 42px;
 		padding-left: 65px;
+		padding-top: 5px;
 	}
 	.product_descript .h1 {
 		margin-top: 50px;
@@ -2589,6 +2594,9 @@ body {
 		display: block;
 		float: none;
 		margin-bottom: 50px;
+	}
+	.is_chrome .mobile_menu .tooltip, .is_opera .mobile_menu .tooltip {
+		top: -204px;
 	}
 }
 
