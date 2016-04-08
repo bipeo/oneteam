@@ -80,6 +80,7 @@ $(document).ready(function()
                 $(".wrap_bootle").css("min-height", scrollHeight + "px");
 //				var heightMenu = $('#menu_mobile').outerHeight();
 				$('#menu_mobile').css('height', scrollHeight );
+//				$('#menu_mobile').css('height', scrollHeight );
                 
             }
              function checkHeight() {
