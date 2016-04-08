@@ -153,7 +153,7 @@ html, body {
 	position: relative;
 	max-width: 1920px;
 	margin: 0 auto;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 
@@ -1560,6 +1560,7 @@ body {
 	background: #2d5027;
 	display: none;
 	float: right;
+	overflow-y: scroll;
 	padding: 155px 0 0 0;
 }
 
@@ -1597,10 +1598,11 @@ body {
 }
 
 .mobile_menu {
+	height: 800px;
 	position: absolute;
 	right: 0;
 	top: 0;
-	z-index: 999;
+	z-index: 9999;
 }
 
 .mobile_menu .tooltip {
@@ -1814,6 +1816,15 @@ body {
 	position: absolute;
 }
 
+.wrap_mobile_menu {
+	overflow-y: scroll!important;
+}
+
+.wrap_mobile_menu_2 {
+	height: 1100px!important;
+	
+}
+
 /*========================== media height ==========================*/
         
 @media only screen and (min-height:1100px) {
@@ -1857,6 +1868,14 @@ body {
 	a.reg {
 		margin-left: 100px;
 	}
+}
+
+@media only screen and (min-width: 1300px) {
+	.product_descript.left {
+		float: right!important;
+		width: 750px!important;
+	}
+	
 }
 
 @media only screen and (max-width: 1160px) {

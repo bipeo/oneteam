@@ -40,7 +40,7 @@
 				<span></span>
 			</div>
 			<a href="#" class="reg_kod right">зарегистрируй код!</a>
-			<nav id="menu_mobile" class="mobile_menu menu_psec1 menu_cust" >
+			<nav id="menu_mobile" class="mobile_menu menu_psec1" >
 				<div class="wrap_item_menu">
 					<span class="name_authoriz">
 						<a href="#">Немцов Александр Юрьевич</a>
@@ -79,8 +79,8 @@
 		<div class="product_descript w_01 left">
 			
 			<h1 class="h1">Личный кабинет<span class="close_btn"></span></h1>
-<!--                        <div class="pscrbox st_01">-->
-                        	<div class="">
+                        <div class="pscrbox st_01">
+                        	
                         				<!-- form -->
                         	<div class="logform">
                         				<form id="regform" class="form st_1" novalidate="novalidate">
@@ -110,7 +110,7 @@
                         	               <div class="row">                    
                         	        <div class="itm">
                         	         <label for="firstname" class="label">Имя</label>         
-                        	        <input type="text" value="" placeholder="Имя" name="firstname" id="name">
+                        	        <input type="text" value="" placeholder="Имя" name="firstname" id="firstname">
                         	          </div> 
                         	          
                         	        
@@ -167,7 +167,7 @@
                         	    </form>
                         	 </div>
                         				<!-- END form -->
-                        	</div>
+                        	
                         
     		<div class="slider">
     			<span class="title_1">Мои призы</span>
@@ -194,10 +194,10 @@
     			</div>
                         </div>
     		</div>		
-<!--                        </div>-->
+                        </div>
 		</div><!-- END product_descript --> 
 	</div>
-	<img class="warning" src="img/warning.png" alt="" />
+		<img class="warning" src="img/warning.png" alt="" />
 </div>
 	
 <!--[if lt IE 9]>
@@ -210,16 +210,16 @@
 <script src="libs/slick/slick.min.js"></script>
 <script>
 		(function($){
-//			$(window).load(function(){
-//				
-//				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
-//				$.mCustomScrollbar.defaults.axis="y"; //enable 2 axis scrollbars by default
-//								
-//				//$(".pscrbox").mCustomScrollbar({theme:"dark bavar"});
-//				
-//				
-//				
-//			});
+			$(window).load(function(){
+				
+				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+				$.mCustomScrollbar.defaults.axis="y"; //enable 2 axis scrollbars by default
+								
+				$(".pscrbox").mCustomScrollbar({theme:"dark bavar"});
+				
+				
+				
+			});
 			
 			
 			$('#slider').slick({

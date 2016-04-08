@@ -1,6 +1,13 @@
 $(document).ready(function()
         {
  
+	$('.btn_menu').on('click', function() {
+		
+		$("html, body").css('overflow-y', 'hidden');
+//		var heightMenu = $('#menu_mobile').outerHeight();
+//		$('#menu_mobile').css('height', heightMenu );
+	});
+	
 		///////////////////////////////////////////////////////////////////////// menu_mobile
 
 		var pull 		= $('.btn_menu');
@@ -55,8 +62,8 @@ $(document).ready(function()
 
             $(window).resize(function()
                 {
-                   // getWidthAndHeight();
-                   // checkHeight();
+//                    getWidthAndHeight();
+//                    checkHeight();
                    
                 }
             );
@@ -71,6 +78,8 @@ $(document).ready(function()
                  //   var bar = $('.cabtop').outerHeight();
                  //  scrollHeight -=  bar;
                 $(".wrap_bootle").css("min-height", scrollHeight + "px");
+//				var heightMenu = $('#menu_mobile').outerHeight();
+//				$('#menu_mobile').css('height', scrollHeight );
                 
             }
              function checkHeight() {
@@ -79,19 +88,21 @@ $(document).ready(function()
                var addmar = 0;
                if($('.logform .form').length) {
                     addmar = 150;
-                    $('body').css('min-height',minh + addmar +'px');
+//                    $('body').css('min-height',minh + addmar +'px');
                }
                if($('.pscrbox').length) {
-                    addmar = 100;
-                    $('.pscrbox').css('height',minh - addmar +'px'); 
+                 /*   addmar = 100;
+                    $('.pscrbox').css('height',minh - addmar +'px'); */
                }
-               if($('.menu_cust').length) {
-                 //  addmar = 100;
-                    $('.wrap_bootle').css('min-height',minh + addmar +'px');
+               if($('.menu_psec').length) {
+//                   addmar = 100;
+//                    $('.wrap_bootle').css('min-height',minh + addmar +'px');
                }
             } 
         }
+				  
+	  
 						  
 	  
 
-    );
+);
