@@ -2150,7 +2150,7 @@ body {
 		float: none;
 		width: 100%;
 	}
-	.feedback .logform .col.one {
+	.feedback .logform .col.one, .recovery_pasw .logform .col.one {
 		float: none;
 		margin-right: 0;
 		width: 100%;
@@ -2168,7 +2168,7 @@ body {
 		text-align: center;
 		width: 100%;
 	}
-	.logform .vercode {
+	.logform .vercode, .logform .single .vercode {
 		width: calc(100% - 150px);
 	}
 	.logform .refresh {
@@ -2372,6 +2372,12 @@ body {
 	}
 	.recovery_pasw .logform .form {
 		top: 45%;
+	}
+	.recovery_pasw .logform .form {
+		width: 95%;
+	}
+	.recovery_pasw  .logform .col.single {
+		width: 100%;
 	}
 }
 
