@@ -1870,6 +1870,7 @@ body {
 	}
 }
 
+
 @media only screen and (min-width: 1300px) {
 	.product_descript.left {
 		float: right!important;
@@ -1877,6 +1878,13 @@ body {
 	}
 	
 }
+
+@media only screen and (min-width: 1500px) {
+	.product_descript.left {
+		width: 1000px!important;
+	}
+}
+
 
 @media only screen and (max-width: 1160px) {
 	a.reg {
