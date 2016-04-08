@@ -55,6 +55,7 @@ $(document).ready(function()
             $(window).load(function()
                 {
                     getWidthAndHeight();
+               //     checkHeight();
                 }
             );
 
@@ -62,6 +63,7 @@ $(document).ready(function()
             $(window).resize(function()
                 {
                    getWidthAndHeight();
+//                    checkHeight();
                    
                 }
             );
@@ -76,21 +78,30 @@ $(document).ready(function()
                 $(".wrap_bootle").css("min-height", scrollHeight + "px");
                 
                         /*mobile menu height*/
-                        
                         var wh =$(window).height(),
-                         incr = 20,       
                          mm = $('#menu_mobile').outerHeight(),
                          toth = Math.max(wh, mm);
-                         if(mm > wh) {
-                             toth = wh;
-                         } else {
-                              toth = mm;
-                         } 
-			$('#menu_mobile').css('height',toth + incr + 'px');
+			$('#menu_mobile').css('height',toth + 'px');
                          /*mobile menu height end */
                 
             }
-    
+             function checkHeight() {
+                var boxs = $('.logform .form, .pscrbox, #menu_mobile'),
+               minh = boxs.outerHeight();
+               var addmar = 0;
+               if($('.logform .form').length) {
+                 /*   addmar = 150;
+                  $('body').css('min-height',minh + addmar +'px'); */
+               }
+               if($('.pscrbox').length) {
+                 /*   addmar = 100;
+                    $('.pscrbox').css('height',minh - addmar +'px'); */
+               }
+               if($('.menu_psec').length) {
+//                   addmar = 100;
+//                    $('.wrap_bootle').css('min-height',minh + addmar +'px');
+               }
+            } 
         }
 				  
 	  
