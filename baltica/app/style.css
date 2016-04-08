@@ -157,7 +157,7 @@ html, body {
 	position: relative;
 	max-width: 1920px;
 	margin: 0 auto;
-	overflow-x: hidden;
+/*	overflow-x: hidden;*/
 }
 
 
@@ -1733,6 +1733,7 @@ body {
 	position: absolute;
 	right: 50px;
 	top: 28px;
+	z-index: 999;
 }
 
 .descript_pobed {
