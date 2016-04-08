@@ -1867,7 +1867,7 @@ body {
 	.product_foto.left {
 		float: none;
 	}
-	.wrapper {background: none;}
+	
 	.wrap_bootle.bg_style {
 		background: #004f1f;
 	}
@@ -2012,11 +2012,7 @@ body {
 		height: 60px;
 		line-height: 60px;
 	}
-	.recovery_pasw .logform .form, .feedback .logform .form, .reg_page .logform .form {
-		background-color: transparent;
-		border: none!important;
-		border-radius: 0;
-	}
+	
 	.logform .close_btn {right: 0;}
 	.recovery_pasw .mil {
 		display: block;
@@ -2032,6 +2028,12 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+	.wrapper {background: none;}
+	.recovery_pasw .logform .form, .feedback .logform .form, .reg_page .logform .form {
+		background-color: transparent;
+		border: none!important;
+		border-radius: 0;
+	}
 	.mobile_bg {
 		background-image: url(img/mobile_bg.png)!important;
 		background-repeat: no-repeat!important;
@@ -2363,10 +2365,13 @@ body {
 		display: block;
 	}
 	.feedback .logform .form {
-		top: 45%;
+		top: 48%;
 	}
 	.feedback .logform .close_btn {
 		top: -80px;
+	}
+	.recovery_pasw .logform .form {
+		top: 45%;
 	}
 }
 
