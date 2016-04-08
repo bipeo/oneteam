@@ -1802,6 +1802,12 @@ body {
 	display: none;
 	height: 120px;
 }
+
+.warning_2 {
+	bottom: 0;
+	display: none;
+	position: absolute;
+}
 .
 /*========================== media height ==========================*/
         
@@ -2029,6 +2035,8 @@ body {
 
 @media only screen and (max-width: 768px) {
 	.wrapper {background: none;}
+	.pb { background: #452317; padding-bottom: 199px;}
+	.warning_2 {display: block;}
 	.recovery_pasw .logform .form, .feedback .logform .form, .reg_page .logform .form {
 		background-color: transparent;
 		border: none!important;
@@ -2377,24 +2385,24 @@ body {
 	.recovery_pasw  .logform .col.single {
 		width: 100%;
 	}
-	.soclist.min a {
+	.soclist.min a, .soclist.big a {
 		background-image: url(img/socsprite_23.png);
 		height: 87px;
 		width: 87px;
 	}
-	.soclist.min a.vk {
+	.soclist.min a.vk, .soclist.big a.vk {
 		background-position: -199px -102px;
 	}
-	.soclist.min a.vk:focus, .soclist.min a.vk:hover {
+	.soclist.min a.vk:focus, .soclist.min a.vk:hover, .soclist.big a.vk:hover, .soclist.big a.vk:focus {
 		background-position: -199px -5px;
 	}
-	.soclist.min a.fb {
+	.soclist.min a.fb, .soclist.big a.fb {
 		background-position: -102px -5px;
 	}
-	.soclist.min a.klass {
+	.soclist.min a.klass, .soclist.big a.klass {
 		background-position: -102px -102px;
 	}
-	.soclist.min a.klass:hover, .soclist.min a.klass:focus {
+	.soclist.min a.klass:hover, .soclist.min a.klass:focus, .soclist.big a.klass:hover, .soclist.big a.klass:focus {
 		background-position: -5px -102px;
 	}
 	.reg_page .form.st_1 {
