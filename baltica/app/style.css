@@ -1796,6 +1796,12 @@ body {
 .dn_db, .mobile_img_3, .akc_products2 {
 	display: none;
 }
+
+.spec_header {
+	background: #00742f;
+	display: none;
+	height: 120px;
+}
 .
 /*========================== media height ==========================*/
         
@@ -1982,12 +1988,6 @@ body {
 	}
 	.product_descript .close_btn {
 		top: 0;
-	}
-	.feedback .form.st_1, .reg_page .form.st_1 {
-		background: #224c23;
-	}
-	.feedback, .reg_page {
-		background: #00742f;
 	}
 }
 
@@ -2352,6 +2352,21 @@ body {
 		font-size: 30px;
 		height: 100px;
 		line-height: 100px;
+	}
+	.feedback .form.st_1, .reg_page .form.st_1 {
+		background: #224c23;
+	}
+	.wrapper.feedback {
+		background: #224c23;
+	}
+	.spec_header {
+		display: block;
+	}
+	.feedback .logform .form {
+		top: 45%;
+	}
+	.feedback .logform .close_btn {
+		top: -80px;
 	}
 }
 
