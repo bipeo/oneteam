@@ -92,6 +92,10 @@ input[type=submit], .subm {
 	margin-right: auto;
 }
 
+html.overflow_y, body.overflow_y {
+    overflow-y:hidden;
+}
+
 /*========================== END ==========================*/
 
 @font-face {

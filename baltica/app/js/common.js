@@ -1,23 +1,20 @@
 $(document).ready(function()
         {
  
-	$('.btn_menu').on('click', function() {
-		
-		$("html, body").css('overflow-y', 'hidden');
-//		var heightMenu = $('#menu_mobile').outerHeight();
-//		$('#menu_mobile').css('height', heightMenu );
-	});
 	
 		///////////////////////////////////////////////////////////////////////// menu_mobile
 
 		var pull 		= $('.btn_menu');
 			menu 		= $('#menu_mobile');
 			menuHeight	= menu.height();
+                        body =  $("html, body");
 
 		$(pull).on('click', function(e) {
 			e.preventDefault();
                     
                     menu.slideToggle();
+                    body.toggleClass('overflow_y');
+                    
 
 //                    $(this).toggleClass('close_menu');
 		});
@@ -29,14 +26,22 @@ $(document).ready(function()
         if (!container.is(e.target) 
             && container.has(e.target).length === 0) 
         {
-            $('#menu_mobile').hide(500);
+            menu.hide(500);
+            body.removeClass('overflow_y');
          
+        }
+    });
+     $(document).keyup(function(e) { 
+        if (e.keyCode == 27) { // esc keycode
+            $('#menu_mobile').hide(500);
+              body.removeClass('overflow_y');
         }
     });
 	
 		$('.close_menu').on('click', function(e) {
 			e.preventDefault();
 			$('#menu_mobile').hide(500);
+                        body.removeClass('overflow_y');
 		});
 
 		$(window).resize(function(){
