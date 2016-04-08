@@ -82,8 +82,8 @@ $(document).ready(function()
                     $('body').css('min-height',minh + addmar +'px');
                }
                if($('.pscrbox').length) {
-                    addmar = 100;
-                    $('.pscrbox').css('height',minh - addmar +'px');
+                 /*   addmar = 100;
+                    $('.pscrbox').css('height',minh - addmar +'px'); */
                }
                if($('.menu_psec').length) {
                    addmar = 100;

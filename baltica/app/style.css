@@ -544,7 +544,7 @@ a.reg:hover {
 	border-radius: 5px;
 	float: left;
 	height: 145px;
-	margin: 0 72px 53px 0;
+	margin: 0 72px 70px 0;
 	position: relative;
 	width: 192px;
 }
@@ -1802,7 +1802,11 @@ body {
 	display: none;
 	height: 120px;
 }
-.
+
+.pscrbox.st_01 {
+    height:100px;
+}
+
 /*========================== media height ==========================*/
         
 @media only screen and (min-height:1100px) {
