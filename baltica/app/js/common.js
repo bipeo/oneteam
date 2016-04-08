@@ -86,7 +86,7 @@ $(document).ready(function()
                     $('.pscrbox').css('height',minh - addmar +'px');
                }
                if($('#menu_mobile').length) {
-                    addmar = 100;
+                    addmar = 0;
                     $('.wrap_bootle').css('min-height',minh + addmar +'px');
                }
             } 

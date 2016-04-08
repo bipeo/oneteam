@@ -2358,7 +2358,7 @@ body {
 	.feedback .form.st_1, .reg_page .form.st_1 {
 		background: #224c23;
 	}
-	.wrapper.feedback {
+	.wrapper.feedback, .wrapper.reg_page {
 		background: #224c23;
 	}
 	.spec_header {
@@ -2372,8 +2372,6 @@ body {
 	}
 	.recovery_pasw .logform .form {
 		top: 45%;
-	}
-	.recovery_pasw .logform .form {
 		width: 95%;
 	}
 	.recovery_pasw  .logform .col.single {
