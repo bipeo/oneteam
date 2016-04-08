@@ -1733,6 +1733,7 @@ body {
 	position: absolute;
 	right: 50px;
 	top: 28px;
+	z-index: 999;
 }
 
 .descript_pobed {
