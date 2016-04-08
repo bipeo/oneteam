@@ -2311,6 +2311,13 @@ body {
 		top: 70px;
 		width: 336px;
 	}
+	.logform .form .rbox .subm {
+		font-size: 24px;
+		height: 87px;
+		line-height: 87px;
+		padding: 0;
+		width: 411px;
+	}
 }
 
 @media only screen and (max-width: 710px) {
@@ -2649,6 +2656,13 @@ body {
 	}
 	.radio:not(checked) + label {
 		padding-left: 60px;
+	}
+	.logform .form .rbox .subm {
+		font-size: 14px;
+		height: auto;
+		line-height: 1.2;
+		padding: 15px 52px 14px;
+		width: 194px;
 	}
 }
 
