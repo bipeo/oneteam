@@ -2397,6 +2397,18 @@ body {
 	.soclist.min a.klass:hover, .soclist.min a.klass:focus {
 		background-position: -5px -102px;
 	}
+	.reg_page .form.st_1 {
+		top: 50%;
+	}
+	.reg_page .logform .close_btn {
+		top: -45px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.reg_page .form.st_1 {
+		top: 43%;
+	}
 }
 
 @media only screen and (max-width: 710px) {
@@ -2770,6 +2782,12 @@ body {
 	}
 	.logform .form.enter_form .hlink {
 		font-size: 14px;
+	}
+	.reg_page .form.st_1 {
+		top: 45%;
+	}
+	.feedback .logform .form {
+		top: 50%;
 	}
 }
 
