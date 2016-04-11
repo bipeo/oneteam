@@ -421,17 +421,12 @@ a.reg:hover {
 	line-height: 1.2;
 	margin: 0 0 20px 0;
 	padding: 0 77px 0 0;
-/*	padding: 0 40px 0 0;*/
 	text-transform: uppercase;
 }
 
 .product_foto {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	border: 2px dashed #fbc727;
 	display: block;
-	margin: 0 36px 25px 0;
+	margin: 0 0 25px 36px;
 }
 
 .product_descript .close_btn {
@@ -445,6 +440,7 @@ a.reg:hover {
 	bottom: 105px;
 	left: 138px;
 	position: absolute;
+	z-index: 10;
 }
 
 .table_1 {
@@ -604,7 +600,9 @@ a.reg:hover {
 	font: 700 14px Arial;
 	height: 45px;
 	padding: 0 20px;
+	position: relative;
 	text-transform: uppercase;
+	z-index: 20;
 }
 
 .submit:hover {
@@ -1206,6 +1204,8 @@ a.reg:hover {
 }
 .logform .h2.big {
     margin-bottom:31px;
+	margin-top: 0;
+	padding-top: 28px;
     font-size:72px;
 }
 .logform .vercode {
@@ -1843,15 +1843,109 @@ body {
 	padding-bottom: 0!important;
 }
 
-
-
 .thank_you_page .logform .col.single {
 	width: 100%;
 }
 
+.mCSB_container {
+	z-index: 20;
+}
 
+.akc1 {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+}
+
+.akc_products > li:first-child .akc1 img {
+	width: 80px;
+}
+
+.akc_products > li:nth-child(2) .akc1 img {
+	width: 100px;
+}
+
+.akc_products > li:nth-child(3) .akc1 img {
+	width: 150px;
+}
+
+.akc_products > li:nth-child(4) .akc1 img {
+	width: 122px;
+}
+
+.akc1_descript {
+	bottom: 0;
+	font-family: 'MyriadPro-BoldCond';
+	left: 0;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	transform: matrix(0.464,-0.062,-0.022,0.465,0,0);
+}
+
+.akc1_descript .span1 {
+	background: #c6261e;
+	color: #f1e736;
+	font-size: 58.97px;
+	padding: 0 20px;
+}
+
+.akc1_descript .span2 {
+	color: #ffffff;
+	font-size: 44.59px;
+	white-space: nowrap;
+}
+
+.posa1 {
+	bottom: -70px;
+	left: -103px;
+}
+
+.posa2 {
+	bottom: -70px;
+	left: -87px;
+}
+
+.posa3 {
+	bottom: -70px;
+	left: -120px;
+}
+
+.posa4 {
+	bottom: -70px;
+	left: -223px;
+}
 /*========================== media height ==========================*/
+
+
+@media only screen and (max-height: 830px) {
+	.pos_game .game {
+		bottom: 50px;
+	}
+}
         
+@media only screen and (max-height: 800px) {
+	.pos_game .game {
+		bottom: 10px;
+	}
+}
+
+@media only screen and (max-height: 780px) {
+	.pos_game .game {
+		bottom: 0;
+	}
+}
+
+/*
+@media only screen and (max-height: 700px) {
+	.pos_game .game {
+		bottom: -25px;
+	}
+}
+*/
+
 @media only screen and (min-height:1100px) {
 	.play {
 	left:54%;
@@ -1872,11 +1966,12 @@ body {
 
 @media only screen and (min-height:1300px) {
 	.play {
-	left: 57%;
-	top: 46%;
+		left: 57%;
+		top: 46%;
 	/*background: rgba(49,162,32, .8);*/
 	}
 }
+
  @media only screen and (min-height:1400px) {
 	.play {
 	width:500px;
@@ -2335,7 +2430,8 @@ body {
 		margin-bottom: 320px;		
 	}
 	.akc_products > li {
-		margin-bottom: 100px;
+		margin-bottom: 190px;
+		text-align: center;
 	}
 	.pris > li:last-child, .akc_products > li:last-child {
 		margin-bottom: 150px;
@@ -2452,16 +2548,11 @@ body {
 	.spec_header {
 		display: block;
 	}
-/*
-	.feedback .logform .form {
-		top: 83%;
-	}
-	.feedback .logform .close_btn {
-		top: -80px;
-	}
-*/
 	.recovery_pasw .logform .form {
-		top: 45%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
 		width: 95%;
 	}
 	.recovery_pasw  .logform .col.single {
@@ -2490,17 +2581,62 @@ body {
 	.reg_page .form.st_1 {
 		top: 50%;
 	}
-/*
-	.reg_page .logform .close_btn {
-		top: -45px;
+	.akc1_descript .span1 {
+		font-size: 228.97px;
 	}
-*/
+	.akc1_descript .span2 {
+		font-size: 91.59px;
+	}
+	.akc_products > li:first-child .akc1 img, .akc_products > li:nth-child(2) .akc1 img, .akc_products > li:nth-child(4) .akc1 img, .akc_products > li:nth-child(3) .akc1 img {
+		width: auto;
+	}
+	.akc1_descript .span1 {
+		padding: 0 50px;
+	}
 	
+	.posa1 {
+		bottom: -210px;
+		left: -150px;
+	}
+	.posa2 {
+		bottom: -258px;
+		left: -340px;
+	}
+	.posa3 {
+		bottom: -231px;
+		left: -210px;
+	}
+	.posa4 {
+		bottom: -217px;
+		left: -405px;
+	}
 }
 
 @media only screen and (max-width: 767px) {
 	.reg_page .form.st_1 {
 		top: 43%;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.akc1_descript .span2 {
+		white-space: normal;
+	}
+	.posa1 {
+		bottom: -295px;
+	}
+	
+	.posa3 {
+		bottom: -308px;
+		left: -66px;
+	}
+	
+	.posa4 {
+		bottom: -380px;
+		left: -77px;
+	}
+	.akc_products {
+		padding-bottom: 90px;
 	}
 }
 
@@ -2586,14 +2722,7 @@ body {
 	.sort > li {
 		font-size: 20px;
 	}
-/*
-	.notif_tit .bts.no {
-		margin-top: -30px;
-	}
-	.notif_tit .bts.yes {
-		margin-top: -27px;
-	}
-*/
+
 }
 
 @media only screen and (max-width: 610px) {
@@ -2601,14 +2730,28 @@ body {
 		margin-left: -150px;
 	}
 	.mobile_img_2 {display: none;}
-/*
-	.notif_tit .bts.no {
-		margin-top: -33px;
+	.akc1_descript .span1 {
+		font-size: 185.97px;
 	}
-	.notif_tit .bts.yes {
-		margin-top: -33px;
+	
+	.posa1 {
+		bottom: -295px;
+		left: -72px;
 	}
-*/
+	.posa2 {
+		bottom: -211px;
+		left: -252px;
+	}
+	
+	.posa3 {
+		bottom: -292px;
+		left: -15px;
+	}
+	
+	.posa4 {
+		bottom: -360px;
+		left: -36px;
+	}
 }
 
 @media only screen and (max-width: 580px) {
@@ -2633,14 +2776,6 @@ body {
 		top: -108px;
 		width: 265px;
 	}
-/*
-	.notif_tit .bts.no {
-		margin-top: -40px;
-	}
-	.notif_tit .bts.yes {
-		margin-top: -40px;
-	}
-*/
 	.logform .enter_form .hlink {
 		clear: both;
 		display: block;
@@ -2688,14 +2823,6 @@ body {
 	.slider .title_1 {
 		font-size: 40px;
 	}
-/*
-	.notif_tit .bts.no {
-		margin-top: -47px;
-	}
-	.notif_tit .bts.yes {
-		margin-top: -49px;
-	}
-*/
 	.logform .h2 {
 		font-size: 54px;
 	}
@@ -2770,6 +2897,53 @@ body {
 	.akc_products > li {
 		margin-bottom: 93px;
 	}
+	.akc1_descript .span1 {
+		font-size: 58.97px;
+	}
+
+	.akc1_descript .span2 {
+		font-size: 44.59px;
+	}
+	.akc_products > li:first-child .akc1 img {
+		width: 80px;
+	}
+
+	.akc_products > li:nth-child(2) .akc1 img {
+		width: 100px;
+	}
+
+	.akc_products > li:nth-child(3) .akc1 img {
+		width: 150px;
+	}
+
+	.akc_products > li:nth-child(4) .akc1 img {
+		width: 122px;
+	}
+	.posa1 {
+		bottom: -70px;
+		left: -103px;
+	}
+
+	.posa2 {
+		bottom: -70px;
+		left: -87px;
+	}
+
+	.posa3 {
+		bottom: -70px;
+		left: -120px;
+	}
+
+	.posa4 {
+		bottom: -70px;
+		left: -223px;
+	}
+	.akc1_descript .span2 {
+		white-space: nowrap;
+	}
+	.akc_products {
+		padding-bottom: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -2782,10 +2956,12 @@ body {
 	}
 	.ul_link > li {
 		float: none;
-		height: 50px;
-		line-height: 50px;
 		text-align: center;
 		width: 100%;
+	}
+	.ul_link > li a {
+		height: 100px;
+		line-height: 100px;
 	}
 	.ul_link > li:last-child::before {
 		display: none;
