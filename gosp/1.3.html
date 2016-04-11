@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>1.3</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="fonts/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="libs/jquery-1.8.3.min.js"></script>
+    <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
+    
+    <script src="js/horosh.js"></script>
+    <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
+    <script type="text/javascript">
+          $(function(){
+
+             //    $.pixlayout({clip: true, src: "design/1-3-1_error.jpg", show:true, center:true, top:0, left:0, pervious: false});
+             //  $.pixlayout({clip: true, src: "design/1.3.1pupups.png", show:true, center:true, top:0, left:0, pervious: false});
+          }); 
+  </script>
+     <script type="text/javascript">
+            $(document).ready(function() {
+	$(".fancybox").fancybox({
+            wrapCSS : 'photo-fancy',
+            padding: 0,
+            helpers : {
+                overlay: {
+                 css: {'background': 'rgba(63,67,82, 0.8)'} 
+                }
+            } 
+            
+	});
+        });
+        </script>
+   <script type="text/javascript">
+            $(document).ready(function() {
+                
+                $('._showwarn').on('click',function() {
+                  $(this).toggleClass('white').find('.sopts').toggle()
+                 
+                });
+                       $(document).mouseup(function (e)
+    {
+        var container = $(".sopts, ._showwarn");
+
+        if (!container.is(e.target) 
+            && container.has(e.target).length === 0) 
+        {
+            $('.sopts').hide();
+            $('.cicon').addClass('white')
+         
+        }
+    });
+
+        });
+        </script>
+</head>
+<body class="options_page">
+<!-- wrapper -->
+<div class="wrapper ">
+    
+    <div class="content">
+        <div class="cabtop">
+            <span class="navtogg open"></span>
+            <div class="uprof">
+                <img src="img/profava.png">
+                <div class="space">
+                    <span class="fio"><a href="#">Мария  Лупенкова</a></span>
+                <span class="job">Директор</span>
+                </div>
+            </div>
+            <div class="logout">
+                <span><a href="#">Выйти</a></span>
+                <a class="outlink" href="#"></a>
+            </div>
+        </div>
+        
+        <div class="barrower">
+            
+       
+        <div class="opsidebar collapsed">
+            <div class="inner">
+            <div class="key"><span>ОБЩИЕ НАСТРОЙКИ</span></div>
+            <ul>
+                <li><a href="#">Города и площадки</a></li>
+                <li><a href=#>Пользователи</a></li>
+                <li class="cur"><a href=#>Справочники</a></li>
+                <li><a href=#>Настройки площадки</a></li>
+                <li><a href=#>Зоны доставки</a></li>
+            </ul>
+            <div class="key"><span>Персонал</span></div>
+            <ul>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href=#>Карта возможностей</a></li>
+                <li><a href=#>График работы</a></li>
+          
+            </ul>
+            <div class="key"><span>ТРЕКИНГ</span></div>
+            <ul>
+                <li><a href="#">Журнал заказов</a></li>
+                <li><a href=#>План производства</a></li>
+                <li><a href=#>Заказы у курьеров</a></li>
+          
+            </ul>
+            <div class="key"><span>МАРКЕТИНГ</span></div>
+            <ul>
+                <li><a href="#">План продаж</a></li>
+                <li><a href=#>Меню</a></li>
+                <li><a href=#>Клиенты</a></li>
+              
+          
+            </ul>
+            <div class="key toggle"><span>Отчеты</span></div>
+          
+            </div>
+        </div>
+        
+        <div class="opsidebar uncollapse">
+            <div class="key">
+                
+                <span>
+                    <a href=# class="sprite sprite-1_ic"></a>
+                    <a href=# class="sprite sprite-2_ic"></a>
+                    <a href=# class="cur sprite sprite-3_ic"></a>
+                    <a href=# class="sprite sprite-4_ic"></a>
+                    <a href=# class="sprite sprite-5_ic"></a>
+                    
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href=# class="sprite sprite-6_ic"></a>
+                    <a href=# class="sprite sprite-7_ic"></a>
+                    <a href=# class="sprite sprite-8_ic"></a>
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-9_ic"></a>
+                    <a href="#" class="sprite sprite-10_ic"></a>
+                    <a href="#" class="sprite sprite-11_ic"></a>
+                </span>
+            </div>
+             <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-12_ic"></a>
+                    <a href="#"  class="sprite sprite-13_ic"></a>
+                    <a href="#" class="sprite sprite-14_ic"></a>
+                  <!--   <a href="#" class="sprite sprite-15_ic"></a>-->
+                </span>
+            </div>
+             <!-- <div class="key">
+                <span>
+                    ыы
+                    <a href="#" class="sprite sprite-16_ic"></a>
+                    <a href="#" class="sprite sprite-17_ic"></a>
+                    <a href="#" class="sprite sprite-18_ic"></a>
+                    <a href="#" class="sprite sprite-19_ic"></a>
+                </span>
+            </div> -->
+            
+            
+        </div>
+             </div>
+        
+        <div class="mainside">
+            <div class="crubs">
+                <span class="ht">Общие настройки / Справочники</span>
+               
+            </div>
+           
+            
+            <div class="csstbl cnt  off_02 mar_02 sthf3">
+                <div class="row wi34">
+                    <div class="col w_16_6  th first">Общие</div>
+                    <div class="col w_16_6  th">Сотрудники</div>
+                    <div class="col w_16_6 th">Этап</div>
+                    <div class="col w_16_6 th">Юридические лица</div>
+                    <div class="col w_16_6 th">Маркетинг</div>
+                    <div class="col w_16_6 th">Система оплаты</div>
+                </div>
+                <div class="row">
+                <div class="col full">
+                        <span class="tit full h2">Структура компании</span>
+                    </div>
+                 </div>
+                <div class="row">
+                    <div class="col w_46">
+                    <div class="col w_07">
+                        <strong class="tit">№</strong>
+                    </div>
+                    <div class="col w_78">
+                        <strong class="tit">Отдел</strong>
+                    </div>
+                    <div class="col w_12">
+                        
+                      
+                        <div class="cicon icon-plus white"></div>
+                            
+                        
+            
+                        
+                    </div>
+                     </div>   
+                    
+                    <div class="col half">
+                        <div class="col w_54" >
+                       <strong class="tit">Цеха и подотделы </strong>
+                       </div>
+                    </div>
+                </div>
+                    <div class="row">
+                                                
+                    <div class="col w_46">            
+                    <div class="col w_07">
+                        <span class="tit">1</span>
+                    </div>
+                    <div class="col w_78">
+                        <span class="tit ">Администрация </span>
+                    </div>
+                    <div class="col w_12">
+                        <div class="_showwarn cicon icon-minus white">
+            <div class="sopts toolt warn">Иванова И.
+                <span class="tm">Внимание, удалить отдел "производство" 
+невозможно, так как он используется в</span> 
+                <ul>
+                    <li><span class="bold"><a href="#">1. Карточка сотрудника "Иванов Сергей Викторович"</a></span></li>
+                    
+                </ul>         
+            </div>
+</div>
+                    </div>
+                    </div>
+                        <div class="col half">
+                       <strong class="tit"></strong>
+                    </div>  
+                </div>
+                 <div class="row">
+                     <div class="col w_46">    
+                    <div class="col w_07">
+                        <span class="tit">2</span>
+                    </div>
+                    <div class="col w_78">
+                        <span class="tit">Колл центр</span>
+                    </div>
+                    <div class="col w_12">
+                                           
+                        
+                        <div class="cicon icon-minus white">
+ 
+</div>
+                        
+                    </div>
+                     </div>    
+                    <div class="col half">
+                       <strong class="tit"></strong>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col w_46"> 
+                    <div class="col w_07">
+                        <span class="tit">3</span>
+                    </div>
+                    <div class="col w_78">
+                        <span class="tit">Административный персонал  </span>
+                    </div>
+                    <div class="col w_12">
+                        
+                        <div class="cicon icon-minus white"></div>
+                        
+                        
+                    </div>
+                    </div>
+                    <div class="col half">
+                       <strong class="tit"></strong>
+                    </div>
+                        
+                </div>
+                
+                    <div class="row">
+                       <div class="col w_46">   
+                    <div class="col w_07">
+                        <span class="tit">4</span>
+                    </div>
+                    <div class="col w_78">
+                        <span class="tit">Производство</span>
+                    </div>
+                    <div class="col w_12">
+                        
+                        <div class="cicon icon-minus white"></div>
+                        
+                    </div>
+                    </div>
+                    <div class="col half">
+                       <strong class="tit"></strong>
+                    </div>
+                </div>
+                
+                  <div class="row">
+                       <div class="col w_46">   
+                    <div class="col w_07">
+                        <span class="tit">4.1</span>
+                    </div>
+                
+                    </div>
+                    <div class="col half">
+                          <div class="col w_54">
+                        <span class="tit">Цех суши</span>
+                    </div>
+                    <div class="col w_06">
+                         <div class="cicon icon-minus white"></div>
+                    </div>
+                    </div>
+                </div>
+                  <div class="row">
+                       <div class="col w_46">   
+                    <div class="col w_07">
+                        <span class="tit">4.2</span>
+                    </div>
+                
+                    </div>
+                     <div class="col half">
+                          <div class="col w_54" >
+                        <span class="tit">Цех пиццы</span>
+                    </div>
+                    <div class="col w_06">
+                         <div class="cicon icon-minus white"></div>
+                    </div>
+                    </div>
+                </div>
+                
+              
+                
+              
+                
+              
+                
+                
+                <div class="row">
+                       <div class="col w_46">   
+                    <div class="col w_07">
+                        <span class="tit"></span>
+                    </div>
+                   <div class="col w_78">
+                        <strong class="tit u"><a  class="hir fancybox" href="#edit_user_1">Добавить</a></strong>
+                    </div>
+                
+                    </div>
+                    <div class="col half">
+                          <div class="col w_54" >
+                              <strong class="tit u"><a  class="hir fancybox" href="#edit_user_2">Добавить</a></strong>
+                    </div>
+                  
+                    </div>
+                </div>
+                <div class="row">
+                       <div class="col w_46">   
+                  
+                   <div class="col w_78">
+                        <span class="tit h2">Этапы работы с чеком</span>
+                    </div>
+                
+                    </div>
+                 
+                </div>
+                
+                <div class="row">
+                    <div class="col w_46">
+                    <div class="col w_07">
+                        <strong class="tit">№</strong>
+                    </div>
+                    <div class="col w_78">
+                        <strong class="tit">Этап</strong>
+                    </div>
+                 
+                     </div>   
+                    
+                    <div class="col half">
+                        <div class="col w_54" >
+                              <strong class="tit u"><a class="hir" href="#">Подэтап</a></strong>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                     <div class="col w_46">    
+                    <div class="col w_07">
+                        <span class="tit">1</span>
+                    </div>
+                    <div class="col w_78">
+                        <span class="tit">Прием</span>
+                    </div>
+                    <div class="col w_12">
+                                           
+                        
+                        <div class="cicon icon-minus white">
+ 
+</div>
+                        
+                    </div>
+                     </div>    
+                  <div class="col half">
+                          <div class="col w_54">
+                        <span class="tit"></span>
+                    </div>
+                    <div class="col w_06">
+                         <div class="cicon icon-plus white"></div>
+                    </div>
+                    </div>
+                </div>
+                
+                  <div class="row">
+                     <div class="col w_46">    
+                    <div class="col w_07">
+                        <span class="tit">2</span>
+                    </div>
+                    <div class="col w_78">
+                        <span class="tit">Приготовление</span>
+                    </div>
+                    <div class="col w_12">
+                                           
+                        
+                        <div class="cicon icon-minus white">
+ 
+</div>
+                        
+                    </div>
+                     </div>    
+                  <div class="col half">
+                          <div class="col w_54">
+                        <span class="tit"></span>
+                    </div>
+                    <div class="col w_06">
+                         <div class="cicon icon-plus white"></div>
+                    </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                       <div class="col w_46">   
+                    <div class="col w_07">
+                        <span class="tit">2.1</span>
+                    </div>
+                          
+                
+                    </div>
+                    <div class="col half">
+                          <div class="col w_54">
+                        <span class="tit">Начало приготовления</span>
+                    </div>
+                    <div class="col w_06">
+                         <div class="cicon icon-minus white"></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                       <div class="col w_46">   
+                    <div class="col w_07">
+                        <span class="tit">2.1</span>
+                    </div>
+                          
+                
+                    </div>
+                    <div class="col half">
+                          <div class="col w_54">
+                        <span class="tit">Окончание приготовления</span>
+                    </div>
+                    <div class="col w_06">
+                         <div class="cicon icon-minus white"></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                       <div class="col w_46">   
+                    <div class="col w_07">
+                        <span class="tit">3</span>
+                    </div>
+                           <div class="col w_78">
+                        <span class="tit">Упаковка</span>
+                    </div>
+                          
+                
+                    </div>
+                
+                </div>
+                <div class="row">
+                       <div class="col w_46">   
+                    <div class="col w_07">
+                        <span class="tit">4</span>
+                    </div>
+                           <div class="col w_78">
+                        <span class="tit">Доставка курьером </span>
+                    </div>
+                          
+                
+                    </div>
+                
+                </div>
+                
+                <div class="row">
+                       <div class="col w_46">   
+                    <div class="col w_07">
+                        <span class="tit"></span>
+                    </div>
+                   <div class="col w_78">
+                        <strong class="tit u"><a class="hir fancybox" href="#edit_user_3">Добавить</a></strong>
+                    </div>
+                
+                    </div>
+                    <div class="col half">
+                          <div class="col w_54">
+                              <strong class="tit u"><a class="hir fancybox" href="#edit_user_4">Добавить</a></strong>
+                    </div>
+                  
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+            
+            
+            <div class="buts alright">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      
+      
+         
+            
+       
+            </div>
+
+        </div>
+    <!--content -->
+
+  
+
+</div><!-- END wrapper -->
+
+
+  <div class="depo_popup" id="edit_user_1">
+            <div class="csstbl cnt  ">
+                <div class="row hs3_r">
+                    <div class="col one"><span class="tit">№</span></div>
+                   <div class="col two"><span class="tit">Отдел</span></div>
+                   <div class="col three"><span class="tit"></span></div>
+                </div> 
+           
+                
+                
+               
+                
+                
+              
+                
+                 <div class="row">
+                    <div class="col one withc">
+                           <input class="input_01 small st_02 left" type="text" value="">
+                    </div>
+                    <div class="col two withc">
+                             <input class="input_01   st_02 left" type="text" value="">
+                    </div>
+                     <div class="col three withc">
+                         
+                          
+                    </div>
+                </div>
+                
+                 <div class="row">
+                    <div class="col one">
+                           <input class="input_01 small  st_02 left" type="text" value="">
+                    </div>
+                    <div class="col two withc">
+                            <input class="input_01 left  st_02 " type="text" value="">
+                    </div>
+                     <div class="col three withc">
+                         
+                    </div>
+                </div>
+             
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+
+
+
+
+  <div class="depo_popup" id="edit_user_2" >
+            <div class="csstbl cnt  ">
+                <div class="row hs3_r">
+                    <div class="col one"><span class="tit">№</span></div>
+                   <div class="col two"><span class="tit">Отдел</span></div>
+                   <div class="col three"><span class="tit">Подотдел</span></div>
+                </div> 
+           
+                
+                
+               
+                
+                
+                 <div class="row">
+                    <div class="col one">
+                           <strong class="tit">4</strong>
+                    </div>
+                    <div class="col  two">
+                            <span class="tit">Производство</span>
+                    </div>
+                  
+                     
+                     <div class="col three">
+                            <span class="tit "></span>
+                    </div>
+                </div>
+                
+                 <div class="row">
+                    <div class="col one withc">
+                           <input class="input_01 small st_02 left" type="text" value="">
+                    </div>
+                    <div class="col two withc">
+                            <strong class="tit mar_03"></strong>
+                    </div>
+                     <div class="col three withc">
+                           <input class="input_01  st_02 " type="text" value="">
+                    </div>
+                </div>
+           
+                
+              
+            
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+
+  <div class="depo_popup" id="edit_user_3" >
+            <div class="csstbl cnt  ">
+                <div class="row hs3_r">
+                    <div class="col one"><span class="tit">№</span></div>
+                   <div class="col two"><span class="tit">Этап</span></div>
+                   <div class="col three"><span class="tit">Норматив(мин)</span></div>
+                </div> 
+           
+                
+                
+               
+                
+                
+               
+                
+             
+          
+                 <div class="row">
+                    <div class="col one">
+                           <input class="input_01 small st_02 left" type="text" value="">
+                    </div>
+                    <div class="col two withc">
+                            <input class="input_01 small_2 left st_02  " type="text" value="">
+                    </div>
+                     <div class="col three withc">
+                          <input class="input_01 small_2 under_st st_02 " type="text" value="">
+                           <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check02">
+                <label for="check02">Закрыть доступ</label>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+
+
+  <div class="depo_popup" id="edit_user_4" >
+            <div class="csstbl cnt m4cols ">
+                <div class="row hs3_r">
+                    <div class="col w_15"><span class="tit" style="margin-left:25px;">№</span></div>
+                    <div class="col w_12"><span class="tit">№</span></div>
+                   <div class="col w_30"><span class="tit">Этап</span></div>
+                   <div class="col w_30"><span class="tit">Подэтап</span></div>
+                </div> 
+           
+                
+                
+               
+                
+                
+                 <div class="row">
+                    <div class="col w_15">
+                           <strong class="tit">4</strong>
+                    </div>
+                        <div class="col w_12">
+                           <strong class="tit"></strong>
+                    </div>
+                    <div class="col w_30">
+                            <span class="tit">Производство</span>
+                    </div>
+                  
+                     
+                     <div class="col w_30">
+                            <span class="tit "></span>
+                    </div>
+                </div>
+                
+                 <div class="row">
+                    <div class="col w_15 ">
+                            <span class="tit"></span>
+                    </div>
+                    <div class="col w_12 ">
+                           <input class="input_01 small_3 st_02" type="text" value="">
+                    </div>
+                     <div class="col w_30 ">
+                           <span class="tit"></span>
+                    </div>
+                     <div class="col w_30 ">
+                           <input class="input_01  st_02 " type="text" value="">
+                    </div>
+                </div>
+           
+                
+              
+            
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+
+
+</body>
+</html>
+

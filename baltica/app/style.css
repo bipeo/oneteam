@@ -425,6 +425,7 @@ a.reg:hover {
 }
 
 .product_foto {
+        max-width:200px;
 	display: block;
 	margin: 0 0 25px 36px;
 }
@@ -2189,6 +2190,11 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+        .bottle_2 {
+            width:200px;
+            margin-top:-190px;
+           
+        }
 	.wrapper {background: none;}
 	.thank_you_page .logform .close_btn {
 		top: 68px;
@@ -2199,10 +2205,11 @@ body {
 	}
 	.logform .close_btn {
 		background: url(img/close_ic_mobile.png) no-repeat;
-		height: 95px;
+                background-size:90%;
+		height: 65px;
 		right: 3%;
-		top: 40px;
-		width: 132px;
+		top: 70px;
+		width: 100px;
 	}
 	.pb { background: #452317; padding-bottom: 170px;}
 	.warning_2 {display: block;}
@@ -2421,6 +2428,9 @@ body {
 		margin-right: auto;
 		margin-top: 175px;
 	}
+        .akc_products  {
+            margin-top:80px;
+        }
 	.pris > li, .akc_products > li {
 		float: none;
 		height: 362px;
@@ -2611,7 +2621,7 @@ body {
 		left: -405px;
 	}
 	.wrapper.pos_game.pb .wrap_bootle.mobile_bg {
-		min-height: auto !important;`
+		min-height: auto !important;
 	}
 	.mt0 {
 		margin-top: 0 !important;
@@ -2625,6 +2635,11 @@ body {
 }
 
 @media only screen and (max-width: 720px) {
+        .bottle_2 {
+            width: 175px;
+            margin-top: -163px;
+        }
+        
 	.akc1_descript .span2 {
 		white-space: normal;
 	}
@@ -2674,6 +2689,13 @@ body {
 }
 
 @media only screen and (max-width: 660px) {
+    
+      .bottle_2 {
+            width: 153px;
+            margin-top: -130px;
+          
+        }
+     
 	.wrap_item_menu, .menu_mobile_ul > li a {
 		padding-left: 2%;
 		padding-right: 2%;

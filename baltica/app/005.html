@@ -14,11 +14,14 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
         <link href="libs/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
         <script src="libs/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+        <script src="libs/jquery.formance.min.js" /></script>
+
         <script type="text/javascript">
                 $(function(){
                    
         	$('.for_mask').mask('+7(000) 000-00-00');
-        	$('.for_datepicker').mask('00.00.0000');
+        	//$('.for_datepicker').mask('00.00.0000');
+                $('.for_datepicker').formance('format_dd_mm_yyyy');
    
         }); 
         </script>
