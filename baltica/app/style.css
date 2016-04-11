@@ -1885,6 +1885,10 @@ body {
 	position: absolute;
 	text-align: center;
 	text-transform: uppercase;
+	-ms-transform: matrix(0.464,-0.062,-0.022,0.465,0,0);
+	-webkit-transform: matrix(0.464,-0.062,-0.022,0.465,0,0);
+	-moz-transform: matrix(0.464,-0.062,-0.022,0.465,0,0);
+	-o-transform: matrix(0.464,-0.062,-0.022,0.465,0,0);
 	transform: matrix(0.464,-0.062,-0.022,0.465,0,0);
 }
 
@@ -2645,6 +2649,9 @@ body {
 	.pt1 {
 		padding-top: 35px !important;
 	}
+	.akc_products > li {
+		margin-right: 0;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -3075,14 +3082,6 @@ body {
 	.logform .form .rbox .sbt {
 		font-size: 20px;
 	}
-/*
-	.notif_tit .bts.no {
-		margin-top: -69px;
-	}
-	.notif_tit .bts.yes {
-		margin-top: -77px;
-	}
-*/
 	.radio:not(checked) + label::after {
 		height: 37px;
 		width: 37px;
@@ -3149,11 +3148,7 @@ body {
 	.notif_tit .bts.no {
 		margin-top: -52px;
 	}
-/*
-	.notif_tit .bts.yes, .notif_tit .bts.no {
-		width: 100%;
-	}
-*/
+
 }
 
 @media only screen and (max-width: 380px) {
@@ -3167,11 +3162,6 @@ body {
 		padding-left: 9% !important;
 		padding-right: 9% !important;
 	}
-/*
-	.notif_tit .bts.yes, .notif_tit .bts.no {
-		margin-top: 0;
-	}
-*/
 	.logform .form.enter_form .r_3 input[type="submit"], .logform .form.enter_form .r_3 .hrefsub {
 		float: none;
 		width: 100%;
@@ -3242,6 +3232,7 @@ body {
 	.notif_tit .bts.no {
 		margin-top: -59px;
 	}
+	
 }
 
 @media only screen and (max-width: 319px) {
