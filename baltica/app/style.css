@@ -421,17 +421,12 @@ a.reg:hover {
 	line-height: 1.2;
 	margin: 0 0 20px 0;
 	padding: 0 77px 0 0;
-/*	padding: 0 40px 0 0;*/
 	text-transform: uppercase;
 }
 
 .product_foto {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	border: 2px dashed #fbc727;
 	display: block;
-	margin: 0 36px 25px 0;
+	margin: 0 0 25px 36px;
 }
 
 .product_descript .close_btn {
@@ -1209,6 +1204,8 @@ a.reg:hover {
 }
 .logform .h2.big {
     margin-bottom:31px;
+	margin-top: 0;
+	padding-top: 28px;
     font-size:72px;
 }
 .logform .vercode {
@@ -2552,7 +2549,10 @@ body {
 		display: block;
 	}
 	.recovery_pasw .logform .form {
-		top: 45%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
 		width: 95%;
 	}
 	.recovery_pasw  .logform .col.single {
@@ -2956,10 +2956,12 @@ body {
 	}
 	.ul_link > li {
 		float: none;
-		height: 50px;
-		line-height: 50px;
 		text-align: center;
 		width: 100%;
+	}
+	.ul_link > li a {
+		height: 100px;
+		line-height: 100px;
 	}
 	.ul_link > li:last-child::before {
 		display: none;
