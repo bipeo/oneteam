@@ -2204,7 +2204,7 @@ body {
 		top: 40px;
 		width: 132px;
 	}
-	.pb { background: #452317; padding-bottom: 199px;}
+	.pb { background: #452317; padding-bottom: 170px;}
 	.warning_2 {display: block;}
 	.recovery_pasw .logform .form, .feedback .logform .form, .reg_page .logform .form {
 		background-color: transparent;
@@ -2609,6 +2609,12 @@ body {
 	.posa4 {
 		bottom: -217px;
 		left: -405px;
+	}
+	.wrapper.pos_game.pb .wrap_bootle.mobile_bg {
+		min-height: auto !important;`
+	}
+	.mt0 {
+		margin-top: 0 !important;
 	}
 }
 
@@ -3096,9 +3102,17 @@ body {
 		height: 410px;
 		width: 100px;
 	}
+	.notif_tit .bts.yes {
+		margin-top: -55px;
+	}
+	.notif_tit .bts.no {
+		margin-top: -52px;
+	}
+/*
 	.notif_tit .bts.yes, .notif_tit .bts.no {
 		width: 100%;
 	}
+*/
 }
 
 @media only screen and (max-width: 380px) {
@@ -3112,9 +3126,11 @@ body {
 		padding-left: 9% !important;
 		padding-right: 9% !important;
 	}
+/*
 	.notif_tit .bts.yes, .notif_tit .bts.no {
 		margin-top: 0;
 	}
+*/
 	.logform .form.enter_form .r_3 input[type="submit"], .logform .form.enter_form .r_3 .hrefsub {
 		float: none;
 		width: 100%;
@@ -3162,7 +3178,29 @@ body {
 	.slick-prev {
 		left: -38px;
 	}
-	
+	.pb {
+		padding-bottom: 105px;
+	}
+	.form_1 {
+		margin-bottom: 50px;
+	}
+	.logform .close_btn {
+		background: rgba(0, 0, 0, 0) url("img/close_ic.png") no-repeat scroll 0 0;
+		height: 50px;
+		top: 85px;
+		width: 71px;
+	}
+	.logform .form .mil a {
+		font-size: 24px;
+		height: 60px;
+		line-height: 60px;
+	}
+	.notif_tit .bts.yes {
+		margin-top: -64px;
+	}
+	.notif_tit .bts.no {
+		margin-top: -59px;
+	}
 }
 
 @media only screen and (max-width: 319px) {
