@@ -933,6 +933,8 @@ a.reg:hover {
     text-decoration: underline;
     color:#f5e700;
     font-size:14px;
+	position: relative;
+	z-index: 20;
 }
 .logform .form .mil a:hover {
     text-decoration: none;
@@ -1918,6 +1920,18 @@ body {
 	bottom: -70px;
 	left: -223px;
 }
+
+.wrap_3 {
+	padding-bottom: 50px;
+}
+
+.forheight .form.enter_form {
+	padding-bottom: 0;
+}
+
+.for_body {
+	background: url(img/body_bg.jpg) no-repeat 0 0 / auto;
+}
 /*========================== media height ==========================*/
 
 
@@ -2516,6 +2530,8 @@ body {
 	}
 	.logform .form.enter_form {
 		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
 		width: 90%;
 	}
 	.logform .form.enter_form .col.single {
@@ -2625,6 +2641,9 @@ body {
 	}
 	.mt0 {
 		margin-top: 0 !important;
+	}
+	.pt1 {
+		padding-top: 35px !important;
 	}
 }
 

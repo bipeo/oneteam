@@ -102,7 +102,7 @@ $(document).ready(function()
                 clientHeight = document.documentElement.clientHeight;
                 scrollHeight = Math.max(scrollHeight, clientHeight);
                  
-                $(".wrap_bootle").css("min-height", scrollHeight + "px");
+                $(".wrap_bootle, .forheight").css("min-height", scrollHeight + "px");
                 
                         /*mobile menu height*/
                         
