@@ -1681,7 +1681,7 @@ body {
 .ul_link {
 	background: #00742f;
 	overflow: hidden;
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 }
 
 .ul_link > li {
@@ -1704,10 +1704,12 @@ body {
 }
 
 .ul_link > li a {
+        font-family: "MyriadProCondRegular";
 	color: #fff;
 	display: block;
-	height: 100px;
-	line-height: 100px;
+	height: 90px;
+	line-height: 90px;
+        
 }
 
 .ul_link.dn_db {

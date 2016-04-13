@@ -106,16 +106,16 @@ $(document).ready(function()
                 
                         /*mobile menu height*/
                         
-                        var wh =$(window).height(),
+                        var wh =$(window).outerHeight(),
                          incr = 20,       
                          mm = $('#menu_mobile').outerHeight(),
                          toth = Math.max(wh, mm);
                          if(mm > wh) {
-                             toth = wh;
+                             toth = wh - incr;
                          } else {
                               toth = mm;
                          } 
-			$('#menu_mobile').css('height',toth + incr + 'px');
+			$('#menu_mobile').css('height',toth  + 'px');
                          /*mobile menu height end */
                 
             }
