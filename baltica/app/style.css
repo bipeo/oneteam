@@ -1938,6 +1938,10 @@ body {
 .for_body {
 	background: url(img/body_bg.jpg) no-repeat 0 0 / auto;
 }
+
+.mb2 {
+	margin-bottom: 20px;
+}
 /*========================== media height ==========================*/
 
 
@@ -1959,14 +1963,6 @@ body {
 	}
 }
 
-/*
-@media only screen and (max-height: 700px) {
-	.pos_game .game {
-		bottom: -25px;
-	}
-}
-*/
-
 @media only screen and (min-height:1100px) {
 	.play {
 	left:54%;
@@ -1983,13 +1979,13 @@ body {
 		 left:54%;
 		 /*background: rgba(49,162,32, .8); */
 	}
+	
 }
 
 @media only screen and (min-height:1300px) {
 	.play {
 		left: 57%;
 		top: 46%;
-	/*background: rgba(49,162,32, .8);*/
 	}
 }
 
@@ -2004,6 +2000,13 @@ body {
 }
 
 /*========================== media width ==========================*/
+
+@media only screen and (max-width: 1150px) {
+	.block_left {
+		margin-left: -50px;
+		transform: scale(0.9, 0.9);
+	}
+}
 
 @media only screen and (max-width: 1260px) {
 	a.reg {
@@ -2022,7 +2025,20 @@ body {
 
 @media only screen and (min-width: 1500px) {
 	.product_descript.left {
-		width: 970px!important;
+		width: 920px!important;
+	}
+	.block_left {
+		margin-left: 20px;
+		transform: scale(1.2, 1.2);
+	}
+	.product_descript {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (min-width: 1700px) {
+	.product_descript.left {
+		width: 1050px!important;
 	}
 }
 
