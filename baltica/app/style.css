@@ -2049,3 +2049,26 @@ body {
 	}
 }
 
+
+@media only screen and (min-height: 700px) {
+    .pscrbox.st_01 {
+    height: 500px;
+    }
+}
+@media only screen and (min-height: 800px) {
+    .pscrbox.st_01 {
+    height: 600px;
+     
+    }
+}
+@media only screen and (min-height: 900px) {
+    .pscrbox.st_01 {
+    height: 650px;
+    }
+}
+@media only screen and (min-height: 1000px) {
+    .pscrbox.st_01 {
+    height: 750px;
+    }
+}
+
