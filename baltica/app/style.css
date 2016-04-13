@@ -2567,9 +2567,10 @@ body {
 		font-size: 30px;
 	}
 	.logform .form .mil a {
+                font-family: "MyriadProCondRegular";
 		font-size: 30px;
-		height: 100px;
-		line-height: 100px;
+		height: 90px;
+		line-height: 90px;
 	}
 	.feedback .form.st_1, .reg_page .form.st_1 {
 		background: #224c23;
@@ -3245,4 +3246,51 @@ body {
 		overflow-x: auto;
 		width: 320px;
 	}
+}
+@media only screen and (min-height: 450px) {
+    .game {
+        bottom:0px;
+       
+    }
+}
+@media only screen and (min-height: 500px) {
+    .game {
+        bottom:0px;
+       
+    }
+}
+@media only screen and (min-height: 700px) {
+    .game {
+        bottom:105px;
+        
+    }
+}
+@media only screen and (min-height: 700px) {
+   
+    .pscrbox.st_01 {
+    height: 500px;
+     /* border:1px solid red; */
+    }
+    
+}
+@media only screen and (min-height: 800px) {
+   
+    .pscrbox.st_01 {
+    height: 600px;
+     
+    }
+}
+@media only screen and (min-height: 900px) {
+   
+    .pscrbox.st_01 {
+      
+    height: 650px;
+    }
+}
+@media only screen and (min-height: 1000px) {
+   
+    .pscrbox.st_01 {
+       
+    height: 750px;
+    }
 }
