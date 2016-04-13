@@ -818,7 +818,7 @@ a.reg:hover {
 
 .checkbox:not(checked) + label, .radio:not(checked) + label {
   position: relative; 
-  padding: 12px 0px  12px 60px; 
+  padding: 17px 0px  12px 60px; 
  }
  
 .checkbox:not(checked) + label:before {
@@ -2020,7 +2020,7 @@ body {
 
 @media only screen and (min-width: 1500px) {
 	.product_descript.left {
-		width: 1000px!important;
+		width: 970px!important;
 	}
 }
 
