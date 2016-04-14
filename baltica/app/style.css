@@ -2034,11 +2034,24 @@ body {
 	.product_descript {
 		font-size: 24px;
 	}
+	.product_descript .h1 {
+		font-size: 76px;
+	}
+	.logo {
+		transform: scale(1.2, 1.2);		
+	}
 }
 
 @media only screen and (min-width: 1700px) {
 	.product_descript.left {
 		width: 1050px!important;
+	}
+	.akc_products {
+		margin-left: 100px;
+	}
+	.akc_products > li {
+		margin-bottom: 120px;
+		transform: scale(1.2, 1.2);		
 	}
 }
 
