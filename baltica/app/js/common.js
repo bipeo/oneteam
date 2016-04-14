@@ -51,7 +51,8 @@ $(document).ready(function()
 if(isMobile.any()) {
   $("head").append('<link rel=\"stylesheet\" href=\"media.css\" type=\"text/css\" />');
 }
-	
+   
+    
 		///////////////////////////////////////////////////////////////////////// menu_mobile
 
 		var pull 		= $('.btn_menu');
