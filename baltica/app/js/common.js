@@ -51,44 +51,7 @@ $(document).ready(function()
 if(isMobile.any()) {
   $("head").append('<link rel=\"stylesheet\" href=\"media.css\" type=\"text/css\" />');
 }
-    /*pscrBox set height*/
-     var pscrBox = function() {
-     var head02 = $('.header').outerHeight(), 
-     winh = $(window).outerHeight();        
-     pscr = $('.pscrbox').outerHeight(),     
-     soc_btn = $('.soc_btn.mt0').outerHeight(),
-     mt1 = $('.product_descript .h1').outerHeight(),
-     ph = $('.product_descript').outerHeight();
-
-     
-     
-                      
-                         var winc = 10,       
-                         toth = Math.max(winh, pscr);
-                         if(pscr > winh) {
-                            toth = ph - mt1 - head02 - winc;
-                         } else {
-                           
-                              toth = pscr + mt1;
-                         } 
-			//$('.pscrbox').css('height',toth  + 'px');
-         
-     }
-     
-      $(window).load(function()
-                {
-                //  pscrBox() 
-                }
-            );
-
-
-        $(window).resize(function()
-            {
-                    
-                //   pscrBox() 
-            }
-        );
-        /*pscrBox end */
+   
     
 		///////////////////////////////////////////////////////////////////////// menu_mobile
 
