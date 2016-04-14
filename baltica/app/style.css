@@ -1830,8 +1830,8 @@ body {
 }
 
 .pscrbox.st_01 {
-/*    height:175px;*/
-    height:475px;
+ /*   height:475px; */
+ 
 }
 
 .warning_2 {
@@ -2071,4 +2071,6 @@ body {
     height: 750px;
     }
 }
+
+
 
