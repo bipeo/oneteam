@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>002</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body class="for_body">
+   
+	<div class="wrapper wrap_2 forheight">
+	 
+	
+	          <div class="logform">
+	                          <form class="form enter_form" id="enterTosite">
+	                                    
+	                              <h2 class="h2 big">ВХОД НА САЙТ</h2>
+	                              
+	                              
+	                                                 
+	        <div class="col single">
+	         
+	            
+	         <div class="line_mask"> 
+	         <label class="label"  for="nameemail">Ваш номер телефона или E-mail</label>         
+	        <input id="nameemail" name="nameemail"  type="text" placeholder="ivanov@ivanov@gmail.com" value="">
+	         </div> 
+	          <div class="line_mask">       
+	          <label class="label" for="pswd">Ваш пароль</label>   
+	          <input id="pswd" name="pswd"   type="password" placeholder="******" value="">
+	          <span class="inpmask err">Ошибка при вводе пароля</span>
+	          </div>
+	        
+	        <div class="row r_2"> 
+	        <div class="checkbox-group">
+	          <div class="item">
+	      <input class="checkbox" type="checkbox" value="" name="" id="agree">
+	      <label for="agree"><span>Запомнить <br>
+	меня на сайте</span></label>
+	         </div>
+	          </div>
+	            <span class="hlink">
+	                <a href="#">Забыли пароль?</a>
+	            </span>
+	         </div>
+	        
+	        <div class="row r_3">       
+	           
+	              <input type="submit"  class="" value="ВОЙТИ">
+	                
+	              <a class="hrefsub" href="">Регистрация</a>
+	          
+	         </div>
+	        
+	        <div class="row r_4">
+	            <div class="rbox">
+	         
+	                <span class="sbt">Вход 
+	с помошью 
+	соц.сети:</span> 
+	                    <div class="soclist big">
+	                        <a class="vk" href="#"></a>
+	                        <a class="fb" href="#"></a>
+	                        <a class="klass" href="#"></a>
+	
+	                    </div>
+	                <p class="mil"><a href="#">Обратная связь</a></p>
+	                </div>
+	        </div>
+	  
+	          
+	        </div>
+	     
+	        
+	        
+	                              
+	       
+	           
+	    </form>
+	                         
+	                
+	                
+	            </div>
+			
+		
+	     
+	  
+	    
+	    <img class="warning" src="img/warning.png" alt="">
+	    
+	  
+</div>
+   
+<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+<script src="libs/formvalidation/dist/jquery.validate.js"></script>
+<script src="libs/formvalidation/dist/localization/messages_ru.js"></script>
+<script src="js/forform.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
+<script type="text/javascript">
+	$(function(){
+            $('.logform .form .inpmask').on('click',function() {
+                $(this).addClass('hidden');
+                $('.verify_01').focus();
+            }) 
+		//$.pixlayout({clip: true, src: "design/002.jpg", show:true, center:true, top:0, left: 0, pervious: false});
+}); 
+</script>
+</body>
+</html>
