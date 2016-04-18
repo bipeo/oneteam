@@ -99,7 +99,30 @@ input[type=submit] {
          url('fonts/helveticaneuecyr-thin/helveticaneuecyr-thin-webfont.svg#helveticaneuecyrthin') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'helveticaneuecyrmedium';
+    src: url('fonts/helveticaneuecyr-medium/helveticaneuecyr-medium-webfont.eot');
+    src: url('fonts/helveticaneuecyr-medium/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneuecyr-medium/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneuecyr-medium/helveticaneuecyr-medium-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-medium/helveticaneuecyr-medium-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneuecyr-medium/helveticaneuecyr-medium-webfont.svg#helveticaneuecyrmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'als_rublregular';
+    src: url('fonts/rouble/rouble-webfont.eot');
+    src: url('fonts/rouble/rouble-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rouble/rouble-webfont.woff2') format('woff2'),
+         url('fonts/rouble/rouble-webfont.woff') format('woff'),
+         url('fonts/rouble/rouble-webfont.ttf') format('truetype'),
+         url('fonts/rouble/rouble-webfont.svg#als_rublregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*========================== Общие классы ==========================*/
@@ -131,7 +154,19 @@ input[type=submit] {
 /*========================== END ==========================*/
 
 body {
-    font-family: 'helveticaneuecyrlight';fonts/
+    color: #000000;
+	font-family: 'helveticaneuecyrlight';
+	font-size: 14px;
+}
+
+a {
+	color: #071d80;
+	text-decoration: none;
+}
+
+strong {
+	font-family: 'helveticaneuecyrbold';
+	font-weight: normal;
 }
 
 .wrapper {
@@ -143,5 +178,67 @@ body {
 .center {
 	margin: 0 auto;
 	width: 1278px;
+}
+
+.orange_btn {
+	background-color: #fbad3a;
+	color: #ffffff;
+	font-family: 'helveticaneuecyrbold';
+	font-size: 16px;
+}
+
+.orange_btn:hover {
+	background-color: #0054a6;
+}
+
+.link_1 {
+	text-align: right;
+}
+
+.link_1 a {
+	display: block;
+	font-size: 11px;
+}
+
+.block_1 {
+	text-align: right;
+}
+
+.block_1 strong {
+	font-size: 18px;
+}
+
+.block_1 a {
+	color: #071d80;
+	display: block;
+	font-size: 11px;
+}
+
+.top_menu {
+	clear: both;
+	overflow: hidden;
+}
+
+.top_menu_ul {
+	overflow: hidden;
+}
+
+.top_menu_ul > li {
+	float: left;
+}
+
+.top_menu_ul > li a {
+	color: #353535;
+	display: block;
+	font-size: 18px;
+	height: 51px;
+	line-height: 51px;
+}
+
+.top_menu .orange_btn {
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+	width: 268px;
 }
 
