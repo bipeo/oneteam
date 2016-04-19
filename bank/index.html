@@ -11,12 +11,15 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
 	<link rel="stylesheet" href="libs/selecter/jquery.fs.selecter.css" type="text/css">
+	<link rel="stylesheet" href="libs/slick/slick.css" type="text/css">
+<!--	<link rel="stylesheet" href="libs/slick/slick-theme.css" type="text/css">-->
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
 <div class="wrapper">
-	<header class="center">
+	<header class="center clearfix">
 		<a href="/" class="logo left"><img src="img/logo.png" alt="ЛокоБанк"></a>
 		<div class="select_town left">
 			<select>
@@ -48,6 +51,48 @@
 			<a href="#" class="orange_btn right">Отправить заявку</a>
 		</div>
 	</nav>
+	<!-- block_2 -->
+	<div class="block_2">
+		<!-- center -->
+		<div class="center">
+			<div class="slick_slider">
+				<div><img src="img/slide1.png" alt=""></div>
+				<div><img src="img/slide2.png" alt=""></div>
+			</div>
+			<div class="block_orange">
+				<p class="p_1">Надежный банк для бизнеса</p>
+				<p class="p_2">Заполни заявку и получи выгодные условия обслуживания</p>
+				<a class="btn_transp right" href="#">отправить заявку</a>
+			</div>
+			<h2 class="title_1">Всё необходимое для бизнеса</h2>
+			<ul class="bussines">
+				<li>
+					<img src="img/ico_1.png" alt="">
+					<span>Бесплатное</span> открытие счёта
+				</li>
+				<li>
+					<img src="img/ico_2.png" alt="">
+					<span>Интернет-банк</span> – оперативное управление бизнесом online 24/7
+				</li>
+				<li>
+					<img src="img/ico_3.png" alt="">
+					<span>SMS уведомление</span> об операциях по счёту в режиме online
+				</li>
+				<li>
+					<img src="img/ico_4.png" alt="">
+					<span>Удобное время обслуживания</span> – в ряде офисов до 20:00 и в субботу
+				</li>
+				<li>
+					<img src="img/ico_5.png" alt="">
+					<span>Бесплатные платежи</span> между клиентами банка
+				</li>
+				<li>
+					<img src="img/ico_6.png" alt="">
+					<span>Online выписка</span> из ЕГРЮЛ, ЕГРИП
+				</li>
+			</ul>
+		</div><!-- END center -->
+	</div><!-- END block_2 -->
 </div>
 	
 <!--[if lt IE 9]>
@@ -59,13 +104,18 @@
 <script>
 $(document).ready(function(){
 	$("select").selecter();
+	
+	$('.slick_slider').slick({
+		arrows: true,
+		dots: false
+	});
 });
 </script>
 <script src="js/common.js"></script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
+		//$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 </body>

@@ -125,6 +125,19 @@ input[type=submit] {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'helveticaneuecyrroman';
+    src: url('fonts/helveticaneuecyr-roman/helveticaneuecyr-roman-webfont.eot');
+    src: url('fonts/helveticaneuecyr-roman/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneuecyr-roman/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneuecyr-roman/helveticaneuecyr-roman-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-roman/helveticaneuecyr-roman-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneuecyr-roman/helveticaneuecyr-roman-webfont.svg#helveticaneuecyrroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*========================== Общие классы ==========================*/
 
 .clearfix {
@@ -169,6 +182,15 @@ strong {
 	font-weight: normal;
 }
 
+h2, .title_1 {
+	color: #3d3d3d;
+	font-family: 'helveticaneuecyrthin';
+	font-size: 48px;
+	font-weight: normal;
+	text-align: center;
+/*	transform: scale(8.087,8.087);*/
+}
+
 .wrapper {
 	margin: 0 auto;
 	min-width: 320px;
@@ -182,7 +204,6 @@ strong {
 
 header.center {
 	margin-bottom: 9px;
-	overflow: hidden;
 }
 
 .orange_btn {
@@ -194,6 +215,19 @@ header.center {
 
 .orange_btn:hover {
 	background-color: #0054a6;
+}
+
+.btn_transp {
+	border: 1px solid #000;
+	color: #030303;
+	display: block;
+	font-family: 'helveticaneuecyrlight';
+	font-size: 18px;
+	height: 49px;
+	word-spacing: 3px;
+	line-height: 49px;
+	padding: 0 40px;
+	text-transform: uppercase;
 }
 
 .logo {
@@ -251,8 +285,8 @@ header.center {
 	color: #353535;
 	display: block;
 	font-size: 18px;
-	height: 51px;
-	line-height: 51px;
+	height: 49px;
+	line-height: 49px;
 }
 
 .top_menu .orange_btn {
@@ -294,3 +328,123 @@ header.center {
 	border-top: 4px solid #4d4d4d;
 }
 /*========================== END select header ==========================*/
+
+.block_2 {
+	background: url(img/bg_1.jpg) no-repeat center top;
+	padding: 97px 0 0 0;
+}
+
+.block_2 .center {
+	background: #fff;
+}
+
+.slick_slider  {
+	background: #dedfe0;
+	padding: 2px 0;
+}
+
+.slick-prev, .slick-next {
+	background: url(img/slider_arrows.png) no-repeat;
+	border: none;
+	cursor: pointer;
+	height: 63px;
+	margin-top: -31.5px;
+	outline: none;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	text-indent: -9999px;
+	width: 60px;
+	z-index: 20;
+}
+
+.slick-prev {
+	background-position: 0 0;
+	left: 0;
+}
+
+.slick-next {
+	background-position: -60px 0;
+	right: 0;
+}
+
+.slick-slide img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.block_orange {
+	background-color: #fbad3a;
+	-webkit-box-shadow: 0px 0px 3px 0.00px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0px 0px 3px 0.00px rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 0px 3px 0.00px rgba(0, 0, 0, 0.35);
+	font-family: 'helveticaneuecyrroman';
+	margin: 0 0 75px 0;
+	padding: 12px 0 20px 58px;
+	position: relative;
+}
+
+.block_orange .btn_transp {
+	position: absolute;
+	right: 57px;
+	top: 15px;
+}
+
+.p_1 {
+	font-size: 24px;
+	letter-spacing: 1px;
+	margin: 5px 0;
+	word-spacing: -3px;
+}
+
+.p_2 {
+	word-spacing: 3px;
+}
+
+.bussines {
+	margin: 83px 0 0 182px;
+	overflow: hidden;
+}
+
+.bussines > li {
+	color: #000000;
+	float: left;
+	font-size: 20px;
+	line-height: 1.3;
+	text-align: center;
+}
+
+.bussines > li img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bussines > li span {
+	display: block;
+	font-family: 'helveticaneuecyrmedium';
+}
+
+.bussines > li:first-child {
+	width: 140px;
+}
+
+.bussines > li:nth-child(2) {
+	width: 199px;
+}
+
+.bussines > li:nth-child(3) {
+	width: 206px;
+}
+
+.bussines > li:nth-child(4) {
+	width: 190px;
+}
+
+.bussines > li:nth-child(5) {
+	width: 219px;
+}
+
+.bussines > li:nth-child(6) {
+	width: 168px;
+}
