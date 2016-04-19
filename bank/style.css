@@ -180,6 +180,11 @@ strong {
 	width: 1278px;
 }
 
+header.center {
+	margin-bottom: 9px;
+	overflow: hidden;
+}
+
 .orange_btn {
 	background-color: #fbad3a;
 	color: #ffffff;
@@ -191,16 +196,25 @@ strong {
 	background-color: #0054a6;
 }
 
+.logo {
+	margin: 76px 0 0 0;
+}
+
 .link_1 {
+	line-height: 1.4;
+	margin: 89px 0 0 61px;
 	text-align: right;
 }
 
 .link_1 a {
 	display: block;
 	font-size: 11px;
+	text-decoration: underline;
 }
 
 .block_1 {
+	line-height: 1.3;
+	margin: 89px 0 0 0;
 	text-align: right;
 }
 
@@ -212,9 +226,11 @@ strong {
 	color: #071d80;
 	display: block;
 	font-size: 11px;
+	text-decoration: underline;
 }
 
 .top_menu {
+	border-top: 1px solid #e1e1e1;
 	clear: both;
 	overflow: hidden;
 }
@@ -225,6 +241,10 @@ strong {
 
 .top_menu_ul > li {
 	float: left;
+}
+
+.top_menu_ul > li + li {
+	margin-left: 34px;
 }
 
 .top_menu_ul > li a {
@@ -242,3 +262,35 @@ strong {
 	width: 268px;
 }
 
+/*========================== select header ==========================*/
+
+.select_town {
+	margin: 82px 0 0 0;
+}
+
+.select_town .selecter {
+	max-width: 100%;
+	width: 140px;
+}
+
+.select_town .selecter-selected {
+	border: none;
+	color: #3a3a3a;
+	font-size: 12px;
+}
+
+.select_town .selecter-item.selected {
+	background: #fff;
+}
+
+.select_town .selecter.open .selecter-selected,
+.select_town .selecter.focus .selecter-selected {
+  	box-shadow: none;
+}
+
+.select_town .selecter-selected:after {
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #4d4d4d;
+}
+/*========================== END select header ==========================*/

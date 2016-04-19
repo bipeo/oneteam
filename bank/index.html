@@ -11,12 +11,21 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="libs/selecter/jquery.fs.selecter.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
 <div class="wrapper">
 	<header class="center">
 		<a href="/" class="logo left"><img src="img/logo.png" alt="ЛокоБанк"></a>
+		<div class="select_town left">
+			<select>
+				<option>Краснодар</option>
+				<option>Москва</option>
+				<option>Новосибирск</option>
+				<option>Санкт-Петербург</option>
+			</select>
+		</div>
 		<div class="link_1 right">
 			<a href="#">Отделения и банкоматы</a>
 			<a href="#">О банке</a>
@@ -25,7 +34,9 @@
 			<strong>8 800 250 50 50</strong>
 			<a href="#">Оставить отзыв</a>
 		</div>
-		<nav class="top_menu">
+	</header>
+	<nav class="top_menu">
+		<div class="center">
 			<ul class="top_menu_ul left">
 				<li><a href="#">Преимущества</a></li>
 				<li><a href="#">Тарифы</a></li>
@@ -35,8 +46,8 @@
 				<li><a href="#">Документы</a></li>
 			</ul>
 			<a href="#" class="orange_btn right">Отправить заявку</a>
-		</nav>
-	</header>
+		</div>
+	</nav>
 </div>
 	
 <!--[if lt IE 9]>
@@ -44,6 +55,12 @@
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
+<script src="libs/selecter/jquery.fs.selecter.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("select").selecter();
+});
+</script>
 <script src="js/common.js"></script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
