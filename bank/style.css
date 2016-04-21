@@ -474,7 +474,7 @@ header.center {
 }
 
 .bussines > li:nth-child(2) {
-	margin: 0 54px 0 0;
+	margin-right: 54px;
 	padding: 7px 0 0 0;
 	width: 199px;
 }
@@ -735,6 +735,7 @@ header.center {
 .phone {
 	background: url(img/phone_img.png) no-repeat left top;
 	margin: 0 0 0 202px;
+	min-height: 506px;
 	padding: 48px 0 0 321px;
 }
 
@@ -1183,3 +1184,185 @@ header.center {
 	line-height: 1.2;
 	margin: 0 57px 0 114px;
 }
+
+@media only screen and (max-width: 1279px) {
+	.center {
+		width: 100%;
+	}
+	.bussines, .descript, .phone, .block_3_ul_2, .block_4_ul {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.link_1 {
+		margin-right: 2%;
+	}
+	.bussines {
+		display: table;
+	}
+	.tarif {
+		margin-left: 2%;
+	}
+	.descript {
+		width: 90%;
+	}
+	.phone {
+		display: table;
+		height: 506px;
+	}
+	.block_3_ul_2 {
+		display: table;
+	}
+	.block_4_ul {
+		display: table;
+	}
+	.top_menu_ul > li:first-child {
+		margin-left: 2%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.answer {
+		padding-left: 4%;
+		padding-right: 3%;
+	}
+	.form.left {
+		margin-left: 3%;
+	}
+	.form.right {
+		margin-right: 3%;
+	}
+}
+
+@media only screen and (max-width: 1161px) {
+	.for_tabs {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1140px) {
+	.tarif_1 {display: none;}
+	.tarif_item {
+		height: 683px;
+	}
+	.tarif {
+		border-left: 1px solid #c6c6c6;
+		margin-bottom: 70px;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	.block_4_ul > li:nth-child(2n+1) {
+		clear: both;
+		margin-left: 0;
+	}
+	.block_4_ul > li {
+		margin-bottom: 40px;
+	}
+	.count > li {
+		font-size: 100px;
+		width: 90px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.block_3_ul_2 > li + li {
+		margin-left: 30px;
+	}
+	.bussines > li:nth-child(2n+1) {
+		clear: both;
+	}
+	.bussines > li {
+		margin-bottom: 45px;		
+	}
+	.bussines > li:nth-child(5) {
+		margin-left: 0;
+	}
+	.form.left, .form.right {
+		display: table;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.form label {
+		width: 450px;
+	}
+}
+
+@media only screen and (max-width: 810px) {
+	.count_us > .count_1 {
+		display: block;
+		margin: 0 0 8px 0;
+		padding-left: 0;
+	}
+	.count_us > .count_1:first-child, .count_us > .count_1:last-child {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.p_1, .p_2 {
+		display: none;
+	}
+	.block_orange .btn_transp {
+		display: table;
+		float: none;
+		position: static;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.select_town.left {
+		clear: left;
+		margin-top: 0;
+	}
+	.link_1 {
+		clear: right;
+	}
+	.block_1, .link_1 {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.block_3_ul_2 > li {
+		float: none;
+	}
+	.block_3_ul_2 > li + li {
+		margin-left: 0;
+		margin-top: 30px;
+	}
+	.block_3_ul_2 > li:nth-child(1), .block_3_ul_2 > li:nth-child(2), .block_3_ul_2 > li:nth-child(3) {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.tarif {
+		display: none;
+	}
+	.tarif_mobile {
+		overflow: hidden;
+	}
+	.tarif_mobile .tarif_item_wrap {
+		position: static;
+	}
+	.tarif_mobile .tarif_item, .tarif_item_wrap:hover, .tarif_item_wrap:hover .tarif_1_wrap > div, .tarif_1_wrap > div {
+		width: 100%;
+	}
+	.tarif_1_wrap > div {
+		display: block;
+	}
+	.tarif_mobile .tarif_1_wrap {
+		border-bottom: none;
+	}
+	.tarif_item_wrap:hover {
+		box-shadow: none;
+	}
+	.tarif_item_wrap {
+		border: none;
+	}
+}
+
