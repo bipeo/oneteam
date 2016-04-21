@@ -1185,6 +1185,10 @@ header.center {
 	margin: 0 57px 0 114px;
 }
 
+.tarif_mobile {
+	display: none;
+}
+
 @media only screen and (max-width: 1279px) {
 	.center {
 		width: 100%;
@@ -1344,8 +1348,11 @@ header.center {
 		display: none;
 	}
 	.tarif_mobile {
+		display: block;
+		margin: 14px 0 0 0;
 		overflow: hidden;
 	}
+/*
 	.tarif_mobile .tarif_item_wrap {
 		position: static;
 	}
@@ -1363,6 +1370,39 @@ header.center {
 	}
 	.tarif_item_wrap {
 		border: none;
+	}
+*/
+	.tarif_ul {
+		background: #00aae7;
+		display: table;
+		width: 100%;
+	}
+	.tarif_ul > li {
+		color: #fff;
+		display: table-cell;
+		font-size: 12px;
+		line-height: 1.2;
+		vertical-align: middle;
+		width: 50%;
+	}
+	.tarif_ul > li strong {
+		display: block;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	.price_tarif_mob {
+		font-family: 'helveticaneuecyrmedium';
+		font-size: 30px;
+	}
+	
+	.price_tarif_mob .rouble {
+		font-size: 20px;
+	}
+	.tarif_ul > li:first-child {
+		padding: 0 0 0 2%;
+	}
+	.tarif_ul > li:last-child {
+		text-align: center;
 	}
 }
 
