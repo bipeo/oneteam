@@ -581,21 +581,23 @@
 				<h3 class="title_2">Отправьте заявку сейчас</h3>
 				<form action="#" method="post">
 					<div class="form left">
-						<label class="clearfix">ФИО<input type="text" placeholder="Иванов Иван Иванович"></label>
-						<label class="clearfix">Телефон<input type="text" placeholder="+7(___)__-__-__"></label>
-						<label class="clearfix">E-mail<input type="text" placeholder="example@example.com"></label>
+						<label class="clearfix"><span class="left">ФИО</span><input type="text" placeholder="Иванов Иван Иванович"></label>
+						<label class="clearfix"><span class="left">Телефон</span><input type="text" placeholder="+7(___)__-__-__"></label>
+						<label class="clearfix"><span class="left">E-mail</span><input type="text" placeholder="example@example.com"></label>
 					</div>
 					<div class="form right">
-						<label class="clearfix">Ваш регион/город<input type="text" placeholder="Иванов Иван Иванович"></label>
-						<label class="clearfix">Наименование организации<input type="text" placeholder="ООО «Ромашка»"></label>
-						<label class="clearfix">ИНН<input type="text" placeholder="000000000000"></label>
+						<label class="clearfix"><span class="left">Ваш регион/город</span><input type="text" placeholder="Иванов Иван Иванович"></label>
+						<label class="clearfix"><span class="left">Наименование организации</span><input type="text" placeholder="ООО «Ромашка»"></label>
+						<label class="clearfix"><span class="left">ИНН</span><input type="text" placeholder="000000000000"></label>
 					</div>
 					<div class="captcha">
 						<img src="img/captcha.png" alt="">
 						<input type="text" placeholder="Введите код с картинки">
 					</div>
 					<label class="checkbox"><input type="checkbox">Я согласен <a href="">с условиями передачи</a> и обработки данных</label>
-					<input type="submit" value="Отправить заявку">
+					<div class="submit">
+						<input type="submit" value="Отправить заявку">
+					</div>
 				</form>
 			</div>
 		</div><!-- END center -->
@@ -607,7 +609,7 @@
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
-<srcipt src="libs/jquery.matchHeight-min.js"></srcipt>
+<script src="libs/jquery.matchHeight-min.js"></script>
 <script src="libs/selecter/jquery.fs.selecter.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -628,7 +630,7 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 	});
 	
-//	$('.block_4_ul > li').matchHeight();
+	$('.block_4_ul li').matchHeight();
 });
 </script>
 <script src="js/common.js"></script>
