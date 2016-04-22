@@ -174,13 +174,20 @@ input[type=submit] {
 	margin-right: auto;
 }
 /*========================== END ==========================*/
+html {
+    
+}
 
 body {
-    background: fixed url(img/bg_1.jpg) no-repeat center 143px  / cover;
+        background: fixed url(img/bg_1.jpg) no-repeat center 0px  / cover; 
 	color: #000000;
 	font-family: 'helveticaneuecyrlight';
 	font-size: 14px;
 }
+body.bg_2 {
+    background-image:url(img/bg_3.png);
+}
+
 
 a {
 	color: #071d80;
@@ -227,8 +234,12 @@ h3, .title_2 {
 	text-transform: lowercase !important;
 }
 
+.out_header {
+    background-color:#fff;
+}
+
 header.center {
-	margin-bottom: 9px;
+	padding-bottom: 9px;
 }
 
 .orange_btn {
@@ -385,6 +396,9 @@ header.center {
 /*	background: url(img/bg_1.jpg) no-repeat center top fixed, url(img/bg_1.1.jpg) no-repeat center 1386px fixed;*/
 	padding: 97px 0 0 0;
 }
+
+
+
 
 .block_2 .center {
 	background: #fff;
@@ -700,7 +714,7 @@ header.center {
 /*	, url(img/bg_3.png) no-repeat center 1220px, url(img/bg_4.png) no-repeat center 2517px;*/
 	background: url(img/bg_2.png) no-repeat center top;
 	color: #ffffff;
-	padding: 107px 0 200px 0;
+	padding: 107px 0 80px 0;
 }
 
 .center_2 {

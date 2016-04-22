@@ -49,3 +49,18 @@ $(document).ready(function(){
         
        
 });
+
+jQuery(window).scroll(function(){
+    var block_2 = $('.block_2').outerHeight(),
+    header = $('header').outerHeight(),
+    top_menu = $('.top_menu').outerHeight();
+   
+    var fromTopPx = header + top_menu + block_2 ; // distance to trigger
+    console.log(fromTopPx);
+    var scrolledFromtop = jQuery(window).scrollTop();
+    if(scrolledFromtop > fromTopPx){
+        jQuery('body').addClass('bg_2');
+    }else{
+        jQuery('body').removeClass('bg_2');
+    }
+});
