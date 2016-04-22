@@ -39,6 +39,11 @@ $(document).ready(function(){
         $('.slick_2').on('afterChange', function(event, slick, currentSlide, nextSlide){
          $('.block_3_ul > li').removeClass('act');
          $('.block_3_ul > li').eq(currentSlide).addClass('act');
+         
+          
+        /*try toggle*/
+      
+        /*try toggle end*/ 
        // $('.block_3_ul > li[data-id=' + (currentSlide + 1) + ']').hide();
        
         });
@@ -56,7 +61,6 @@ jQuery(window).scroll(function(){
     top_menu = $('.top_menu').outerHeight();
    
     var fromTopPx = header + top_menu + block_2 ; // distance to trigger
-    console.log(fromTopPx);
     var scrolledFromtop = jQuery(window).scrollTop();
     if(scrolledFromtop > fromTopPx){
         jQuery('body').addClass('bg_2');

@@ -756,14 +756,39 @@ header.center {
 	padding: 0 1%;
 	width:33.33%;
 }
-
+.block_3_ul > li span {
+    display:block;
+    z-index:2;
+}
+.block_3_ul > li span, .block_3_ul > li {
+    position:relative;
+}
 .block_3_ul > li.act {
         cursor:default;
-	background-color: #76a8d3;
 	border-radius: 5px;
 
 }
-
+/*try toggle*/
+.block_3_ul > li {
+    position:relative;
+}
+.block_3_ul > li:after {
+    content:'';
+    position:absolute;
+    left:0px;
+    top:0px;
+    border-radius: 5px;
+    background-color:#76a8d3;
+    width:0%;
+    height:100%;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms  ease-in;
+}
+.block_3_ul > li.act:after {
+    width:100%;
+}
+/*try toggle end*/
 .arrs_s2 {
     display: none;
 	position:relative;
