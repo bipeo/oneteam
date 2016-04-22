@@ -28,13 +28,24 @@ $(document).ready(function(){
         $(tab).fadeIn(400);
     });
 	
-	$('.slick_2').slick({
+	var slick_2 =  $('.slick_2').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,    
-		infinite: false,
-		arrows: false
+		infinite: true,
+		//arrows: false,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
 	});
-	 $('.block_3_ul_1').on('click', function () {
-		$('.slick_2').slickGoTo('1');
+        $('.slick_2').on('afterChange', function(event, slick, currentSlide, nextSlide){
+         $('.block_3_ul > li').removeClass('act');
+         $('.block_3_ul > li').eq(currentSlide).addClass('act');
+       // $('.block_3_ul > li[data-id=' + (currentSlide + 1) + ']').hide();
+       
+        });
+	 $('.block_3_ul > li').on('click', function () {
+              var slideIndex = $(this).index();
+              $(".slick_2").slick('slickGoTo', parseInt(slideIndex));
 	});
+        
+       
 });
