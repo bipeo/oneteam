@@ -376,6 +376,10 @@ header.center {
 	font-size: 12px;
 }
 
+.select_town .selecter-options {
+	border-width: 1px 1px 1px 0;
+}
+
 .select_town .selecter-item.selected {
 	background: #fff;
 }
