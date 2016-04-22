@@ -741,6 +741,27 @@ header.center {
 
 }
 
+.arrs_s2 {
+    position:relative;
+}
+
+.arrs_s2 span {
+    position:absolute;
+    z-index:2;
+    cursor:pointer;
+    display:block;
+    width:30px;
+    height:30px;
+}
+.arrs_s2 span.prev {
+    left:0px;
+    background:red;
+}
+.arrs_s2 span.next {
+    right:0px;
+    background:green;
+}
+
 .slick_2 .slick-slide  {
     outline:0;
 }

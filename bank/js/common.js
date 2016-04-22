@@ -31,10 +31,10 @@ $(document).ready(function(){
 	var slick_2 =  $('.slick_2').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,    
-		infinite: false,
-		arrows: false,
-                
-             
+		infinite: true,
+		//arrows: false,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
 	});
         $('.slick_2').on('afterChange', function(event, slick, currentSlide, nextSlide){
          $('.block_3_ul > li').removeClass('act');
