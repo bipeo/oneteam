@@ -1550,6 +1550,9 @@ header.center {
 		display: block;
 		width: 75%;
 	}
+        .block_3_ul > li.act:after {
+            background:transparent;
+        }
 	.for_arrows {
 		position: relative;
 	}
