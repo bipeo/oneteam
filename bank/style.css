@@ -176,7 +176,7 @@ input[type=submit] {
 /*========================== END ==========================*/
 
 body {
-    background: url(img/bg_1.jpg) no-repeat center 143px fixed;
+    background: fixed url(img/bg_1.jpg) no-repeat center 143px  / cover;
 	color: #000000;
 	font-family: 'helveticaneuecyrlight';
 	font-size: 14px;
@@ -214,6 +214,7 @@ h3, .title_2 {
 	margin: 0 auto;
 	min-width: 320px;
 	max-width: 2944px;
+	overflow: hidden;
 }
 
 .center {
@@ -696,7 +697,7 @@ header.center {
 }
 
 .block_3 {
-	background: url(img/bg_2.png) no-repeat center top, url(img/bg_3.png) no-repeat center 1220px, url(img/bg_4.png) no-repeat center 2517px;
+/*	background: url(img/bg_2.png) no-repeat center top, url(img/bg_3.png) no-repeat center 1220px, url(img/bg_4.png) no-repeat center 2517px;*/
 	color: #ffffff;
 	padding: 107px 0 200px 0;
 }
