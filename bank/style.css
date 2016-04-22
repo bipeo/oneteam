@@ -236,8 +236,8 @@ header.center {
 	font-size: 16px;
 }
 
-.orange_btn:hover {
-	background-color: #0054a6;
+.orange_btn.hvr-shutter-out-horizontal:before {
+	background: #0054a6;	
 }
 
 .btn_transp {
@@ -265,8 +265,12 @@ header.center {
 	padding: 0 19px;
 }
 
-.btn_transp_2:hover {
-	background-color: #dedfe0;
+.btn_transp_2.hvr-shutter-out-horizontal {
+	background: transparent;
+}
+
+.btn_transp_2.hvr-shutter-out-horizontal:before {
+	background: #dedfe0;
 	color: #033152;
 }
 
