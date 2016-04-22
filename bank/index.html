@@ -29,13 +29,15 @@
 				<option>Санкт-Петербург</option>
 			</select>
 		</div>
-		<div class="link_1 right">
-			<a href="#">Отделения и банкоматы</a>
-			<a href="#">О банке</a>
-		</div>
-		<div class="block_1 right">
-			<strong>8 800 250 50 50</strong>
-			<a href="#">Оставить отзыв</a>
+		<div class="header_right right">
+			<div class="block_1 right">
+				<strong>8 800 250 50 50</strong>
+				<a href="#">Оставить отзыв</a>
+			</div>
+			<div class="link_1 right">
+				<a href="#">Отделения и банкоматы</a>
+				<a href="#">О банке</a>
+			</div>
 		</div>
 	</header>
 	<nav class="top_menu">
@@ -487,18 +489,43 @@
 			<h3 class="title_2">Банк всегда под рукой</h3>
 			<p class="p_4">Локо Бизнес - мобильное приложение для клиентов малого и среднего бизнеса. Приложение Локо Бизнес обладает простым и удобным интерфейсом, который позволит вам управлять финансами ваших компаний из любой точки мира.</p>
 			<ul class="block_3_ul">
-				<li>Проводить платежи</li>
-				<li>Контроль денег 24 часа</li>
-				<li>Современная защита</li>
+				<li class="block_3_ul_1">Проводить платежи</li>
+				<li class="block_3_ul_2">Контроль денег 24 часа</li>
+				<li class="block_3_ul_3">Современная защита</li>
 			</ul>
-			<div class="phone">
-				<p class="descript_2">Видеть всю информацию по вашим компаниям: отслеживать остатки по счетам, формировать выписки, отправлять реквизиты.</p>
-				<p class="descript_2">Отслеживать всю информацию по входящим и исходящим платежам.</p>
-				<p class="smart">Удобного пользования на планшете или смартфоне :)
-					<a href="#"><img src="img/google_play.png" alt=""></a>
-					<a href="#"><img src="img/apple.png" alt=""></a>
-				</p>
-			</div>
+			<!-- slick_2 -->
+			<div class="slick_2">
+				<div>
+					<div class="phone">
+						<p class="descript_2">Видеть всю информацию по вашим компаниям: отслеживать остатки по счетам, формировать выписки, отправлять реквизиты.</p>
+						<p class="descript_2">Отслеживать всю информацию по входящим и исходящим платежам.</p>
+						<p class="smart">Удобного пользования на планшете или смартфоне :)
+							<a href="#"><img src="img/google_play.png" alt=""></a>
+							<a href="#"><img src="img/apple.png" alt=""></a>
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="phone">
+						<p class="descript_2">Видеть всю информацию по вашим компаниям: отслеживать остатки по счетам, формировать выписки, отправлять реквизиты.</p>
+						<p class="descript_2">Отслеживать всю информацию по входящим и исходящим платежам.</p>
+						<p class="smart">Удобного пользования на планшете или смартфоне :)
+							<a href="#"><img src="img/google_play.png" alt=""></a>
+							<a href="#"><img src="img/apple.png" alt=""></a>
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="phone">
+						<p class="descript_2">Видеть всю информацию по вашим компаниям: отслеживать остатки по счетам, формировать выписки, отправлять реквизиты.</p>
+						<p class="descript_2">Отслеживать всю информацию по входящим и исходящим платежам.</p>
+						<p class="smart">Удобного пользования на планшете или смартфоне :)
+							<a href="#"><img src="img/google_play.png" alt=""></a>
+							<a href="#"><img src="img/apple.png" alt=""></a>
+						</p>
+					</div>
+				</div>
+			</div><!-- END slick_2 -->
 		</div>
   		<!-- center -->
 		<div class="center">
@@ -824,38 +851,6 @@
 <![endif]-->
 <script src="libs/jquery.matchHeight-min.js"></script>
 <script src="libs/selecter/jquery.fs.selecter.min.js"></script>
-<script>
-$(document).ready(function(){
-	$("select").selecter();
-	
-	$('.slick_slider').slick({
-		arrows: true,
-		dots: false
-	});
-	
-	// accordeon
-	$('.answer').css({'display':'none'});
-			
-	$('.accord_title').click(function(){
-		$('.accord_title').not($(this)).removeClass('open');
-		$('.answer').not($(this).next('.answer')).slideUp(500);
-		$(this).next('.answer').slideToggle(500);
-		$(this).toggleClass('open');
-	});
-	
-	$('.block_4_ul li').matchHeight();
-	
-	// табы
-    $('.tabs a').click(function(e) {
-        e.preventDefault();
-        $('.tabs .active').removeClass('active');
-        $(this).parent().addClass('active');
-        var tab = $(this).attr('href');
-        $('.for_tabs > div').not(tab).css({'display':'none'});
-        $(tab).fadeIn(400);
-    });
-});
-</script>
 <script src="js/common.js"></script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
