@@ -250,7 +250,8 @@ header.center {
 }
 
 .orange_btn.hvr-shutter-out-horizontal:before {
-	background: #0054a6;	
+	background: #0054a6;
+	color: #fff;
 }
 
 .btn_transp {
@@ -1106,6 +1107,10 @@ border-radius: 5px;
 .tabs > li.active {
 	border-radius: 5px;
 	color: #ffffff;
+}
+
+.tabs > li.active a {
+	color: #fff;
 }
 .tabs > li.active:after {
         background-color: #fbad3a;
