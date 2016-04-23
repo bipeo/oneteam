@@ -418,6 +418,8 @@ header.center {
 .block_2 {
 /*	background: url(img/bg_1.jpg) no-repeat center top fixed, url(img/bg_1.1.jpg) no-repeat center 1386px fixed;*/
 	padding: 97px 0 0 0;
+	position: relative;
+	z-index: 20;
 }
 
 
@@ -772,9 +774,9 @@ border-radius: 5px;
 }
 
 .block_3 {
-/*	, url(img/bg_3.png) no-repeat center 1220px, url(img/bg_4.png) no-repeat center 2517px;*/
 	background: url(img/bg_2.png) no-repeat center top;
 	color: #ffffff;
+	margin-top: -40px;
 	padding: 107px 0 80px 0;
 }
 
