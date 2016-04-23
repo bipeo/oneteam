@@ -51,6 +51,9 @@ $(document).ready(function(){
               var slideIndex = $(this).index();
               $(".slick_2").slick('slickGoTo', parseInt(slideIndex));
 	});
+	
+	
+	$('.for_mask').mask('+7(000) 000-00-00');
         
        
 });

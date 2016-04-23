@@ -254,6 +254,7 @@ header.center {
 }
 
 .btn_transp {
+	background: transparent;
 	border: 1px solid #000;
 	color: #030303;
 	display: block;
@@ -264,6 +265,10 @@ header.center {
 	line-height: 49px;
 	padding: 0 40px;
 	text-transform: uppercase;
+}
+
+.btn_transp.hvr-shutter-out-horizontal:before {
+	background: #0054a6;
 }
 
 .btn_transp_2 {
@@ -292,6 +297,7 @@ header.center {
 }
 
 .header_right {
+	margin-right: 2%;
 	width: 415px;
 }
 
@@ -406,6 +412,9 @@ header.center {
 
 .block_2 .center {
 	background: #fff;
+	-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
 	box-shadow: 0px 0px 3px 0.00px rgba(0, 0, 0, 0.21);
 	padding: 0 0 114px 0;
 }
@@ -686,6 +695,10 @@ header.center {
 	z-index: 20;
 }
 
+.tarif_item_wrap:hover .blue_bg {
+	background: #fbad3a;
+}
+
 .tarif_item_wrap:hover .tarif_1_wrap strong {
 	font-size: 18px;
 }
@@ -767,7 +780,7 @@ header.center {
     z-index:2;
 }
 .block_3_ul > li span, .block_3_ul > li {
-    position:relative;
+	position:relative;
 }
 .block_3_ul > li.act {
         cursor:default;
@@ -779,8 +792,6 @@ header.center {
     position:relative;
 }
 .block_3_ul > li:after {
-   
-  
     border-radius: 5px;
     background-color:#76a8d3;
 
@@ -855,6 +866,9 @@ header.center {
 
 .block_3 .center {
 	background: #fff;
+	-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
 	padding: 66px 0 0 0;
 }
 
@@ -1018,6 +1032,10 @@ header.center {
 	position: absolute;
 }
 
+.hvr-shutter-out-horizontal:active, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:hover {
+	color: #043152;
+}
+
 .block_4_ul > li:first-child {
 	background: url(img/ico_7.png) no-repeat left top;
 	width: 185px;
@@ -1126,7 +1144,12 @@ header.center {
 	color: #fffefe;
 }
 
+.accord_title:hover {
+	background-color: #20c4ff;
+}
+
 .accord_title.open {
+	background-color: #00aae7;
 	border-bottom-color: #20c4ff;
 }
 
@@ -1146,7 +1169,7 @@ header.center {
 	font-size: 20px;
 	line-height: 1.2;
 	margin: 0 70px 55px 0;
-	padding: 50px 0 0 0;
+	padding: 55px 0 0 0;
 	width: 255px;
 }
 
@@ -1262,6 +1285,10 @@ header.center {
 	display: table;
 	font-size: 18px;
 	margin: 0 auto 38px;
+}
+
+.checkbox a {
+	border-bottom: 1px dashed #043775;
 }
 
 .submit {
