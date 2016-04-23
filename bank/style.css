@@ -705,11 +705,25 @@ border-radius: 5px;
 	right: 0;
 }
 
+.tarif_item_wrap:before {
+	background: transparent;
+	content: "";
+	height: 12px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: -12px;
+}
+
 .tarif_item_wrap:hover {
 	box-shadow: 0px 0px 7px 0.00px rgba(0, 0, 0, 0.53);
 	padding: 0 0 8px 0;
 	width: 191px;	
 	z-index: 20;
+}
+
+.tarif_item_wrap:hover:before {
+	background: #fbad3a;
 }
 
 .tarif_item_wrap:hover .blue_bg {
