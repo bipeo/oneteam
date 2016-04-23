@@ -54,7 +54,11 @@ $(document).ready(function(){
 	
 	
 	$('.for_mask').mask('+7(000) 000-00-00');
-        
+	
+	$('#top_menu').fixedHeader()
+	$(window).scroll(function(){
+		$('#top_menu').fixedHeader()
+	});
        
 });
 
@@ -100,3 +104,14 @@ function check_if_in_view() {
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 /**** focus box  in-view end ***/
+
+jQuery.fn.fixedHeader = function () {
+//      var window_width = $(window).width();
+        if ($(window).scrollTop() >= 90 ) {
+               this.addClass('pos_fixed');
+            }
+            else {
+               this.removeClass('pos_fixed');
+     } 
+    return this;
+}

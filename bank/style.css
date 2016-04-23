@@ -250,7 +250,8 @@ header.center {
 }
 
 .orange_btn.hvr-shutter-out-horizontal:before {
-	background: #0054a6;	
+	background: #0054a6;
+	color: #fff;
 }
 
 .btn_transp {
@@ -365,6 +366,18 @@ header.center {
 	width: 268px;
 }
 
+.orange_btn.hvr-shutter-out-horizontal:active, .orange_btn.hvr-shutter-out-horizontal:focus, .orange_btn.hvr-shutter-out-horizontal:hover {
+	color: #fff;
+}
+
+.pos_fixed {
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 999;
+}
+
 /*========================== select header ==========================*/
 
 .select_town {
@@ -469,6 +482,10 @@ border-radius: 5px;
 	position: absolute;
 	right: 57px;
 	top: 15px;
+}
+
+.block_orange .btn_transp.hvr-shutter-out-horizontal:active, .block_orange .btn_transp.hvr-shutter-out-horizontal:focus, .block_orange .btn_transp.hvr-shutter-out-horizontal:hover {
+	color: #fff;
 }
 
 .p_1 {
@@ -688,11 +705,25 @@ border-radius: 5px;
 	right: 0;
 }
 
+.tarif_item_wrap:before {
+	background: transparent;
+	content: "";
+	height: 12px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: -12px;
+}
+
 .tarif_item_wrap:hover {
 	box-shadow: 0px 0px 7px 0.00px rgba(0, 0, 0, 0.53);
 	padding: 0 0 8px 0;
 	width: 191px;	
 	z-index: 20;
+}
+
+.tarif_item_wrap:hover:before {
+	background: #fbad3a;
 }
 
 .tarif_item_wrap:hover .blue_bg {
@@ -866,10 +897,10 @@ border-radius: 5px;
 
 .block_3 .center {
 	background: #fff;
-	-moz-border-radius: 5px;
--webkit-border-radius: 5px;
-border-radius: 5px;
-	padding: 66px 0 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	padding: 66px 0 107px 0;
 }
 
 .block_3_ul_2 {
@@ -945,7 +976,14 @@ border-radius: 5px;
 }
 
 .count > li {
-	background-color: #fbad3a;
+	background: #f2a433;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyYTQzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YyYTQzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2YyYTQzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmYmFkM2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #f2a433 0%, #f2a433 50%, #f2a433 51%, #fbad3a 100%);
+	background: -webkit-linear-gradient(top,  #f2a433 0%,#f2a433 50%,#f2a433 51%,#fbad3a 100%);
+	background: linear-gradient(to bottom,  #f2a433 0%,#f2a433 50%,#f2a433 51%,#fbad3a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2a433', endColorstr='#fbad3a',GradientType=0 );
+
+/*	background-color: #fbad3a;*/
 	border: 1px solid #ffffff;
 	border-radius: 5px;
 	box-shadow: -1px 1px 3px 0.00px rgba(0, 0, 0, 0.25);
@@ -954,8 +992,21 @@ border-radius: 5px;
 	font-size: 147.36px;
 	height: 164px;
 	line-height: 164px;
+	position: relative;
 	text-align: center;
 	width: 106px;
+}
+
+.count > li:after {
+	background: transparent;
+	-webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow:    1px 1px 3px 0px rgba(0, 0, 0, 0.05);
+	box-shadow:         1px 1px 3px 0px rgba(0, 0, 0, 0.05);
+	content: "";
+	height: 50%;
+	left: 0;
+	position: absolute;
+	right: 0;
 }
 
 .count > li + li {
@@ -997,12 +1048,13 @@ border-radius: 5px;
 	margin: 71px 0 77px 0;
 }
 
-.block_4 {
+.block_4.center {
 	background: -webkit-linear-gradient(-39deg, rgba(4, 55, 117, 0.6) 19%, rgba(0, 170, 231, 0.6) 80%);
 	background: -moz-linear-gradient(-39deg, rgba(4, 55, 117, 0.6) 19%, rgba(0, 170, 231, 0.6) 80%);
 	background: -o-linear-gradient(-39deg, rgba(4, 55, 117, 0.6) 19%, rgba(0, 170, 231, 0.6) 80%);
 	background: -ms-linear-gradient(-39deg, rgba(4, 55, 117, 0.6) 19%, rgba(0, 170, 231, 0.6) 80%);
 	background: linear-gradient(129deg, rgba(4, 55, 117, 0.6) 19%, rgba(0, 170, 231, 0.6) 80%);
+	border-radius: 0;
 	color: #fefefe;
 	padding: 52px 0 84px 0;
 }
@@ -1069,8 +1121,8 @@ border-radius: 5px;
 	line-height: 24px;
 }
 
-.block_5 {
-	padding: 81px 0 0 0;
+.block_5 .center {
+	border-radius: 0;
 }
 
 .style_2 {
@@ -1106,6 +1158,10 @@ border-radius: 5px;
 .tabs > li.active {
 	border-radius: 5px;
 	color: #ffffff;
+}
+
+.tabs > li.active a {
+	color: #fff;
 }
 .tabs > li.active:after {
         background-color: #fbad3a;
@@ -1162,6 +1218,10 @@ border-radius: 5px;
 	margin: 0 0 22px 0;
 }
 
+.accord_item:last-child {
+	margin-bottom: 0;
+}
+
 .answer_item {
 	background: url(img/pdf_ico.png) no-repeat left top;
 	color: #ffffff;
@@ -1181,8 +1241,9 @@ border-radius: 5px;
 	background-image: url(img/pdf_ico_hover.png);
 }
 
-.block_form {
+.block_form.center {
 	background-color: #20c4ff;
+	border-radius: 0;
 	overflow: hidden;
 	padding: 107px 0 67px 0;
 }
@@ -1306,15 +1367,13 @@ border-radius: 5px;
 	padding: 0 40px;
 }
 
-.footer {
-/*
+.footer.center {
 	background: -webkit-linear-gradient(-39deg, rgba(48, 48, 48, 0.6) 40%, rgba(138, 138, 138, 0.6) 60%);
 	background: -moz-linear-gradient(-39deg, rgba(48, 48, 48, 0.6) 40%, rgba(138, 138, 138, 0.6) 60%);
 	background: -o-linear-gradient(-39deg, rgba(48, 48, 48, 0.6) 40%, rgba(138, 138, 138, 0.6) 60%);
 	background: -ms-linear-gradient(-39deg, rgba(48, 48, 48, 0.6) 40%, rgba(138, 138, 138, 0.6) 60%);
 	background: linear-gradient(129deg, rgba(48, 48, 48, 0.6) 40%, rgba(138, 138, 138, 0.6) 60%);
-*/
-	background: url(img/footer_bg.png) no-repeat center top / cover;
+/*	background: url(img/footer_bg.png) no-repeat center top / cover;*/
 	-moz-box-shadow: 0 0 3px rgba(0,0,0,.35);
 	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.35);
 	box-shadow: 0 0 3px rgba(0,0,0,.35);
@@ -1334,6 +1393,10 @@ border-radius: 5px;
 
 .submit .hvr-shutter-out-horizontal:before {
 	background: #0054a6;
+}
+
+.submit .hvr-shutter-out-horizontal:active, .submit .hvr-shutter-out-horizontal:focus, .submit .hvr-shutter-out-horizontal:hover {
+	color: #fff;	
 }
 
 @media only screen and (max-width: 1279px) {
