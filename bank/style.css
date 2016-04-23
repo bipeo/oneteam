@@ -883,10 +883,10 @@ border-radius: 5px;
 
 .block_3 .center {
 	background: #fff;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	padding: 66px 0 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	padding: 66px 0 107px 0;
 }
 
 .block_3_ul_2 {
@@ -1034,12 +1034,13 @@ border-radius: 5px;
 	margin: 71px 0 77px 0;
 }
 
-.block_4 {
+.block_4.center {
 	background: -webkit-linear-gradient(-39deg, rgba(4, 55, 117, 0.6) 19%, rgba(0, 170, 231, 0.6) 80%);
 	background: -moz-linear-gradient(-39deg, rgba(4, 55, 117, 0.6) 19%, rgba(0, 170, 231, 0.6) 80%);
 	background: -o-linear-gradient(-39deg, rgba(4, 55, 117, 0.6) 19%, rgba(0, 170, 231, 0.6) 80%);
 	background: -ms-linear-gradient(-39deg, rgba(4, 55, 117, 0.6) 19%, rgba(0, 170, 231, 0.6) 80%);
 	background: linear-gradient(129deg, rgba(4, 55, 117, 0.6) 19%, rgba(0, 170, 231, 0.6) 80%);
+	border-radius: 0;
 	color: #fefefe;
 	padding: 52px 0 84px 0;
 }
@@ -1106,8 +1107,8 @@ border-radius: 5px;
 	line-height: 24px;
 }
 
-.block_5 {
-	padding: 81px 0 0 0;
+.block_5 .center {
+	border-radius: 0;
 }
 
 .style_2 {
@@ -1203,6 +1204,10 @@ border-radius: 5px;
 	margin: 0 0 22px 0;
 }
 
+.accord_item:last-child {
+	margin-bottom: 0;
+}
+
 .answer_item {
 	background: url(img/pdf_ico.png) no-repeat left top;
 	color: #ffffff;
@@ -1222,8 +1227,9 @@ border-radius: 5px;
 	background-image: url(img/pdf_ico_hover.png);
 }
 
-.block_form {
+.block_form.center {
 	background-color: #20c4ff;
+	border-radius: 0;
 	overflow: hidden;
 	padding: 107px 0 67px 0;
 }
@@ -1347,15 +1353,13 @@ border-radius: 5px;
 	padding: 0 40px;
 }
 
-.footer {
-/*
+.footer.center {
 	background: -webkit-linear-gradient(-39deg, rgba(48, 48, 48, 0.6) 40%, rgba(138, 138, 138, 0.6) 60%);
 	background: -moz-linear-gradient(-39deg, rgba(48, 48, 48, 0.6) 40%, rgba(138, 138, 138, 0.6) 60%);
 	background: -o-linear-gradient(-39deg, rgba(48, 48, 48, 0.6) 40%, rgba(138, 138, 138, 0.6) 60%);
 	background: -ms-linear-gradient(-39deg, rgba(48, 48, 48, 0.6) 40%, rgba(138, 138, 138, 0.6) 60%);
 	background: linear-gradient(129deg, rgba(48, 48, 48, 0.6) 40%, rgba(138, 138, 138, 0.6) 60%);
-*/
-	background: url(img/footer_bg.png) no-repeat center top / cover;
+/*	background: url(img/footer_bg.png) no-repeat center top / cover;*/
 	-moz-box-shadow: 0 0 3px rgba(0,0,0,.35);
 	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.35);
 	box-shadow: 0 0 3px rgba(0,0,0,.35);
