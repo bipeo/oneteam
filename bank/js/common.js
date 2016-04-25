@@ -141,3 +141,30 @@ function gotoblock(id){
     var destination = obj.offset().top;
     $("html,body").stop(true, true).animate({'scrollTop': destination-160}, 750);
 }
+
+
+
+$(document).ready(function () {
+    
+      $('.tarif_pl').find('.tarif_mobile_item .out_tar').click(function(){
+     
+      
+      $(this).parent().toggleClass('act');      
+     
+      $(this).next().slideToggle('fast');
+      
+      
+      $('.tarif_mobile_item').not($(this).parent()).removeClass('act');  
+      $(".show_hide_planshet").not($(this).next()).slideUp('fast');
+
+          
+          
+  })
+   
+
+    
+    
+  });
+  
+  
+  

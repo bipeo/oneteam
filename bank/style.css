@@ -1643,10 +1643,22 @@ border-radius: 5px;
 		display: block;
 		margin-top: 30px;
 	}
-	.tarif_pl .tarif_ul {
+
+        .tarif_pl .tarif_ul {
+            
 		display: table;
 		width: 100%;
 	}
+        .tarif_mobile_item .show_hide_planshet {
+                display:none;
+        }
+        .tarif_mobile_item.cur .show_hide_planshet {
+            display:block;
+        }
+       
+        .tarif_mobile_item.act .out_tar, .tarif_mobile_item.cur .out_tar {
+            background:red;
+        }
 	.tarif_pl .tarif_ul > li {
 		color: #fff;
 		display: table-cell;
@@ -1686,6 +1698,20 @@ border-radius: 5px;
 	.podr {
 		font-size: 14px;
 	}
+         .tarif_mobile_item.act .podr {
+            display:none;
+        }
+        .tarif_mobile_item.act .podr.unvis {
+            display:block;
+        }
+        .tarif_mobile_item .podr  {
+            display:block;
+        }
+        .tarif_mobile_item .podr.unvis {
+            display:none;
+        }
+        
+        
 	.show_hide_planshet {
 		background: #f3f3f3;
 		overflow: hidden;
