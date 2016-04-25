@@ -1535,11 +1535,20 @@ border-radius: 5px;
 	.block_3_ul_2 > li + li {
 		margin-left: 30px;
 	}
+	.bussines > li:nth-child(n) {
+		margin-right: 5%;
+	}
+	.bussines > li:nth-child(2n) {
+		margin-right: 0;
+	}
 	.bussines > li:nth-child(2n+1) {
 		clear: both;
 	}
 	.bussines > li {
-		margin-bottom: 45px;		
+		margin-bottom: 45px;
+	}
+	.bussines > li:first-child, .bussines > li:nth-child(2), .bussines > li:nth-child(3), .bussines > li:nth-child(4), .bussines > li:nth-child(5), .bussines > li:nth-child(6) {
+		width: 45%;		
 	}
 	.bussines > li:nth-child(5) {
 		margin-left: 0;
@@ -1831,7 +1840,7 @@ border-radius: 5px;
 		-moz-background-size: 153px auto;
 		-o-background-size: 153px auto;
 		background-size: 153px auto;
-		background-position: center 220px;
+		background-position: center 68%;
 		padding-left: 2%;
 	}
 	.smart {
