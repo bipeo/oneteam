@@ -884,7 +884,7 @@ border-radius: 5px;
 }
 .arrs_s2 span.next {
     right:0px;
-    background:green;
+    
 }
 
 .slick_2 .slick-slide  {
@@ -1021,7 +1021,7 @@ border-radius: 5px;
 }
 
 .count > li:after {
-	background: transparent;
+	background-color: rgba(0,0,0,.05);
 	-webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.05);
 	-moz-box-shadow:    1px 1px 3px 0px rgba(0, 0, 0, 0.05);
 	box-shadow:         1px 1px 3px 0px rgba(0, 0, 0, 0.05);
