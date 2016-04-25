@@ -1478,6 +1478,12 @@ border-radius: 5px;
 	color: #fff;	
 }
 
+.phone_small {
+	display: none!important;
+}
+
+.tarif_pl {display: none;}
+
 @media only screen and (max-width: 1279px) {
 	.center {
 		width: 100%;
@@ -1627,6 +1633,97 @@ border-radius: 5px;
 	}
 	.form label {
 		width: 450px;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.tarif {display: none;}
+	.tarif_pl {
+		background: #5fa8e4;
+		display: block;
+		margin-top: 30px;
+	}
+	.tarif_pl .tarif_ul {
+		display: table;
+		width: 100%;
+	}
+	.tarif_pl .tarif_ul > li {
+		color: #fff;
+		display: table-cell;
+		height: 60px;
+		vertical-align: middle;
+		width: 50%;
+	}
+	.tarif_pl .tarif_ul > li:nth-child(1) {
+		font-size: 30px;
+		padding: 0 0 0 2%;
+    	text-transform: uppercase;
+	}
+	.tarif_pl .tarif_ul > li:nth-child(2) {
+		padding: 0 2% 0 0;
+		text-align: right;
+	}
+	.tarif_pl .price_tarif_mob {
+		font-family: "helveticaneuecyrmedium";
+		font-size: 30px;
+	}
+	.tarif_pl .tarif_block {
+		color: #fff;
+		font-size: 18px;
+		height: 36px;
+		line-height: 36px;
+		overflow: hidden;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.tarif_pl .tarif_block .ico_close_open {
+		background: rgba(0, 0, 0, 0) url("img/ico_close_open.png") no-repeat scroll 0 -10px;
+		display: inline-block;
+		height: 10px;
+		margin: 15px 0 0 15px;
+		width: 15px;
+	}
+	.podr {
+		font-size: 14px;
+	}
+	.show_hide_planshet {
+		background: #f3f3f3;
+		overflow: hidden;
+		padding: 20px 0 0 2%;
+	}
+	.show_hide_planshet > div {
+		float: left;
+		margin: 0 0 25px 0;
+		padding: 0 1% 0 0;
+		width: 25%;
+	}
+	.show_hide_planshet > div:nth-child(4n+1) {
+		clear: both;
+	}
+	.show_hide_planshet > div:nth-child(7) {
+		width: 50%;
+	}
+	.tarif_pl .title_tarif {
+		color: #3f3f3f;
+		margin: 0 0 10px 0;
+	}
+	.tarif_pl .fontz {
+		color: #010101;
+		font-family: 'helveticaneuecyrroman';
+		font-size: 30px;
+	}
+	.tarif_pl .download {
+		background: none;
+		padding-left: 0;
+	}
+	.tarif_pl .tarif_btn {
+		font-family: 'helveticaneuecyrbold';
+		height: 57px;
+		line-height: 57px;
+		padding: 0 14px;
+	}
+	.text_center {
+		text-align: center;
 	}
 }
 
@@ -1810,7 +1907,7 @@ border-radius: 5px;
 }
 
 @media only screen and (max-width: 580px) {
-	.tarif {
+	.tarif_pl {
 		display: none;
 	}
 	.tarif_mobile {
@@ -1915,15 +2012,18 @@ border-radius: 5px;
 	
  /*========================== phone ==========================*/
 	.phone {
+		background: none;
+/*
 		-webkit-background-size: 153px auto;
 		-moz-background-size: 153px auto;
 		-o-background-size: 153px auto;
 		background-size: 153px auto;
 		background-position: center 68%;
+*/
 		padding-left: 2%;
 	}
 	.smart {
-		margin-top: 365px;
+		margin-top: 65px;
 		text-align: center;
 		width: 100%;
 	}
@@ -1932,6 +2032,9 @@ border-radius: 5px;
 	}
 	.descript_2 {
 		font-size: 14px;
+	}
+	.phone_small {
+		display: block!important;
 	}
 }
 
