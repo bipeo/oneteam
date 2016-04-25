@@ -19,7 +19,7 @@ $(document).ready(function(){
 	// tarif mobile
 	$('.show_hide').css('display', 'none');
 	$('.tarif_block').on('click', function() {
-		$(this).prevAll('show_hide').slideToggle(500);
+		$(this).prev('.show_hide').slideToggle(500);
 		console.log('show_hide');
 	});
 	
