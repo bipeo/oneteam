@@ -39,6 +39,7 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,    
 		infinite: true,
+                fade: true,
 		//arrows: false,
                 prevArrow: $('.prev'),
                 nextArrow: $('.next'),
@@ -91,7 +92,7 @@ jQuery(window).scroll(function(){
 });
 
 /****  focus box  in-view ****/
-var $animation_elements = $('.bussines > li, .block_3_ul_2 > li, .block_4_ul > li');
+var $animation_elements = $('.bussines > li, .block_3_ul_2 > li, .block_4_ul > li, .block_3');
 var $window = $(window);
 
 function check_if_in_view() {
