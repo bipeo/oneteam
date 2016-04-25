@@ -826,9 +826,9 @@ border-radius: 5px;
     background-repeat: no-repeat;
     background-position: center top;
     background-image: url(img/bg_2.png);
-    -webkit-transition: all 1.5s linear;
-    -moz-transition: all 1.5s linear;
-     transition: all 1.5s linear
+    -webkit-transition: all 1.2s linear;
+    -moz-transition: all 1.2s linear;
+     transition: all 1.2s linear
 }
 
 .block_3.in-view:before{
