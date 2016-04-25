@@ -299,7 +299,7 @@ header.center {
 
 .header_right {
 	margin-right: 2%;
-	width: 415px;
+/*	width: 415px;*/
 }
 
 .link_1 {
@@ -1642,6 +1642,7 @@ border-radius: 5px;
 
 @media only screen and (max-width: 919px) {
 	.top_menu_ul, .top_menu .orange_btn {display: none;}
+/*	header.center {padding-bottom: 0;}*/
 }
 
 @media only screen and (max-width: 910px) {
@@ -1669,6 +1670,9 @@ border-radius: 5px;
 	.p_1, .p_2 {
 		display: none;
 	}
+	.block_orange {
+		padding-left: 0;
+	}
 	.block_orange .btn_transp {
 		display: table;
 		float: none;
@@ -1676,14 +1680,13 @@ border-radius: 5px;
 		margin-left: auto;
 		margin-right: auto;
 	}
-/*
-	.select_town.left {
-		clear: left;
-		margin-top: 0;
-	}
-*/
+	
+}
+
+@media only screen and (max-width: 730px) {
+	
 	.header_right {
-		margin-top: 82px;
+		margin-top: 45px;
 		width: auto;
 	}
 	.link_1 {
@@ -1751,9 +1754,11 @@ border-radius: 5px;
 
 @media only screen and (max-width: 620px) {
 	.block_3_ul {
+		background: rgba(118, 168, 211, .27);
+		border: none;
 		margin-left: auto;
 		margin-right: auto;
-		width: 70%;
+		width: 100%;
 	}
 	.block_3_ul > li {
 		display: none;
@@ -1810,7 +1815,7 @@ border-radius: 5px;
 	}
 	.tarif_mobile {
 		display: block;
-		margin: 14px 0 0 0;
+		margin: 14px 2% 0 2%;
 		overflow: hidden;
 	}
 	.tarif_mobile_item {
@@ -1820,8 +1825,13 @@ border-radius: 5px;
 	.tarif_ul {
 		background: #00aae7;
 		display: table;
-/*		margin: 0 0 40px 0;*/
 		width: 100%;
+	}
+	.new_bg {
+		background: #fbad3a!important;
+	}
+	.new_bg .ico_close_open {
+		background-position: 0 0!important;
 	}
 	.tarif_ul > li {
 		color: #fff;
@@ -1857,7 +1867,7 @@ border-radius: 5px;
 		line-height: 1.2;
 		margin: 0 0 20px 0;
 	}
-	.show_hide + .title_tarif {
+	.show_hide .title_tarif:first-child {
 		padding-top: 40px;
 	}
 	.tarif_descript {
@@ -1880,12 +1890,13 @@ border-radius: 5px;
 	}
 	.tarif_block {
 		background: #00aae7;
+		border-top: 1px dashed #27c6ff;
 		cursor: pointer;
 		height: 42px;
 		text-align: center;
 	}
 	.tarif_block .ico_close_open {
-		background: url(img/ico_close_open.png) no-repeat 0 0;
+		background: url(img/ico_close_open.png) no-repeat 0 -10px;
 		display: inline-block;
 		height: 10px;
 		margin: 15px 0 0 0;
@@ -1895,11 +1906,11 @@ border-radius: 5px;
 		float: none;
 		margin-top: 15px;
 	}
-	.header_right {
-		margin-top: -80px;
-	}
 	.block_1 {
 		margin-bottom: 10px;
+	}
+	header.center {
+		padding-bottom: 0;
 	}
 	
  /*========================== phone ==========================*/
@@ -2031,6 +2042,15 @@ border-radius: 5px;
 	}
 }
 
+@media only screen and (max-width: 410px) {
+	.logo {
+		width: 140px;
+	}
+	.header_right {
+		margin-top: 30px;
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	.answer_item {
 		display: block;
@@ -2038,5 +2058,11 @@ border-radius: 5px;
 		padding-left: 50px;
 		padding-top: 0;
 		width: 98%;
+	}
+	.logo {
+		width: 130px;
+	}
+	.header_right {
+		margin-top: 27px;
 	}
 }

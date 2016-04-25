@@ -20,7 +20,8 @@ $(document).ready(function(){
 	$('.show_hide').css('display', 'none');
 	$('.tarif_block').on('click', function() {
 		$(this).prev('.show_hide').slideToggle(500);
-		console.log('show_hide');
+		$(this).prevAll('.tarif_ul').toggleClass('new_bg');
+		$(this).toggleClass('new_bg');
 	});
 	
 	$('.block_4_ul li').matchHeight();
