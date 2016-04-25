@@ -673,6 +673,7 @@ border-radius: 5px;
 .download {
 	background: url(img/ico_download.png) no-repeat left center;
 	color: #0054a6;
+	font-size: 16px;
 	padding: 0 0 0 22px;
 	text-decoration: underline;
 }
@@ -757,6 +758,15 @@ border-radius: 5px;
 	position: absolute;
 	top: 0;
 	width: 1px;
+}
+
+.fontz {
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.fontz .rouble {
+	font-size: 13px;
 }
 
 .descript {
@@ -1030,7 +1040,6 @@ border-radius: 5px;
 	display: table;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 0 93px 0;
 }
 
 .count_us > .count_1 {
