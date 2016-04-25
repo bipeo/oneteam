@@ -760,6 +760,8 @@ border-radius: 5px;
 	width: 1px;
 }
 
+
+
 .fontz {
 	font-size: 16px;
 	line-height: 1.2;
@@ -1798,6 +1800,9 @@ border-radius: 5px;
 		font-size: 14px;
 		line-height: 1.2;
 		margin: 0 0 20px 0;
+	}
+	.show_hide + .title_tarif {
+		padding-top: 40px;
 	}
 	.tarif_descript {
 		color: #010101;
