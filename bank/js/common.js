@@ -59,7 +59,14 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		$('#top_menu').fixedHeader()
 	});
-       
+      
+	 // перемотка
+    $('.top_menu_ul a').click(function(event) {
+        event.preventDefault();
+
+        var my_attr = $(this).attr('href').substring(1);
+        gotoblock(my_attr);
+    });
 });
 
 jQuery(window).scroll(function(){
@@ -114,4 +121,14 @@ jQuery.fn.fixedHeader = function () {
                this.removeClass('pos_fixed');
      } 
     return this;
+}
+
+function gotocoord(val){
+    $("html,body").stop(true, true).animate({'scrollTop': val-160}, 750);
+}
+
+function gotoblock(id){
+    var obj = $('#'+id);
+    var destination = obj.offset().top;
+    $("html,body").stop(true, true).animate({'scrollTop': destination-160}, 750);
 }
