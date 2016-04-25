@@ -16,6 +16,13 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 	});
 	
+	// tarif mobile
+	$('.show_hide').css('display', 'none');
+	$('.tarif_block').on('click', function() {
+		$(this).prevAll('show_hide').slideToggle(500);
+		console.log('show_hide');
+	});
+	
 	$('.block_4_ul li').matchHeight();
 	
 	// табы

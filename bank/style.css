@@ -1762,7 +1762,7 @@ border-radius: 5px;
 	.tarif_ul {
 		background: #00aae7;
 		display: table;
-		margin: 0 0 40px 0;
+/*		margin: 0 0 40px 0;*/
 		width: 100%;
 	}
 	.tarif_ul > li {
@@ -1819,6 +1819,7 @@ border-radius: 5px;
 	}
 	.tarif_block {
 		background: #00aae7;
+		cursor: pointer;
 		height: 42px;
 		text-align: center;
 	}
