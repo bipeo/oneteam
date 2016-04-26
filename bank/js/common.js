@@ -84,6 +84,12 @@ $(document).ready(function(){
         var my_attr = $(this).attr('href').substring(1);
         gotoblock(my_attr);
     });
+	
+	// form validate
+	$.validate({
+	  	form : '#form_main', 
+		lang : 'ru'
+	});
 });
 
 jQuery(window).scroll(function(){
