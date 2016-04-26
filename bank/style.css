@@ -1662,22 +1662,17 @@ border-radius: 5px;
 		display: block;
 		margin-top: 30px;
 	}
-	.tarif_pl .tarif_ul.new_bg {
+	.tarif_mobile_item.act .out_tar .ico_close_open {
+		background-position: 0 0;		
+	}
+       .tarif_pl .tarif_mobile_item .tarif_ul {
            border-bottom: 1px dashed #74c5fd;
-		
-	}
-	.tarif_pl .tarif_block.new_bg .ico_close_open {
-		background-position: 0 -10px;
-	}
-/*
-	.tarif_pl .tarif_block .ico_close_open {
-		background-position: 0 0;
-	}
-*/
-        .tarif_pl .tarif_ul {
 		display: table;
-           border-bottom: 1px dashed #f5daa7;
 		width: 100%;
+	}
+	.tarif_pl .tarif_mobile_item.act .tarif_ul {
+           border-bottom: 1px dashed #f5daa7;
+		
 	}
         .tarif_mobile_item .show_hide_planshet {
                 display:none;
@@ -1709,6 +1704,9 @@ border-radius: 5px;
 		font-family: "helveticaneuecyrmedium";
 		font-size: 30px;
 	}
+	.tarif_pl .price_tarif_mob .rouble {
+		font-size: 22px;
+	}
 	.tarif_pl .tarif_block {
 		color: #fff;
 		font-size: 18px;
@@ -1719,7 +1717,7 @@ border-radius: 5px;
 		padding-right: 2%;
 	}
 	.tarif_pl .tarif_block .ico_close_open {
-		background: rgba(0, 0, 0, 0) url("img/ico_close_open.png") no-repeat scroll 0 0;
+		background: rgba(0, 0, 0, 0) url("img/ico_close_open.png") no-repeat scroll 0 -10px;
 		display: inline-block;
 		height: 10px;
 		margin: 15px 0 0 15px;
@@ -1736,6 +1734,7 @@ border-radius: 5px;
         }
         .tarif_mobile_item .podr  {
             display:block;
+			margin-top: -1px;
         }
         .tarif_mobile_item .podr.unvis {
             display:none;
@@ -1982,11 +1981,15 @@ border-radius: 5px;
 	}
 	.tarif_ul {
 		background: #00aae7;
+		border-bottom: 1px dashed #74c5fd;
 		display: table;
 		width: 100%;
 	}
 	.new_bg {
 		background: #fbad3a!important;
+	}
+	.tarif_ul.new_bg {
+		border-bottom-color: transparent;
 	}
 	.new_bg .ico_close_open {
 		background-position: 0 0!important;
@@ -2049,7 +2052,7 @@ border-radius: 5px;
 	}
 	.tarif_block {
 		background: #00aae7;
-		border-top: 1px dashed #27c6ff;
+/*		border-top: 1px dashed #27c6ff;*/
 		cursor: pointer;
 		height: 42px;
 		text-align: center;
