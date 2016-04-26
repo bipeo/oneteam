@@ -1659,7 +1659,6 @@ border-radius: 5px;
 @media only screen and (max-width: 950px) {
 	.tarif {display: none;}
 	.tarif_pl {
-		background: #5fa8e4;
 		display: block;
 		margin-top: 30px;
 	}
@@ -1677,7 +1676,7 @@ border-radius: 5px;
         }
        
         .tarif_mobile_item.act .out_tar, .tarif_mobile_item.cur .out_tar {
-            background:red;
+            background:#fbad3a;
         }
 	.tarif_pl .tarif_ul > li {
 		color: #fff;
@@ -1763,6 +1762,7 @@ border-radius: 5px;
 		padding-left: 0;
 	}
 	.tarif_pl .tarif_btn {
+		background: #fbad3a;
 		font-family: 'helveticaneuecyrbold';
 		height: 57px;
 		line-height: 57px;
@@ -1770,6 +1770,11 @@ border-radius: 5px;
 	}
 	.text_center {
 		text-align: center;
+	}
+	.tarif_mobile_item {
+		background: #5fa8e4;
+		cursor: pointer;
+		margin: 0 0 14px 0;
 	}
 }
 
