@@ -14,10 +14,10 @@
         <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
 	<script src="libs/slick/slick.min.js"></script>
-	
 	<link rel="stylesheet" href="libs/selecter/jquery.fs.selecter.css" type="text/css">
 	<link rel="stylesheet" href="libs/slick/slick.css" type="text/css">
 	<link rel="stylesheet" href="libs/hover-min.css" type="text/css">
+	<link rel="stylesheet" href="libs/form-validator/theme-default.css">
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
@@ -999,11 +999,11 @@
 			</div><!-- END block_5 -->
 			<div class="block_form center">
 				<h3 class="title_2">Отправьте заявку сейчас</h3>
-				<form action="#" method="post">
+				<form id="form_main" action="#" method="post">
 					<div class="form left">
-						<label class="clearfix"><span class="left">ФИО</span><input type="text" placeholder="Иванов Иван Иванович"></label>
+						<label class="clearfix"><span class="left">ФИО</span><input type="text" data-validation-length="min5" placeholder="Иванов Иван Иванович"></label>
 						<label class="clearfix"><span class="left">Телефон</span><input class="for_mask" type="text" placeholder="+7(___)__-__-__"></label>
-						<label class="clearfix"><span class="left">E-mail</span><input type="text" placeholder="example@example.com"></label>
+						<label class="clearfix"><span class="left">E-mail</span><input type="text" data-validation="email" placeholder="example@example.com"></label>
 					</div>
 					<div class="form right">
 						<label class="clearfix">
@@ -1016,13 +1016,13 @@
 							</select>
 						</label>
 						<label class="clearfix"><span class="left">Наименование организации</span><input type="text" placeholder="ООО «Ромашка»"></label>
-						<label class="clearfix"><span class="left">ИНН</span><input type="text" placeholder="000000000000"></label>
+						<label class="clearfix"><span class="left">ИНН</span><input type="text" data-validation="number"  data-validation-length="min10" placeholder="000000000000"></label>
 					</div>
 					<div class="captcha">
 						<img src="img/captcha.png" alt="">
 						<input type="text" placeholder="Введите код с картинки">
 					</div>
-					<label class="checkbox"><input type="checkbox">Я согласен <a href="">с условиями передачи</a> и обработки данных</label>
+					<label class="checkbox"><input type="checkbox" data-validation="required">Я согласен <a href="">с условиями передачи</a> и обработки данных</label>
 					<div class="submit">
 						<a class="hvr-shutter-out-horizontal" href="#">Отправить заявку</a>
 					</div>
@@ -1043,6 +1043,7 @@
 <script src="libs/jquery.mask.js"></script>
 <script src="libs/jquery.matchHeight-min.js"></script>
 <script src="libs/selecter/jquery.fs.selecter.min.js"></script>
+<script src="libs/form-validator/jquery.form-validator.min.js"></script>
 <script src="js/common.js"></script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
