@@ -137,8 +137,8 @@ function check_if_in_view() {
         (element_top_position <= window_bottom_position)) {
       $element.addClass('in-view');
       if($element.is('.block_3 .center_2')) {
-          console.log('ss');
-          $('body').addClass('bg_3');
+          //console.log('ss');
+          $('body').addClass('bg_3').removeClass('bg_2');
       }
     } else {
         if($element.is('.block_3 .center_2')) {
