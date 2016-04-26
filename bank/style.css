@@ -1827,13 +1827,6 @@ header.center {
 	.phone {
 		display: block;
 	}
-}
-
-@media only screen and (max-width: 919px) {
-	.top_menu_ul, .top_menu .orange_btn {display: none;}
-}
-
-@media only screen and (max-width: 910px) {
 	.count_us > .count_1 {
 		display: block;
 		margin: 0 0 8px 0;
@@ -1843,6 +1836,10 @@ header.center {
 		text-align: center;
 		width: 100%;
 	}
+}
+
+@media only screen and (max-width: 919px) {
+	.top_menu_ul, .top_menu .orange_btn {display: none;}
 }
 
 @media only screen and (max-width: 850px) {
