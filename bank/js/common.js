@@ -23,6 +23,14 @@ $(document).ready(function(){
 		$(this).prevAll('.tarif_ul').toggleClass('new_bg');
 		$(this).toggleClass('new_bg');
 	});
+        
+           $('.tarif_ul').on('click',function() {
+               
+                $(this).next('.show_hide').slideToggle(500);
+                $(this).nextAll('.tarif_block').toggleClass('new_bg')
+                $(this).toggleClass('new_bg');
+        });
+
 	
 	$('.block_4_ul li').matchHeight();
 	
