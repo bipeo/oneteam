@@ -112,7 +112,7 @@ jQuery(window).scroll(function(){
 });
 
 /****  focus box  in-view ****/
-var $animation_elements = $('.bussines > li, .block_3_ul_2 > li, .block_4_ul > li, .block_3, .block_3 .center_2');
+var $animation_elements = $('.bussines > li, .block_3_ul_2 > li, .block_4_ul > li, .block_3');
 var $window = $(window);
 
 function check_if_in_view() {
@@ -136,15 +136,7 @@ function check_if_in_view() {
       if ((element_bottom_position >= window_top_position) &&
         (element_top_position <= window_bottom_position)) {
       $element.addClass('in-view');
-      if($element.is('.block_3 .center_2')) {
-          console.log('ss');
-          $('body').addClass('bg_3');
-      }
     } else {
-        if($element.is('.block_3 .center_2')) {
-    $('body').removeClass('bg_3');
-      }
-      
      // $element.removeClass('in-view');
     }
     
