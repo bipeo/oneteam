@@ -162,7 +162,7 @@ input[type=submit] {
 
 .my_font {
     font-family: 'svgfont_1regular';
-	font-size: 40px;
+	font-size: 25px;
 }
 
 /*========================== Общие классы ==========================*/
@@ -1662,10 +1662,21 @@ border-radius: 5px;
 		display: block;
 		margin-top: 30px;
 	}
-
+	.tarif_pl .tarif_ul.new_bg {
+           border-bottom: 1px dashed #74c5fd;
+		
+	}
+	.tarif_pl .tarif_block.new_bg .ico_close_open {
+		background-position: 0 -10px;
+	}
+/*
+	.tarif_pl .tarif_block .ico_close_open {
+		background-position: 0 0;
+	}
+*/
         .tarif_pl .tarif_ul {
-            
 		display: table;
+           border-bottom: 1px dashed #f5daa7;
 		width: 100%;
 	}
         .tarif_mobile_item .show_hide_planshet {
@@ -1702,13 +1713,13 @@ border-radius: 5px;
 		color: #fff;
 		font-size: 18px;
 		height: 36px;
-		line-height: 36px;
+		line-height: 35px;
 		overflow: hidden;
 		padding-left: 2%;
 		padding-right: 2%;
 	}
 	.tarif_pl .tarif_block .ico_close_open {
-		background: rgba(0, 0, 0, 0) url("img/ico_close_open.png") no-repeat scroll 0 -10px;
+		background: rgba(0, 0, 0, 0) url("img/ico_close_open.png") no-repeat scroll 0 0;
 		display: inline-block;
 		height: 10px;
 		margin: 15px 0 0 15px;
@@ -1764,6 +1775,7 @@ border-radius: 5px;
 	.tarif_pl .tarif_btn {
 		background: #fbad3a;
 		font-family: 'helveticaneuecyrbold';
+		font-size: 20px;
 		height: 57px;
 		line-height: 57px;
 		padding: 0 14px;
@@ -1771,7 +1783,7 @@ border-radius: 5px;
 	.text_center {
 		text-align: center;
 	}
-	.tarif_mobile_item {
+	.tarif_pl .tarif_mobile_item {
 		background: #5fa8e4;
 		cursor: pointer;
 		margin: 0 0 14px 0;
@@ -1904,9 +1916,9 @@ border-radius: 5px;
 	.block_3_ul {
 		background: rgba(118, 168, 211, .27);
 		border: none;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
+		margin-left: 2%;
+		margin-right: 2%;
+		width: 96%;
 	}
 	.block_3_ul > li {
 		display: none;
@@ -1926,18 +1938,13 @@ border-radius: 5px;
 	}
 	.arrs_s2 {
 		display: block;
-		left: 2%;
+		left: 5%;
 		position: absolute;
-		right: 2%;
-		top: 5px;
+		right: 5%;
+		top: 12px;
 	}
 	.arrs_s2 span.prev, .arrs_s2 span.next {
 		background: transparent;
-/*		background: url(img/slider_arrows_2.png) no-repeat 0 0;*/
-/*
-		height: 34px;
-		width: 21px;
-*/
 	}
 	.arrs_s2 span.next {
 /*		background-position: -21px 0;*/
@@ -2010,7 +2017,8 @@ border-radius: 5px;
 		text-align: left;
 	}
 	.tarif_ul > li:last-child {
-		text-align: center;
+		padding-right: 5%;
+		text-align: right;
 	}
 	.title_tarif {
 		color: #3d3d3d;
@@ -2067,14 +2075,8 @@ border-radius: 5px;
  /*========================== phone ==========================*/
 	.phone {
 		background: none;
-/*
-		-webkit-background-size: 153px auto;
-		-moz-background-size: 153px auto;
-		-o-background-size: 153px auto;
-		background-size: 153px auto;
-		background-position: center 68%;
-*/
 		padding-left: 2%;
+		padding-top: 0;
 	}
 	.smart {
 		margin-top: 65px;
