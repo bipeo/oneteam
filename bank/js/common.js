@@ -126,12 +126,20 @@ function check_if_in_view() {
     var element_bottom_position = (element_top_position + element_height);
  
     //check to see if this current container is within viewport
-    if ((element_bottom_position >= window_top_position) &&
+   /* if ((element_bottom_position >= window_top_position) &&
         (element_top_position <= window_bottom_position)) {
       $element.addClass('in-view');
     } else {
       $element.removeClass('in-view');
+    } */
+      if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+     // $element.removeClass('in-view');
     }
+    
+    
   });
 }
 
