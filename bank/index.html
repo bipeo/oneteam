@@ -1001,7 +1001,7 @@
 				<h3 class="title_2">Отправьте заявку сейчас</h3>
 				<form id="form_main" action="#" method="post">
 					<div class="form left">
-						<label class="clearfix"><span class="left">ФИО</span><input type="text" data-validation-length="min5" placeholder="Иванов Иван Иванович"></label>
+						<label class="clearfix"><span class="left">ФИО</span><input type="text" data-validation="length" data-validation-length="min8" placeholder="Иванов Иван Иванович"></label>
 						<label class="clearfix"><span class="left">Телефон</span><input class="for_mask" type="text" placeholder="+7(___)__-__-__"></label>
 						<label class="clearfix"><span class="left">E-mail</span><input type="text" data-validation="email" placeholder="example@example.com"></label>
 					</div>
@@ -1015,16 +1015,16 @@
 								<option>Санкт-Петербург</option>
 							</select>
 						</label>
-						<label class="clearfix"><span class="left">Наименование организации</span><input type="text" placeholder="ООО «Ромашка»"></label>
-						<label class="clearfix"><span class="left">ИНН</span><input type="text" data-validation="number"  data-validation-length="min10" placeholder="000000000000"></label>
+						<label class="clearfix"><span class="left">Наименование организации</span><input type="text" data-validation="length"  data-validation-length="min5" placeholder="ООО «Ромашка»"></label>
+						<label class="clearfix"><span class="left">ИНН</span><input type="text"  data-validation="length"  data-validation-length="min10" placeholder="000000000000"></label>
 					</div>
 					<div class="captcha">
 						<img src="img/captcha.png" alt="">
-						<input type="text" placeholder="Введите код с картинки">
+						<input data-validation="length"  data-validation-length="min4" type="text" placeholder="Введите код с картинки">
 					</div>
 					<label class="checkbox"><input type="checkbox" data-validation="required">Я согласен <a href="">с условиями передачи</a> и обработки данных</label>
 					<div class="submit">
-						<a class="hvr-shutter-out-horizontal" href="#">Отправить заявку</a>
+						<a id="link_submit" class="hvr-shutter-out-horizontal" href="#">Отправить заявку</a>
 					</div>
 				</form>
 			</div>

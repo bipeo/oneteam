@@ -90,6 +90,10 @@ $(document).ready(function(){
 	  	form : '#form_main', 
 		lang : 'ru'
 	});
+	$('#link_submit').on('click', function() {
+		$(this).submit();
+		return false;
+	});
 });
 
 jQuery(window).scroll(function(){

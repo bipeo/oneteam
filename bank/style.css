@@ -1504,6 +1504,10 @@ border-radius: 5px;
 
 .tarif_pl {display: none;}
 
+.help-block.form-error {
+	display: none;
+}
+
 @media only screen and (max-width: 1279px) {
 	.center {
 		width: 100%;
