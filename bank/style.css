@@ -198,7 +198,7 @@ body {
         -moz-transition: background 0.5s linear;
         -webkit-transition: background 0.5s linear;
         transition: background 0.5s linear;
-        background: fixed url(img/bg_1.jpg) no-repeat center 0px  / cover; 
+        /*background: fixed url(img/bg_1.jpg) no-repeat center 0px  / cover;*/
 	color: #000000;
 	font-family: 'helveticaneuecyrlight';
 	font-size: 14px;
@@ -246,6 +246,7 @@ h3, .title_2 {
 	min-width: 320px;
 	max-width: 2944px;
 	overflow: hidden;
+	z-index: 8;
 }
 
 .center {
@@ -2263,4 +2264,27 @@ header.center {
 		margin-left: 2%;
 		margin-right: 2%;
 	}
+}
+
+.wr-bg-1,
+.wr-bg-2,
+.wr-bg-3{
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	margin: 0 auto;
+}
+
+.wr-bg-1 img,
+.wr-bg-2 img,
+.wr-bg-3 img{
+	width: 100%;
+	height: 100%;
+}
+
+.wr-bg-1 {
+	opacity: 1;
 }
