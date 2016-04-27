@@ -1889,8 +1889,7 @@ header.center {
 	}
 }
 
-@media only screen and (max-width: 640px) {
-    
+@media only screen and (max-width: 660px) {
 	.block_3_ul_2 > li {
 		float: none;
 	}
@@ -1901,6 +1900,11 @@ header.center {
 	.block_3_ul_2 > li:nth-child(1), .block_3_ul_2 > li:nth-child(2), .block_3_ul_2 > li:nth-child(3) {
 		width: 90%;
 	}
+	
+}
+
+@media only screen and (max-width: 640px) {
+    
 	.accord_title, .answer_item {
 		font-size: 14px;
 	}
@@ -2231,7 +2235,7 @@ header.center {
 	}
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 430px) {
 	.logo {
 		width: 140px;
 	}
