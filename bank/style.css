@@ -2258,4 +2258,9 @@ header.center {
 	.header_right {
 		margin-top: 27px;
 	}
+	.block_3_ul_2 {
+		display: block;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
 }
