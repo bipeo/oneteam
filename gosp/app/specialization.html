@@ -226,6 +226,7 @@
 				<p class="style_3 mb_3"><strong>Заведующий отделением лучевой диагностики</strong></p>
 				<p class="mb_4">Кандидат медицинских наук</p>
 				<span class="wrap_btn_1 style_specialization"><a class="btn_1 show_visit" href="#">запись на прием</a></span>
+				<a class="new_link_1" href="#our-spec">Все врачи отделения</a>
 				<h3 class="title_under_2 mb_5">услуги</h3>
 			</div><!-- END wrap_foto_doctors -->
 			<!-- srecialization_accord -->
@@ -275,6 +276,7 @@
 					</div>
 				</div>
 			</div><!-- END srecialization_accord -->
+			<a class="new_link_1" href="#price_uslug">Стоимость услуг</a>
 		</div><!-- END block_8_2 -->
 	</div><!-- END block_8 -->
 	<!-- center_3 -->
@@ -349,7 +351,7 @@
 	</div><!-- END blue_bg -->
 	<!-- special -->
 	<div class="center_2 special pb_2">
-		<h3 class="title_under_2">Наши специалисты</h3>
+		<h3 id="our-spec" class="title_under_2">Наши специалисты</h3>
 		<p>С удовольствием представляем вам  наших врачей &ndash; специалистов экспертного уровня, многие из которых имеют высшую квалификационную категорию, большой опыт работы в ведущих российских и зарубежных клиниках, международные профессиональные сертификаты.</p>
 		<!-- workers_block -->
 		<div class="workers_block pb_0">
@@ -458,7 +460,7 @@
 	<div class="blue_bg pt_6">
 		<!-- center_3 -->
 		<div class="center_3">
-			<h3 class="title_under_2">Оснащение отделения</h3>
+			<h3 id="price_uslug" class="title_under_2">Оснащение отделения</h3>
 			<p class="ml_3">Компьютерная томография в Клиническом госпитале на Яузе выполняется по строгим международным протоколам, а ее результаты принимаются в любой точке мира, что важно для пациентов, планирующих пройти отдельные этапы лечения за рубежом. Стоимость обследования в России гораздо доступнее, чем в зарубежных клиниках.</p>
 			<p class="ml_3">Стоимость услуг отделения компьютерной томографии вы можете посмотреть в <a href="#"><strong>прайсе</strong></a>.</p>
 			<ul class="ul_10 box_shadow">
@@ -675,15 +677,6 @@ $(function() {
 		$(this).next('.program_answer').slideToggle(500);
 		$(this).toggleClass('open');
 	});
-
-	// перемотка
-    $('.program_white__link a').click(function(event) {
-        event.preventDefault();
-       
-		var my_attr = $(this).attr('href').substring(1);
-		gotoblock(my_attr);
-    });
-	
 	
 	$('#bx_slider_2 ul').bxSlider({
 		controls: false,
@@ -699,21 +692,27 @@ $(function() {
 			e.preventDefault();
 			$(this).toggleClass('menu_mobile_show');
 		});
-});
+	
+	 // перемотка
+    $('.new_link_1').click(function(event) {
+        event.preventDefault();
 
+        var my_attr = $(this).attr('href').substring(1);
+        gotoblock(my_attr);
+    });
+});
+	
 function gotocoord(val){
-	$("html,body").stop(true, true).animate({'scrollTop': - height1 + "px"}, 1500);
+    $("html,body").stop(true, true).animate({'scrollTop': val-160}, 750);
 }
 
 function gotoblock(id){
-	var obj = $('#'+id),
-        height = 0  ;
-        if($('#header').css('position') !== 'static' || $('#header').css('position') !== 'relative') {
-           height1 = $('#header').outerHeight();
-          }
-	var destination = obj.offset().top - height1;
-	$("html,body").stop(true, true).animate({'scrollTop':  destination + 'px'}, 1000);
+    var obj = $('#'+id);
+    var destination = obj.offset().top;
+    $("html,body").stop(true, true).animate({'scrollTop': destination-160}, 750);
 }
+
+	
 </script>
 <!-- DELETE DELETE DELETE DELETE DELETE DELETE DELETE -->
 <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
