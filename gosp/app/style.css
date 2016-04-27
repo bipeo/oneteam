@@ -640,6 +640,7 @@ h4{font-size: 18px;}
 	font-size: 28px;
 	left: 30px;
 	line-height: 1.2;
+	padding-right: 7px;
 	position: absolute;
 	top: 154px;
 	width: 449px;
@@ -3489,8 +3490,10 @@ footer {
 }
 
 .ml_2 > li {
-	margin-bottom: 26px;
+	background-position: 0 2px;
+	margin-bottom: 20px;
 	padding-left: 28px;
+	padding-bottom: 6px;
 }
 
 .block_7 {
@@ -3631,7 +3634,7 @@ footer {
 	height: 54px;
 	line-height: 54px;
 	text-align: center;
-	width: 160px;
+	min-width: 160px;
 }
 
 .menu li.active, .menu li:hover {
@@ -3792,6 +3795,7 @@ footer {
 	color: #002e5c;
 	display: inline-block;
 	vertical-align: top;
+	width: 77px;
 }
 
 .spec_descript {
@@ -4122,6 +4126,14 @@ footer {
 }
 
 /*========================== END cooperation ==========================*/
+
+.new_link_1 {
+	border-bottom: 1px dashed #c0a35f;
+	color: #c0a35f;
+	display: inline-block;
+	margin: 35px 0 0 18%;
+	text-transform: uppercase;
+}
 
 /*========================== media ==========================*/
 
@@ -5395,6 +5407,8 @@ footer {
 @media only screen and (max-width: 739px) {
 	.map.left {
 		float: none;
+		height: 440px;
+		min-height: auto;
 		width: 100%;
 	}
 
@@ -5960,6 +5974,9 @@ footer {
 	.history .btn_2 {
 		margin-left: 0;
 	}
+	.wrap_doctors_content {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -5990,6 +6007,11 @@ footer {
 		width: 100%;
 	}
 	.block_diagnost {display: block;}
+	.map.left {
+		height: 200px;
+		min-height: auto;
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 475px) {
@@ -6039,7 +6061,7 @@ footer {
 	.block_8_2 .specialization__title, .block_8_2 .style_3.mb_3, .block_8_2 .mb_4 {
 		margin-left: 2%;
 	}
-	/*========================== УТВ specialization page ==========================*/
+	/*========================== END specialization page ==========================*/
 	
 }
 
