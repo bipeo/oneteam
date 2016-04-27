@@ -3,7 +3,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, sub, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -276,7 +276,6 @@ h4{font-size: 18px;}
 
 .block_1 {
 	background: url(img/bg_1.jpg) no-repeat center top /cover;
-        background-color:#002e5c;
 }
 
 .logo {
@@ -1341,8 +1340,7 @@ footer {
 /*========================== внутренние ==========================*/
 
 .page_about_us .block_1 {
-	background: url(img/man.png) no-repeat right -89px bottom;
-        background-color:#002e5c;
+	background: url(img/man.png) no-repeat right -89px bottom;	
 	padding-top: 160px;
 }
 
@@ -2767,10 +2765,6 @@ footer {
 	text-decoration: underline;
 }
 
-.doctors_content li a, .program_answer a {
-	text-decoration: underline;
-}
-
 .doctors_content .title_under_2 {
 	font-size: 28px;
 	margin: 58px 0 0 0;
@@ -3598,9 +3592,6 @@ footer {
 
 .blue_title span {color: #00ccff;}
 
-.gold_title {color: #ffffff;}
-.gold_title span {color: #c0a35f;}
-
 /*========================== specialization page ==========================*/
 
 .specialization_bg {
@@ -3734,8 +3725,7 @@ footer {
 
 .srecialization_accord .program_answer a {
 	color: #fff;
-	margin-bottom: 10px;
-	margin-right: 5px;
+	margin-bottom: 3px;
 	text-decoration: underline;
 }
 .srecialization_accord .program_answer span {
@@ -3785,7 +3775,7 @@ footer {
 .width_2 {
 	display: inline-block;
 	vertical-align: top;
-	width: 755px;
+	width: 763px;
 }
 
 .width_3 {
