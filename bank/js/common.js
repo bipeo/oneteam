@@ -172,7 +172,7 @@ function check_if_in_view(e) {
           run_animate = false;
       })
   }
-  else if (block_3_top_position < window_top_position + 400 && !run_animate) {
+  else if (block_3_top_position < window_top_position + 400 && !run_animate) {//400 was
       if ($(".wr-bg-2").css('opacity') == 1) {
           return;
       }
