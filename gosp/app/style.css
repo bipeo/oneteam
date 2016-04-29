@@ -979,7 +979,8 @@ h4{font-size: 18px;}
 }
 
 .map {
-	min-height: 440px;
+	height: 440px;
+	min-height: auto;
 	width: calc(100% - 450px);
 }
 .map.ctx {
@@ -3646,6 +3647,7 @@ footer {
 .menu li a {
 	color: #fff;
 	display: block;
+	padding: 0 10px;
 	text-transform: uppercase;
 }
 
@@ -3788,14 +3790,15 @@ footer {
 .width_2 {
 	display: inline-block;
 	vertical-align: top;
-	width: 755px;
+	width: 725px;
 }
 
 .width_3 {
 	color: #002e5c;
 	display: inline-block;
 	vertical-align: top;
-	width: 77px;
+	text-align: right;
+	width: 107px;
 }
 
 .spec_descript {
