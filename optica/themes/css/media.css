@@ -110,6 +110,7 @@
 	.block_1 {
 		height: auto;
 		line-height: 1.2;
+        overflow: hidden;
 		padding: 20px 0 15px 0;
 	}
 	.block_2 {margin-top: 0;}
