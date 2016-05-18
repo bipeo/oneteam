@@ -22,9 +22,7 @@
                 <li><a href="">О компании</a></li>
                 <li><a href="">Контакты/салоны</a></li>
             </ul>
-            <div class="header_basket right">
-                4500 руб
-            </div>
+            <a href="#" class="header_basket right">4500 руб</a>
 	    </div>
 	</header>
 	<div class="center block_1">
@@ -42,15 +40,15 @@
             <span class="txt_2">Пн-пт 9:00 — 18:00 МСК</span>
 	    </div>
         <div class="owl_wrap">
-            <div class="owl_carousel">
+            <div class="owl-carousel">
                 <div class="item">
                     <img src="file/i_pic/slide_1.jpg" alt="">
                 </div>
                 <div class="item">
-                    <img src="file/i_pic/slide_1.jpg" alt="">
+                    <img src="file/i_pic/slide_1.jpg" alt="">                    
                 </div>
                 <div class="item">
-                    <img src="file/i_pic/slide_1.jpg" alt="">
+                    <img src="file/i_pic/slide_1.jpg" alt="">                    
                 </div>
             </div>
         </div>
@@ -63,8 +61,20 @@
                     <span class="span_2">Срочное изготовление очков - за 1 час</span>
                     <span class="span_3">Сертифицированное качество товаров <br>   Ремонт очков любой сложности</span>
                 </li>
-                <li></li>
-                <li></li>
+                <li>
+                    <span class="span_1 mb1">Диагностика и лечение глазных заболеваний</span>
+                    <span class="span_3">Аппаратное лечение глазных заболеваний
+                        Диагностика и лечение глаукомы и катаракты
+                        Прием детей от 0 лет</span>
+                </li>
+                <li>
+                    <span class="span_1">Контактные линзы
+                        и средства ухода
+                    </span>
+                    <div class="span span_3">Подарки при покупке <br>
+                        Интернет-магазин <br>
+                        Бесплатный подбор контактных линз</div>
+                </li>
             </ul>
 	    </div>
 	</div>
@@ -76,22 +86,27 @@
 <script src="themes/js/cust.js"></script>
 <script type="text/javascript">
 	$(function(){
-//		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
+		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 <script>
-//    $('.owl_carousel').owlCarousel({
-//        items: 1
-//        loop: true
-//    });
-    var owl = $('.owl_carousel');
+    var owl = $('.owl-carousel');
     owl.owlCarousel({
         items: 1,
         loop:true,
+        nav:true,
+        navText: "",
+        rtl:true,
         autoplay:true,
         autoplayTimeout: 3000,
         autoplayHoverPause:true
     });
+    $('.play').on('click',function(){
+        owl.trigger('autoplay.play.owl',[1000])
+    })
+    $('.stop').on('click',function(){
+        owl.trigger('autoplay.stop.owl')
+    })
 </script>
 
 </body>

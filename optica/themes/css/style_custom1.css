@@ -8,7 +8,6 @@ body {
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: 'PFDinTextCondProLight';
 }
 
 html, body {
@@ -71,6 +70,19 @@ a {color: #000; text-decoration: none;}
 .header .top_menu li a {
     display: block;
     font-size: 17px;
+}
+
+.header .header_basket {
+    background: url(../img/basket_ico.png) no-repeat left center;
+    color: #6d2885;
+    font-size: 19px;
+    margin: 0 189px 0 0;
+    padding: 0 0 0 40px;
+    text-decoration: underline;
+}
+
+.header .header_basket:hover {
+    opacity: .2;
 }
 
 .block_1 .logo {
@@ -144,6 +156,7 @@ a {color: #000; text-decoration: none;}
 
 .block_1 .owl_wrap {
     clear: both;
+    margin: 0 0 43px 0;
     overflow: hidden;
 }
 
@@ -151,5 +164,97 @@ a {color: #000; text-decoration: none;}
     background: #9147aa;
 }
 
+.block_1 .owl_wrap .owl-dots {
+    text-align: center;
+}
+
+.block_1 .owl_wrap .owl-dot {
+    background: #e6e6e6;
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    margin: 0 5px;
+    width: 15px;
+}
+
+.block_1 .owl_wrap .owl-dot.active {
+    background: #898989;
+}
+
+.block_1 .owl_wrap .owl-dot span {display: none;}
+
+.block_1 .owl_wrap .owl-prev, .block_1 .owl_wrap .owl-next {
+    background: url(../owl.carousel/custom/arrow.png) no-repeat;
+    height: 24px;
+    position: absolute;
+    width: 14px;
+}
+
+.block_1 .owl_wrap .owl-prev {
+    background-position: 0 0;
+    bottom: 0;
+    left: 45%;
+}
+
+.block_1 .owl_wrap .owl-next {
+    background-position: -14px 0;
+    bottom: 0;
+    right: 45%;
+}
+
+.block_1 .owl_wrap .owl-nav {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.block_1 .owl-carousel .owl-stage-outer {
+    margin: 0 0 17px 0;
+}
+
+.block_2 .block_2_ul {
+    overflow: hidden;
+}
+
+.block_2 .block_2_ul > li {
+    color: #ffffff;
+    float: left;
+    height: 240px;
+    padding-top: 21px;
+    width: 390px;
+}
+
+.block_2 .block_2_ul > li:first-child {
+    padding-left: 35px;
+    padding-right: 15px; 
+}
+
+.block_2 .block_2_ul > li:nth-child(2) {
+    padding-left: 85px;
+}
+
+.block_2 .block_2_ul > li .span_1, .block_2 .block_2_ul > li .span_2 {
+    display: block;
+    font-size: 30px;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+.block_2 .block_2_ul > li .span_1 {
+    line-height: 28px;
+    padding-bottom: 5px;
+}
+
+.block_2 .block_2_ul > li .span_2 {
+    font-size: 24px;
+    letter-spacing: -1px;
+    padding: 0 0 25px 0;
+}
+
+.block_2 .block_2_ul > li .span_3 {
+    display: block;
+    font-size: 20px;
+    line-height: 22px;
+}
 
 
