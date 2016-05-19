@@ -265,6 +265,41 @@
         </div>
         <a class="link_1" href="#">Показать еще</a>
 	</div>
+	<div class="form_1">
+	    <div class="center">
+	        <div class="form_1_block">
+	            <div class="form_descript">
+                    <span>Бесплатный</span> 
+                    подбор очков и контактных линз
+	            </div>
+	            <div>
+	                <input class="form_submit" type="submit" value="Записаться на прием">
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="owl_wrap_2">
+        <div class="owl-carousel">
+            <div class="item">
+                <img src="file/i_pic/slide_item_1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="file/i_pic/slide_item_2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="file/i_pic/slide_item_3.jpg" alt="">
+            </div>
+            <div>
+                <img src="file/i_pic/slide_item_4.jpg" alt="">
+            </div>
+            <div>
+                <img src="file/i_pic/slide_item_5.jpg" alt="">
+            </div>
+        </div>
+	</div>
+	<div class="block_gray">
+	    
+	</div>
 </div>
 <script src="option/js/jquery-1.11.3.min.js"></script>
 <script src="themes/owl.carousel/owl.carousel.min.js"></script>
@@ -272,11 +307,11 @@
 <script src="themes/js/cust.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
+//		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 <script>
-    var owl = $('.owl-carousel');
+    var owl = $('.owl_wrap .owl-carousel');
     owl.owlCarousel({
         items: 1,
         loop:true,
@@ -293,6 +328,15 @@
     $('.stop').on('click',function(){
         owl.trigger('autoplay.stop.owl')
     })
+    
+    $('.owl_wrap_2 .owl-carousel').owlCarousel({
+        autoplay:true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause:true,
+        dots: false,
+        loop:true,
+        margin: 4
+    });
 </script>
 
 </body>
