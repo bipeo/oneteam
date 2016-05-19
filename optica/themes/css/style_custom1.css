@@ -4,17 +4,9 @@ body {
     padding: 0;
 }
 
-* {
-    -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
 html, body {
     line-height:normal;
 }
-
-ul li {list-style-type: none;}
 
 a {color: #000; text-decoration: none;}
 
@@ -35,8 +27,8 @@ a {color: #000; text-decoration: none;}
     visibility:hidden
 }
 
-.left {float: left;}
-.right {float: right;}
+.wrapper .left {float: left;}
+.wrapper .right {float: right;}
 
 .wrapper {
     font-family: 'PFDinTextCondProRegular';
@@ -46,12 +38,12 @@ a {color: #000; text-decoration: none;}
 	overflow: hidden;
 }
 
-.center {
+.wrapper .center {
 	margin: 0 auto;
 	width: 1280px;
 }
 
-.header {
+.wrapper .header {
     background: #f2f2f2;
     height: 47px;
     line-height: 47px;
@@ -61,6 +53,7 @@ a {color: #000; text-decoration: none;}
 
 .header .top_menu li {
     float: left;
+    list-style-type: none;
 }
 
 .header .top_menu li + li {
@@ -82,7 +75,7 @@ a {color: #000; text-decoration: none;}
 }
 
 .header .header_basket:hover {
-    opacity: .2;
+    opacity: .7;
 }
 
 .block_1 .logo {
@@ -106,6 +99,10 @@ a {color: #000; text-decoration: none;}
 .block_1 .ul_1 {
     margin: 17px 157px 0 0;
     width: 225px;
+}
+
+.block_1 .ul_1 > li {
+    list-style-type: none;
 }
 
 .block_1 .ul_1 > li a {
@@ -154,63 +151,9 @@ a {color: #000; text-decoration: none;}
     margin: 20px 0 0 0;
 }
 
-.block_1 .owl_wrap {
-    clear: both;
-    margin: 0 0 43px 0;
-    overflow: hidden;
-}
-
 .block_2 {
     background: #9147aa;
     margin: 0 0 54px 0;
-}
-
-.block_1 .owl_wrap .owl-dots {
-    text-align: center;
-}
-
-.block_1 .owl_wrap .owl-dot {
-    background: #e6e6e6;
-    border-radius: 50%;
-    display: inline-block;
-    height: 15px;
-    margin: 0 5px;
-    width: 15px;
-}
-
-.block_1 .owl_wrap .owl-dot.active {
-    background: #898989;
-}
-
-.block_1 .owl_wrap .owl-dot span {display: none;}
-
-.block_1 .owl_wrap .owl-prev, .block_1 .owl_wrap .owl-next {
-    background: url(../owl.carousel/custom/arrow.png) no-repeat;
-    height: 24px;
-    position: absolute;
-    width: 14px;
-}
-
-.block_1 .owl_wrap .owl-prev {
-    background-position: 0 0;
-    bottom: 0;
-    left: 45%;
-}
-
-.block_1 .owl_wrap .owl-next {
-    background-position: -14px 0;
-    bottom: 0;
-    right: 45%;
-}
-
-.block_1 .owl_wrap .owl-nav {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-}
-
-.block_1 .owl-carousel .owl-stage-outer {
-    margin: 0 0 17px 0;
 }
 
 .block_2 .block_2_ul {
@@ -221,6 +164,7 @@ a {color: #000; text-decoration: none;}
     color: #ffffff;
     float: left;
     height: 240px;
+    list-style-type: none;
     padding-top: 21px;
     width: 390px;
 }
@@ -272,7 +216,7 @@ a {color: #000; text-decoration: none;}
     line-height: 22px;
 }
 
-.title_1 {
+.wrapper .title_1 {
     color: #000000;
     display: block;
     font-size: 32px;
@@ -284,18 +228,18 @@ a {color: #000; text-decoration: none;}
     margin: 25px 0 0 15px;
 }
 
-.wrap_img {
+.wrapper .wrap_img {
     height: 168px;
     text-align: center;
 }
 
-.wrap_img img {
+.wrapper  .wrap_img img {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.products {
+.wrapper  .products {
     margin-bottom: 39px;
 }
 
@@ -477,6 +421,7 @@ a {color: #000; text-decoration: none;}
     color: #272727;
     float: left;
     font-size: 25px;
+    list-style-type: none;
     line-height: 26px;
     text-align: center;
     width: 255px;
@@ -495,45 +440,37 @@ a {color: #000; text-decoration: none;}
     color: #2796c5;
 }
 
-.owl_wrap_2 {
-    overflow: hidden;
-}
-
-.owl_wrap_2 .owl-item img {
-    height: 272px;
-}
-
 .block_gray .link_1 {
     margin-top: 83px;
 }
 
-.map {
+.wrapper .map {
     border-top: 4px solid #fff;
     height: 420px;
 }
 
-.menu_bottom {
+.wrapper .menu_bottom {
     border-bottom: 1px solid #cfcfcf;
     text-align: center;
 }
 
-.menu_bottom a {
+.wrapper .menu_bottom a {
     color: #000000;
     display: inline-block;
     font-size: 17px;
     padding: 16px 0 8px 0;
 }
 
-.menu_bottom a + a {
+.wrapper .menu_bottom a + a {
     margin-left: 19px;
 }
 
-.footer {
+.wrapper .footer {
     padding: 0 0 20px 0;
     overflow: hidden;
 }
 
-.footer .footer_contacts {
+.wrapper .footer .footer_contacts {
     border-right: 1px solid #cfcfcf;
     color: #000000;
     font-family: 'PFDinTextCondProLight';
@@ -595,7 +532,15 @@ a {color: #000; text-decoration: none;}
     clear: both;
 }
 
-.footer .footer_right .site_count {
-    display: block;
+.footer .footer_right .count_site {
     margin: 35px 0 0 0;
+    overflow: hidden;
+}
+
+.footer .footer_right .count_site > li {
+    float: left;
+}
+
+.footer .footer_right .count_site > li + li {
+    margin-left: 3px;
 }
