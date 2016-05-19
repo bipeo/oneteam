@@ -128,18 +128,18 @@ a {color: #000; text-decoration: none;}
     background: url(../img/ico_2.png) no-repeat 4px 3px;
 }
 
-.block_1 .block_phone .number_phone {
+.block_1 .block_phone .number_phone, .footer .footer_right .block_phone .number_phone {
     display: block;
     font-family: "MyriadProRegular";
     font-size: 36px;
     margin: 0 0 10px 0;
 }
 
-.block_1 .block_phone .number_phone span {
+.block_1 .block_phone .number_phone span, .footer .block_phone .number_phone span {
     font-size: 26px;
 }
 
-.block_1 .txt_1, .txt_2 {
+.block_1 .txt_1, .txt_2, .footer .txt_1 {
     color: #505a6b;
     display: block;
     font-family: 'PT Sans';
@@ -529,16 +529,73 @@ a {color: #000; text-decoration: none;}
 }
 
 .footer {
+    padding: 0 0 20px 0;
     overflow: hidden;
 }
 
 .footer .footer_contacts {
+    border-right: 1px solid #cfcfcf;
+    color: #000000;
+    font-family: 'PFDinTextCondProLight';
     font-size: 17px;
     line-height: 25px;
-    padding: 0 0 0 34px;
-    width: 512px;
+    margin: 21px 0 0 0;
+    padding: 0 0 0 27px;
+    width: 506px;
 }
 
 .footer .footer_contacts span {
     color: #2796c5;
+}
+
+.footer .footer_right {
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    width: 736px;
+}
+
+.footer .footer_right .block_phone .number_phone {
+    font-family: 'PFDinTextCondProRegular'; 
+    font-size: 41px;
+    margin-bottom: 0;
+}
+
+.footer .block_phone .number_phone span {
+    font-size: 30px;
+}
+
+.footer .footer_right .soc_btn {
+    margin: 12px 0 0 89px;
+}
+
+.footer .footer_right .soc_btn a {
+    border-radius: 7px;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+
+.footer .footer_right .soc_btn a + a {
+    margin-left: 10px;
+}
+
+.footer .footer_right .soc_btn a.vk {
+    background: url(../img/vk.png) no-repeat;
+}
+
+.footer .footer_right .soc_btn a.inst {
+    background: url(../img/inst.png) no-repeat;
+}
+
+.footer .footer_right .block_phone {
+    margin: 0 0 31px 0;
+}
+
+.footer .footer_right .link_2 {
+    clear: both;
+}
+
+.footer .footer_right .site_count {
+    display: block;
+    margin: 35px 0 0 0;
 }

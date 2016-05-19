@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="option/css/style_css_php.css" type="text/css">
 	<link rel="stylesheet" href="option/css/fonts/style.css" type="text/css">
 	<link rel="stylesheet" href="themes/owl.carousel/owl.carousel.css">
+	<link rel="stylesheet" href="themes/owl.carousel/animate.css">
 	<link rel="stylesheet" href="themes/css/style_custom1.css" type="text/css"> 
 </head>
 <body>
@@ -334,7 +335,22 @@
             пр. Сююмбике, 47/06Б (Новый город, 47/06Б), тел.: 47-70-50 <br>
             <span>Елабуга</span>, пр. Мира, 25 <br>
             <span>Заинск</span>, пр. Нефтяников, 30 
-
+        </div>
+        <div class="footer_right right">
+            <div class="block_phone left">
+                <span class="number_phone"><span>(8552)</span> 710-710</span>
+                <span class="txt_1">Единый справочный телефон</span>
+                <span class="txt_2">Пн-пт 9:00 — 18:00 МСК</span>
+            </div>
+            <div class="soc_btn left">
+                <a href="#" class="vk"></a>
+                <a href="#" class="inst"></a>
+            </div>
+            <div class="link_2">
+                <a href="#"><img src="themes/img/btn_1.png" alt="" /></a>
+                <a href="#"><img src="themes/img/btn_2.png" alt="" /></a>
+            </div>
+            <img class="site_count" src="themes/img/schetchik.png" alt="">
         </div>
     </footer>
 </div>
@@ -345,7 +361,7 @@
 <script src="themes/js/cust.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
+//		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 <script>
@@ -358,7 +374,9 @@
         rtl:true,
         autoplay:true,
         autoplayTimeout: 3000,
-        autoplayHoverPause:true
+        autoplayHoverPause:true,
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX'
     });
     $('.play').on('click',function(){
         owl.trigger('autoplay.play.owl',[1000])
@@ -371,8 +389,6 @@
         autoplay:true,
         autoplayTimeout: 3000,
         autoplayHoverPause:true,
-//        autoHeight: false,
-//        autoHeightClass: 'owl_height',
         dots: false,
         loop:true,
         margin: 4,
