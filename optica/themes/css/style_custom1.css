@@ -8,8 +8,6 @@ html, body {
     line-height:normal;
 }
 
-ul li {list-style-type: none;}
-
 a {color: #000; text-decoration: none;}
 
 .clearfix {
@@ -55,6 +53,7 @@ a {color: #000; text-decoration: none;}
 
 .header .top_menu li {
     float: left;
+    list-style-type: none;
 }
 
 .header .top_menu li + li {
@@ -100,6 +99,10 @@ a {color: #000; text-decoration: none;}
 .block_1 .ul_1 {
     margin: 17px 157px 0 0;
     width: 225px;
+}
+
+.block_1 .ul_1 > li {
+    list-style-type: none;
 }
 
 .block_1 .ul_1 > li a {
@@ -161,6 +164,7 @@ a {color: #000; text-decoration: none;}
     color: #ffffff;
     float: left;
     height: 240px;
+    list-style-type: none;
     padding-top: 21px;
     width: 390px;
 }
@@ -417,6 +421,7 @@ a {color: #000; text-decoration: none;}
     color: #272727;
     float: left;
     font-size: 25px;
+    list-style-type: none;
     line-height: 26px;
     text-align: center;
     width: 255px;
