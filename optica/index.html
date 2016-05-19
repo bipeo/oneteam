@@ -9,7 +9,14 @@
 	<link rel="stylesheet" href="option/css/fonts/style.css" type="text/css">
 	<link rel="stylesheet" href="themes/owl.carousel/owl.carousel.css">
 	<link rel="stylesheet" href="themes/owl.carousel/animate.css">
+	<link rel="stylesheet" href="themes/owl.carousel/custom/custom.css">
 	<link rel="stylesheet" href="themes/css/style_custom1.css" type="text/css"> 
+    <script src="option/js/jquery-1.11.3.min.js"></script>
+    <script src="themes/owl.carousel/owl.carousel.min.js"></script>
+    <script src="themes/owl.carousel/custom/custom.js"></script>
+    <script src="themes/js/jquery.matchHeight-min.js"></script>
+    <script src="themes/js/jquery.pixlayout.0.9.7.js"></script>
+    <script src="themes/js/cust.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -354,61 +361,11 @@
         </div>
     </footer>
 </div>
-<script src="option/js/jquery-1.11.3.min.js"></script>
-<script src="themes/owl.carousel/owl.carousel.min.js"></script>
-<script src="themes/js/jquery.matchHeight-min.js"></script>
-<script src="themes/js/jquery.pixlayout.0.9.7.js"></script>
-<script src="themes/js/cust.js"></script>
+
 <script type="text/javascript">
 	$(function(){
 //		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
-<script>
-    var owl = $('.owl_wrap .owl-carousel');
-    owl.owlCarousel({
-        items: 1,
-        loop:true,
-        nav:true,
-        navText: "",
-        rtl:true,
-        autoplay:true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause:true,
-        animateOut: 'slideOutDown',
-        animateIn: 'flipInX'
-    });
-    $('.play').on('click',function(){
-        owl.trigger('autoplay.play.owl',[1000])
-    })
-    $('.stop').on('click',function(){
-        owl.trigger('autoplay.stop.owl')
-    })
-    
-    $('.owl_wrap_2 .owl-carousel').owlCarousel({
-        autoplay:true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause:true,
-        dots: false,
-        loop:true,
-        margin: 4,
-        nav: false,
-        responsiveClass:true,
-        responsive:{
-            1280:{
-                items:3,
-            },
-            1540: {
-                items:4,
-            },
-            1920:{
-                items:5,
-            }
-        }
-    });
-    
-    $('.ul_2 > li').matchHeight();
-</script>
-
 </body>
 </html>
