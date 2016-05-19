@@ -298,16 +298,54 @@
         </div>
 	</div>
 	<div class="block_gray">
-	    
+	    <div class="center">
+	        <ul class="ul_2">
+                <li><a href="#">Скидки и акции <br> для льготных категорий граждан</a></li>
+                <li><a href="#">Гарантия на очки <br> от 6 месяцев</a></li>
+                <li><a href="#">Квалифицированный медицинский персонал <br> с опытом работы</a></li>
+                <li><a href="#">Высокоточное автоматическое оборудование японской фирмы «Tokubomatic»</a></li>
+                <li><a href="#">Официальный представитель ведущих производителей товаров для коррекции зрения</a></li>
+	        </ul>
+            <a href="#" class="link_1">Узнать подробнее о компании</a>
+	    </div>
 	</div>
+	<div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QTkCxOVq-b7ueSpSM4WzIro00lEgerVS&width=100%&height=420&lang=ru_UA&sourceType=constructor&scroll=true"></script>
+	</div>
+	<nav class="menu_bottom">
+        <div class="center">
+            <a href="">Главная</a>
+            <a href="">Акции</a>
+            <a href="">Интернет-магазин</a>
+            <a href="">Медицинский центр</a>
+            <a href="">О компании</a>
+            <a href="">Контакты/салоны</a>
+        </div>
+    </nav>
+    <footer class="footer center">
+        <div class="footer_contacts left">
+            <span>Альметьевск:</span> <br>
+            ул. Набережная Тукая, 93/100 (ГСЭ, 10/70), тел.: 47-70-70 <br>
+            ул. Ш.Усманова, 40А (Новый город, 41/18А), тел.: 47-70-60 <br>
+            пр. Набережночелнинский, 43А (Новый город, 32/01А), тел.: 47-71-91 <br>
+            пр. Автозаводский, 37 (Новый город, 20/05Б), тел.: 47-71-41 <br>
+            пр. Хасана Туфана, 5Е (Новый город, 4/09), тел.: 47-70-80 <br>
+            б-р Энтузиастов, 16 (Новый город, 1/11, ТК 105), тел.: 47-71-81 <br>
+            пр. Сююмбике, 47/06Б (Новый город, 47/06Б), тел.: 47-70-50 <br>
+            <span>Елабуга</span>, пр. Мира, 25 <br>
+            <span>Заинск</span>, пр. Нефтяников, 30 
+
+        </div>
+    </footer>
 </div>
 <script src="option/js/jquery-1.11.3.min.js"></script>
 <script src="themes/owl.carousel/owl.carousel.min.js"></script>
+<script src="themes/js/jquery.matchHeight-min.js"></script>
 <script src="themes/js/jquery.pixlayout.0.9.7.js"></script>
 <script src="themes/js/cust.js"></script>
 <script type="text/javascript">
 	$(function(){
-//		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
+		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 <script>
@@ -333,10 +371,15 @@
         autoplay:true,
         autoplayTimeout: 3000,
         autoplayHoverPause:true,
+//        autoHeight: false,
+//        autoHeightClass: 'owl_height',
         dots: false,
         loop:true,
-        margin: 4
+        margin: 4,
+        width: 384
     });
+    
+    $('.ul_2 > li').matchHeight();
 </script>
 
 </body>
