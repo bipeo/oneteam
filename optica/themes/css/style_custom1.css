@@ -218,7 +218,7 @@ a {color: #000; text-decoration: none;}
     line-height: 22px;
 }
 
-.title_1 {
+.wrapper .title_1 {
     color: #000000;
     display: block;
     font-size: 32px;
@@ -230,18 +230,18 @@ a {color: #000; text-decoration: none;}
     margin: 25px 0 0 15px;
 }
 
-.wrap_img {
+.wrapper .wrap_img {
     height: 168px;
     text-align: center;
 }
 
-.wrap_img img {
+.wrapper  .wrap_img img {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.products {
+.wrapper  .products {
     margin-bottom: 39px;
 }
 
