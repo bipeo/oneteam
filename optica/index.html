@@ -392,7 +392,19 @@
         dots: false,
         loop:true,
         margin: 4,
-        width: 384
+        nav: false,
+        responsiveClass:true,
+        responsive:{
+            1280:{
+                items:3,
+            },
+            1540: {
+                items:4,
+            },
+            1920:{
+                items:5,
+            }
+        }
     });
     
     $('.ul_2 > li').matchHeight();
