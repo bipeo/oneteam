@@ -162,6 +162,7 @@ a {color: #000; text-decoration: none;}
 
 .block_2 {
     background: #9147aa;
+    margin: 0 0 54px 0;
 }
 
 .block_1 .owl_wrap .owl-dots {
@@ -279,8 +280,12 @@ a {color: #000; text-decoration: none;}
     text-decoration: underline;
 }
 
+.products_main {
+    margin: 25px 0 0 15px;
+}
+
 .wrap_img {
-    height: 209px;
+    height: 168px;
     text-align: center;
 }
 
@@ -290,17 +295,48 @@ a {color: #000; text-decoration: none;}
     transform: translateY(-50%);
 }
 
+.products {
+    margin-bottom: 39px;
+}
+
 .products .products_main > div {
     border: 1px solid #d5d5d5;
     float: left;
+    height: 337px;
+    margin: 0 16px 15px 0;
+    padding: 0 0 11px 0;
+    position: relative;
     text-align: center;
     width: 234px;
+}
+
+.products .products_main > div:nth-child(5n) {
+    margin-right: 0;
+}
+
+.products .products_main > div .border_hover {
+    border: 4px solid transparent;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+
+.products .products_main > div:hover {
+    border-color: transparent;
+}
+
+.products .products_main > div:hover .border_hover {
+    border: 4px solid #cc9edc;
 }
 
 .products .products_main .products_name {
     color: #269cd0;
     display: block;
+    font-family: 'PFDinTextCompProRegular';
     font-size: 23px;
+    margin: 10px 0 8px 0;
     text-decoration: underline;
 }
 
@@ -309,4 +345,121 @@ a {color: #000; text-decoration: none;}
     font-size: 16px;
 }
 
+.products_main .produts_price {
+    display: table;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
 
+.products_main .produts_price div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.products_main .produts_price div:nth-child(2) {
+    text-align: left;
+}
+
+.products_main .produts_price span {
+    font-family: 'PFDinTextCompProRegular';
+    font-size: 28px;
+}
+
+.products_main .produts_price .link_basket {
+    background: #702c87 url(../img/basket_ico_2.png) no-repeat center center;
+    border-radius: 50%;
+    display: inline-block;
+    height: 53px;
+    width: 53px;
+} 
+
+.products_main .produts_price .link_basket:hover {
+    background-color: #5cc4f1;
+}
+
+.products_main .hit {
+    background-color: rgba(92, 196, 241, 0.82);
+    border: 5px solid #fff;
+    border-radius: 50%;
+    color: #ffffff;
+    font-family: 'PFDinTextCompProRegular';
+    font-size: 21px;
+    height: 97px;
+    left: 50%;
+    line-height: 18px;
+    margin-left: -48px;
+    padding: 22px 0 0 0;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    top: 75px;
+    width: 97px;
+    z-index: 4;
+}
+
+.products_main .gray_line {
+    background: #d5d5d5;
+    border: none;
+    color: #d5d5d5;
+    height: 1px;
+    margin: 20px auto 0;
+    width: 206px;
+}
+
+.products .link_1 {
+    color: #3eb1e2;
+    display: block;
+    font-family: 'PFDinTextCompProRegular';
+    font-size: 21px;
+    margin: 16px 0 0 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.form_1 {
+    background: url(../img/form.jpg) no-repeat center top;
+    border: 4px solid #ffffff;
+    height: 166px;
+}
+
+.form_1 .form_1_block {
+    color: #ffffff;
+    display: table;
+    margin: 0 0 0 282px;
+}
+
+.form_1 .form_1_block > div {
+    display: table-cell;
+    height: 160px;
+    vertical-align: middle;
+}
+
+.form_1 .form_1_block > .form_descript {
+    font-size: 34px;
+    line-height: 38px;
+    padding: 0 55px 0 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.form_1 .form_1_block > .form_descript span {
+    display: block;
+    font-size: 49px;
+}
+
+.form_1 .form_1_block .form_submit {
+    background: transparent;
+    border: 3px solid #fff; 
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'PFDinTextCondProRegular';
+    font-size: 25px;
+    height: 48px;
+    line-height: 37px;
+    margin: 0;
+    padding: 0 38px;
+}
+
+.owl_wrap_2 {
+    border-bottom: 4px solid #fff;
+}
