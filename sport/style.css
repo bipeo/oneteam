@@ -136,6 +136,17 @@ input[type=submit] {
 	margin-right: auto;
     width: 1110px;
 }
+
+.btn {
+    background-color: #424e5c;
+    border-radius: 6px;
+    border-bottom: 3px solid #29303a;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+}
 /*========================== END ==========================*/
 
 body {
@@ -380,7 +391,12 @@ a {
 }
 
 #slider_1 .slick-prev {
+    background-position: 0 0;
     left: -59px;
+}
+
+#slider_1 .slick-prev:hover {
+    background-position: 0 -85px;
 }
 
 #slider_1 .slick-next {
@@ -388,3 +404,52 @@ a {
     right: -59px;
 }
 
+#slider_1 .slick-next:hover {
+    background-position: -29px -85px;    
+}
+
+#slider_1 .slick-slide {
+    position: relative;
+}
+
+.slider_title {
+    color: #29303a;
+    font-family: 'pt_sansbold';
+    font-size: 30px;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+}
+
+.slider_title span {
+    color: #535266;
+    display: block;
+    font-size: 82px;
+}
+
+.slider_content {
+    font-size: 15px;
+    position: absolute;
+    right: 87px;
+    top: 49px;
+    width: 375px;
+}
+
+.slider_descript {
+    line-height: 20px;    
+}
+
+.slider_content .btn {
+    display: block;
+    margin: 26px 0 0 2px;
+    text-align: center;
+    width: 188px;
+}
+
+.slider_content .btn img {
+    display: inline;
+/*    margin: 0 0 0 16px;*/
+    position: relative;
+    right: -15px;
+    top: -3px;
+    vertical-align: middle;
+}
