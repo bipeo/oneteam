@@ -1,0 +1,455 @@
+/*========================== reset.css ==========================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, time {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a, input, select, textarea {
+    outline: none;
+}
+
+img, input {
+	border: none;
+	height: auto;
+	max-width: 100%;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*========================== END reset.css ==========================*/
+
+@font-face {
+    font-family: 'pt_sans_narrowregular';
+    src: url('fonts/PTSans_narrow_regular/pt_sans-narrow-web-regular-webfont.eot');
+    src: url('fonts/PTSans_narrow_regular/pt_sans-narrow-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PTSans_narrow_regular/pt_sans-narrow-web-regular-webfont.woff2') format('woff2'),
+        url('fonts/PTSans_narrow_regular/pt_sans-narrow-web-regular-webfont.woff') format('woff'),
+        url('fonts/PTSans_narrow_regular/pt_sans-narrow-web-regular-webfont.ttf') format('truetype'),
+        url('fonts/PTSans_narrow_regular/pt_sans-narrow-web-regular-webfont.svg#pt_sans_narrowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url('fonts/PTSans_bold/pt_sans-web-bold-webfont.eot');
+    src: url('fonts/PTSans_bold/pt_sans-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PTSans_bold/pt_sans-web-bold-webfont.woff') format('woff'),
+        url('fonts/PTSans_bold/pt_sans-web-bold-webfont.ttf') format('truetype'),
+        url('fonts/PTSans_bold/pt_sans-web-bold-webfont.svg#pt_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sans_narrowbold';
+    src: url('fonts/pt_sans_narrow_bold/pt_sans-narrow-web-bold-webfont.eot');
+    src: url('fonts/pt_sans_narrow_bold/pt_sans-narrow-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/pt_sans_narrow_bold/pt_sans-narrow-web-bold-webfont.woff2') format('woff2'),
+        url('fonts/pt_sans_narrow_bold/pt_sans-narrow-web-bold-webfont.woff') format('woff'),
+        url('fonts/pt_sans_narrow_bold/pt_sans-narrow-web-bold-webfont.ttf') format('truetype'),
+        url('fonts/pt_sans_narrow_bold/pt_sans-narrow-web-bold-webfont.svg#pt_sans_narrowbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Conv_MinionPro-Regular';
+    src: url('fonts/MinionPro-Regular/MinionPro-Regular.eot');
+    src: local('☺'), url('fonts/MinionPro-Regular/MinionPro-Regular.woff') format('woff'), url('fonts/MinionPro-Regular/MinionPro-Regular.ttf') format('truetype'), url('fonts/MinionPro-Regular/MinionPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*========================== Общие классы ==========================*/
+
+.clearfix {
+    display:inline-block;
+}
+
+.clearfix {
+    zoom:1;
+    display:block;
+}
+
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+
+.left {float: left;}
+.right {float: right;}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+    width: 1110px;
+}
+
+.btn {
+    background-color: #424e5c;
+    border-radius: 6px;
+    border-bottom: 3px solid #29303a;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+}
+/*========================== END ==========================*/
+
+body {
+    font-family: 'pt_sans_narrowregular';
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1900px;
+}
+
+.header {
+    background-color: #424e5c;
+    color: #ffffff;
+    padding: 0 0 7px 0;
+}
+
+.header .center {
+    overflow: hidden;
+}
+
+.logo {
+    padding: 11px 0 7px 0;
+}
+
+.slogan {
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 2.3px;
+    padding: 27px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 570px;
+}
+
+.header_contacts {
+    padding: 28px 0 0 0;
+    position: relative;
+}
+
+.header_contacts:after {
+    background-color: rgba(179, 179, 189, 0.5);
+    content: '';
+    height: 104px;
+    left: -18px;
+    position: absolute;
+    top: 22px;
+    width: 1px;
+}
+
+.phone {
+    background: url(img/phone_ico.png) no-repeat left center;
+    color: #fefeff;
+    display: block;
+    font-size: 20px;
+    padding: 0 0 0 20px;
+}
+
+.mail {
+    background: url(img/mail_ico.png) no-repeat left center;
+    color: #fefeff;
+    display: block;
+    font-size: 14px;
+    line-height: 34px;
+    padding: 0 0 0 25px;
+    text-decoration: underline;
+}
+
+.enter_reg {
+    background-color: #adb3bd;
+    border-radius: 6px;
+    display: table;
+    margin: 2px 0 0 0;
+    padding: 3px 0;
+    width: 255px;
+}
+
+.enter_reg a {
+    color: #535266;
+    text-decoration: underline;
+}
+
+.enter_reg > div {
+    display: table-cell;
+    height: 29px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.enter_reg > div:first-child {
+    border-right: 1px solid #d6d9de;
+}
+
+.enter_reg > div:nth-child(2) {
+    border-left: 1px solid #848d9c;
+}
+
+.reg {
+    background: url(img/ico_reg.png) no-repeat left center;
+    padding: 0 0 0 19px;
+}
+
+.enter {
+    background: url(img/enter_ico.png) no-repeat left center;
+    padding: 0 0 0 15px;
+}
+
+.soc_btn {
+    overflow: hidden;
+}
+
+.soc_btn > li {
+    float: left;
+}
+
+.soc_btn > li a {
+    background-color: #adb3bd;
+    border-radius: 50%;
+    display: block;
+    height: 24px;
+    text-align: center;
+    width: 24px;
+}
+
+.quote {
+    background: url(img/ico_quote.png) no-repeat left 6px;
+    border-top: 1px dotted #7b818d;
+    clear: both;
+    padding: 3px 0 0 42px;
+    width: 825px;
+}
+
+.quote_txt {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.quote_author {
+    color: #adb3bd;
+    text-align: right;
+}
+
+.top_menu {
+    background: #eaeaf4;
+    height: 40px;
+}
+
+.top_menu ul {
+    overflow: hidden;
+    margin: 0 0 0 22px;
+}
+
+.top_menu li {
+    float: left;
+}
+
+.top_menu li + li {
+    margin-left: 169px;
+}
+
+.top_menu a {
+    color: #29303a;
+    display: block;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+.top_menu a:hover {
+    color: #075e82;
+    text-decoration: underline;
+}
+
+.menu_2 {
+    background-color: #29303a;
+    height: 60px;
+    line-height: 60px;
+}
+
+.menu_2 ul {
+    overflow: hidden;
+}
+
+.menu_2 li {
+    float: left;
+}
+
+.menu_2 .ico_menu_1 {
+    background: url(img/ico_menu_1.png) no-repeat 0 0;
+    display: inline-block;
+    height: 22px;
+    width: 37px;
+}
+
+.menu_2 li:hover .ico_menu_1 {
+    background-position: 0 -22px;
+}
+
+.menu_2 li a {
+    color: #ffffff;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 301px;
+}
+
+.menu_2 li a:hover {
+    background-color: #428ca5;
+}
+
+.slider_1 {
+    background: url(img/slider_1_bg.jpg) no-repeat;
+    height: 414px;
+    padding: 26px 0 0 0;
+}
+
+#slider_1 {
+    box-shadow: 0px 0px 24px 0.00px rgba(0, 0, 0, 0.39);
+    margin: 0 auto;
+    position: relative;
+    width: 1110px;
+}
+
+#slider_1 .slick-arrow {
+    background: url(img/arrows.png) no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 85px;
+    margin: -43px 0 0 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    text-indent: -9999px;
+    width: 29px;
+    z-index: 10;
+}
+
+#slider_1 .slick-prev {
+    background-position: 0 0;
+    left: -59px;
+}
+
+#slider_1 .slick-prev:hover {
+    background-position: 0 -85px;
+}
+
+#slider_1 .slick-next {
+    background-position: -29px 0;
+    right: -59px;
+}
+
+#slider_1 .slick-next:hover {
+    background-position: -29px -85px;    
+}
+
+#slider_1 .slick-slide {
+    position: relative;
+}
+
+.slider_title {
+    color: #29303a;
+    font-family: 'pt_sansbold';
+    font-size: 30px;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+}
+
+.slider_title span {
+    color: #535266;
+    display: block;
+    font-size: 82px;
+}
+
+.slider_content {
+    font-size: 15px;
+    position: absolute;
+    right: 87px;
+    top: 49px;
+    width: 375px;
+}
+
+.slider_descript {
+    line-height: 20px;    
+}
+
+.slider_content .btn {
+    display: block;
+    margin: 26px 0 0 2px;
+    text-align: center;
+    width: 188px;
+}
+
+.slider_content .btn img {
+    display: inline;
+/*    margin: 0 0 0 16px;*/
+    position: relative;
+    right: -15px;
+    top: -3px;
+    vertical-align: middle;
+}
