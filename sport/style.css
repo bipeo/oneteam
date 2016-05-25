@@ -65,6 +65,23 @@ input[type=submit] {
 
 /*========================== END reset.css ==========================*/
 
+/**/
+@font-face {
+    font-family: 'crimson_textroman';
+    src: url('fonts/crimsontext-regular/crimsontext-regular-webfont.eot');
+    src: url('fonts/crimsontext-regular/crimsontext-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crimsontext-regular/crimsontext-regular-webfont.woff2') format('woff2'),
+         url('fonts/crimsontext-regular/crimsontext-regular-webfont.woff') format('woff'),
+         url('fonts/crimsontext-regular/crimsontext-regular-webfont.ttf') format('truetype'),
+         url('fonts/crimsontext-regular/crimsontext-regular-webfont.svg#crimson_textroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/**/
 @font-face {
     font-family: 'pt_sans_narrowregular';
     src: url('fonts/PTSans_narrow_regular/pt_sans-narrow-web-regular-webfont.eot');
@@ -597,7 +614,9 @@ h2, .title_2 {
 .popular_d > li {
     color: #428ca5;
     float: left;
-    font-family: 'Conv_MinionPro-Regular';
+    font-family: 'pt_sans_narrowregular';
+    /*   font-family: 'crimson_textroman'; */
+
     font-size: 18px;
     line-height: 28px;
 }
