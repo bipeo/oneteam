@@ -387,26 +387,105 @@ h2, .title_2 {
     line-height: 60px;
 }
 
-.menu_2 ul {
-    overflow: hidden;
-}
-
-.menu_2 li {
+.menu_dropdown > li {
     float: left;
+    position: relative;
 }
 
-.menu_2 .ico_menu_1 {
-    background: url(img/ico_menu_1.png) no-repeat 0 0;
+.ico_dropdown {
+    background: url(img/ico_3.png) no-repeat;
     display: inline-block;
+    height: 7px;
+    position: relative;
+    right: -11px;
+    top: -4px;
+    width: 7px;
+}
+
+.menu_dropdown > li:first-child {
+    margin-left: 31px;
+}
+
+.menu_dropdown > li + li {
+    margin-left: 70px;
+}
+
+.menu_dropdown > li:after {
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 11px solid #428ca5;
+    bottom: -15px;
+    content: "";
+    display: none;
+    height: 0;
+    left: 50%;
+    margin-left: -18px;
+    position: absolute;
+    width: 0;
+    z-index: 100;
+}
+
+.menu_dropdown > li > ol {
+    background: rgba(255, 255, 255, .9);
+    border: 1px solid #dbd9d9;
+    box-shadow: 0 4px 27px rgba(0, 0, 0, 0.48);
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 20;
+}
+
+.menu_dropdown > li:hover ol {
+    display: block;
+}
+
+.menu_dropdown .ico_menu {
+    background: url(img/icons_spr.png) no-repeat;
+    display: inline-block;
+    left: -10px;
+    position: relative;
+}
+
+.menu_dropdown > li .ico_menu_1 {
+    background-position: -71px -37px;
     height: 22px;
-    width: 37px;
+    left: -12px;
+    top: 5px;
+    width: 27px;    
 }
 
-.menu_2 li:hover .ico_menu_1 {
-    background-position: 0 -22px;
+.menu_dropdown > li:hover:after {
+    display: block;
 }
 
-.menu_2 li a {
+.menu_dropdown > li:hover .ico_menu_1 {
+    background-position: -71px -5px;
+}
+
+.menu_dropdown .ico_menu_2 {
+    background-position: -39px -37px;
+    height: 19px;
+    left: -15px;
+    top: 5px;
+    width: 22px;
+}
+
+.menu_dropdown > li:hover .ico_menu_2 {
+    background-position: -6px -37px;
+}
+
+.menu_dropdown .ico_menu_3 {
+    background-position: -28px -5px; 
+    height: 19px;
+    width: 14px;
+}
+
+.menu_dropdown > li:hover .ico_menu_3 {
+    background-position: -5px -5px;     
+}
+
+.menu_dropdown > li > a {
     color: #ffffff;
     display: block;
     font-size: 20px;
@@ -415,8 +494,57 @@ h2, .title_2 {
     width: 301px;
 }
 
-.menu_2 li a:hover {
+.menu_dropdown > li > a:hover {
     background-color: #428ca5;
+}
+
+.menu_dropdown > li > ol {
+    border-top: 4px solid #428ca5;
+    padding: 15px 0 20px 0;
+    width: 1110px;
+}
+
+.menu_dropdown > li:nth-child(1) > ol {
+    left: 0;    
+}
+
+.menu_dropdown > li:nth-child(2) > ol {
+    left: -402px;    
+}
+
+.menu_dropdown > li:nth-child(3) > ol {
+    left: -809px;  
+}
+
+.menu_dropdown > li > ol > li > ul > li a {
+    color: #333333;
+    display: block;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.menu_dropdown > li > ol > li > ul > li a:hover {
+    color: #428ca5;
+    text-decoration: underline;
+}
+
+.menu_dropdown > li > ol > li > ul {
+    float: left;
+    margin: 0 0 0 20px;
+    width: 280px;
+}
+
+.menu_dropdown > li > ol > li > ul > li {
+    background: url(img/circle_menu.png) no-repeat left 6px;
+    padding: 0 0 0 20px;
+}
+
+.menu_dropdown > li > ol > li > ul > li + li {
+    margin-top: 5px;
+}
+
+.menu_dropdown > li > ol > li > ul + ul {
+    margin-left: 78px;
 }
 
 .slider_1 {
@@ -515,7 +643,7 @@ h2, .title_2 {
     background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#e1e1e1 51%,#e1e1e1 100%);
     background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#e1e1e1 51%,#e1e1e1 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=1 );
-    padding: 10px 0 27px 0;
+    padding: 10px 0 0 0;
 }
 
 .block_1_1 {
@@ -620,6 +748,7 @@ h2, .title_2 {
 
 .block_1 .center {
     overflow: hidden;
+    padding: 0 0 27px 0;
 }
 
 .form_search {
@@ -645,112 +774,6 @@ h2, .title_2 {
 .title_left {
     margin: 0 0 21px 0;
 }
-
-/*========================== calendar ==========================*/
-
-.cal-row-fluid {
-    width: 100%;
-}
-.cal-row-fluid:before, .cal-row-fluid:after {
-    display: table;
-    content: "";
-    line-height: 0;
-}
-
-[class*="cal-cell"] {
-    float: left;
-    margin-left: 0;
-    min-height: 1px;
-}
-
-.cal-row-fluid [class*="cal-cell"] {
-    display: block;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    margin-left: 0;
-}
-.cal-row-fluid .cal-cell1 {
-    width: 14.285714285714285%;
-}
-
-.cal-row-fluid .cal-cell1 {
-    width: 14.285714285714285%;
-}
-
-.cal-row-fluid [class*="cal-cell"]:first-child {
-    margin-left: 0;
-}
-
-.cal-row-head [class*="cal-cell"]:first-child, .cal-row-head [class*="cal-cell"] {
-    min-height: auto;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.cal-row-head [class*="cal-cell"]:first-child, .cal-row-head [class*="cal-cell"] {
-    font-weight: bolder;
-    text-align: center;
-    border: 0 solid;
-    padding: 5px 0;
-}
-
-.cal-row-fluid:before, .cal-row-fluid:after {
-    display: table;
-    content: "";
-    line-height: 0;
-}
-
-.cal-month-box, .cal-year-box, .cal-week-box {
-    border-top: 1px solid #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
-    border-right: 1px solid #e1e1e1;
-    border-left: 1px solid #e1e1e1;
-    border-radius: 2px;
-}
-
-.cal-year-box .row-fluid, .cal-month-box .cal-row-fluid {
-    border-bottom: 1px solid #e1e1e1;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#calendar .cal-month-day, .block-inform #calendar .cal-month-day {
-    position: relative;
-    display: block;
-    width: 28px;
-    height: 30px;
-}
-
-.pull-right {
-    float: right;
-}
-
-span[data-cal-date] {
-    font-size: 1.2em;
-    font-weight: normal;
-    opacity: .5;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -ms-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    margin-top: 15px;
-    margin-right: 15px;
-}
-
-#calendar span[data-cal-date], .block-inform #calendar span[data-cal-date] {
-    margin-top: 8px;
-    margin-right: 8px;
-}
-#calendar span[data-cal-date], .block-inform #calendar span[data-cal-date] {
-    font-size: 1em;
-}
-
-/*========================== END calendar ==========================*/
 
 .wrap_slider_2 {
     background: url(img/wrap_for_slider_2_bg.jpg) no-repeat center top;
