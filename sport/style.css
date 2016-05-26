@@ -643,11 +643,12 @@ h2, .title_2 {
     background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#e1e1e1 51%,#e1e1e1 100%);
     background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#e1e1e1 51%,#e1e1e1 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=1 );
-    padding: 10px 0 0 0;
 }
 
 .block_1_1 {
     background: #fff;
+    overflow: hidden;
+    padding: 10px 0 7px 0;
 }
 
 .popular {
@@ -707,7 +708,7 @@ h2, .title_2 {
 }
 
 .new_people {
-    margin: 0 0 0 23px;
+    margin: 0 0 0 3px;
     overflow: hidden;
 }
 
@@ -728,6 +729,7 @@ h2, .title_2 {
 
 .popular_d {
     list-style-type: decimal;
+    margin: 6px 0 0 21px;
 }
 
 .popular_d > li {
@@ -748,7 +750,6 @@ h2, .title_2 {
 
 .block_1 .center {
     overflow: hidden;
-    padding: 0 0 27px 0;
 }
 
 .form_search {
@@ -1292,4 +1293,45 @@ h2, .title_2 {
     bottom: 132px;
     position: fixed;
     right: 1%;
+}
+
+#calendar {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 2px 4px 8px 0.00px rgba(0, 0, 0, 0.14);
+}
+
+#calendar .cal-month-day, .block-inform #calendar .cal-month-day {
+    color: #999999;
+    font-size: 16px;
+}
+
+.cal-year-box [class*="span"], .cal-month-box [class*="cal-cell"] {
+    border-right: none;
+}
+
+.cal-year-box .row-fluid, .cal-month-box .cal-row-fluid {
+    border-bottom: none;
+}
+
+.cal-day-today {
+    background: #075e82;
+    background-color: #ffffff;
+}
+
+.cal-row-head {
+    background: #29303a;
+    color: #fff;
+}
+
+.calendar_title, .month {
+    background: #424e5c;
+    color: #feffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.month {
+    color: #cccbd4;
+    font-size: 18px;
 }
