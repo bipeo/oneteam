@@ -434,6 +434,7 @@ h2, .title_2 {
     position: absolute;
     right: 0;
     z-index: 20;
+    transition: all .3s;
 }
 
 .menu_dropdown > li:hover ol {
@@ -491,6 +492,7 @@ h2, .title_2 {
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
+    transition: all .3s;
     width: 301px;
 }
 
@@ -649,6 +651,7 @@ h2, .title_2 {
     background: #fff;
     overflow: hidden;
     padding: 10px 0 7px 0;
+    width: 821px;
 }
 
 .popular {
@@ -661,7 +664,7 @@ h2, .title_2 {
     content: "";
     height: 100%;
     position: absolute;
-    right: -7px;
+    right: 14px;
     top: 8px;
     width: 1px;
 }
@@ -699,7 +702,7 @@ h2, .title_2 {
 }
 
 .new {
-    width: 413px;
+    width: 385px;
 }
 
 .new .title_2 {
@@ -708,7 +711,6 @@ h2, .title_2 {
 }
 
 .new_people {
-    margin: 0 0 0 3px;
     overflow: hidden;
 }
 
@@ -1106,6 +1108,7 @@ h2, .title_2 {
     position: absolute;
     right: 0;
     text-align: center;
+    transition: all .3s;
     top: 0;
     z-index: 10;
 }
@@ -1299,6 +1302,7 @@ h2, .title_2 {
     background: #fff;
     border-radius: 3px;
     box-shadow: 2px 4px 8px 0.00px rgba(0, 0, 0, 0.14);
+    margin: 11px 0 0 0;
 }
 
 #calendar .cal-month-day, .block-inform #calendar .cal-month-day {
@@ -1322,16 +1326,50 @@ h2, .title_2 {
 .cal-row-head {
     background: #29303a;
     color: #fff;
+    height: 31px;
 }
 
 .calendar_title, .month {
     background: #424e5c;
     color: #feffff;
     font-size: 20px;
+    padding: 9px 0 0 0;
     text-align: center;
 }
 
 .month {
     color: #cccbd4;
     font-size: 18px;
+    padding: 5px 0 8px 0;
+}
+
+#calendar .cal-year-box [class*="span"], #calendar .cal-month-box [class*="cal-cell"], .block-inform #calendar .cal-year-box [class*="span"], .block-inform #calendar .cal-month-box [class*="cal-cell"] {
+    min-height: 23px;
+}
+
+#calendar .cal-month-day, .block-inform #calendar .cal-month-day {
+    height: 23px;
+}
+
+#calendar span[data-cal-date], .block-inform #calendar span[data-cal-date] {
+    color: #000;
+    margin-top: 3px;
+}
+
+.cal-row-head [class*="cal-cell"]:first-child, .cal-row-head [class*="cal-cell"] {
+    padding-top: 7px;
+}
+
+#calendar .event, .block-inform #calendar .event {
+    background: #535266;
+}
+
+.events-list {
+    right: 5px;
+    top: 5px;
+}
+
+#calendar [class*="cal-cell"]:hover {
+    background: #075e82;
+    color: #fff;
 }
