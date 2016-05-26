@@ -528,7 +528,7 @@ th .tooltip-inner {
 
 .cal-row-head [class*="cal-cell"]:first-child,
 .cal-row-head [class*="cal-cell"] {
-    font-weight: bolder;
+   /* font-weight: bolder; */
     text-align: center;
     border: 0 solid;
     padding: 5px 0
