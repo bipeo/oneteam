@@ -1369,7 +1369,70 @@ h2, .title_2 {
     top: 5px;
 }
 
-#calendar [class*="cal-cell"]:hover {
+#calendar .cal-month-day:hover {
     background: #075e82;
+    border-radius: 3px;
+}
+
+#calendar .cal-month-day:hover > span {
     color: #fff;
+    opacity: 1;
+}
+
+#cal-slide-box {
+    border-top: 0 solid #8c8c8c;
+}
+#cal-slide-box {
+    position: relative;
+}
+
+#cal-slide-tick.tick-day3 {
+    left: 35.7143%;
+}
+#cal-slide-tick {
+    background-image: #000 url("/components/com_cobalt/fields/datetime/assets/img/tick.png");
+}
+#cal-slide-tick {
+    height: 9px;
+    margin-left: -7px;
+    position: absolute;
+    top: -1px;
+    width: 16px;
+    z-index: 1;
+}
+
+#cal-slide-content {
+    background: #000;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5) inset;
+    color: #fff;
+    padding: 20px;
+}
+
+#cal-slide-content {
+    padding: 5px;
+}
+
+#cal-slide-content ul li {
+    border-bottom: 1px dashed #fff;
+    line-height: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#cal-slide-content a.event-item {
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 13px !important;
+}
+
+#cal-slide-tick.tick-day3 {
+    left: 35.7143%;
+}
+
+#cal-slide-tick {
+    background-image: url("img/tick.png");
 }
