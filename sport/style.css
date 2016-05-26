@@ -43,7 +43,7 @@ table {
 	border-spacing: 0;
 }
 
-a, input, select, textarea {
+a, input, select, textarea, button {
     outline: none;
 }
 
@@ -1294,6 +1294,7 @@ h2, .title_2 {
 
 .to_top {
     bottom: 132px;
+    cursor: pointer;
     position: fixed;
     right: 1%;
 }
@@ -1302,7 +1303,7 @@ h2, .title_2 {
     background: #fff;
     border-radius: 3px;
     box-shadow: 2px 4px 8px 0.00px rgba(0, 0, 0, 0.14);
-    margin: 11px 0 0 0;
+    margin: 11px 0 12px 0;
 }
 
 #calendar .cal-month-day, .block-inform #calendar .cal-month-day {
@@ -1362,10 +1363,14 @@ h2, .title_2 {
 
 #calendar .event, .block-inform #calendar .event {
     background: #535266;
+    height: 5px;
+    width: 5px;
 }
 
 .events-list {
-    right: 5px;
+    border-radius: 50%;
+    left: auto;
+    right: -4px;
     top: 5px;
 }
 
@@ -1435,4 +1440,12 @@ h2, .title_2 {
 
 #cal-slide-tick {
     background-image: url("img/tick.png");
+}
+.wrap_for_bg { 
+        background: #ffffff;
+        background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 822px, #e1e1e1 51%, #e1e1e1 100%);
+        background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 822px,#e1e1e1 51%,#e1e1e1 100%);
+        background: linear-gradient(to right,  #ffffff 0%,#ffffff 822px,#e1e1e1 51%,#e1e1e1 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=1 );
+    overflow: hidden;
 }
