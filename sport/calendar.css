@@ -538,10 +538,12 @@ th .tooltip-inner {
     font-weight: normal
 }
 
+/*
 .cal-year-box .row-fluid:hover,
 .cal-row-fluid:hover {
     background-color: #fafafa
 }
+*/
 
 .cal-month-day {
     height: 100px

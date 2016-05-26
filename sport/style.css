@@ -1442,10 +1442,14 @@ h2, .title_2 {
     background-image: url("img/tick.png");
 }
 .wrap_for_bg { 
-        background: #ffffff;
-        background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 822px, #e1e1e1 51%, #e1e1e1 100%);
-        background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 822px,#e1e1e1 51%,#e1e1e1 100%);
-        background: linear-gradient(to right,  #ffffff 0%,#ffffff 822px,#e1e1e1 51%,#e1e1e1 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=1 );
+    background: #ffffff;
+    background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 822px, #e1e1e1 51%, #e1e1e1 100%);
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 822px,#e1e1e1 51%,#e1e1e1 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#ffffff 822px,#e1e1e1 51%,#e1e1e1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=1 );
     overflow: hidden;
+}
+
+.cal-cell1:nth-child(6), .cal-cell1:nth-child(7) {
+    color: #5096ad;
 }
