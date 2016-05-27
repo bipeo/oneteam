@@ -1796,6 +1796,8 @@ h3, .title_3 {
 
 .comanda_main {
     border-bottom: 1px dotted #b3b3bd;
+    margin: 0 20px 19px 19px;
+    padding: 0 0 19px 0;
     overflow: hidden;
 }
 
@@ -1812,6 +1814,7 @@ h3, .title_3 {
     display: block;
     font-size: 16px;
     line-height: 28px;
+    margin: 5px 0 7px 0;
 }
 
 .comanda_count {
@@ -1827,7 +1830,7 @@ h3, .title_3 {
 }
 
 .comanda_main .foto_item {
-    width: 595px;
+    width: 574px;
 }
 
 .comanda_main .foto_item span, .comanda_main .foto_item img {
@@ -1836,6 +1839,5 @@ h3, .title_3 {
 }
 
 .comanda_data {
-    padding: 0 0 0 19px;
     width: 210px;
 }
