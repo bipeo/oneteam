@@ -1,5 +1,10 @@
 $(document).ready(function() {
-    $('#slider_1').slick({
+    setTimeout(function() {
+    
+    $('#slider_1').show().slick({
+        dots: false,
+    });
+    $('#slider_2').show().slick({
         dots: false,
     });
     
