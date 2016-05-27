@@ -559,10 +559,13 @@ h2, .title_2 {
 
 #slider_1 {
     box-shadow: 0 0 24px 0.00px rgba(0, 0, 0, 0.39);
+    display: none;
     margin: 0 auto;
     position: relative;
     width: 1110px;
 }
+
+#slider_2 {display: none;}
 
 #slider_1 .slick-arrow, #slider_2 .slick-arrow {
     background: url('../img/arrows.png') no-repeat;
