@@ -154,6 +154,9 @@ input[type=submit] {
     display: inline;
     margin: 0 0 0 5px;
     vertical-align: middle;
+    -ms-transform: translate(9px,-1px); /* IE 9 */
+    -webkit-transform: translate(9px,-1px); /* Safari */
+    transform: translate(9px,-1px);
 }
 
 .blue_btn {
@@ -1386,6 +1389,9 @@ h2, .title_2 {
     border-radius: 3px;
     box-shadow: 2px 4px 8px 0.00px rgba(0, 0, 0, 0.14);
     margin: 11px 0 12px 0;
+}
+.cal-context {
+    float:right;
 }
 
 #calendar .cal-month-day, .block-inform #calendar .cal-month-day {
