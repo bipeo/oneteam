@@ -159,6 +159,18 @@ input[type=submit] {
     transform: translate(9px,-0.1rem);
 }
 
+.blue_btn {
+    background-color: #428ca5;
+    border-radius: 6px;
+    color: #ffffff;
+    display: block;
+    font-family: 'pt_sans_narrowregular';
+    font-size: 18px;
+    height: 36px;
+    line-height: 36px;
+    
+}
+
 /*========================== END ==========================*/
 
 body {
@@ -1536,3 +1548,14 @@ h2, .title_2 {
     width: 730px;
 }
 
+.content_main {
+    background: #fff;
+}
+
+.content_main_left {
+    width: 825px;
+}
+
+.content_main_right {
+    width: 270px;
+}
