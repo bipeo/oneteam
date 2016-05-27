@@ -5,6 +5,8 @@ $(document).ready(function() {
     
     $('#slider_2').slick({
         dots: false,
+        slidesToShow: 4,
+        variableWidth: true
     });
 });
     $(window).scroll(function() {
