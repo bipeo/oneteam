@@ -6,13 +6,14 @@ $(document).ready(function() {
     });
     $('#slider_2').show().slick({
         dots: false,
-    });
-    
-    $('#slider_2').slick({
-        dots: false,
         slidesToShow: 4,
         variableWidth: true
     });
+    
+}, 1);
+    
+    
+    
 });
     $(window).scroll(function() {
 

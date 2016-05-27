@@ -1015,7 +1015,7 @@ h2, .title_2 {
 }
 
 .block_2 {
-    background: url('../img/block_2_bg.png') no-repeat;
+    background: url('../images/block_2_bg.png') no-repeat;
     display: table;
     height: 278px;
     padding: 12px 10px;
@@ -1175,7 +1175,7 @@ h2, .title_2 {
 }
 
 .loc_b .block_2 {
-    background: url('../img/bg_1.jpg') no-repeat;
+    background: url('../images/bg_1.jpg') no-repeat;
     height: 438px;
     padding-top: 19px;
     padding-bottom: 19px;
