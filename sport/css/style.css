@@ -1706,7 +1706,6 @@ h3, .title_3 {
 }
 
 .tabs {
-    border-bottom: 3px solid #3a4653;
     border-radius: 3px;
     margin: 16px 0 0 0;
     overflow: hidden;
@@ -1714,13 +1713,15 @@ h3, .title_3 {
 
 .tabs > li {
     background-color: #428ca5;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #3a4653;
     color: #ffffff;
     float: left;
-    height: 36px;
-    line-height: 36px;
+    height: 39px;
+    line-height: 32px;
     position: relative;
     text-align: center;
-    width: 136px;
+    width: 137px;
 }
 
 .tabs > li:before {
@@ -1740,7 +1741,7 @@ h3, .title_3 {
 }
 
 .tabs > li:hover {
-    background: #424e5c;
+    background-color: #424e5c;
 }
 
 .tabs > li:hover:before {
@@ -1754,5 +1755,41 @@ h3, .title_3 {
 }
 
 .tabs > li.active {
-    background: #424e5c;
+    background-color: #424e5c;
+}
+
+.tabs > li:nth-child(1) {
+    background-image: url('../img/tabs_ico_1.png');
+    background-position: 19px 10px;
+    padding: 0 0 0 32px;
+}
+
+.tabs > li:nth-child(2) {
+    background-image: url('../img/tabs_ico_2.png');
+    background-position: 40px 8px;
+    padding: 0 0 0 33px;
+}
+
+.tabs > li:nth-child(3) {
+    background-image: url('../img/tabs_ico_3.png');
+    background-position: 24px 9px;
+    padding: 0 0 0 39px;
+}
+
+.tabs > li:nth-child(4) {
+    background-image: url('../img/tabs_ico_4.png');
+    background-position: 39px 8px;
+    padding: 0 0 0 32px;
+}
+
+.tabs > li:nth-child(5) {
+    background-image: url('../img/tabs_ico_5.png');
+    background-position: 37px 10px;
+    padding: 0 0 0 32px;
+}
+
+.tabs > li:nth-child(6) {
+    background-image: url('../img/tabs_ico_6.png');
+    background-position: 31px 10px;
+    padding: 0 0 0 38px;
 }
