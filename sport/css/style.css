@@ -98,7 +98,6 @@ input[type=submit] {
         url('../fonts/pt_sans_narrow_bold/pt_sans-narrow-web-bold-webfont.svg#pt_sans_narrowbold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /*========================== Общие классы ==========================*/
@@ -184,12 +183,18 @@ input[type=submit] {
 }
 
 a {
+    color: #424e5c;
     text-decoration: none;
 }
 
 h2, .title_2 {
     font-family: 'pt_sans_narrowregular';
     font-size: 34px;
+}
+
+h3, .title_3 {
+    font-family: 'pt_sans_narrowregular';
+    font-size: 26px;
 }
 
 .wrapper {
@@ -1551,6 +1556,7 @@ h2, .title_2 {
 
 .content_main {
     background: #fff;
+    overflow: hidden;
     padding: 14px 0 0 0;
 }
 
@@ -1563,6 +1569,7 @@ h2, .title_2 {
 }
 
 .personal_name {
+    margin: 0 0 20px 0;
     overflow: hidden;
 }
 
@@ -1582,4 +1589,118 @@ h2, .title_2 {
     font-size: 34px;
     text-transform: capitalize;
     width: 395px;
+}
+
+.slider-for {
+    width: 350px;
+}
+
+.personal_account {
+    margin: 0 0 19px 0;
+    overflow: hidden;
+}
+
+.account_data {
+    width: 443px;
+}
+
+.data_1 {
+    color: #666666;
+    font-size: 16px;
+    line-height: 21px;
+    margin: -5px 0 11px 0;
+}
+
+.personal_data {
+    margin: 0 0 13px 0;
+}
+
+.personal_data > li {
+    color: #424e5c;    
+    font-size: 16px;
+}
+
+.personal_data > li + li {
+    margin-top: 11px;
+}
+
+.personal_data .phone {
+    background-image: url(../img/personal_phone.png);
+    color: #333333;
+}
+
+.personal_data__email {
+    background: url(../img/email_personal.png) no-repeat left center; 
+    padding: 0 0 0 23px;
+}
+
+.personal_skype {
+    background: url(../img/skype_ico.png) no-repeat left center;
+    padding: 0 0 0 23px;
+}
+
+.name_sport_ul {
+    margin: 0 0 15px 0;
+    overflow: hidden;
+}
+
+.name_sport {
+    float: left;
+    list-style-type: decimal;
+    padding: 0 0 0 12px;
+    width: 190px;
+}
+
+.name_sport:first-child {
+    margin: 0 55px 0 0;
+}
+
+.name_sport > li {
+    color: #333333;
+    font-size: 16px;
+}
+
+.name_sport > li + li {
+    margin-top: 3px;
+}
+
+.name_sport > li a {
+    color: #333333;
+}
+
+.name_sport > li span {
+    background-color: #428ca5;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    position: relative;
+    right: -3px;
+    top: -4px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 32px;
+}
+
+.slider-nav {
+    clear: both;
+    overflow: hidden;
+    width: 443px;
+}
+
+.content_main_left .title_3 {
+    color: #cccccc;
+    letter-spacing: 32px;
+    line-height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.descript_1 {
+    color: #666666;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 5px 0 0 0;
 }
