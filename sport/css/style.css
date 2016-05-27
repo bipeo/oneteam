@@ -295,14 +295,25 @@ h2, .title_2 {
 .soc_btn > li + li {
     margin-left: 6px;
 }
-
-.soc_btn > li a {
+.soc_btn > li span {
     background: #adb3bd url(../img/socs_sprite.png) no-repeat;
     border-radius: 50%;
     display: block;
     height: 24px;
     text-align: center;
     width: 24px;
+}
+.soc_btn > li span  a {
+    background: #adb3bd url(../img/socs_sprite.png) no-repeat;
+    border-radius: 50%;
+    display: block;
+    height: 24px;
+    text-align: center;
+    width: 24px;
+      transition:         opacity 0.3s ease-in-out;
+    -moz-transition:    opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition:      opacity 0.3s ease-in-out;
 }
 
 .soc_btn > li a.ok {
