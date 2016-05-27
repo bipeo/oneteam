@@ -539,7 +539,7 @@ h2, .title_2 {
 }
 
 .menu_dropdown > li > ol > li > ul > li {
-    background: url(../img/circle_menu.png) no-repeat left 6px;
+    background: url('../img/circle_menu.png') no-repeat left 6px;
     padding: 0 0 0 20px;
 }
 
@@ -552,7 +552,7 @@ h2, .title_2 {
 }
 
 .slider_1 {
-    background: url(../img/slider_1_bg.jpg) no-repeat;
+    background: url('../img/slider_1_bg.jpg') no-repeat;
     height: 414px;
     padding: 26px 0 0 0;
 }
@@ -565,7 +565,7 @@ h2, .title_2 {
 }
 
 #slider_1 .slick-arrow, #slider_2 .slick-arrow {
-    background: url(../img/arrows.png) no-repeat;
+    background: url('../img/arrows.png') no-repeat;
     border: none;
     cursor: pointer;
     height: 85px;
@@ -686,7 +686,7 @@ h2, .title_2 {
 }
 
 .form_search input[type=submit] {
-    background-image: url(../img/ico_search.png);
+    background-image: url('../img/ico_search.png');
     background-repeat: no-repeat;
     background-position: 49px center;
     border-radius: 0;
