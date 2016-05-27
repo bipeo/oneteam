@@ -295,53 +295,51 @@ h2, .title_2 {
 .soc_btn > li + li {
     margin-left: 6px;
 }
-.soc_btn > li span {
-    background: #adb3bd url(../img/socs_sprite.png) no-repeat;
+.soc_btn > li span, .soc_btn > li span  a {
+    background-color:#adb3bd;
+    background-image:url(../img/socs_sprite.png);
+    background-repeat: no-repeat;
     border-radius: 50%;
     display: block;
+    width: 24px;
     height: 24px;
     text-align: center;
-    width: 24px;
 }
+
 .soc_btn > li span  a {
-    background: #adb3bd url(../img/socs_sprite.png) no-repeat;
-    border-radius: 50%;
-    display: block;
-    height: 24px;
     text-align: center;
-    width: 24px;
-      transition:         opacity 0.3s ease-in-out;
-    -moz-transition:    opacity 0.3s ease-in-out;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -o-transition:      opacity 0.3s ease-in-out;
+    transition:         opacity 0.29s ease-in-out;
+    -moz-transition:    opacity 0.29s ease-in-out;
+    -webkit-transition: opacity 0.29s ease-in-out;
+    -o-transition:      opacity 0.29s ease-in-out;
+}
+.soc_btn > li span:hover  a {
+    opacity:0;
+}
+.soc_btn > li span:hover, .soc_btn > li span:hover a {
+    background-color:#428ca5;
 }
 
-.soc_btn > li a.ok {
-    background-position: -32px 0;
-}
 
-.soc_btn > li a.ok:hover {
-    background-position: 3px -25px;
+.soc_btn > li span.ok {
+     background-position: 3px -25px;
 }
+.soc_btn > li span.ok a {
+     background-position: -32px 0;
+    }
 
-.soc_btn > li a.fb {
-    background-position: 4px 0;
-}
-
-.soc_btn > li a.fb:hover {
+.soc_btn > li span.fb  {
     background-position: -13px 0;
 }
-
-.soc_btn > li a:hover {
-    background-color: #428ca5;
+.soc_btn > li span.fb a {
+     background-position: 4px 0;
 }
 
-.soc_btn > li a.vk {
-    background-position: -21px -23px;
-}
-
-.soc_btn > li a.vk:hover {
+.soc_btn > li span.vk  {
     background-position: -55px 2px;
+}
+.soc_btn > li span.vk a {
+    background-position: -21px -23px;
 }
 
 .quote {
