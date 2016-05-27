@@ -334,7 +334,7 @@ h2, .title_2 {
 }
 
 .quote {
-    background: url(../img/ico_quote.png) no-repeat left 6px;
+    background: url('../img/ico_quote.png') no-repeat left 6px;
     border-top: 1px dotted #7b818d;
     clear: both;
     padding: 3px 0 0 42px;
@@ -393,7 +393,7 @@ h2, .title_2 {
 }
 
 .ico_dropdown {
-    background: url(../img/ico_3.png) no-repeat;
+    background: url('../img/ico_3.png') no-repeat;
     display: inline-block;
     height: 7px;
     position: relative;
@@ -444,7 +444,7 @@ h2, .title_2 {
 }
 
 .menu_dropdown .ico_menu {
-    background: url(../img/icons_spr.png) no-repeat;
+    background: url('../img/icons_spr.png') no-repeat;
     display: inline-block;
     left: -10px;
     position: relative;
@@ -1508,7 +1508,6 @@ h2, .title_2 {
 .cal-cell1:nth-child(6), .cal-cell1:nth-child(7) {
     color: #5096ad;
 }
-
 
 #slider_2 .slick-slide {
     width: 190px !important;
