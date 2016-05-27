@@ -6,6 +6,8 @@ $(document).ready(function() {
     });
     $('#slider_2').show().slick({
         dots: false,
+        slidesToShow: 4,
+        variableWidth: true
     });
     
 }, 1);
