@@ -137,7 +137,7 @@ input[type=submit] {
     display: inline-block;
     font-size: 18px;
     height: 40px;
-    line-height: 40px;
+    line-height: 37px;
 }
 
 .btn_2 {
@@ -434,7 +434,7 @@ h2, .title_2 {
     opacity: 0;
     position: absolute;
     right: 0;
-    z-index: 20;
+    z-index: 2;
     transition: all .3s;
 }
 
@@ -498,7 +498,7 @@ h2, .title_2 {
     width: 301px;
 }
 
-.menu_dropdown > li > a:hover {
+.menu_dropdown > li:hover > a {
     background-color: #428ca5;
 }
 
@@ -735,6 +735,21 @@ h2, .title_2 {
     width: 82px;
 }
 
+.new_people > li a {
+    color: #333333;
+}
+
+.new_people > li a img {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    
+}
+
+.new_people > li a:hover img {
+    opacity: .7;
+}
+
 .popular_d {
     list-style-type: decimal;
     margin: 6px 0 0 21px;
@@ -843,6 +858,7 @@ h2, .title_2 {
     background-color: #ffffff;
     float: left;
     height: 232px;
+    transition: all .5s;
     width: 161px;
 }
 
@@ -964,26 +980,26 @@ h2, .title_2 {
     vertical-align: middle;
 }
 
-.slider_2_ul > li:first-child:hover {
-    background: url('../img/slider_2_img_1.png') no-repeat;
+.slider_2_ul > li.slider_2_img_1:hover {
+    background: url('../images/slider_2_img_1.png') no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
-.slider_2_ul > li:nth-child(2):hover {
-    background: url('img/slider_2_img_2.jpg') no-repeat;
+.slider_2_ul > li.slider_2_img_2:hover {
+    background: url('../images/slider_2_img_2.jpg') no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
-.slider_2_ul > li:nth-child(3):hover {
-    background: url('../img/slider_2_img_3.jpg') no-repeat;
+.slider_2_ul > li.slider_2_img_3:hover {
+    background: url('../images/slider_2_img_3.jpg') no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
-.slider_2_ul > li:nth-child(4):hover {
-    background: url('img/slider_2_img_4.jpg') no-repeat;
+.slider_2_ul > li.slider_2_img_4:hover {
+    background: url('../images/slider_2_img_4.jpg') no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -1141,9 +1157,12 @@ h2, .title_2 {
     background-color: rgba(41, 48, 58, 0.78);
     box-shadow: 0 0 18px 0.00px rgba(0, 0, 0, 0.75);    
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     left: 0;
     opacity: 0;
-    padding: 45px 10px 0 10px;
+    padding: 0 10px;
     position: absolute;
     right: 0;
     text-align: center;
