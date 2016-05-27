@@ -154,9 +154,9 @@ input[type=submit] {
     display: inline;
     margin: 0 0 0 5px;
     vertical-align: middle;
-    -ms-transform: translate(9px,-1px); /* IE 9 */
-    -webkit-transform: translate(9px,-1px); /* Safari */
-    transform: translate(9px,-1px);
+    -ms-transform: translate(9px,-0.1rem); /* IE 9 */
+    -webkit-transform: translate(9px,-0.1rem); /* Safari */
+    transform: translate(9px,-0.1rem);
 }
 
 /*========================== END ==========================*/
