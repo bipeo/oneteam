@@ -161,14 +161,15 @@ input[type=submit] {
 
 .blue_btn {
     background-color: #428ca5;
+    border-bottom: 3px solid #286478;
     border-radius: 6px;
     color: #ffffff;
     display: block;
     font-family: 'pt_sans_narrowregular';
     font-size: 18px;
-    height: 36px;
+    height: 39px;
     line-height: 36px;
-    
+    text-align: center;
 }
 
 /*========================== END ==========================*/
@@ -1550,6 +1551,7 @@ h2, .title_2 {
 
 .content_main {
     background: #fff;
+    padding: 14px 0 0 0;
 }
 
 .content_main_left {
@@ -1558,4 +1560,26 @@ h2, .title_2 {
 
 .content_main_right {
     width: 270px;
+}
+
+.personal_name {
+    overflow: hidden;
+}
+
+.personal_name > li {
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+}
+
+.personal_name > li a {
+    width: 215px;
+}
+
+.personal_name > li:nth-child(2) {
+    color: #333333;
+    font-size: 34px;
+    text-transform: capitalize;
+    width: 395px;
 }
