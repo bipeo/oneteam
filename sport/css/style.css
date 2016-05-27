@@ -1707,7 +1707,7 @@ h3, .title_3 {
 
 .tabs {
     border-radius: 3px;
-    margin: 16px 0 0 0;
+    margin: 16px 0 41px 0;
     overflow: hidden;
 }
 
@@ -1792,4 +1792,50 @@ h3, .title_3 {
     background-image: url('../img/tabs_ico_6.png');
     background-position: 31px 10px;
     padding: 0 0 0 38px;
+}
+
+.comanda_main {
+    border-bottom: 1px dotted #b3b3bd;
+    overflow: hidden;
+}
+
+.comanda_title {
+    color: #424e5c;
+    display: block;
+    font-family: 'pt_sans_narrowbold';
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.sport_name {
+    color: #333333;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.comanda_count {
+    color: #666666;
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.comanda_count span {
+    color: #333333;
+    font-style: normal;
+}
+
+.comanda_main .foto_item {
+    width: 595px;
+}
+
+.comanda_main .foto_item span, .comanda_main .foto_item img {
+    height: 83px;
+    width: 82px;
+}
+
+.comanda_data {
+    padding: 0 0 0 19px;
+    width: 210px;
 }
