@@ -1704,3 +1704,55 @@ h3, .title_3 {
     line-height: 21px;
     margin: 5px 0 0 0;
 }
+
+.tabs {
+    border-bottom: 3px solid #3a4653;
+    border-radius: 3px;
+    margin: 16px 0 0 0;
+    overflow: hidden;
+}
+
+.tabs > li {
+    background-color: #428ca5;
+    color: #ffffff;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+    text-align: center;
+    width: 136px;
+}
+
+.tabs > li:before {
+    background: url(../img/tabs_right.png) no-repeat;
+/*    box-shadow: 5px 1px 10px 0.00px rgba(14, 40, 49, 0.28);*/
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 0;
+    width: 25px;
+    z-index: 10;
+}
+
+.tabs > li:last-child:before {
+    display: none;
+}
+
+.tabs > li:hover {
+    background: #424e5c;
+}
+
+.tabs > li:hover:before {
+    background-position: 0 -36px;    
+}
+
+.tabs > li a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+}
+
+.tabs > li.active {
+    background: #424e5c;
+}
