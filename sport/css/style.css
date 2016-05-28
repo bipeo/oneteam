@@ -1344,6 +1344,7 @@ h5 {
 }
 
 .news_item {
+    overflow: hidden;
     padding: 0 0 34px 22px;
 }
 
@@ -1425,6 +1426,7 @@ h5 {
     border-radius: 3px;
     box-shadow: 2px 4px 8px 0.00px rgba(0, 0, 0, 0.14);
     margin: 11px 0 12px 0;
+    position: relative;
 }
 .cal-context {
     float:right;
@@ -1457,14 +1459,14 @@ h5 {
     background: #424e5c;
     color: #feffff;
     font-size: 20px;
-    padding: 9px 0 0 0;
+    padding: 9px 0 0 60px;
     text-align: center;
 }
 
 .month {
     color: #cccbd4;
     font-size: 18px;
-    padding: 5px 0 8px 0;
+    padding: 5px 0 8px 63px;
 }
 
 #calendar .cal-year-box [class*="span"], #calendar .cal-month-box [class*="cal-cell"], .block-inform #calendar .cal-year-box [class*="span"], .block-inform #calendar .cal-month-box [class*="cal-cell"] {
@@ -1481,7 +1483,7 @@ h5 {
 }
 
 .cal-row-head [class*="cal-cell"]:first-child, .cal-row-head [class*="cal-cell"] {
-    padding-top: 7px;
+    padding-top: 9px;
 }
 
 #calendar .event, .block-inform #calendar .event {
@@ -1603,6 +1605,23 @@ h5 {
     width: 270px;
 }
 
+.content_main_right .blue_btn img {
+    left: -10px;
+    position: relative;
+    top: 6px;
+}
+
+.content_main_right .btn {
+    display: block;
+    text-align: center;
+}
+
+.content_main_right .btn img {
+    position: relative;
+    right: -5px;
+    top: 6px;
+}
+
 .personal_name {
     margin: 0 0 20px 0;
     overflow: hidden;
@@ -1626,7 +1645,27 @@ h5 {
     width: 395px;
 }
 
+.personal_name > li a img {
+    position: relative;
+    right: -8px;
+    top: 7px;
+}
 
+.raiting_txt {
+    color: #666666;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.count_raiting {
+    background: url(../img/raiting_ico.png) no-repeat;
+    color: #ffffff;
+    display: block;
+    height: 49px;
+    line-height: 54px;
+    text-align: center;
+    width: 52px;
+}
 
 .h_2 {
     display:block;
@@ -1644,6 +1683,7 @@ h5 {
 }
 
 .account_data {
+    position: relative;
     width: 443px;
 }
 
@@ -1748,6 +1788,19 @@ h5 {
     margin: 5px 0 0 0;
 }
 
+.raiting {
+    position: absolute;
+    right: 80px;
+    top: 77px;
+    width: 130px;
+}
+
+.count_raiting {
+    position: absolute;
+    right: 13px;
+    top: -18px;
+}
+
 .tabs {
     border-radius: 3px;
     margin: 16px 0 41px 0;
@@ -1849,6 +1902,13 @@ h5 {
     margin: 0 20px 19px 19px;
     padding: 0 0 19px 0;
     overflow: hidden;
+}
+
+.comanda_main .btn_2 {
+    height: 36px;
+    line-height: 33px;
+    margin: 53px 0 0 0;
+    width: 160px;
 }
 
 .review_box .comanda_main {
@@ -2048,4 +2108,97 @@ h5 {
 
 .under_comm  {
     margin: 30px 0px 60px 40px;
+}
+
+.content_main_right #calendar {
+    margin-bottom: 7px;
+    margin-top: 17px;
+}
+
+.content_main_right .block_news {
+    padding-top: 26px;
+}
+
+.answer {
+    background: url(../img/answer_ico.png) no-repeat left 1px;
+    color: #424e5c;
+    float: right;
+    font-size: 16px;
+    margin: 0 24px 0 0;
+    padding: 5px 0 0 27px;
+}
+
+.content_main_right .news_item {
+    padding-bottom: 15px;
+}
+
+.pagination {
+    margin: 0 0 0 19px;
+    overflow: hidden;
+}
+
+.pagination > li {
+    color: #666666;
+    float: left;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 25px;
+}
+
+.pagination > li + li {
+    margin-left: 10px;
+}
+
+.pagination > li:first-child {
+    font-size: 20px;
+}
+
+.pagination > li a {
+    display: block;
+    height: 25px;
+    width: 25px;
+}
+
+.pagination > li:hover a {
+    background-color: #424e5c;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.pagination > li:first-child a:hover, .pagination > li:last-child a:hover {
+    background: none;
+}
+
+.pagin_arrows span {
+    background: url(../img/pagination_arrows.png) no-repeat;
+    display: block;
+    height: 14px;
+    left: 4px;
+    position: relative;
+    top: 6px;
+    width: 19px;
+}
+
+.arrows_left span {
+    background-position: 0 0;
+}
+
+.pagination > li:first-child a:hover span {
+    background-position: -19px 0;
+}
+
+.arrows_right span {
+    background-position: 0 -14px;
+}
+
+.pagination > li:last-child a:hover span {
+    background-position: -19px -14px;
+}
+
+.calendar_user {
+    left: 5px;
+    position: absolute;
+    top: 5px;
 }
