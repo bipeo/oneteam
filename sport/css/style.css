@@ -1427,6 +1427,7 @@ h5 {
     box-shadow: 2px 4px 8px 0.00px rgba(0, 0, 0, 0.14);
     margin: 11px 0 12px 0;
     position: relative;
+    width: 270px; 
 }
 .cal-context {
     float:right;
