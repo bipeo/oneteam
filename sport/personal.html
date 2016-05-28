@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>персональная страница участника_команды3</title>
+    <title>Персональная страница участника_команды3</title>
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -307,12 +307,12 @@
             <p class="descript_1">Короткий сопроводительный текст Максимльное количество знаков с пробелами: 969. длина текста позволяет сохранить внешний вид страницы и лаконично донести ваше сообщение до потенциального клиента. Если текст будет длиннее, внешний вид блока будет нарушен. Короткий сопроводительный текст. Максимальное количество знаков с пробелами</p>
             <div class="tabs_main">
                 <ul class="tabs">
-                    <li><a href="#">Приключения</a></li>
-                    <li><a href="#">Локации</a></li>
-                    <li><a href="#">Фотогалерея</a></li>
-                    <li><a href="#">Видео</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li class="active"><a href="#">Команды</a></li>
+                    <li class="advent"><a href="#">Приключения</a></li>
+                    <li class="loc"><a href="#">Локации</a></li>
+                    <li class="gall"><a href="#">Фотогалерея</a></li>
+                    <li class="video"><a href="#">Видео</a></li>
+                    <li class="revs"><a href="#">Отзывы</a></li>
+                    <li class="teams active"><a href="#">Команды</a></li>
                 </ul>
                 <div class="comanda_main">
                     <div class="comanda_data left">
@@ -500,8 +500,11 @@
                     </div>
 
                 </div>
-                </a><div style="" id="cal-slide-box"><a href="#"><span class="tick-day3" id="cal-slide-tick" style=""></span>
-                </a><!--
+                </a>
+                    
+                    <div style="" id="cal-slide-box">
+              
+                        <!--
                 <div id="cal-slide-content" class="cal-event-list"><a href="#">
                 </a>
                 <ul class="unstyled list-unstyled"><a href="#">
@@ -734,27 +737,27 @@
                         </div>
                     </div>
                     <div class="cal-cell1 cal-cell" data-cal-row="-day3"><div class="cal-month-day cal-day-outmonth">
-                        <span data-original-title="" class="pull-right" data-cal-date="2016-06-01" data-cal-view="day" data-toggle="tooltip" title="">1</span>
+                        <span data-original-title="" class="pull-right" data-cal-date="2016-06-01" data-cal-view="day" data-toggle="tooltip" title="">01</span>
 
                         </div>
                     </div>
                     <div class="cal-cell1 cal-cell" data-cal-row="-day4"><div class="cal-month-day cal-day-outmonth">
-                        <span data-original-title="" class="pull-right" data-cal-date="2016-06-02" data-cal-view="day" data-toggle="tooltip" title="">2</span>
+                        <span data-original-title="" class="pull-right" data-cal-date="2016-06-02" data-cal-view="day" data-toggle="tooltip" title="">02</span>
 
                         </div>
                     </div>
                     <div class="cal-cell1 cal-cell" data-cal-row="-day5"><div class="cal-month-day cal-day-outmonth">
-                        <span data-original-title="" class="pull-right" data-cal-date="2016-06-03" data-cal-view="day" data-toggle="tooltip" title="">3</span>
+                        <span data-original-title="" class="pull-right" data-cal-date="2016-06-03" data-cal-view="day" data-toggle="tooltip" title="">03</span>
 
                         </div>
                     </div>
                     <div class="cal-cell1 cal-cell" data-cal-row="-day6"><div class="cal-month-day cal-day-outmonth cal-day-weekend">
-                        <span data-original-title="" class="pull-right" data-cal-date="2016-06-04" data-cal-view="day" data-toggle="tooltip" title="">4</span>
+                        <span data-original-title="" class="pull-right" data-cal-date="2016-06-04" data-cal-view="day" data-toggle="tooltip" title="">04</span>
 
                         </div>
                     </div>
                     <div class="cal-cell1 cal-cell" data-cal-row="-day7"><div class="cal-month-day cal-day-outmonth cal-day-weekend">
-                        <span data-original-title="" class="pull-right" data-cal-date="2016-06-05" data-cal-view="day" data-toggle="tooltip" title="">5</span>
+                        <span data-original-title="" class="pull-right" data-cal-date="2016-06-05" data-cal-view="day" data-toggle="tooltip" title="">05</span>
 
                         </div>
                     </div>
@@ -762,7 +765,10 @@
 
                 </div>
             </div><!-- END calendar  -->
+            
+            <div class="frds_btn">
             <a href="#" class="btn">Друзья<img src="img/btn_arrow.png" alt=""></a>
+            </div>
             <div class="foto_item">
                 <span><img alt="" src="images/rabota_za_kompyuterom12.png"></span>
                 <span><img alt="" src="images/f3fd4df0da1a98f8e612ff37222cf14f.png"></span>
@@ -867,7 +873,7 @@
         variableWidth: true
     });
     var max_three;
-    var min_three = 0;
+    var min_three = 0; //########### if less then 3 slides, check 1!!
     if(min_three == 1) {
         $('.slider-nav').addClass('minthree');
         console.log(min_three);

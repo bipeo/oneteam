@@ -209,7 +209,8 @@ th .tooltip-inner {
 .cal-row-head [class*="cal-cell"] {
     min-height: auto;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    width:13.6%;    
 }
 
 .cal-events-num {
@@ -569,14 +570,19 @@ th .tooltip-inner {
 .cal-month-box .cal-row-fluid {
     border-bottom: 1px solid #e1e1e1;
     margin-left: 0;
-    margin-right: 0
+    margin-right: 0;
+    padding:0px 4px 0px 7px;     
 }
 
 .cal-year-box .row-fluid:last-child,
 .cal-month-box .cal-row-fluid:last-child {
-    border-bottom: 0
+    border-bottom: 0;
+   
 }
 
+.cal-month-box > a .cal-row-fluid:last-child {
+    background:transparent; 
+}
 .cal-month-box,
 .cal-year-box,
 .cal-week-box {
