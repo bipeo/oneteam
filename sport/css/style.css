@@ -1426,6 +1426,7 @@ h5 {
     border-radius: 3px;
     box-shadow: 2px 4px 8px 0.00px rgba(0, 0, 0, 0.14);
     margin: 11px 0 12px 0;
+    position: relative;
 }
 .cal-context {
     float:right;
@@ -1458,14 +1459,14 @@ h5 {
     background: #424e5c;
     color: #feffff;
     font-size: 20px;
-    padding: 9px 0 0 0;
+    padding: 9px 0 0 60px;
     text-align: center;
 }
 
 .month {
     color: #cccbd4;
     font-size: 18px;
-    padding: 5px 0 8px 0;
+    padding: 5px 0 8px 63px;
 }
 
 #calendar .cal-year-box [class*="span"], #calendar .cal-month-box [class*="cal-cell"], .block-inform #calendar .cal-year-box [class*="span"], .block-inform #calendar .cal-month-box [class*="cal-cell"] {
@@ -1482,7 +1483,7 @@ h5 {
 }
 
 .cal-row-head [class*="cal-cell"]:first-child, .cal-row-head [class*="cal-cell"] {
-    padding-top: 7px;
+    padding-top: 9px;
 }
 
 #calendar .event, .block-inform #calendar .event {
@@ -2194,4 +2195,10 @@ h5 {
 
 .pagination > li:last-child a:hover span {
     background-position: -19px -14px;
+}
+
+.calendar_user {
+    left: 5px;
+    position: absolute;
+    top: 5px;
 }
