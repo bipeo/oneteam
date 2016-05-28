@@ -235,7 +235,16 @@
                         <img src="images/Layer-138.png" alt="">
                     </div>
                     <div>
+                        <img src="images/slide_2.jpg" alt="">
+                    </div>
+                    <div>
                         <img src="images/Layer-138.png" alt="">
+                    </div>
+                    <div>
+                        <img src="images/Layer-138.png" alt="">
+                    </div>
+                    <div>
+                        <img src="images/slide_2.jpg" alt="">
                     </div>
                     <div>
                         <img src="images/Layer-138.png" alt="">
@@ -270,15 +279,26 @@
                             <li><a href="#">Название вида спорта</a></li>
                         </ul>
                     </div>
-                    <div class="slider-nav">
-                        <div>
-                            <img src="images/personal_slide_1.png" alt="">
-                        </div>
-                        <div>
-                            <img src="images/Layer-141.png" alt="">
-                        </div>
-                        <div>
-                            <img src="images/Layer-142.png" alt="">
+                    <div class="slider_nav_wrapper">
+                        <div class="slider-nav">
+                            <div>
+                                <img src="images/personal_slide_1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/Layer-141.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/Layer-142.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/personal_slide_1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/Layer-141.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/Layer-142.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -422,8 +442,8 @@
             <!-- calendar  -->
             <div style="width: 270px;" id="calendar"><a href="#">
                 <img class="calendar_user" src="images/user.png" alt="">
-                <div class="calendar_title">Календарь приключений</div>
-                <div class="month">«&nbsp;&nbsp;Сентябрь, 2015&nbsp;&nbsp;»</div>
+                <div class="calendar_title pl_1">Календарь приключений</div>
+                <div class="month pl_2">«&nbsp;&nbsp;Сентябрь, 2015&nbsp;&nbsp;»</div>
                 <div class="cal-row-fluid cal-row-head">
                     <div class="cal-cell1">Пн</div>
 
@@ -829,6 +849,7 @@
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
         arrows: false,
         fade: true,
         asNavFor: '.slider-nav',
@@ -836,6 +857,7 @@
     });
     $('.slider-nav').slick({
         arrows: false,
+        autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
@@ -844,6 +866,13 @@
         focusOnSelect: true,
         variableWidth: true
     });
+    var max_three;
+    var min_three = 0;
+    if(min_three == 1) {
+        $('.slider-nav').addClass('minthree');
+        console.log(min_three);
+    }
+    var countItem = $('.slider-nav').find('.slick-slide').length;
 </script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">

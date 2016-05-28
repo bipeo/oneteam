@@ -1459,14 +1459,14 @@ h5 {
     background: #424e5c;
     color: #feffff;
     font-size: 20px;
-    padding: 9px 0 0 60px;
+    padding: 9px 0 0 0;
     text-align: center;
 }
 
 .month {
     color: #cccbd4;
     font-size: 18px;
-    padding: 5px 0 8px 63px;
+    padding: 5px 0 8px 0;
 }
 
 #calendar .cal-year-box [class*="span"], #calendar .cal-month-box [class*="cal-cell"], .block-inform #calendar .cal-year-box [class*="span"], .block-inform #calendar .cal-month-box [class*="cal-cell"] {
@@ -1770,7 +1770,6 @@ h5 {
 .slider-nav {
     clear: both;
     overflow: hidden;
-    width: 443px;
 }
 
 .content_main_left .title_3 {
@@ -2201,4 +2200,29 @@ h5 {
     left: 5px;
     position: absolute;
     top: 5px;
+}
+
+.slick-list.draggable {
+    padding: 0 !important;
+}
+
+.slider-nav .slick-slide {
+    cursor: pointer;
+}
+
+.slider_nav_wrapper {
+    overflow: hidden;
+    width: 425px;
+}
+
+.minthree .slick-track {
+    transform: none!important;
+}
+
+.pl_1 {
+    padding-left: 60px;
+}
+
+.pl_2 {
+    padding-left: 63px;
 }
