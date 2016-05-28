@@ -1841,3 +1841,8 @@ h3, .title_3 {
 .comanda_data {
     width: 210px;
 }
+
+.comanda_data .btn_2 {
+    margin: 0 auto;
+    width: 160px;
+}
