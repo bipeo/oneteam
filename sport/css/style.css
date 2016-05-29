@@ -240,6 +240,7 @@ h5 {
 .wrapper {
     margin: 0 auto;
     max-width: 1900px;
+    min-width: 1200px;
 }
 
 .header {
@@ -2377,3 +2378,156 @@ h5 {
 .pl_2 {
     padding-left: 63px;
 }
+@media only screen and (max-width:1000px) {
+    body {
+        
+     transform: scale(.72); 
+    -webkit-transform: scale(.72);
+    -webkit-transform-origin: 0 0;
+    -moz-transform: scale(.72);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(.72);
+    -o-transform-origin: 0 0;
+    -ms-transform: scale(.72);
+    -ms-transform-origin: 0 0;
+    }
+}
+@media only screen and (max-width:900px) {
+    body {
+        
+     transform: scale(.64); 
+    -webkit-transform: scale(.64);
+    -webkit-transform-origin: 0 0;
+    -moz-transform: scale(.64);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(.64);
+    -o-transform-origin: 0 0;
+    -ms-transform: scale(.64);
+    -ms-transform-origin: 0 0;
+    }
+}
+@media only screen and (max-width:800px) {
+    body {
+        
+     transform: scale(.57); 
+    -webkit-transform: scale(.57);
+    -webkit-transform-origin: 0 0;
+    -moz-transform: scale(.57);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(.57);
+    -o-transform-origin: 0 0;
+    -ms-transform: scale(.57);
+    -ms-transform-origin: 0 0;
+    }
+}
+@media only screen and (max-width:700px) {
+    body {
+        
+     transform: scale(.5); 
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    -moz-transform: scale(.5);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(.5);
+    -o-transform-origin: 0 0;
+    -ms-transform: scale(.5);
+    -ms-transform-origin: 0 0;
+    }
+}
+@media only screen and (max-width:625px) {
+    body {
+        
+     transform: scale(.48); 
+    -webkit-transform: scale(.48);
+    -webkit-transform-origin: 0 0;
+    -moz-transform: scale(.48);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(.48);
+    -o-transform-origin: 0 0;
+    -ms-transform: scale(.48);
+    -ms-transform-origin: 0 0;
+    }
+}
+@media only screen and (max-width:600px) {
+    body {
+        
+     transform: scale(.45); 
+    -webkit-transform: scale(.45);
+    -webkit-transform-origin: 0 0;
+    -moz-transform: scale(.45);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(.45);
+    -o-transform-origin: 0 0;
+    -ms-transform: scale(.45);
+    -ms-transform-origin: 0 0;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    body {
+     transform: scale(0.41); 
+    -webkit-transform: scale(0.41);
+    -webkit-transform-origin: 0 0 ;
+    -moz-transform: scale(0.41);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.41);
+    -o-transform-origin: 0% 0;
+    -ms-transform: scale(0.41);
+    -ms-transform-origin: 0 0;
+    }
+}
+
+@media only screen and (max-width:525px) {
+    body {
+     transform: scale(0.39); 
+    -webkit-transform: scale(0.39);
+    -webkit-transform-origin: 0 0 ;
+    -moz-transform: scale(0.39);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.39);
+    -o-transform-origin: 0% 0;
+    -ms-transform: scale(0.39);
+    -ms-transform-origin: 0 0;
+    }
+}
+@media only screen and (max-width:480px) {
+    body {
+     transform: scale(0.37); 
+    -webkit-transform: scale(0.37);
+    -webkit-transform-origin: 0 0 ;
+    -moz-transform: scale(0.37);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.37);
+    -o-transform-origin: 0% 0;
+    -ms-transform: scale(0.37);
+    -ms-transform-origin: 0 0;
+    }
+}
+@media only screen and (max-width:460px) {
+    body {
+     transform: scale(0.35); 
+    -webkit-transform: scale(0.35);
+    -webkit-transform-origin: 0 0 ;
+    -moz-transform: scale(0.35);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.35);
+    -o-transform-origin: 0% 0;
+    -ms-transform: scale(0.35);
+    -ms-transform-origin: 0 0;
+    }
+}
+@media only screen and (max-width:350px) {
+    body {
+     transform: scale(0.32); 
+    -webkit-transform: scale(0.32);
+    -webkit-transform-origin: 0 0 ;
+    -moz-transform: scale(0.32);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.32);
+    -o-transform-origin: 0% 0;
+    -ms-transform: scale(0.32);
+    -ms-transform-origin: 0 0;
+    }
+}
+
+
