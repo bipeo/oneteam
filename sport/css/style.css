@@ -2607,7 +2607,6 @@ input[type='radio']:checked + label {
 
 .mCustomScrollbar {
     height: 980px;
-    overflow-y: scroll;
 }
 
 .mCSB_scrollTools .mCSB_draggerRail {
