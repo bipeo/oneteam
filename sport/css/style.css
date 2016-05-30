@@ -1700,12 +1700,21 @@ h5, .title_5 {
 }
 
 .content_main_right {
-    position: absolute;
+    
     right: 0;
     width: 270px;
     z-index: 100;
 }
-
+.content_main_right.abs {
+    position: absolute;
+}
+.content_main_right.yscroll {
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.content_main_right.fixed {
+    position: static;
+}
 .content_main_right .blue_btn img {
     left: -10px;
     position: relative;
