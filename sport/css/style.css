@@ -2717,8 +2717,6 @@ input[type='radio']:checked + label {
     background: url(../img/block_5_ul.png) no-repeat left center;
     line-height: 21px;
     p0-0-0-9
-.loc2list li {
-    
 }
 
 @media only screen and (max-width:1000px) {
