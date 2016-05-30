@@ -860,7 +860,9 @@ h5, .title_5 {
 .popular_d > li > a {
     color:#428ca5;
 }
-
+.popular_d > li > a:hover {
+    text-decoration: underline;
+}
 .popular_d > li:nth-child(2n+1) {
     clear: both;
     width: 210px;
@@ -2076,11 +2078,15 @@ h5, .title_5 {
     
     font-size:16px;
 }
+.accbox.st_2 {
+    margin-bottom:16px;
+}
 .accbox .h_2 {
  margin:8px 0px 20px 0px;   
  text-align:center;   
 }
 .accbox .desc {
+     margin:3px 0px 0px 0px; 
     float:left;
 }
 .accbox .info {
@@ -2088,6 +2094,39 @@ h5, .title_5 {
     float:left;
     margin:0px 0px 0px 30px
 }
+.accbox .info p {
+    margin-bottom:12px;
+    line-height:1.33em;
+}
+.accbox .info p,  .loc2list  {
+    color:#666;
+}
+.loc2list  {
+    padding:7px 0px 8px 0px; 
+    border-bottom: 1px dotted #d9d9de;
+   
+}
+ .loc2list li {
+    font-style: italic; 
+    padding:0px 0px 0px 11px; 
+    background: no-repeat 2px center url('../img/raft_ic.png') ;
+    margin:0px 0px 6px 0px; 
+}
+.loc2_tit {
+      margin:12px 0px 8px 0px; 
+}
+.loc2_tit .ic {
+    background: no-repeat url('../img/loc2_ic.png');
+    width:11px;
+    height:17px;
+    float:left;
+    margin:3.4px 8px 0px 0px;
+}
+.loc2_tit p.dsk {
+    line-height: 1.2em;
+    overflow:hidden;
+}
+
 .accbox .info .row {
     
     overflow:hidden;
@@ -2169,6 +2208,116 @@ h5, .title_5 {
 .review_box {
     
 }
+
+.outsel .select {
+    width:100%;
+}
+
+.sortbox:before, sortbox:after {
+    content:'';
+    display:table;
+}
+.sortbox:after {
+    clear:both;
+}
+.sortbox  .sin  {
+  float:left;
+   
+}
+.dpculc {
+    width:265px;
+    float:left; 
+}
+
+.dpculc .itm {
+    
+}
+
+.dpculc .tn {
+    float:left;
+}
+.dpculc .vn {
+    overflow:hidden;
+}
+.dpculc .vn .option-group {
+    float:left;
+}
+
+.vn.c_slion {
+    
+}
+
+.ion_hs {
+    
+}
+.ion_hs .rw {
+    overflow:hidden;
+}
+.ion_hs .rw em {
+    float:left;
+}
+.ion_hs .rw input {
+    border:1px solid #e1e1e1;
+    width:54px;
+    float:left;
+}
+input[type='radio'] {
+   opacity: 0;
+   filter: alpha(opacity=0);
+   width: 17px;
+   height: 17px;
+   z-index: 99999;
+   position: relative;
+   cursor: pointer;
+}
+ 
+input[type='radio'] + label {
+   padding-left: 24px;
+   background: url('https://s3-eu-west-1.amazonaws.com/radiantwind/js_css/radio_sprite.png') transparent no-repeat 0 -18px;
+   position: relative;
+   left: -21px;
+   font-size: 16px;
+   color: #efefef;
+   cursor: pointer;
+   height: 17px;
+}
+ 
+input[type='radio']:checked + label {
+   background-position: 0 0;
+}
+
+.line1 .outsel {
+    margin-bottom:20px;
+}
+ .outsel {
+    width:100%; 
+    float:left;
+}
+.outsel.half {
+    margin-right:20px;
+    width:255px;  
+}
+.outsel.half:last-child {
+    margin-right:0px;
+}
+.outsel.long2 {
+     width:540px; 
+}
+.forbut {
+    overflow:hidden;
+    margin:0px 0px 0px 0px;
+}
+.forbut .btn {
+    float:left;
+    margin:10px 0px 10px 0px;
+    text-align:center;
+    width:160px;
+}
+.forbut .htit {
+    float:right;
+}
+
+
 .review_box .pick {
     margin:1px 19px 0px 0px;
     float:left;
@@ -2624,6 +2773,7 @@ h5, .title_5 {
 
 .mt_0 {
     margin-top: 0 !important;
+  
 }
 
 @media only screen and (max-width:1000px) {
