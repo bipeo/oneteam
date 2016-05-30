@@ -1689,12 +1689,7 @@ h5, .title_5 {
 .content_main {
     background: #fff;
     padding: 14px 0 0 0;
-}
-
-.content_main:after {
-     content:'';
-     display:table;
-     clear:both;
+    position: relative;
 }
 
 .content_main_left {
@@ -1702,6 +1697,8 @@ h5, .title_5 {
 }
 
 .content_main_right {
+    position: absolute;
+    right: 0;
     width: 270px;
 }
 
@@ -2468,7 +2465,7 @@ h5, .title_5 {
     width: 15px;
 }
 
-.mCSB_scrollTools .mCSB_draggerContainer {
+.mCSB_scrollTools {
     z-index: 2;
 }
 
@@ -2484,6 +2481,20 @@ h5, .title_5 {
 
 .tabs_content {
     padding: 0 0 20px 0;
+}
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 0;
+}
+
+.block_3 {
+    background: url(../img/block_5_bg.jpg) no-repeat top center;
+    clear: both;
+    height: 1031px;
+}
+
+.block_3_content {
+    width: 825px;
 }
 
 @media only screen and (max-width:1000px) {
