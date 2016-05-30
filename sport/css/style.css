@@ -1446,11 +1446,11 @@ h5, .title_5 {
     color: #6f6e81;
     display: block;
     font-size: 13px;
-    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
 }
 
 .news_item .title_5 {
-    margin: 0 0 7px 0;
+    padding: 0 0 7px 0;
 }
 
 .news_txt {
@@ -1701,6 +1701,7 @@ h5, .title_5 {
     position: absolute;
     right: 0;
     width: 270px;
+    z-index: 100;
 }
 
 .content_main_right .blue_btn img {
