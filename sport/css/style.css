@@ -2413,8 +2413,77 @@ h5, .title_5 {
 
 .tabs_content .title_5 {
     color: #333333;
+    font-family: "PTSans-Narrow";
+    margin: 0 0 20px 0;
     text-align: center;
     text-transform: uppercase;
+}
+
+.descript_2 {
+    color: #666666;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+#tab2, #tab3, #tab4 {
+    display: none;
+}
+
+.tab_article {
+    overflow: hidden;
+}
+
+.tab_article + .tab_article {
+    margin-top: 32px;
+}
+
+.tab_article img.left {
+    display: block;
+    margin: 0 12px 0 0;
+}
+
+.tab_article_descr {
+    width: 510px;
+}
+
+.tab_article_descr .title_5 {
+    color: #535266;
+    font-family: 'pt_sans_narrowbold';
+    margin: 0;
+    text-align: left;
+    text-transform: none;
+}
+
+.tab_article_descr .read_more {
+    margin-top: 9px;
+}
+
+.mCustomScrollbar {
+    height: 980px;
+    overflow-y: scroll;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    border-radius: 0;
+    width: 15px;
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    z-index: 2;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #eaeaf4;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #424e5c url(../img/scroll_ico.png) no-repeat center center;
+    border-radius: 4px;
+    width: 15px;
+}
+
+.tabs_content {
+    padding: 0 0 20px 0;
 }
 
 @media only screen and (max-width:1000px) {
