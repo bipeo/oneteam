@@ -1958,55 +1958,56 @@ h5, .title_5 {
     color: #fff;
     display: block;
     font-size: 16px;
+    background-repeat: no-repeat;
 }
 
- .tabs > li.advent {
+ .tabs > li.advent a {
     background-image: url('../img/tabs_ico_1.png');
     background-position: 19px 10px;
     padding: 0 0 0 32px;
 }
 
-.tabs > li.loc {
+.tabs > li.loc a {
     background-image: url('../img/tabs_ico_2.png');
     background-position: 40px 8px;
     padding: 0 0 0 33px;
 }
 
-.tabs > li.gall {
+.tabs > li.gall a {
     background-image: url('../img/tabs_ico_3.png');
     background-position: 24px 9px;
     padding: 0 0 0 39px;
 }
 
-.tabs > li.video {
+.tabs > li.video a {
     background-image: url('../img/tabs_ico_4.png');
     background-position: 39px 8px;
     padding: 0 0 0 32px;
 }
 
-.tabs > li.revs {
+.tabs > li.revs a {
     background-image: url('../img/tabs_ico_5.png');
     background-position: 37px 10px;
     padding: 0 0 0 32px;
 }
 
-.tabs > li.teams {
+.tabs > li.teams a {
     background-image: url('../img/tabs_ico_6.png');
     background-position: 31px 10px;
     padding: 0 0 0 38px;
 }
 
-.tabs > li.dates {
+.tabs > li.dates a {
     background-image: url('../img/tabs_ico_7.png');
     background-position: 31px 9px;
     padding: 0 0 0 18px;
 }
-.tabs > li.descript {
+.tabs > li.descript a {
     background-image: url('../img/tabs_ico_8.png');
     background-position: 31px 9px;
     padding: 0 0 0 27px;
 }
-.tabs > li.forum {
+.tabs > li.forum a {
     background-image: url('../img/tabs_ico_9.png');
     background-position: 36px 9px;
     padding: 0 0 0 33px;
