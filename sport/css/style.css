@@ -2528,6 +2528,7 @@ input[type='radio']:checked + label {
     font-size: 16px;
     line-height: 21px;
     overflow: hidden;
+    padding: 9px 0 0 0;
 }
 
 .article_item img {
@@ -2774,7 +2775,22 @@ input[type='radio']:checked + label {
 
 .mt_0 {
     margin-top: 0 !important;
-  
+}
+
+.article_ico a {
+    background: url(../img/article_ico.png) no-repeat 69px center;
+}
+
+.foto_ico a {
+    background: url(../img/foto_ico.png) no-repeat 46px center;
+}
+
+.video_ico a {
+    background: url(../img/video_ico.png) no-repeat 44px center;
+}
+
+.forum_ico a {
+    background: url(../img/forum_ico.png) no-repeat 52px center;
 }
 
 @media only screen and (max-width:1000px) {
