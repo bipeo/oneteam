@@ -495,7 +495,7 @@ h5, .title_5 {
     margin-left: -18px;
     position: absolute;
     width: 0;
-    z-index: 100;
+    z-index: 101;
 }
 
 .menu_dropdown > li > ol {
@@ -579,6 +579,7 @@ h5, .title_5 {
     border-top: 4px solid #428ca5;
     padding: 15px 0 20px 0;
     width: 1110px;
+    z-index: 101;
 }
 
 .menu_dropdown > li:nth-child(1) > ol {
@@ -2019,7 +2020,9 @@ h5, .title_5 {
     padding: 0 0 19px 0;
     overflow: hidden;
 }
-
+.comanda_main:last-child {
+    border-bottom:0px;
+}
 .comanda_main .btn_2 {
     height: 36px;
     line-height: 33px;
@@ -2332,6 +2335,9 @@ input[type='radio']:checked + label {
 .review_box .item_pick .btn_2 {
     margin:14px auto 26px auto;
 }
+.review_box  .item_pick .act_3 .btn_2 {
+    margin-bottom:0px;
+}
 .tabs_main .tdate {
     display: block;
     font-size: 13px;
@@ -2388,7 +2394,7 @@ input[type='radio']:checked + label {
     text-align:center;
     text-transform: uppercase;
     color:#333333;
-    margin:27px 0px 21px 0px;
+    margin:0px 0px 21px 0px;
 }
 .btn_2.w_01 {
     margin-top:10px;
@@ -2548,6 +2554,7 @@ input[type='radio']:checked + label {
 }
 
 .article_item_2 .title_2 {
+    padding-top:10px;
     text-align: center;
 }
 
@@ -2642,8 +2649,10 @@ input[type='radio']:checked + label {
 
 .block_4 {
     background: url(../img/block_5_bg.jpg) no-repeat top center;
+    background-size:cover;
     clear: both;
-    height: 1031px;
+/*    height: 1031px;*/
+    padding-bottom:56px;
 }
 
 .block_4_content {
@@ -2656,6 +2665,9 @@ input[type='radio']:checked + label {
 /*    margin: 0 0 15px 0;*/
     text-align: center;
     text-transform: uppercase;
+}
+.block_4_content .title_5.st_2 {
+    padding-bottom:15px;
 }
 
 .block_4_content {
