@@ -12,6 +12,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<link rel="stylesheet" href="libs/slick-1.6.0/slick.css">
+	<link rel="stylesheet" href="libs/slick-1.6.0/slick-theme.css">
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
@@ -39,12 +40,66 @@
     <div class="slider">
         <div>
             <img src="img/slide.jpg" alt="">
+            <div class="center">
+                <p class="slide_title">Lorem ipsum dolor sit amet consectetur ess</p>
+                <p class="slide_descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                <a href="#" class="green_btn">Lorem Ipsum<img src="img/Arrow-Down-Icon.png" alt="" /></a>
+            </div>
         </div>
         <div>
-            <img src="img/slide.jpg" alt="">
+            <img src="img/slide2.jpg" alt="">
+            <div class="center">
+                <p class="slide_title">Lorem ipsum dolor sit amet consectetur ess</p>
+                <p class="slide_descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                <a href="#" class="green_btn">Lorem Ipsum<img src="img/Arrow-Down-Icon.png" alt="" /></a>
+            </div>
         </div>
         <div>
-            <img src="img/slide.jpg" alt="">
+            <img src="img/slide3.jpg" alt="">
+            <div class="center">
+                <p class="slide_title">Lorem ipsum dolor sit amet consectetur ess</p>
+                <p class="slide_descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                <a href="#" class="green_btn">Lorem Ipsum<img src="img/Arrow-Down-Icon.png" alt="" /></a>
+            </div>
+        </div>
+        <div>
+            <img src="img/slide4.jpg" alt="">
+            <div class="center">
+                <p class="slide_title">Lorem ipsum dolor sit amet consectetur ess</p>
+                <p class="slide_descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                <a href="#" class="green_btn">Lorem Ipsum</a>
+            </div>
+        </div>
+    </div>
+    <div class="block_1">
+        <div class="center">
+            <div class="preim left">
+                <h2>Наши преимущества</h2>
+                <ul class="ul_preim">
+                    <li>
+                        На рынке мебели <br>
+                        <span>с 1997 года</span>
+                    </li>
+                    <li>Фабричное <br>
+                        качество</li>
+                    <li>
+                        Клиенты <span>по всей <br>
+                            России</span>
+                    </li>
+                    <li>
+                        Скидки на образцы <br>
+                        <span>до 50%</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="form1 left">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Телефон">
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
         </div>
     </div>
 </div>	
@@ -56,6 +111,15 @@
 <![endif]-->
 <script src="libs/slick-1.6.0/slick.min.js"></script>
 <script src="js/common.js"></script>
+<script>
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+</script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
