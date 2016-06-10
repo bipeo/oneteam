@@ -301,6 +301,7 @@ input.phone {
     border-top: 4px solid #62b4e0;
     margin: 0 auto;
     max-width: 2200px;
+    min-width: 1200px;
 }
 
 .header {
@@ -421,6 +422,34 @@ input.phone {
     top: 52px;
 }
 
+.slick-arrow {
+    background: url(img/slider_arrow.png) no-repeat;
+    cursor: pointer;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+    width: 42px;
+}
+
+.slick-slide .prev {
+    background-position: 0 -40px;
+    left: 0;
+}
+
+.slick-slide .prev:hover {
+    background-position: -42px -40px;    
+}
+
+.slick-slide .next {
+    background-position: 0 0;
+    right: 0;
+}
+
+.slick-slide .next:hover {
+    background-position: -42px 0;
+}
+
 .slide_title {
     color: #fff;
     font-family: 'a_futuricablackregular';
@@ -436,6 +465,7 @@ input.phone {
     color: #ffffff;
     line-height: 26px;
     margin: 0 0 34px 146px;
+    width: 775px;
 }
 
 .wrap_green_btn {
@@ -539,6 +569,14 @@ input.phone {
     width: 324px;
 }
 
+.form1 .submit {
+    display: block;
+    font-size: 18px;
+    padding-left: 0;
+    text-align: center;
+    width: 235px;
+}
+
 .form1 input {
     margin: 0 0 10px 0;
     width: 235px;
@@ -546,6 +584,10 @@ input.phone {
 
 .form1 input[type=submit] {
     display: block;
+}
+
+.subscribe:after {
+    background: url(img/subscribe.png) no-repeat;
 }
 
 .form_title {
@@ -563,12 +605,6 @@ input.phone {
     position: relative;
     width: 205px;
 }
-
-/*
-.products .products_item:hover {
-    height: 590px;
-}
-*/
 
 .products .products_item + .products_item {
     margin-left: 40px;
@@ -894,6 +930,8 @@ input.phone {
 }
 
 .footer .logo {
+    display: block;
+    margin-bottom: 30px;
     margin-top: 24px;
 }
 
@@ -924,6 +962,59 @@ input.phone {
     text-align: right;
 }
 
+.soc_btn {
+    overflow: hidden;
+}
+
+.soc_btn > li {
+    float: left;
+    margin-right: 25px;
+}
+
+.soc_btn > li a {
+    background-position: 0 0;
+    display: block; 
+    height: 21px;
+}
+
+.soc_btn .tw a {
+    background: url(img/tw.png) no-repeat;
+    width: 21px;
+}
+
+.soc_btn .tw a:hover {
+    background-position: -21px 0;
+}
+
+.soc_btn .fb a {
+    background: url(img/fb.png) no-repeat;
+    display: block;
+    width: 13px;
+}
+
+.soc_btn .fb a:hover {
+    background-position: -13px 0;
+}
+
+.soc_btn .inst a {
+    background: url(img/inst.png) no-repeat;
+    display: block;
+    width: 22px;
+}
+
+.soc_btn .inst a:hover {
+    background-position:  0 -21px;
+}
+
+.vk a {
+    color: #8493a8;
+    font-size: 23px;
+}
+
+
+.vk a:hover {
+    color: #d4d6da;
+}
 
 
 
