@@ -609,7 +609,7 @@ input.phone {
     margin-left: 40px;
 }
 
-.products .products_item > div {
+.products .products_item  .prod {
     position: absolute;
     top: 0;
 }
@@ -709,7 +709,7 @@ input.phone {
     font-size: 14px;
 }
 
-.products .products_item > div:hover {
+.products .products_item .prod:hover, .products .products_item .prod.hover {
     background-color: rgba(56, 51, 47, 0.05);
     border: 1px solid #b0cad7;
     left: -17px;
@@ -718,24 +718,46 @@ input.phone {
     width: 239px;
 }
 
-.products .products_item > div:hover .products_img:after {
+
+.products_img:hover {
+    
+}
+.products .products_item  .prod:hover, .products .products_item  .prod.hover {
+    background-color: rgba(56, 51, 47, 0.05);
+    border: 1px solid #b0cad7;
+    left: -17px;
+    padding: 17px;
+    top: -17px;
+    width: 239px;
+}
+/**/
+
+.products .products_item  .prod:hover .products_img:after, 
+.products .products_item  .prod.hover .products_img:after {
     background-color: transparent;
 }
 
-.products .products_item > div:hover .blue_btn {
+.products .products_item  .prod:hover .blue_btn,
+.products .products_item  .prod.hover .blue_btn {
     display: none;
 }
 
-.products .products_item > div:hover .products_title {
+.products .products_item .prod:hover .products_title, .products .products_item .prod.hover .products_title {
     color: #4594bf;
     text-transform: uppercase;
 }
 
-.products .products_item > div:hover .products_descript, .products .products_item > div:hover .green_btn, .products .products_item > div:hover .colors {
+.products .products_item .prod:hover .products_descript,
+.products .products_item .prod.hover .products_descript,
+.products .products_item  .prod:hover .green_btn,
+.products .products_item  .prod.hover .green_btn,
+.products .products_item  .prod:hover .colors,
+.products .products_item  .prod.hover .colors {
     display: block;
 }
 
-.products .products_item > div:hover .products_title > li:nth-child(2) {
+.products .products_item  .prod:hover .products_title > li:nth-child(2),
+.products .products_item  .prod.hover .products_title > li:nth-child(2) {
     color: #4594bf;
 }
 
@@ -838,6 +860,7 @@ input.phone {
 
 .reviews {
     background: url(img/bg1.jpg) no-repeat center top;
+    background-size:cover;
     color: #ffffff;
     overflow: hidden;
     padding: 42px 0 85px 0;

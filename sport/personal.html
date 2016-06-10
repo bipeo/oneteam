@@ -889,11 +889,13 @@
         focusOnSelect: true,
         variableWidth: true
     });
-    $('.tabs a').click(function(e) {
+
+        
+         $('.tabs li').click(function(e) {
         e.preventDefault();
         $('.tabs .active').removeClass('active');
-        $(this).parent().addClass('active');
-        var tab = $(this).attr('href');
+        $(this).addClass('active');
+        var tab = $(this).find('a').attr('href');
         $('.tabs_content').not(tab).css({'display':'none'});
         $(tab).fadeIn(400);
     });

@@ -1250,11 +1250,11 @@
 <script src="libs/slick-1.6.0/slick/slick.min.js"></script>
 <script src="libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
-    $('.tabs a').click(function(e) {
+    $('.tabs li').click(function(e) {
         e.preventDefault();
         $('.tabs .active').removeClass('active');
-        $(this).parent().addClass('active');
-        var tab = $(this).attr('href');
+        $(this).addClass('active');
+        var tab = $(this).find('a').attr('href');
         $('.tabs_content').not(tab).css({'display':'none'});
         $(tab).fadeIn(400);
     });
@@ -1304,6 +1304,8 @@ $('.deta').each(function(){
      /*detect tallest div end*/
     
 </script>
+        <script src="js/common.js"></script>
+
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){

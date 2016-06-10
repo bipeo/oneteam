@@ -1292,14 +1292,15 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
 <script>
-    $('.tabs a').click(function(e) {
+        $('.tabs li').click(function(e) {
         e.preventDefault();
         $('.tabs .active').removeClass('active');
-        $(this).parent().addClass('active');
-        var tab = $(this).attr('href');
+        $(this).addClass('active');
+        var tab = $(this).find('a').attr('href');
         $('.tabs_content').not(tab).css({'display':'none'});
         $(tab).fadeIn(400);
     });
+    
 </script>
 <script src="js/common.js"></script>
 <script src="libs/slick-1.6.0/slick/slick.min.js"></script>

@@ -1,6 +1,6 @@
-  function showdatepicker() {
+  /*function showdatepicker() {
           $( "#from, #to" ).datepicker({
-            defaultDate: "+1w",
+            defaultDate: "-1w",
             changeMonth: true,
             numberOfMonths: 1,
             dateFormat : 'dd.mm',
@@ -24,7 +24,38 @@
         }
         });
     } 
-    
+    */
+   function showdp() {
+        $("#from").datepicker({
+        changeMonth: true,
+      //  changeYear: true,
+        numberOfMonths: 1,
+         nextText: '',
+        prevText: '',
+        defaultDate: new Date(),
+      //  showOn: "button",        
+        //showAnim: "slideDown",
+        dateFormat: "dd.mm",
+        onClose: function(selectedDate) {
+            $("#to").datepicker("option", "minDate", selectedDate);
+        }
+    });
+    $("#to").datepicker({
+        changeMonth: true,
+     //   changeYear: true,
+        numberOfMonths: 1,
+        nextText: '',
+        prevText: '',
+        defaultDate: new Date(),
+      //  showOn: "button",        
+        //showAnim: "slideDown",
+        dateFormat: "dd.mm",
+        onClose: function(selectedDate) {
+            $("#from").datepicker("option", "maxDate", selectedDate);
+        }
+    });
+    $('#ui-datepicker-div').addClass('custdper');
+   }
 
         function populateDefaultValues() {
             var today = new Date();
@@ -42,8 +73,12 @@
 
         $(function() {
             populateDefaultValues();
-            showdatepicker();
+            showdp()
+          //  showdatepicker();
         });
+        
+        
+        
 /*
  * 
  * 
