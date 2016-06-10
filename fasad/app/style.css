@@ -383,7 +383,7 @@ input.phone {
 }
 
 .slick-dots {
-    bottom: 80px;
+    bottom: 146px;
 }
 
 .slick-dots li {
@@ -552,7 +552,8 @@ input.phone {
     background: url(img/Arrow-Down-Icon2.png) no-repeat bottom center;
     color: #ffffff;
     line-height: 35px;
-    margin: 0 0 46px 0;
+    margin: 0 0 30px 0;
+    padding: 0 0 16px 0;
     text-transform: uppercase;
 }
 
@@ -737,6 +738,7 @@ input.phone {
 
 .news .title_arrow {
     color: #ffffff;
+    padding-bottom: 29px;
     text-align: center;
 }
 
@@ -749,7 +751,7 @@ input.phone {
 }
 
 .news_list {
-    margin: 42px 0 0 4px;
+    margin: 28px 0 0 4px;
 }
 
 .news_list > li {
@@ -863,12 +865,64 @@ input.phone {
 
 .footer {
     background-color: #293444;
+    border-bottom: 4px solid #62b4e0;
+    padding: 0 0 11px 0;
 }
 
 .footer .center {
     overflow: hidden;
 }
 
+.footer_menu {
+    margin: 22px 0 0 4px;
+}
+
+.footer_menu li {
+    margin-right: 22px;
+}
+
+.footer_menu li a {
+    text-transform: none;
+}
+
+.footer_menu li:first-child {
+    padding-left: 0;
+}
+
+.footer_menu li:before {
+    display: none;
+}
+
+.footer .logo {
+    margin-top: 24px;
+}
+
+.footer .header_contact {
+    margin: 8px 10px 0 0;
+    width: 200px;
+}
+
+.footer .phone {
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.footer .order_btn {
+    border-color: #ffffff;
+    color: #ffffff;
+    display: block;
+}
+
+.copyright {
+    color: #151c26;
+    font-family: 'a_futuricamedium';
+    font-size: 16px;
+    line-height: 19px;
+    padding: 6px 15px 0 0;
+    text-align: right;
+}
 
 
 
