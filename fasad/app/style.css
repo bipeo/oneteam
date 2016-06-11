@@ -184,12 +184,13 @@ input[type=submit] {
     font-family: 'a_futuricamedium';
     font-size: 20px;
     height: 43px;
-    line-height: 43px;
+    line-height: 40px;
     text-align: center;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-.order_btn:hover {
+.order_btn:hover, .footer .order_btn:hover {
     color:#fff;
+    border-color:#6bbe39;
     background-color:#6bbe39;
 }
 .green_btn {
@@ -826,6 +827,9 @@ input.phone {
     background: linear-gradient(to right,  #293444 0%,#293444 64%,#495260 65%,#495260 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#293444', endColorstr='#495260',GradientType=1 );
 }
+.news_main.full {
+    
+}
 
 .news_main .center, .block_5 .center  {
     overflow: hidden;
@@ -835,6 +839,13 @@ input.phone {
     background: #293444;   
     padding: 40px 100px 81px 0;
     width: 876px;
+}
+.news_main.full .news {
+    padding: 40px 0px 81px 0;
+    width:auto;
+}
+.news_main.full, .news_main.full .news  {
+    background:#495260;
 }
 
 .news .title_arrow {
@@ -851,6 +862,9 @@ input.phone {
     margin: 0 0 38px 0;
     padding-bottom: 25px;
 }
+.st_2 .news_title {
+  
+} 
 .news_title {
     color: #4594bf;
     font-family: 'a_futuricabsbold';
@@ -878,7 +892,16 @@ input.phone {
     margin: 0 28px 0 0;
     width: 88px;
 }
-
+.full .news_img {
+    height: 122px;
+    margin: 0 28px 0 0;
+    width: 122px;
+}
+.full.st_2 .news_img {
+    width:235px;
+    height:184px;
+    margin:0px 20px 10px 0px;
+}
 .news_txt {
     font-family: 'a_futuricabookregular';
     font-size: 16px;
@@ -886,6 +909,13 @@ input.phone {
     margin: 0 0 7px 0;
 }
 
+.full .news_txt {
+    height:69px;
+} 
+.full.st_2 .news_txt {
+    height:auto;
+    font-size:17px;
+}
 .more {
     color: #62b4e0;
     font-family: 'a_futuricabsbold';
@@ -905,7 +935,13 @@ input.phone {
     position: relative;
     width: 655px;
 }
-
+.full .news_descript {
+    width:calc(100% - 122px - 28px);
+}
+.full.st_2 .news_descript {
+    
+    width:calc(100% - 235px - 28px);
+}
 .news_form {
     background: #495260;
 }
@@ -1262,6 +1298,116 @@ input.phone {
     top: 50%;
     width: 16px;
 }
+
+
+.block_7 {
+    margin:0px 0px 27px 0px;       
+    background-color:#f6f6f7;
+}
+.box_lorem .line:before, .box_lorem  .line:after {
+    content:'';
+    display:table;
+}
+.box_lorem  .line:after {
+    clear:both;
+}
+.box_lorem  .itm {
+    padding:34px 0px 10px 0px;
+    background-repeat: no-repeat;
+    width:33%;
+    float:left;
+}
+.box_lorem  .itm .wrp:before {
+    content:'';
+    width:40px;
+    height:50px;
+    margin:0px 15px 0px 25px;
+    float:left;
+}
+.box_lorem  .itm .wrp {
+    padding:18px 33px 0px 0px;
+    position:relative;
+    margin:0px 0px 35px 0px;
+}
+.box_lorem  .itm .wrp:after {
+    content:'';
+    position:absolute;
+    width:1px;
+    height:100%;
+    background:#d3d5d9;
+    right:0px;
+    top:0px;
+}
+.box_lorem  .itm:last-child .wrp:after {
+    display:none;
+}
+.box_lorem  .itm.money .wrp:before {
+    width:46px;
+    height:61px;
+    background-image: url(img/money_pick.png); 
+}
+.box_lorem  .itm.pack .wrp:before {
+     width:50px;
+     height:63px;
+     background-image: url(img/pack_pick.png);
+}
+.box_lorem  .itm.doll .wrp:before {
+    width:75px;
+    height:61px;
+    background-image: url(img/doll_pick.png);
+}
+.box_lorem  .itm span {
+    display:block;
+}
+.box_lorem  .itm  .t {
+    padding:0px 0px 10px 14px;
+    display: inline-block;
+    background: url(img/link_arrow.png) no-repeat 0px 1px;
+    text-transform: uppercase;
+    color:#4695c0;
+    font-family: 'a_futuricabsbold';
+    font-size:13px;
+}
+.box_lorem  .itm   a {
+    color:#4695c0;
+}
+.box_lorem  .itm  .val {
+    padding:0px 0px 18px 0px;
+    font-family: 'a_futuricamedium';
+    color:#293444;
+    font-size:14px;
+}
+.news .pagination {
+     margin: 100px 0 65px 0px;
+}
+.pagination {
+    margin: 0 0 0 19px;
+    overflow: hidden;
+}
+.pagination > li:first-child {
+   margin-left:0px;
+}
+ .pagination > li:last-child {
+   margin-right:0px;
+}
+.pagination > li {
+    font-family: 'a_futuraortobold';
+    color: #666666;
+    float: left;
+    font-size: 13px;
+    text-align: center;
+     margin-left:10px;
+    margin-right:10px;
+}
+.pagination > li a {
+    color:#fff;
+    display: block;
+}
+.pagination > li a:hover {
+    color:#62b5e1;
+}
+
+
 
 
 
