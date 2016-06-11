@@ -1414,7 +1414,44 @@ input.phone {
     background: -webkit-linear-gradient(left,  #293444 0%,#293444 27%,#495260 28%,#495260 100%);
     background: linear-gradient(to right,  #293444 0%,#293444 27%,#495260 28%,#495260 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#293444', endColorstr='#495260',GradientType=1 );
+}
 
+.product_page .center {
+    overflow: hidden;
+}
+
+.product_page_1 {
+    width: 330px;
+}
+
+.product_page_2 {
+    width: 863px;
+}
+
+.breadcrumbs {
+    overflow: hidden;
+}
+
+.breadcrumbs > li {
+    float: left;
+    position: relative;
+}
+
+.breadcrumbs > li a {
+    color: #ffffff;
+    display: block;
+    font-family: 'a_futuricamedium';
+    font-size: 14px;
+}
+
+.breadcrumbs > li:after {
+    background: url(img/breadcrumbs_arr.png) no-repeat;
+    height: 5px;
+    content: "";
+    position: absolute;
+    right: -17px;
+    top: 5px;
+    width: 17px;
 }
 
 
