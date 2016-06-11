@@ -1408,6 +1408,15 @@ input.phone {
     color:#62b5e1;
 }
 
+.product_page {
+    background: #293444;
+    background: -moz-linear-gradient(left,  #293444 0%, #293444 27%, #495260 28%, #495260 100%);
+    background: -webkit-linear-gradient(left,  #293444 0%,#293444 27%,#495260 28%,#495260 100%);
+    background: linear-gradient(to right,  #293444 0%,#293444 27%,#495260 28%,#495260 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#293444', endColorstr='#495260',GradientType=1 );
+
+}
+
 
 
 
