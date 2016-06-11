@@ -277,6 +277,7 @@ h2 {
 
 strong {
     font-family: 'a_futuricabsbold';
+    font-weight: normal;
 }
 
 input[type=text] {
