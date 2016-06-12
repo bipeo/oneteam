@@ -1583,7 +1583,8 @@ input.phone {
     border: 1px solid #52738c;
     border-radius: 2px;
     margin: 0 0 0 6px;
-    padding: 21px 0 21px 13px;
+    overflow: hidden;
+    padding: 21px 15px 21px 13px;
 }
 
 .accordeon {
@@ -1678,6 +1679,19 @@ input.phone {
 
 .slider_wrap_2 .slick-next:hover {
     background-position: 0 -20px;
+}
+
+.wrap_2 {
+    margin: 0 13px 0 0;
+}
+
+.title_1 {
+    background: url(img/title_1_bg.png) no-repeat left center;
+    color: #495260;
+    font-size: 17px;
+    padding: 0 0 0 15px;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .flt_block {
