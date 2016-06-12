@@ -124,26 +124,30 @@
                     <li><a href="#">Lorem ipsum</a></li>
                 </ul>
                 <div class="white_content">
-                    <div class="slider_for">
-                        <div>
-                            <img src="img/slide-big.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="img/slide-big.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="img/slide-big.jpg" alt="">
+                    <div class="slider_wrap_1">
+                        <div class="slider_for">
+                            <div>
+                                <img src="img/slide-big.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide-big.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide-big.jpg" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="slider_nav">
-                        <div>
-                            <img src="img/slide_mini.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="img/slide_mini.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="img/slide_mini.jpg" alt="">
+                    <div class="slider_wrap_2">
+                        <div class="slider_nav">
+                            <div>
+                                <img src="img/slide_mini.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide_mini.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide_mini.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -205,12 +209,12 @@
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-nav'
+        asNavFor: '.slider_nav'
     });
     $('.slider_nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: '.slider-for',
+        asNavFor: '.slider_for',
         dots: true,
         centerMode: true,
         focusOnSelect: true
@@ -230,7 +234,7 @@
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
-        	$.pixlayout({clip: true, src: "design/str-tov-eden.jpg", show:true, center:true, top: 0, left:0, pervious: false});
+//        $.pixlayout({clip: true, src: "design/str-tov-eden.jpg", show:true, center:true, top: 0, left:0, pervious: false});
 }); 
 </script>
 </body>

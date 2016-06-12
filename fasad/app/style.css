@@ -1535,21 +1535,26 @@ input.phone {
 
 .product_page_1 {
     background-color: #293444;
-    width: 330px;
+    width: 324px;
 }
 
 .product_page_2 {
-    background-color: rgba(41, 52, 68, 0.85);
+    background-color: #495260;
     width: 863px;
 }
 
 .breadcrumbs {
     overflow: hidden;
+    padding: 46px 0 20px 19px;
 }
 
 .breadcrumbs > li {
     float: left;
     position: relative;
+}
+
+.breadcrumbs > li + li {
+    margin-left: 38px;
 }
 
 .breadcrumbs > li a {
@@ -1564,14 +1569,19 @@ input.phone {
     height: 5px;
     content: "";
     position: absolute;
-    right: -17px;
+    right: -27px;
     top: 5px;
     width: 17px;
+}
+
+.breadcrumbs > li:last-child:after {
+    display: none;
 }
 
 .white_content {
     background-color: #ffffff;
     border-radius: 2px;
+    margin: 0 0 0 6px;
 }
 
 .accordeon {
@@ -1610,6 +1620,15 @@ input.phone {
 
 .accord_answer p {
     padding: 0 0 0 40px;    
+}
+
+.slider_wrap_1 {
+    border: 1px solid #afb3b9;
+    width: 375px;
+}
+
+.slider_wrap_2 {
+    width: 375px;
 }
 
 .flt_block {
