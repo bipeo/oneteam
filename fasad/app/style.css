@@ -1534,10 +1534,12 @@ input.phone {
 }
 
 .product_page_1 {
+    background-color: #293444;
     width: 330px;
 }
 
 .product_page_2 {
+    background-color: rgba(41, 52, 68, 0.85);
     width: 863px;
 }
 
@@ -1570,6 +1572,20 @@ input.phone {
 .white_content {
     background-color: #ffffff;
     border-radius: 2px;
+}
+
+.accordeon {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.accord_answer {
+    font-size: 14px;
+}
+
+.accord_answer a {
+    color: #62b4e0;
 }
 
 

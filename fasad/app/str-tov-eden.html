@@ -89,37 +89,48 @@
     </div>
     <div class="product_page">
         <div class="center">
-            <div class="product_page_1 left"></div>
+            <div class="product_page_1 left">
+                <div class="accordeon">
+                    <div class="accord_item">
+                        <p class="accord_title">Lorem ipsum dolor sit amet</p>
+                        <div class="accord_answer">
+                            <p>Lorem ipsum dolor </p>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product_page_2 -->
             <div class="product_page_2 left">
                 <ul class="breadcrumbs">
                     <li><a href="#">Lorem ipsum</a></li>
                     <li><a href="#">Lorem ipsum</a></li>
                 </ul>
-            </div>
-            <div class="white_content">
-                <div class="slider_for">
-                    <div>
-                        <img src="img/slide-big.jpg" alt="">
+                <div class="white_content">
+                    <div class="slider_for">
+                        <div>
+                            <img src="img/slide-big.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slide-big.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slide-big.jpg" alt="">
+                        </div>
                     </div>
-                    <div>
-                        <img src="img/slide-big.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="img/slide-big.jpg" alt="">
+                    <div class="slider_nav">
+                        <div>
+                            <img src="img/slide_mini.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slide_mini.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slide_mini.jpg" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="slider_nav">
-                    <div>
-                        <img src="img/slide_mini.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="img/slide_mini.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="img/slide_mini.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+            </div><!-- END product_page_2 -->
         </div>
     </div>   
     <footer class="footer">
@@ -186,6 +197,16 @@
         dots: true,
         centerMode: true,
         focusOnSelect: true
+    });
+    
+    // accordeon
+    $('.program_answer').css({'display':'none'});
+
+    $('.program_item').click(function(){
+        $('.program_item').not($(this)).removeClass('open');
+        $('.program_answer').not($(this).next('.program_answer')).slideUp(500);
+        $(this).next('.program_answer').slideToggle(500);
+        $(this).toggleClass('open');
     });
 </script>
 
