@@ -1567,6 +1567,11 @@ input.phone {
     width: 17px;
 }
 
+.white_content {
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
 
 .flt_block {
     color:#fff;
