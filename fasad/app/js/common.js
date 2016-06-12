@@ -10,6 +10,9 @@ $(document).ready(function() {
      $('.products_item .prod').on('mouseleave', function(e) {
         $(this).removeClass('hover');
     });
+    
+        /*remove this*///$('.prod').addClass('hover')
+
 });
 
 //green_btn
