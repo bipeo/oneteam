@@ -220,7 +220,7 @@
     $('.accord_answer').css({'display':'none'});
 
     $('.accord_title').click(function(){
-        $('.accord_item').not($(this)).removeClass('open');
+        $('.accord_title').not($(this)).removeClass('open');
         $('.accord_answer').not($(this).next('.accord_answer')).slideUp(500);
         $(this).next('.accord_answer').slideToggle(500);
         $(this).toggleClass('open');
@@ -230,7 +230,7 @@
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
-        //	$.pixlayout({clip: true, src: "design/str-tov-eden.png", show:true, center:true, top:0, left:0, pervious: false});
+        	$.pixlayout({clip: true, src: "design/str-tov-eden.jpg", show:true, center:true, top: 0, left:0, pervious: false});
 }); 
 </script>
 </body>

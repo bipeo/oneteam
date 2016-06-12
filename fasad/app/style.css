@@ -1578,6 +1578,23 @@ input.phone {
     color: #ffffff;
     font-size: 16px;
     line-height: 35px;
+    padding: 35px 0 0 35px;
+}
+
+.accord_title {
+    background: url(img/accord_title_bg.png) no-repeat left center;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 0 0 18px;
+}
+
+.open {
+    background-image: url(img/accord_arrow.png);
+}
+
+.accord_item {
+    margin: 0 0 3px 0;
 }
 
 .accord_answer {
@@ -1585,9 +1602,15 @@ input.phone {
 }
 
 .accord_answer a {
+    background-color: #222b38;
     color: #62b4e0;
+    display: block;
+    padding: 0 0 0 40px;
 }
 
+.accord_answer p {
+    padding: 0 0 0 40px;    
+}
 
 .flt_block {
     color:#fff;
