@@ -691,10 +691,13 @@ input.phone {
 .products.st_p .products_item {
     width: 179px;
 }
+.products.prtfol .products_item  {
+    height:228px;
+}
 
 .products .products_item + .products_item {
     margin-left: 40px;
-    margin-bottom:40px;
+    margin-bottom:45px;
 }
 
 .products.st_p .products_item + .products_item:nth-child(4n + 1) {
@@ -719,12 +722,22 @@ input.phone {
     background-color:#495260;
 }
 .produts_main.st_1 .products {
-        margin: 0 0 0px 5px
+        margin: 0 0 0px 0px;
+        padding-left:14px;
 }
-
+.produts_main.st_1 .products.white {
+    background:#fff;
+}
 .products.st_p .products_title {
     color:#fff;
     margin: 0 0 12px 0;
+    font-size:16px;
+}
+.products.prtfol .products_title {
+    margin-bottom:0px;
+}
+.products.st_p.white .products_title {
+    color:#121a24;
 }
 .st_p .products_ul > li:nth-child(1) {
     float:none;
@@ -776,6 +789,8 @@ input.phone {
     font-size: 14px;
     line-height: 35px;
     padding: 0 13px 0 0;
+    font-family: 'a_futuraroundregular';
+
 }
 
 .products_ul > li:nth-child(2) {
@@ -847,17 +862,25 @@ input.phone {
     width: 239px;
 }
 .products.st_p .products_item  .prod.hover {
-    width:202px;
-    padding: 9px 9px 14px 9px;
     background-color:#fff;
 }
 .products.st_p .products_item  .prod {
     width:202px;
-    padding: 9px 9px 14px 9px;
+    padding: 14px 9px 14px 9px;
     background-color:rgba(121,129,143,.2);
     border: 1px solid #4e667a;
+    left:-6px;
+    margin-top:17px;
 }
-/**/
+.products.white .products_item  .prod  {
+    border-color:transparent;
+    background-color:transparent;
+    
+}
+.products.st_p.white .products_item  .prod.hover {
+    border-color:#c9e5f4;
+}
+
 
  
 .products .products_item  .prod.hover .products_img:after {
@@ -873,8 +896,14 @@ input.phone {
     color: #4594bf;
     text-transform: uppercase;
 }
+ .products.prtfol .products_item .prod.hover .products_title {
+    color: #121a24;
+}
 .products.st_p .products_item .prod.hover .products_title {
     text-transform: inherit;
+}
+.products.st_p.white .products_item .prod.hover .products_title {
+    color:#121a24;
 }
 
 .products .products_item .prod.hover .products_descript,
@@ -1462,7 +1491,7 @@ input.phone {
 .news .pagination  {
      margin: 100px 0 65px 0px;
 }
- .products .pagination {
+ .products .pagination, .produts_main .pagination  {
      margin: 60px 0 65px 0px;
 }
 .pagination {
@@ -1545,10 +1574,12 @@ input.phone {
 }
 .flt_block .title_arrow {
         padding-top:30px;
-        padding-bottom: 26px
+        padding-bottom: 48px;
+        background-position: center bottom 22px;
+/*        margin-bottom:22px;*/
 }
 .flt_block .line.first {
-    padding:22px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
 }
 .flt_block .col {
     float:left;
@@ -1567,10 +1598,19 @@ input.phone {
 }
 .flt_block  .text {
     padding:48px 0px 40px 0px;
+    margin:0px 0px 0px 7px;
     line-height: 1.3em;
     font-family: 'a_futuricamedium';
     font-size:15px;
 }
+.flt_block.white  .text {
+   background:#fff;
+   color:#293444;
+   padding-top:31px;
+   padding-bottom:40px;
+   padding-left:17px;
+   margin:15px 0px 0px 0px;
+ } 
 
 
 select.soflow-color {
