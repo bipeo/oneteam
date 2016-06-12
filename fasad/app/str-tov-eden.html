@@ -87,6 +87,7 @@
             </div>
         </div>
     </div>
+    <!-- product_page -->
     <div class="product_page">
         <div class="center">
             <div class="product_page_1 left">
@@ -96,6 +97,22 @@
                         <div class="accord_answer">
                             <p>Lorem ipsum dolor </p>
                             <a href="#">Lorem ipsum dolor sit amet</a>
+                        </div>
+                    </div>
+                    <div class="accord_item">
+                        <p class="accord_title">Lorem ipsum dolor sit amet</p>
+                        <div class="accord_answer">
+                            <p>Lorem ipsum dolor </p>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <p>Lorem ipsum dolor </p>
+                        </div>
+                    </div>
+                    <div class="accord_item">
+                        <p class="accord_title">Lorem ipsum dolor sit amet</p>
+                        <div class="accord_answer">
+                            <p>Lorem ipsum dolor </p>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <p>Lorem ipsum dolor </p>
                         </div>
                     </div>
                 </div>
@@ -132,7 +149,7 @@
                 </div>
             </div><!-- END product_page_2 -->
         </div>
-    </div>   
+    </div>  <!-- END product_page --> 
     <footer class="footer">
         <div class="center">
             <div class="left">
@@ -200,12 +217,12 @@
     });
     
     // accordeon
-    $('.program_answer').css({'display':'none'});
+    $('.accord_answer').css({'display':'none'});
 
-    $('.program_item').click(function(){
-        $('.program_item').not($(this)).removeClass('open');
-        $('.program_answer').not($(this).next('.program_answer')).slideUp(500);
-        $(this).next('.program_answer').slideToggle(500);
+    $('.accord_title').click(function(){
+        $('.accord_item').not($(this)).removeClass('open');
+        $('.accord_answer').not($(this).next('.accord_answer')).slideUp(500);
+        $(this).next('.accord_answer').slideToggle(500);
         $(this).toggleClass('open');
     });
 </script>
