@@ -123,34 +123,113 @@
                     <li><a href="#">Lorem ipsum</a></li>
                     <li><a href="#">Lorem ipsum</a></li>
                 </ul>
+                <!-- white_content -->
                 <div class="white_content">
-                    <div class="slider_wrap_1">
-                        <div class="slider_for">
-                            <div>
-                                <img src="img/slide-big.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="img/slide-big.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="img/slide-big.jpg" alt="">
+                    <!-- wrap_2 -->
+                    <div class="wrap_2 left">
+                        <div class="slider_wrap_1">
+                            <div class="slider_for">
+                                <div>
+                                    <img src="img/slide-big.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/slide-big.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/slide-big.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/slide-big.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/slide-big.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/slide-big.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="slider_wrap_2">
-                        <div class="slider_nav">
-                            <div>
-                                <img src="img/slide_mini.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="img/slide_mini.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="img/slide_mini.jpg" alt="">
+                        <div class="slider_wrap_2">
+                            <div class="slider_nav">
+                                <div>
+                                    <img src="img/slide_mini.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/slide_mini.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/slide_mini.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/slide_mini.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/slide_mini.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/slide_mini.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div><!-- END wrap_2 -->
+                    <!-- wrap_3 -->
+                    <div class="wrap_3 left">
+                        <a href="#" class="show_portf">смотреть в портфолио</a>
+                        <h2 class="title_1">Lorem ipsum dolor sit amet</h5>
+                        <ul class="products_ul">
+                            <li>Цена за кв.м. :</li>
+                            <li>5 000 <span>руб</span></li>
+                        </ul>
+                        <table class="table_1">
+                            <tr>
+                                <td><span class="colors_1">Тип пленки:</span></td>
+                                <td>
+                                    <select class="soflow-color" name="">
+                                        <option value="">выбрать цвет</option>
+                                        <option value="">зеленый</option>
+                                        <option value="">красный</option>
+                                        <option value="">синий</option>
+                                        <option value="">фиолетовый</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="colors_1">Цвета:</span></td>
+                                <td>
+                                    <select class="soflow-color" name="">
+                                        <option value="">выбрать цвет</option>
+                                        <option value="">зеленый</option>
+                                        <option value="">красный</option>
+                                        <option value="">синий</option>
+                                        <option value="">фиолетовый</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <ul class="products_descript">
+                            <li><strong>Артикул:</strong> 00000000</li>
+                            <li><strong>Тип пленки:</strong> lorem ipsum</li>
+                            <li><strong>Материал:</strong> lorem ipsum</li>
+                            <li><strong>Производитель:</strong> lorem ipsum</li>
+                            <li><strong>Страна производитель:</strong> lorem ipsum</li>
+                        </ul>  
+                        <ul class="products_descript_2">
+                            <li>Срок поставки: <span>30 дней</span></li>
+                            <li><a href="#" class="green_btn" tabindex="0">Заказать</a></li>
+                        </ul>  
+                        <div class="box_lorem">
+                            <div class="itm pack">
+                                <div class="wrp"> 
+                                    <span class="t"><a href="#">Lorem ipsum dolor sit</a> </span>
+                                    <span class="val">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
+                                </div>  
+                            </div>
+                        </div>  
+                    </div><!-- END wrap_3 -->
+                    <div class="content_2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </div>         
+                </div><!-- END white_content -->
             </div><!-- END product_page_2 -->
         </div>
     </div>  <!-- END product_page --> 
@@ -207,6 +286,7 @@
     $('.slider_for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        dots: false,
         arrows: false,
         fade: true,
         asNavFor: '.slider_nav'
@@ -214,8 +294,9 @@
     $('.slider_nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        arrows: true,
         asNavFor: '.slider_for',
-        dots: true,
+        dots: false,
         centerMode: true,
         focusOnSelect: true
     });

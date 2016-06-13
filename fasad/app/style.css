@@ -477,7 +477,7 @@ input.phone {
     top: 52px;
 }
 
-.slick-arrow {
+.slider .slick-arrow {
     background: url(img/slider_arrow.png) no-repeat;
     cursor: pointer;
     height: 40px;
@@ -487,21 +487,21 @@ input.phone {
     width: 42px;
 }
 
-.slick-slide .prev {
+.slider .slick-slide .prev {
     background-position: 0 -40px;
     left: 0;
 }
 
-.slick-slide .prev:hover {
+.slider .slick-slide .prev:hover {
     background-position: -42px -40px;    
 }
 
-.slick-slide .next {
+.slider .slick-slide .next {
     background-position: 0 0;
     right: 0;
 }
 
-.slick-slide .next:hover {
+.slider .slick-slide .next:hover {
     background-position: -42px 0;
 }
 
@@ -1523,9 +1523,9 @@ input.phone {
 
 .product_page {
     background: #293444;
-    background: -moz-linear-gradient(left,  #293444 0%, #293444 27%, #495260 28%, #495260 100%);
-    background: -webkit-linear-gradient(left,  #293444 0%,#293444 27%,#495260 28%,#495260 100%);
-    background: linear-gradient(to right,  #293444 0%,#293444 27%,#495260 28%,#495260 100%);
+    background: -moz-linear-gradient(left,  #293444 0%, #293444 37%, #495260 38%, #495260 100%);
+    background: -webkit-linear-gradient(left,  #293444 0%,#293444 37%,#495260 38%,#495260 100%);
+    background: linear-gradient(to right,  #293444 0%,#293444 37%,#495260 38%,#495260 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#293444', endColorstr='#495260',GradientType=1 );
 }
 
@@ -1540,7 +1540,8 @@ input.phone {
 
 .product_page_2 {
     background-color: #495260;
-    width: 863px;
+    padding: 0 0 39px 0;
+    width: 869px;
 }
 
 .breadcrumbs {
@@ -1580,8 +1581,11 @@ input.phone {
 
 .white_content {
     background-color: #ffffff;
+    border: 1px solid #52738c;
     border-radius: 2px;
     margin: 0 0 0 6px;
+    overflow: hidden;
+    padding: 19px 15px 21px 13px;
 }
 
 .accordeon {
@@ -1628,7 +1632,162 @@ input.phone {
 }
 
 .slider_wrap_2 {
+    margin: 4px 0 0 0;
     width: 375px;
+}
+
+.slider_wrap_2 .slick-slide img {
+    border: 1px solid #b7bbc0;
+}
+
+.slider_wrap_2 .slick-slide {
+    outline: none;    
+}
+
+.slider_wrap_2 .slick-prev, .slider_wrap_2 .slick-next {
+    background: url(img/slider_arrow2.png) no-repeat;
+    height: 20px;
+    width: 10px;
+}
+
+.slider_wrap_2 .slick-list {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 275px;
+}
+
+.slider_wrap_2 .slick-prev:hover, .slider_wrap_2 .slick-prev:focus, .slider_wrap_2 .slick-next:hover, .slider_wrap_2 .slick-next:focus {
+    color: transparent;
+}
+
+.slider_wrap_2 .slick-prev:before, .slider_wrap_2 .slick-next:before {
+    display: none;
+}
+
+.slider_wrap_2 .slick-prev {
+    background-position: -10px -20px;
+    left: 0;
+}
+
+.slider_wrap_2 .slick-prev:hover {
+    background-position: 0 0;
+}
+
+.slider_wrap_2 .slick-next {
+    background-position: -10px 0;
+    right: 0;
+}
+
+.slider_wrap_2 .slick-next:hover {
+    background-position: 0 -20px;
+}
+
+.wrap_2 {
+    margin: 0 13px 0 0;
+}
+
+.title_1 {
+    background: url(img/title_1_bg.png) no-repeat left center;
+    color: #495260;
+    font-size: 17px;
+    padding: 0 0 0 15px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.wrap_3 {
+    position: relative;
+    width: 438px;
+}
+
+.wrap_3 .products_ul li {
+    float: none;
+    line-height: 1;
+}
+
+.wrap_3 .products_ul > li:nth-child(2) {
+    color: #4695c0;
+    margin-top: 7px;
+    position: static;
+}
+
+.wrap_3 .colors {
+    display: block;
+}
+
+.wrap_3 .products_descript {
+    display: block;
+    margin: 25px 0 0 12px;
+}
+
+.products_descript_2 {
+    margin: 25px 0 10px 12px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.products_descript_2 li {
+    height: 51px;
+    line-height: 51px;
+}
+
+.products_descript_2 li:nth-child(1) {
+    float: left;
+    font-size: 14px;    
+}
+
+.products_descript_2 li:nth-child(1) span {
+    color: #4695c0;
+}
+
+.products_descript_2 li:nth-child(2) {
+    float: right;
+}
+
+.wrap_3 .box_lorem  .itm {
+    border-top: 1px solid #edf2f9;
+    padding-top: 0;
+    width: 100%;
+}
+
+.wrap_3 .box_lorem  .itm .wrp {
+    margin-bottom: 20px;
+}
+
+.table_1 {
+    margin: 27px 0 0 14px;
+}
+
+.table_1 td:first-child {
+    padding-right: 10px;
+}
+
+.table_1 td {
+    padding-bottom: 3px;
+}
+
+.content_2 {
+    clear: both;
+    color: #293444;
+    font-family: 'a_futuricamedium';
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.show_portf {
+    color: #4695c0;
+    font-family: 'a_futuricabsbold';
+    font-size: 14px;
+    position: absolute;
+    right: -8px;
+    line-height: 14.995px;
+    transform: scale(1,1);
+    top: -5px;
+    width: 80px;
+}
+
+.wrap_3 .products_ul {
+    margin: 18px 0 9px 14px;
 }
 
 .flt_block {
