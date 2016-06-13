@@ -1632,28 +1632,36 @@ input.phone {
 }
 
 .slider_wrap_2 {
-    margin: 4px 0 0 0;
-    width: 375px;
+    height: 82px;
+    margin: 4px auto 0 auto;
+    overflow: hidden;
+    width: 335px;
 }
 
 .slider_wrap_2 .slick-slide img {
     border: 1px solid #b7bbc0;
+    height: 80px;
+    width: 80px;
 }
 
 .slider_wrap_2 .slick-slide {
-    outline: none;    
+    margin: 0 5px 0 0;
+    outline: none;  
+    width: 80px !important;
+}
+
+.slider_wrap_2 .slick-list {
+    padding: 0 !important;
+}
+
+.slider_wrap_2 .slick-track {
+    width: 2000px!important;
 }
 
 .slider_wrap_2 .slick-prev, .slider_wrap_2 .slick-next {
     background: url(img/slider_arrow2.png) no-repeat;
     height: 20px;
     width: 10px;
-}
-
-.slider_wrap_2 .slick-list {
-    margin: 0 auto;
-    overflow: hidden;
-    width: 275px;
 }
 
 .slider_wrap_2 .slick-prev:hover, .slider_wrap_2 .slick-prev:focus, .slider_wrap_2 .slick-next:hover, .slider_wrap_2 .slick-next:focus {
