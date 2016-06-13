@@ -88,8 +88,43 @@
             </div>
         </div>
     </div>
-    <div class="flt_block white">
+      <div class="product_page">
         <div class="center">
+               <div class="product_page_1 left">
+                <div class="accordeon">
+                    <div class="accord_item">
+                        <p class="accord_title">Lorem ipsum dolor sit amet</p>
+                        <div class="accord_answer" >
+                            <p>Lorem ipsum dolor </p>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </div>
+                    </div>
+                    <div class="accord_item" >
+                        <p class="accord_title open">Lorem ipsum dolor sit amet</p>
+                        <div class="accord_answer" style="display:block" >
+                            <p>Lorem ipsum dolor </p>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <p>Lorem ipsum dolor </p>
+                        </div>
+                    </div>
+                    <div class="accord_item">
+                        <p class="accord_title">Lorem ipsum dolor sit amet</p>
+                        <div class="accord_answer" >
+                            <p>Lorem ipsum dolor </p>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <p>Lorem ipsum dolor </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product_page_2 left">
+                 <ul class="breadcrumbs">
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>  
+                <div class="flt_block white">
+        
         <h2 class="title_arrow">Lorem ipsum dolor sit amet</h2>
         <div class="line first">
             <div class="col">
@@ -144,17 +179,15 @@
         </div>
                 <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
 
-    </div>
+    
         
         </div>
-    
+                
+                
     
     <div class="produts_main st_1">
-        <div class="center">
-            
+        
        
-       
-        <!--</div> products -->
         <div class="products st_p white clearfix">
             <!-- products_item -->
             <div class="products_item">
@@ -306,7 +339,7 @@
         </div><!-- END products -->
         
         
-            <div class="clearfix both">
+            <div class="clearfix">
         <ul class="pagination right">
                     <li><a class="pagin_arrows arrows_left" href="#"><span>« предыдущая </span></a></li>
                     <li><a href="#">1</a></li>
@@ -317,11 +350,18 @@
                     <li><a class="pagin_arrows arrows_right" href="#"><span>следующая » </span></a></li>
                 </ul>
             </div>
-           </div> 
+          
         
         
         
     </div>
+                
+            </div>
+            
+            
+        </div></div>
+    
+    
     
 
    
@@ -379,12 +419,20 @@
         fade: true,
         cssEase: 'linear'
     });
+    
+    
+      $('.accord_title').click(function(){
+        $('.accord_title').not($(this)).removeClass('open');
+        $('.accord_answer').not($(this).next('.accord_answer')).slideUp(500);
+        $(this).next('.accord_answer').slideToggle(500);
+        $(this).toggleClass('open');
+    });
 </script>
 
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$.pixlayout({clip: true, src: "design/product.jpg", show:true, center:true, top:0, left:0, pervious: false});
+	//	$.pixlayout({clip: true, src: "design/product.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 </body>
