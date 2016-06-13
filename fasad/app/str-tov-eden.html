@@ -149,25 +149,28 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider_wrap_2">
-                            <div class="slider_nav">
-                                <div>
-                                    <img src="img/slide_mini.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="img/slide_mini.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="img/slide_mini.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="img/slide_mini.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="img/slide_mini.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="img/slide_mini.jpg" alt="">
+                        <div class="slider_wrap_3">
+                            <div class="prev"></div><div class="next"></div>
+                            <div class="slider_wrap_2">
+                                <div class="slider_nav">
+                                    <div>
+                                        <img src="img/slide_mini.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="img/slide_mini.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="img/slide_mini.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="img/slide_mini.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="img/slide_mini.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="img/slide_mini.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -292,9 +295,10 @@
         asNavFor: '.slider_nav'
     });
     $('.slider_nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow: $('.slider_wrap_3 .prev'),
+        nextArrow: $('.slider_wrap_3 .next'),
         asNavFor: '.slider_for',
         dots: false,
         centerMode: true,
