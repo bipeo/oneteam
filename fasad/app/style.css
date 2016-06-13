@@ -1024,10 +1024,20 @@ input.phone {
 
 .full .news_txt {
     height:69px;
-} 
+}
+ .news_txt.outp {
+ clear:both;   
+}
 .full.st_2 .news_txt {
     height:auto;
     font-size:17px;
+    margin-bottom:12px;
+    font-family: 'a_futuricamedium';
+    line-height: 1.47;
+}
+.full.st_2 .news_list > li+ li {
+    
+    margin-top: 10px;
 }
 .more {
     color: #62b4e0;
