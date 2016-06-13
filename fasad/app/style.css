@@ -1785,7 +1785,18 @@ input.phone {
     font-family: 'a_futuricamedium';
     font-size: 15px;
     line-height: 17px;
+    margin: 0 0 50px 0;
     padding: 0 5px;
+}
+
+.tag {
+    background: #f6f6f7;
+    color: #293444;
+    font-family: 'a_futuricamedium';  
+    line-height: 1.2;
+    margin: 0 0 0 -10px;
+    padding: 20px 0 0 10px;
+    min-height: 125px;
 }
 
 .show_portf {
