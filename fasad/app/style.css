@@ -570,6 +570,9 @@ input.phone {
  .preim .about_us h2 {
     
 }
+.about_us.ntop {
+    padding-top:40px;
+} 
 
 .title_arrow {
     background: url(img/Arrow-Down-Icon2.png) no-repeat bottom center;    
@@ -985,6 +988,9 @@ input.phone {
     margin: 0 0 17px 0;
     text-transform: uppercase;
 }
+.full.st_2 .news_title {
+    margin-top:4px;
+}
 
 .news_list {
     margin: 28px 0 0 4px;
@@ -1013,7 +1019,7 @@ input.phone {
 .full.st_2 .news_img {
     width:235px;
     height:184px;
-    margin:0px 20px 10px 0px;
+    margin:5px 20px 14px 0px;
 }
 .news_txt {
     font-family: 'a_futuricabookregular';
@@ -1507,6 +1513,7 @@ input.phone {
      margin: 60px 0 65px 0px;
 }
 .pagination {
+    text-align:center;
     margin: 0 0 0 19px;
     overflow: hidden;
 }
@@ -1519,7 +1526,7 @@ input.phone {
 .pagination > li {
     font-family: 'a_futuraortobold';
     color: #666666;
-    float: left;
+    display:inline-block;
     font-size: 13px;
     text-align: center;
      margin-left:10px;
