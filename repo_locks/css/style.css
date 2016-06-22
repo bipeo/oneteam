@@ -152,6 +152,57 @@ a { color: inherit; }
 
 /*========================== END sf-menu ==========================*/
 
+/*========================== slider ==========================*/
+
+.carousel-caption1 {
+    margin-top: 65px;
+}
+
+/*
+#slider_1 img {
+    max-width: 100%;
+}
+*/
+
+#slider_1 .slider-title {
+    font: 400 42px/42px "Ubuntu",sans-serif;
+    margin-bottom: 14px;
+}
+
+#slider_1 .carousel-caption p {
+    font: 300 18px/28px "Ubuntu",sans-serif;
+    margin: 0;
+}
+
+#slider_1 .carousel-caption_item {
+    padding: 48px 0 10px;
+    text-align: center;
+}
+
+
+#slider_1 .carousel-caption_item .descr {
+    display: block;
+    font: 300 11px/14px "Ubuntu",sans-serif;
+    margin-top: 8px;
+    padding-left: 0;
+}
+
+#slider_1 {
+    color: #fff;
+}
+
+#slider_1.slick-initialized .slick-slide:hover, #slider_1.slick-initialized .slick-slide {
+    padding-top: 0!important;
+}
+
+#slider_1.slick-initialized .slick-slide {
+    min-height: 411px;
+}
+
+
+
+/*========================== END slider ==========================*/
+
 .bracket-slide { color: #fff; }
 .bracket-slide .carousel-indicators { width: auto; left: auto; right: 0; bottom: 18px; }
 .bracket-slide .carousel-indicators li { width: 13px; height: 13px; margin-left: 3px; }
