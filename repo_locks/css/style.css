@@ -158,11 +158,16 @@ a { color: inherit; }
     margin-top: 65px;
 }
 
-/*
 #slider_1 img {
     max-width: 100%;
+    margin: 0 auto;
 }
-*/
+
+.first_slide {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
 
 #slider_1 .slider-title {
     font: 400 42px/42px "Ubuntu",sans-serif;
@@ -199,8 +204,29 @@ a { color: inherit; }
     min-height: 411px;
 }
 
+#slider_1.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
 
+#slider_1 .slick-dots {
+    bottom: 10px;
+    right: 0;
+    text-align: right;
+}
 
+#slider_1 .slick-dots li button {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 13px;
+    margin-left: 3px;
+    width: 13px;
+}
+
+#slider_1 li.slick-active button {
+    background: #fff;
+    
+}
 /*========================== END slider ==========================*/
 
 .bracket-slide { color: #fff; }
