@@ -290,6 +290,10 @@ footer li:hover a { color: #c9cbd1; }
     line-height: 36px;
 }
 
+.accordeon_ul > li a:hover {
+    text-decoration: none;
+}
+
 .panel-default {
     border: none;
 }
@@ -312,11 +316,21 @@ footer li:hover a { color: #c9cbd1; }
 
 .panel-group .panel + .panel {
     box-shadow: none;
-    margin-top: 1px;
+    margin-top: 0;
 }
 
 .panel-title {
     position: relative;
+}
+
+.panel-title:after {
+    background: url(../img/arrows_accordeon.png) no-repeat 0 0;
+    content: "";
+    height: 4px;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 8px;
 }
 
 .panel-title:hover:before {
@@ -328,7 +342,25 @@ footer li:hover a { color: #c9cbd1; }
     top: -7px;
     width: 6px;
 }
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top: 0;
+    border-bottom: 1px solid #e0dfdf;
+    padding-bottom: 0;
+}
 
+.list_products .slider-item {
+    float: left;
+    margin: 0 34px 29px 0;
+    width: 255px;
+}
+
+.list_products .slider-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.list_products .slider-item:nth-child(3n+1) {
+    clear: both;
+}
 
 /*========================== END katalog page ==========================*/
 

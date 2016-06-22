@@ -92,7 +92,7 @@ $(function () {
 /*navbar script below *******
  ***************************** 
  **************************/
-
+/*
  var navbar = $(".navbar--top .navbar-collapse");
  
   var closeNav = function(navbar){
@@ -198,7 +198,7 @@ $(function () {
       
  
     });
-    
+   */ 
     
     /*navbar script end ********
      ******************
