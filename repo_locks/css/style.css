@@ -112,6 +112,123 @@ a { color: inherit; }
 .navbar-vertical .dropdown-menu ul li:hover { width: auto; background-color: transparent; }
 .navbar-vertical .dropdown-menu ul li a:hover { width: auto; background-color: #f4f4f4; }
 
+/*========================== sf-menu ==========================*/
+
+.sf-menu {
+    margin-top: 14px;
+}
+
+.sf-menu ul {
+    list-style-type: none;
+    line-height: 36px;
+}
+
+.sf-menu > li {
+    background: transparent;
+}
+
+.sf-menu > li > a {
+    border: none;
+    color: #fff;
+    font-family: "Ubuntu";
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.sf-menu > li:hover, .sf-menu > li.sfHover {
+    background: #fff;
+    color: #292929;
+}
+
+.sf-menu > li:hover a, .sf-menu > li.sfHover a {
+    color: #292929;
+}
+
+.sf-menu .sf-mega {
+    background: #fff;
+    box-shadow: none;
+}
+
+/*========================== END sf-menu ==========================*/
+
+/*========================== slider ==========================*/
+
+.carousel-caption1 {
+    margin-top: 65px;
+}
+
+#slider_1 img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.first_slide {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+#slider_1 .slider-title {
+    font: 400 42px/42px "Ubuntu",sans-serif;
+    margin-bottom: 14px;
+}
+
+#slider_1 .carousel-caption p {
+    font: 300 18px/28px "Ubuntu",sans-serif;
+    margin: 0;
+}
+
+#slider_1 .carousel-caption_item {
+    padding: 48px 0 10px;
+    text-align: center;
+}
+
+
+#slider_1 .carousel-caption_item .descr {
+    display: block;
+    font: 300 11px/14px "Ubuntu",sans-serif;
+    margin-top: 8px;
+    padding-left: 0;
+}
+
+#slider_1 {
+    color: #fff;
+}
+
+#slider_1.slick-initialized .slick-slide:hover, #slider_1.slick-initialized .slick-slide {
+    padding-top: 0!important;
+}
+
+#slider_1.slick-initialized .slick-slide {
+    min-height: 411px;
+}
+
+#slider_1.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+#slider_1 .slick-dots {
+    bottom: 10px;
+    right: 0;
+    text-align: right;
+}
+
+#slider_1 .slick-dots li button {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 13px;
+    margin-left: 3px;
+    width: 13px;
+}
+
+#slider_1 li.slick-active button {
+    background: #fff;
+    
+}
+/*========================== END slider ==========================*/
+
 .bracket-slide { color: #fff; }
 .bracket-slide .carousel-indicators { width: auto; left: auto; right: 0; bottom: 18px; }
 .bracket-slide .carousel-indicators li { width: 13px; height: 13px; margin-left: 3px; }
@@ -219,6 +336,150 @@ footer li:hover a { color: #c9cbd1; }
 
 .footer-copy { display: block; color: #a5a7ab; }
 .footer-copy2 { text-align: right; }
+
+/*========================== katalog page ==========================*/
+
+.section_1 {
+    background: #fff;
+    font-family: "Ubuntu";    
+}
+
+.breadcrumbs {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+.breadcrumbs > li {
+    float: left;
+}
+
+.breadcrumbs > li a {
+    color: #6a6a6a;
+    display: block;
+    font-size: 14px;
+}
+
+.title_1 {
+    color: #141414;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.products_main {
+    background: #f4f4f4;
+    padding: 27px 0 0 0;
+}
+
+.accordeon_ul {
+    list-style-type: none;
+    padding: 0 0 0 12px;
+}
+
+.accordeon_ul > li {
+    position: relative;
+}
+
+.accordeon_ul > li.active:before {
+    background: #f3d64c;
+    content: "";
+    height: 32px;
+    left: -27px;
+    position: absolute;
+    top: 0;
+    width: 6px;
+}
+
+.accordeon_ul > li:hover:before {
+    background: #f3d64c;
+    content: "";
+    height: 32px;
+    left: -27px;
+    position: absolute;
+    top: 0;
+    width: 6px;
+}
+
+.accordeon_ul > li a {
+    color: #292929;
+    display: block;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.accordeon_ul > li a:hover {
+    text-decoration: none;
+}
+
+.panel-default {
+    border: none;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel-default > .panel-heading {
+    background: #fff;
+    border: 0;
+    border-bottom: 1px solid #e0dfdf;
+}
+.panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+    color: #292929;
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+
+.panel-group .panel + .panel {
+    box-shadow: none;
+    margin-top: 0;
+}
+
+.panel-title {
+    position: relative;
+}
+
+.panel-title:after {
+    background: url(../img/arrows_accordeon.png) no-repeat 0 0;
+    content: "";
+    height: 4px;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 8px;
+}
+
+.panel-title:hover:before {
+    background: #f3d64c;
+    content: "";
+    height: 32px;
+    left: -17px;
+    position: absolute;
+    top: -7px;
+    width: 6px;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top: 0;
+    border-bottom: 1px solid #e0dfdf;
+    padding-bottom: 0;
+}
+
+.list_products .slider-item {
+    float: left;
+    margin: 0 34px 29px 0;
+    width: 255px;
+}
+
+.list_products .slider-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.list_products .slider-item:nth-child(3n+1) {
+    clear: both;
+}
+
+/*========================== END katalog page ==========================*/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) { .navbar--top .container { padding: 0; margin: 0; width: 100%; }
   .navbar--top .navbar-header { float: left; }
