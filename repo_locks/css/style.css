@@ -112,6 +112,46 @@ a { color: inherit; }
 .navbar-vertical .dropdown-menu ul li:hover { width: auto; background-color: transparent; }
 .navbar-vertical .dropdown-menu ul li a:hover { width: auto; background-color: #f4f4f4; }
 
+/*========================== sf-menu ==========================*/
+
+.sf-menu {
+    margin-top: 14px;
+}
+
+.sf-menu ul {
+    list-style-type: none;
+    line-height: 36px;
+}
+
+.sf-menu > li {
+    background: transparent;
+}
+
+.sf-menu > li > a {
+    border: none;
+    color: #fff;
+    font-family: "Ubuntu";
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.sf-menu > li:hover, .sf-menu > li.sfHover {
+    background: #fff;
+    color: #292929;
+}
+
+.sf-menu > li:hover a, .sf-menu > li.sfHover a {
+    color: #292929;
+}
+
+.sf-menu .sf-mega {
+    background: #fff;
+    box-shadow: none;
+}
+
+/*========================== END sf-menu ==========================*/
+
 .bracket-slide { color: #fff; }
 .bracket-slide .carousel-indicators { width: auto; left: auto; right: 0; bottom: 18px; }
 .bracket-slide .carousel-indicators li { width: 13px; height: 13px; margin-left: 3px; }
