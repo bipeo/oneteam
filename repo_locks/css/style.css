@@ -371,6 +371,11 @@ footer li:hover a { color: #c9cbd1; }
     padding: 27px 0 0 0;
 }
 
+.accordeon .panel {
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
 .accordeon_ul {
     list-style-type: none;
     padding: 0 0 0 12px;
@@ -424,12 +429,6 @@ footer li:hover a { color: #c9cbd1; }
     border: 0;
     border-bottom: 1px solid #e0dfdf;
 }
-.panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
-    color: #292929;
-    display: block;
-    outline: none;
-    text-decoration: none;
-}
 
 .panel-group .panel + .panel {
     box-shadow: none;
@@ -437,6 +436,8 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .panel-title {
+    color: #292929;
+    cursor: pointer;
     position: relative;
 }
 
@@ -444,9 +445,11 @@ footer li:hover a { color: #c9cbd1; }
     background: url(../img/arrows_accordeon.png) no-repeat 0 0;
     content: "";
     height: 4px;
+    margin-top: -8px;
     position: absolute;
     right: 5px;
-    top: 8px;
+    top: 50%;
+/*    top: 8px;*/
     width: 8px;
 }
 

@@ -10,9 +10,9 @@ $(function() {
 });
 
 // Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
+//$('body').scrollspy({
+//    target: '.navbar-fixed-top'
+//})
 
 // Closes the Responsive Menu on Menu Item Click
 /*$('.navbar-collapse ul li a').click(function() {
@@ -133,7 +133,7 @@ $(function () {
         $(document).mouseup(function (e) {
           var container = $(".navbar-collapse.in, .navbar-toggle");
 
-          if (!container.is(e.target) /* if the target of the click isn't the container...*/
+          if (!container.is(e.target) /* if the target of the click isn't the container...*//*
           && container.has(e.target).length === 0)  {
                 //closeNav()
           }
