@@ -347,23 +347,34 @@ footer li:hover a { color: #c9cbd1; }
 .breadcrumbs {
     list-style-type: none;
     overflow: hidden;
-    padding: 0;
+    padding: 40px 0 0 0;
 }
 
 .breadcrumbs > li {
     float: left;
+    margin-right: 8px;
+}
+
+.breadcrumbs > li:last-child {
+    margin-right: 0;
 }
 
 .breadcrumbs > li a {
     color: #6a6a6a;
     display: block;
     font-size: 14px;
+/*    margin-right: 8px;*/
+}
+
+.breadcrumbs > li a span {
+    margin-left: 8px;
 }
 
 .title_1 {
     color: #141414;
     font-size: 42px;
     font-weight: 400;
+    padding: 0 0 27px 0;
 }
 
 .products_main {
