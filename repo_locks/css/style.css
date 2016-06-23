@@ -513,6 +513,7 @@ footer li:hover a { color: #c9cbd1; }
     font-family: "Ubuntu";
     font-weight: 300;
     height: 18px;
+    line-height: 18px;
     padding: 0 0 0 28px;
 }
 
@@ -627,6 +628,11 @@ footer li:hover a { color: #c9cbd1; }
 
 .all_page > li a:hover, .all_page > li.active a {
     background: #f3d64c;    
+}
+
+.products .is-countdown {
+    right: 10px;
+    top: 10px;
 }
 
 /*========================== END katalog page ==========================*/
