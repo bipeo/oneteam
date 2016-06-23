@@ -133,13 +133,15 @@ $(function () {
         $(document).mouseup(function (e) {
           var container = $(".navbar-collapse.in, .navbar-toggle");
 
-          if (!container.is(e.target) /* if the target of the click isn't the container...*/
+          if (!container.is(e.target) 
+         
           && container.has(e.target).length === 0)  {
                 //closeNav()
           }
         });
       });
-  
+      */
+  /*
        if (navbar.css("z-index") == "99999" ){
                     
             $('.navbar-toggle').click( function() {
@@ -198,7 +200,7 @@ $(function () {
       
  
     });
-   */ 
+    */
     
     /*navbar script end ********
      ******************

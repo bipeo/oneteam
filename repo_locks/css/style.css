@@ -595,3 +595,24 @@ footer li:hover a { color: #c9cbd1; }
     }
     
 }
+
+/*******Product page*********/
+.gall_wrap {
+    position: relative;
+}
+.wrslfor {
+    margin-bottom:40px;
+    border:1px solid red;
+}
+.wrslfor .slick-slide  {
+    margin:0px;
+}
+.gall_wrap .slick-prev, .gall_wrap .slick-next {
+    
+}
+.gall_wrap  .slick-initialized .slick-slide {
+    min-height:inherit;
+}
+.gall_wrap  .slick-initialized .slick-slide, .gall_wrap .slick-initialized .slick-slide:hover {
+     padding-top: 11px !important; 
+}
