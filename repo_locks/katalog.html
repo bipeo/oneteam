@@ -233,7 +233,7 @@
                     <div class="panel-heading">
                       <h4 class="panel-title">Электронные замки</h4>
                     </div>
-                    <div  class="panel-collapse collapse in">
+                    <div  class="panel-collapse collapse_in">
                       <div class="panel-body">
                         <ul class="accordeon_ul">
                             <li><a href="">Для отеля</a></li>
@@ -841,10 +841,12 @@
     <script>
         // accordeon
         $('.panel-collapse').css({'display':'none'});
+        $('.collapse_in').css('display', 'block');
 
         $('.panel-title').click(function(){
-            $(this).parent().next().slideToggle(500);
-            $('.panel-title').not($(this)).removeClass('collapse in');
+            var result = $(this).parent().next();
+            $(result).slideToggle(500);
+            $('.panel-collapse ').not(result).removeClass('collapse_in');
             //$('.panel-collapse')
             //$(this).next('.panel-collapse').slideToggle(500);
             //$(this).toggleClass('collapse in');

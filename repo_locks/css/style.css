@@ -497,6 +497,10 @@ footer li:hover a { color: #c9cbd1; }
     clear: both;
 }
 
+.block_checkbox {
+    margin: 0 0 8px 0;
+}
+
 .block_checkbox input {
     display: none;
 }
