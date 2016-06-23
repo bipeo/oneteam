@@ -449,11 +449,10 @@ footer li:hover a { color: #c9cbd1; }
     background: url(../img/arrows_accordeon.png) no-repeat 0 0;
     content: "";
     height: 4px;
-    margin-top: -8px;
+    margin-top: -2px;
     position: absolute;
     right: 5px;
     top: 50%;
-/*    top: 8px;*/
     width: 8px;
 }
 
@@ -463,6 +462,7 @@ footer li:hover a { color: #c9cbd1; }
     height: 32px;
     left: -17px;
     position: absolute;
+/*    top: 0;*/
     top: -7px;
     width: 6px;
 }
@@ -513,12 +513,17 @@ footer li:hover a { color: #c9cbd1; }
     border: 1px solid #b1b1b7;
     font-size: 16px;
     height: 34px;
+    margin-bottom: 15px;
     padding: 0 0 0 8px;
     width: 107px;
 }
 
 .price_input:hover, .price_input:focus {
     border-color: #f3d64c; 
+}
+
+.margin_1 {
+    margin-right: 13px;
 }
 
 .color {
