@@ -347,28 +347,48 @@ footer li:hover a { color: #c9cbd1; }
 .breadcrumbs {
     list-style-type: none;
     overflow: hidden;
-    padding: 0;
+    padding: 40px 0 0 0;
 }
 
 .breadcrumbs > li {
     float: left;
+    margin-right: 8px;
+}
+
+.breadcrumbs > li:last-child {
+    margin-right: 0;
 }
 
 .breadcrumbs > li a {
     color: #6a6a6a;
     display: block;
     font-size: 14px;
+/*    margin-right: 8px;*/
+}
+
+.breadcrumbs > li a span {
+    margin-left: 8px;
 }
 
 .title_1 {
     color: #141414;
     font-size: 42px;
     font-weight: 400;
+    padding: 0 0 27px 0;
 }
 
 .products_main {
     background: #f4f4f4;
     padding: 27px 0 0 0;
+}
+
+.accordeon {
+    margin: 0 0 34px 0;
+}
+
+.accordeon .panel {
+    box-shadow: none;
+    margin-bottom: 0;
 }
 
 .accordeon_ul {
@@ -424,12 +444,6 @@ footer li:hover a { color: #c9cbd1; }
     border: 0;
     border-bottom: 1px solid #e0dfdf;
 }
-.panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
-    color: #292929;
-    display: block;
-    outline: none;
-    text-decoration: none;
-}
 
 .panel-group .panel + .panel {
     box-shadow: none;
@@ -437,6 +451,8 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .panel-title {
+    color: #292929;
+    cursor: pointer;
     position: relative;
 }
 
@@ -444,9 +460,10 @@ footer li:hover a { color: #c9cbd1; }
     background: url(../img/arrows_accordeon.png) no-repeat 0 0;
     content: "";
     height: 4px;
+    margin-top: -2px;
     position: absolute;
     right: 5px;
-    top: 8px;
+    top: 50%;
     width: 8px;
 }
 
@@ -456,6 +473,7 @@ footer li:hover a { color: #c9cbd1; }
     height: 32px;
     left: -17px;
     position: absolute;
+/*    top: 0;*/
     top: -7px;
     width: 6px;
 }
@@ -477,6 +495,103 @@ footer li:hover a { color: #c9cbd1; }
 
 .list_products .slider-item:nth-child(3n+1) {
     clear: both;
+}
+
+.block_checkbox input {
+    display: none;
+}
+
+.block_checkbox label {
+    background: url(../img/checkbox.png) no-repeat 0 -18px;
+    color: #292929;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    height: 18px;
+    padding: 0 0 0 28px;
+}
+
+.block_checkbox label:hover {
+    background-position: 0 0;
+}
+
+.block_checkbox input[type=checkbox]:checked + label {
+    background-position: 0 -36px;
+}
+
+.price_input {
+    border: 1px solid #b1b1b7;
+    font-size: 16px;
+    height: 34px;
+    margin-bottom: 15px;
+    padding: 0 0 0 8px;
+    width: 107px;
+}
+
+.price_input:hover, .price_input:focus {
+    border-color: #f3d64c; 
+}
+
+.margin_1 {
+    margin-right: 13px;
+}
+
+.color {
+    overflow: hidden;
+}
+
+.color > li {
+    border-radius: 50%;
+    float: left;
+    height: 32px;
+    margin: 0 8px 10px 0;
+    width: 32px;
+}
+
+.color > li:nth-child(1) {
+    background: url(../img/color_1.png) no-repeat;
+}
+
+.color > li:nth-child(2) {
+    background: url(../img/color_2.png) no-repeat;
+}
+
+.color > li:nth-child(3) {
+    background: url(../img/color_3.png) no-repeat;
+}
+
+.color > li:nth-child(4) {
+    background: url(../img/color_4.png) no-repeat;
+}
+
+.color > li:nth-child(5) {
+    background: url(../img/color_5.png) no-repeat;
+}
+
+.color > li:nth-child(6) {
+    background: url(../img/color_6.png) no-repeat;
+    margin-right: 0;
+}
+
+.color > li:nth-child(7) {
+    background: url(../img/color_7.png) no-repeat;
+}
+
+.color > li:nth-child(8) {
+    background: url(../img/color_8.png) no-repeat;
+}
+
+.color > li:nth-child(9) {
+    background: url(../img/color_9.png) no-repeat;
+}
+
+.color > li:nth-child(10) {
+    background: url(../img/color_10.png) no-repeat;
+}
+
+.color > li:nth-child(11) {
+    background: url(../img/color_11.png) no-repeat;
 }
 
 /*========================== END katalog page ==========================*/
