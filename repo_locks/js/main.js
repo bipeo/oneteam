@@ -92,7 +92,7 @@ $(function () {
 /*navbar script below *******
  ***************************** 
  **************************/
-/*
+
  var navbar = $(".navbar--top .navbar-collapse");
  
   var closeNav = function(navbar){
@@ -140,8 +140,7 @@ $(function () {
           }
         });
       });
-      */
-  /*
+   
        if (navbar.css("z-index") == "99999" ){
                     
             $('.navbar-toggle').click( function() {
@@ -200,7 +199,7 @@ $(function () {
       
  
     });
-    */
+    
     
     /*navbar script end ********
      ******************
