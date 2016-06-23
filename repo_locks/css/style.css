@@ -371,6 +371,10 @@ footer li:hover a { color: #c9cbd1; }
     padding: 27px 0 0 0;
 }
 
+.accordeon {
+    margin: 0 0 34px 0;
+}
+
 .accordeon .panel {
     box-shadow: none;
     margin-bottom: 0;
@@ -480,6 +484,98 @@ footer li:hover a { color: #c9cbd1; }
 
 .list_products .slider-item:nth-child(3n+1) {
     clear: both;
+}
+
+.block_checkbox input {
+    display: none;
+}
+
+.block_checkbox label {
+    background: url(../img/checkbox.png) no-repeat 0 -18px;
+    color: #292929;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Ubuntu";
+    font-weight: 300;
+    height: 18px;
+    padding: 0 0 0 28px;
+}
+
+.block_checkbox label:hover {
+    background-position: 0 0;
+}
+
+.block_checkbox input[type=checkbox]:checked + label {
+    background-position: 0 -36px;
+}
+
+.price_input {
+    border: 1px solid #b1b1b7;
+    font-size: 16px;
+    height: 34px;
+    padding: 0 0 0 8px;
+    width: 107px;
+}
+
+.price_input:hover, .price_input:focus {
+    border-color: #f3d64c; 
+}
+
+.color {
+    overflow: hidden;
+}
+
+.color > li {
+    border-radius: 50%;
+    float: left;
+    height: 32px;
+    margin: 0 8px 10px 0;
+    width: 32px;
+}
+
+.color > li:nth-child(1) {
+    background: url(../img/color_1.png) no-repeat;
+}
+
+.color > li:nth-child(2) {
+    background: url(../img/color_2.png) no-repeat;
+}
+
+.color > li:nth-child(3) {
+    background: url(../img/color_3.png) no-repeat;
+}
+
+.color > li:nth-child(4) {
+    background: url(../img/color_4.png) no-repeat;
+}
+
+.color > li:nth-child(5) {
+    background: url(../img/color_5.png) no-repeat;
+}
+
+.color > li:nth-child(6) {
+    background: url(../img/color_6.png) no-repeat;
+    margin-right: 0;
+}
+
+.color > li:nth-child(7) {
+    background: url(../img/color_7.png) no-repeat;
+}
+
+.color > li:nth-child(8) {
+    background: url(../img/color_8.png) no-repeat;
+}
+
+.color > li:nth-child(9) {
+    background: url(../img/color_9.png) no-repeat;
+}
+
+.color > li:nth-child(10) {
+    background: url(../img/color_10.png) no-repeat;
+}
+
+.color > li:nth-child(11) {
+    background: url(../img/color_11.png) no-repeat;
 }
 
 /*========================== END katalog page ==========================*/
