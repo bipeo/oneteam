@@ -120,7 +120,7 @@ $(function () {
     function checkSize(){
          var closeNav = function(){
             navbar.removeClass('in');
-            navbar.find('.nav>li').removeClass('wascl');
+            //navbar.find('.nav>li').removeClass('wascl');
             $("body").css("overflow", "auto");
           }
           closeNav()
@@ -133,30 +133,41 @@ $(function () {
         $(document).mouseup(function (e) {
           var container = $(".navbar-collapse.in, .navbar-toggle");
 
-          if (!container.is(e.target) 
-         
+          if (!container.is(e.target) /* if the target of the click isn't the container...*/
           && container.has(e.target).length === 0)  {
                 //closeNav()
           }
         });
       });
-   
-       if (navbar.css("z-index") == "99999" ){
-                    
-            $('.navbar-toggle').click( function() {
-      if ($(this).is( ".collapsed" )) {
-        $("body").css("overflow", "hidden");
-      } else {
-        $("body").css("overflow", "auto");
-      }
+      
+      
+      
+          $('.navbar-toggle').click( function() {
+          navbar.toggleClass("in");
+          $(this).toggleClass('collapsed');
+         $("body").css("overflow", "hidden");
+         });
+           navbar.find('.nav>li').on('click',function() {
+            $(this).toggleClass('open');
+             $('.nav>li').not($(this)).removeClass('open');
+         
         });
-    
+  
+       if (navbar.css("z-index") == "99999" ){
+                   
+        
+        
+//                   $('.navbar--top .nav-justified > li').on('mouseenter',function() {
+//           $(this).addClass('open');
+//        })
+        
+      
          
             navbar.find('.nav>li').unbind('mouseenter').bind('mouseenter',function(e) {
               $("body").css("overflow", "hidden");   
-              $(e).removeClass('open');
-                if($(e).hasClass('wascl')) {
-              $(e).addClass('open'); 
+             // $(e).removeClass('open');
+                if($(e).hasClass('open')) {
+            //  $(e).addClass('open'); 
           } else {
                
           }
@@ -166,23 +177,19 @@ $(function () {
             })
             navbar.find('.nav>li').unbind('mouseleave').bind('mouseleave',function(e) {
                  $("body").css("overflow", "hidden");
-                 $(e).removeClass('wascl');
+                 //$(e).removeClass('open');
                    
             })
             
        
             
-          navbar.find('.nav>li').on('click',function(e) {
-          if($(e).hasClass('wascl')) {
-               $(e).removeClass('wascl');
-          } else {
-            $(e).addClass('wascl');
-          }
-         
-        });
+     
 
           // navbar.find('.nav>li').css('background','green')
              } else {
+                 
+        
+    
           
             navbar.find('.nav>li').unbind('mouseenter').bind('mouseenter',function() {
               $(this).addClass('open');
