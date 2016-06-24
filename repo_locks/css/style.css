@@ -1069,16 +1069,16 @@ footer li:hover a { color: #c9cbd1; }
   .navbar--top .dropdown-menu .banner { width: 285px; margin-top: 20px; }
   .navbar--sub .nav-right { float: none !important; }
   .navbar--sub .nav-right .phone { padding-left: 13px; font: 400 14px/22px "Ubuntu", sans-serif; }
-  .bracket-slide .carousel-caption { padding: 0; }
-  .bracket-slide .carousel-caption_item { padding-top: 0; }
-  .bracket-slide .carousel-caption_item .descr { margin: 0 auto; padding-left: 5px; padding-right: 5px; font: 300 7px/12px "Ubuntu", sans-serif; }
+.bracket-slide .carousel-caption, .carousel-caption1 { padding: 0; }
+    .bracket-slide .carousel-caption_item, #slider_1 .carousel-caption_item { padding-top: 0; }
+    .bracket-slide .carousel-caption_item .descr, #slider_1 .carousel-caption_item .descr { margin: 0 auto; padding-left: 5px; padding-right: 5px; font: 300 7px/12px "Ubuntu", sans-serif; }
   .bracket-slide .carousel-caption_item .ic { margin: 0 auto; }
   .bracket-slide .carousel-indicators { bottom: -8px; }
   .bracket-slide .item.active { height: 257px; }
-  .bracket-slide .slider-title { margin-top: 0; font: 400 14px/14px "Ubuntu", sans-serif; }
+    .bracket-slide .slider-title, #slider_1 .slider-title { margin-top: 0; font: 400 14px/14px "Ubuntu", sans-serif; }
   .bracket-slide .photo img { width: 37%; padding: 0; max-width: 200px; }
-  .bracket-slide .ic { -ms-transform: scale(0.5); -webkit-transform: scale(0.5); transform: scale(0.5); }
-  .bracket .carousel-caption p { font: 300 10px/16px "Ubuntu", sans-serif; }
+    .bracket-slide .ic, .slider_1 .ic { -ms-transform: scale(0.5); -webkit-transform: scale(0.5); transform: scale(0.5); }
+    .bracket .carousel-caption p, .carousel-caption1 p { font: 300 10px/16px "Ubuntu", sans-serif; }
   .service { padding-top: 0; }
   .service-box { margin-top: 30px; }
   .company-about { text-align: center; padding-bottom: 30px; }
