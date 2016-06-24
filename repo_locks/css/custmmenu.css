@@ -1,0 +1,242 @@
+.menu-container {
+    width:auto;
+}
+.menu > ul > li {
+    float:none;
+}
+
+.menu > ul > li > ul {
+    padding:0px;
+}
+
+.menu > ul > li > ul > li a {
+    border:0px;
+    width:auto;
+    display:inline;
+}
+
+@media only screen and (max-width: 767px) {
+.menu > ul > li > ul {
+    position: relative;
+    left: -7.5%;
+    width: 106%;
+}
+}
+
+
+/*try*/
+html.hid body {
+    overflow-y:hidden;
+}
+
+
+
+/**{margin:0;}*/
+
+/*html.nscrl,  .nscrl  body {
+     height: 99%;
+    border: 1px solid red;
+    overflow:hidden;
+}*/
+/*.nscrl #container1{
+    height: 100%;
+    width: 100%;
+    border: 1px solid green;
+    overflow: hidden;
+}
+
+.nscrl #container2 {
+    width: 102%;
+    height: 99%;
+    border: 1px solid blue;
+    overflow: auto;
+    padding-right: 15px;
+}*/
+/*try end*/
+
+
+
+
+.navbar--top .fonav-justified > li > a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font: 300 15px/27px "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    padding: 22px 5px;
+} /*stl*/
+
+.navbar--top .fonav-justified > li {
+    position: static;
+    text-align: center;
+    transition:0.33s;
+}
+
+
+.navbar--top .dropdown-menu ul li a {
+    text-align: center;
+}
+
+.navbar--top .fonav-justified > li:hover > a, .navbar--top .fonav-justified > li:active > a {
+    color: #292929;
+    font: 300 15px/27px "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+
+
+.navbar--top .fonav-justified   .dropdown-menu {
+    margin: 0;
+    padding: 34px 15px;
+    left: 0;
+    right: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    border: 0 none;
+   
+} /*stl*/
+
+
+
+.navbar--top  .fonav-justified  .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+
+.navbar--top  .navbar-collapse {
+    position: relative;
+    overflow-x: auto; 
+}
+
+.navbar--top .fonav-justified > li {
+    position: static;
+    text-align: center;
+} /*stl*/
+
+.fonav-justified>li {
+    float: none;
+}
+
+.fonav-justified>.dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+
+.menu-container .dropdown-menu {
+    display:block;
+}
+
+.navbar--top .nav-justified > .dropdown .dropdown-menu {
+    margin: 0;
+    padding: 34px 15px;
+    left: 0;
+    right: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    border: 0 none;
+} /*stl*/
+
+.navbar--top .dropdown-menu ul li a {
+    display:block;
+    font: 300 16px/16px "Ubuntu", sans-serif;
+    color: #292929;
+} /*stl*/
+
+
+
+
+ @media screen and (max-width: 767px) and (min-width: 320px) {
+     
+     .navbar--top .navbar-collapse {
+/*         position:fixed;
+         top:66px;*/
+         width:105%;
+         
+     }
+    
+    .menu-container.navbar--top  .fonav-justified > li > a {
+    display: block;
+    }
+    
+    .navbar--top .dropdown-menu ul li {
+        text-align:center
+    }
+    
+    .menu-container .menu-mobile {
+         position: absolute;
+         top:0px;
+         z-index: 333;
+         background:red;
+    }
+
+   .navbar--top .navbar-collapse.in .fonav-justified > li {
+    position: relative; 
+    } /*stl!!!*/
+    
+     .menu-container.navbar--top .navbar-collapse.collapse.in  > ul {
+    padding-bottom:70px;
+/*    background:#fff;*/
+}
+
+    .navbar--top .navbar-collapse.in .fonav-justified   .dropdown-menu {
+        position:static;
+    }
+
+    .navbar--top .fonav-justified .dropdown-menu {
+        position: relative;
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom:0px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .navbar--top .nav-justified > .dropdown .dropdown-menu {
+        margin: 0;
+        padding: 34px 15px;
+        left: 0;
+        right: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        border-radius: 0;
+        border: 0 none;
+    }
+    .navbar--top .fonav-justified  .dropdown-menu {
+        padding-bottom: 0px;
+    }
+
+    .navbar--top .nav-justified > .dropdown .dropdown-menu {
+        position: relative;
+        padding-top: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    .navbar--top .fonav-justified {
+    width: 100%;
+    border-top: 2px solid #474a51;
+    }
+    
+ 
+ }
+
+@media (min-width: 768px) {
+.navbar--top .fonav-justified > li > a {
+    white-space: nowrap;
+}
+}
+@media (min-width: 768px) {
+.fonav-justified>li {
+    display: table-cell;
+    width: 1%;
+}
+}

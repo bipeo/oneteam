@@ -101,20 +101,20 @@ $(function () {
             $("body").css("overflow", "auto");
           }
 
-    $(document).keydown(function(e) {
-    if (e.keyCode == 27) {
-        closeNav('.navbar--top .navbar-collapse')
-    }
-        });  
+//    $(document).keydown(function(e) {
+//    if (e.keyCode == 27) {
+//        closeNav('.navbar--top .navbar-collapse')
+//    }
+//        });  
 
   
   $(document).ready(function() {
        
   
-  	checkSize();
+  	//checkSize();
         
       $(window).on('resize', function () {
-              checkSize()      
+             // checkSize()      
               });
         
     function checkSize(){
@@ -123,7 +123,7 @@ $(function () {
             navbar.find('.nav>li').removeClass('wascl');
             $("body").css("overflow", "auto");
           }
-          closeNav()
+         // closeNav()
           
           
             
@@ -161,7 +161,6 @@ $(function () {
                
           }
           
-//          $('.nav>li').css('background','pink')
           
             })
             navbar.find('.nav>li').unbind('mouseleave').bind('mouseleave',function(e) {
