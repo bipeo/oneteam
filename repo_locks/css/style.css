@@ -100,7 +100,7 @@ a { color: inherit; }
 
 .bracket { position: relative; background: transparent url("../img/bracket-bg.png") no-repeat scroll 0 0; background-size: auto 100%; }
 
-.navbar-vertical { position: relative; padding: 10px; margin-left: 14px; width: 22.79%; background-color: #fff; z-index: 9; }
+.navbar-vertical { position: absolute; padding: 10px; margin-left: 14px; /*width: 22.79%;*/ background-color: #fff; z-index: 9; }
 .navbar-vertical .nav-vertical { margin: 0; padding: 11px 0; border: 1px solid #f3d64c; list-style-type: none; }
 .navbar-vertical .nav-vertical li:hover { width: 108%; background: transparent url("../img/icons/img_1.png") no-repeat scroll 0 0; background-size: 100% 100%; z-index: 99999; }
 .navbar-vertical .nav-vertical li:hover a { width: 251px; padding-right: 25px; }
