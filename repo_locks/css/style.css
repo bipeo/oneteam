@@ -643,7 +643,22 @@ footer li:hover a { color: #c9cbd1; }
 /*========================== product page ==========================*/
 
 .wrslnav {
+    margin: 70px 0 0 0;
     width: 119px;
+}
+
+.wrslnav .slick-prev:before, .wrslnav .slick-next:before {
+    display: none;
+}
+
+.wrslnav .slick-prev {
+    left: 50%;
+    margin-left: -10px;
+    top: 0;
+}
+
+.wrslnav .slick-next {
+    bottom: 0;
 }
 
 .gall_wrap {
@@ -668,8 +683,12 @@ footer li:hover a { color: #c9cbd1; }
     padding-top: 11px !important; 
 }
 
-.wrslnav .slick-slide {
-    float: none;
+.wrslnav .slick-slide div {
+    margin-bottom: 70px;
+}
+
+.wrslnav .slick-arrow {
+    position: absolute;
 }
 
 .price_1 {
@@ -1051,5 +1070,4 @@ footer li:hover a { color: #c9cbd1; }
     
 }
 
-/*******Product page*********/
 
