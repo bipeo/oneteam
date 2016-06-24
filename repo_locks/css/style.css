@@ -643,7 +643,8 @@ footer li:hover a { color: #c9cbd1; }
 /*========================== product page ==========================*/
 
 .wrslnav {
-    margin: 70px 0 0 0;
+    float: left;
+    margin: 155px 0 0 0;
     width: 119px;
 }
 
@@ -654,27 +655,62 @@ footer li:hover a { color: #c9cbd1; }
 .wrslnav .slick-prev {
     left: 50%;
     margin-left: -10px;
-    top: 0;
+    top: -50px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .wrslnav .slick-next {
-    bottom: 0;
+    bottom: -53px;
+    margin-left: -10px;
+    left: 50%;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: auto;
 }
 
 .gall_wrap {
+    background: #fff;
+    overflow: hidden;
+    padding: 0 0 88px 0;
     position: relative;
 }
+
+.gall_wrap .is-countdown {
+    right: 11px;
+    top: 12px;
+}
+
+.skidka {
+    background: #f3d64c;
+    color: #141414;
+    display: table;
+    font: 300 16px / 27px Ubuntu;
+    height: 27px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skidka:after {
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
 .wrslfor {
     float: right;
-    margin-bottom:40px;
-    border: 1px solid red;
+    margin: 50px 0 0 0;
     width: 370px;
 }
 .wrslfor .slick-slide  {
     margin:0px;
 }
 .gall_wrap .slick-prev, .gall_wrap .slick-next {
-
+    z-index: 20;
 }
 .gall_wrap  .slick-initialized .slick-slide {
     min-height:inherit;
@@ -684,7 +720,10 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .wrslnav .slick-slide div {
-    margin-bottom: 70px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .wrslnav .slick-arrow {

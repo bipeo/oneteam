@@ -218,25 +218,27 @@
         <div class="row">
             <div class="col-md-3 col-lg-6">
                 <div class="gall_wrap">
+                    <div id="" class="is-countdown"><span class="countdown-row countdown-show3"><span class="countdown-section"><span class="countdown-amount">00</span><span class="countdown-delimiter"></span><span class="countdown-period">Hours</span></span><span class="countdown-section"><span class="countdown-amount">00</span><span class="countdown-delimiter"></span><span class="countdown-period">Minutes</span></span><span class="countdown-section"><span class="countdown-amount">00</span><span class="countdown-delimiter"></span><span class="countdown-period">Seconds</span></span></span></div>
+                    <div class="skidka">СКИДКА 15%</div>
                     <div class="wrslfor">
                         <div class="slider-for">
                             <div>
                                 <div><img src="img/slide_big.png" alt="" /></div>
                             </div>
                             <div>
-                                <div><img src="img/slide_big.png" alt="" /></div>
+                                <div><img src="http://pipsum.com/435x310.jpg" /></div>
                             </div>
                             <div>
-                                <div><img src="img/slide_big.png" alt="" /></div>
+                                <div><img src="http://pipsum.com/500x310.jpg" /></div>
                             </div> 
                             <div>
-                                <div><img src="img/slide_big.png" alt="" /></div>
+                                <div><img src="http://pipsum.com/435x510.jpg" /></div>
                             </div>
                             <div>
-                                <div><img src="img/slide_big.png" alt="" /></div>
+                                <div><img src="http://pipsum.com/600x310.jpg" /></div>
                             </div>
                             <div>
-                                <div><img src="img/slide_big.png" alt="" /></div>
+                                <div><img src="http://pipsum.com/700x550.jpg" /></div>
                             </div> 
                         </div>
                     </div>
@@ -693,15 +695,15 @@ $(document).on('ready', function() {
       slidesToScroll: 1,
       arrows: false,
       fade: true,
+//        variableWidth: true,
       asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
         vertical:true,  
-//        verticalSwiping: true,
+        verticalSwiping: true,
         autoplay: false,
         infinite: true,
         centerPadding: '0',
-        variableWidth: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
