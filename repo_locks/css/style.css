@@ -1000,6 +1000,44 @@ footer li:hover a { color: #c9cbd1; }
     background: url(../img/gray.png) no-repeat;
 }
 
+.rev_list {
+    clear: both;
+}
+
+.rev_ul .raiting {
+    margin: 5px 0 0 0;
+    position: static;
+}
+
+.rev_list p {
+    color: #292929;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.rev_ul {
+    overflow: hidden;
+}
+
+.rev_ul > li {
+    float: left;
+    height: 23px;
+}
+
+.rev_author {
+    border-left: 1px solid #cacaca;
+    color: #ababab;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 0 10px;
+}
+
+.rev_author img {
+    margin: 0 12px;
+}
 /*========================== END product page ==========================*/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) { .navbar--top .container { padding: 0; margin: 0; width: 100%; }
@@ -1069,16 +1107,18 @@ footer li:hover a { color: #c9cbd1; }
   .navbar--top .dropdown-menu .banner { width: 285px; margin-top: 20px; }
   .navbar--sub .nav-right { float: none !important; }
   .navbar--sub .nav-right .phone { padding-left: 13px; font: 400 14px/22px "Ubuntu", sans-serif; }
-  .bracket-slide .carousel-caption { padding: 0; }
-  .bracket-slide .carousel-caption_item { padding-top: 0; }
-  .bracket-slide .carousel-caption_item .descr { margin: 0 auto; padding-left: 5px; padding-right: 5px; font: 300 7px/12px "Ubuntu", sans-serif; }
+.bracket-slide .carousel-caption, .carousel-caption1 { padding: 0; }
+    .carousel-caption1 {margin-top: 20px;}
+    .bracket-slide .carousel-caption_item, #slider_1 .carousel-caption_item { padding-top: 0; }
+    .bracket-slide .carousel-caption_item .descr, #slider_1 .carousel-caption_item .descr { margin: 0 auto; padding-left: 5px; padding-right: 5px; font: 300 7px/12px "Ubuntu", sans-serif; }
   .bracket-slide .carousel-caption_item .ic { margin: 0 auto; }
   .bracket-slide .carousel-indicators { bottom: -8px; }
-  .bracket-slide .item.active { height: 257px; }
-  .bracket-slide .slider-title { margin-top: 0; font: 400 14px/14px "Ubuntu", sans-serif; }
-  .bracket-slide .photo img { width: 37%; padding: 0; max-width: 200px; }
-  .bracket-slide .ic { -ms-transform: scale(0.5); -webkit-transform: scale(0.5); transform: scale(0.5); }
-  .bracket .carousel-caption p { font: 300 10px/16px "Ubuntu", sans-serif; }
+    .bracket-slide .item.active, #slider_1 { height: 257px; }
+    .bracket-slide .slider-title, #slider_1 .slider-title { margin-top: 0; font: 400 14px/14px "Ubuntu", sans-serif; }
+    .bracket-slide .photo img { width: 37%; padding: 0; max-width: 200px; }
+    #slider_1 img {max-width: 119px;}
+    .bracket-slide .ic, .slider_1 .ic { -ms-transform: scale(0.5); -webkit-transform: scale(0.5); transform: scale(0.5); }
+    .bracket .carousel-caption p, .carousel-caption1 p { font: 300 10px/16px "Ubuntu", sans-serif; }
   .service { padding-top: 0; }
   .service-box { margin-top: 30px; }
   .company-about { text-align: center; padding-bottom: 30px; }
