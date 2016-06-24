@@ -1000,6 +1000,44 @@ footer li:hover a { color: #c9cbd1; }
     background: url(../img/gray.png) no-repeat;
 }
 
+.rev_list {
+    clear: both;
+}
+
+.rev_ul .raiting {
+    margin: 5px 0 0 0;
+    position: static;
+}
+
+.rev_list p {
+    color: #292929;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.rev_ul {
+    overflow: hidden;
+}
+
+.rev_ul > li {
+    float: left;
+    height: 23px;
+}
+
+.rev_author {
+    border-left: 1px solid #cacaca;
+    color: #ababab;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 0 10px;
+}
+
+.rev_author img {
+    margin: 0 12px;
+}
 /*========================== END product page ==========================*/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) { .navbar--top .container { padding: 0; margin: 0; width: 100%; }
