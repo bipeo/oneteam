@@ -702,6 +702,7 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .buy_link {
+    margin: 0 0 45px 0;
     overflow: hidden;
 }
 
@@ -731,6 +732,39 @@ footer li:hover a { color: #c9cbd1; }
     top: -2px;
 }
 
+.list_tabs {
+    border-bottom: 1px solid #b1b1b7;
+    overflow: hidden;
+}
+
+.list_tabs > li {
+    border-bottom: 4px solid transparent;
+    float: left;
+    text-align: center;
+}
+
+.list_tabs > li + li {
+    margin-left: 33px;
+}
+
+.list_tabs > li.active, .list_tabs > li:hover {
+    border-bottom-color: #f3d64c;    
+}
+
+.list_tabs > li a {
+    color: #141414;
+    display: block;
+    font: 300 18.04px / 34px Ubuntu;
+}
+
+.list_tabs a:hover {
+    text-decoration: none;
+}
+
+#tab_2, #tab_3 {
+    display: none;
+}
+
 .tab_p {
     color: #292929;
     font: 300 16px / 24px Ubuntu;
@@ -741,6 +775,7 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .user_link {
+    margin: 20px 0 35px 0;
     overflow: hidden;
 }
 
@@ -761,10 +796,19 @@ footer li:hover a { color: #c9cbd1; }
     padding: 0 0 0 37px;
 }
 
+.list_descript {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
 .list_descript li {
     color: #292929;
     float: left;
     margin-bottom: 15px;
+}
+
+.list_descript li:last-child {
+    margin-bottom: 0;
 }
 
 .list_descript li:nth-child(odd) {
@@ -778,6 +822,88 @@ footer li:hover a { color: #c9cbd1; }
     display: inline-block;
     padding: 0 5px 0 0;
 }
+
+.all_har {
+    color: #224d99;
+    font: 300 16px / 36px Ubuntu;
+}
+
+.dostavka {
+    background: url(../img/dostavka_bg.jpg) no-repeat center top;
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 16px;
+    min-height: 371px;
+    padding: 50px 0 0 0;
+}
+
+.dostavka a, .dostavka a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.title_2 {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 24px;
+    margin: 0 0 30px 0;
+}
+
+.dost_descript {
+    line-height: 28px;
+}
+
+.list_dost {
+    overflow: hidden;
+}
+
+.list_dost .fa-rub {
+    font-size: 14px;
+}
+
+.list_dost > li {
+    float: left;
+    line-height: 32px;
+}
+
+.list_dost > li:nth-child(odd) {
+    width: 311px;
+}
+
+.link_dost {
+    border-bottom: 1px dotted #ffffff;
+    font-weight: 300;
+    line-height: 42px;
+}
+
+.payment {
+    overflow: hidden;
+}
+
+.payment li {
+    float: left;
+    margin: 0 0 20px 0;
+    min-height: 42px;
+    padding: 0 0 0 54px;
+    width: 45%;
+}
+
+.payment li:nth-child(1) {
+    background: url(../img/payment_ico_1.png) no-repeat left center;
+}
+
+.payment li:nth-child(2) {
+    background: url(../img/payment_ico_2.png) no-repeat left center;
+}
+
+.payment li:nth-child(3) {
+    background: url(../img/payment_ico_3.png) no-repeat left center;
+}
+
+.payment li:nth-child(4) {
+    background: url(../img/payment_ico_4.png) no-repeat left center;
+}
+
 /*========================== END product page ==========================*/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) { .navbar--top .container { padding: 0; margin: 0; width: 100%; }
