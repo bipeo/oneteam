@@ -382,7 +382,7 @@ footer li:hover a { color: #c9cbd1; }
 
 .products_main {
     background: #f4f4f4;
-    padding: 27px 0 0 0;
+    padding: 27px 0 50px 0;
 }
 
 .accordeon {
@@ -675,20 +675,28 @@ footer li:hover a { color: #c9cbd1; }
 .price_1 {
     color: #a0a0a0;
     font-size: 16px;
+    margin: 0;
     text-decoration: line-through;
 }
 
 .price_ul {
+    margin: 0 0 34px 0;
     overflow: hidden;
 }
 
 .price_ul > li {
     float: left;
+    height: 60px;
     vertical-align: middle;
 }
 
+.price_ul > li + li {
+    margin-left: 18px;
+}
+
 .price_ul > li img {
-    vertical-align: middle;
+    display: block;
+    padding-top: 8px;
 }
 
 .price_2 {
@@ -698,7 +706,7 @@ footer li:hover a { color: #c9cbd1; }
 
 .price_2 .fa-rub {
     font-weight: normal;
-    font-size: 40px;
+    font-size: 38px;
 }
 
 .buy_link {
@@ -740,6 +748,7 @@ footer li:hover a { color: #c9cbd1; }
 .list_tabs > li {
     border-bottom: 4px solid transparent;
     float: left;
+    position: relative;
     text-align: center;
 }
 
@@ -902,6 +911,27 @@ footer li:hover a { color: #c9cbd1; }
 
 .payment li:nth-child(4) {
     background: url(../img/payment_ico_4.png) no-repeat left center;
+}
+
+.raiting {
+    overflow: hidden;
+    position: absolute;
+    right: -84px;
+    top: 11px;
+}
+
+.raiting span {
+    float: left;
+    height: 13px;
+    width: 15px;
+}
+
+.raiting span.gold {
+    background: url(../img/gold.png) no-repeat;
+}
+
+.raiting span.gray {
+    background: url(../img/gray.png) no-repeat;
 }
 
 /*========================== END product page ==========================*/
