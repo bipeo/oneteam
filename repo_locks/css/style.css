@@ -553,63 +553,6 @@ footer li:hover a { color: #c9cbd1; }
     margin-right: 13px;
 }
 
-.color {
-    overflow: hidden;
-}
-
-.color > li {
-    border-radius: 50%;
-    float: left;
-    height: 32px;
-    margin: 0 8px 10px 0;
-    width: 32px;
-}
-
-.color > li:nth-child(1) {
-    background: url(../img/color_1.png) no-repeat;
-}
-
-.color > li:nth-child(2) {
-    background: url(../img/color_2.png) no-repeat;
-}
-
-.color > li:nth-child(3) {
-    background: url(../img/color_3.png) no-repeat;
-}
-
-.color > li:nth-child(4) {
-    background: url(../img/color_4.png) no-repeat;
-}
-
-.color > li:nth-child(5) {
-    background: url(../img/color_5.png) no-repeat;
-}
-
-.color > li:nth-child(6) {
-    background: url(../img/color_6.png) no-repeat;
-    margin-right: 0;
-}
-
-.color > li:nth-child(7) {
-    background: url(../img/color_7.png) no-repeat;
-}
-
-.color > li:nth-child(8) {
-    background: url(../img/color_8.png) no-repeat;
-}
-
-.color > li:nth-child(9) {
-    background: url(../img/color_9.png) no-repeat;
-}
-
-.color > li:nth-child(10) {
-    background: url(../img/color_10.png) no-repeat;
-}
-
-.color > li:nth-child(11) {
-    background: url(../img/color_11.png) no-repeat;
-}
-
 .prev_next {
     color: #224d99;
     font-family: "Ubuntu";
@@ -667,6 +610,73 @@ footer li:hover a { color: #c9cbd1; }
 .select_1 select {
     background: transparent;
     border: none;
+}
+
+.checkbox_color {
+    display: none;
+}
+
+.checkbox_color + label {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+
+.checkbox_color + .color_1 {
+    background-image: url(../img/color_1.png);
+}
+
+.checkbox_color + .color_2 {
+    background-image: url(../img/color_2.png);
+}
+
+.checkbox_color + .color_3 {
+    background-image: url(../img/color_3.png);
+}
+
+.checkbox_color + .color_4 {
+    background-image: url(../img/color_4.png);
+}
+
+.checkbox_color + .color_5 {
+    background-image: url(../img/color_5.png);
+}
+
+.checkbox_color + .color_6 {
+    background-image: url(../img/color_6.png);
+}
+
+.checkbox_color + .color_7 {
+    background-image: url(../img/color_7.png);
+}
+
+.checkbox_color + .color_8 {
+    background-image: url(../img/color_8.png);
+}
+
+.checkbox_color + .color_9 {
+    background-image: url(../img/color_9.png);
+}
+
+.checkbox_color + .color_10 {
+    background-image: url(../img/color_10.png);
+}
+
+.checkbox_color + .color_11 {
+    background-image: url(../img/color_11.png);
+}
+
+.panel-title .price-sale {
+    background: url(../img/label_2.png) no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    float: none;
+    position: absolute;
+    right: -17px;
+    top: -4px;
+    text-align: center;
 }
 
 /*========================== END katalog page ==========================*/
