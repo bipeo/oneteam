@@ -233,7 +233,7 @@
                     <div class="panel-heading">
                       <h4 class="panel-title">Электронные замки</h4>
                     </div>
-                    <div  class="panel-collapse collapse_in">
+                    <div  class="panel-collapse">
                       <div class="panel-body">
                         <ul class="accordeon_ul">
                             <li><a href="">Для отеля</a></li>
@@ -254,7 +254,7 @@
                         </a>
                       </h4>
                     </div>
-                    <div class="panel-collapse collapse">
+                    <div class="panel-collapse">
                       <div class="panel-body">
                           <ul class="accordeon_ul">
                               <li><a href="">Для отеля</a></li>
@@ -271,7 +271,7 @@
                     <div class="panel-heading">
                       <h4 class="panel-title">Замки для шкафчиков</h4>
                     </div>
-                    <div class="panel-collapse collapse">
+                    <div class="panel-collapse">
                       <div class="panel-body">
                           <ul class="accordeon_ul">
                               <li><a href="">Для отеля</a></li>
@@ -293,7 +293,7 @@
                                 </a>
                             </h4>
                         </div>
-                        <div class="panel-collapse collapse">
+                        <div class="panel-collapse">
                             <div class="panel-body">
                                 <ul class="accordeon_ul">
                                     <li><a href="">Для отеля</a></li>
@@ -315,7 +315,7 @@
                                 </a>
                             </h4>
                         </div>
-                        <div class="panel-collapse collapse">
+                        <div class="panel-collapse">
                             <div class="panel-body">
                                 <ul class="accordeon_ul">
                                     <li><a href="">Для отеля</a></li>
@@ -334,7 +334,7 @@
                                     Программное обеспечение                                
                             </h4>
                         </div>
-                        <div class="panel-collapse collapse">
+                        <div class="panel-collapse">
                             <div class="panel-body">
                                 <ul class="accordeon_ul">
                                     <li><a href="">Для отеля</a></li>
@@ -354,7 +354,7 @@
                                     доступа
                             </h4>
                         </div>
-                        <div class="panel-collapse collapse">
+                        <div class="panel-collapse">
                             <div class="panel-body">
                                 <ul class="accordeon_ul">
                                     <li><a href="">Для отеля</a></li>
@@ -375,7 +375,7 @@
                                 </a>
                             </h4>
                         </div>
-                        <div class="panel-collapse collapse">
+                        <div class="panel-collapse">
                             <div class="panel-body">
                                 <ul class="accordeon_ul">
                                     <li><a href="">Для отеля</a></li>
@@ -396,7 +396,7 @@
                                 </a>
                             </h4>
                         </div>
-                        <div class="panel-collapse collapse">
+                        <div class="panel-collapse">
                             <div class="panel-body">
                                 <ul class="accordeon_ul">
                                     <li><a href="">Для отеля</a></li>
@@ -417,7 +417,7 @@
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                        <div class="panel-collapse">
                             <div class="panel-body">
                                 
                             </div>
@@ -430,7 +430,7 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">Цена</h4>
                         </div>
-                        <div class="panel-collapse collapse collapse_in">
+                        <div class="panel-collapse">
                             <div class="panel-body">
                                 <input class="price_input margin_1" type="text" placeholder="от 7000">
                                 <input class="price_input" type="text" placeholder="от 7000">
@@ -441,7 +441,7 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">Цвет</h4>
                         </div>
-                        <div class="panel-collapse collapse collapse_in">
+                        <div class="panel-collapse">
                             <div class="panel-body">
                                 <ul class="color list-unstyled">
                                     <li></li>
@@ -463,7 +463,7 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">Способы открытия</h4>
                         </div>
-                        <div class="panel-collapse collapse collapse_in">
+                        <div class="panel-collapse">
                             <div class="panel-body">
                                 <div class="block_checkbox">
                                     <input id="checkbox_1" type="checkbox" />
@@ -840,11 +840,47 @@
     <script src="js/main.js"></script>
     
     <script>
+        
+        $('.panel-collapse').css('display', 'none');
+        $('.panel-heading').first().next('.panel-collapse').slideDown(500);
+        $('.panel-heading').first().children('.panel-title').addClass('accordeon_bottom');
+        
+        $('.panel-title').click(function() {
+            $(this).toggleClass('accordeon_bottom');
+            $(this).parent('.panel-heading').next('.panel-collapse').slideToggle();
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // accordeon
+        /*
         $('.panel-collapse').css({'display':'none'});
+        $('.panel').first().children('.panel-collapse').addClass('collapse_in');
+        $('.panel').first().find('.panel-title').addClass('accordeon_bottom');
         $('.collapse_in').css('display', 'block');
 
         $('.panel-title').click(function(){
+            $('.panel').first().children('.panel-collapse').removeClass('collapse_in');
+            $('.panel').find('.panel-title').removeClass('accordeon_bottom');
+            $(this).toggleClass('accordeon_bottom');
             var result = $(this).parent().next();
             $(result).slideToggle(500);
             $('.panel-collapse ').not(result).removeClass('collapse_in');
@@ -852,6 +888,7 @@
             //$(this).next('.panel-collapse').slideToggle(500);
             //$(this).toggleClass('collapse in');
         });
+        */
     </script>
   </body>
 </html>

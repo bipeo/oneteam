@@ -1,3 +1,7 @@
+body {
+    font-family: Ubuntu;
+}
+
 .ic-steel { background: url('../img/icons-s4d73a5b1cc.png') 0 -2846px no-repeat; width: 39px; height: 50px; }
 
 .ic-hooter { background: url('../img/icons-s4d73a5b1cc.png') 0 -567px no-repeat; width: 55px; height: 51px; }
@@ -454,12 +458,22 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .panel-title {
+    background: url(../img/accordeon_top.png) no-repeat right center;
     color: #292929;
+    font-weight: 300;
     cursor: pointer;
     position: relative;
 }
 
-.panel-title:after {
+.accordeon_bottom {
+    background: url(../img/accordeon_bottom.png) no-repeat right center;
+}
+
+.panel-heading {
+    position: relative;
+}
+/*
+.panel-heading:after {
     background: url(../img/arrows_accordeon.png) no-repeat 0 0;
     content: "";
     height: 4px;
@@ -469,17 +483,18 @@ footer li:hover a { color: #c9cbd1; }
     top: 50%;
     width: 8px;
 }
-
-.panel-title:hover:before {
+*/
+.panel-heading:hover:before {
     background: #f3d64c;
     content: "";
     height: 32px;
-    left: -17px;
+    left: 0px;
+    margin-top: -16px;
     position: absolute;
-/*    top: 0;*/
-    top: -7px;
+    top: 50%;
     width: 6px;
 }
+
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border-top: 0;
     border-bottom: 1px solid #e0dfdf;
