@@ -491,6 +491,7 @@
                 </div><!-- END accordeon -->
             </div>
             <div class="col-md-9">
+               
                 <!-- products -->
                 <div class="products">
                     <!-- list_products -->
@@ -840,6 +841,7 @@
     <script src="js/main.js"></script>
     
     <script>
+        // accordeon
         
         $('.panel-collapse').css('display', 'none');
         $('.panel-heading').first().next('.panel-collapse').slideDown(500);
@@ -850,45 +852,6 @@
             $(this).parent('.panel-heading').next('.panel-collapse').slideToggle();
         });
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        // accordeon
-        /*
-        $('.panel-collapse').css({'display':'none'});
-        $('.panel').first().children('.panel-collapse').addClass('collapse_in');
-        $('.panel').first().find('.panel-title').addClass('accordeon_bottom');
-        $('.collapse_in').css('display', 'block');
-
-        $('.panel-title').click(function(){
-            $('.panel').first().children('.panel-collapse').removeClass('collapse_in');
-            $('.panel').find('.panel-title').removeClass('accordeon_bottom');
-            $(this).toggleClass('accordeon_bottom');
-            var result = $(this).parent().next();
-            $(result).slideToggle(500);
-            $('.panel-collapse ').not(result).removeClass('collapse_in');
-            //$('.panel-collapse')
-            //$(this).next('.panel-collapse').slideToggle(500);
-            //$(this).toggleClass('collapse in');
-        });
-        */
     </script>
   </body>
 </html>
