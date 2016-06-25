@@ -1,250 +1,38 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <title>Ilock</title>
-    <meta http-equiv="Content-Type" content="application/xml; charset=utf-8" />
-    <meta http-equiv="Content-Style-Type" content="text/css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta http-equiv="Content-Language" content="ru" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="title" content="" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <link rel="alternate" href="/" hreflang="x-default" />
-    <link rel="alternate" href="/en/" hreflang="en" />
-    <link rel="alternate" href="/ru/" hreflang="ru" />
-    <link rel="icon" type="image/png" href="img/logo/favicon.png" />
-    <link rel="apple-touch-icon" type="image/png" href="img/logo/apple-touch-icon-48x48.png" />
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="MobileOptimized" content="320" />
-    <meta http-equiv="cleartype" content="on" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Font-Awesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- Ubuntu font -->
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-    <!-- Slick Slider CSS -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-    <!-- Countdown CSS -->
-    <link rel="stylesheet" href="css/jquery.countdown.css">
-   
-     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Megamenu CSS -->
-    <link rel="stylesheet" href="megamenu-js-master/css/style.css">
-    <link rel="stylesheet" href="css/custmmenu.css">
-    <!-- Megamenu end -->
-    
-  
-  </head>
-    <body>   
-<header>
-      
-        <nav class="menu-container navbar navbar-default navbar-fixed-top navbar--top">
-            <div class="container">
-            <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="img/logo/logo2.png" alt="iLock" width="105" height="32">
-          </a>
-        </div>
-            <div class="pull-right nav-right">
-          <ul class="nav right-panel">
-            <li>
-              <a class="btn btn-search" href="#"><i class=""></i></a>
-            </li>
-            <li>
-              <a class="btn btn-login" href="#"><i class=""></i></a>
-            </li>
-            <li>
-              <a class="btn btn-cart" href="#"><i class=""></i><span class="orders">2</span></a>
-            </li>
-          </ul>
-        </div>
+ <html>
+    <head>
+        <script src="js/jquery.2.1.4.min.js"></script>
+        <script>
+            $(function(){
+                $.get("files_aj.html", function(data){
+                $('head').append(data);
+            } );
+            $.get("header_aj.html", function(data){
+                $('body').prepend(data);
+            } );
+            $.get("footer_aj.html", function(data){
+                $('body').append(data);
+            } );
             
-        <div class="menu collapse navbar-collapse container">
-            <ul class="fonav fonav-justified">
-                <li><a href="#">О компании<span class="fa fa-angle-down dropdown-caret"></span></a>
-                    <ul>
-                        <li>
-                            
-                                <div class="dropdown-menu container">
-                <div class="row">
-                  <div class="col-sm-3 col-lg-offset-1 col-lg-3">
-                    <ul>
-                      <li><a href="#">О компании</a></li>
-                      <li><a href="#">Преимущества</a></li>
-                      <li><a href="#">Сертификаты</a></li>
-                      <li><a href="#">Официальная гарантия</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-3 col-lg-3">
-                    <ul>
-                      <li><a href="#">Нас рекомендуют</a></li>
-                      <li><a href="#">Оптовикам</a></li>
-                      <li><a href="#">Контакты</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-5 col-lg-4">
-                    <div class="banner">
-                      <span class="ic ic-nav-bg"></span>
-                      <div class="banner-item label-special--hover">
-                        <span class="ic ic-tray-hover"></span>
-                        <span class="descr">Скидки на систему автоматизации для ресторана</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                            
-                            
-                        </li> 
-                        
-                    </ul>
-                  
-                
-                </li>
-                <li><a href="#">Продукция<span class="fa fa-angle-down dropdown-caret"></span></a>
-                        <ul>
-                            <li>
-                        <div class="dropdown-menu container">
-                <div class="row">
-                  <div class="col-sm-3 col-lg-offset-1 col-lg-3">
-                    <ul>
-                      <li><a href="#">Сертификаты</a></li>  
-                      <li><a href="#">О компании</a></li>
-                      <li><a href="#">Преимущества</a></li>
-                      <li><a href="#">Официальная гарантия</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-3 col-lg-3">
-                    <ul>
-                      <li><a href="#">Контакты</a></li>   
-                      <li><a href="#">Нас рекомендуют</a></li>
-                      <li><a href="#">Оптовикам</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-5 col-lg-4">
-                    <div class="banner">
-                      <span class="ic ic-nav-bg"></span>
-                      <div class="banner-item label-special--hover">
-                        <span class="ic ic-tray-hover"></span>
-                        <span class="descr">Скидки на систему автоматизации для ресторана</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>    
-                            </li>
-                        </ul>
-                </li>
-          
-                <li><a href="#">Решения<span class="fa fa-angle-down dropdown-caret"></span></a>
-                    <ul><li>
-                         <div class="dropdown-menu container">
-                <div class="row">
-                  <div class="col-sm-3 col-lg-offset-1 col-lg-3">
-                    <ul>
-                      <li><a href="#">О компании</a></li>
-                      <li><a href="#">Преимущества</a></li>
-                      <li><a href="#">Сертификаты</a></li>
-                      <li><a href="#">Еще пункт меню</a></li>
-                      <li><a href="#">Официальная гарантия</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-3 col-lg-3">
-                    <ul>
-                      <li><a href="#">Тестовый</a></li>
-                      <li><a href="#">Нас рекомендуют</a></li>
-                      <li><a href="#">Оптовикам</a></li>
-                      <li><a href="#">Контакты</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-5 col-lg-4">
-                    <div class="banner">
-                      <span class="ic ic-nav-bg"></span>
-                      <div class="banner-item label-special--hover">
-                        <span class="ic ic-tray-hover"></span>
-                        <span class="descr">Скидки на систему автоматизации для ресторана</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                        </li></ul>
-                </li>
-                  <li><a href="#">Акции</a>
-                    
-                </li>
-                 <li><a href="#">Все  об автоматизации</a>
-            
-                </li>
-                <li><a href="#">Все  о замках</a>
-            
-                </li>
-            </ul>
-        </div>
-    </div>
-            </nav>
-      
-   
-    <nav class = "navbar navbar-default navbar--sub" role="navigation">
-      <div class="container">
-        <div class="row">
-          <div class = "hidden-xs navbar-header city_dropdown">
-            <div class="dropdown">
-              <span class="">Ваш город: </span>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Краснодар<span class="fa fa-angle-down dropdown-caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Москва</a></li>
-                <li><a href="#">Краснодар</a></li>
-                <li><a href="#">Москва</a></li>
-                <li><a href="#">Краснодар</a></li>
-                <li><a href="#">Москва</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="pull-right nav-right">
-            <div class="phone pull-left">+7 (861) 299-12-29</div>
-            <button class="btn btn-default pull-right btn-order">Заказать звонок</button>
-          </div>
-          <div class="visible-lg hidden-sm container">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">Гарантии</a></li>
-              <li><a href="#">Помощь покупателям</a></li>
-              <li><a href="#">Оптовикам</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  
-  <section class="bracket">
+            });
+        </script>
+     
+    </head>
+    <body>
+          <section class="bracket">
     <span class="bg-filter"></span>
     <div class="container">
       <div class="row">
           <div class="visible-lg col-lg-3 ">
            
             <div class="navbar-vertical">
-               <ul class="nav nav-vertical">
+                <ul class="nav nav-vertical">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Электронные замки</a>
             <div class="dropdown-menu">
             <ul class="">
-                <li><a href="#">Для квартиры и домов</a></li>
                 <li><a href="#">Для отеля</a></li>
                 <li><a href="#">Для офиса</a></li>
+                <li><a href="#">Для квартиры и домов</a></li>
                 <li><a href="#">Для аквапарков</a></li>
                 <li><a href="#">Для бассейнов</a></li>
                 <li><a href="#">Для SPA</a></li>
@@ -256,10 +44,10 @@
             <div class="dropdown-menu">
             <ul class="">
                 <li><a href="#">Для отеля</a></li>
-                <li><a href="#">Для аквапарков</a></li>
-                <li><a href="#">Для бассейнов</a></li>
                 <li><a href="#">Для офиса</a></li>
                 <li><a href="#">Для квартиры и домов</a></li>
+                <li><a href="#">Для аквапарков</a></li>
+                <li><a href="#">Для бассейнов</a></li>
                 <li><a href="#">Для SPA</a></li>
               </ul>
             </div>
@@ -271,9 +59,9 @@
                 <li><a href="#">Для отеля</a></li>
                 <li><a href="#">Для офиса</a></li>
                 <li><a href="#">Для квартиры и домов</a></li>
+                <li><a href="#">Для аквапарков</a></li>
                 <li><a href="#">Для бассейнов</a></li>
                 <li><a href="#">Для SPA</a></li>
-                <li><a href="#">Для аквапарков</a></li>
               </ul>
             </div>
           </li>
@@ -282,11 +70,11 @@
             <div class="dropdown-menu">
             <ul class="">
                 <li><a href="#">Для отеля</a></li>
-                <li><a href="#">Для бассейнов</a></li>
                 <li><a href="#">Для офиса</a></li>
                 <li><a href="#">Для квартиры и домов</a></li>
-                <li><a href="#">Для SPA</a></li>
                 <li><a href="#">Для аквапарков</a></li>
+                <li><a href="#">Для бассейнов</a></li>
+                <li><a href="#">Для SPA</a></li>
               </ul>
             </div>
           </li>
@@ -297,8 +85,8 @@
                 <li><a href="#">Для отеля</a></li>
                 <li><a href="#">Для офиса</a></li>
                 <li><a href="#">Для квартиры и домов</a></li>
-                <li><a href="#">Для бассейнов</a></li>
                 <li><a href="#">Для аквапарков</a></li>
+                <li><a href="#">Для бассейнов</a></li>
                 <li><a href="#">Для SPA</a></li>
               </ul>
             </div>
@@ -307,12 +95,12 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Программное обеспечение</a>
             <div class="dropdown-menu">
             <ul class="">
+                <li><a href="#">Для отеля</a></li>
+                <li><a href="#">Для офиса</a></li>
+                <li><a href="#">Для квартиры и домов</a></li>
+                <li><a href="#">Для аквапарков</a></li>
                 <li><a href="#">Для бассейнов</a></li>
                 <li><a href="#">Для SPA</a></li>
-                <li><a href="#">Для отеля</a></li>
-                <li><a href="#">Для квартиры и домов</a></li>
-                <li><a href="#">Для офиса</a></li>
-                <li><a href="#">Для аквапарков</a></li>
               </ul>
             </div>
           </li>
@@ -320,12 +108,12 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pos оборудование</a>
             <div class="dropdown-menu">
             <ul class="">
-              
-                <li><a href="#">Для бассейнов</a></li>
-                <li><a href="#">Для квартиры и домов</a></li>
                 <li><a href="#">Для отеля</a></li>
                 <li><a href="#">Для офиса</a></li>
-               
+                <li><a href="#">Для квартиры и домов</a></li>
+                <li><a href="#">Для аквапарков</a></li>
+                <li><a href="#">Для бассейнов</a></li>
+                <li><a href="#">Для SPA</a></li>
               </ul>
             </div>
           </li>
@@ -333,9 +121,9 @@
             <a href="#" class="dropdown-toggle label-special" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Спецпредложения</a>
             <div class="dropdown-menu">
             <ul class="">
-                <li><a href="#">Для квартиры и домов</a></li>
                 <li><a href="#">Для отеля</a></li>
                 <li><a href="#">Для офиса</a></li>
+                <li><a href="#">Для квартиры и домов</a></li>
                 <li><a href="#">Для аквапарков</a></li>
                 <li><a href="#">Для бассейнов</a></li>
                 <li><a href="#">Для SPA</a></li>
@@ -346,9 +134,9 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Все категории</a>
             <div class="dropdown-menu">
             <ul class="">
-                <li><a href="#">Для квартиры и домов</a></li>
                 <li><a href="#">Для отеля</a></li>
                 <li><a href="#">Для офиса</a></li>
+                <li><a href="#">Для квартиры и домов</a></li>
                 <li><a href="#">Для аквапарков</a></li>
                 <li><a href="#">Для бассейнов</a></li>
                 <li><a href="#">Для SPA</a></li>
@@ -356,12 +144,6 @@
             </div>
           </li>
         </ul>
-                
-                
-                                
-
-                
-           
             </div>
            
         </div>
@@ -723,100 +505,5 @@
     </div>
   </section>
 <!-- Slider section  end -->
-
-  <footer>
-    <div class="container">
-      <div class="row footer-links visible-lg">
-        <div class="col-md-2 footer-list">
-          <img src="img/logo/logo.png" alt="">
-        </div> 
-        <div class="col-md-2 footer-list">
-          <ul>
-            <li><a href="">О компании</a></li>
-            <li><a href="">Преимущества</a></li>
-            <li><a href="">Сертификаты</a></li>
-            <li><a href="">Наши решения</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 footer-list">
-          <ul>
-            <li><a href="">Каталог продукции</a></li>
-            <li><a href="">Доставка и оплата</a></li>
-            <li><a href="">Гарантия и сервис</a></li>
-            <li><a href="">Новости и акции</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 footer-list">
-          <ul>
-            <li><a href="">Помощь покупателям</a></li>
-            <li><a href="">Оптовикам</a></li>
-            <li><a href="">Нас рекомендуют</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 footer-list">
-          <ul>
-            <li><a href="">Все об автоматизации</a></li>
-            <li><a href="">Все о замках</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row footer-social">
-        <div class="col-xs-12 col-sm-7 col-md-5">
-          <span class="footer-copy">© 2009 - 2016, iLocks </span>
-          <span class="footer-copy footer-subheading">Производство электронных и биометрических замков</span>
-        </div>
-        <div class="col-xs-12 col-sm-5 col-md-4 footer-net">
-          <a href=""><i class="fa fa-facebook"></i></a>
-          <a href=""><i class="fa fa-vk"></i></a>
-          <a href=""><i class="fa fa-twitter"></i></a>
-          <a href=""><i class="fa fa-instagram"></i></a>
-          <a href=""><i class="fa fa-youtube-play"></i></a>
-          <a href=""><i class="fa fa-linkedin-square"></i></a>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-3">
-          <span class="footer-copy footer-copy2">Создание сайта xxxxxx xxx</span>
-        </div>
-      </div>
-
-    </div>
-  </footer>
-    <!-- jQuery -->
-    <script src="js/jquery.2.1.4.min.js"></script>
-    <!-- Bootstrap JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.min.js"></script>
-    <script src="js/jqBootstrapValidation.js"></script>
-    <!-- Bootstrap swipe mobile-slider -->
-    <script src="js/mobile.carousel.swiper.min.js"></script>
-    <!-- Slick Slider JavaScript -->
-    <script src="js/slick.js" type="text/javascript"></script>
-    <!-- Timer JavaScript -->
-    <script src="js/jquery.plugin.js"></script>
-    <script src="js/jquery.countdown.js"></script>
-    <!-- superfish -->
-    <script src="js/hoverIntent.js"></script>
-    <script src="js/superfish.min.js"></script>
-    
-    <!-- Megamenu JavaScript -->
-    <script src="megamenu-js-master/js/megamenu.js"></script> 
-    <!-- Custom JavaScript -->
-    <script src="js/main.js"></script>
-    <script>
-
-          jQuery(document).ready(function() {
-              
-              jQuery('#slider_1').slick({
-                  arrows: false,
-                  dots: true
-              });
-              
-       
-          });
-
-      </script>
-  </body>
+    </body>
 </html>

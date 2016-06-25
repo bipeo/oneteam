@@ -75,7 +75,8 @@ html.hid body {
 
 
 
-.navbar--top .fonav-justified > li:hover > a, .navbar--top .fonav-justified > li:active > a {
+.navbar--top .fonav-justified > li:hover > a,
+.navbar--top .fonav-justified > li:active > a {
     color: #292929;
     font: 300 15px/27px "Ubuntu", sans-serif;
     text-transform: uppercase;
@@ -149,6 +150,15 @@ html.hid body {
 
 
  @media screen and (max-width: 767px) and (min-width: 320px) {
+     
+     .navbar--top .fonav-justified > li.zamza > a {
+         background-color:#f0f0f0;
+         color: #292929;
+        font: 300 15px/27px "Ubuntu", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0;
+     }
+
      
      .navbar--top .dropdown-menu ul li a {
     text-align: center;

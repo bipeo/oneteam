@@ -47,7 +47,9 @@
         if ($(window).width() <= 767) {
             $(".menu > ul  li").not($(this)).find('ul').fadeOut(0);
             $(this).find('ul').fadeToggle(333);
-            
+            $(".menu > ul  li").not($(this)).stop(true,true).removeClass('zamza');
+            $(this).toggleClass('zamza');
+            e.preventDefault();
         }
     });
     //If width is less or equal to 943px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
