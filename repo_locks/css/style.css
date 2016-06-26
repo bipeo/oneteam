@@ -4,6 +4,9 @@
 body {
     font-family: 'Ubuntu', sans-serif;
 }
+body.notvis {
+    visibility:hidden;
+}
 
 .ic-steel { background: url('../img/icons-s4d73a5b1cc.png') 0 -2846px no-repeat; width: 39px; height: 50px; }
 
@@ -112,9 +115,11 @@ a { color: inherit; }
 .navbar--top .right-panel .btn:hover { color: #f3d64c; }
 .navbar--top .nav-right { background-color: #0a141f; position: relative; z-index: 5; }
 
-.btn-order { margin: 10px 4px 0 12px; padding: 4px 19px; border: 0 none; background-color: #f3d64c; font: 400 14px/22px "Ubuntu", sans-serif; color: #292929; -webkit-border-radius: 21px; -moz-border-radius: 21px; -ms-border-radius: 21px; border-radius: 21px; }
+.btn-order {transition:0.3s; margin: 10px 4px 0 12px; padding: 4px 19px; border: 0 none; background-color: #f3d64c; font: 400 14px/22px "Ubuntu", sans-serif; color: #292929; -webkit-border-radius: 21px; -moz-border-radius: 21px; -ms-border-radius: 21px; border-radius: 21px; }
 .btn-order:hover { background-color: #ffe66d; }
-
+.btn:focus {
+    outline:none !important
+}
 .navbar--sub { margin-top: 67px; background-color: #efefef; }
 .navbar--sub .dropdown-toggle, .navbar--sub .nav > li > a { font: 400 14px/22px "Ubuntu", sans-serif; color: #6a6a6a; }
 .navbar--sub .dropdown-toggle:hover, .navbar--sub .nav > li > a:hover { color: #3f71ca; text-decoration: none; }
