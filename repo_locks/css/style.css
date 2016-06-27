@@ -714,59 +714,92 @@ footer li:hover a { color: #c9cbd1; }
     border: none;
 }
 
+.wrap_checkbox_color .label_color {
+    float: left;
+}
+
 .checkbox_color {
     display: none;
 }
 
-.checkbox_color + label {
-    background-repeat: no-repeat;
+
+.label_color {
+    border-radius: 50%;
+    display: block;
+    height: 22px;
+    margin-bottom: 18px;
+    margin-right: 12px;
+    position: relative;
+    width: 22px;
+}
+
+.color_1 {
+    background: url(../img/color_1.png) no-repeat;
     cursor: pointer;
     height: 32px;
+    margin-bottom: 0;
+    position: relative;
+    top: -5px;
     width: 32px;
 }
 
-.checkbox_color + .color_1 {
-    background-image: url(../img/color_1.png);
+.label_color:nth-of-type(1):after {
+    display: none;
 }
 
-.checkbox_color + .color_2 {
-    background-image: url(../img/color_2.png);
+.label_color:nth-of-type(7) {
+    margin-left: 5px;
 }
 
-.checkbox_color + .color_3 {
-    background-image: url(../img/color_3.png);
+.label_color:after {
+    border: 1px solid #b6b6bc;
+    border-radius: 50%;
+    content: "";
+    height: 30px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 30px;
 }
 
-.checkbox_color + .color_4 {
-    background-image: url(../img/color_4.png);
+.color_2 {
+    background: #f2bd2b;
 }
 
-.checkbox_color + .color_5 {
-    background-image: url(../img/color_5.png);
+.color_3 {
+    background: #ad7f66;
 }
 
-.checkbox_color + .color_6 {
-    background-image: url(../img/color_6.png);
+.color_4 {
+    background: #8a716d;
 }
 
-.checkbox_color + .color_7 {
-    background-image: url(../img/color_7.png);
+.color_5 {
+    background: #d5bd97;
 }
 
-.checkbox_color + .color_8 {
-    background-image: url(../img/color_8.png);
+.color_6 {
+    background: #e3e2e1;
 }
 
-.checkbox_color + .color_9 {
-    background-image: url(../img/color_9.png);
+.color_7 {
+    background: #c59664;
 }
 
-.checkbox_color + .color_10 {
-    background-image: url(../img/color_10.png);
+.color_8 {
+    background: #ebc69f;
 }
 
-.checkbox_color + .color_11 {
-    background-image: url(../img/color_11.png);
+.color_9 {
+    background: #8b8aa9;
+}
+
+.color_10 {
+    background: #c496a2;
+}
+
+.color_11 {
+    background: #ececec;
 }
 
 .panel-title .price-sale {
