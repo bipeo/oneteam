@@ -1355,6 +1355,11 @@ footer li:hover a { color: #c9cbd1; }
     box-shadow: none;
 }
 
+.no_responsive {
+    margin: 0 auto;
+    width: 1200px;
+}
+
 
  /*========================= start super-simple-modal-popups =================== */
 
