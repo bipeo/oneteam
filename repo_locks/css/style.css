@@ -8,6 +8,49 @@ body.notvis {
     visibility:hidden;
 }
 
+h1 {
+    color: #141414;
+    font-family: Ubuntu;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+h2 {
+    color: #141414;
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h3 {
+    color: #141414;
+    font-family: Ubuntu;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+h4 {
+    color: #141414;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h5 {
+    color: #141414;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h6 {
+    color: #141414;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 .ic-steel { background: url('../img/icons-s4d73a5b1cc.png') 0 -2846px no-repeat; width: 39px; height: 50px; }
 
 .ic-hooter { background: url('../img/icons-s4d73a5b1cc.png') 0 -567px no-repeat; width: 55px; height: 51px; }
@@ -98,7 +141,7 @@ a { color: inherit; }
     background-image: url(../img/ts_sprite.png);
 }
 
-.navbar--top .right-panel .btn i, .products .slider-item > div, .slider-view, .slider-product {
+.navbar--top .right-panel .btn i, .products .slider-item > div, .slider-view, .slider-product, .footer-net a {
         transition:  0.3s ease-in-out;
     -moz-transition:  0.3s ease-in-out;
     -webkit-transition:  0.3s ease-in-out;
@@ -436,7 +479,7 @@ footer li:hover a { color: #c9cbd1; }
 .footer-social a { margin-right: 20px; }
 .footer-social a:hover .fa { color: #c9cbd1; }
 
-.footer-copy { display: block; color: #a5a7ab; }
+.footer-copy { display: block; color: #a5a7ab; margin-left: -15px;}
 .footer-copy2 { text-align: right; }
 
 /*========================== katalog page ==========================*/
@@ -1252,6 +1295,50 @@ footer li:hover a { color: #c9cbd1; }
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
+}
+
+.footer-net span {
+    display: inline-block;
+}
+
+.youtube_ico {
+    background: url(../img/icons/youtube_ico.png) no-repeat;
+    height: 15px;
+    width: 21px;
+}
+
+.instagram {
+   background: url(../img/icons/instagram_ico.png) no-repeat;
+    height: 17px;
+    width: 17px;
+}
+
+.fb_ico {
+    background: url(../img/icons/fb_ico.png) no-repeat;
+    height: 24px;
+    width: 10px;
+}
+
+.vk_ico {
+    background: url(../img/icons/vk_ico.png) no-repeat;
+    height: 14px;
+    width: 22px;
+}
+
+.twitter {
+    background: url(../img/icons/twitter.png) no-repeat;
+    height: 17px;
+    width: 20px;
+}
+
+.linkedin {
+    background: url(../img/icons/linkedin.png) no-repeat;
+    height: 17px;
+    width: 17px;
+}
+
+.footer-net a:hover {
+    opacity: .5;
 }
 
 .rev_ul {
