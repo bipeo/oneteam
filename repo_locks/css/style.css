@@ -60,7 +60,7 @@ body.notvis {
 
 .ic { display: block; vertical-align: middle; margin: 0 auto; }
 
-.bg-filter { position: absolute; display: block; margin: auto; top: 0; left: 0; right: 0; bottom: 0; /*background-color: #203760;*/ opacity: 0.8; }
+.bg-filter { position: absolute; display: block; margin: auto; top: 0; left: 0; right: 0; bottom: 0; background-color: #203760; opacity: 0.8; }
 
 .navbar-default { margin: 0; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
 
