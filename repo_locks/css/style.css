@@ -368,7 +368,7 @@ a { color: inherit; }
 
 .product-layout { background-color: #f4f4f4; padding-top: 21px; }
 
-.product-title { letter-spacing: 4px; font: 400 42px/42px "Ubuntu", "Open Sans", sans-serif; }
+.product-title { /*letter-spacing: 4px; */font: 400 42px/42px "Ubuntu", "Open Sans", sans-serif; }
 
 .slider { margin-top: 73px; padding-top: 21px; }
 .slider_1  .slick-dots li {
@@ -936,12 +936,22 @@ footer li:hover a { color: #c9cbd1; }
     width: 32.5%;
 }
 
+.buy_link a:hover {
+    background: #ffe66d;
+    text-decoration: none;
+}
+
 .buy_link a + a {
     margin-left: 1%;
 }
 
 .buy_link .to_basket {
     background: #f3d64c;
+}
+
+.buy_link .to_basket:hover {
+    background: #ffe66d;
+    text-decoration: none;
 }
 
 .buy_link .to_basket img {
