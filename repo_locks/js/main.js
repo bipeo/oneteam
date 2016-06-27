@@ -105,7 +105,8 @@ var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
                 $('.modal-overlay').addClass(modalBox.toString());
                 $('.modal-overlay').addClass('fadein');
 		$('#'+modalBox).fadeIn($(this).data());
-	});  
+         
+                });  
   
   
 $(".js-modal-close, .modal-overlay").click(function() {
@@ -149,123 +150,12 @@ $(window).resize();
  
 });
 
+
+
 /* modalpopus end*/
 
 
 
 
-/*navbar script below *******
- ***************************** 
- **************************/
 
- var navbar = $(".navbar--top .navbar-collapse");
- 
-  var closeNav = function(navbar){
-            $(navbar).removeClass('in');
-            $(navbar).find('.nav>li').removeClass('wascl');
-            $("body").css("overflow", "auto");
-          }
-
-//    $(document).keydown(function(e) {
-//    if (e.keyCode == 27) {
-//        closeNav('.navbar--top .navbar-collapse')
-//    }
-//        });  
-
-  
-  $(document).ready(function() {
-       
-  
-  	//checkSize();
-        
-      $(window).on('resize', function () {
-             // checkSize()      
-              });
-        
-    function checkSize(){
-         var closeNav = function(){
-            navbar.removeClass('in');
-            navbar.find('.nav>li').removeClass('wascl');
-            $("body").css("overflow", "auto");
-          }
-         // closeNav()
-          
-          
-            
-    
-  
-        $(function() {
-        $(document).mouseup(function (e) {
-          var container = $(".navbar-collapse.in, .navbar-toggle");
-
-          if (!container.is(e.target) 
-         
-          && container.has(e.target).length === 0)  {
-                //closeNav()
-          }
-        });
-      });
-   
-       if (navbar.css("z-index") == "99999" ){
-                    
-            $('.navbar-toggle').click( function() {
-      if ($(this).is( ".collapsed" )) {
-        $("body").css("overflow", "hidden");
-      } else {
-        $("body").css("overflow", "auto");
-      }
-        });
-    
-         
-            navbar.find('.nav>li').unbind('mouseenter').bind('mouseenter',function(e) {
-              $("body").css("overflow", "hidden");   
-              $(e).removeClass('open');
-                if($(e).hasClass('wascl')) {
-              $(e).addClass('open'); 
-          } else {
-               
-          }
-          
-          
-            })
-            navbar.find('.nav>li').unbind('mouseleave').bind('mouseleave',function(e) {
-                 $("body").css("overflow", "hidden");
-                 $(e).removeClass('wascl');
-                   
-            })
-            
-       
-            
-          navbar.find('.nav>li').on('click',function(e) {
-          if($(e).hasClass('wascl')) {
-               $(e).removeClass('wascl');
-          } else {
-            $(e).addClass('wascl');
-          }
-         
-        });
-
-          // navbar.find('.nav>li').css('background','green')
-             } else {
-          
-            navbar.find('.nav>li').unbind('mouseenter').bind('mouseenter',function() {
-              $(this).addClass('open');
-            })
-            navbar.find('.nav>li').unbind('mouseleave').bind('mouseleave',function() {
-              $(this).removeClass('open');
-            })
-            
-              $("body").css("overflow", "auto");
-            //  navbar.find('.nav>li').css('background','red')
-                
-             }
-           } 
-      
- 
-    });
-    
-    
-    /*navbar script end ********
-     ******************
-     ************************/
 
