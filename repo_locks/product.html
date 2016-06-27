@@ -236,10 +236,13 @@
                     <li><a href="">Каталог<span>&gt;</span></a></li>
                     <li><a href="">Электронные замки для офиса</a></li>
                 </ul>
+                   
+<!--
                     <a class="js-open-modal btn" href="#" data-modal-id="popup1"> Pop Up One</a>
-	<a class="js-open-modal btn" href="#" data-modal-id="popup2"> Pop Up Two</a> 
-	<a class="js-open-modal btn" href="#" data-modal-id="popup3"> Pop Up three</a> 
-	<a class="js-open-modal btn" href="#" data-modal-id="popup4"> Pop Up four</a> 
+	                <a class="js-open-modal btn" href="#" data-modal-id="popup2"> Pop Up Two</a> 
+	                <a class="js-open-modal btn" href="#" data-modal-id="popup3"> Pop Up three</a> 
+	                <a class="js-open-modal btn" href="#" data-modal-id="popup4"> Pop Up four</a> 
+-->
                 <h1 class="title_1">Электронные замки для офиса</h1>
             </div>
         </div>
@@ -846,10 +849,14 @@
     <script type="text/javascript">
 	$(function(){
              $('.for_mask').mask('+7(000)000-00-00');
-//		$.pixlayout({clip: true, src: "design/maket.jpg", show:true, center:false, top:0, left: 0, pervious: false});
 }); 
 </script>
-    
+    <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $.pixlayout({clip: true, src: "maket.png", show:true, center:true, top:0, left:0, pervious: false});
+        }); 
+    </script>
     
  <script type="text/javascript">
 // slick-slider
@@ -926,5 +933,5 @@ $(document).on('ready', function() {
 });
 </script>
     
-  </body>
+</body>
 </html>

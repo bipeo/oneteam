@@ -449,7 +449,7 @@ footer li:hover a { color: #c9cbd1; }
 .breadcrumbs {
     list-style-type: none;
     overflow: hidden;
-    padding: 40px 0 0 0;
+    padding: 33px 0 0 0;
 }
 
 .breadcrumbs > li {
@@ -480,6 +480,7 @@ footer li:hover a { color: #c9cbd1; }
     color: #141414;
     font-size: 42px;
     font-weight: 400;
+    margin: 5px 0 13px 0;
     padding: 0 0 27px 0;
 }
 
@@ -786,8 +787,8 @@ footer li:hover a { color: #c9cbd1; }
 
 .wrslnav {
     float: left;
-    margin: 155px 0 0 0;
-    width: 119px;
+    margin: 113px 0 0 0;
+    width: 107px;
 }
 
 .wrslnav .slick-prev:before, .wrslnav .slick-next:before {
@@ -817,6 +818,7 @@ footer li:hover a { color: #c9cbd1; }
 
 .gall_wrap {
     background: #fff;
+    margin: 0 38px 0 0;
     overflow: hidden;
     padding: 0 0 88px 0;
     position: relative;
@@ -888,7 +890,7 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .price_ul {
-    margin: 0 0 34px 0;
+    margin: 0 0 20px 0;
     overflow: hidden;
 }
 
@@ -918,7 +920,7 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .buy_link {
-    margin: 0 0 45px 0;
+    margin: 0 0 41px 0;
     overflow: hidden;
 }
 
@@ -950,6 +952,7 @@ footer li:hover a { color: #c9cbd1; }
 
 .list_tabs {
     border-bottom: 1px solid #b1b1b7;
+    margin: 0 0 23px 0;
     overflow: hidden;
 }
 
@@ -972,6 +975,8 @@ footer li:hover a { color: #c9cbd1; }
     color: #141414;
     display: block;
     font: 300 18.04px / 34px Ubuntu;
+    height: 40px;
+    line-height: 40px;
 }
 
 .list_tabs a:hover {
