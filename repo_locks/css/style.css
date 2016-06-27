@@ -1141,8 +1141,12 @@ footer li:hover a { color: #c9cbd1; }
     padding: 60px 0 0 0;
 }
 
-.dostavka a, .dostavka a:hover {
-    color: #ffffff;
+.dostavka a {
+    color: #fff;
+}
+
+.dostavka a:hover {
+    color: #f3d64c;    
     text-decoration: none;
 }
 
@@ -1273,6 +1277,35 @@ footer li:hover a { color: #c9cbd1; }
     margin: 0 12px;
 }
 
+.products .slider-item {
+    height: 360px;
+    position: relative;
+}
+
+.products .slider-item > div {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.products .slider-item > div:hover {
+    background: #fff;    
+    padding-bottom: 10px;
+}
+
+.products .slider-img {
+    margin-top: 30px;
+}
+
+.products .slider-item:hover {
+    box-shadow: none;
+}
+
+.products .slider-item > div:hover {
+    -webkit-box-shadow: 0 0 25.7px 1.4px rgba(22, 26, 30, 0.21);
+    box-shadow: 0 0 25.7px 1.4px rgba(22, 26, 30, 0.21);
+}
  /*========================= start super-simple-modal-popups =================== */
 
     .v-center {
