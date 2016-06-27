@@ -60,7 +60,7 @@ body.notvis {
 
 .ic { display: block; vertical-align: middle; margin: 0 auto; }
 
-.bg-filter { position: absolute; display: block; margin: auto; top: 0; left: 0; right: 0; bottom: 0; background-color: #203760; opacity: 0.8; }
+.bg-filter { position: absolute; display: block; margin: auto; top: 0; left: 0; right: 0; bottom: 0; /*background-color: #203760;*/ opacity: 0.8; }
 
 .navbar-default { margin: 0; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
 
@@ -349,7 +349,7 @@ a { color: inherit; }
 .service-solve .ic { position: absolute; top: 20px; left: 0; right: 0; }
 .service-solve .descr { display: block; padding-top: 63px; font: 400 16px/18px "Ubuntu", sans-serif; color: #292929; text-align: center; }
 
-.company { background: url(../img/img_2.png) no-repeat scroll 0 0; background-size: auto 100%; position: relative; font: 300 21px/21px "Ubuntu", "Open Sans", sans-serif; }
+.company { background: url(../img/img_2.png) no-repeat center top / cover; position: relative; font: 300 21px/21px "Ubuntu", "Open Sans", sans-serif; }
 .company-about { padding: 82px 15px 130px 33px; color: #fff; }
 .company-logo { margin-bottom: 28px; }
 .company-describe { margin-bottom: 38px; font-size: 21px; line-height: 30px; letter-spacing: 1px; }
@@ -1353,6 +1353,11 @@ footer li:hover a { color: #c9cbd1; }
 .select_1 .selecter.focus .selecter-selected{
     background: #f4f4f4;
     box-shadow: none;
+}
+
+.no_responsive {
+    margin: 0 auto;
+    width: 1200px;
 }
 
 
