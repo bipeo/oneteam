@@ -829,6 +829,34 @@ footer li:hover a { color: #c9cbd1; }
 
 /*========================== product page ==========================*/
 
+.wrap_1 {
+    display: table;
+    margin: 0 0 10px 0;
+    width: 87%;
+}
+
+.wrap_1_row {
+    display: table-row;
+}
+
+.wrap_1_cell {
+    display: table-cell;
+    white-space: nowrap;
+}
+
+.pr_1 {
+    padding-right: 5px;
+}
+
+.pl_1 {
+    padding-left: 5px;
+}
+
+.width_1 {
+    background: url(../img/dotted_white.png) repeat-x bottom 5px left;
+    width: 45%;
+}
+
 .wrslnav {
     float: left;
     margin: 113px 0 0 0;
@@ -864,7 +892,7 @@ footer li:hover a { color: #c9cbd1; }
     background: #fff;
     margin: 0 38px 0 0;
     overflow: hidden;
-    padding: 0 0 88px 0;
+    padding: 0 0 33px 0;
     position: relative;
 }
 
@@ -903,7 +931,7 @@ footer li:hover a { color: #c9cbd1; }
     width: 370px;
 }
 .wrslfor .slick-slide  {
-    margin:0px;
+    margin: 0px;
 }
 .gall_wrap .slick-prev, .gall_wrap .slick-next {
     z-index: 20;
@@ -1018,7 +1046,7 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .list_tabs > li + li {
-    margin-left: 33px;
+    margin-left: 35px;
 }
 
 .list_tabs > li.active, .list_tabs > li:hover {
@@ -1051,7 +1079,7 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .user_link {
-    margin: 20px 0 35px 0;
+    margin: 22px 0 37px 0;
     overflow: hidden;
 }
 
@@ -1080,7 +1108,7 @@ footer li:hover a { color: #c9cbd1; }
 .list_descript li {
     color: #292929;
     float: left;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .list_descript li:last-child {
@@ -1122,7 +1150,7 @@ footer li:hover a { color: #c9cbd1; }
     font-weight: 400;
     font-size: 42px;
     line-height: 24px;
-    margin: 0 0 30px 0;
+    margin: 0 0 35px 0;
 }
 
 .dost_descript {
@@ -1153,6 +1181,7 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .payment {
+    margin: 0 0 0 0;
     overflow: hidden;
 }
 
@@ -1178,6 +1207,10 @@ footer li:hover a { color: #c9cbd1; }
 
 .payment li:nth-child(4) {
     background: url(../img/payment_ico_4.png) no-repeat left center;
+}
+
+.ml_1 {
+/*    margin-left: 38px;*/
 }
 
 .raiting {
