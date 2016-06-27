@@ -587,6 +587,11 @@ footer li:hover a { color: #c9cbd1; }
 .products .is-countdown {
     right: 10px;
     top: 10px;
+    z-index: 20;
+}
+
+.gall_wrap .is-countdown {
+    z-index: 20;
 }
 
 .product_header {
