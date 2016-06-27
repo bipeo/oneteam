@@ -714,6 +714,10 @@ footer li:hover a { color: #c9cbd1; }
     border: none;
 }
 
+.wrap_checkbox_color label {
+    cursor: pointer;
+}
+
 .wrap_checkbox_color .label_color {
     float: left;
 }
@@ -721,7 +725,6 @@ footer li:hover a { color: #c9cbd1; }
 .checkbox_color {
     display: none;
 }
-
 
 .label_color {
     border-radius: 50%;
@@ -762,6 +765,10 @@ footer li:hover a { color: #c9cbd1; }
     width: 30px;
 }
 
+.label_color:hover:after {
+    border-color: #f5de6f;
+}
+
 .color_2 {
     background: #f2bd2b;
 }
@@ -800,6 +807,10 @@ footer li:hover a { color: #c9cbd1; }
 
 .color_11 {
     background: #ececec;
+}
+
+.wrap_checkbox_color input[type=checkbox]:checked + label:after {
+    border-color: #f5de6f;
 }
 
 .panel-title .price-sale {
