@@ -29,7 +29,8 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <!-- Countdown CSS -->
     <link rel="stylesheet" href="css/jquery.countdown.css">
-   
+   <!-- selecter -->
+    <link rel="stylesheet" href="css/jquery.fs.selecter.css">
      <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     
@@ -540,14 +541,16 @@
                 </div><!-- END accordeon -->
             </div>
             <div class="col-md-9">
-               <div class="product_header">
+               <div class="product_header clearfix">
                    <span class="count_products">Найдено 120 товаров</span>
                    <span class="select_1">
                        Показывать: 
-                       <select name="" id="">
-                           <option value="">сначала дешевые</option>
+                       <select class="products_select" name="" id="">
                            <option value="">сначала дорогие</option>
+                           <option value="">сначала дешевые</option>
                            <option value="">сначала популярные</option>
+                           <option value="">новинки</option>
+                           <option value="">в наличии</option>
                        </select>                   
                    </span>
                </div>
@@ -779,10 +782,16 @@
     
     <!-- Megamenu JavaScript -->
     <script src="megamenu-js-master/js/megamenu.js"></script> 
+    <!-- selecter -->
+    <script src="js/jquery.fs.selecter.min.js"></script>
+    
     <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
     
     <script>
+        // select
+        $('.products_select').selecter();
+        
         // accordeon
         
         $('.panel-collapse').css('display', 'none');

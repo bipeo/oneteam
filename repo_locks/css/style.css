@@ -98,7 +98,7 @@ a { color: inherit; }
     background-image: url(../img/ts_sprite.png);
 }
 
-.navbar--top .right-panel .btn i {
+.navbar--top .right-panel .btn i, .products .slider-item > div, .slider-view, .slider-product {
         transition:  0.3s ease-in-out;
     -moz-transition:  0.3s ease-in-out;
     -webkit-transition:  0.3s ease-in-out;
@@ -360,7 +360,7 @@ a { color: inherit; }
 .article { background-color: #fff; padding: 22px 30px 36px; margin-right: 17px; }
 .article-title, .article-date { display: inline-block; color: #adadad; font-size: 16px; }
 .article-img { padding: 0; padding-top: 4px; }
-.article-img img { margin: 0 auto; }
+.article-img img { margin: 0 auto 15px; }
 .article-describe { padding: 0; }
 .article-describe a { color: #224d99; }
 .article-subheading { color: #292929; font: 500 22px/28px "Ubuntu", "Open Sans", sans-serif; margin-top: 0; margin-bottom: 7px; }
@@ -695,7 +695,6 @@ footer li:hover a { color: #c9cbd1; }
     border-bottom: 1px solid #b1b1b7;
     font-size: 16px;
     margin: 0 0 19px 0;
-    overflow: hidden;
 }
 
 .count_products {
@@ -1306,6 +1305,57 @@ footer li:hover a { color: #c9cbd1; }
     -webkit-box-shadow: 0 0 25.7px 1.4px rgba(22, 26, 30, 0.21);
     box-shadow: 0 0 25.7px 1.4px rgba(22, 26, 30, 0.21);
 }
+
+.select_1 .selecter {
+    float: right;
+    margin: 0;
+    max-width: 100%;
+    width: 190px;
+}
+
+.select_1 .selecter-selected {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    color: #141414;
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+.select_1 .selecter-selected:after, .select_1 .open .selecter-selected:after {
+    background: url(../img/accordeon_bottom.png) no-repeat;
+    border: none;
+    height: 5px;
+    width: 8px;
+}
+
+.select_1 .selecter:focus {
+    background: #f4f4f4;
+}
+
+.select_1 .open .selecter-selected:after {
+    background: url(../img/accordeon_top.png) no-repeat;
+}
+
+.select_1 .selecter-item {
+    border-bottom: none;
+}
+
+.select_1.selecter-item.selected, .select_1 .selecter-item:hover {
+    background: #f4f4f4;
+}
+
+.select_1 .selecter-options {
+    border: none;
+}
+
+.select_1 .selecter.open .selecter-selected,
+.select_1 .selecter.focus .selecter-selected{
+    background: #f4f4f4;
+    box-shadow: none;
+}
+
+
  /*========================= start super-simple-modal-popups =================== */
 
     .v-center {
