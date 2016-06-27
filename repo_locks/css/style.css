@@ -251,9 +251,9 @@ a { color: inherit; }
 }
 
 .first_slide {
+    bottom: -410px;
     position: absolute;
     right: 10px;
-    top: 25px;
 }
 
 #slider_1 .slider-title {
@@ -1730,7 +1730,7 @@ footer li:hover a { color: #c9cbd1; }
     .bracket-slide .item.active, #slider_1 { height: 257px; }
     .bracket-slide .slider-title, #slider_1 .slider-title { margin-top: 0; font: 400 14px/14px "Ubuntu", sans-serif; }
     .bracket-slide .photo img { width: 37%; padding: 0; max-width: 200px; }
-    #slider_1 img {max-width: 119px;}
+    #slider_1 img { bottom: -255px; max-width: 119px;}
     .bracket-slide .ic, .slider_1 .ic { -ms-transform: scale(0.5); -webkit-transform: scale(0.5); transform: scale(0.5); }
     .bracket .carousel-caption p, .carousel-caption1 p { font: 300 10px/16px "Ubuntu", sans-serif; }
   .service { padding-top: 0; }
