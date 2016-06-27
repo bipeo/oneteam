@@ -105,7 +105,8 @@ var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
                 $('.modal-overlay').addClass(modalBox.toString());
                 $('.modal-overlay').addClass('fadein');
 		$('#'+modalBox).fadeIn($(this).data());
-	});  
+         
+                });  
   
   
 $(".js-modal-close, .modal-overlay").click(function() {

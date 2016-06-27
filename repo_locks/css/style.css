@@ -91,22 +91,79 @@ a { color: inherit; }
 .navbar--top .nav-justified > li > a:hover, .navbar--top .nav-justified > li > a:focus, .navbar--top .nav-justified > li > a:active { background: #FFF; color:#292929; }
 .navbar--top .right-panel { padding-left: 16px; padding-right: 7px; }
 .navbar--top .right-panel li { padding: 21px 11px; float: left; }
-.navbar--top .right-panel .btn { position: relative; padding: 0; color: #fff; }
-.navbar--top .right-panel .btn i {
+.navbar--top .right-panel .btn { position: relative; padding: 0; border:0px; border-radius:0px; color: #fff; }
+.navbar--top .right-panel .btn, .navbar--top .right-panel .btn i {
     display:block;
     background-repeat:no-repeat;
+    background-image: url(../img/ts_sprite.png);
 }
-.navbar--top .right-panel .btn.btn-search i { width:16px; height:20px; background-image:url("../img/test/search_ic_d.png"); }
-.navbar--top .right-panel .btn.btn-search:hover i {
-     background-image: url("../img/test/search_ic_a.png");
+
+.navbar--top .right-panel .btn i {
+        transition:  0.3s ease-in-out;
+    -moz-transition:  0.3s ease-in-out;
+    -webkit-transition:  0.3s ease-in-out;
+    -o-transition:  0.3s ease-in-out;
+   
 }
-.navbar--top .right-panel .btn.btn-login i {width:18px; height:19px;  background-image:url("../img/test/user_ic_d.png");}
-.navbar--top .right-panel .btn.btn-login:hover i {
-     background-image:url("../img/test/user_ic_a.png");
+.navbar--top .right-panel .btn:hover i {
+    opacity: 0;
 }
-.navbar--top .right-panel .btn.btn-cart i {width:23px; height:21px;  background-image:url("../img/test/shopcart_ic_d.png");}
-.navbar--top .right-panel .btn.btn-cart:hover i {
-    background-image:url("../img/test/shopcart_ic_a.png");
+
+.sprite-search_ic_a {
+    width: 16px;
+    height: 20px;
+    background-position: -5px -5px;
+}
+.sprite-search_ic_d {
+    width: 16px;
+    height: 20px;
+    background-position: -31px -5px;
+}
+
+.sprite-shopcart_ic_a {
+    width: 23px;
+    height: 21px;
+    background-position: -5px -35px;
+}
+
+.sprite-shopcart_ic_d {
+    width: 23px;
+    height: 21px;
+    background-position: -38px -35px;
+}
+
+.sprite-user_ic_a {
+    width: 18px;
+    height: 19px;
+    background-position: -57px -5px;
+}
+
+.sprite-user_ic_d {
+    width: 18px;
+    height: 19px;
+    background-position: -71px -34px;
+}
+
+.navbar--top .right-panel .btn.btn-search, .navbar--top .right-panel .btn.btn-search i { width:16px; height:20px; }
+.navbar--top .right-panel .btn.btn-search {
+    background-position: -5px -5px;
+}
+.navbar--top .right-panel .btn.btn-search i {
+    background-position: -31px -5px;
+    
+}
+.navbar--top .right-panel .btn.btn-login,.navbar--top .right-panel .btn.btn-login i {width:18px; height:19px;}
+.navbar--top .right-panel .btn.btn-login  {background-position: -57px -5px; }
+.navbar--top .right-panel .btn.btn-login i {
+    background-position: -71px -34px; 
+     
+}
+.navbar--top .right-panel .btn.btn-cart, .navbar--top .right-panel .btn.btn-cart i {width:23px; height:21px;  }
+.navbar--top .right-panel .btn.btn-cart {
+      background-position: -5px -35px;
+}
+.navbar--top .right-panel .btn.btn-cart i {
+     background-position: -38px -35px;
 }
      
 
@@ -1254,6 +1311,9 @@ footer li:hover a { color: #c9cbd1; }
       background:url(../img/close_icon.png) no-repeat;
       
     }
+    .modal-box a.close:hover {
+        opacity:0.8;
+    }
     .modal-box.style_2 a.close {
          top:6%;
          right:4%;
@@ -1294,6 +1354,10 @@ footer li:hover a { color: #c9cbd1; }
         border:1px solid #b1b1b7;
         padding:5px 12px;
         transition:0.3s;
+    }
+    .form1 textarea.error, .form1 input[type=text].error,
+    .form1 .line.st_3 input[type=text].error {
+         border-color: rgba(255, 85, 85, 0.75);
     }
     .form1 input[type=text]::-webkit-input-placeholder  {color:#989797;   opacity:1;   }
     .form1 input[type=text]::-moz-placeholder           {color:#989797;   opacity:1;}/* Firefox 19+ */
@@ -1384,6 +1448,26 @@ footer li:hover a { color: #c9cbd1; }
     .line.lkn {
         margin:10px 0px 30px 0;
         text-align:center;
+    }
+    @keyframes growing {
+     0% {
+    opacity:0;     
+    background:red;
+        }
+    100% {
+    width:auto;
+    height:auto;
+    background:green;
+    }
+    }
+    .growing {
+        animation-name: growing;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 0.3s;
     }
     .modal-body .good_itm {
         position: relative;

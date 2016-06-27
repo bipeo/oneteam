@@ -664,30 +664,33 @@
 
 
 
-<div id="popup1" class="modal-box">
+<div id="popup1" class="modal-box" >
   <header> <a href="#" class="js-modal-close close"></a>
     <h3>Войти на сайт</h3>
   </header>
   <div class="modal-body">
       <div class="form1">
+          <form id="enterTosite">  
+          
        <div class="line">    
-      <label for="01">Эл. почта*</label>    
-      <input id="01" type="text" value="">
+      <label for="email">Эл. почта*</label>    
+      <input id="email" type="text" name="email" value="">
        </div>
         
         
           
           <div class="line">    
-      <label for="02">Пароль*</label>    
-      <input id="02" type="text" value="">
+      <label for="pswd">Пароль*</label>    
+      <input id="pswd" type="text" name="pswd" value="">
           </div>
           <div class="line st_02">
-      <input class="but" value="Войти" type="button" >
+      <input class="but" type="submit" value="Войти"  >
         <div class="block_checkbox">
             <input id="checkbox_1" type="checkbox">
             <label for="checkbox_1">Запомнить меня</label>
         </div>
       </div>
+      </form>
       </div>
             <div class="line lkn">
               <a href="#">Забыли пароль?</a>
@@ -724,33 +727,29 @@
   </header>
   <div class="modal-body">
       <div class="form1">
+          <form id="contactForm">
        <div class="line">    
-      <label for="03">Ваше имя*</label>    
-      <input id="03" type="text" value="">
+      <label for="name">Ваше имя*</label>    
+      <input id="name" type="text" name="firstname" value="">
        </div>
         
         
           
           <div class="line">    
-      <label for="04">Телефон*</label>    
-      <input id="04" type="text" value="">
+      <label for="phone">Телефон*</label>    
+      <input id="phone" type="text" class="for_mask" name="phonenum" value="">
           </div>
           
           <div class="line">    
-      <label for="05">Сообщение</label>    
-      <textarea id="05"></textarea>     
+      <label for="mess">Сообщение</label>    
+      <textarea id="mess" name="mess"></textarea>     
           </div>
           
           <div class="line st_02 wpad_1">
-      <input class="but" value="Отправить заявку" type="button" >
+      <input class="but" value="Отправить заявку" type="submit" >
       </div>
-          
+          </form>
       </div>
-            
-      
-     
-      
-      
   </div>
 
 </div>
@@ -760,15 +759,17 @@
     <h3>Купить в 1 клик</h3>
   </header>
   <div class="modal-body">
+      
       <div class="form1">
+          <form id="BuyOneclick">  
        <div class="line">    
-      <label for="03">Ваше имя*</label>    
-      <input id="03" type="text" value="">
+      <label for="yourname">Ваше имя*</label>    
+      <input id="yourname" type="text" name="firstname" value="">
        </div>
           
        <div class="line">    
-      <label for="04">Телефон*</label>    
-      <input id="04" type="text" value="">
+      <label for="tel">Телефон*</label>    
+      <input id="tel"  type="text" class="for_mask" name="phonenum" value="">
           </div>
           
           <div class="good_itm">
@@ -779,14 +780,14 @@
           </div>
           
           <div class="line">    
-      <label for="05">Сообщение</label>    
-      <textarea id="05"></textarea>     
+      <label for="msg">Сообщение</label>    
+      <textarea id="msg" name="mess"></textarea>     
           </div>
           
           <div class="line st_02 wpad_1">
       <input class="but" value="Отправить заявку" type="button" >
       </div>
-          
+      </form>   
       </div>
   </div>
 
@@ -799,16 +800,12 @@
  
   <div class="modal-body">
       <div class="form1">
+       <form id="Searchbox">  
        <div class="line st_3">    
-      <input id="06" class="w100" type="text" placeholder="Введите название товара или услуги">
+      <input  class="w100" type="text" name="search" placeholder="Введите название товара или услуги">
        <input class="s_icon" value="" type="submit" >
        </div>
-    
-          
-      
-     
-      
-          
+      </form>    
       </div>
   </div>
 
@@ -833,10 +830,26 @@
     <script src="js/hoverIntent.js"></script>
     <script src="js/superfish.min.js"></script>
     
+    <script src="formvalidation/dist/jquery.validate.js"></script>
+    <script src="formvalidation/dist/localization/messages_ru.js"></script>
+    <script src="js/forform.js"></script>
+    
+    <script src="js/jquery.mask.js"></script>
+
+    
     <!-- Megamenu JavaScript -->
     <script src="megamenu-js-master/js/megamenu.js"></script> 
     <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
+    
+    
+    <script type="text/javascript">
+	$(function(){
+             $('.for_mask').mask('+7(000)000-00-00');
+//		$.pixlayout({clip: true, src: "design/maket.jpg", show:true, center:false, top:0, left: 0, pervious: false});
+}); 
+</script>
+    
     
  <script type="text/javascript">
 // slick-slider
