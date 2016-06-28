@@ -224,13 +224,14 @@ a { color: inherit; }
 .navbar--sub .dropdown-toggle, .navbar--sub .nav > li > a { font: 400 14px/22px "Ubuntu", sans-serif; color: #6a6a6a; }
 .navbar--sub .dropdown-toggle:hover, .navbar--sub .nav > li > a:hover { color: #3f71ca; text-decoration: none; }
 .navbar--sub .nav > li > a { padding: 15px 11px; }
-.navbar--sub .city_dropdown { min-width: 180px; padding: 14px 0; font: 400 14px/22px "Ubuntu", sans-serif; }
+.navbar--sub .city_dropdown { min-width: 180px; margin-left:1.4%; padding: 14px 0; font: 400 14px/22px "Ubuntu", sans-serif; }
 .navbar--sub .dropdown-caret { font-size: 13px; padding-left: 7px; vertical-align: middle; }
 .navbar--sub .phone { padding: 12px 0px; font: 400 18px/22px "Ubuntu", sans-serif; color: #6a6a6a; letter-spacing: 0.7px; }
 
 .bracket { position: relative; background: transparent url("../img/bracket-bg.png") no-repeat scroll 0 0; background-size: auto 100%; }
 
-.navbar-vertical { position: absolute; padding: 10px; margin-left: 14px; /*width: 22.79%;*/ background-color: #fff; z-index: 9; }
+.navbar-vertical { position: absolute; padding: 10px;  /*width: 22.79%;*/ background-color: #fff; z-index: 9; }
+.navbar-vertical.mp {margin-left:0px;}
 .navbar-vertical .nav-vertical { margin: 0; padding: 11px 0; border: 1px solid #f3d64c; list-style-type: none; }
 .navbar-vertical .nav-vertical li:hover { width: 108%; background: transparent url("../img/icons/img_1.png") no-repeat scroll 0 0; background-size: 100% 100%; z-index: 99999; }
 .navbar-vertical .nav-vertical li:hover a { width: 251px; padding-right: 25px; }
@@ -300,6 +301,7 @@ a { color: inherit; }
 }
 
 #slider_1 .slider-title {
+    color:#fff;
     font: 400 42px/42px "Ubuntu",sans-serif;
     margin-bottom: 14px;
 }
@@ -601,7 +603,7 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .panel-title {
-    background: url(../img/accordeon_top.png) no-repeat right center;
+    background: url(../img/accordeon_bottom.png) no-repeat right center;
     color: #292929;
     font-weight: 300;
     cursor: pointer;
@@ -609,7 +611,8 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .accordeon_bottom {
-    background: url(../img/accordeon_bottom.png) no-repeat right center;
+    background: url(../img/accordeon_top.png) no-repeat right center;
+
 }
 
 .panel-heading {
@@ -1140,6 +1143,7 @@ footer li:hover a { color: #c9cbd1; }
     display: block;
     font: 300 14px Ubuntu;
     padding: 0 0 0 37px;
+    min-height:35px;
 }
 
 .list_descript {
@@ -1193,6 +1197,7 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .title_2 {
+    color:#fff;
     font-weight: 400;
     font-size: 42px;
     line-height: 24px;
@@ -1221,11 +1226,13 @@ footer li:hover a { color: #c9cbd1; }
 }
 
 .link_dost {
-    border-bottom: 1px dotted #ffffff;
+    border-bottom: 1px solid rgba(255,255,255, .4);
     font-weight: 300;
     line-height: 42px;
 }
-
+.link_dost:hover  {
+     border-bottom-color:#f3d64c;
+}
 .payment {
     margin: 0 0 0 0;
     overflow: hidden;
@@ -1444,7 +1451,11 @@ footer li:hover a { color: #c9cbd1; }
 
 .no_responsive {
     margin: 0 auto;
-    width: 1200px;
+   
+}
+.container {
+    width: 1170px;
+    min-width:1170px;/* temperary fixed layout fissx*/
 }
 
 
