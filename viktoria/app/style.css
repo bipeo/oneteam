@@ -12,35 +12,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, time {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 a, input, select, textarea {
@@ -48,9 +48,9 @@ a, input, select, textarea {
 }
 
 img, input {
-	border: none;
-	height: auto;
-	max-width: 100%;
+    border: none;
+    height: auto;
+    max-width: 100%;
 }
 
 input[type=submit] {
@@ -58,9 +58,9 @@ input[type=submit] {
 }
 
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*========================== END reset.css ==========================*/
@@ -119,20 +119,84 @@ input[type=submit] {
     visibility:hidden
 }
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
 .left {float: left;}
 .right {float: right;}
 
-.center {
-	margin-left: auto;
-	margin-right: auto;
-}
 /*========================== END ==========================*/
 
 body {
+    color: #000000;
     font-family: 'robotoregular';
+    font-size: 12px;
 }
 
 strong {
     font-family: 'robotobold';
 }
 
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    background: #dffcfc url(img/body_bg.png) no-repeat center top;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.header.center {
+    overflow: hidden;
+}
+
+.block_1 {
+    width: 390px;
+}
+
+.p_1 {
+    font-family: 'robotobold';
+    font-size: 26px;
+    line-height: 33px;
+}
+
+.header_socia {
+    overflow: hidden;
+}
+
+.header_social a {
+    display: block;
+    float: left;
+    height: 42px;
+    width: 41px;
+}
+
+.header_social a + a {
+    margin-left: 9px;
+}
+
+.fb {
+    background: url(img/facebook.png) no-repeat;
+}
+
+.tw {
+    background: url(img/twitter.png) no-repeat;
+}
+
+.addr {
+    font-size: 17px;
+}
+
+.phone {
+    font-family: 'robotothin';
+    line-height: 33px;
+}
+
+.phone span {
+    font-family: 'robotoregular';
+    font-size: 26px;
+}
