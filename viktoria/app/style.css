@@ -181,6 +181,7 @@ a {
 }
 
 .header_social {
+    margin: 105px 0 0 0;
     overflow: hidden;
 }
 
@@ -317,8 +318,8 @@ a {
     background: url(img/owl_bg.png) no-repeat;
     box-shadow: 2px 4px 5px 0.00px rgba(0, 0, 0, 0.2);
     height: 362px;
+    margin: 0 0 83px 0;
     padding: 9px;
-    position: relative;
     width: 940px;
 }
 
@@ -339,4 +340,26 @@ a {
 
 .owl_wrap .owl-dot.active {
     background-image: url(img/owl_pagination_active.png);
+}
+.p_2 {
+    font-size: 14px;
+}
+
+.bron_phone {
+    font-family: 'robotothin';
+    font-size: 16px;
+}
+
+.bron_phone span {
+    font-size: 24px;
+}
+
+.addr_ico {
+    background: url(img/ico_1.png) no-repeat left top;
+    font-size: 12px;
+}
+
+.bron_payment {
+    font-family: 'robotobold';
+    font-size: 20px;
 }
