@@ -1,0 +1,365 @@
+/*========================== reset.css ==========================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, time {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a, input, select, textarea {
+    outline: none;
+}
+
+img, input {
+    border: none;
+    height: auto;
+    max-width: 100%;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*========================== END reset.css ==========================*/
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('fonts/Roboto-Thin/roboto-thin-webfont.eot');
+    src: url('fonts/Roboto-Thin/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Thin/roboto-thin-webfont.woff2') format('woff2'),
+        url('fonts/Roboto-Thin/roboto-thin-webfont.woff') format('woff'),
+        url('fonts/Roboto-Thin/roboto-thin-webfont.ttf') format('truetype'),
+        url('fonts/Roboto-Thin/roboto-thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular/roboto-regular-webfont.eot');
+    src: url('fonts/Roboto-Regular/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular/roboto-regular-webfont.woff') format('woff'),
+        url('fonts/Roboto-Regular/roboto-regular-webfont.ttf') format('truetype'),
+        url('fonts/Roboto-Regular/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/Roboto-Bold/roboto-bold-webfont.eot');
+    src: url('fonts/Roboto-Bold/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Bold/roboto-bold-webfont.woff2') format('woff2'),
+        url('fonts/Roboto-Bold/roboto-bold-webfont.woff') format('woff'),
+        url('fonts/Roboto-Bold/roboto-bold-webfont.ttf') format('truetype'),
+        url('fonts/Roboto-Bold/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+        url("fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+        url("fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*========================== Общие классы ==========================*/
+
+.clearfix {
+    display:inline-block;
+}
+
+.clearfix {
+    zoom:1;
+    display:block;
+}
+
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.left {float: left;}
+.right {float: right;}
+
+/*========================== END ==========================*/
+
+body {
+    color: #000000;
+    font-family: 'robotoregular';
+    font-size: 12px;
+}
+
+strong {
+    font-family: 'robotobold';
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    background: #dffcfc url(img/body_bg.png) no-repeat center top;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.header.center {
+    overflow: hidden;
+}
+
+.block_1 {
+    padding: 20px 0 0 0;
+    width: 390px;
+}
+
+.p_1 {
+    font-family: 'robotobold';
+    font-size: 26px;
+    line-height: 33px;
+}
+
+.logo {
+    display: block;
+    margin: -11px 0 0 0;
+}
+
+.header_social {
+    margin: 105px 0 0 0;
+    overflow: hidden;
+}
+
+.header_social a {
+    display: block;
+    float: left;
+    height: 42px;
+    width: 41px;
+}
+
+.header_social a + a {
+    margin-left: 9px;
+}
+
+.fb {
+    background: url(img/facebook.png) no-repeat;
+}
+
+.tw {
+    background: url(img/twitter.png) no-repeat;
+}
+
+.addr {
+    font-size: 17px;
+    margin: 0 0 16px 0;
+}
+
+.phone {
+    font-family: 'robotothin';
+    font-size: 17.53px;
+    line-height: 29px;
+    margin: 0 0 11px 0;
+}
+
+.phone span {
+    font-family: 'robotoregular';
+    font-size: 26px;
+}
+
+.header_contact {
+    padding: 25px 0 0 0;
+    text-align: right;
+}
+
+.order_btn {
+    color: #00365e;
+    font-family: 'robotobold';
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.search {
+    background: -webkit-linear-gradient(90deg, #d7d7d7 0%, #ededed 100%);
+    background: -moz-linear-gradient(90deg, #d7d7d7 0%, #ededed 100%);
+    background: -o-linear-gradient(90deg, #d7d7d7 0%, #ededed 100%);
+    background: -ms-linear-gradient(90deg, #d7d7d7 0%, #ededed 100%);
+    background: linear-gradient(0deg, #d7d7d7 0%, #ededed 100%);
+    border-radius: 4px;
+    box-shadow: 0.1px 1px 1px rgba(21, 61, 87, 0.39), inset 0.1px 1px 1px white;
+    margin: 49px 0 0 0;
+    padding: 8px;
+    position: relative;
+    width: 287px;
+}
+
+.search input[type=text] {
+    background: #ffffff url(img/icon.png) no-repeat 7px center;
+    border-radius: 4px;
+    box-shadow: 0.1px 1px 0 rgba(255, 255, 255, 0.25), inset 0.1px 1px 2px rgba(12, 51, 76, 0.27);
+    color: #304e62;
+    font-size: 14px;
+    padding: 0 0 0 39px;
+    height: 33px;
+    width: 273px;
+}
+
+.search input[type=submit] {
+    background: -webkit-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: -moz-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: -o-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: -ms-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: linear-gradient(0deg, #025cab 0%, #0aa7ed 100%);
+    border: 1px solid rgba(170, 120, 24, 0.5);
+    border-radius: 4px;
+    box-shadow: 0.1px 1px 0 rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    font-size: 15px;
+    height: 31px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    text-align: center;
+    width: 56px;
+}
+
+.menu_main {
+    background: -webkit-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: -moz-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: -o-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: -ms-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: linear-gradient(0deg, #025cab 0%, #0aa7ed 100%);
+    border: 1px solid rgba(0, 104, 155, 0.5);
+    border-radius: 4px;
+    box-shadow: 0px 1px 0px 0.00px rgba(255, 255, 255, 0.25);
+}
+
+.menu_main > li {
+    float: left;
+}
+
+.menu_main > li + li {
+    margin-left: 1px;
+}
+
+.menu_main > li a {
+    color: #fefefe;
+    display: block;
+    font-family: 'robotothin';
+    height: 31px;
+    line-height: 31px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.menu_main .active a {
+    
+}
+.content {
+    background: url(img/content_bg.jpg) no-repeat center top;
+    padding: 29px;
+}
+
+.owl_wrap {
+    background: url(img/owl_bg.png) no-repeat;
+    box-shadow: 2px 4px 5px 0.00px rgba(0, 0, 0, 0.2);
+    height: 362px;
+    margin: 0 0 83px 0;
+    padding: 9px;
+    width: 940px;
+}
+
+.owl_wrap .owl-dots {
+    margin: 25px 0 0 0;
+    text-align: center;
+}
+
+.owl_wrap .owl-dots .owl-dot + .owl-dot {margin-left: 10px;}
+
+.owl_wrap .owl-dots .owl-dot {
+    background: url(img/owl_pagination.png) no-repeat;
+    border-radius: 50%;
+    display: inline-block;
+    height: 21px;
+    width: 20px;
+}
+
+.owl_wrap .owl-dot.active {
+    background-image: url(img/owl_pagination_active.png);
+}
+.p_2 {
+    font-size: 14px;
+}
+
+.bron_phone {
+    font-family: 'robotothin';
+    font-size: 16px;
+}
+
+.bron_phone span {
+    font-size: 24px;
+}
+
+.addr_ico {
+    background: url(img/ico_1.png) no-repeat left top;
+    font-size: 12px;
+}
+
+.bron_payment {
+    font-family: 'robotobold';
+    font-size: 20px;
+}
