@@ -110,6 +110,18 @@ input[type=submit] {
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('fonts/Roboto_Italic/roboto-italic-webfont.eot');
+    src: url('fonts/Roboto_Italic/roboto-italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto_Italic/roboto-italic-webfont.woff2') format('woff2'),
+        url('fonts/Roboto_Italic/roboto-italic-webfont.woff') format('woff'),
+        url('fonts/Roboto_Italic/roboto-italic-webfont.ttf') format('truetype'),
+        url('fonts/Roboto_Italic/roboto-italic-webfont.svg#robotoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*========================== Общие классы ==========================*/
 
 .clearfix {
@@ -153,6 +165,8 @@ strong {
 a {
     text-decoration: none;
 }
+
+i {font-family: 'robotoitalic';}
 
 .wrapper {
     background: #dffcfc url(img/body_bg.png) no-repeat center top;
@@ -252,6 +266,7 @@ a {
     border-radius: 4px;
     box-shadow: 0.1px 1px 0 rgba(255, 255, 255, 0.25), inset 0.1px 1px 2px rgba(12, 51, 76, 0.27);
     color: #304e62;
+    font-family: "MyriadProRegular";
     font-size: 14px;
     padding: 0 0 0 39px;
     height: 33px;
@@ -268,11 +283,12 @@ a {
     border-radius: 4px;
     box-shadow: 0.1px 1px 0 rgba(255, 255, 255, 0.25);
     color: #ffffff;
+    font-family: "MyriadProRegular";
     font-size: 15px;
     height: 31px;
     position: absolute;
     right: 9px;
-    top: 9px;
+    top: 10px;
     text-align: center;
     width: 56px;
 }
@@ -318,7 +334,7 @@ a {
     background: url(img/owl_bg.png) no-repeat;
     box-shadow: 2px 4px 5px 0.00px rgba(0, 0, 0, 0.2);
     height: 362px;
-    margin: 0 0 83px 0;
+    margin: 0 0 87px 0;
     padding: 9px;
     width: 940px;
 }
@@ -343,23 +359,86 @@ a {
 }
 .p_2 {
     font-size: 14px;
+    margin: 0 0 19px 0;
+}
+
+.bron_1 {
+    margin: 5px 64px 0 5px;
 }
 
 .bron_phone {
     font-family: 'robotothin';
     font-size: 16px;
+    margin: 0 0 28px 0;
 }
 
 .bron_phone span {
+    font-family: 'robotoregular';
     font-size: 24px;
 }
 
 .addr_ico {
     background: url(img/ico_1.png) no-repeat left top;
     font-size: 12px;
+    line-height: 1.2;
+    padding: 7px 0 0 19px;
 }
 
 .bron_payment {
     font-family: 'robotobold';
     font-size: 20px;
+    margin: 0 0 12px 0;
+}
+
+.bron_payment img {
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+.wrap_calendar {
+    background: -webkit-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: -moz-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: -o-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: -ms-linear-gradient(90deg, #025cab 0%, #0aa7ed 100%);
+    background: linear-gradient(0deg, #025cab 0%, #0aa7ed 100%);
+    border-radius: 4px;
+    border: 1px solid #b7b7b7;
+    box-shadow: 0.1px 1px 0 rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    padding: 22px 19px;
+    width: 481px;
+}
+
+/*========================== datepicker ==========================*/
+
+.datepicker_1 i, .datepicker_2 i {
+    display: block;
+    font-size: 10px;
+    margin: 0 0 12px 0;
+}
+
+.datepicker_1 {
+    margin: 0 10px 0 0;
+}
+
+.hasDatepicker {
+    background: #ffffff url(img/datepicker_ico.png) no-repeat right 8px center;
+    border: 1px solid #00ffff;
+    border-radius: 4px;
+    color: #000000;
+    font-family: 'robotothin';
+    font-size: 12px;
+    height: 28px;
+    width: 160px;
+}
+
+.submit_datepicker {
+    background: url(img/submit_datepicker.png) no-repeat;
+    color: #ffffff;
+    font-family: 'robotoregular';
+    height: 31px;
+    margin: 21px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 92px;
 }
