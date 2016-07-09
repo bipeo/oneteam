@@ -27,4 +27,20 @@ $(document).ready(function(){
             $("#date_from").datepicker("option", "maxDate", selectedDate);
         }
     });
+
+    $('.toggle-mnu').click(function() {
+        $(this).toggleClass("on");
+        $('.menu_main').slideToggle();
+        return false;
+    });
+});
+
+$(document).click(function(event) {
+    if(!$(event.target).closest('.menu_main').length) {
+        if($('.menu_main').is(":visible")) {
+            $('.menu_main').slideUp();
+            $('.toggle-mnu').removeClass("on");
+            return false;
+        }
+    }
 });
