@@ -843,9 +843,7 @@ img.skidka {
 
 @media only screen and (max-width: 975px) {
     .help_text {margin-right: 2%;}
-    .fl_none {
-        
-    }
+    
     .owl_wrap {height: auto;}
     .menu_main {
         display: none;
@@ -972,6 +970,39 @@ img.skidka {
     }
 }
 
+@media only screen and (max-width: 447px) {
+    .search {display: none;}
+    .addr {font-size: 15px;}
+    .p_1 {font-size: 24px;}
+    .block_1 {width: 155px;}
+}
+
+@media only screen and (max-width: 414px) {
+    .footer_logo {display: none;}
+    .footer_ul {margin-left: 2%;}
+}
+
+@media only screen and (max-width: 400px) {
+    .addr {display: none;}
+    .header_social {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .header_contact {display: none;}
+    .block_1 {width: 100%;}
+    .help_photo {display: none;}
+    .help_text.right {width: 90%;}
+}
+
+@media only screen and (max-width: 319px) {
+    body {
+        overflow-x: scroll;
+        width: 320px;
+    }
+}
 
 
 
