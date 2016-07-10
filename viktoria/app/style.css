@@ -864,7 +864,7 @@ img.skidka {
 }
 
 .pogoda .pogoda_details li:nth-child(2) {
-    background: url(img/ico_3.png) no-repeat left center;
+    background: url(img/ico_3.png) no-repeat 2.5px center;
 }
 
 .pogoda .pogoda_details li:nth-child(3) {
@@ -874,7 +874,7 @@ img.skidka {
 .pogoda .pogoda_details span {
     display: block;
     font-size: 14px;
-    padding: 0 0 0 50px;
+    padding: 0 0 7px 50px;
 }
 
 .pogoda_details ul {
