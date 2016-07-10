@@ -33,14 +33,22 @@ $(document).ready(function(){
         $('.menu_main').slideToggle();
         return false;
     });
+    
+    $('.for_mask').mask('+7(000) 000-00-00');
+
+    
 });
 
+
 $(document).click(function(event) {
-    if(!$(event.target).closest('.menu_main').length) {
-        if($('.menu_main').is(":visible")) {
-            $('.menu_main').slideUp();
-            $('.toggle-mnu').removeClass("on");
-            return false;
+    if ($('.toggle-mnu').css('display') == 'block') {
+        if(!$(event.target).closest('.menu_main').length) {
+            if($('.menu_main').is(":visible")) {
+                $('.menu_main').slideUp();
+                $('.toggle-mnu').removeClass("on");
+                return false;
+            }
         }
+        
     }
 });
