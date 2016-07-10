@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Заголовок</title>
+	<title>Виктория</title>
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,9 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-    <link rel="stylesheet" href="libs/owl.carousel/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="libs/owl.carousel/owl.theme.default.min.css" type="text/css">
-    <link rel="stylesheet" href="libs/jquery-ui-1.11.4.custom/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="libs/owl.carousel/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="libs/owl.carousel/owl.theme.default.min.css" type="text/css">
+        <link rel="stylesheet" href="libs/jquery-ui-1.11.4.custom/jquery-ui.min.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
@@ -66,6 +66,8 @@
         </ul>
     </nav>
     <main class="content center">
+                <div class="b1owl_bg">
+               
         <div class="owl_wrap">
             <div class="owl-carousel">
                 <div><img src="img/slide_1.jpg" alt=""></div>
@@ -111,7 +113,8 @@
                 </div>
             </div>
         </div>
-        <div class="box_2">
+                     </div>
+        <div class="box_2 clearfix">
             <div class="box_2_txt left">
                 <h2>Добро пожаловать!</h2>
                 <p>Санаторий «Виктория» расположен в деревне Раково, в38 километрахот МКАД по Ярославскому шоссе, в месте слияния двух небольших речек Вязи и Ольшанки. Это великолепный экологически чистый район Подмосковья рядом с Пестовским водохранилищем, на берегах которого летом отдыхающие смогут понежиться в лучах теплого солнца. Для этого там оборудованы специальные пляжи.</p>
@@ -254,6 +257,8 @@
                 </div>
             </div>
         </div>
+        
+        <div class="out_phbox">
         <div class="box_photo clearfix">
             <div>
                 <a href="#"><img src="img/photo_1.png" alt=""></a>
@@ -272,6 +277,7 @@
                 <span class="photo_descript">Развлечения и спорт</span>
             </div>
         </div>
+        </div>
     </main>
     <div class="box_help clearfix center">
         <img class="help_photo left" src="img/575359.png" alt="">
@@ -283,7 +289,7 @@
             <p class="help_details">Заполните поля, мы вам перезвоним<br> и проконсультируем по всем возникшим вопросам</p>
             <form class="form_help" action="#" method="post">
                 <input type="text" placeholder="Имя:">
-                <input type="text" placeholder="Телефон:">
+                <input type="text" class="for_mask" placeholder="Телефон:">
                 <input type="text" placeholder="E- mail:">
                 <input type="submit" value="ЗВОНИ">
             </form>
@@ -317,7 +323,7 @@
             </p>
         </div>
     </footer>
-    <div class="copy">
+    <div class="fotcopy">
         <div class="center">
             <strong>&copy; 2016 Пушкинский филиал ОАО “ЦСТЭ”</strong>
         </div>
@@ -329,6 +335,7 @@
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
+<script src="libs/jquery.mask.js"></script>
 <script src="libs/owl.carousel/owl.carousel.min.js"></script>
 <script src="libs/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="libs/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
@@ -336,7 +343,7 @@
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
-//		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
+		//$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 </body>
