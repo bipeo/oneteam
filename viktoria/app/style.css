@@ -796,6 +796,46 @@ img.skidka {
     transform: rotate(-45deg) translate(6px, -7px);
 }
 
+.pogoda_ico {
+    background: url(img/pogoda_ico.png) no-repeat left top;
+    display: block;
+    font-size: 20px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 0 0 50px;
+}
+
+.pogoda_details li {
+    padding-left: 25px;
+}
+
+.pogoda_details li:first-child {
+    background: url(img/ico_2.png) no-repeat left center;
+}
+
+.pogoda_details li:nth-child(2) {
+    background: url(img/ico_3.png) no-repeat left center;
+}
+
+.pogoda_details li:nth-child(3) {
+    background: url(img/ico_4.png) no-repeat left center;
+}
+
+.pogoda_details span {
+    display: block;
+    font-size: 14px;
+    padding: 0 0 0 50px;
+}
+
+.pogoda_details ul {
+    margin: 6px 0 0 0;
+    padding: 0 0 0 52px;
+}
+
+.pogoda_details ul li + li {
+    margin-top: 2px;
+}
+
 @media only screen and (max-width: 999px) {
     .center {
         width: 100%;
@@ -1003,42 +1043,6 @@ img.skidka {
         width: 320px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
