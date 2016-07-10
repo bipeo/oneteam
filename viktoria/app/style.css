@@ -492,7 +492,7 @@ h3 {
     color: #000000;
     line-height: 17.148px;
     margin: 0 55px 0 0;
-    padding: 40px 0 0 6px;
+    padding: 69px 0 0 6px;
     text-align: justify;
     width: 295px;
 }
@@ -500,7 +500,7 @@ h3 {
 .box_2 {
     position:relative;
     background: #fff;
-    padding:0px 29px 0px 29px;
+    padding:0px 29px 38px 29px;
     margin: 0 0 0px 0;
 }
 
@@ -508,7 +508,7 @@ h3 {
     top:-12px;
     background:transparent url(img/box_2_bg_top.png) repeat-x;
 }
-.box_2:before, .box_photo:before  {
+.box_2:before, .out_phbox:before  {
     content:'';
     position: absolute;
     width:100%;
@@ -520,7 +520,7 @@ h3 {
 .box_2_carousel_1 {
     background: url(img/info_guest_block.png) no-repeat center top;
     height: 508px;
-    margin: 0 55px 0 0;
+    margin: 28px 55px 20px 0px;
     width: 267px;
 }
 
@@ -562,11 +562,16 @@ img.skidka {
     text-align: center;
     text-decoration: underline;
 }
+.box_2_carousel_1, .owl_news {
+    
+}
 
 .owl_news {
     background: url(img/owl_news_bg.png) no-repeat center top;
     height: 508px;
     width: 267px;
+    margin: 28px 0px 20px 0px;
+
 }
 
 .more {
@@ -628,23 +633,25 @@ img.skidka {
 #owl_2 .owl-dot.active, #owl_3 .owl-dot.active {
     background-image: url("img/owl_pagination_active.png");
 }
-.box_photo:before  {
+.out_phbox:before  {
       top:-12px;
+      background: url(img/photobox_bg_top.png) no-repeat center top;
+}
+.out_phbox {
+      position: relative;
       background: url(img/photobox_bg.png) no-repeat center top;
+      background-position:0px 0px;
 }
 .box_photo {
-    background: url(img/photobox_bg.png) no-repeat center top;
-    background-position:0px -12px;
-    position: relative;
     margin: 0 0px 0px 0px;
-    padding:0px 29px 0px 29px;
+    padding:20px 29px 25px 29px;
 }
 
 .box_photo > div {
     background: url(img/box_photo_bg.png) no-repeat;
     float: left;
     height: 243px;
-    margin: 0 0 0 3px;
+    margin: 27px 0 30px 3px;
     text-align: center;
     width: 230px;
 }
@@ -671,9 +678,11 @@ img.skidka {
     color: #ffffff;
     padding: 0 0 54px 0;
     position: relative;
-    background-image: url(img/box_help_pl.png);
-    background-position: center -12px;
-    background-repeat: repeat-x;
+    background: #099be2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #099be2 0%, #0365b3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #099be2 0%,#0365b3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #099be2 0%,#0365b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#099be2', endColorstr='#0365b3',GradientType=0 ); /* IE6-9 */
 }
 
 .box_help:before {
@@ -845,14 +854,20 @@ img.skidka {
         padding-bottom: 30px;
     }
     .box_2 {
-        margin-bottom: 20px;
+
     }
     .box_2_txt {
         float: none;
         margin-bottom: 20px;
         margin-right: 0;
         width: 100%;
+        padding:35px 0 0 0px;
     }
+    
+    .out_phbox {
+        background-size:cover;
+    }
+    
     .box_photo > div:nth-child(2n+1) {
         clear: both;
     }
@@ -870,6 +885,7 @@ img.skidka {
     .box_help::before {
         width: 100%;
     }
+
 }
 
 @media only screen and (max-width: 975px) {
@@ -940,7 +956,7 @@ img.skidka {
     .owl_wrap {
         margin-bottom: 20px;
     }
-    .box_2_txt {padding: 0;}
+    .box_2_txt {padding:30px 0 0px 0px}
 }
 
 @media only screen and (max-width: 760px) {
