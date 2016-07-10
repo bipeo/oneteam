@@ -334,11 +334,11 @@ h3 {
     display: block;
 }
 
-.menu_main > li, .mobile_menu > li {
+.menu_main > li {
     float: left;
 }
 
-.menu_main > li + li, .mobile_menu > li + li {
+.menu_main > li + li {
     margin-left: 1px;
 }
 
@@ -903,7 +903,7 @@ img.skidka {
         background-image: none;
         box-shadow: none;
         margin-bottom: 60px;
-        width: 100%;
+        width: 96%;
     }
     .box_1 {
         padding-bottom: 30px;
@@ -1019,15 +1019,17 @@ img.skidka {
         margin-bottom: 20px;
     }
     .box_2_txt {padding:30px 0 0px 0px}
-}
-
-@media only screen and (max-width: 760px) {
     .header .logo {display: none;}
     .owl_wrap {
         margin-bottom: 20px;
     }
 }
 
+@media only screen and (max-width: 735px) {
+    .owl_wrap {
+        margin-left: 2%;
+    }
+}
 
 @media only screen and (max-width: 650px) {
     .box_2_carousel_1, .owl_news {
