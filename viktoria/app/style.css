@@ -328,19 +328,21 @@ h3 {
     box-shadow: 0px 1px 0px 0.00px rgba(255, 255, 255, 0.25);
 }
 
+.mobile_menu {display: none;}
+
 .menu_main {
     display: block;
 }
 
-.menu_main > li {
+.menu_main > li, .mobile_menu > li {
     float: left;
 }
 
-.menu_main > li + li {
+.menu_main > li + li, .mobile_menu > li + li {
     margin-left: 1px;
 }
 
-.menu_main > li a {
+.menu_main > li a, .mobile_menu li a {
     color: #fefefe;
     display: block;
     font-family: 'robotothin';
@@ -910,6 +912,7 @@ img.skidka {
     }
     .help_text {width: auto;}
     .help_text.right {float: left; margin-left: 5%;}
+    .pogoda {display: none;}
 }
 
 @media only screen and (max-width: 935px) {
