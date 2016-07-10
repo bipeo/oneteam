@@ -830,9 +830,13 @@ img.skidka {
     background-color: transparent;
 }
 .toggle-mnu.on span:before {
+    -webkit-transform: rotate(45deg) translate(-1px, 0px);
+    -ms-transform: rotate(45deg) translate(-1px, 0px);
     transform: rotate(45deg) translate(-1px, 0px);
 }
 .toggle-mnu.on span:after {
+    -webkit-transform: rotate(-45deg) translate(6px, -7px);
+    -ms-transform: rotate(-45deg) translate(6px, -7px);
     transform: rotate(-45deg) translate(6px, -7px);
 }
 
@@ -880,6 +884,11 @@ img.skidka {
     margin-top: 2px;
 }
 
+@media only screen and (min-width: 976px) {
+    .menu_main {
+        display:block !important;
+    }
+}
 @media only screen and (max-width: 999px) {
     .center {
         width: 100%;
