@@ -792,9 +792,11 @@ img.skidka {
  .fotcopy {
     background: #fff;
     font-size: 17px;
-    padding: 10px 0 14px 0px;
+    padding: 10px 0% 14px 0%;
 }
-
+.fotcopy strong {
+    margin:0px 2%;
+}
 .toggle-mnu {
     display: none;
     width: 28px;
