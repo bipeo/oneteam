@@ -162,11 +162,17 @@ input[type=submit] {
 	margin-right: auto;
     width: 1155px;
 }
+
 /*========================== END ==========================*/
 
 body {
     font-family: 'robotoregular';
     font-size: 15px;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
 }
 
 .wrapper {
@@ -178,6 +184,49 @@ body {
     background: url(img/bg_header.jpg) no-repeat center top;
 }
 
+.lang a {
+    display: inline-block;
+}
+
+.lang span {
+    display: inline-block;
+}
+
 .rus {
-    
+    background: url(img/rus.png) no-repeat left center;
+    height: 13px;
+    padding: 0 0 0 16px;
+}
+
+.eng {
+    background: url(img/eng.png) no-repeat left center;
+    height: 13px;
+    padding: 0 0 0 16px;
+}
+
+.mail a {
+    color: #000000;
+    display: block;
+    font-size: 15.75px;
+    line-height: 20px;
+}
+
+.phone {
+    text-align: right;
+}
+
+.phone .number_phone {
+    color: #a8174f;
+    display: block;
+    font-family: 'lobster_1.4regular';
+    font-size: 35px;
+}
+
+.logo {
+    background: url(img/logo.png) no-repeat;
+    display: block;
+    height: 199px;
+    padding: 140px 0 0 0;
+    text-align: center;
+    width: 345px;
 }
