@@ -11,6 +11,8 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="libs/owl.carousel/owl.carousel.min.css" />
+	<link rel="stylesheet" href="libs/owl.carousel/owl.theme.default.min.css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
@@ -74,6 +76,41 @@
             <span class="span_1">С РАДОСТЬЮ ЖДЕМ ВАС!!!</span>
         </div>
     </div>
+    <div class="box_4">
+        <div class="center">
+            <h2 class="title_1 good_day right">ВАЖНАЯ ИНФОРМАЦИЯ!</h2>
+            <p class="p_1">При покупке котенка питомник оставляет за собой право отказать в продаже котенка на любой стадии переговоров. Если питомник отказывает покупателю в продаже, то ранее внесенный  депозит возвращается покупателю в полном объеме. Котенок считается зарезервированным, только после внесения депозита 50% от полной стоимости котенка, который не возвращается  в случае отказа покупателя от котенка, он считается компенсацией за содержание, уход за котенком и за упущенные возможности по его продаже. Котенок отправляется покупателю только после полной его оплаты. Доставка не входит в стоимость и оплачивается отдельно покупателем.</p>
+            <ul class="status">
+                <li>статус  <span class="green">"свободен"</span> означает, что котенок на данный момент свободен для продажи;</li>
+                <li>статус <span class="color_1">"заказан"</span> означает, что в данный момент относительно котенка ведутся переговоры и он временно не предлагается к продаже;</li>
+                <li>статус <span class="color_2">"удержан"</span> означает, что котёнок наблюдается питомником до возраста 1.5- 4 месяца.</li>
+                <li>статус <span class="color_3">"резерв"</span> означает, что за данного котенка внесен задаток и котёнок снят с продажи;</li>
+                <li>статус <span class="color_4">"продан"</span> означает, что данный котенок полностью оплачен.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="diplom">
+        <div class="center">
+            <h2 class="title_1 good_day">НАШИ ДИПЛОМЫ И СЕРТИФИКАТЫ</h2>
+            <div class="owl-carousel">
+                <div>
+                    <img src="img/18647911.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/40918221.png" alt="">
+                </div>
+                <div>
+                    <img src="img/76573148.png" alt="">
+                </div>
+                <div>
+                    <img src="img/61163417.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/91247741.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 	
 <!--[if lt IE 9]>
@@ -81,7 +118,14 @@
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
+<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 <script src="js/common.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        items: 5,
+        margin: 12
+    });
+</script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){

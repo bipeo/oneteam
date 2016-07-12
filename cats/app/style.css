@@ -178,6 +178,7 @@ input[type=submit] {
 /*========================== END ==========================*/
 
 body {
+    background: #fafafa;
     font-family: 'robotoregular';
     font-size: 15px;
 }
@@ -437,6 +438,7 @@ strong {font-family: 'robotobold';}
 
 .box_3 {
     background: url(img/box_3_bg.png) no-repeat center top;
+    margin: 0 0 55px 0;
 }
 
 .text_3 {
@@ -485,4 +487,64 @@ strong {font-family: 'robotobold';}
     font-size: 30px;
     margin: 23px 0 0 0;
     text-transform: uppercase;
+}
+
+.box_4 {
+    background: url(img/box_4_bg.png) no-repeat right top;
+}
+
+.green {
+    color: #7eb60d;
+}
+
+.color_1 {
+    color: #c97e07;
+}
+
+.color_2 {
+    color: #3e49da;
+}
+
+.color_3 {
+    color: #a87880;
+}
+
+.color_4 {
+    color: #d30606;
+}
+
+.box_4 .center {
+    padding-left: 96px;
+    padding-right: 407px;
+    padding-top: 75px;
+}
+
+.box_4 .title_1 {
+    font-family: 'robotoregular';
+    margin: 0 10px 47px 0;
+}
+
+.box_4 .good_day::after, .box_4 .good_day::before {
+    top: 6px;
+}
+
+.p_1 {
+    clear: both;
+    line-height: 18px;
+    margin: 0 0 155px 0;
+    text-align: justify;
+}
+
+.status > li {
+    line-height: 18px;
+    margin: 0 0 18px 0;
+}
+
+.status > li span {
+    font-family: 'robotoblack';
+}
+
+.diplom {
+    background: #a87880;
+    color: #ffffff;
 }
