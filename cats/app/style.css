@@ -380,13 +380,17 @@ strong {font-family: 'robotobold';}
 
 .about_us {
     background: url(img/about_img.png) no-repeat left top;
+    font-size: 18px;
+    line-height: 20px;
     min-height: 334px;
-    padding: 0 0 0 450px;
+    padding: 80px 0 0 465px;
+    width: 815px;
 }
 
 .content {
-    font-family: 'robotothin';
     clear: both;
+    font-family: 'robotothin';
+    margin-bottom: 28px;
 }
 
 .title_1 {
@@ -395,25 +399,90 @@ strong {font-family: 'robotobold';}
     text-transform: uppercase;
 }
 
+.about_us .title_1 {
+    margin: 0 0 31px -31px;
+}
+
 .red {
     color: #a71850;
+    font-family: 'robotoregular';
     font-size: 18px;
+    margin: 27px 0 0 0;
 }
 
 .good_day {
+    display: inline-block;
+    padding: 0 32px;
     position: relative;
 }
 
 .good_day:after, .good_day:before {
     content: "";
+    display: block;
     height: 19px;
+    position: absolute;
+    top: 0;
     width: 17px;
 }
 
 .good_day:after {
-    background: url(img/icon-1.png) no-repeat;
+    background: url(img/icon-2.png) no-repeat;
+    left: 0;
 }
 
 .good_day:before {
-    background: url(img/icon-2.png) no-repeat;
+    background: url(img/icon-1.png) no-repeat;
+    right: 0;
+}
+
+.box_3 {
+    background: url(img/box_3_bg.png) no-repeat center top;
+}
+
+.text_3 {
+    background: #fff;
+    border: 8px solid #a87880;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    padding: 0 41px 57px 42px;
+    position: relative;
+    width: 960px;
+}
+
+.text_3:before {
+    background: url(img/cats_3.png) no-repeat;
+    content: "";
+    height: 215px;
+    position: absolute;
+    right: -25px;
+    top: -145px;
+    width: 248px;
+}
+
+.text_3 .title_1 {
+    background: #fff;
+    display: table;
+    font-family: 'robotoregular';
+    margin: -12px auto 33px;
+    padding: 0 60px;
+}
+
+.text_3 .good_day:after {
+    left: 21px;
+}
+
+.text_3 .good_day:before {
+    right: 18px;
+}
+
+.text_3 p {
+    margin: 0 0 18px 0;
+}
+.span_1 {
+    color: #a87880;
+    display: block;
+    font-size: 30px;
+    margin: 23px 0 0 0;
+    text-transform: uppercase;
 }
