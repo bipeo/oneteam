@@ -595,3 +595,43 @@ strong {font-family: 'robotobold';}
 .diplom .good_day:after, .diplom .good_day:before {
     top: 5px;
 }
+
+.footer {
+    background: url(img/footer_bg.jpg) no-repeat center top;
+    height: 203px;
+}
+
+.footer_menu {
+    background: url(img/footer_menu_bg.png) no-repeat;
+    margin: 0 auto;
+    min-height: 216px;
+    width: 1218px;
+}
+
+.soc_btn {
+    overflow: hidden;
+}
+
+.soc_btn a {
+    background: url(img/soc_btn.png) no-repeat;
+    display: block;
+    float: left;
+    height: 36px;
+    width: 36px;
+}
+
+a.vk {
+    background-position: 0 0;
+}
+
+a.tw {
+    background-position: -36px 0;
+}
+
+a.ok {
+    background-position: -72px 0;
+}
+
+a.fb {
+    background-position: -108px 0;
+}
