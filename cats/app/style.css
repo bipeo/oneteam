@@ -491,6 +491,7 @@ strong {font-family: 'robotobold';}
 
 .box_4 {
     background: url(img/box_4_bg.png) no-repeat right top;
+    margin: 0 0 82px 0;
 }
 
 .green {
@@ -547,4 +548,50 @@ strong {font-family: 'robotobold';}
 .diplom {
     background: #a87880;
     color: #ffffff;
+    padding: 47px 0 111px 0;
+}
+
+#owl_1 {
+    margin: 57px auto 0;
+    position: relative;
+    width: 860px;
+}
+
+#owl_1 .owl-prev {
+    background: url(img/owl_left.png) no-repeat;
+    height: 92px;
+    left: -134px;
+    margin-top: -47px;
+    position: absolute;
+    top: 50%;
+    text-indent: -9999px;
+    width: 93px;
+}
+
+#owl_1 .owl-next {
+    background: url(img/owl_right.png) no-repeat;
+    height: 92px;
+    margin-top: -47px;
+    position: absolute;
+    right: -131px;
+    top: 50%;
+    text-indent: -9999px;
+    width: 93px;
+}
+
+.diplom .good_day {
+    display: table;
+    margin: 0 auto;
+}
+
+.diplom .good_day:after {
+    background: url(img/icon-1_white.png) no-repeat;
+}
+
+.diplom .good_day:before {
+    background: url(img/icon-2_white.png) no-repeat;
+}
+
+.diplom .good_day:after, .diplom .good_day:before {
+    top: 5px;
 }

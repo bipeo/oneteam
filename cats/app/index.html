@@ -92,21 +92,38 @@
     <div class="diplom">
         <div class="center">
             <h2 class="title_1 good_day">НАШИ ДИПЛОМЫ И СЕРТИФИКАТЫ</h2>
-            <div class="owl-carousel">
-                <div>
-                    <img src="img/18647911.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/40918221.png" alt="">
-                </div>
-                <div>
-                    <img src="img/76573148.png" alt="">
-                </div>
-                <div>
-                    <img src="img/61163417.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/91247741.jpg" alt="">
+            <div id="owl_1">
+                <div class="owl-carousel">
+                    <div>
+                        <img src="img/18647911.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/40918221.png" alt="">
+                    </div>
+                    <div>
+                        <img src="img/76573148.png" alt="">
+                    </div>
+                    <div>
+                        <img src="img/61163417.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/91247741.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/18647911.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/40918221.png" alt="">
+                    </div>
+                    <div>
+                        <img src="img/76573148.png" alt="">
+                    </div>
+                    <div>
+                        <img src="img/61163417.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/91247741.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,9 +138,13 @@
 <script src="libs/owl.carousel/owl.carousel.min.js"></script>
 <script src="js/common.js"></script>
 <script>
-    $('.owl-carousel').owlCarousel({
+    $('#owl_1 .owl-carousel').owlCarousel({
         items: 5,
-        margin: 12
+        margin: 12,
+        loop: true,
+        dots: false,
+        nav: true,
+        autoWidth: true
     });
 </script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
