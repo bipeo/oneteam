@@ -78,6 +78,18 @@ input[type=submit] {
 }
 
 @font-face {
+    font-family: 'robotolight_italic';
+    src: url('fonts/roboto-lightitalic/roboto-lightitalic-webfont.eot');
+    src: url('fonts/roboto-lightitalic/roboto-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-lightitalic/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/roboto-lightitalic/roboto-lightitalic-webfont.woff') format('woff'),
+         url('fonts/roboto-lightitalic/roboto-lightitalic-webfont.ttf') format('truetype'),
+         url('fonts/roboto-lightitalic/roboto-lightitalic-webfont.svg#robotolight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'lobster_1.4regular';
     src: url('fonts/lobster_regular/lobster-webfont.eot');
     src: url('fonts/lobster_regular/lobster-webfont.eot?#iefix') format('embedded-opentype'),
@@ -175,6 +187,9 @@ a {
     text-decoration: underline;
 }
 
+i {font-family: 'robotolight_italic';}
+strong {font-family: 'robotobold';}
+
 .wrapper {
     margin: 0 auto;
     max-width: 1920px;
@@ -182,6 +197,12 @@ a {
 
 .header {
     background: url(img/bg_header.jpg) no-repeat center top;
+    height: 703px;
+    position: relative;
+}
+
+.box_1 {
+    padding: 24px 0 0 88px;
 }
 
 .lang a {
@@ -195,13 +216,14 @@ a {
 .rus {
     background: url(img/rus.png) no-repeat left center;
     height: 13px;
-    padding: 0 0 0 16px;
+    padding: 0 0 0 19px;
 }
 
 .eng {
     background: url(img/eng.png) no-repeat left center;
     height: 13px;
-    padding: 0 0 0 16px;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 20px;
 }
 
 .mail a {
@@ -212,6 +234,7 @@ a {
 }
 
 .phone {
+    padding: 43px 40px 0 0;
     text-align: right;
 }
 
@@ -226,7 +249,171 @@ a {
     background: url(img/logo.png) no-repeat;
     display: block;
     height: 199px;
+    left: 50%;
+    margin-left: -173px;
     padding: 140px 0 0 0;
+    position: absolute;
     text-align: center;
+    text-decoration: none;
+    top: 0;
     width: 345px;
+}
+
+.lang {
+    margin: 0 0 15px 0;
+}
+
+.btn {
+    display: block;
+    margin: 4px 9px 0 0;
+}
+
+.menu_main {
+    background: url(img/menu_bg.png) no-repeat;
+    height: 210px;
+    width: 1218px;
+}
+
+.menu {
+    overflow: hidden;
+    padding: 17px 0 0 78px;
+}
+
+.menu > li {
+    float: left;
+    font-family: 'robotothin';
+    position: relative;
+}
+
+.menu > li + li {
+    margin-left: 30px;
+}
+
+.menu > li + li:before {
+    background-color: #ffffff;
+    border-radius: 50%;
+    content: "";
+    height: 6px;
+    left: -16px;
+    position: absolute;
+    top: 7px;
+    width: 6px;
+}
+
+.menu > li a {
+    color: #ffffff;
+    display: block;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.box_2 {
+    height: 125px;
+}
+
+.search {
+    margin: 13px 40px 0 0;
+    position: relative;
+}
+
+.search input[type=text] {
+    background: #ffffff;
+    border-radius: 10px;
+    color: #6c6c6c;
+    font-family: 'robotolight_italic';
+    font-size: 14px;
+    height: 25px;
+    padding: 0 19px;
+    width: 351px;
+}
+
+.search input[type=text]::-webkit-input-placeholder {color: #6c6c6c;}
+.search input[type=text]::-moz-placeholder          {color: #6c6c6c; opacity: 1;}/* Firefox 19+ */
+.search input[type=text]:-moz-placeholder           {color: #6c6c6c; opacity: 1;}/* Firefox 18- */
+.search input[type=text]:-ms-input-placeholder      {color: #6c6c6c;}
+
+.search input[type=image] {
+    cursor: pointer;
+    position: absolute;
+    right: 11px;
+    top: 4px;
+}
+.cats {
+    clear: both;
+    height: 505px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cats_1, .cats_2 {
+    color: #ffffff;
+    font-family: 'rupster_script_freeregular';
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0.3px 2px 2px rgba(0, 0, 0, 0.75);  
+    width: 253px;
+    z-index: 10;
+}
+
+.cats_1 {
+    background: url(img/cats_1.png) no-repeat;
+    height: 294px;
+    margin: 26px 0 0 42px;
+    padding: 211px 0 0 23px;
+}
+
+.cats_2 {
+    background: url(img/cats_2.png) no-repeat; 
+    height: 259px;
+    margin: 60px 1px 0 0;
+    padding: 177px 0 0 0;
+}
+
+.cats_main {
+    left: 205px;
+    position: absolute;
+    top: 113px;
+    z-index: 5;
+}
+
+.about_us {
+    background: url(img/about_img.png) no-repeat left top;
+    min-height: 334px;
+    padding: 0 0 0 450px;
+}
+
+.content {
+    font-family: 'robotothin';
+    clear: both;
+}
+
+.title_1 {
+    font-family: 'robotothin';
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.red {
+    color: #a71850;
+    font-size: 18px;
+}
+
+.good_day {
+    position: relative;
+}
+
+.good_day:after, .good_day:before {
+    content: "";
+    height: 19px;
+    width: 17px;
+}
+
+.good_day:after {
+    background: url(img/icon-1.png) no-repeat;
+}
+
+.good_day:before {
+    background: url(img/icon-2.png) no-repeat;
 }
