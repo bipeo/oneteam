@@ -46,7 +46,7 @@
                 <input type="text" placeholder="Поиск по сайту......">
                 <input type="image" src="img/search_ico.png">
             </div>
-            <div class="cats clearfix center">
+            <div class="cats center">
                 <div class="cats_1 left">
                     British
                 </div>
@@ -59,11 +59,20 @@
     </header>
     <div class="center content">
         <div class="about_us">
-            <h2 class="title_1 good_day">ДОБРЫЙ ДЕНЬ!!!</h2>
-            <p>Меня зовут Елена. Я являюсь владелицей 
-            профессионального питомника 
-            британских и шотландских кошек.</p>
-            <p class="red">Моя профессия зооинженер</p>
+            <div class="wrap_circle left">
+                <div id="circle" class="my_photo">
+                    <img src="img/10%D1%8515--212.png" alt="">
+                </div>
+                <img class="arrow_1" src="img/arrow_1.png" alt="">
+                <img class="cats_5" src="img/cats_5.png" alt="">
+            </div>
+            <div class="left about_1">
+                <h2 class="title_1 good_day">ДОБРЫЙ ДЕНЬ!!!</h2>
+                <p>Меня зовут Елена. Я являюсь владелицей 
+                профессионального питомника 
+                британских и шотландских кошек.</p>
+                <p class="red">Моя профессия зооинженер</p>
+            </div>
         </div>
     </div>
     <div class="box_3">
@@ -175,6 +184,7 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
 <script src="libs/owl.carousel/owl.carousel.min.js"></script>
+<script src="libs/jquery-circle-progress-master/circle-progress.js"></script>
 <script src="js/common.js"></script>
 <script>
     $('#owl_1 .owl-carousel').owlCarousel({
@@ -189,7 +199,7 @@
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
-//		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
+		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 </body>
