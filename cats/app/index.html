@@ -89,6 +89,7 @@
         <div class="center">
             <h2 class="title_1 good_day right">ВАЖНАЯ ИНФОРМАЦИЯ!</h2>
             <p class="p_1">При покупке котенка питомник оставляет за собой право отказать в продаже котенка на любой стадии переговоров. Если питомник отказывает покупателю в продаже, то ранее внесенный  депозит возвращается покупателю в полном объеме. Котенок считается зарезервированным, только после внесения депозита 50% от полной стоимости котенка, который не возвращается  в случае отказа покупателя от котенка, он считается компенсацией за содержание, уход за котенком и за упущенные возможности по его продаже. Котенок отправляется покупателю только после полной его оплаты. Доставка не входит в стоимость и оплачивается отдельно покупателем.</p>
+            <img class="status_img" src="img/status.png" alt="">
             <ul class="status">
                 <li>статус  <span class="green">"свободен"</span> означает, что котенок на данный момент свободен для продажи;</li>
                 <li>статус <span class="color_1">"заказан"</span> означает, что в данный момент относительно котенка ведутся переговоры и он временно не предлагается к продаже;</li>
@@ -96,6 +97,21 @@
                 <li>статус <span class="color_3">"резерв"</span> означает, что за данного котенка внесен задаток и котёнок снят с продажи;</li>
                 <li>статус <span class="color_4">"продан"</span> означает, что данный котенок полностью оплачен.</li>
             </ul>
+            <div class="wrap_circle_1">
+                <div id="circle_1">
+                    <img src="img/cats_6.png" alt="">
+                </div>
+            </div>
+            <div class="wrap_circle_2">
+                <div id="circle_2">
+                    <img src="img/cats_7.png" alt="">
+                </div>
+            </div>
+            <div class="wrap_circle_3">
+                <div id="circle_3">
+                    <img src="img/cats_8.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
     <div class="diplom">
@@ -195,11 +211,47 @@
         nav: true,
         autoWidth: true
     });
+    $('#circle').circleProgress({
+        value: 0.45,
+        size: 275,
+        fill: {
+            color: "#a71850"
+        },
+        emptyFill: "#a87880",
+        thickness: 9
+    });
+    $('#circle_1').circleProgress({
+        value: 0.45,
+        size: 339,
+        fill: {
+            color: "#a71850"
+        },
+        emptyFill: "#a87880",
+        thickness: 9
+    });
+    $('#circle_2').circleProgress({
+        value: 0.45,
+        size: 226,
+        fill: {
+            color: "#a71850"
+        },
+        emptyFill: "#a87880",
+        thickness: 9
+    });
+    $('#circle_3').circleProgress({
+        value: 0.45,
+        size: 295,
+        fill: {
+            color: "#a71850"
+        },
+        emptyFill: "#a87880",
+        thickness: 9
+    });
 </script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
+//		$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 </body>
