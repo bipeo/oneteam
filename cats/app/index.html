@@ -156,6 +156,10 @@
     <footer class="footer">
         <nav class="footer_menu">
             <div class="footer_btn left">
+                <div class="soc_btn_pos">
+                    <a class="" href="#" class="vk_transp"></a>
+                    <a class="" href="#" class="tw_transp"></a>
+                </div>
                 <div class="soc_btn left">
                     <a href="#" class="vk"></a>
                     <a href="#" class="tw"></a>
@@ -203,14 +207,17 @@
 <script src="libs/jquery-circle-progress-master/circle-progress.js"></script>
 <script src="js/common.js"></script>
 <script>
-    $('#owl_1 .owl-carousel').owlCarousel({
-        items: 5,
-        margin: 12,
-        loop: true,
-        dots: false,
-        nav: true,
-        autoWidth: true
-    });
+    setTimeout(function() {
+        $('#owl_1 .owl-carousel').owlCarousel({
+            items: 5,
+            margin: 12,
+            loop: true,
+            dots: false,
+            nav: true,
+            autoWidth: true
+        });
+    }, 2000);
+    
     $('#circle').circleProgress({
         value: 0.45,
         size: 275,
