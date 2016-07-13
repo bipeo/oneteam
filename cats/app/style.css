@@ -197,11 +197,21 @@ strong {font-family: 'robotobold';}
 }
 
 .header {
-    background: url(img/bg_header.jpg) no-repeat center top;
+    background: url(img/bg_header.png) no-repeat center top;
     height: 703px;
     position: relative;
 }
-
+.header .inner {
+/*    top:0px;
+    right:-174px;
+    position: absolute;
+    width:180px;
+    height:175px;*/
+    background: url(img/cat_32.png) no-repeat 1100px 0;
+}
+.header .center {
+    position: relative;
+}
 .box_1 {
     padding: 24px 0 0 88px;
 }
@@ -273,6 +283,7 @@ strong {font-family: 'robotobold';}
     background: url(img/menu_bg.png) no-repeat;
     height: 210px;
     width: 1218px;
+    margin:0 auto;
 }
 
 .menu {
@@ -488,7 +499,7 @@ strong {font-family: 'robotobold';}
 }
 
 .box_4 {
-    background: url(img/box_4_bg.jpg) no-repeat right 29px bottom 3px;
+    background: url(img/box_4_bg.png) no-repeat right 29px bottom 3px;
     padding: 0 0 64px 0;
 }
 
@@ -786,7 +797,7 @@ strong {font-family: 'robotobold';}
 /*========================== footer ==========================*/
 
 .footer {
-    background: url(img/footer_bg.jpg) no-repeat center top;
+    background: url(img/footer_bg.png) no-repeat center top;
     clear: both;
     height: 203px;
     position: relative;

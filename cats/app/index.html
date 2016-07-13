@@ -18,7 +18,10 @@
 <body>
 <div class="wrapper">
     <header class="header">
+        <div class="inner">  
         <div class="center box_2 clearfix">
+                    
+
             <div class="left box_1">
                 <p class="lang">
                     <span class="rus" href="">Rus</span>
@@ -56,6 +59,7 @@
                 </div>
             </div>
         </nav>
+       </div>
     </header>
     <div class="center content">
         <div class="about_us">
@@ -120,34 +124,34 @@
             <div id="owl_1">
                 <div class="owl-carousel">
                     <div>
-                        <img src="img/18647911.jpg" alt="">
+                        <img data-src="img/18647911.jpg" src="img/18647911.jpg" alt="">
                     </div>
                     <div>
-                        <img src="img/40918221.png" alt="">
+                        <img data-src="img/40918221.png"  src="img/40918221.png" alt="">
                     </div>
                     <div>
-                        <img src="img/76573148.png" alt="">
+                        <img data-src="img/76573148.png" src="img/76573148.png" alt="">
                     </div>
                     <div>
-                        <img src="img/61163417.jpg" alt="">
+                        <img data-src="img/61163417.jpg" src="img/61163417.jpg" alt="">
                     </div>
                     <div>
-                        <img src="img/91247741.jpg" alt="">
+                        <img data-src="img/91247741.jpg"  src="img/91247741.jpg" alt="">
                     </div>
                     <div>
-                        <img src="img/18647911.jpg" alt="">
+                        <img data-src="img/18647911.jpg" src="img/18647911.jpg" alt="">
                     </div>
                     <div>
-                        <img src="img/40918221.png" alt="">
+                        <img data-src="img/40918221.png" src="img/40918221.png" alt="">
                     </div>
                     <div>
-                        <img src="img/76573148.png" alt="">
+                        <img data-src="img/76573148.png" src="img/76573148.png" alt="">
                     </div>
                     <div>
-                        <img src="img/61163417.jpg" alt="">
+                        <img data-src="img/61163417.jpg"  src="img/61163417.jpg" alt="">
                     </div>
                     <div>
-                        <img src="img/91247741.jpg" alt="">
+                        <img data-src="img/91247741.jpg" src="img/91247741.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -214,9 +218,10 @@
             loop: true,
             dots: false,
             nav: true,
-            autoWidth: true
+            autoWidth: true,
+            lazyLoad: true,
         });
-    }, 2000);
+    }, 0);
     
     $('#circle').circleProgress({
         value: 0.45,
