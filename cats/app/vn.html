@@ -84,6 +84,53 @@
                     <img src="img/cats_11.png" alt="">
                 </div>
             </div>
+            <h2 class="title_3">ИНФОРМАЦИЯ О РОДИТЕЛЯХ</h2>
+            <div class="wrap_text">
+                <p class="style_2">Папа/Dad: Vulсan Greek Stone</p>
+                <p class="style_3">Британский короткошерстный окрас черный би колор - n 03 (British Shorthair black bicolor)</p>
+                <p class="style_2">Титул/Title:</p>
+                <p class="style_3">Абсолютный Чемпион МФА (Чемпион Мира!!!) / Absolute champion MFA (World champion!!!) <br>
+                    Лучший кот региона, лучший представитель британской породы в России и странах СНГ по ситеме МФА, Топ Кет МФА 3 (2014 г)</p>
+                <p class="style_2 color_5">Мама/Mother: Esmiralda Kind Smile* ru</p>
+                <p class="style_3">Британская короткошерстная окрас голубой - a (British Shorthair color blue)</p>
+                <p class="style_2 color_5">Титул/Title:</p>
+                <p class="style_3">Чемпион МФА / Champion MFA</p>
+            </div>
+            <h2 class="title_3">КОТЯТА</h2>
+            <div id="owl_2" class="slide_content clearfix">
+                <div class="owl-carousel left ico_2" data-slider-id="1">
+                    <div><img src="img/slide_1.jpg" alt=""></div>
+                    <div><img src="img/slide_1.jpg" alt=""></div>
+                    <div><img src="img/slide_1.jpg" alt=""></div>
+                    <div><img src="img/slide_1.jpg" alt=""></div>
+                </div>
+                <p class="cats_link"><a href="#">Родословная</a><a href="#">Награды и достижения</a></p>
+                <strong class="cats_name">Британский короткошерстный котик <br>окрас цинамон с белым ( биколор)</strong>
+                <p class="cats_status">Статус: <span class="status_green">СВОБОДЕН</span></p>
+                <div class="owl-thumbs" data-slider-id="1">
+                    <button class="owl-thumb-item"><img src="img/slide_thumbnail_1.jpg" alt=""></button>
+                    <button class="owl-thumb-item"><img src="img/slide_thumbnail_1.jpg" alt=""></button>
+                    <button class="owl-thumb-item"><img src="img/slide_thumbnail_1.jpg" alt=""></button>
+                    <button class="owl-thumb-item"><img src="img/slide_thumbnail_1.jpg" alt=""></button>
+                </div>
+            </div>
+            <div id="owl_3" class="slide_content clearfix">
+                <div class="owl-carousel left ico_2" data-slider-id="1">
+                    <div><img src="img/slide_2.jpg" alt=""></div>
+                    <div><img src="img/slide_2.jpg" alt=""></div>
+                    <div><img src="img/slide_2.jpg" alt=""></div>
+                    <div><img src="img/slide_2.jpg" alt=""></div>
+                </div>
+                <p class="cats_link"><a href="#">Родословная</a><a href="#">Награды и достижения</a></p>
+                <strong class="cats_name">Британский короткошерстный котик <br>окрас цинамон с белым ( биколор)</strong>
+                <p class="cats_status">Статус: <span class="status_green">СВОБОДЕН</span></p>
+                <div class="owl-thumbs" data-slider-id="1">
+                    <button class="owl-thumb-item"><img src="img/slide_thumbnail_2.jpg" alt=""></button>
+                    <button class="owl-thumb-item"><img src="img/slide_thumbnail_2.jpg" alt=""></button>
+                    <button class="owl-thumb-item"><img src="img/slide_thumbnail_2.jpg" alt=""></button>
+                    <button class="owl-thumb-item"><img src="img/slide_thumbnail_2.jpg" alt=""></button>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -134,22 +181,22 @@
 <![endif]-->
 <script src="libs/jquery-circle-progress-master/circle-progress.js"></script>
 <script src="libs/owl.carousel/owl.carousel.min.js"></script>
+<script src="libs/owl.carousel/owl.carousel2.thumbs.min.js"></script>
 <script src="js/common.js"></script>
 <script>
-//    $('#owl_1 .owl-carousel').owlCarousel({
-//        items: 5,
-//        margin: 12,
-//        loop: true,
-//        dots: false,
-//        nav: true,
-//        autoWidth: true
-//    });
+    $('#owl_2 .owl-carousel, #owl_3 .owl-carousel').owlCarousel({
+        thumbs: true,
+        thumbsPrerendered: true,
+        items: 1,
+        thumbContainerClass: 'owl-thumbs',
+        thumbItemClass: 'owl-thumb-item'
+    });
     
 </script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">
 	$(function(){
-//		$.pixlayout({clip: true, src: "maket2.jpg", show:true, center:true, top:0, left:0, pervious: false});
+		$.pixlayout({clip: true, src: "maket2.jpg", show:true, center:true, top:0, left:0, pervious: false});
 }); 
 </script>
 </body>

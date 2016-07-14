@@ -189,7 +189,7 @@ a {
 }
 
 i {font-family: 'robotolight_italic';}
-strong {font-family: 'robotobold';}
+strong {font-family: 'robotobold'; font-weight: normal;}
 
 .wrapper {
     margin: 0 auto;
@@ -636,6 +636,7 @@ strong {font-family: 'robotobold';}
 .cats_4 {
     background: url(img/cats_4.png) no-repeat;
     height: 607px;
+    left: -22px;
     position: absolute;
     width: 253px;
 }
@@ -764,6 +765,22 @@ strong {font-family: 'robotobold';}
     z-index: 1;
 }
 
+.wrap_circle_4 {
+    margin: 0 0 54px 236px;
+    position: relative;
+}
+
+.wrap_circle_4:after {
+    background: url(img/arrow_2.png) no-repeat;
+    content: "";
+    height: 50px;
+    position: absolute;
+    right: 348px;
+    top: -4px;
+    width: 46px;
+    z-index: 10;
+}
+
 .wrap_circle_2 {
     position: absolute;
     right: -77px;
@@ -781,6 +798,7 @@ strong {font-family: 'robotobold';}
 .breadcrumbs {
     border-bottom: 1px solid #c5c8d4;
     border-top: 1px solid #c5c8d4;
+    margin: 0 0 39px 0;
     overflow: hidden;
     padding: 0 0 0 15px;
 }
@@ -807,24 +825,198 @@ strong {font-family: 'robotobold';}
 }
 
 .wrap_content {
+    padding: 1px 0 0 17px;
     position: relative;
+}
+
+.wrap_circle_5 {
+    position: absolute;
+    right: 180px;
+    top: 190px;
+}
+
+.wrap_circle_5:after {
+    background: url(img/ico_1.png) no-repeat;
+    bottom: -17px;
+    content: "";
+    height: 52px;
+    left: -1px;
+    position: absolute;
+    width: 46px;
 }
 
 .title_2 {
     font-size: 25px;
 }
 
+.title_2.good_day {
+    padding-left: 0;
+}
+
 .title_2.good_day:after {
     display: none;
+}
+
+.wrap_content .title_2 {
+    margin: 0 0 37px 0;
 }
 
 .text_1 {
     color: #a71850;
     font-size: 18px;
+    margin: 0 0 12px 0;
 }
 
 .text_2 {
     font-size: 13px;
+}
+
+.title_3 {
+    border-bottom: 1px solid #a71850;
+    border-top: 1px solid #a71850;
+    color: #a71850;
+    display: inline-block;
+    font-family: 'robotothin';
+    font-size: 25px;
+    padding: 4px 19px 5px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.title_3:before {
+    background: url(img/title_3_top.png) no-repeat;
+    content: "";
+    height: 22px;
+    left: 3px;
+    position: absolute;
+    top: -23px;
+    width: 35px;
+}
+
+.title_3:after {
+    background: url(img/title_3_bottom.png) no-repeat;
+    bottom: -25px;
+    content: "";
+    height: 24px;
+    left: 3px;
+    position: absolute;
+    width: 35px;
+}
+
+.style_2 {
+    color: #1862a7;
+    font-family: 'lobster_1.4regular';
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 0 1px 0;
+}
+
+.style_3 {
+    line-height: 18px;
+    margin: 0 0 17px 0;
+}
+
+.color_5 {
+    color: #a71850;
+}
+
+.wrap_text {
+    margin: 67px 0 65px 0;
+}
+
+.slide_content {
+    height: 214px;
+    margin: 55px 0 152px 0;
+    position: relative;
+}
+
+.slide_content .owl-carousel img {
+    height: 197px;
+    margin: 8px 0 0 9px;
+    width: 304px;
+}
+
+.slide_content .owl-carousel {
+    background: url(img/border_1.png) no-repeat;
+    height: 214px;
+    margin: 0 32px 0 0;
+    width: 322px;
+}
+
+.slide_content .owl-carousel:before {
+    background: url(img/owl_cats_arrow.png) no-repeat;
+    content: "";
+    height: 55px;
+    position: absolute;
+    right: -123px;
+    top: -10px;
+    width: 119px;
+}
+
+.owl-thumbs {
+    bottom: 3px;
+    overflow: hidden;
+    position: absolute;
+    right: 113px;
+}
+
+.owl-thumb-item {
+    border: 3px solid #a87880;
+    display: block;
+    float: left;
+    height: 60px;
+    padding: 0;
+    width: 87px;
+}
+
+.owl-thumb-item + .owl-thumb-item {
+    margin-left: 5px;
+}
+
+.owl-thumb-item img {
+    display: block;
+    height: 54px;
+    max-width: 86px;
+    position: relative;
+    top: -1px;
+}
+
+.ico_2:after {
+    background: url(img/ico_2.png) no-repeat;
+    bottom: -26px;
+    content: "";
+    height: 60px;
+    position: absolute;
+    right: -19px;
+    width: 84px;
+    z-index: 20;
+}
+
+.cats_name {
+    display: block;
+    font-size: 18px;
+    line-height: 17px;
+    margin: 0 0 18px 0;
+}
+
+.cats_link {
+    font-size: 12px;
+    margin: 0 103px 37px 0;
+    padding: 4px 0 0 0;
+    text-align: right;
+}
+
+.cats_link a {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.cats_status span {
+    text-transform: uppercase;
+}
+
+.status_green {
+    color: #83ad21;
 }
 
 /*========================== footer ==========================*/
