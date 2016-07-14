@@ -202,12 +202,7 @@ strong {font-family: 'robotobold';}
     position: relative;
 }
 .header .inner {
-/*    top:0px;
-    right:-174px;
-    position: absolute;
-    width:180px;
-    height:175px;*/
-    background: url(img/cat_32.png) no-repeat 1100px 0;
+    background: url(img/cat_32_trans.png) no-repeat center 0;
 }
 .header .center {
     position: relative;
@@ -336,7 +331,7 @@ strong {font-family: 'robotobold';}
     font-family: 'robotolight_italic';
     font-size: 14px;
     height: 25px;
-    padding: 0 19px;
+    padding: 0 40px 0px 19px;
     width: 351px;
 }
 
@@ -589,10 +584,17 @@ strong {font-family: 'robotobold';}
 }
 
 #owl_1 {
+    height:229px;
     margin: 57px auto 0;
     position: relative;
     width: 860px;
 }
+/*#owl_1 .owl-carousel.owl-drag .owl-item.cloned.active, #owl_1 .owl-carousel.owl-drag .owl-item.cloned {
+    display:none;
+}
+.owl-carousel.owl-drag .owl-item.active {
+    display:block;
+}*/
 
 #owl_1 .owl-prev {
     background: url(img/owl_left.png) no-repeat;

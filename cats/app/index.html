@@ -11,6 +11,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/sdboxScroll.js"></script>
 	<link rel="stylesheet" href="libs/owl.carousel/owl.carousel.min.css" />
 	<link rel="stylesheet" href="libs/owl.carousel/owl.theme.default.min.css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
@@ -24,7 +25,7 @@
 
             <div class="left box_1">
                 <p class="lang">
-                    <span class="rus" href="">Rus</span>
+                    <span class="rus" >Rus</span>
                     <a class="eng" href="">Eng</a>
                 </p>
                 <p class="mail">
@@ -129,7 +130,7 @@
                     <div>
                         <img data-src="img/40918221.png"  src="img/40918221.png" alt="">
                     </div>
-                    <div>
+                   <div>
                         <img data-src="img/76573148.png" src="img/76573148.png" alt="">
                     </div>
                     <div>
@@ -138,12 +139,14 @@
                     <div>
                         <img data-src="img/91247741.jpg"  src="img/91247741.jpg" alt="">
                     </div>
-                    <div>
+                    
+                     <div>
                         <img data-src="img/18647911.jpg" src="img/18647911.jpg" alt="">
                     </div>
                     <div>
                         <img data-src="img/40918221.png" src="img/40918221.png" alt="">
-                    </div>
+                    </div> 
+                    <!--
                     <div>
                         <img data-src="img/76573148.png" src="img/76573148.png" alt="">
                     </div>
@@ -152,7 +155,7 @@
                     </div>
                     <div>
                         <img data-src="img/91247741.jpg" src="img/91247741.jpg" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -161,8 +164,8 @@
         <nav class="footer_menu">
             <div class="footer_btn left">
                 <div class="soc_btn_pos">
-                    <a class="" href="#" class="vk_transp"></a>
-                    <a class="" href="#" class="tw_transp"></a>
+                    <a  href="#" class="vk_transp"></a>
+                    <a  href="#" class="tw_transp"></a>
                 </div>
                 <div class="soc_btn left">
                     <a href="#" class="vk"></a>
@@ -211,17 +214,27 @@
 <script src="libs/jquery-circle-progress-master/circle-progress.js"></script>
 <script src="js/common.js"></script>
 <script>
+
+
+    $("document").ready(function(){
+        
+        
     setTimeout(function() {
+        
         $('#owl_1 .owl-carousel').owlCarousel({
-            items: 5,
+        //    items: 0,
             margin: 12,
-            loop: true,
+            loop: false, //#if true, will be clone bug!
             dots: false,
             nav: true,
             autoWidth: true,
-            lazyLoad: true,
+            lazyLoad: true
         });
-    }, 0);
+    }, 1000);
+        
+  // initialize owl carousel
+    });
+
     
     $('#circle').circleProgress({
         value: 0.45,
