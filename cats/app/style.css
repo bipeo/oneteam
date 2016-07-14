@@ -1048,34 +1048,53 @@ strong {font-family: 'robotobold'; font-weight: normal;}
 }
 
 .pagination {
+    color: #656565;
+    display: table;
     font-family: 'open_sanssemibold';
     font-size: 14px;
+    margin:-26px auto 117px auto;
 }
 
 .pagination ul {
+    margin: -3px 28px 0 19px;
     overflow: hidden;
 }
 
 .pagination li {
     float: left;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 26px;
+}
+
+.pagination li.active {
+    border: 2px solid #a87880;
 }
 
 .pagination li a {
     display: block;
     font-family: 'robotobold';
     font-size: 14px;
+    text-decoration: none;
 }
 
 .prev, .next {
     color: #a87880;
+    display: inline-block;
 }
 
 .prev {
-    background: url(img/prev_pag.png) no-repeat;
+    background: url(img/prev_pag.png) no-repeat left center;
+    margin-right: 25px;
+    padding-left: 20px;
 }
 
 .next {
-    background: url(img/next_pag.png) no-repeat;
+    background: url(img/next_pag.png) no-repeat right center;
+    padding-right: 35px;
 }
 
 /*========================== footer ==========================*/
