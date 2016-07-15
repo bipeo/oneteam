@@ -691,11 +691,12 @@ strong {font-family: 'robotobold'; font-weight: normal;}
 }
 
 .content_main {
+    background: url(img/bg_1.jpg) no-repeat 100px 166px, url(img/bg_1.jpg) no-repeat 192px 947px, url(img/bg_1.jpg) no-repeat 192px 1313px, url(img/bg_1.jpg) no-repeat 192px 1668px;
     clear: both;
-    margin-left: 363px;
+    padding-left: 309px;
     margin-top: 346px;
     position: relative;
-    width: 852px;
+/*    width: 852px;*/
     z-index: 11;
 }
 
