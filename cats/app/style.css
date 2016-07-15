@@ -725,7 +725,7 @@ strong {font-family: 'robotobold'; font-weight: normal;}
 }
 
 .menu_sidebar_wrap {
-    background: url(img/cats_4_1.jpg) no-repeat bottom center, url(img/cats_4_bg.png) repeat-y center top;
+    background: url(img/cats_4_1b.jpg) no-repeat bottom center, url(img/cats_4_bg.png) repeat-y center top;
     left: 7px;
     opacity: 0;
     padding: 80px 0 30px 0;
@@ -737,11 +737,19 @@ strong {font-family: 'robotobold'; font-weight: normal;}
     z-index: 13;
     width: 210px;
 }
-
+.menu_sidebar_wrap .arrow {
+    position: relative;
+    top:71px;
+    margin:0 auto;
+    width:65px;
+    height:41px;
+    background: url(img/arrow_324.png) no-repeat;
+    
+}
 .menu_sidebar_wrap_3 .menu_sidebar_wrap {
     left: auto;
     opacity: 0;
-    padding-top: 115px;
+/*    padding-top: 115px;*/
     position: relative;
     right: -16px;
     top: -86px;
@@ -752,11 +760,17 @@ strong {font-family: 'robotobold'; font-weight: normal;}
     height: 321px;
     overflow: hidden;    
 }
+.menu_sidebar_wrap_2.active .menu_sidebar_wrap {
+    opacity:1 !important;
+}
+.menu_sidebar_wrap_2.active .cats_1 {
+    height: auto !important;
+}
 
 .menu_sidebar {
     font-family: 'lobster_1.4regular';
     margin: 0 0 0 20px;
-    padding: 0 0 80px 0;
+    padding: 10px 0 5px 0;
     width: 180px;
 }
 
