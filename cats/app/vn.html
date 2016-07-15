@@ -37,31 +37,52 @@
             </p>
         </div>
         <nav class="menu_main clearfix">
-            <ul class="menu left">
+            <ul class="menu left ml_1">
                 <li><a href="">ГЛАВНАЯ</a></li>
                 <li><a href="">ГАЛЕРЕЯ</a></li>
                 <li><a href="">ВИДЕО</a></li>
                 <li><a href="">КОНТАКТЫ</a></li>
             </ul>
-            <div class="search right">
+            <div class="search right mr_1">
                 <input type="text" placeholder="Поиск по сайту......">
                 <input type="image" src="img/search_ico.png">
             </div>
             <div class="cats style_1 center">
-                <div class="cats_1 pos_1 left">
-                    British
-                    <ul class="menu_sidebar">
-                        <li><a href="">Британские котята</a></li>
-                        <li><a href="">Британские кошки</a></li>
-                        <li><a href="">Британские коты</a></li>
-                        <li><a href="">Наши успехи</a></li>
-                        <li><a href="">Условия содержания наших животных</a></li>
-                        <li><a href="">Гостевая книга</a></li>
-                    </ul>
+                <div class="menu_sidebar_wrap_2 pos_1">
+                    <div class="cats_1">
+                        <img class="cats_img" src="img/cats_1.png" alt="">
+                        <span class="cats_descript">British</span>
+                        <div class="menu_sidebar_wrap">
+                            <ul class="menu_sidebar">
+                                <li><a href="">Британские котята</a></li>
+                                <li><a href="">Британские кошки</a></li>
+                                <li><a href="">Британские коты</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Условия содержания наших животных</a></li>
+                                <li><a href="">Гостевая книга</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <img class="cats_main" src="img/cats_main.png" alt="">
-                <div class="cats_2 right">
-                    Scottish
+                <img class="cats_main pos_2" src="img/cats_main.png" alt="">
+                <div class="pos_4">
+                    <div class="menu_sidebar_wrap_3 right">
+                        <div class="cats_2 pos_3">
+                            Scottish
+                        </div>
+                        <div class="menu_sidebar_wrap">
+                            <ul class="menu_sidebar">
+                                <li><a href="">Британские котята</a></li>
+                                <li><a href="">Британские кошки</a></li>
+                                <li><a href="">Британские коты</a></li>
+                                <li><a href="">Гостевая книга</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -225,6 +246,22 @@
         items: 1,
         thumbContainerClass: 'owl-thumbs',
         thumbItemClass: 'owl-thumb-item'
+    });
+    
+//    $('.menu_sidebar_wrap_2').hover(function(){
+//        $(this).children('.menu_sidebar_wrap').css('opacity', '1');
+//    },
+//                                    function() {
+//        $(this).children('.menu_sidebar_wrap').css('opacity', '0');
+//    });
+//
+    $('.menu_sidebar_wrap_3').hover(function(){
+        $(this).css('height', 'auto');
+        $(this).children('.menu_sidebar_wrap').css({'opacity':'1'});
+    },
+                                    function() {
+        $(this).css('height', '321px');
+        $(this).children('.menu_sidebar_wrap').css({'opacity':'0'});
     });
     
 </script>

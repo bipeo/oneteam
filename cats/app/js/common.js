@@ -18,12 +18,6 @@ $('#circle_5').circleProgress({
     thickness: 9
 });
 
-$('.cats_1').hover(function(){
-    $(this).addClass('cats_4');
-},
-function() {
-    $(this).removeClass('cats_4');
-});
 
 $(function(){
         
