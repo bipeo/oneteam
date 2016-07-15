@@ -650,9 +650,6 @@ strong {font-family: 'robotobold'; font-weight: normal;}
 .cats_4 {
     background: url(img/cats_4.png) no-repeat;
     height: 607px;
-    left: -22px;
-    position: absolute;
-    width: 253px;
 }
 
 .h_a {
@@ -664,6 +661,7 @@ strong {font-family: 'robotobold'; font-weight: normal;}
 }
 
 .menu_sidebar {
+    display: none;
     margin: 49px 0 0 20px;
     width: 180px;
 }
@@ -690,14 +688,23 @@ strong {font-family: 'robotobold'; font-weight: normal;}
     background: none;
 }
 
+.cats_4 .menu_sidebar {
+    display: block;
+}
+
 .content_main {
     background: url(img/bg_1.jpg) no-repeat 100px 166px, url(img/bg_1.jpg) no-repeat 192px 947px, url(img/bg_1.jpg) no-repeat 192px 1313px, url(img/bg_1.jpg) no-repeat 192px 1668px;
     clear: both;
     padding-left: 309px;
     margin-top: 346px;
     position: relative;
-/*    width: 852px;*/
     z-index: 11;
+}
+
+.pos_1 {
+    left: -22px;
+    position: absolute;
+    width: 253px;
 }
 
 #circle {
@@ -1074,7 +1081,7 @@ strong {font-family: 'robotobold'; font-weight: normal;}
     width: 26px;
 }
 
-.pagination li.active {
+.pagination li.active, .pagination li:hover {
     border: 2px solid #a87880;
 }
 
