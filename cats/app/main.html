@@ -40,17 +40,61 @@
             </p>
         </div>
         <nav class="menu_main clearfix">
-            <ul class="menu left">
+            <ul class="menu left ml_1">
                 <li><a href="">ГЛАВНАЯ</a></li>
                 <li><a href="">ГАЛЕРЕЯ</a></li>
                 <li><a href="">ВИДЕО</a></li>
                 <li><a href="">КОНТАКТЫ</a></li>
             </ul>
-            <div class="search right">
+            <div class="search right mr_1">
                 <input type="text" placeholder="Поиск по сайту......">
                 <input type="image" src="img/search_ico.png">
             </div>
-            <div class="cats center">
+              <div class="cats style_1 center">
+                <div class="menu_sidebar_wrap_2 pos_1 " >
+                    <div class="cats_1" >
+                        <img class="cats_img" src="img/cats_1.png" alt="">
+                        <span class="cats_descript">British</span>
+                        <div class="menu_sidebar_wrap" >
+                            <ul class="menu_sidebar">
+                                <li><a href="">Британские котята</a></li>
+                                <li><a href="">Британские кошки</a></li>
+                                <li><a href="">Британские коты</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Условия содержания наших животных</a></li>
+                                <li><a href="">Гостевая книга</a></li>
+                            </ul>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+                <img class="cats_main pos_2" src="img/cats_main.png" alt="">
+                  <div class="pos_4">
+                    <div class="menu_sidebar_wrap_3 right">
+                        <div class="cats_2 pos_3">
+                            Scottish
+                        </div>
+                        <div class="menu_sidebar_wrap">
+                            <ul class="menu_sidebar">
+                                <li><a href="">Британские котята</a></li>
+                                <li><a href="">Британские кошки</a></li>
+                                <li><a href="">Гостевая книга</a></li>
+                                <li><a href="">Британские коты</a></li>
+                                <li><a href="">Британские кошки</a></li>
+                                <li><a href="">Гостевая книга</a></li>
+                                <li><a href="">Британские коты</a></li>
+                                <li><a href="">Гостевая книга</a></li>
+                            </ul>
+                               <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            <div class="cats center">
                 <div class="cats_1 left">
                     British
                 </div>
@@ -58,7 +102,7 @@
                 <div class="cats_2 right">
                     Scottish
                 </div>
-            </div>
+            </div>-->
         </nav>
        </div>
     </header>
@@ -235,7 +279,7 @@
 
     
     $('#circle').circleProgress({
-        value: 0.45,
+        value: 0.5,
         size: 275,
         fill: {
             color: "#a71850"
@@ -244,7 +288,7 @@
         thickness: 9
     });
     $('#circle_1').circleProgress({
-        value: 0.45,
+        value: 0.565,
         size: 339,
         fill: {
             color: "#a71850"
@@ -253,7 +297,7 @@
         thickness: 9
     });
     $('#circle_2').circleProgress({
-        value: 0.45,
+        value: 0.5,
         size: 226,
         fill: {
             color: "#a71850"
@@ -270,6 +314,16 @@
         emptyFill: "#a87880",
         thickness: 9
     });
+    
+      $('.menu_sidebar_wrap_3').hover(function(){
+        $(this).css('height', 'auto');
+        $(this).children('.menu_sidebar_wrap').css({'opacity':'1'});
+    },
+                                    function() {
+        $(this).css('height', '321px');
+        $(this).children('.menu_sidebar_wrap').css({'opacity':'0'});
+    });
+    
 </script>
 <script type="text/javascript" src="libs/jquery.pixlayout.0.9.7.js"></script>
 <script type="text/javascript">

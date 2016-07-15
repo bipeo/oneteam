@@ -18,11 +18,12 @@
 </head>
 <body>
 <div class="wrapper">
-    <header class="header h_a">
+    <header class="header ">
+        <div class="inner">
         <div class="center box_2 clearfix">
             <div class="left box_1">
                 <p class="lang">
-                    <span class="rus" href="">Rus</span>
+                    <span class="rus" >Rus</span>
                     <a class="eng" href="">Eng</a>
                 </p>
                 <p class="mail">
@@ -81,6 +82,10 @@
                                 <li><a href="">Британские кошки</a></li>
                                 <li><a href="">Гостевая книга</a></li>
                                 <li><a href="">Британские коты</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Наши успехи</a></li>
+                                <li><a href="">Условия содержания наших животных</a></li>
                                 <li><a href="">Гостевая книга</a></li>
                             </ul>
                                <div class="arrow"></div>
@@ -89,6 +94,7 @@
                 </div>
             </div>
         </nav>
+            </div>
     </header>
     <main class="content_main center">
         <ul class="breadcrumbs">
@@ -243,6 +249,27 @@
 <script src="libs/owl.carousel/owl.carousel2.thumbs.min.js"></script>
 <script src="js/common.js"></script>
 <script>
+    $('#circle_4').circleProgress({
+    value: 0.52,
+    size: 246,
+    fill: {
+        color: "#a71850"
+    },
+    emptyFill: "#a87880",
+    thickness: 9
+});
+
+$('#circle_5').circleProgress({
+    value: 0.5,
+    size: 218,
+    fill: {
+        color: "#a71850"
+    },
+    emptyFill: "#a87880",
+    thickness: 9
+});
+
+
     $('#owl_2 .owl-carousel, #owl_3 .owl-carousel, #owl_4 .owl-carousel').owlCarousel({
         thumbs: true,
         thumbsPrerendered: true,

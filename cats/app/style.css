@@ -566,6 +566,8 @@ strong {font-family: 'robotobold'; font-weight: normal;}
 .my_photo canvas {
     position: absolute;
     z-index: 3;
+    -webkit-transform: rotate(320deg);
+    transform: rotate(320deg)
 }
 
 .box_4 .center {
@@ -804,7 +806,7 @@ strong {font-family: 'robotobold'; font-weight: normal;}
     background: url(img/bg_1.png) no-repeat 100px 166px, url(img/bg_2.png) no-repeat 192px 947px, url(img/bg_2.png) no-repeat 192px 1313px, url(img/bg_2.png) no-repeat 192px 1668px;
     clear: both;
     padding-left: 309px;
-    margin-top: 346px;
+/*    margin-top: 346px;*/
     position: relative;
     z-index: 7;
 }
@@ -852,6 +854,10 @@ strong {font-family: 'robotobold'; font-weight: normal;}
     position: relative;
     width: 339px;
 }
+#circle_1 canvas {
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg)
+}
 
 #circle_1 img, #circle_2 img, #circle_3 img, #circle_4 img, #circle_5 img {
     left: 0;
@@ -863,11 +869,20 @@ strong {font-family: 'robotobold'; font-weight: normal;}
     position: relative;
     z-index: 20;
 }
+#circle_3 canvas {
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg)
+}
 
 #circle_2 {
     height: 226px;
     position: relative;
     width: 226px;
+}
+#circle_2 canvas {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+   
 }
 
 #circle_3 {
@@ -890,13 +905,21 @@ strong {font-family: 'robotobold'; font-weight: normal;}
     right: 8px;
     top: 119px;
     width: 34px;
-    z-index: 25;
+    z-index: 19;
 }
 
 #circle_5 {
     height: 218px;
     position: relative;
     width: 218px;
+}
+#circle_4 canvas  {
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg);
+}
+#circle_5 canvas  {
+    -webkit-transform: rotate(-95deg);
+    transform: rotate(-95deg);
 }
 
 .wrap_circle_1 {
