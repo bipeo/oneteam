@@ -474,6 +474,12 @@ strong {font-family: 'robotobold'; font-weight: normal;}
     margin: 0 0 55px 0;
 }
 
+.text_3_out {
+    margin:0px auto;
+    padding:0px 80px;
+    
+}
+
 .text_3 {
     background: #fff;
     border: 8px solid #a87880;
@@ -611,7 +617,7 @@ strong {font-family: 'robotobold'; font-weight: normal;}
 .diplom {
     background: #a87880;
     color: #ffffff;
-    padding: 47px 0 111px 0;
+    padding: 47px 80px 111px 80px;
 }
 
 #owl_1 {
@@ -1252,21 +1258,35 @@ strong {font-family: 'robotobold'; font-weight: normal;}
 
 /*========================== footer ==========================*/
 
-.footer {
+.outfoot {
     background: url(img/footer_bg.png) no-repeat center top;
+    padding:0px 80px;
+}
+.outfoot.m_01 {
+    padding:0px;
+}
+
+.footer {
     clear: both;
     height: 203px;
     position: relative;
+    min-width:1218px;
+    margin:0 auto;
+    padding:0px 80px;
+
+        
+
 }
 
 .footer_menu {
     background: url(img/footer_menu_bg.png) no-repeat;
-    left: 50%;
-    margin-left: -609px;
     min-height: 216px;
     position: absolute;
     top: -9px;
-    width: 1218px;
+    max-width:1218px;
+    width:100%;
+    left:50%;
+    transform: translateX(-50%);
 }
 
 .soc_btn {

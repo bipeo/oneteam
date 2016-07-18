@@ -6,6 +6,7 @@
        options = $.extend({ 
        lastScrollLeft : 0,    
        inbox: $('.wrapper'),
+       footer: $('.footer'),
        }, options); 
 
 
