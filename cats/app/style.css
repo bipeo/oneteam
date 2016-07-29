@@ -204,6 +204,7 @@ i {font-family: 'robotolight_italic';}
 strong {font-family: 'robotobold'; font-weight: normal;}
 
 .wrapper {
+/*    min-width:1350px;*/
     margin: 0 auto;
     max-width: 1920px;
 }
@@ -1390,4 +1391,12 @@ a.fb {
 
 .block_count {
     margin: 16px 26px 0;
+}
+
+
+@media only screen and (max-width:1000px) {
+    body {
+/*        transform-origin: 0 0;
+        transform: scale(0.8);*/
+    }
 }
