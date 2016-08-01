@@ -124,7 +124,7 @@ a {
     background: #dffcfc;
     margin: 0 auto;
     max-width: 1920px;
- 
+    min-width:1250px;
   }
 
 .logo {
@@ -666,7 +666,7 @@ select.soflow {
 }
 .osbox .itm.three .paral {
         position: absolute;
-        left:16px;
+        left:12px;
         top:50px;
 	width: 372px;
 	height: 166px;
