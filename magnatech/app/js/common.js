@@ -2,7 +2,12 @@ $(document).ready(function(){
     $("#owl_1").owlCarousel({
         items: 1,
         nav: true,
-        loop: true
+        loop: true,
+        responsive : {
+            640 : {
+                dots: false
+            }
+        }
     });
     $("#owl_2").owlCarousel({
         items: 6,
@@ -88,7 +93,7 @@ $(document).ready(function(){
     
         
      
-        $('body').sdboxScroll();
+//        $('body').sdboxScroll();
         
         
         
