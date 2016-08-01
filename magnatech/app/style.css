@@ -124,14 +124,14 @@ a {
     background: #dffcfc;
     margin: 0 auto;
     max-width: 1920px;
-   
-    
-}
+ 
+  }
 
 .logo {
     float:left;
     display: block;
     margin: 30px 0 19px 25px;
+    font-size:1px;
 }
 
 .logo .vt {
@@ -171,10 +171,10 @@ a {
     background-color:transparent;
 }
 
-.search input[type=text]::-webkit-input-placeholder  {color:#fff;}
-.search input[type=text]::-moz-placeholder             {color: #fff; }
-.search input[type=text]:-moz-placeholder            {color: #fff; }
-.search input[type=text]:-ms-input-placeholder    {color:#fff;}
+.search input[type=text]::-webkit-input-placeholder  {color:#fff; opacity:1;}
+.search input[type=text]::-moz-placeholder             {color: #fff; opacity:1; }
+.search input[type=text]:-moz-placeholder            {color: #fff; opacity:1; }
+.search input[type=text]:-ms-input-placeholder    {color:#fff; opacity:1;}
 
 
 .search input[type=submit], .search .submfad {
@@ -380,7 +380,7 @@ select.soflow {
 .owl_wrap {
     box-shadow: 2px 4px 5px 0.00px rgba(0, 0, 0, 0.2);
     height: 362px;
-    margin: 0 29px 87px 29px;
+    margin: 0 auto 87px auto;
     padding: 9px;
     width: 940px;
 }
@@ -405,7 +405,7 @@ select.soflow {
 
 
 .wrap_carousel_2 .carousel_img img {
-    
+    margin:0 auto;
     width:auto;
 }
 
@@ -427,7 +427,11 @@ select.soflow {
 .owl_out {
      background-color:#d9e1e4;
 }
+.owl_out .h2_owl {
+      margin:0px 0px 75px 0px;
+}
 .owl_out.st-1 {
+    margin-top:95px;
     border-bottom:18px solid #e20c18;
 }
 .owl_out.st-2 {
@@ -436,10 +440,16 @@ select.soflow {
 }
 .wrap_carousel_2 {
      margin: 0 auto;
-     padding: 46px 0 40px 0;
+     padding: 76px 0 90px 0;
      max-width:1020px;
     
    
+}
+.owl_out.st-1 .wrap_carousel_2 {
+   
+}
+.owl_out.st-1  .h2_owl {
+    
 }
 
 
@@ -498,6 +508,24 @@ select.soflow {
     width:294px;
     height:591px;
 }
+.gfilms .itm.st-1 .tit {
+    margin-top:20px;
+}
+.gfilms .itm.st-2 .tit {
+    margin-top:25px;
+}
+.gfilms .itm.st-3 .tit {
+     margin-top:25px;
+}
+.gfilms .itm.st-4 .tit {
+     margin-top:27px;
+}
+.gfilms .itm.st-5 .tit {
+     margin-top:27px;
+}
+.gfilms .itm.st-4 .tit, .gfilms .itm.st-5 .tit {
+    font-size:31.5px;
+} 
 .gfilms .itm.st-2:hover {
      background-position:0px -591px;
 }
@@ -524,10 +552,6 @@ select.soflow {
    background-position:0px -282px;
 }
 
-
-.gfilms .itm.st-4 .tit {
-    font-size:31px;
-}
 .gfilms .itm:last-child {
     margin-right:0px;
 }
@@ -537,8 +561,8 @@ select.soflow {
 .gfilms .itm .tit {
     position: relative;
     z-index: 2;
-    line-height: 1.4em;
-    margin:12px 32px 10px 32px;
+    line-height: 1.3em;
+    margin:16px 28px 10px 28px;
     font-weight: 600;
     font-size:40px;
 }
@@ -574,45 +598,73 @@ select.soflow {
     box-sizing: border-box;
     color:#000926;
     float:left;
-    width:33.3%;
+    min-height:349px;
+    margin-top:52px;
 }
 
 .osbox .itm.one {
+    
+    width:400px;
     border:9px solid #e20c18;
 }
 
 .osbox .itm.one .count {
+   margin:12px 0px 10px 0px; 
    display:block; 
    font-weight: 700; 
    font-size:67px;
    color:#e20c18;
 }
 .osbox .itm.one .tit {
-    margin:0px 0px 30px 0px;
+    line-height: 1.32em;
+    margin:40px 0px 30px 30px;
     font-weight: 600;
     font-size:33px;
+}
+.osbox .itm.one .rmore a {
+    margin-left:30px;
 }
 .osbox .itm.two .tit {
     font-size:79px;
     font-weight: 700; 
+    margin:72px 0px 0px 0px;
+    line-height:.86em;
 }
 .osbox .itm.two {
+         width:385px;
+         margin-left:33px;
          border-bottom:9px solid #e20c18;
-         background: url(img/oscar.png) no-repeat 78px 0;
+         background: url(img/oscar.png) no-repeat 78px 7px;
+}
+
+.osbox .itm.two  .rmore {
+    float:right;
+}
+.osbox .itm.two .rmore a {
+    margin: 11px 0px 30px 0px;
+}
+
+.osbox .itm.two  .rmore a span {
+        margin: 0px 0px 4px 0px;
 }
 .osbox .itm.two .st-1 {
     display:block;
     margin:0px 0px 35px 20px;
 }
+.osbox .itm.three {
+    width: 397px;
+    margin-left:35px;
+}
 .osbox .itm.three .paral {
         position: absolute;
-        left:-0px;
-        top:0px;
-	width: 397px;
+        left:16px;
+        top:50px;
+	width: 372px;
 	height: 166px;
-	-webkit-transform: skew(20deg);
-	-moz-transform: skew(20deg);
-	-o-transform: skew(20deg);
+	-webkit-transform: skew(12deg);
+	-moz-transform: skew(12deg);
+	-o-transform: skew(12deg);
+	transform: skew(12deg);
 	background: #e20c18;
 }
 .osbox .itm.three .hts {
@@ -620,24 +672,28 @@ select.soflow {
 }
 .osbox .itm.three .hts .w1 {
     font-size:30px; 
+    margin:73px 0px 0px 30px;
 }
 .osbox .itm.three .hts .w2 {
    font-size:37px;
+   margin:-8px 0px 0px 34px;
+
 }
 .osbox .itm.three .hts .w3 {
-   font-size:49px; 
+   font-size:49px;
+   margin:-3px 0px 0px 44px;
+   
 }
 .osbox .itm.three .hts .w1, .osbox .itm.three .hts .w2, .osbox .itm.three .hts .w3 {
     font-weight:700;
     display:block;
     color:#fff;
+    line-height: 40px;
 }
 .osbox .itm.three .rmore a  {
-    margin-top:40px;
+     margin:70px 0px 0px 69px;
 }
-.osbox .rmore {
-    
-}
+
 .osbox .rmore a {
     display:inline-block;
     margin:0px 0px 38px 0px;
@@ -648,19 +704,35 @@ select.soflow {
     color:#e20c18;
 }
 .osbox .rmore a span {
-    padding-bottom:3px;
+    padding-bottom:2px;
     margin:0px 0px 4px 0px;
     display:inline-block;
+    line-height: 1.15em;
     border-bottom:1px solid #000926;
 }
 .osbox .rmore a:hover span {
     border-bottom-color: #e20c18;
 }
 
+.pane-cat .h2_owl  {
+    margin: 72px 0px 78px 0px;
+}
+
 .pane-cat .col {
     font-size:18px;
     width:33.3%;
     float:left;
+}
+.pane-cat .col.one {
+    width:390px
+}
+.pane-cat .col.two {
+     margin-left:50px;
+     width:390px;
+}
+.pane-cat .col.three {
+    width:370px;
+    margin-left:50px;
 }
 .pane-cat .col .tit {
     
@@ -681,16 +753,18 @@ select.soflow {
     margin:0px 0px 30px 0px;
 }
 .pane-cat .col ul li {
-    margin:6px 0px 6px 0px;
+    margin:0px 20px 0px 0px;
     font-size:18px;
 }
 .pane-cat .col ul li a {
+    line-height: 1.66em;
     color:#000;
 }
 .pane-cat .col ul li a:hover {
     text-decoration: none;
 }
-.pane-cat .col .ic {
+.pane-cat .col .itm .ic {
+    position: relative;
     width:72px !important;
     margin:0px 23px 0px 0px;
     background-image: url(img/spr_icons.png);
@@ -700,96 +774,100 @@ select.soflow {
 }
 
 .pane-cat .col .itm {
-    margin:0px 0px 30px 0px; 
+    min-height:143px;
+    margin:16px 0px 20px 0px; 
     overflow:hidden;
 }
 
 .pane-cat .col .cont {
     overflow:hidden;
-/*    float:left;*/
 }
-.pane-cat .col .ic.audio {
+.pane-cat .col .itm.audio .ic {
     width: 65px;
     height: 68px;
     background-position: -20px -20px;
 }
 
-.pane-cat .col .ic.avcapture {
+.pane-cat .col .itm.avcapture .ic {
     width: 65px;
     height: 65px;
     background-position: -20px -128px;
 }
 
-.pane-cat .col .ic.business {
+.pane-cat .col .itm.business .ic {
     width: 72px;
     height: 75px;
     background-position: -20px -233px;
 }
 
-.pane-cat .col .ic.cameras {
+.pane-cat .col .itm.cameras .ic {
     width: 65px;
     height: 68px;
+    margin-top:5px;
     background-position: -20px -348px;
 }
 
-.pane-cat .col .ic.controll {
+.pane-cat .col .itm.controll .ic {
     width: 65px;
     height: 68px;
     background-position: -20px -456px;
+
 }
 
-.pane-cat .col .ic.equipment {
+.pane-cat .col .itm.equipment .ic {
     width: 69px;
     height: 75px;
     background-position: -20px -564px;
+    top:-8px;
 }
 
-.pane-cat .col .ic.furniture {
+.pane-cat .col .itm.furniture .ic {
     width: 65px;
     height: 62px;
     background-position: -20px -679px;
 }
 
-.pane-cat .col .ic.materials {
+.pane-cat .col .itm.materials .ic {
     width: 65px;
     height: 68px;
     background-position: -20px -781px;
 }
 
-.pane-cat .col .ic.mounting {
+.pane-cat .col .itm.mounting .ic {
     width: 65px;
     height: 75px;
     background-position: -20px -889px;
 }
 
-.pane-cat .col .ic.screens {
+.pane-cat .col .itm.screens .ic {
     width: 65px;
     height: 69px;
     background-position: -20px -1004px;
 }
 
-.pane-cat .col .ic.routing {
+.pane-cat .col .itm.routing .ic {
     width: 65px;
     height: 69px;
     background-position: -20px -1113px;
 }
 
-.pane-cat .col .ic.signage {
+.pane-cat .col .itm.signage .ic {
     width: 65px;
     height: 68px;
     background-position: -20px -1222px;
 }
 
-.pane-cat .col .ic.video {
+.pane-cat .col  .itm.video .ic {
     width: 67px;
     height: 69px;
     background-position: -20px -1330px;
 }
 
-.pane-cat .col .ic.videoservers {
+.pane-cat .col .itm.videoservers .ic {
     width: 65px;
     height: 70px;
     background-position: -20px -1439px;
+    top:5px;
 }
 .partbox {
     border-width:0px 9px 9px 9px;
@@ -797,20 +875,20 @@ select.soflow {
     border-color:#e20c18;
 }
 .partbox .h2_owl {
-    padding-top:40px;
+    padding-top:93px;
 }
 
 .partbox .text {
     margin:0 auto;
     width:844px;
-    line-height: 1.3em;
-    padding:0px 0px 25px 0px;
+    line-height: 1.4em;
+    padding:32px 0px 25px 0px;
     color:#000;
     font-size:18px;
     
 }
 .partbox .but {
-    padding:0px 0px 57px 0px;
+    padding:30px 0px 57px 0px;
     text-align:center;
 }
 .but.red a {
@@ -822,7 +900,7 @@ select.soflow {
 }
 .but a {
     color:#fff;
-    padding:30px 60px 30px 62px;
+    padding:28px 58px 28px 60px;
     font-weight:600;
     font-size:20px;
     display:inline-block;
@@ -841,7 +919,7 @@ select.soflow {
 }
 .learnbox .text {
     float:left;
-    padding:60px 130px 70px 50px;
+    padding:63px 122px 75px 50px;
     line-height: 1.4em;
     color:#000926;
     font-size:40px;
@@ -849,8 +927,12 @@ select.soflow {
 }
 
 .learnbox .but {
-    padding:60px 0px 40px 0px;
+    float:left;
+    padding:86px 0px 30px 0px;
     text-align:center;
+}
+.learnbox .but a {
+    padding:28px 80px 28px 80px;
 }
 
 .latest {
@@ -870,6 +952,43 @@ select.soflow {
 .videospace {
     width:326px;
 }
+.vlist {
+    margin-bottom:40px;
+}
+.vlist .itm {
+    width:323px;
+    margin:40px 0px 0px 0px;
+    position: relative;
+}
+
+
+.video-js .vjs-big-play-button {
+    border:0px;
+    width:100%;
+    height:80%;
+    left:0px;
+    top:0;
+    z-index: 2;
+    background: transparent url(img/play_ic.png) no-repeat 50% 54px;
+    position: absolute;
+    visibility: visible;
+}
+.video-js .vjs-big-play-button.fadeOut {
+    background:none;
+}
+.video-js:hover .vjs-big-play-button, .video-js .vjs-big-play-button:focus {
+    background-color:transparent;
+    opacity:0.8;
+}
+
+.vjs-icon-play:before, .video-js .vjs-big-play-button:before, .video-js .vjs-play-control:before {
+    content:'';
+}
+    
+
+.latestbox .videospace .allhr a {
+    margin:0px 0px 0px 10px;
+}
 .latestbox .ht {
     font-weight:600;
     color:#fff;
@@ -877,11 +996,11 @@ select.soflow {
 }
 .newsspace .ht {
     float:left;
-    padding:22px 19px 17px 52px;   
+    padding:13px 19px 14px 52px;   
 }
 .videospace .ht {
     float:left;
-    padding:22px 26px 17px 26px;   
+    padding:13px 30px 14px 29px;   
 }
 .latestbox .ht.red {
     background-color:#e20c18;
@@ -890,11 +1009,17 @@ select.soflow {
     background-color:#000926;
 }
 .latestbox .line {
+    margin:130px 0px 0px 0px;
+    overflow:hidden;
+}
+.latestbox .allhr {
     overflow:hidden;
 }
 .latestbox .allhr a {
     font-weight:600;
-    margin:0px 0px 0px 27px;
+    display:inline-block;
+    margin:1px 0px 0px 27px;
+    padding-bottom:2px;
     color:#e20c18;
     font-size:18px;
     border-bottom:1px solid #e20c18;
@@ -906,7 +1031,7 @@ select.soflow {
     margin:25px 0px 0px 0px;
 }
 .nlist .itm  {
-    margin:0px 0px 0px 53px;
+    margin:0px 50px 0px 53px;
     font-size:18px;
     color:#000;
 }
@@ -928,8 +1053,8 @@ select.soflow {
 }
 
 .nlist .itm p {
-    margin:7px 0px 25px 0px;
-    line-height: 1.4em;
+    margin:4px 0px 30px 0px;
+    line-height: 1.7em;
     font-size:15px;
 }
 
@@ -937,13 +1062,14 @@ select.soflow {
 .magazine {
     position: relative;
     background-color:#e20c18;
-    float:left;
+    float:right;
     width:456px;
+    margin:0px 0px 53px 0px
 }
 .magazine .tit {
     width:341px;
     margin:0 auto;
-    padding:25px 0px 125px 0px;
+    padding:28px 0px 125px 0px;
     font-size:40px;
     color:#fff;
     font-weight:600;
@@ -964,8 +1090,12 @@ select.soflow {
 }
 
 .footbox {
-    
+    overflow:hidden;
+   
     border-top:18px solid  #e20c18;
+}
+.footbox  .center {
+    position: relative; 
 }
 .footbox .lpart {
     float:left;
@@ -974,7 +1104,7 @@ select.soflow {
     overflow:hidden;
 }
 .footbox .lpart .box {
-    margin:30px 0px 0px 20px;
+    margin:40px 0px 0px 20px;
 }
 .footbox .lpart .col:first-child .box {
     margin-left:0px;
@@ -1001,13 +1131,13 @@ select.soflow {
     color:#e20c18;
 }
 .footbox .lpart .list {
-    margin:20px 0px 0px 0px;
+    margin:12px 0px 0px 0px;
 }
 .footbox .lpart .list li {
     margin:6px 0px 6px 0px;  
 }
 .footbox .lpart .list li a {
-  
+    line-height: 1.33em;
     font-size:15px;
     color:#191a20;
 }
@@ -1018,30 +1148,30 @@ select.soflow {
 }
 .footbox .ostaff {
     float:left;
-    position: relative;
     width:200px;
-    padding:65px 0px 0px 15px;
+    padding:0px 0px 0px 16px;
 }
 .footbox .ostaff:before {
     content:'';
     width:9px;
     height:100%;
     position: absolute;
-    left:0px;
-    top:0px;
+    left:715px;
+    top:64px;
     background:#e20c18;
 }
 .footbox .ostaff .tit {
     font-size:18px;
     color:#e20c18;
     font-weight:700;
+    margin:60px 0px 22px 0px;
     text-transform: uppercase;
 }
 .footbox .ostaff .links {
     margin-right:15px;
 }
 .footbox .ostaff .links li {
-     margin:0px 0px 0px  2px;   
+     margin:0px 0px 23px  2px;   
 }
 .footbox .ostaff .links li a {
     text-decoration: underline;
@@ -1059,15 +1189,17 @@ select.soflow {
    
 }
 .sideinf {
+    margin-left:53px;
     float:left;
 }
 .sideinf .loc {
-     margin:40px 0px 0px  20px;   
+     margin:0px 0px 0px  20px;   
 }
 .sideinf .loc p {
+    margin:58px 0px 0px  0px;  
     color:#191a20;
     font-size:18px;
-    line-height: 1.4em;
+    line-height: 1.7em;
 }
 
 .soclks {
@@ -1075,10 +1207,11 @@ select.soflow {
    
 }
 .soclks ul {
-    margin:0px 0px 30px 21px; 
+    overflow:hidden;
+    margin:0px 0px 50px 21px; 
 }
 .soclks li {
-    margin:20px 19px 20px 0px;
+    margin:43px 19px 20px 0px;
     float:left;
 }
 .soclks li:last-child {
@@ -1145,4 +1278,10 @@ select.soflow {
 }
 .copy .t a:hover {
     text-decoration:none;
+}
+
+
+
+@media only screen and (min-width:600px) {
+    
 }
