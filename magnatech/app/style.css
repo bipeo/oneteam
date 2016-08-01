@@ -327,29 +327,37 @@ select.soflow {
     color:#fff;
 }
 
-.menu_main > li + li {
-   
-}
+
 .menu_main > li .drop {
     position:absolute;
     z-index:2;
     background:#e20c18;
     display:none;
     margin-left:-5px;
+    width:341px;
 }
 .menu_main > li .drop ul {
     padding:20px 0px 10px 0px;
+    width:50%;
     float:left;
 }
+.menu_main > li .drop ul:first-child {
+    width:45%;
+}
 .menu_main > li .drop ul:last-child {
+    width:55%
 }
 .menu_main > li .drop ul li:nth-child(4n+1) {
     clear:left;
 }
-.menu_main > li .drop ul li a {
-     padding: 1px 15px;
 
+.menu_main > li .drop ul li a {
+     line-height: 1.6em;
+     padding: 1px 15px;
 }
+.menu_main > li .drop ul:last-child li a {
+    padding-left:10px;
+} 
 .menu_main > li:hover .drop {
     display:block;
 }
@@ -364,6 +372,7 @@ select.soflow {
 
 
 .menu_main > li  ul li a {
+    margin:0px;
     text-decoration: underline;  
 }
 .menu_main > li  ul li a:hover {
@@ -761,6 +770,7 @@ select.soflow {
     color:#000;
 }
 .pane-cat .col ul li a:hover {
+    color:#e20c18;
     text-decoration: none;
 }
 .pane-cat .col .itm .ic {
@@ -1141,6 +1151,9 @@ select.soflow {
     font-size:15px;
     color:#191a20;
 }
+.footbox .lpart .list li a:hover {
+    color:#e20c18;
+}
 .footbox .rpart {
     float:left;
     overflow:hidden;
@@ -1177,6 +1190,9 @@ select.soflow {
     text-decoration: underline;
     margin:10px 0px 0px  0px;   
     display:inline-block;
+}
+.footbox .ostaff .links li a:hover {
+    color:#e20c18;
 }
 .footbox .ostaff .links li a, .footbox .ostaff .links li .text {
     color:#191a20;
