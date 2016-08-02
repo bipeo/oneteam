@@ -103,7 +103,6 @@ html, body {
     
 }
 
-
 body {
     font-weight: 400;
     color: #303036;
@@ -119,12 +118,11 @@ a {
     text-decoration: none;
 }
 
-
 .wrapper {
     background: #dffcfc;
     margin: 0 auto;
     max-width: 1920px;
-    min-width:1250px;
+     min-width: 350px;
   }
 
 .logo {
@@ -291,15 +289,17 @@ select.soflow {
 
 .mobile_menu {display: none;}
 
-.menu_main {
+.menu-container {
+    background: transparent;
     margin:0px 0px 0px 28px;
     float:left;
+    width: auto;
 }
 
-.menu_main > li {
-    padding:0px 3px 0px 5px;
+.menu > ul > li {
     margin:34px 0px 0px 0px;
-    float: left;
+    padding:0px 3px 0px 5px;
+    position: relative;
 }
 
 .menu_main > li  .tit {
@@ -312,7 +312,7 @@ select.soflow {
 .menu_main > li.active  .tit, .menu_main > li:hover  .tit {
     color:#fff;
 } 
-.menu_main > li.active, .menu_main > li:hover {
+.menu > ul > li.active, .menu > ul > li:hover {
     background:#e20c18;
 }
 .menu_main > li  .dsk {
@@ -333,7 +333,7 @@ select.soflow {
     z-index:2;
     background:#e20c18;
     display:none;
-    margin-left:-5px;
+/*    margin-left:-5px;*/
     width:341px;
 }
 .menu_main > li .drop ul {
@@ -361,15 +361,13 @@ select.soflow {
 .menu_main > li:hover .drop {
     display:block;
 }
-.menu_main > li a, .mobile_menu li a {
+.menu > ul > li a {
     color: #fefefe;
     display:inline-block;
     padding: 0 10px;
     margin:4px 0px;
     
 }
-
-
 
 .menu_main > li  ul li a {
     margin:0px;
@@ -381,6 +379,15 @@ select.soflow {
 .menu_main .active a, .menu_main li:hover a {
     color:#fff;
 }
+
+.menu > ul > li > ul {
+    padding: 0;
+}
+
+.menu > ul > li > ul > li a {
+    border-bottom: none;
+}
+
 .content {
     padding: 0px 0px 0px 0px;
 }
@@ -407,11 +414,6 @@ select.soflow {
     height: 21px;
     width: 20px;
 }
-
-.owl_wrap .owl-dot.active {
-}
-
-
 
 .wrap_carousel_2 .carousel_img img {
     margin:0 auto;
@@ -481,6 +483,7 @@ select.soflow {
 
 
 .gfilms .itm {
+    background-image: url(img/ton_1_spr.png);
     margin:0px 10px 0px 0px;
     background-repeat: no-repeat;
     position:relative;
@@ -641,7 +644,7 @@ select.soflow {
 }
 .osbox .itm.two {
          width:385px;
-         margin-left:33px;
+/*         margin-left:33px;*/
          border-bottom:9px solid #e20c18;
          background: url(img/oscar.png) no-repeat 78px 7px;
 }
@@ -662,7 +665,7 @@ select.soflow {
 }
 .osbox .itm.three {
     width: 397px;
-    margin-left:35px;
+/*    margin-left:35px;*/
 }
 .osbox .itm.three .paral {
         position: absolute;
@@ -1296,8 +1299,210 @@ select.soflow {
     text-decoration:none;
 }
 
-
-
-@media only screen and (min-width:600px) {
-    
+.icon {
+    display: none;
 }
+/* 641 - 1250 */
+
+@media only screen and (max-width: 640px) {
+    .wrapper {
+        background: #ffffff;
+        max-width: auto;
+    }
+    .center {
+        width: 100%;
+    }
+    
+    .menu_main {
+        display: none;
+    }
+/*
+    .mobile_mnu {
+        display: block;
+        float: left;
+        margin: 35px 108px 0 28px;
+    }
+*/
+    .mobile_mnu span {
+        background: #191a20;
+        display: block;
+        height: 2px;
+        width: 44px;
+    }
+    .mobile_mnu span + span {
+        margin-top: 14px;
+    }
+    .owl_wrap {
+        height: auto;
+        width: auto;
+    }
+    .gfilms .itm {
+        float: none;
+        height: 403px!important;
+        width: auto!important;
+    }
+    .gfilms .itm.st-1 {
+        background: url(img/ton_1_spr_mob.jpg) no-repeat 0 0;
+    }
+    .gfilms .itm.st-2 {
+        background: url(img/ton_2_spr_mob.jpg) no-repeat 0 0;
+    }
+    .gfilms .itm.st-3 {
+        background: url(img/ton_3_spr_mob.jpg) no-repeat 0 0;
+    }
+    .gfilms .itm.st-4 {
+        background: url(img/ton_4_spr_mob.jpg) no-repeat 0 0;
+    }
+    .gfilms .itm.st-5 {
+        background: url(img/ton_5_spr_mob.jpg) no-repeat 0 0;
+    }
+    
+    .gfilms .itm:hover {
+        background-position: 0 -403px!important;        
+    }
+    .pane-cat .col.one, .pane-cat .col.two, .pane-cat .col.three {
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        width: 100%;
+    }
+    .pane-cat .col ul {
+        display: none;
+    }
+    .pane-cat .col .tit a {
+        font-size: 30px;
+    }
+    .owl_out.st-2 {
+        border-bottom-width: 9px;
+    }
+    .partbox .text {
+        font-size: 28px;
+        line-height: 36px;
+        padding-left: 3%;
+        padding-right: 3%;
+        width: 100%;
+    }
+    .but a {
+        font-size: 28px;
+    }
+    .learnbox .text {
+        text-align: center;
+    }
+    .learnbox .but {
+        float: none;
+    }
+    .parter, .learn {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .latest {
+        margin-left: 3%;
+    }
+    .menu-container {
+        float: none;
+        margin-left: 0;
+        position: relative;
+    }
+    .menu > ul > li {
+        background: #d9e1e4;
+    }
+    .menu-dropdown-icon:before {
+        background: transparent;    
+        bottom: 0;
+        content: "";
+        float: none;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu_main > li .dsk {
+        display: none;
+    }
+    .menu_main > li  .tit {
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    .menu_main > li .drop {
+        background: #d9e1e4;
+        position: static;
+        width: 100%;
+    }
+    .menu_main > li .drop ul:first-child, .menu_main > li .drop ul, .menu_main > li .drop ul:last-child {
+        background: transparent;
+        float: none;
+        width: 100%;
+    }
+    .menu > ul > li > ul > li a {
+        font-size: 30px;
+        width: 100%;
+    }
+    .menu_main > li .drop a {
+        color: #191a20;
+    }
+    .menu_main > li .drop a:hover {
+        background: #e20c18;
+        color: #fff;
+    }
+    .menu_main > li .drop ul + ul {
+        padding-top: 0;
+    }
+    .menu_main > li .drop ul:last-child li a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .menu > ul > li {
+        border-bottom: 1px solid #b3b9bd;
+        margin-top: 0;
+        padding: 0;
+    }
+    .menu .show-on-mobile {
+        margin-top: 72px;
+    }
+    .icon {
+        display: inline;
+        float: right;
+        font-size: 30px;
+    }
+    .menu-mobile {
+        left: 28px;
+        position: absolute;
+        top: 35px;
+        z-index: 10;
+    }
+    .logo {
+        float: none;
+        margin: 0 auto 19px;
+        padding-top: 30px;
+        width: 147px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,7 +2,12 @@ $(document).ready(function(){
     $("#owl_1").owlCarousel({
         items: 1,
         nav: true,
-        loop: true
+        loop: true,
+        responsive : {
+            640 : {
+                dots: false
+            }
+        }
     });
     $("#owl_2").owlCarousel({
         items: 6,
@@ -13,6 +18,21 @@ $(document).ready(function(){
         items: 6,
         nav: true,
         loop: true,
+    });
+    $("#owl_4").owlCarousel({
+        loop: true,
+        nav: false,
+        responsive : {
+            0 : {
+                items: 1,
+                dots: true
+            },
+            641 : {
+                items: 3,
+                margin: 33,
+                dots: false
+            }
+        }
     });
 
 /* search box start */
