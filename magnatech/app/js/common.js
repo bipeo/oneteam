@@ -19,6 +19,21 @@ $(document).ready(function(){
         nav: true,
         loop: true,
     });
+    $("#owl_4").owlCarousel({
+        loop: true,
+        nav: false,
+        responsive : {
+            0 : {
+                items: 1,
+                dots: true
+            },
+            641 : {
+                items: 3,
+                margin: 33,
+                dots: false
+            }
+        }
+    });
 
 /* search box start */
 

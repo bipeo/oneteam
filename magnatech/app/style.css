@@ -103,7 +103,6 @@ html, body {
     
 }
 
-
 body {
     font-weight: 400;
     color: #303036;
@@ -118,7 +117,6 @@ a {
     color: #0077cc;
     text-decoration: none;
 }
-
 
 .wrapper {
     background: #dffcfc;
@@ -291,15 +289,16 @@ select.soflow {
 
 .mobile_menu {display: none;}
 
-.menu_main {
+.menu-container {
+    background: transparent;
     margin:0px 0px 0px 28px;
     float:left;
+    width: auto;
 }
 
-.menu_main > li {
+.menu > ul > li {
     padding:0px 3px 0px 5px;
     margin:34px 0px 0px 0px;
-    float: left;
 }
 
 .menu_main > li  .tit {
@@ -312,7 +311,7 @@ select.soflow {
 .menu_main > li.active  .tit, .menu_main > li:hover  .tit {
     color:#fff;
 } 
-.menu_main > li.active, .menu_main > li:hover {
+.menu > ul > li.active, .menu > ul > li:hover {
     background:#e20c18;
 }
 .menu_main > li  .dsk {
@@ -361,15 +360,13 @@ select.soflow {
 .menu_main > li:hover .drop {
     display:block;
 }
-.menu_main > li a, .mobile_menu li a {
+.menu > ul > li a {
     color: #fefefe;
     display:inline-block;
     padding: 0 10px;
     margin:4px 0px;
     
 }
-
-
 
 .menu_main > li  ul li a {
     margin:0px;
@@ -380,6 +377,7 @@ select.soflow {
 }
 .menu_main .active a, .menu_main li:hover a {
     color:#fff;
+    padding: 0;
 }
 .content {
     padding: 0px 0px 0px 0px;
@@ -407,11 +405,6 @@ select.soflow {
     height: 21px;
     width: 20px;
 }
-
-.owl_wrap .owl-dot.active {
-}
-
-
 
 .wrap_carousel_2 .carousel_img img {
     margin:0 auto;
@@ -642,7 +635,7 @@ select.soflow {
 }
 .osbox .itm.two {
          width:385px;
-         margin-left:33px;
+/*         margin-left:33px;*/
          border-bottom:9px solid #e20c18;
          background: url(img/oscar.png) no-repeat 78px 7px;
 }
@@ -663,7 +656,7 @@ select.soflow {
 }
 .osbox .itm.three {
     width: 397px;
-    margin-left:35px;
+/*    margin-left:35px;*/
 }
 .osbox .itm.three .paral {
         position: absolute;
