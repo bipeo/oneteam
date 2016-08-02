@@ -1304,10 +1304,11 @@ select.soflow {
 
 @media only screen and (max-width: 640px) {
     .wrapper {
+        background: #ffffff;
         max-width: auto;
     }
     .center {
-        width: auto;
+        width: 100%;
     }
     
     .menu_main {
@@ -1355,4 +1356,71 @@ select.soflow {
     .gfilms .itm:hover {
         background-position: 0 -403px!important;        
     }
+    .pane-cat .col.one, .pane-cat .col.two, .pane-cat .col.three {
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        width: 100%;
+    }
+    .pane-cat .col ul {
+        display: none;
+    }
+    .pane-cat .col .tit a {
+        font-size: 30px;
+    }
+    .owl_out.st-2 {
+        border-bottom-width: 9px;
+    }
+    .partbox .text {
+        font-size: 28px;
+        line-height: 36px;
+        padding-left: 3%;
+        padding-right: 3%;
+        width: 100%;
+    }
+    .but a {
+        font-size: 28px;
+    }
+    .learnbox .text {
+        text-align: center;
+    }
+    .learnbox .but {
+        float: none;
+    }
+    .parter, .learn {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .latest {
+        margin-left: 3%;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
