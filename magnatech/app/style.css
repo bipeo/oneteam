@@ -297,8 +297,9 @@ select.soflow {
 }
 
 .menu > ul > li {
-    padding:0px 3px 0px 5px;
     margin:34px 0px 0px 0px;
+    padding:0px 3px 0px 5px;
+    position: relative;
 }
 
 .menu_main > li  .tit {
@@ -332,7 +333,7 @@ select.soflow {
     z-index:2;
     background:#e20c18;
     display:none;
-    margin-left:-5px;
+/*    margin-left:-5px;*/
     width:341px;
 }
 .menu_main > li .drop ul {
@@ -377,8 +378,16 @@ select.soflow {
 }
 .menu_main .active a, .menu_main li:hover a {
     color:#fff;
+}
+
+.menu > ul > li > ul {
     padding: 0;
 }
+
+.menu > ul > li > ul > li a {
+    border-bottom: none;
+}
+
 .content {
     padding: 0px 0px 0px 0px;
 }
@@ -1290,7 +1299,7 @@ select.soflow {
     text-decoration:none;
 }
 
-.mobile_mnu {
+.icon {
     display: none;
 }
 /* 641 - 1250 */
@@ -1307,11 +1316,13 @@ select.soflow {
     .menu_main {
         display: none;
     }
+/*
     .mobile_mnu {
         display: block;
         float: left;
         margin: 35px 108px 0 28px;
     }
+*/
     .mobile_mnu span {
         background: #191a20;
         display: block;
@@ -1386,6 +1397,84 @@ select.soflow {
     }
     .latest {
         margin-left: 3%;
+    }
+    .menu-container {
+        float: none;
+        margin-left: 0;
+        position: relative;
+    }
+    .menu > ul > li {
+        background: #d9e1e4;
+    }
+    .menu-dropdown-icon:before {
+        background: transparent;    
+        bottom: 0;
+        content: "";
+        float: none;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu_main > li .dsk {
+        display: none;
+    }
+    .menu_main > li  .tit {
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    .menu_main > li .drop {
+        background: #d9e1e4;
+        position: static;
+        width: 100%;
+    }
+    .menu_main > li .drop ul:first-child, .menu_main > li .drop ul, .menu_main > li .drop ul:last-child {
+        background: transparent;
+        float: none;
+        width: 100%;
+    }
+    .menu > ul > li > ul > li a {
+        font-size: 30px;
+        width: 100%;
+    }
+    .menu_main > li .drop a {
+        color: #191a20;
+    }
+    .menu_main > li .drop a:hover {
+        background: #e20c18;
+        color: #fff;
+    }
+    .menu_main > li .drop ul + ul {
+        padding-top: 0;
+    }
+    .menu_main > li .drop ul:last-child li a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .menu > ul > li {
+        border-bottom: 1px solid #b3b9bd;
+        margin-top: 0;
+        padding: 0;
+    }
+    .menu .show-on-mobile {
+        margin-top: 72px;
+    }
+    .icon {
+        display: inline;
+        float: right;
+        font-size: 30px;
+    }
+    .menu-mobile {
+        left: 28px;
+        position: absolute;
+        top: 35px;
+        z-index: 10;
+    }
+    .logo {
+        float: none;
+        margin: 0 auto 19px;
+        padding-top: 30px;
+        width: 147px;
     }
 }
 
