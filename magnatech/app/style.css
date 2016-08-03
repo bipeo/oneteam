@@ -332,9 +332,13 @@ select.soflow {
     z-index:2;
     background:#e20c18;
     display:none;
-/*    margin-left:-5px;*/
     width:341px;
 }
+.menu_main > li .drop.st-1 {
+    width:187px;
+}
+
+
 .menu_main > li .drop_2 {
     padding: 18px 29px 0 41px;
     width: 1153px;
@@ -349,6 +353,7 @@ select.soflow {
     padding:20px 0px 10px 0px;
     width:50%;
     float:left;
+   
 }
 .menu_main > li .drop ul:first-child {
     width:45%;
@@ -1472,6 +1477,9 @@ select.soflow {
     .menu > ul > li {
         background: #d9e1e4;
     }
+    .menu > ul > li a {
+        padding:14px 25px;
+    }
     .menu-dropdown-icon:before {
         background: transparent;    
         bottom: 0;
@@ -1489,10 +1497,20 @@ select.soflow {
         font-size: 40px;
         text-transform: uppercase;
     }
-    .menu_main > li .drop {
+    .menu_main > li .drop, .menu_main > li .drop.st-1 {
         background: #d9e1e4;
         position: static;
         width: 100%;
+    }
+
+    .menu_main > li .drop ul:nth-child(n+2):nth-child(-n+10) {
+        padding-top:0px;
+    }
+    .menu_main > li .drop ul {
+        padding-bottom:0px;
+    }
+    .menu_main > li .drop ul:last-child {
+        padding-bottom:20px;
     }
     .menu_main > li .drop ul:first-child, .menu_main > li .drop ul, .menu_main > li .drop ul:last-child {
         background: transparent;
@@ -1503,6 +1521,12 @@ select.soflow {
         font-size: 30px;
         width: 100%;
     }
+ 
+    .menu_main > li .drop ul:first-child {
+        border-top:1px solid #b3b9bd;
+    }
+    
+     
     .menu_main > li .drop a {
         color: #191a20;
     }
@@ -1516,6 +1540,9 @@ select.soflow {
     .menu_main > li .drop ul:last-child li a {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .menu_main > li .drop ul li a, .menu_main > li .drop ul:last-child li a {
+        padding:4px 25px;
     }
     .menu > ul > li {
         border-bottom: 1px solid #b3b9bd;
