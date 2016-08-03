@@ -336,12 +336,13 @@ select.soflow {
     width:341px;
 }
 .menu_main > li .drop_2 {
+    padding: 18px 29px 0 41px;
     width: 1153px;
 }
 
 
 .menu > ul > li:nth-child(5) > ul {
-    left: -640px;
+    left: -645px;
 }
 
 .menu_main > li .drop ul {
@@ -360,8 +361,9 @@ select.soflow {
 }
 
 .menu_main > li .drop ul li a {
-     line-height: 1.6em;
-     padding: 1px 15px;
+    line-height: 1.6em;
+    padding: 1px 15px;
+    white-space: nowrap;
 }
 .menu_main > li .drop ul:last-child li a {
     padding-left:10px;
@@ -372,6 +374,19 @@ select.soflow {
 
 .menu_main > li .drop_2 ul, .menu_main > li .drop_2 ul:first-child, .menu_main > li .drop_2 ul:last-child {
     width: auto;
+}
+
+.menu_main > li .drop_2 ul {
+    margin-right: 63px;
+}
+
+.menu_main > li .drop_2 .left ul {
+    float: none;
+    margin-right: 0;
+}
+
+.menu_main > li .drop_2 .mt_1 {
+    margin-top: 10px;
 }
 
 .block_link {
@@ -420,9 +435,23 @@ select.soflow {
     flex-direction: column;
     font-size: 16px;
     line-height: 21px;
+    margin: 0 0 27px 0;
     min-height: 73px;
-    padding: 0 0 0 86px;
+    padding: 0 0 0 82px;
     width: 240px;
+}
+
+.menu_main > li .drop_2 .block_link li {
+    margin: 0 0 9px 0;
+}
+
+.menu_main > li .drop_2 .block_link ul {
+    margin-right: 24px;
+}
+
+.menu_main > li .drop_2 .block_link ul:last-child {
+    margin-left: 19px;
+    margin-top: 66px;
 }
 
 .content {
@@ -1517,7 +1546,28 @@ select.soflow {
     .menu_main > li.active  .tit, .menu_main > li:hover  .tit {
         color: #191a20;        
     }
+    .menu_main > li .drop_2 ul {
+        margin-right: 0;
+    }
+    .menu > ul > li:nth-child(5) > ul {
+        position: static;
+    }
+    .menu_box {
+        color: #191a20;
+    }
+    .drop_2 .left, .drop_2 .right {
+        float: none;
+    }
+    .menu_main > li .drop_2 .block_link ul:last-child {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .menu_main > li .drop_2 {
+        padding: 0;
+    }
 }
+
+
 
 
 
