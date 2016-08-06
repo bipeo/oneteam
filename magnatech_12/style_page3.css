@@ -1,0 +1,465 @@
+.content_page3{
+    background-color: #F1F1F1;
+}
+.p3Bl1{
+    margin: 0 auto;
+    width: 1170px;
+}
+.p3Bl1 .miniNav{
+    padding: 30px 0 27px 15px;
+}
+.p3Bl1 .miniNav ul>li{
+    display: inline;
+     color: #717171;
+}
+.p3Bl1 .miniNav ul>li>a{
+    color: #E20C18;
+    text-decoration: underline;
+    font-size: 13px;
+}
+.p3Bl1 .h1norm{
+    font-size: 80px;
+    font-weight: 300;
+    color: #000926;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top:27px;
+}
+.p3Bl1 .h1bold{
+    font-size: 100px;
+    color: #000926;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.contBlocks{
+    width: 100%;
+    float: none;
+    height: 1460px;
+    overflow: hidden;
+}
+.contBlocks .owlFoto{
+    width: 50%;
+    height: 1500px;
+    overflow: hidden;
+    float: left;
+    padding-top: 136px;
+    padding-right: 70px;
+}
+.contBlocks .owlFoto img{
+    float: right;
+    padding-bottom: 21px;
+}
+.contBlocks .owlFoto img.last{
+    float: right;
+    padding-top: 48px;
+}
+.contBlocks .owl_st3Topbl{
+    margin-bottom: 12px;
+    padding-top: 60px;
+    display: none;
+}
+.contBlocks .owl_st3Topbl img{
+    width: 80%;
+    margin: 0 auto;
+}
+.contBlocks .owl-dots {
+    margin: 55px 0 0 0;
+    text-align: center;
+}
+.contBlocks .owl-dots .owl-dot + .owl-dot {margin-left: 35px;}
+
+.contBlocks .owl-dots .owl-dot {
+    border-radius: 50%;
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    background-color: #2C2E33;
+}
+.contBlocks .owl-dots .owl-dot.active{
+    background-color: #E20C18;
+}
+.contBlocks .textBlocks{
+    float: left;
+    padding-top: 50px;
+    width: 50%;
+    height: 1500px;
+    padding-left: 60px;
+}
+.contBlocks .textBlocks .tabsNav{
+    
+}
+.contBlocks .textBlocks p{
+    width: 550px;
+}
+.bl1Tab,.bl2Tab,.specificContBlok{display: none;}
+#bl1Introduction,#bl2Features,#bl3Goverment{
+    display: block;
+}
+.contBlocks .textBlocks .bl1 .tabsNav ul{
+     border-top: 10px solid #E20C18;
+     padding-bottom: 41px;
+     padding-top: 6px;
+}
+.contBlocks .textBlocks .bl1 .tabsNav ul>li{
+    display: inline;
+    padding: 8px 20px 11px 17px;
+}
+.contBlocks .textBlocks .bl1 .tabsNav ul>li.active{
+    background-color: #E20C18;
+    border-bottom: none;
+}
+.contBlocks .textBlocks .bl1 .tabsNav ul>li.active a{
+    color: #fff;
+    border-bottom: none;
+}
+.contBlocks .textBlocks .bl1 .tabsNav ul>li>a{
+    color: #000926;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px dotted #000926;
+    text-decoration: none;
+}
+.contBlocks .textBlocks .bl1 .tabsNav ul>li>a:hover{
+    color: #E20C18;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px dotted #E20C18;
+    text-decoration: none;
+}
+.contBlocks .textBlocks .bl1 .tabsNav ul>li.active a:hover{
+    color: #fff;
+    border-bottom: none;
+}
+.contBlocks .textBlocks .bl1 .textBlh{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000926;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 23px;
+}
+.contBlocks .textBlocks .bl1 p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000926;
+    padding: 0 0 25px 5px;
+    line-height: 1.5;
+}
+.contBlocks .textBlocks .bl1 p span{
+    font-weight: 600;
+}
+.contBlocks .textBlocks .bl2 .tabsNav{
+     border-top: 10px solid #E20C18;
+     padding-bottom: 51px;
+     padding-top: 6px;
+     margin-top: 15px;
+}
+.contBlocks .textBlocks .bl2 .tabsNav ul>li{
+    display: inline;
+    padding: 8px 20px 11px 17px;
+}
+.contBlocks .textBlocks .bl2 .tabsNav ul>li.active{
+    background-color: #E20C18;
+    border-bottom: none;
+}
+.contBlocks .textBlocks .bl2 .tabsNav ul>li.active a{
+    color: #fff;
+    border-bottom: none;
+}
+.contBlocks .textBlocks .bl2 .tabsNav ul>li>a{
+    color: #000926;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px dotted #000926;
+    text-decoration: none;
+}
+.contBlocks .textBlocks .bl2 .textBlh{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000926;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 28px;
+}
+.contBlocks .textBlocks .bl2 p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000926;
+    padding: 0 0 15px 5px;
+    line-height: 1.5;
+}
+.specificationBlock{
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 66px;
+}
+.relBlForTabs{
+    width: 100%;
+    position: relative;
+}
+.relBlForTabs .tabsNav{
+     border-top: 10px solid #E20C18;
+     padding-bottom: 51px;
+     padding-top: 6px;
+     width: 37%;
+     position: absolute;
+     left: 0;
+     top: -20px;
+}
+.relBlForTabs .tabsNav ul{
+    float: right;
+}
+.relBlForTabs .tabsNav ul>li{
+    display: inline;
+    padding: 8px 20px 11px 17px;
+}
+.relBlForTabs .tabsNav ul>li.active{
+    background-color: #E20C18;
+    border-bottom: none;
+}
+.relBlForTabs .tabsNav ul>li.active a{
+    color: #fff;
+    border-bottom: none;
+}
+.relBlForTabs .tabsNav ul>li>a{
+    color: #000926;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px dotted #000926;
+    text-decoration: none;
+}
+.specificationBlock .textBlh{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000926;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    padding-left: 5px;
+}
+.specificationBlock .specificContBlok{
+    width: 100%;
+    height: 778px;
+}
+.specificationBlock .specificContBlok .bl1,.specificationBlock .specificContBlok .bl2{
+    width: 50%;
+    float: left;
+    content: " ";
+    display: table;
+}
+.specificationBlock .specificContBlok .bl1 table {
+    width: 95%;
+    margin-left: 6px;
+}
+
+.specificationBlock .specificContBlok .bl1 td,.specificationBlock .specificContBlok .bl1 th{
+    vertical-align: top;
+    text-align: left;
+    padding-bottom: 16px;
+    padding-top: 10px;
+}
+.specificationBlock .specificContBlok .bl2 table {
+    width: 95%;
+    margin-left: 67px;
+}
+.specificationBlock .specificContBlok .bl2 td,.specificationBlock .specificContBlok .bl2 th{
+    vertical-align: top;
+    text-align: left;
+    padding-bottom: 16px;
+    padding-top: 10px;
+}
+.specificationBlock .specificContBlok p{
+    font-size: 18px;
+    float: left;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #F1F1F1;
+}
+.specificationBlock .specificContBlok tr{
+    background-image: url('img/page3/dots.png');
+    background-repeat: no-repeat;
+    background-position: center 25px;
+}
+.specificationBlock .specificContBlok p span{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #F1F1F1;
+    width: 100%;
+}
+.specificationBlock .specificContBlok p.fullWidth{
+    width: 100%;
+}
+.BannerBlock{
+    width: 100%;
+    border-top: 18px solid #E20C18;
+    background-color: #fff;
+}
+.BannerBlock .BannerBlockCont{
+    width: 1170px;
+    margin: 0 auto;
+}
+.BannerBlock .BannerBlockCont .textH{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000926;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+    padding-left: 5px;
+    padding-top: 100px;
+    text-align: center;
+}
+.BannerBlock .BannerBlockCont .owl_st3 .owl_1_title {
+    line-height: 1em;
+    font-weight:600;
+    font-size:30px;
+}
+.BannerBlock .BannerBlockCont .owl_st3 .owl_1_title a {
+    color:#fff;
+    font-weight: 400;
+    font-size:18px;
+}
+.BannerBlock .BannerBlockCont .owl_st3 .owl_1_title .link {
+    display:block;
+}
+.BannerBlock .BannerBlockCont .show640{
+    display: none;
+}
+.BannerBlock .BannerBlockCont .owl_st3{
+    position: relative;   
+    width:100%;   
+}
+.BannerBlock .ProductBlockCont{
+    width: 1170px;
+    margin: 0 auto;
+}
+.BannerBlock .ProductBlockCont .textH{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000926;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+    padding-left: 5px;
+    padding-top: 80px;
+    text-align: center;
+}
+.BannerBlock .ProductBlockCont .ImgBlok .hideMe{
+    display: none;
+    width: 100%;
+    padding-bottom: 67px;
+    padding-top: 20px;
+}
+.BannerBlock .ProductBlockCont .ImgBlok .hideMe img{
+    width: 100%;
+    margin: 0 auto;
+}
+.BannerBlock .ProductBlockCont .ImgBlok .hideMe .owl-dots {
+    margin: 87px 0 0 0;
+    text-align: center;
+}
+.BannerBlock .ProductBlockCont .ImgBlok .hideMe .owl-dots .owl-dot + .owl-dot {margin-left: 35px;}
+
+.BannerBlock .ProductBlockCont .ImgBlok .hideMe .owl-dots .owl-dot {
+    border-radius: 50%;
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    background-color: #2C2E33;
+}
+.BannerBlock .ProductBlockCont .ImgBlok .hideMe .owl-dots .owl-dot.active{
+    background-color: #E20C18;
+}
+.BannerBlock .ProductBlockCont .ImgBlok img{
+    width: 100%;
+}
+/*formBl*/
+.contactFormPageWrapper{
+    background-color: #E20C18;
+    color: #fff;
+    height: 836px;
+}
+.contactFormPageWrapper .contactFormPage{
+    width: 1150px;
+    margin: 0 auto;
+}
+.contactFormPageWrapper .contactFormPage .textH{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+    padding-left: 5px;
+    padding-top: 80px;
+    text-align: center;
+}
+.contactFormPageWrapper .contactFormPage .blDesc{
+    width: 45%;
+    float: left;
+    padding-right: 5%;
+    padding-left: 70px;
+}
+.contactFormPageWrapper .contactFormPage .blDesc .hDesc{
+    font-size: 33px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    padding-left: 37px;
+    padding-top: 40px;
+    line-height: 1.35;
+}
+.contactFormPageWrapper .contactFormPage .blDesc .addresBl{
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 25px;
+    border-left: 10px solid #fff;
+    line-height: 1.35;
+    padding-top: 0px;
+}
+.contactFormPageWrapper .contactFormPage .blDesc .addresBl p{
+    height: 55px;
+    width: 100%;
+}
+.contactFormPageWrapper .contactFormPage .formBlok{
+    width: 55%;
+    float: left;
+    padding-top: 44px;
+    padding-left: 50px;
+}
+.contactFormPageWrapper .contactFormPage .formBlok p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.35;
+    padding: 0 0 10px 6px;
+}
+.contactFormPageWrapper .contactFormPage .formBlok .inputF{
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+    height: 60px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+.contactFormPageWrapper .contactFormPage .formBlok .textareaF{
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+    height: 225px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.contactFormPageWrapper .contactFormPage .formBlok .formButton{
+    font-family: 'Open Sans';
+    width: 240px;
+    font-weight: 400;
+    font-size: 19px;
+    color: #fff;
+    height: 76px;
+    text-align: center;
+    background-color: #E20C18;
+    border: 2px solid #fff;
+    margin-top: 45px;
+    cursor: pointer;
+}
