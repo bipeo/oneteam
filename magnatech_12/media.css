@@ -650,6 +650,8 @@
     }
     
     .cat3 {
+        padding-left:2%;
+        padding-right: 2%;
         margin-top:63px;
         padding-top:80px;
         border-top:12px solid #e20c18;
@@ -662,7 +664,7 @@
     
     
     .cat3 .itm .tit a {
-        font-size:32px;
+        font-size:27px;
     }
     
     .cat3 .itm .pick .sizemob {
@@ -682,8 +684,321 @@
     .cat3 .itm:nth-child(2n + 1) {
         clear:left;
     }
+    
+    
+     .p3Bl1{
+        width: 100%;
+    }
+    .p3Bl1 .miniNav{
+        display: none;
+    }
+    .p3Bl1 .h1norm{
+        font-size: 40px;
+        text-align: center;
+        padding-top: 40px;
+        letter-spacing: normal;
+    }
+    .p3Bl1 .h1bold{
+        font-size: 60px;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: center;
+    }
+    .contBlocks .owlFoto{
+        display: none;
+    }
+    .contBlocks .owl_st3Topbl{display: block;}
+    .bl1Tab,.bl2Tab,.specificContBlok{display: none;}
+    #bl1Introduction,#bl2Features,#bl3Goverment{
+        display: block;
+    }
+    .tabsNav{
+        display: none;
+    }
+    .contBlocks{height: auto;}
+    .contBlocks .textBlocks{
+        float: none;
+        padding-top: 50px;
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+    .contBlocks .textBlocks p{
+        width: 100%;
+    }
+    .contBlocks .textBlocks .bl1 .textBlh{
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding-bottom: 42px;
+        background-image: url('img/page3/textHbg.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        padding-top: 25px;
+        margin-left: 7%;
+    }
+    .contBlocks .textBlocks .bl1 p{
+        font-size: 26px;
+
+        font-weight: 500;
+        color: #000926;
+        padding: 0;
+        padding-bottom: 26px;
+        line-height: 1.55;
+        width: 87%;
+        margin: 0 7%;
+    }
+    .contBlocks .textBlocks .bl1 p.hidePme{display: none;}
+    .contBlocks .textBlocks .bl2 .textBlh{
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding-bottom: 37px;
+        background-image: url('../img/page3/textHbg.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        padding-top: 25px;
+        margin-left: 7%;
+        padding-left: 2px;
+        margin-top: 49px;
+    }
+    .contBlocks .textBlocks .bl2 p{
+        font-size: 26px;
+        font-weight: 500;
+        color: #000926;
+        padding: 0;
+        padding-bottom: 19px;
+        line-height: 1.55;
+        width: 87%;
+        margin: 0 7%;
+        padding-left: 2px;
+    }
+    .specificationBlock{
+        width: 100%;
+        padding-top: 52px;
+    }
+    .relBlForTabs{
+        display: none;
+    }
+    .specificationBlock .textBlh{
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding-bottom: 36px;
+        background-image: url('../img/page3/textHbg.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        padding-top: 25px;
+        margin-left: 7%;
+        padding-left: 2px;
+    }
+    .specificationBlock .specificContBlok{
+        width: 100%;
+        height: auto;
+    }
+    .specificationBlock .specificContBlok .bl1,.specificationBlock .specificContBlok .bl2{
+        width: 87%;
+        float: none;
+        content: " ";
+        display: table;
+        margin-left: 8%;
+        padding-bottom: 40px;
+    }
+    .specificationBlock .specificContBlok .bl2{
+        display: none;
+    }
+    .specificationBlock .specificContBlok .bl1 table {
+        width: 100%;
+        margin-left: 0;
+    }
+    .specificationBlock .specificContBlok .bl1 td,.specificationBlock .specificContBlok .bl1 th{
+        padding-bottom: 16px;
+        padding-top: 10px;
+    }
+    .specificationBlock .specificContBlok th p.hmLess640,.specificationBlock .specificContBlok td p.hmLess640{
+        display: none;
+    }
+    .specificationBlock .specificContBlok th p.smLess640,.specificationBlock .specificContBlok td p.smLess640{
+        display: block;
+    }
+    .specificationBlock .specificContBlok p{
+        font-size: 22px;
+        float: left;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .specificationBlock .specificContBlok p span{
+        font-size: 22px;
+    }
+    .BannerBlock{
+        border-top: 9px solid #E20C18;
+    }
+    .BannerBlock .BannerBlockCont{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .BannerBlock .BannerBlockCont .textH{
+        font-size: 57px;
+        color: #000926;
+        letter-spacing: 5px;
+        line-height: 1.2;
+        padding-bottom: 40px;
+        padding-left: 5px;
+        padding-top: 50px;
+    }
+    .BannerBlock .BannerBlockCont .desk_bl{display: block!important;}
+    .BannerBlock .BannerBlockCont .show640{
+        display: block;
+    }
+    .BannerBlock .BannerBlockCont .hide640{
+        display: none!important;
+    }
+    .BannerBlock .ProductBlockCont{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .BannerBlock .ProductBlockCont .textH{
+        font-size: 60px;
+        font-weight: 700;
+        color: #000926;
+        letter-spacing: 5px;
+        line-height: 1.25;
+        text-transform: uppercase;
+        padding-bottom: 60px;
+        padding-left: 5px;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .BannerBlock .ProductBlockCont .ImgBlok .hideMe{
+        display: block;
+    }
+    .BannerBlock .ProductBlockCont .ImgBlok>img{
+        display: none;
+    }
+    .contactFormPageWrapper{
+        background-color: #E20C18;
+        color: #fff;
+        height: auto;
+    }
+    .contactFormPageWrapper .contactFormPage{
+        width: 86%;
+        margin-left: 7%;
+    }
+    .contactFormPageWrapper .contactFormPage .textH{
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        padding-bottom: 0;
+        padding-left: 5px;
+        padding-top: 55px;
+        text-align: center;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc{
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .hDesc{
+        font-size: 29px;
+        font-weight: 500;
+        padding-bottom: 50px;
+        padding-left: 0;
+        padding-top: 15px;
+        line-height: 1.35;
+        text-align: center;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .addresBl{
+        font-size: 25px;
+        font-weight: 400;
+        padding-left: 3px;
+        border-left: none;
+        line-height: 1.4;
+        padding-top: 16px;
+        width: 80%;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .addresBl p{
+        height: 30px;
+        width: 100%;
+    }
+    .contactFormPageWrapper .contactFormPage .formBlok{
+        width: 100%;
+        float: none;
+        padding-top: 44px;
+        padding-left: 0;
+    }
+    .contactFormPageWrapper .contactFormPage .formBlok p{
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.35;
+        padding: 4px 0 6px 6px;
+    }
+    .contactFormPageWrapper .contactFormPage .formBlok .formButton{
+        width: 50%;
+        margin-top: 60px;
+        margin-left: 25%;
+        margin-bottom: 88px;
+    }
    
 
+}
+
+@media only screen and (max-width: 580px) {
+    .p3Bl1 .h1norm{
+        font-size: 35px;
+    }
+    .p3Bl1 .h1bold{
+        font-size: 50px;
+    }
+    .contBlocks .textBlocks .bl1 .textBlh{
+        font-size: 50px;
+    }
+    .contBlocks .textBlocks .bl1 p{
+        font-size: 22px;
+    }
+    .contBlocks .textBlocks .bl2 .textBlh{
+        font-size: 50px;
+    }
+    .contBlocks .textBlocks .bl2 p{
+        font-size: 22px;
+    }
+    .specificationBlock .textBlh{
+        font-size: 50px;
+    }
+    .specificationBlock .specificContBlok p,.specificationBlock .specificContBlok p span{
+        font-size: 18px;
+        padding-right: 5px;
+    }
+    .BannerBlock .BannerBlockCont .textH{
+        font-size: 45px;
+    }
+    .BannerBlock .ProductBlockCont .textH{
+        font-size: 50px;
+    }
+    .contactFormPageWrapper .contactFormPage .textH{
+        font-size: 50px;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .hDesc{
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .addresBl{
+        font-size: 22px;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .addresBl p{
+        height: 30px;
+    }
+    .contactFormPageWrapper .contactFormPage .formBlok p{
+        font-size: 35px;
+    }
+    .specificationBlock .specificContBlok tr{
+        background: none;
+    }
+    .specificationBlock .specificContBlok td,.specificationBlock .specificContBlok th{
+        border-bottom: 1px solid #000;
+    }
+    
 }
 
 @media only screen and (max-width: 555px) {
@@ -701,7 +1016,70 @@
     .videospace .ht, .newsspace .ht {float:none;}
     
     .cat3 .itm .tit a {
-        font-size:28px;
+       
+    }
+    
+     .p3Bl1 .h1norm{
+        font-size: 30px;
+    }
+    .p3Bl1 .h1bold{
+        font-size: 45px;
+    }
+    .contBlocks .textBlocks .bl1 .textBlh{
+        font-size: 45px;
+    }
+    .contBlocks .textBlocks .bl1 p{
+        font-size: 18px;
+    }
+    .contBlocks .textBlocks .bl2 .textBlh{
+        font-size: 45px;
+    }
+    .contBlocks .textBlocks .bl2 p{
+        font-size: 18px;
+    }
+    .specificationBlock .textBlh{
+        font-size: 45px;
+    }
+    .specificationBlock .specificContBlok p,.specificationBlock .specificContBlok p span{
+        font-size: 16px;
+        padding-right: 5px;
+    }
+    .BannerBlock .BannerBlockCont .textH{
+        font-size: 43px;
+    }
+    .BannerBlock .ProductBlockCont .textH{
+        font-size: 45px;
+    }
+    .contactFormPageWrapper .contactFormPage .textH{
+        font-size: 45px;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .hDesc{
+        font-size: 20px;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .addresBl{
+        font-size: 16px;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .addresBl p{
+        height: 20px;
+    }
+    .contactFormPageWrapper .contactFormPage .formBlok p{
+        font-size: 20px;
+    }
+     .contactFormPageWrapper .contactFormPage .formBlok .inputF{
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .contactFormPageWrapper .contactFormPage .formBlok .textareaF{
+        height: 150px;
+    }
+    .contactFormPageWrapper .contactFormPage .formBlok .formButton{
+        height: 50px;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+    .contactFormPageWrapper .contactFormPage .formBlok{
+        padding-top: 20px;
     }
 
 }
@@ -750,6 +1128,44 @@
         font-size:55px
     }
     
+     .p3Bl1 .h1norm{
+        font-size: 28px;
+    }
+    .p3Bl1 .h1bold{
+        font-size: 38px;
+    }
+    .contBlocks .textBlocks .bl1 .textBlh{
+        font-size: 40px;
+    }
+    .contBlocks .textBlocks .bl1 p{
+        font-size: 16px;
+    }
+    .contBlocks .textBlocks .bl2 .textBlh{
+        font-size: 40px;
+    }
+    .contBlocks .textBlocks .bl2 p{
+        font-size: 16px;
+    }
+    .specificationBlock .textBlh{
+        font-size: 40px;
+    }
+    .specificationBlock .specificContBlok p,.specificationBlock .specificContBlok p span{
+        font-size: 15px;
+        padding-right: 5px;
+    }
+    .BannerBlock .BannerBlockCont .textH{
+        font-size: 38px;
+    }
+    .BannerBlock .ProductBlockCont .textH{
+        font-size: 40px;
+    }
+    .contactFormPageWrapper .contactFormPage .textH{
+        font-size: 40px;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .hDesc{
+        font-size: 18px;
+    }
+    
 }
 
 @media only screen and (max-width: 410px)  {
@@ -777,11 +1193,119 @@
     .osbox .itm.three .hts .w3 {
         font-size:45px
     }
+    
+     .p3Bl1 .h1norm{
+        font-size: 25px;
+    }
+    .p3Bl1 .h1bold{
+        font-size: 35px;
+    }
+    .contBlocks .textBlocks .bl1 .textBlh{
+        font-size: 33px;
+        padding-bottom: 20px;
+        letter-spacing: normal;
+    }
+    .contBlocks .textBlocks .bl1 p{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .contBlocks .textBlocks .bl2 .textBlh{
+        font-size: 33px;
+        padding-bottom: 20px;
+        letter-spacing: normal;
+    }
+    .contBlocks .textBlocks .bl2 p{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .specificationBlock .textBlh{
+        font-size: 33px;
+        letter-spacing: normal;
+    }
+    .specificationBlock .specificContBlok p,.specificationBlock .specificContBlok p span{
+        font-size: 14px;
+        padding-right: 5px;
+    }
+    .BannerBlock .BannerBlockCont .textH{
+        font-size: 30px;
+        letter-spacing: normal;
+    }
+    .BannerBlock .ProductBlockCont .textH{
+        font-size: 33px;
+        letter-spacing: normal;
+    }
+    .contactFormPageWrapper .contactFormPage .textH{
+        font-size: 33px;
+        letter-spacing: normal;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .hDesc{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 385px) {
     .logo {
         width: 170px;
+    }
+    
+     .p3Bl1 .h1norm{
+        font-size: 20px;
+    }
+    .p3Bl1 .h1bold{
+        font-size: 30px;
+    }
+    .contBlocks .textBlocks .bl1 .textBlh{
+        font-size: 25px;
+        padding-bottom: 20px;
+        letter-spacing: normal;
+    }
+    .contBlocks .textBlocks .bl1 p{
+        font-size: 14px;
+        padding-bottom: 7px;
+    }
+    .contBlocks .textBlocks .bl2 .textBlh{
+        font-size: 25px;
+        padding-bottom: 20px;
+        letter-spacing: normal;
+    }
+    .contBlocks .textBlocks .bl2 p{
+        font-size: 14px;
+        padding-bottom: 7px;
+    }
+    .specificationBlock .textBlh{
+        font-size: 25px;
+        letter-spacing: normal;
+    }
+    .BannerBlock .BannerBlockCont .textH{
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+    .BannerBlock .ProductBlockCont .textH{
+        font-size: 25px;
+        letter-spacing: normal;
+    }
+    .contactFormPageWrapper .contactFormPage .textH{
+        font-size: 25px;
+        letter-spacing: normal;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .addresBl{
+        font-size: 16px;
+        padding-right: 20px;
+        width: 100%;
+    }
+    .contactFormPageWrapper .contactFormPage .blDesc .addresBl p{
+        height: 20px;
+    }
+    .contactFormPageWrapper .contactFormPage .formBlok .formButton{
+        height: 50px;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-bottom: 40px;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .wrapper{
+        min-width:320px;
     }
     
 }
@@ -803,4 +1327,6 @@
         min-width:1250px;
     }
 }
+
+
 
