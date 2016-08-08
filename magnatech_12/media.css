@@ -1103,12 +1103,15 @@
         display: block;
     }
     .p1BanerTop .owl_st1Top_title{
-        font-size: 20px;
+        line-height: 0.5;
+        font-size: 30px;
         letter-spacing:2px;
     }
     .p1BanerTop .owl_st1Top_title span{
-        font-size: 110px;
+        font-size: 120px;
         letter-spacing:7px;
+        padding-bottom: 50px;
+        line-height: 1.5;
     }
     .contBlocksP1 .contH{
         display: none;
@@ -1409,13 +1412,13 @@
     }
      /*page1*/
     .contBlocksP1 .bloks>div .img a.one{
-        bottom: 0;
+        bottom: 25px;
         top: auto;
         font-size: 40px;
     }
     .contBlocksP1 .bloks>div .img a{
         font-size: 40px;
-        bottom: 5px;
+        bottom: 10px;
         top: auto;
     }
 }
@@ -1681,6 +1684,9 @@
     }
     .partnerBlok .pbH640{
         font-size: 35px;
+    }
+    .p1BanerTop .owl_st1Top_title span{
+        padding-bottom: 10px;
     }
 }
 
