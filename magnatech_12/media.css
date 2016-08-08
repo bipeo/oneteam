@@ -1270,7 +1270,8 @@
         font-size: 6px;
     }
     .search .inner {
-        left: -217px;
+        left: -194px;
+        top: 0;
     }
     .forsel .select {
         margin-top: 4px;
@@ -1457,6 +1458,9 @@
     }
     .search input[type=submit], .search .submfad {
         left: 44px;
+    }
+    .search .inner {
+        left: -171px;
     }
 }
 
