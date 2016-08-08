@@ -484,7 +484,7 @@
     .soclks ul {
         margin-left: 0;
     }
-    .gfilms .itm .tit {
+    .gfilms .itm .tit, .gfilms .itm.st-4 .tit, .gfilms .itm.st-5 .tit {
         font-size: 50px;
         line-height: 51px;
     }
@@ -568,6 +568,10 @@
     }
     .owl_st2 {
         width:auto;
+    }
+    
+    .owl_st2 .d_b_mob, .owl_st2 .owl-carousel .owl-item img.d_b_mob {
+        height:220px;
     }
  
     .pane_2 .h3b {
@@ -961,6 +965,14 @@
     .avres .h3c br {
         display:block
     }
+    
+    .avres .h3c {
+        float:none;
+    }
+    
+     .avres .val .dv {
+        display:none;
+    }
    
     .solbox {
         padding:26px 4% 20px 4%;
@@ -974,7 +986,7 @@
             padding: 11px 0px 10px 0px;
     }
     .solbox .itm .count {
-        padding: 8px 0px 8px 0px;
+        padding: 6px 0px 6px 0px;
         font-size:23px;
         width:50px;
     }
@@ -1010,6 +1022,51 @@
     .resmenu .box2 ul li:nth-child(2n +1) {
         clear:left;
         margin-left:0px;
+    }
+    
+    .text3 {
+        float:none;
+        width:auto;
+        margin:0px 4%;
+        padding: 0px 0px 50px 0px;
+    }
+    .text3 .h3c {
+        text-align:center;
+        margin-top:80px;
+    }
+    
+    .text3 p.fs {
+    margin-top: 40px;
+    }
+    
+    .text3 p {
+        font-size:25px;
+    }
+    
+    .text3 .imgs .pk {
+        float:none;
+        width:auto;
+        margin: 29px auto 16px auto;
+    }
+    
+    .colmgz {
+        display:none;
+    }
+    
+    .text3 .imgs .pk {
+        margin-top:0px;
+        margin-bottom:10px;
+    }
+    .text3 .imgs .pk img {
+        width:100%;
+    }
+    
+    .text3 .imgs .pk:first-child {
+        margin-top:29px;
+    }
+    
+    .outcsel .select .option-list li {
+        font-size:24px;
     }
     
 }
@@ -1068,9 +1125,72 @@
         border-bottom: 1px solid #000;
     }
     
+    
+    .avres .h3c {
+        font-size:45px;
+    }
+    
+    .text3 .h3c {
+        line-height: 1.2em;
+        font-size:40px;
+    }
+    
+    .text3 p {
+    font-size: 16px;
+    margin: 15px 0px 0px 0px;
+    }
+    
+    .text3 p.fs {
+       margin-top: 23px;
+    }
+    
+    .outcsel .select .active-option {
+        font-size:26px;
+    }
+    
+    .brands2 .bt {
+    font-size: 18px;
+    }
+    
+    .brands2 .itm .val .inval {
+    font-size: 20px;
+    }
+    
+    .brands2 .line.last .itm:nth-child(n+6):nth-child(-n+100) {
+    margin-top: 12px;
+    }
+    
+    brands2 .line.last .itm {
+    margin: 13px 33px 0px 0px;
+    }
+    
+    .mob_cats {
+        font-size:20px;
+    }
+    
+    .mob_cats ul li {
+    margin-right: 35px;
+    margin-bottom: 26px;
+    }
+    
+    .cat3 .itm .tit a {
+    font-size: 24px;
+    }
+    
+    .avres .val {
+        display:none;
+    }
+    
+    
+    
+    
+   
 }
 
 @media only screen and (max-width: 555px) {
+     .menu_main > li  .tit {
+        font-size: 36px;
+    }
 /*
     .search_form {
         position: relative;
@@ -1154,6 +1274,10 @@
     }
     .contactFormPageWrapper .contactFormPage .formBlok{
         padding-top: 20px;
+    }
+    
+    .menu_main > li  .tit {
+        font-size: 32px;
     }
 
 }
@@ -1286,6 +1410,51 @@
         left: 23px;
     }
     
+    
+    .outcsel .select .active-option {
+        font-size:25px;
+    }
+    
+    .resmenu {
+        margin-top:20px;
+    }
+    
+    .solbox .itm a {
+    padding: 6px 0px 5px 0px;
+    }
+    
+    .solbox {
+    padding: 14px 4% 20px 4%;
+    }
+    
+    .solbox .itm .count {
+        font-size:21px;
+    }
+    
+    .solbox .itm {
+    font-size: 14px;
+    margin: 14px 0px 0px 1px;
+    }
+    
+    .solbox .itm .count {
+    font-size: 15px;
+    }
+    
+    .resmenu .box2 ul li a {
+        font-size:18px;
+    }
+    
+    .solbox .itm .mb {
+    margin: 5px 9px 0px 13px;
+        }
+    
+    .resmenu .box2 ul li span {
+    font-size: 18px;
+    }
+    
+    
+    
+    
 }
 
 @media only screen and (max-width: 420px)  {
@@ -1297,18 +1466,18 @@
 @media only screen and (max-width: 410px)  {
     
    
-    .cat3 .itm {
+/*    .cat3 .itm {
         float:none;
         width:auto;
-    }
+    }*/
     
     
-    .cat3 .itm:nth-child(2n + 1) {
+/*    .cat3 .itm:nth-child(2n + 1) {
         clear:none;
-    }
-     .cat3 .itm:nth-child(1n + 1) {
+    }*/
+/*    .cat3 .itm:nth-child(1n + 1) {
        clear:left;   
-    }
+    }*/
   
     .osbox .itm.three .hts .w1 {
         font-size:25px;
@@ -1462,6 +1631,12 @@
     .search .inner {
         left: -171px;
     }
+    
+    .text3 .h3c {
+    font-size: 35px;
+    }
+    
+    
 }
 
 @media only screen and (max-width: 350px) {
@@ -1502,6 +1677,97 @@
     .logo {
         margin-left: 26%
     }
+    
+    .text3 .h3c {
+    font-size: 30px;
+    }
+    .text3 p.fs {
+    margin-top: 25px;
+    }
+    .text3 p.fs.btm {
+     margin-top:10px;   
+    }
+    .text3 {
+        margin:0px 6%;
+    }
+    .text3 p {
+        margin: 15px 0px 0px 0px;
+        font-size:13px;
+    }
+    
+    .mob_cats {
+        font-size:13px;
+    }
+    .mob_cats ul li {
+        margin-bottom:15px;
+    }
+    .outcsel .select .option-list li {
+        font-size:14px;
+    }
+    .outcsel .select .active-option {
+    font-size: 17px;
+    padding: 8px 20px 10px 20px;
+    }
+    
+    .owl_st2 .d_b_mob, .owl_st2 .owl-carousel .owl-item img.d_b_mob {
+        height:110px;
+    }
+    
+    .owl_st2 .owl_1_title {
+        font-size:20px;
+        padding:0px 7%;
+    }
+    
+    .owl_st2 .owl_1_title a {
+        font-size:14px;
+    }
+    .owl_st2 .owl_1_title .link {
+        margin-top:3px;
+    }
+    
+    .outcsel .select .active-option, .outcsel .select.open .active-option, .outcsel .select.open .active-option:hover {
+            background: url(img/corner_2mob.png) no-repeat 96.5% center;
+    }
+    
+    .brands2 .bt {
+        font-size:12px;
+    }
+    .brands2 .itm .val .inval {
+        font-size:14px;
+    }
+    .brands2 .itm.active  .x {
+        width:10px;
+        height:9px;
+        background-size:cover;
+        margin-top:13px;
+    }
+    .brands2 .line.last .bt {
+     margin-top: 8px;
+    }
+    .brands2 .line.first .itm {
+    margin: 10px 23px 0px 0px;
+    }
+    .brands2 .line.last .itm {
+    margin: 6px 26px 0px 0px;
+    }
+    .brands2 .line.last .itm:nth-child(n+6):nth-child(-n+100) {
+    margin-top: 6px;
+    }
+    
+    .cat3 .itm .tit a {
+    font-size: 16px;
+    }
+    .cat3 .itm .tit {
+    margin: 20px 0px 30px 0px;
+    text-align: center;
+    }
+    
+    .cat3 {
+      margin-top: 30px;
+     padding-top: 50px;
+    }
+        
+
     /* ащк 320 *//*
     .menu-mobile:after {
         background-image: url(img/buter_320.png);
