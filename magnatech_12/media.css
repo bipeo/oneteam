@@ -527,8 +527,8 @@
         top: 35px;
         width: 49px;
     }
-    .owl_1_title {
-        
+    .owl_1_title br {
+        display: none;
     }
     .partbox .but, .learnbox .but {
         margin: 0 6%; 
@@ -1071,9 +1071,14 @@
 }
 
 @media only screen and (max-width: 555px) {
+/*
     .search_form {
         position: relative;
         top: -25px;
+    }
+*/
+    .logo {
+        width: 145px;
     }
 }
 
@@ -1160,8 +1165,9 @@
     .owl_1_title {
         font-size: 30px;
     }
-    .gfilms .itm .tit {
+    .gfilms .itm .tit, .gfilms .itm.st-5 .tit, .gfilms .itm.st-4 .tit {
         font-size: 30px;
+        line-height: 40px;
     }
     .gfilms .itm .desc {
         font-size: 20px;
@@ -1172,13 +1178,17 @@
         padding-left: 2%;
         padding-right: 2%;
     }
+/*
     .search {
         display: none;
     }
+*/
+/*
     .search_form {
         position: absolute;
         top: -5px;
     }
+*/
     .osbox .itm.two .tit {
         font-size: 90px;
     }
@@ -1234,7 +1244,53 @@
     .contactFormPageWrapper .contactFormPage .blDesc .hDesc{
         font-size: 18px;
     }
+    .search .inner {
+        background-image: url(img/search_bg_mobile.png);
+        height: 62px;
+        width: 236px;
+    }
+    .search input[type=text] {
+        margin-top: 13px;
+    }
+    .menu-mobile:after {
+        background-image: url(img/buter_320.png);
+        height: 18px;
+        width: 22px;
+    }
+    .logo {
+        margin-bottom: 15px;
+        width: 95px;
+    }
+    .search input[type=submit], .search .submfad {
+        background-image: url(img/search_320.png);
+        height: 24px;
+        width: 25px;
+    }
+    .logo .vt {
+        font-size: 6px;
+    }
+    .search .inner {
+        left: -217px;
+    }
+    .forsel .select {
+        margin-top: 4px;
+    }
+    .menu-mobile {
+        top: -68px;
+    }
+    .search input[type=submit], .search .submfad {
+        top: 18px;
+    }
+    .search input[type=submit], .search .submfad {
+        left: 23px;
+    }
     
+}
+
+@media only screen and (max-width: 420px)  {
+    .osbox .itm.three .hts .w3 {
+        font-size: 45px;
+    }
 }
 
 @media only screen and (max-width: 410px)  {
@@ -1310,12 +1366,23 @@
     .contactFormPageWrapper .contactFormPage .blDesc .hDesc{
         font-size: 16px;
     }
+    .osbox .itm.two .tit, .osbox .itm.one .count {
+        font-size: 70px;
+    }
+    .osbox .itm.one .tit {
+        font-size: 35px;
+    }
+    .osbox .itm.two .rmore a, .osbox .rmore a {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 385px) {
+/*
     .logo {
         width: 170px;
     }
+*/
     
      .p3Bl1 .h1norm{
         font-size: 20px;
@@ -1376,7 +1443,33 @@
     .wrapper{
         min-width:320px;
     }
-    
+    .h2_owl {
+        font-size: 50px;
+    }
+    .pane-cat .col .tit a {
+        font-size: 18px;
+    }
+    .osbox .itm.two .rmore a, .osbox .rmore a {
+        font-size: 20px;
+    }
+    .forsel .select {
+        margin-left: 15px;
+    }
+    .search input[type=submit], .search .submfad {
+        left: 44px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .osbox .itm.three .hts .w3 {
+        font-size: 35px;
+    }
+    .osbox .itm.three .hts .w2 {
+        font-size: 25px;
+    }
+    .osbox .itm.three .hts .w1 {
+        font-size: 19px;
+    }
 }
 
 @media only screen and (max-width: 342px) {
@@ -1384,10 +1477,90 @@
         font-size: 36px;
         width: 100%;
     }
+/*
     .logo {
         width: 108px;
     }
-    
+*/
+    .osbox .itm.two .rmore a, .osbox .rmore a {
+        font-size: 19px;
+    }
+    #owl_4 .owl-dots .owl-dot + .owl-dot, #owl_1 .owl-dots .owl-dot + .owl-dot, #owl_2 .owl-dots .owl-dot + .owl-dot, #owl_3 .owl-dots .owl-dot + .owl-dot {
+        margin-left: 27px;
+    }
+    .owl_out .h2_owl, .pane-cat .h2_owl, .h2_owl, .partbox .h2_owl {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .partbox .text, .nlist .itm {
+        font-size: 25px;
+    }
+    .logo {
+        margin-left: 26%
+    }
+    /* ащк 320 *//*
+    .menu-mobile:after {
+        background-image: url(img/buter_320.png);
+        height: 18px;
+        width: 22px;
+    }
+    .logo {
+        width: 95px;
+    }
+    .search input[type=submit], .search .submfad {
+        background-image: url(img/search_320.png);
+        height: 24px;
+        width: 25px;
+    }
+    .logo .vt {
+        font-size: 6px;
+    }
+    .select .active-option {
+        font-size: 10px;
+    }
+    .search {
+        width: 27px;
+    }
+    .forsel .select {
+        margin-top: 20px;
+    }
+    .search_form {
+        position: absolute;
+        right: -33px;
+        top: -17px;
+    }
+    .menu-mobile {
+        top: -70px;
+    }
+    .gfilms .itm.st-1 .tit {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .gfilms .itm {
+        height: 202px!important;
+    }
+    .gfilms .itm .desc {
+        font-size: 12px;
+    }
+    .osbox .itm.one .tit {
+        font-size: 22px;
+    }
+    .osbox .itm.two .tit, .osbox .itm.one .count {
+        font-size: 45px;
+    }
+    .osbox .itm.one .count {
+        line-height: 56px;
+    }
+    .osbox .itm {
+        min-height: 258px;
+    }
+    .owl_out .h2_owl, .pane-cat .h2_owl, .h2_owl, .partbox .h2_owl {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .pane-cat .col .itm .ic {
+        width: 34px;
+    }*/
 }
 
 
