@@ -255,6 +255,232 @@
         margin-left: 25%;
         margin-bottom: 88px;
     }
+    /*страница 1*/
+    .p1Bl1{
+        width: 95%;
+        padding-top: 55px;
+        padding-bottom: 57px;
+    }
+    .p1Bl1 select{
+        display: block;
+        width: 98%;
+        font-size: 32px;
+        padding: 8px 12px;
+        margin-left: 2%;
+        border: 1px solid #ccc;
+        color: #000926;
+    }
+    .p1Bl1 select>option{
+        color: #000926;
+
+    }
+    .p1Bl1 ul{
+        display: none;
+    }
+    .p1BanerTop .owl_st1Top{
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .p1BanerTop .owl-carousel .owl-item img.owl_st1Top_img{
+        display: none;
+    }
+    .p1BanerTop .owl-carousel .owl-item img.owl_st1Top_img640{
+        display: block;
+    }
+    .p1BanerTop .owl_st1Top_title{
+        line-height: 0.5;
+        font-size: 30px;
+        letter-spacing:2px;
+    }
+    .p1BanerTop .owl_st1Top_title span{
+        font-size: 120px;
+        letter-spacing:7px;
+        padding-bottom: 50px;
+        line-height: 1.5;
+    }
+    .contBlocksP1 .contH{
+        display: none;
+    }
+    .contBlocksP1 .contH640{
+        display: block;
+        font-size: 27px;
+        text-align: center;
+        padding-top: 45px;
+        padding-bottom: 64px;
+        width: 87%;
+        margin: 0 auto;
+        line-height: 1.3;
+    }
+    .contBlocksP1{
+        width: 100%;
+    }
+    .contBlocksP1 .rightBlokContact{
+        display: none;
+    }
+    .contBlocksP1 .contentBl{
+        width: 100%;
+    }
+    .contBlocksP1 .bloks>div{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    .contBlocksP1 .bloks{
+        height: auto;
+    }
+    .contBlocksP1 .bloks>div .img img.img640{
+        display: block;
+    }
+    .contBlocksP1 .bloks>div .img img.imgDescTop{
+        display: none;
+    }
+    .contBlocksP1 .bloks>div .img a.one{
+        top: 150px;
+        left: 40px;
+        font-size: 55px;
+        font-weight: 400;
+    }
+    .contBlocksP1 .bloks>div .img a{
+        top: 120px;
+        left: 40px;
+        font-size: 55px;
+        font-weight: 400;
+    }
+    .contBlocksP1 .bloks>div .desc{
+        font-size: 27px;
+        color: #191A20;
+        font-weight: 400;
+        padding: 18px 0 70px 0;
+        margin: 0 auto;
+        width: 90%;
+        line-height: 1.35;
+    }
+    .contentBl{
+        padding-bottom: 0;
+    }
+    .owl_st1banberCont{
+        margin-bottom: 10px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .owl_st1banberCont .desk_bl{
+        display: block!important;
+    }
+    .owl_st1banberCont img.imgDesc{
+        display: none!important;
+    }
+    .owl_st1banberCont img.img640{
+        display: block!important;
+    }
+    .owl_st1banberCont.banner1 .owl_1_title {
+        line-height: 1.35;
+        font-size:40px;
+        letter-spacing: 1.5px;
+        padding: 10px 50px;
+    }
+    .owl_st1banberCont.banner1 .owl_1_title a {
+        font-size:27px;
+    }
+    .owl_st1banberCont.banner2 .owl_1_title {
+        line-height: 1.35;
+        font-size:40px;
+        letter-spacing: 1.5px;
+    }
+    .owl_st1banberCont.banner2 .owl_1_title a {
+        font-size:27px;
+    }
+    .partnerBlok .pbH{
+        display: none;
+    }
+    .partnerBlok .pbH640{
+        display: block;
+        font-weight: 700;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 65px;
+        letter-spacing: 2px;
+        line-height: 1.30;
+    }
+    .partnerBlok .pbSlaid640{
+        display: block;
+    }
+    .partnerBlok .pbSlaid640 img{
+        width: 86%;
+        margin-left: 7%;
+    }
+    .partnerBlok .pbSlaid{
+        display: none;
+    }
+    .pbSlaid640 .owl-dots {
+        margin: 105px 0 0 0;
+        text-align: center;
+    }
+    .pbSlaid640 .owl-dots .owl-dot + .owl-dot {margin-left: 35px;}
+
+    .pbSlaid640 .owl-dots .owl-dot {
+        border-radius: 50%;
+        display: inline-block;
+        height: 22px;
+        width: 22px;
+        background-color: #2C2E33;
+    }
+    .pbSlaid640 .owl-dots .owl-dot.active{
+        background-color: #E20C18;
+    }
+    .partnerBlok .buttonBl{
+        display: none;
+    }
+    .pageFooter .footbox .rpart{
+        border: none;
+    }
+    .pageFooter .footbox .sideinf:before {
+        content:'';
+        width:0;
+    }
+    .pageFooter .footbox .lpart, .footbox .ostaff, .copy {
+        display: none;
+    }
+    .pageFooter .sideinf, .footbox .rpart {
+        float: none;
+    }
+    .pageFooter .sideinf .loc p {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .pageFooter .soclks li a {
+        height: 87px !important;
+        width: 87px !important;
+    }
+    .pageFooter .soclks li a {
+        background-image: url(img/footer-soc-mobile.png);
+    }
+    .pageFooter .soclks li.fb a {
+        background-position: 0 0;
+    }
+    .pageFooter .soclks li.fb a:hover {
+        background-position: -87px 0;
+    }
+    .pageFooter .soclks li.tw a {
+        background-position: 0 -87px;
+    }
+    .pageFooter .soclks li.tw a:hover {
+        background-position: -87px -87px;
+    }
+    .pageFooter .soclks li.plus a {
+        background-position: 0 -174px;
+    }
+    .pageFooter .soclks li.plus a:hover {
+        background-position: -88px -174px;
+    }
+    .pageFooter .soclks li.photo a {
+        background-position: 0 -261px;
+    }
+    .pageFooter .soclks li.photo a:hover {
+        background-position: -88px -261px;
+    }
 }
 @media only screen and (max-width: 580px) {
     .p3Bl1 .h1norm{
@@ -310,9 +536,69 @@
     .specificationBlock .specificContBlok td,.specificationBlock .specificContBlok th{
         border-bottom: 1px solid #000;
     }
-    
+    /*страница 1*/
+    .p1Bl1{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .p1BanerTop {
+        height: 400px;
+    }
+    .p1BanerTop .owl_st1Top_title{
+        font-size: 18px;
+        letter-spacing:normal;
+        height: 100%;
+    }
+    .p1BanerTop .owl_st1Top_title span{
+        font-size: 90px;
+        letter-spacing:5px;
+    }
+    .contBlocksP1 .contH640{
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .contBlocksP1 .bloks>div .img a.one{
+        font-size: 45px;
+    }
+    .contBlocksP1 .bloks>div .img a{
+        font-size: 45px;
+    }
+    .contBlocksP1 .bloks>div .desc{
+        font-size: 20px;
+    }
+    .owl_st1banberCont.banner1 .owl_1_title {
+        font-size:30px;
+    }
+    .owl_st1banberCont.banner1 .owl_1_title a {
+        font-size:20px;
+    }
+    .owl_st1banberCont.banner2 .owl_1_title {
+        font-size:30px;
+    }
+    .owl_st1banberCont.banner2 .owl_1_title a {
+        font-size:20px;
+    }
+    .partnerBlok .pbH640{
+        font-size: 45px;
+    }
 }
-
+@media only screen and (max-width: 555px) {
+/*страница 1*/
+    .p1BanerTop {
+        height: 380px;
+    }
+    .contBlocksP1 .bloks>div .img a.one{
+        bottom: 25px;
+        top: auto;
+        font-size: 40px;
+    }
+    .contBlocksP1 .bloks>div .img a{
+        font-size: 40px;
+        bottom: 10px;
+        top: auto;
+    }
+}
 @media only screen and (max-width: 490px) {
     .p3Bl1 .h1norm{
         font-size: 30px;
@@ -376,6 +662,64 @@
     .contactFormPageWrapper .contactFormPage .formBlok{
         padding-top: 20px;
     }
+    /*page1*/
+    .pageFooter .footbox .rpart {
+        margin-left:0px;
+    }
+    .pageFooter .sideinf .loc p {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .pageFooter .sideinf .loc p {
+        margin: 20px 0px 0px 0px;
+        line-height: 1.3;
+    }
+    .pageFooter .soclks li a {
+        height: 40px !important;
+        width: 40px !important;
+    }
+    .pageFooter .soclks li a {
+        background-image: url(img/soclks_spr.png);
+        background-repeat: no-repeat;
+        display: block;
+    }
+
+    .pageFooter .soclks li.fb a {
+        width: 36px;
+        height: 36px;
+        background-position: -20px -20px;
+    }
+    .pageFooter .soclks li.fb a:hover {
+        background-position: -20px -96px;
+    }
+
+    .pageFooter .soclks li.photo a {
+        width: 36px;
+        height: 35px;
+        background-position: -20px -172px;
+    }
+    .pageFooter .soclks li.photo a:hover {
+        background-position: -20px -247px;
+    }
+
+    .pageFooter .soclks li.plus a {
+        width: 37px;
+        height: 36px;
+        background-position: -20px -322px;
+    }
+    .pageFooter .soclks li.plus a:hover {
+        background-position: -20px -398px;
+    }
+
+    .pageFooter .soclks li.tw a {
+        width: 37px;
+        height: 36px;
+        background-position: -20px -474px;
+    }
+
+    .pageFooter .soclks li.tw a:hover {
+        background-position: -20px -550px;
+    }
 }
 
 @media only screen and (max-width: 460px)  {
@@ -415,6 +759,53 @@
     }
     .contactFormPageWrapper .contactFormPage .blDesc .hDesc{
         font-size: 18px;
+    }
+     /*страница 1*/
+    .p1BanerTop {
+        height: 320px;
+    }
+    .p1Bl1{
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+    .p1BanerTop .owl_st1Top_title{
+        font-size: 16px;
+    }
+    .p1BanerTop .owl_st1Top_title span{
+        font-size: 70px;
+        letter-spacing:3px;
+    }
+    .contBlocksP1 .contH640{
+        font-size: 20px;
+        padding-top:0;
+    }
+    .contBlocksP1 .bloks>div .img a.one{
+        font-size: 35px;
+    }
+    .contBlocksP1 .bloks>div .img a{
+        font-size: 35px;
+    }
+    .contBlocksP1 .bloks>div .desc{
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .owl_st1banberCont.banner1 .owl_1_title {
+        font-size:25px;
+    }
+    .owl_st1banberCont.banner1 .owl_1_title a {
+        font-size:16px;
+    }
+    .owl_st1banberCont.banner2 .owl_1_title {
+        font-size:25px;
+    }
+    .owl_st1banberCont.banner2 .owl_1_title a {
+        font-size:16px;
+    }
+    .partnerBlok .pbH640{
+        font-size: 35px;
+    }
+    .p1BanerTop .owl_st1Top_title span{
+        padding-bottom: 10px;
     }
 }
 
@@ -528,8 +919,61 @@
     .wrapper{
         min-width:320px;
     }
+    /*страница 1*/
+    .p1BanerTop {
+        height: 270px;
+    }
+    .p1BanerTop .owl_st1Top_title{
+        font-size: 14px;
+    }
+    .p1BanerTop .owl_st1Top_title span{
+        font-size: 60px;
+        letter-spacing:normal;
+    }
+    .p1Bl1 select{
+        font-size: 20px;
+    }
+    .contBlocksP1 .contH640{
+        font-size: 16px;
+    }
+    .contBlocksP1 .bloks>div .img a.one{
+        font-size: 25px;
+    }
+    .contBlocksP1 .bloks>div .img a{
+        font-size: 25px;
+    }
+    .contBlocksP1 .bloks>div .desc{
+        font-size: 14px;
+        padding-bottom: 16px;
+    }
+    .owl_st1banberCont.banner1 .owl_1_title {
+        font-size:20px;
+    }
+    .owl_st1banberCont.banner1 .owl_1_title a {
+        font-size:14px;
+    }
+    .owl_st1banberCont.banner2 .owl_1_title {
+        font-size:20px;
+    }
+    .owl_st1banberCont.banner2 .owl_1_title a {
+        font-size:14px;
+    }
+    .partnerBlok .pbH640{
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .pbSlaid640 .owl-dots {
+        margin: 40px 0 0 0;
+    }
+    .partnerBlok{
+        padding-bottom: 30px;
+    }
 }
 
 @media only screen and (max-width: 342px) {
-    
+    /*страница 1*/
+    .p1BanerTop {
+        height: 240px;
+    }
 }
