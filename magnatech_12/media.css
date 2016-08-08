@@ -484,7 +484,7 @@
     .soclks ul {
         margin-left: 0;
     }
-    .gfilms .itm .tit {
+    .gfilms .itm .tit, .gfilms .itm.st-4 .tit, .gfilms .itm.st-5 .tit {
         font-size: 50px;
         line-height: 51px;
     }
@@ -527,8 +527,8 @@
         top: 35px;
         width: 49px;
     }
-    .owl_1_title {
-        
+    .owl_1_title br {
+        display: none;
     }
     .partbox .but, .learnbox .but {
         margin: 0 6%; 
@@ -568,6 +568,10 @@
     }
     .owl_st2 {
         width:auto;
+    }
+    
+    .owl_st2 .d_b_mob, .owl_st2 .owl-carousel .owl-item img.d_b_mob {
+        height:220px;
     }
  
     .pane_2 .h3b {
@@ -961,6 +965,14 @@
     .avres .h3c br {
         display:block
     }
+    
+    .avres .h3c {
+        float:none;
+    }
+    
+     .avres .val .dv {
+        display:none;
+    }
    
     .solbox {
         padding:26px 4% 20px 4%;
@@ -974,7 +986,7 @@
             padding: 11px 0px 10px 0px;
     }
     .solbox .itm .count {
-        padding: 8px 0px 8px 0px;
+        padding: 6px 0px 6px 0px;
         font-size:23px;
         width:50px;
     }
@@ -1010,6 +1022,51 @@
     .resmenu .box2 ul li:nth-child(2n +1) {
         clear:left;
         margin-left:0px;
+    }
+    
+    .text3 {
+        float:none;
+        width:auto;
+        margin:0px 4%;
+        padding: 0px 0px 50px 0px;
+    }
+    .text3 .h3c {
+        text-align:center;
+        margin-top:80px;
+    }
+    
+    .text3 p.fs {
+    margin-top: 40px;
+    }
+    
+    .text3 p {
+        font-size:25px;
+    }
+    
+    .text3 .imgs .pk {
+        float:none;
+        width:auto;
+        margin: 29px auto 16px auto;
+    }
+    
+    .colmgz {
+        display:none;
+    }
+    
+    .text3 .imgs .pk {
+        margin-top:0px;
+        margin-bottom:10px;
+    }
+    .text3 .imgs .pk img {
+        width:100%;
+    }
+    
+    .text3 .imgs .pk:first-child {
+        margin-top:29px;
+    }
+    
+    .outcsel .select .option-list li {
+        font-size:24px;
     }
     /*страница 1*/
     .p1Bl1{
@@ -1338,6 +1395,10 @@
 }
 
 @media only screen and (max-width: 555px) {
+     .menu_main > li  .tit {
+        font-size: 36px;
+    }
+/*
     .search_form {
         position: relative;
         top: -25px;
@@ -1498,8 +1559,9 @@
     .owl_1_title {
         font-size: 30px;
     }
-    .gfilms .itm .tit {
+    .gfilms .itm .tit, .gfilms .itm.st-5 .tit, .gfilms .itm.st-4 .tit {
         font-size: 30px;
+        line-height: 40px;
     }
     .gfilms .itm .desc {
         font-size: 20px;
@@ -1510,13 +1572,17 @@
         padding-left: 2%;
         padding-right: 2%;
     }
+/*
     .search {
         display: none;
     }
+*/
+/*
     .search_form {
         position: absolute;
         top: -5px;
     }
+*/
     .osbox .itm.two .tit {
         font-size: 90px;
     }
@@ -1621,18 +1687,18 @@
 @media only screen and (max-width: 410px)  {
     
    
-    .cat3 .itm {
+/*    .cat3 .itm {
         float:none;
         width:auto;
-    }
+    }*/
     
     
-    .cat3 .itm:nth-child(2n + 1) {
+/*    .cat3 .itm:nth-child(2n + 1) {
         clear:none;
-    }
-     .cat3 .itm:nth-child(1n + 1) {
+    }*/
+/*    .cat3 .itm:nth-child(1n + 1) {
        clear:left;   
-    }
+    }*/
   
     .osbox .itm.three .hts .w1 {
         font-size:25px;
@@ -1691,12 +1757,23 @@
     .contactFormPageWrapper .contactFormPage .blDesc .hDesc{
         font-size: 16px;
     }
+    .osbox .itm.two .tit, .osbox .itm.one .count {
+        font-size: 70px;
+    }
+    .osbox .itm.one .tit {
+        font-size: 35px;
+    }
+    .osbox .itm.two .rmore a, .osbox .rmore a {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 385px) {
+/*
     .logo {
         width: 170px;
     }
+*/
     
      .p3Bl1 .h1norm{
         font-size: 20px;
@@ -1814,6 +1891,7 @@
         font-size: 36px;
         width: 100%;
     }
+/*
     .logo {
         width: 108px;
     }

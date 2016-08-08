@@ -101,6 +101,11 @@ input[type=submit] {
     margin-right: auto;
     width:1250px;
 }
+.center2 {
+    margin-left: auto;
+    margin-right: auto;
+    width:1200px;
+}
 
 .left {float: left;}
 .right {float: right;}
@@ -1179,6 +1184,9 @@ select.soflow {
 .magazine .pick {
     padding:0px 0px 177px 0px
 }
+.colmgz .magazine .pick {
+    padding:0px 0px 42px 0px;
+}
 .magazine .pick img {
     display:block;
     margin:0 auto;
@@ -1523,16 +1531,18 @@ select.soflow {
     background:#d9e1e4;
 }
 
-.h3b, .h3c {
+.h3b, .h3c  {
     font-weight: 700;
     color:#000926;   
 }
+
+
 
 .h3b {
     font-size:77px;
 }
 .h3c {
-
+    letter-spacing: .23rem;
     font-size:61px;
 }
 .smenu {
@@ -2304,7 +2314,7 @@ select.soflow {
 .avres .h3c {
     
     padding:70px 0px 0px 44px;
-    letter-spacing: .23rem;
+   
     float:left;
 }
 .avres .h3c br {
@@ -2390,6 +2400,113 @@ select.soflow {
 }
 .solbox .itm:hover .count {
     background-color:#e20c18;
+}
+.bread.st_4 {
+    padding-left:50px;
+}
+.text3 {
+    float:left;
+    width:855px;
+    padding:0px 0px 50px 50px;
+    overflow:hidden;
+}
+.text3 .h3c {
+    margin-top:27px;
+}
+.text3 .imgs {
+    overflow:hidden;
+}
+.text3 .imgs .pk {
+    width:388px;
+    float:left;
+    margin-left:23px;
+    margin:29px 0px 16px 23px
+}
+.text3 .imgs .pk:first-child {
+    margin-left:0px;
+}
+
+.text3 p {
+    font-size:18px;
+    color:#000;
+    line-height: 1.5em;
+    margin:27px 0px 0px 0px;
+}
+.text3 p.fs {
+    margin-top:21px
+}
+.kart {
+    overflow:hidden;
+    position: relative;
+}
+.kart .center {
+   position: relative;
+    z-index: 2;
+   background:#fff
+}
+.kart:after {
+    content:'';
+    left:0px;
+    top:115px;
+    width:100%;
+    height:9px;
+    position: absolute;
+    z-index: 0;
+    left:1250px;
+    background:#e20c18;
+}
+.colmgz {
+    width: 315px;
+    float:right;
+}
+
+.colmgz  .magazine {
+    float:none;
+    width: 315px;
+    margin: 115px 0px 33px 0px;
+}
+
+.colmgz .soc_rbox {
+    background-color:#d9e1e4;
+}
+.colmgz .soc_rbox   .hm {
+    width: 248px;
+    line-height:1.45em;
+    margin:41px auto 0px auto;
+    font-size:20px;
+    color:#2c2e33;
+    font-weight: 600;
+    
+}
+.colmgz .soc_rbox  .soclks {
+    width: 248px;
+    margin:0 auto 62px auto;
+}
+.colmgz .soc_rbox .soclks ul {
+    margin:0px 0px 27px 8px
+}
+.colmgz .soc_rbox .soclks ul li {
+    margin:73px 25px 20px 0px;
+}
+.colmgz .soc_rbox .soclks ul li:last-child {
+    margin-right:0px;
+}
+.soclks ul li .bull {
+    display: block;
+    font-size:15px;
+    color:#2c2e33;
+    margin:0px 0px 12px 0px;
+}
+.soclks ul li .bull.st1 {
+    font-weight: 700;
+}
+.colmgz .magazine .tit {
+    width: 248px;
+    padding: 35px 0px 125px 0px;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.1em;
 }
 /*page1*/
 .content_page1{
