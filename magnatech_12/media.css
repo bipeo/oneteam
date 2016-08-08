@@ -619,6 +619,11 @@
     display: none;
     }
     
+    
+    .cat3 {
+        margin-bottom:17px;
+    }
+    
     .cat3 .itm {
         display:none;
         width:48%;
@@ -652,10 +657,11 @@
     .cat3 {
         padding-left:2%;
         padding-right: 2%;
-        margin-top:63px;
+        margin-top:57px;
         padding-top:80px;
         border-top:12px solid #e20c18;
     }
+    
     
     .cat3 .itm .tit {
     margin: 35px 0px 83px 0px;
@@ -940,10 +946,73 @@
         margin-left: 25%;
         margin-bottom: 88px;
     }
+    
+    .avres {
+        border-bottom:0px;
+    }
+    
+    
+    
+    .avres .h3c {
+        line-height: 1.28em;
+        text-align:center;
+        padding: 39px 5% 0px 5%;
+    }
+    .avres .h3c br {
+        display:block
+    }
    
-
+    .solbox {
+        padding:26px 4% 20px 4%;
+    }
+    
+    .solbox .itm {
+            font-size:23px;
+            margin: 20px 0px 0px 1px;
+    }
+    .solbox .itm a {
+            padding: 11px 0px 10px 0px;
+    }
+    .solbox .itm .count {
+        padding: 8px 0px 8px 0px;
+        font-size:23px;
+        width:50px;
+    }
+    .solbox .itm .mb {
+    margin: 5px 24px 0px 20px;
+    }
+    
+    .resmenu {
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:26px;
+    margin:26px 0px 0px 0px;
+    float:none;
+    }
+    
+    .resmenu .box2 {
+        width:auto;
+        margin:0px 4%;
+    }
+    .resmenu .box2 ul li  span  {
+        font-size:25px;
+    }
+    .resmenu .box2 ul li a {
+    font-size:25px;    
+    padding: 5px 0px 5px 0px;
+    margin: 6px 0px 5px 0px;
+    }
+    
+    .resmenu .box2 ul li {
+        float:left;
+        margin-left:15px;
+    }
+    .resmenu .box2 ul li:nth-child(2n +1) {
+        clear:left;
+        margin-left:0px;
+    }
+    
 }
-
 @media only screen and (max-width: 580px) {
     .p3Bl1 .h1norm{
         font-size: 35px;

@@ -1585,20 +1585,23 @@ select.soflow {
 .resmenu .box2 {
     line-height: 1.4em;
     width:210px;
-    margin:40px 0px 10px 0px;   
+    margin:78px 0px 50px 0px;   
 }
-
+.resmenu .box2 ul {
+    overflow:hidden;
+}
 .resmenu .box2 ul li a {
     color:#191a20;
     font-size:18px;
     display:block;
-    padding:2px 0px 2px 0px;
+    padding:5px 0px 5px 0px;
     margin:0px 0px  0px 40px;
   
 }
 .resmenu .box2 ul li  span {
     font-size:15px;
     display:inline-block;
+    margin:0px 5px 0px 0px;
 }
 .resmenu .box2 ul li .mg {
     display:inline-block;
@@ -2293,10 +2296,19 @@ select.soflow {
     cursor: pointer;
 }
 
+.avres {
+    
+    border-bottom:9px solid #e20c18;
+}
 
 .avres .h3c {
-    padding:30px 0px 0px 0px;
+    
+    padding:70px 0px 0px 44px;
+    letter-spacing: .23rem;
     float:left;
+}
+.avres .h3c br {
+    display:none;
 }
 .avres .val {
     padding:30px 0px 0px 0px; 
@@ -2307,11 +2319,11 @@ select.soflow {
     overflow:hidden;
 }
 .avres .val .dv {
-    margin:0px 0px 0px 8px;
+    margin:46px 0px 0px 26px;
     
 }
 .solbox {
-    
+   padding:0px 0px 0px 30px;
 }
 .solbox .itm:first-child {
     margin-left:0px;
@@ -2321,20 +2333,21 @@ select.soflow {
     font-weight:700;
     font-size:20px;
     float:left;
-    margin:0px 0px 0px 12px;
-    padding:9px;
+    margin:60px 0px 50px 1px;
+   
+   
 
 }
 .solbox .itm a {
+    padding:8px 0px 8px 0px;
+    font-weight: 700;
     color:#000926;
    
 }
-.solbox .itm a {
-    font-weight: 400;
-}
+
 .solbox .itm .mb {
     float:left;
-    margin:0px 7px 0px 7px;
+    margin:5px 17px 0px 17px;
     border-bottom:1px solid #000926; 
 }
 
@@ -2364,9 +2377,10 @@ select.soflow {
     text-align:center;
     width:42px;
     overflow:hidden;
-    display:block;
+    display:inline-block;
     color:#fff;
-    padding:7px 7px;
+    margin-right:9px;
+    padding:7px 0px 6px 0px;
     background-color:#000926;
 }
 
