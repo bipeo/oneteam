@@ -1418,11 +1418,26 @@
         bottom: 5px;
         top: auto;
     }
+    
+    .text3 .h3c {
+        font-size:43px;
+    }
+
+    .text3 p.fs {
+        margin-top: 30px;
+    }
+    
 }
 
 @media only screen and (max-width: 490px) {
     .pane-cat .col .tit a {
-        font-size: 25px;
+        font-size: 24px;
+    }
+    .text3 .h3c {
+        font-size:45px;
+    }
+    .text3 p {
+        font-size: 23px;
     }
     .latestbox .allhr {   margin: 12px 0px 15px 0px;} 
     .videospace .ht, .newsspace .ht {float:none;}
@@ -1682,6 +1697,18 @@
     .partnerBlok .pbH640{
         font-size: 35px;
     }
+    
+    .text3 .h3c {
+    font-size: 40px;
+    }
+    
+    .text3 p {
+    font-size: 21px;
+    }
+    
+    .text3 p.fs {
+    margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width: 410px)  {
@@ -1884,6 +1911,24 @@
     .partnerBlok{
         padding-bottom: 30px;
     }
+    
+     .text3 .h3c {
+    font-size: 40px;
+    }
+    
+    .text3 p {
+    font-size: 18px;
+    }
+    
+    .text3 p.fs {
+    margin-top: 25px;
+    }
+    
+    .text3 .h3c {
+    font-size: 30px;
+    }
+    
+    
 }
 
 @media only screen and (max-width: 342px) {
