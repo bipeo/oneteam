@@ -29,6 +29,14 @@ $(document).ready(function(){
     $(".buttonBl").css({
       marginLeft: -($(".buttonBl").width() - $(".partnerBlok").width()) / 2 + 'px'
     });
+    $(window).resize(function() {
+      $(".owl_st1Top").css({
+      left: -($(".owl_st1Top").width() - $(".p1BanerTop").width()) / 2 + 'px'
+      });
+      $(".buttonBl").css({
+        marginLeft: -($(".buttonBl").width() - $(".partnerBlok").width()) / 2 + 'px'
+      });
+    })
 });
 
 
