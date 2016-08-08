@@ -23,6 +23,12 @@ $(document).ready(function(){
       $('.relBlForTabs .tabsNav li').removeClass('active');
       $(this).closest("li").addClass('active');
     });
+    $(".owl_st1Top").css({
+      left: -($(".owl_st1Top").width() - $(".p1BanerTop").width()) / 2 + 'px'
+    });
+    $(".buttonBl").css({
+      marginLeft: -($(".buttonBl").width() - $(".partnerBlok").width()) / 2 + 'px'
+    });
 });
 
 

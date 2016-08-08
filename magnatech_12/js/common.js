@@ -172,10 +172,36 @@ $(document).ready(function(){
         items: 1,
         dots: true,
     });
-
-
-        
-        
+    $("#owl_st1Top").owlCarousel({
+        loop: true,
+        nav: false,
+        items: 1,
+        dots: false,
+    });
+    $("#owl_7").owlCarousel({
+        loop: true,
+        nav: false,
+        items: 1,
+        dots: false,
+    });
+    $("#owl_8").owlCarousel({
+        loop: true,
+        nav: false,
+        items: 1,
+        dots: false,
+    });
+    $("#owl_pbSlaid").owlCarousel({
+        loop: true,
+        nav: true,
+        items: 1,
+        dots: false,
+    }); 
+    $("#owl_pbSlaid640").owlCarousel({
+        loop: true,
+        nav: false,
+        items: 1,
+        dots: true,
+    });   
 
     
 });
