@@ -1103,12 +1103,15 @@
         display: block;
     }
     .p1BanerTop .owl_st1Top_title{
-        font-size: 20px;
+        line-height: 0.5;
+        font-size: 30px;
         letter-spacing:2px;
     }
     .p1BanerTop .owl_st1Top_title span{
-        font-size: 110px;
+        font-size: 120px;
         letter-spacing:7px;
+        padding-bottom: 50px;
+        line-height: 1.5;
     }
     .contBlocksP1 .contH{
         display: none;
@@ -1409,13 +1412,13 @@
     }
      /*page1*/
     .contBlocksP1 .bloks>div .img a.one{
-        bottom: 0;
+        bottom: 25px;
         top: auto;
         font-size: 40px;
     }
     .contBlocksP1 .bloks>div .img a{
         font-size: 40px;
-        bottom: 5px;
+        bottom: 10px;
         top: auto;
     }
     
@@ -1426,6 +1429,53 @@
     .text3 p.fs {
         margin-top: 30px;
     }
+    
+    .avres .h3c {
+        font-size:40px;
+    }
+    
+    /**/
+    .outcsel .select .active-option {
+    padding: 8px 20px 12px 20px;
+    font-size: 27px;
+        }
+        
+     .outcsel .select .option-list li {
+          font-size:20px;
+     }
+        
+        .mob_cats ul li {
+    margin-bottom: 25px;
+    float: left;
+        }
+        
+        .brands2 .line.last .bt {
+    margin-top: 10px;
+    }
+    
+    .brands2 .bt {
+    font-size: 18px;
+    }
+        
+        .brands2 .line.last .itm {
+    margin: 10px 25px 0px 0px;
+        }
+        
+        .brands2 .itm .val .inval {
+    font-size: 21px;
+    }
+        
+        .mob_cats {
+    display: none;
+    margin: 45px 6% 0px 6%;
+    font-size: 22px; 
+        }
+        
+      .cat3 .itm .tit a {
+    font-size: 25px;
+    }  
+        
+        /* */
     
 }
 
@@ -1697,18 +1747,58 @@
     .partnerBlok .pbH640{
         font-size: 35px;
     }
-    
-    .text3 .h3c {
-    font-size: 40px;
+    .p1BanerTop .owl_st1Top_title span{
+        padding-bottom: 10px;
     }
     
-    .text3 p {
+      /**/
+    .outcsel .select .active-option {
+    padding: 7px 20px 7px 20px;
+    font-size: 20px;
+        }
+     .outcsel .select .active-option, .outcsel .select.open .active-option, .outcsel .select.open .active-option:hover {
+    background-color: transparent;
+    background: url(img/corner_2mob.png) no-repeat 96.5% center;
+    }   
+        
+        
+     .outcsel .select .option-list li {
+          font-size:20px;
+     }
+        
+        .mob_cats ul li {
+    padding: 14px 14px;        
+    margin-bottom: 25px;
+    float: left;
+        }
+        
+        .brands2 .line.last .bt {
+    margin-top: 10px;
+    }
+    
+    .brands2 .bt {
+    font-size: 18px;
+    }
+        
+        .brands2 .line.last .itm {
+    margin: 10px 25px 0px 0px;
+        }
+        
+        .brands2 .itm .val .inval {
     font-size: 21px;
     }
-    
-    .text3 p.fs {
-    margin-top: 30px;
-    }
+        
+        .mob_cats {
+    display: none;
+    margin: 45px 6% 0px 6%;
+    font-size: 22px; 
+        }
+      
+      .cat3 .itm .tit a {
+    font-size: 20px;
+    }  
+        
+        /* */
 }
 
 @media only screen and (max-width: 410px)  {
