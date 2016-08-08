@@ -1395,6 +1395,64 @@
     .partnerBlok .pbH640{
         font-size: 45px;
     }
+    
+    /**/
+     .avres .h3c {
+        font-size:45px;
+    }
+    
+    .text3 .h3c {
+        line-height: 1.2em;
+        font-size:40px;
+    }
+    
+    .text3 p {
+    font-size: 16px;
+    margin: 15px 0px 0px 0px;
+    }
+    
+    .text3 p.fs {
+       margin-top: 23px;
+    }
+    
+    .outcsel .select .active-option {
+        font-size:26px;
+    }
+    
+    .brands2 .bt {
+    font-size: 18px;
+    }
+    
+    .brands2 .itm .val .inval {
+    font-size: 20px;
+    }
+    
+    .brands2 .line.last .itm:nth-child(n+6):nth-child(-n+100) {
+    margin-top: 12px;
+    }
+    
+    .brands2 .line.last .itm {
+    margin: 13px 33px 0px 0px;
+    }
+    
+    .mob_cats {
+        font-size:20px;
+    }
+    
+    .mob_cats ul li {
+    margin-right: 35px;
+    margin-bottom: 26px;
+    }
+    
+    .cat3 .itm .tit a {
+    font-size: 24px;
+    }
+    
+    .avres .val {
+        display:none;
+    }
+    
+    
 }
 
 @media only screen and (max-width: 555px) {
@@ -2026,6 +2084,111 @@
         font-size: 36px;
         width: 100%;
     }
+    
+    .magazine .tit {
+        font-size: 36px;
+        width: 100%;
+    }
+    
+    .owl_out .h2_owl, .pane-cat .h2_owl, .h2_owl, .partbox .h2_owl {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .partbox .text, .nlist .itm {
+        font-size: 25px;
+    }
+    .logo {
+        margin-left: 26%
+    }
+    
+    .text3 .h3c {
+    font-size: 30px;
+    }
+    .text3 p.fs {
+    margin-top: 25px;
+    }
+    .text3 p.fs.btm {
+     margin-top:10px;   
+    }
+    .text3 {
+        margin:0px 6%;
+    }
+    .text3 p {
+        margin: 15px 0px 0px 0px;
+        font-size:13px;
+    }
+    
+    .mob_cats {
+        font-size:13px;
+    }
+    .mob_cats ul li {
+        margin-bottom:15px;
+    }
+    .outcsel .select .option-list li {
+        font-size:14px;
+    }
+    .outcsel .select .active-option {
+    font-size: 17px;
+    padding: 8px 20px 10px 20px;
+    }
+    
+    .owl_st2 .d_b_mob, .owl_st2 .owl-carousel .owl-item img.d_b_mob {
+        height:110px;
+    }
+    
+    .owl_st2 .owl_1_title {
+        font-size:20px;
+        padding:0px 7%;
+    }
+    
+    .owl_st2 .owl_1_title a {
+        font-size:14px;
+    }
+    .owl_st2 .owl_1_title .link {
+        margin-top:3px;
+    }
+    
+    .outcsel .select .active-option, .outcsel .select.open .active-option, .outcsel .select.open .active-option:hover {
+            background: url(img/corner_2mob.png) no-repeat 96.5% center;
+    }
+    
+    .brands2 .bt {
+        font-size:12px;
+    }
+    .brands2 .itm .val .inval {
+        font-size:14px;
+    }
+    .brands2 .itm.active  .x {
+        width:10px;
+        height:9px;
+        background-size:cover;
+        margin-top:13px;
+    }
+    .brands2 .line.last .bt {
+     margin-top: 8px;
+    }
+    .brands2 .line.first .itm {
+    margin: 10px 23px 0px 0px;
+    }
+    .brands2 .line.last .itm {
+    margin: 6px 26px 0px 0px;
+    }
+    .brands2 .line.last .itm:nth-child(n+6):nth-child(-n+100) {
+    margin-top: 6px;
+    }
+    
+    .cat3 .itm .tit a {
+    font-size: 16px;
+    }
+    .cat3 .itm .tit {
+    margin: 20px 0px 30px 0px;
+    text-align: center;
+    }
+    
+    .cat3 {
+      margin-top: 30px;
+     padding-top: 50px;
+    }
 /*
     .logo {
         width: 108px;
@@ -2034,6 +2197,70 @@
     .p1BanerTop {
         height: 240px;
     }
+    
+     .menu-mobile:after {
+        background-image: url(img/buter_320.png);
+        height: 18px;
+        width: 22px;
+    }
+    .logo {
+        width: 95px;
+    }
+    .search input[type=submit], .search .submfad {
+        background-image: url(img/search_320.png);
+        height: 24px;
+        width: 25px;
+    }
+    .logo .vt {
+        font-size: 6px;
+    }
+    .select .active-option {
+        font-size: 10px;
+    }
+    .search {
+        width: 27px;
+    }
+    .forsel .select {
+        margin-top: 20px;
+    }
+    .search_form {
+        position: absolute;
+        right: -33px;
+        top: -17px;
+    }
+    .menu-mobile {
+        top: -70px;
+    }
+    .gfilms .itm.st-1 .tit {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .gfilms .itm {
+        height: 202px!important;
+    }
+    .gfilms .itm .desc {
+        font-size: 12px;
+    }
+    .osbox .itm.one .tit {
+        font-size: 22px;
+    }
+    .osbox .itm.two .tit, .osbox .itm.one .count {
+        font-size: 45px;
+    }
+    .osbox .itm.one .count {
+        line-height: 56px;
+    }
+    .osbox .itm {
+        min-height: 258px;
+    }
+    .owl_out .h2_owl, .pane-cat .h2_owl, .h2_owl, .partbox .h2_owl {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .pane-cat .col .itm .ic {
+        width: 34px;
+    }
+    
 }
 
 
