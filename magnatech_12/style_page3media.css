@@ -663,61 +663,61 @@
         padding-top: 20px;
     }
     /*page1*/
-    .pageFooter .footbox .rpart {
+    .footbox .rpart {
         margin-left:0px;
     }
-    .pageFooter .sideinf .loc p {
+    .footbox .sideinf .loc p {
         font-size: 18px;
         line-height: 35px;
     }
-    .pageFooter .sideinf .loc p {
+    .footbox .sideinf .loc p {
         margin: 20px 0px 0px 0px;
         line-height: 1.3;
     }
-    .pageFooter .soclks li a {
+    .footbox .soclks li a {
         height: 40px !important;
         width: 40px !important;
     }
-    .pageFooter .soclks li a {
+    .footbox .soclks li a {
         background-image: url(img/soclks_spr.png);
         background-repeat: no-repeat;
         display: block;
     }
 
-    .pageFooter .soclks li.fb a {
+    .footbox .soclks li.fb a {
         width: 36px;
         height: 36px;
         background-position: -20px -20px;
     }
-    .pageFooter .soclks li.fb a:hover {
+    .footbox .soclks li.fb a:hover {
         background-position: -20px -96px;
     }
 
-    .pageFooter .soclks li.photo a {
+    .footbox .soclks li.photo a {
         width: 36px;
         height: 35px;
         background-position: -20px -172px;
     }
-    .pageFooter .soclks li.photo a:hover {
+    .footbox .soclks li.photo a:hover {
         background-position: -20px -247px;
     }
 
-    .pageFooter .soclks li.plus a {
+    .footbox .soclks li.plus a {
         width: 37px;
         height: 36px;
         background-position: -20px -322px;
     }
-    .pageFooter .soclks li.plus a:hover {
+    .footbox .soclks li.plus a:hover {
         background-position: -20px -398px;
     }
 
-    .pageFooter .soclks li.tw a {
+    .footbox .soclks li.tw a {
         width: 37px;
         height: 36px;
         background-position: -20px -474px;
     }
 
-    .pageFooter .soclks li.tw a:hover {
+    .footbox .soclks li.tw a:hover {
         background-position: -20px -550px;
     }
 }
