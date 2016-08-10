@@ -269,7 +269,7 @@
     .owl_out .h2_owl {
         line-height: 76px;
     }
-    #owl_3 .carousel_img {
+    #owl_3 .carousel_img, #owl_pbSlaid640 .carousel_img  {
         margin-bottom: 60px;
     }
     .latestbox .ht {
