@@ -46,10 +46,8 @@
         font-weight: 700;
         letter-spacing: 3px;
         padding-bottom: 42px;
-        background-image: url('img/page3/textHbg.png');
-        background-repeat: no-repeat;
-        background-position: left top;
-        padding-top: 25px;
+        border-top: 10px solid #e20c18;
+        padding-top: 15px;
         margin-left: 7%;
     }
     .contBlocks .textBlocks .bl1 p{
@@ -69,10 +67,8 @@
         font-weight: 700;
         letter-spacing: 3px;
         padding-bottom: 37px;
-        background-image: url('../img/page3/textHbg.png');
-        background-repeat: no-repeat;
-        background-position: left top;
-        padding-top: 25px;
+        border-top: 10px solid #e20c18;
+        padding-top: 15px;
         margin-left: 7%;
         padding-left: 2px;
         margin-top: 49px;
@@ -100,10 +96,8 @@
         font-weight: 700;
         letter-spacing: 3px;
         padding-bottom: 36px;
-        background-image: url('../img/page3/textHbg.png');
-        background-repeat: no-repeat;
-        background-position: left top;
-        padding-top: 25px;
+        border-top: 10px solid #e20c18;
+        padding-top: 15px;
         margin-left: 7%;
         padding-left: 2px;
     }
@@ -405,6 +399,16 @@
     .pbOwl{
         padding: 0;
     }
+    .partnerBlok .pbOwl.owl1p{
+        display: none;
+    }
+    .pbOwl .carousel_img img {
+        margin:20px auto;
+        width:auto;
+    }
+    .partnerBlok .pbOwl.owl2p{
+        display: block;
+    }
     .partnerBlok .buttonBl{
         display: none;
     }
@@ -466,6 +470,7 @@
     }
     .contBlocks .textBlocks .bl1 .textBlh{
         font-size: 50px;
+
     }
     .contBlocks .textBlocks .bl1 p{
         font-size: 22px;
@@ -706,18 +711,21 @@
     }
     .contBlocks .textBlocks .bl1 .textBlh{
         font-size: 40px;
+        border-top: 5px solid #e20c18;
     }
     .contBlocks .textBlocks .bl1 p{
         font-size: 16px;
     }
     .contBlocks .textBlocks .bl2 .textBlh{
         font-size: 40px;
+        border-top: 5px solid #e20c18;
     }
     .contBlocks .textBlocks .bl2 p{
         font-size: 16px;
     }
     .specificationBlock .textBlh{
         font-size: 40px;
+        border-top: 5px solid #e20c18;
     }
     .specificationBlock .specificContBlok p,.specificationBlock .specificContBlok p span{
         font-size: 15px;
