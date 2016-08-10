@@ -349,12 +349,49 @@
 }
 .ProductBlockCont .ImgBlok{
     margin: 0 auto;
-    padding: 76px 0 90px 0;
-    max-width:1020px;
+    padding: 7px 0 90px 0;
+    max-width:1170px;
+}
+.ProductBlockCont .ImgBlok .carousel_img{
+
 }
 .ProductBlockCont .ImgBlok .carousel_img img {
     margin:0 auto;
-    width:90%;
+    width:auto;
+}
+.ImgBlok .carousel_img .pick  {
+   margin:0;  
+   position: relative;  
+   height: 159px;
+}
+.ImgBlok .carousel_img .pick .mob {
+    display:none;
+}
+.ImgBlok .owl-carousel .owl-nav .owl-prev{
+    left: -50px;
+}
+.ImgBlok .owl-carousel .owl-nav .owl-next{
+    right: -50px;
+}
+.ImgBlok .carousel_img .pick .fillbg {
+    display:none;
+    position: absolute;
+    background-size:contain;
+    background-position:center center;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat; 
+}
+
+.ImgBlok .carousel_img .pick img.desc, .ImgBlok .carousel_img .pick img.mob {
+    max-width:inherit;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .BannerBlock .ProductBlockCont .ImgBlok .owl-dots {
     margin: 87px 0 0 0;
