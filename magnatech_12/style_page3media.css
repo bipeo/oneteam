@@ -261,20 +261,11 @@
         padding-top: 55px;
         padding-bottom: 57px;
     }
-    .p1Bl1 select{
+    .p1Bl1 .outcsel{
         display: block;
-        width: 98%;
-        font-size: 32px;
-        padding: 8px 12px;
-        margin-left: 2%;
-        border: 1px solid #ccc;
-        color: #000926;
+        margin-top: 0;
     }
-    .p1Bl1 select>option{
-        color: #000926;
-
-    }
-    .p1Bl1 ul{
+    .p1Bl1 .descTopList ul{
         display: none;
     }
     .p1BanerTop .owl_st1Top{
@@ -336,13 +327,19 @@
     .contBlocksP1 .bloks>div .img img.imgDescTop{
         display: none;
     }
-    .contBlocksP1 .bloks>div .img a.one{
+    .contBlocksP1 .bloks>div.s_1 .img{
+        height: auto;
+    }
+    .contBlocksP1 .bloks>div.s_1 .img img{
+        position: static;
+    }
+    .contBlocksP1 .bloks>div .img span.one{
         top: 150px;
         left: 40px;
         font-size: 55px;
         font-weight: 400;
     }
-    .contBlocksP1 .bloks>div .img a{
+    .contBlocksP1 .bloks>div .img span{
         top: 120px;
         left: 40px;
         font-size: 55px;
@@ -404,31 +401,9 @@
         letter-spacing: 2px;
         line-height: 1.30;
     }
-    .partnerBlok .pbSlaid640{
-        display: block;
-    }
-    .partnerBlok .pbSlaid640 img{
-        width: 86%;
-        margin-left: 7%;
-    }
-    .partnerBlok .pbSlaid{
-        display: none;
-    }
-    .pbSlaid640 .owl-dots {
-        margin: 105px 0 0 0;
-        text-align: center;
-    }
-    .pbSlaid640 .owl-dots .owl-dot + .owl-dot {margin-left: 35px;}
-
-    .pbSlaid640 .owl-dots .owl-dot {
-        border-radius: 50%;
-        display: inline-block;
-        height: 22px;
-        width: 22px;
-        background-color: #2C2E33;
-    }
-    .pbSlaid640 .owl-dots .owl-dot.active{
-        background-color: #E20C18;
+    
+    .pbOwl{
+        padding: 0;
     }
     .partnerBlok .buttonBl{
         display: none;
@@ -558,10 +533,10 @@
         padding-top: 20px;
         padding-bottom: 30px;
     }
-    .contBlocksP1 .bloks>div .img a.one{
+    .contBlocksP1 .bloks>div .img span.one{
         font-size: 45px;
     }
-    .contBlocksP1 .bloks>div .img a{
+    .contBlocksP1 .bloks>div .img span{
         font-size: 45px;
     }
     .contBlocksP1 .bloks>div .desc{
@@ -588,12 +563,12 @@
     .p1BanerTop {
         height: 380px;
     }
-    .contBlocksP1 .bloks>div .img a.one{
+    .contBlocksP1 .bloks>div .img span.one{
         bottom: 25px;
         top: auto;
         font-size: 40px;
     }
-    .contBlocksP1 .bloks>div .img a{
+    .contBlocksP1 .bloks>div .img span{
         font-size: 40px;
         bottom: 10px;
         top: auto;
@@ -779,10 +754,10 @@
         font-size: 20px;
         padding-top:0;
     }
-    .contBlocksP1 .bloks>div .img a.one{
+    .contBlocksP1 .bloks>div .img span.one{
         font-size: 35px;
     }
-    .contBlocksP1 .bloks>div .img a{
+    .contBlocksP1 .bloks>div .img span{
         font-size: 35px;
     }
     .contBlocksP1 .bloks>div .desc{
@@ -930,16 +905,13 @@
         font-size: 60px;
         letter-spacing:normal;
     }
-    .p1Bl1 select{
-        font-size: 20px;
-    }
     .contBlocksP1 .contH640{
         font-size: 16px;
     }
-    .contBlocksP1 .bloks>div .img a.one{
+    .contBlocksP1 .bloks>div .img span.one{
         font-size: 25px;
     }
-    .contBlocksP1 .bloks>div .img a{
+    .contBlocksP1 .bloks>div .img span{
         font-size: 25px;
     }
     .contBlocksP1 .bloks>div .desc{
