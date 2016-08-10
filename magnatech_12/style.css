@@ -1775,11 +1775,11 @@ select.soflow {
     margin-left:0%;
    
 }
-.cat3 .itm .tit {
+.cat3 .itm .tit, .ImgBlok .carousel_img .tit {
     margin:29px 0px 29px 0px;
     text-align:center;
 }
-.cat3 .itm .tit a {
+.cat3 .itm .tit a, .ImgBlok .carousel_img .tit a {
     text-decoration: underline;
     font-size:23px;
     text-transform: uppercase;
@@ -1788,7 +1788,7 @@ select.soflow {
 .cat3 .itm .tit a:hover {
     color:#e20c18;
 }
-.cat3 .itm .pick  {
+.cat3 .itm .pick, .ImgBlok .carousel_img .pick  {
    margin:26px 0px 0px 0px;  
    position: relative;  
    height: 159px;
@@ -1797,7 +1797,7 @@ select.soflow {
     display:none;
 }
 
-.cat3 .itm .pick .fillbg {
+.cat3 .itm .pick .fillbg, .ImgBlok .carousel_img .pick .fillbg {
     display:none;
     position: absolute;
     background-size:contain;
@@ -1809,7 +1809,8 @@ select.soflow {
     background-repeat: no-repeat; 
 }
 
-.cat3 .itm .pick img.desc, .cat3 .itm .pick img.mob {
+.cat3 .itm .pick img.desc, .cat3 .itm .pick img.mob,
+.ImgBlok .carousel_img .pick img.desc, .ImgBlok .carousel_img .pick img.mob {
     max-width:inherit;
     position: absolute;
     top:50%;

@@ -666,17 +666,21 @@
         display:block; 
     }
  
-    .cat3 .itm .pick {
+    .cat3 .itm .pick  {
         margin:0px 10%;
         height:auto;
         
     }
+    .ImgBlok .carousel_img .pick {
+        margin-left:10%;
+        margin-right:10%;
+    }
     
-    .cat3 .itm .pick .fillbg {
+    .cat3 .itm .pick .fillbg, .ImgBlok .carousel_img .pick .fillbg {
         display:block;
     }
     
-    .cat3 .itm .pick img.mob {
+    .cat3 .itm .pick img.mob, .ImgBlok .carousel_img .pick .mob {
         visibility: hidden;
         position: static;
         max-width:100%;
@@ -696,23 +700,23 @@
     }
     
     
-    .cat3 .itm .tit {
+    .cat3 .itm .tit,  .ImgBlok .carousel_img .pick .tit {
     margin: 35px 0px 83px 0px;
     text-align: center;
     }
     
     
-    .cat3 .itm .tit a {
+    .cat3 .itm .tit a, .ImgBlok .carousel_img .tit a {
         font-size:27px;
     }
     
     .cat3 .itm .pick .sizemob {
         display:block;
     }
-    .cat3 .itm .pick .mob {
+    .cat3 .itm .pick .mob, .ImgBlok .carousel_img .pick .mob {
         display:block;
     }
-    .cat3 .itm .pick .desc {
+    .cat3 .itm .pick .desc, .ImgBlok .carousel_img .pick .desc {
         display:none;
     }
     
@@ -957,7 +961,7 @@
     font-size: 20px; 
         }
         
-      .cat3 .itm .tit a {
+      .cat3 .itm .tit a,  .ImgBlok .carousel_img .tit a {
     font-size: 25px;
     }  
         
@@ -1183,7 +1187,7 @@
         
 
       
-      .cat3 .itm .tit a {
+      .cat3 .itm .tit a, .ImgBlok .carousel_img .tit a {
     font-size: 20px;
     }  
         
