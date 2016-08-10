@@ -191,18 +191,63 @@ $(document).ready(function(){
         dots: false,
     });
     $("#owl_pbSlaid").owlCarousel({
+        
         loop: true,
-        nav: true,
-        items: 1,
-        dots: false,
-    }); 
+        responsive : {
+            0 : {
+                items : 2,
+                dots: true
+            },
+            330 : {
+                items : 3
+            },
+            400 : {
+                items: 4,
+                nav: false
+            },
+            641 : {
+                nav: true,
+                items: 6,
+                dots: false
+            }
+        }
+    });
     $("#owl_pbSlaid640").owlCarousel({
+        
         loop: true,
-        nav: false,
-        items: 1,
-        dots: true,
-    });   
-
+        responsive : {
+            0 : {
+                items : 2 
+            },
+            350 : {
+                items : 3
+            },
+            480 : {
+                items: 4,
+                dots: true,
+                nav: false
+            },
+            641 : {
+                nav: true,
+                items: 6,
+                dots: false
+            }
+        }
+    });  
+    $("#owl_rpSlaid").owlCarousel({
+        
+        loop: true,
+        responsive : {
+            0 : {
+                items : 2 
+            },
+            641 : {
+                nav: true,
+                items: 5,
+                dots: false
+            }
+        }
+    });  
     
 });
 

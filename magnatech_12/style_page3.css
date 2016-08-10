@@ -347,34 +347,30 @@
     padding-top: 80px;
     text-align: center;
 }
-.BannerBlock .ProductBlockCont .ImgBlok .hideMe{
-    display: none;
-    width: 100%;
-    padding-bottom: 67px;
-    padding-top: 20px;
-}
-.BannerBlock .ProductBlockCont .ImgBlok .hideMe img{
-    width: 100%;
+.ProductBlockCont .ImgBlok{
     margin: 0 auto;
+    padding: 76px 0 90px 0;
+    max-width:1020px;
 }
-.BannerBlock .ProductBlockCont .ImgBlok .hideMe .owl-dots {
+.ProductBlockCont .ImgBlok .carousel_img img {
+    margin:0 auto;
+    width:90%;
+}
+.BannerBlock .ProductBlockCont .ImgBlok .owl-dots {
     margin: 87px 0 0 0;
     text-align: center;
 }
-.BannerBlock .ProductBlockCont .ImgBlok .hideMe .owl-dots .owl-dot + .owl-dot {margin-left: 35px;}
+.BannerBlock .ProductBlockCont .ImgBlok .owl-dots .owl-dot + .owl-dot {margin-left: 35px;}
 
-.BannerBlock .ProductBlockCont .ImgBlok .hideMe .owl-dots .owl-dot {
+.BannerBlock .ProductBlockCont .ImgBlok  .owl-dots .owl-dot {
     border-radius: 50%;
     display: inline-block;
     height: 22px;
     width: 22px;
     background-color: #2C2E33;
 }
-.BannerBlock .ProductBlockCont .ImgBlok .hideMe .owl-dots .owl-dot.active{
+.BannerBlock .ProductBlockCont .ImgBlok .owl-dots .owl-dot.active{
     background-color: #E20C18;
-}
-.BannerBlock .ProductBlockCont .ImgBlok img{
-    width: 100%;
 }
 /*formBl*/
 .contactFormPageWrapper{
@@ -794,7 +790,7 @@
     margin:0 auto;
     width:auto;
 }
-.partnerBlok .pbSlaid640{
+.partnerBlok .pbOwl.owl2p{
     display: none;
 }
 .partnerBlok .pbSlaid{
@@ -806,11 +802,21 @@
     width: 86%;
     margin-left: 7%;
 }
-.pbSlaid .owl-carousel .owl-nav .owl-prev{
-    left: -62.5px;
+.partnerBlok .owl-dots {
+    margin: 55px 0 0 0;
+    text-align: center;
 }
-.pbSlaid .owl-carousel .owl-nav .owl-next {
-    right: -62.5px;
+.partnerBlok .owl-dots .owl-dot + .owl-dot {margin-left: 35px;}
+
+.partnerBlok .owl-dots .owl-dot {
+    border-radius: 50%;
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    background-color: #2C2E33;
+}
+.partnerBlok .owl-dots .owl-dot.active{
+    background-color: #E20C18;
 }
 .partnerBlok .buttonBl{
     background-color: #2C2E33;
