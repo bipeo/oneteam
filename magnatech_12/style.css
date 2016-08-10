@@ -1201,7 +1201,7 @@ select.soflow {
 
 .footbox {
     overflow:hidden;
-
+    background-color:#d9e1e4;
     border-top:18px solid  #e20c18;
 }
 .footbox  .center {

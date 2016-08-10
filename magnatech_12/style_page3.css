@@ -490,6 +490,9 @@
     text-decoration: none;
     color: #fff;
 }
+.p1Bl1 ul>li.active a:hover {
+    color: #fff;
+}
 .p1Bl1 ul>li a{
     color: #000000;
     font-size: 16px;
@@ -613,6 +616,7 @@
     width: 100%;
     height: 975px;
 }
+
 .contBlocksP1 .contH640{
     display: none;
 }
@@ -621,13 +625,39 @@
     float: left;
     margin-left: 10px;
 }
+.contBlocksP1 .bloks>div.s_1 {
+    height:280px;
+    width:280px;
+}
+.contBlocksP1 .bloks>div.s_1 .href:hover {
+    background-position:0px -280px;
+}
 .contBlocksP1 .bloks>div .img{
     position: relative;
+    height:280px;
 }
+
 .contBlocksP1 .bloks>div .img img{
     width: 100%;
 }
-.contBlocksP1 .bloks>div .img img.img640{
+.contBlocksP1 .bloks>div .img .ton, .contBlocksP1 .bloks>div .img .href  {
+     display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+}
+.contBlocksP1 .bloks>div .href {
+    z-index: 3;
+}
+.contBlocksP1 .bloks>div .img .ton {
+    background-color: rgba(0,0,0,.45);
+}
+
+
+.contBlocksP1 .bloks>div .img .img640{
     display: none;
 }
 .contBlocksP1 .bloks>div .img a{
@@ -639,6 +669,7 @@
     font-size: 31px;
     font-weight: 600;
     line-height: 1.2;
+    z-index: 4;
 }
 .contBlocksP1 .bloks>div .desc{
     font-size: 15px;
