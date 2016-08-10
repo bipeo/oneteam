@@ -234,7 +234,20 @@ $(document).ready(function(){
             }
         }
     });  
-
+    $("#owl_rpSlaid").owlCarousel({
+        
+        loop: true,
+        responsive : {
+            0 : {
+                items : 2 
+            },
+            641 : {
+                nav: true,
+                items: 5,
+                dots: false
+            }
+        }
+    });  
     
 });
 
