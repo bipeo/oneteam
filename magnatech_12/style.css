@@ -999,6 +999,7 @@ select.soflow {
     text-align:center;
 }
 .but.red a {
+    
     background-color:#e20c18;
 }
 .but.black a {
@@ -1454,6 +1455,7 @@ select.soflow {
     background:url(img/barr.png);
 }
 .bread li a {
+    text-decoration: underline;
     float:left;
     color:#e20c18;
 }
@@ -1484,7 +1486,7 @@ select.soflow {
     width:100%;
 }
 .outcsel .select .option-list {
-    width: 80%;
+    width: 100%;
     background: #e20c18;
 }
 .outcsel .select .option-list.show {
@@ -1567,7 +1569,7 @@ select.soflow {
     display:block;
 }
 .smenu .box2 .tit a {
-    
+    text-decoration: underline;
     padding:0px 0px 5px 40px;
     display: block;
    }
@@ -1580,12 +1582,17 @@ select.soflow {
     color:#191a20;
 }
 .smenu .box2 ul li a {
+    text-decoration: underline;
     font-size:13px;
     display:block;
     padding:2px 0px 2px 40px;
 }
 .smenu .box2 ul li a:hover {
     background-color:#e20c18;
+    color:#fff;
+}
+.smenu .box2 ul li.active a {
+     background-color:#e20c18;
     color:#fff;
 }
 .resmenu {
@@ -1659,6 +1666,7 @@ select.soflow {
     top:0px;
     height:41px;
     position:absolute;
+    z-index: 2;
 }
 
 .outclose:hover .close {

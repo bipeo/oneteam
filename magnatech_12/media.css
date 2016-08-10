@@ -570,16 +570,38 @@
         width:auto;
     }
     
+    .outcsel .select .active-option {
+        font-size:31px;
+        padding: 12px 20px 14px 20px;
+    }
+    
     .owl_st2 .d_b_mob, .owl_st2 .owl-carousel .owl-item img.d_b_mob {
         height:220px;
     }
+    
+    .mob_cats {
+        margin: 45px 6% 0px 6%;
+        font-size: 22px;
+    }
+    
+    .mob_cats ul li {
+    margin-right: 25px;
+    margin-bottom: 27px;
+     }
  
     .pane_2 .h3b {
         display:none;
     }
-    
+    /**/
     .outclose {
-        display:none;
+        background:none;
+        right:0px;
+    }
+    
+    .owl_st2 .owl_1_title {
+        padding-left:2%;
+        padding-right: 2%;
+        line-height: 1.2em;
     }
     
     .brands2  {
@@ -599,13 +621,19 @@
         margin-top:23px;
     }
    
+    .brands2 .line .itm:nth-child(3n +1) {
+        clear:left;
+    }
+    
     .brands2 .line.first .itm {
         margin:18px 23px 0px 0px;
     } 
     .brands2 .line.last .itm {
         margin:18px 33px 0px 0px;
     }
-
+    .brands2 .line .pack .itm:nth-child(3n +1) {
+        
+    }
     .brands2 .itm .val {
         padding: 11px 0px 10px 0px;
     }
@@ -617,12 +645,13 @@
     }
     .brands2 .itm .x {
     background: url('img/close_ic_m.png') no-repeat center 0px;
-    width: 20px;
+    width: 17px;
     height: 25px;
-    margin: 14.4px 11px 5px 10px;
+    margin: 16.4px 11px 5px 10px;
+    background-size: contain;
     display: none;
     }
-    
+    /**/
     
     .cat3 {
         margin-bottom:17px;
@@ -695,7 +724,7 @@
         clear:left;
     }
     
-   
+  
    
     
     .avres {
@@ -738,7 +767,7 @@
         width:50px;
     }
     .solbox .itm .mb {
-    margin: 5px 24px 0px 20px;
+    margin: 5px 14px 0px 14px;
     }
     
     .resmenu {
@@ -754,10 +783,10 @@
         margin:0px 4%;
     }
     .resmenu .box2 ul li  span  {
-        font-size:25px;
+        font-size:23px;
     }
     .resmenu .box2 ul li a {
-    font-size:25px;    
+    font-size:23px;    
     padding: 5px 0px 5px 0px;
     margin: 6px 0px 5px 0px;
     }
@@ -817,8 +846,30 @@
     }
     
 }
-@media only screen and (max-width: 580px) {
-   
+@media only screen and (max-width: 600px) {
+   .solbox .itm .mb {
+    margin: 5px 10px 0px 12px;
+    }
+    .resmenu .box2 ul li span {
+    font-size: 22px;
+    }
+    
+    .solbox .itm {
+        font-size:21px;
+    }
+    .solbox .itm a {
+    padding: 7px 0px 5px 0px;
+    }
+    .solbox .itm .count {
+    padding: 5px 0px 5px 0px;
+    font-size: 21px;
+    width: 45px;
+    }
+   .resmenu .box2 ul li a {
+    font-size:22px;    
+    padding: 5px 0px 5px 0px;
+    margin: 6px 0px 5px 0px;
+    }
 }
 
 @media only screen and (max-width: 555px) {
@@ -873,7 +924,8 @@
      }
         
         .mob_cats ul li {
-    margin-bottom: 25px;
+    margin-right: 14px;        
+    margin-bottom:20px;
     float: left;
         }
         
@@ -885,18 +937,24 @@
     font-size: 18px;
     }
         
-        .brands2 .line.last .itm {
+     .brands2 .line.last .itm {
     margin: 10px 25px 0px 0px;
         }
         
         .brands2 .itm .val .inval {
-    font-size: 21px;
+    font-size: 19px;
+    }
+    
+    .brands2 .itm .x {
+        width:14px;
+        height:21px;
+        margin-top:14.6px;
     }
         
         .mob_cats {
-    display: none;
+/*    display: none;*/
     margin: 45px 6% 0px 6%;
-    font-size: 22px; 
+    font-size: 20px; 
         }
         
       .cat3 .itm .tit a {
@@ -905,6 +963,29 @@
         
         /* */
     
+    .solbox .itm .mb {
+    margin: 5px 9px 0px 11px;
+    }
+    .solbox .itm {
+        font-size:19px;
+    }
+    .solbox .itm a {
+    padding: 6px 0px 4px 0px;
+    }
+    .solbox .itm .count {
+    padding: 5px 0px 5px 0px;
+    font-size: 18px;
+    width: 37px;
+    }
+    .resmenu .box2 ul li  span  {
+        font-size:20px;
+        margin-right:3px;
+    }
+    .resmenu .box2 ul li a {
+    font-size:20px;    
+    padding: 5px 0px 5px 0px;
+    margin: 3px 0px 4px 0px;
+    }
 }
 
 @media only screen and (max-width: 490px) {
@@ -932,39 +1013,45 @@
     }
    
     .solbox .itm  {
-        font-size:20px;
+        font-size:16px;
     }
     
     .solbox .itm a {
-    padding: 5px 0px 5px 0px; 
+    padding: 4px 0px 3px 0px; 
      }
+     
      
      .solbox .itm .count {
     padding: 3px 0px 3px 0px;
-     font-size:20px; 
-    width: 40px;
+     font-size:15px; 
+    width: 28px;
      }
     
     .solbox .itm .mb {
-    margin: 3px 12px 0px 14px;
+    margin: 3px 10px 0px 12px;
     }
+    
+   .resmenu {
+        margin: 12px 0px 0px 0px
+    }
+    
+    .resmenu .box2 ul li span {
+    font-size: 18px;
+     }
+      
+      .resmenu .box2 ul li a {
+        margin: 3px 0px 3px 0px;  
+        font-size: 18px; 
+      }  
+    
+    
+    
     
      .avres .val {
         display:none;
     }
     
-    .resmenu {
-        margin: 12px 0px 0px 0px
-    }
-    
-    .resmenu .box2 ul li span {
-    font-size: 19px;
-        }
-      
-      .resmenu .box2 ul li a {
-        margin: 3px 0px 3px 0px;  
-        font-size: 19px; 
-      }  
+
     
     /**/
     
@@ -1033,36 +1120,68 @@
         
         
      .outcsel .select .option-list li {
-          font-size:20px;
+          font-size:18px;
+          padding: 14px 20px
      }
+     
+     
         
-        .mob_cats ul li {
-    padding: 14px 14px;        
-    margin-bottom: 25px;
-    float: left;
+     .mob_cats {
+         margin: 30px 6% 0px 6%;
+         font-size:17px;
+     }
+    
+     .mob_cats ul li {
+         padding: 12px 7px;
+        margin-right: 7px;
+        margin-bottom: 0px;
         }
         
-        .brands2 .line.last .bt {
+     .brands2 .line.last .bt {
     margin-top: 10px;
     }
     
     .brands2 .bt {
-    font-size: 18px;
+    font-size: 16px;
     }
-        
-        .brands2 .line.last .itm {
-    margin: 10px 25px 0px 0px;
-        }
-        
-        .brands2 .itm .val .inval {
-    font-size: 21px;
+    
+    .brands2 line.first itm {
+            margin: 18px 7px 0px 7px;
     }
+    .brands2 .line.last .bt  {
+        margin-top:23px;
+    }
+   
+    .brands2 .line .itm:nth-child(3n +1) {
+        clear:left;
+    }
+    
+    .brands2 .line.first .itm {
+        margin:18px 23px 0px 0px;
+    } 
+    .brands2 .line.last .itm {
+        margin:10px 25px 0px 0px;
+    }
+
+    .brands2 .itm .val {
+        padding: 9px 0px 9px 0px;
+    }
+    .brands2 .itm.active .val {
+        padding-left:12px;
+    }
+    .brands2 .itm .val .inval {
+        font-size:16px;  
+    }
+    .brands2 .itm .x {
+    width: 13px;
+    height:14px;
+    margin: 11.4px 11px 5px 10px;
+
+   
+    }
+    /**/
         
-        .mob_cats {
-    display: none;
-    margin: 45px 6% 0px 6%;
-    font-size: 22px; 
-        }
+
       
       .cat3 .itm .tit a {
     font-size: 20px;
@@ -1135,7 +1254,38 @@
         
         
 }
-
+@media only screen and (max-width: 420px)   {
+        /**/
+    
+   
+  
+    .solbox .itm a {
+    padding: 4px 0px 3px 0px; 
+     }
+     
+     .solbox .itm .count {
+    padding: 3px 0px 3px 0px;
+     font-size:14px; 
+    width: 28px;
+     }
+    
+    .solbox .itm .mb {
+    margin: 3px 8px 0px 10px;
+    }
+    
+   .resmenu {
+        margin: 12px 0px 0px 0px
+    }
+    
+    .resmenu .box2 ul li span {
+    font-size: 16px;
+     }
+      
+      .resmenu .box2 ul li a {
+        margin: 3px 0px 3px 0px;  
+        font-size: 16px; 
+      }  
+}
 @media only screen and (max-width: 410px)  {
     
 
@@ -1160,6 +1310,52 @@
     .osbox .itm.two .rmore a, .osbox .rmore a {
         font-size: 20px;
     }
+    
+    .mob_cats {
+         margin: 30px 6% 0px 6%;
+         font-size:14px;
+     }
+    
+     .mob_cats ul li {
+         padding: 12px 7px;
+        margin-right: 7px;
+        margin-bottom: 0px;
+   }
+   .outcsel .select .active-option {
+       font-size:18px;
+   }
+   
+   .solbox .itm {
+       font-size:14px;
+   }
+   
+   .solbox .itm a {
+    padding: 5px 0px 4px 0px; 
+     }
+     
+     .solbox .itm .count {
+    padding: 3px 0px 3px 0px;
+     font-size:12px; 
+    width: 25px;
+     }
+    
+    .solbox .itm .mb {
+    margin: 3px 8px 0px 10px;
+    }
+    
+   .resmenu {
+        margin: 12px 0px 0px 0px
+    }
+    
+    .resmenu .box2 ul li span {
+    font-size: 15px;
+     }
+      
+      .resmenu .box2 ul li a {
+        margin: 3px 0px 3px 0px;  
+        font-size: 15px; 
+      }  
+   
 }
 
 @media only screen and (max-width: 385px) {
@@ -1208,6 +1404,30 @@
         left: -171px;
     }
     
+    
+    
+    .solbox .itm a {
+    padding: 5px 0px 4px 0px; 
+     }
+     
+     .solbox .itm .count {
+    padding: 3px 0px 3px 0px;
+    font-size:11px; 
+    width: 25px;
+     }
+    
+    .solbox .itm .mb {
+    margin: 3px 8px 0px 8px;
+    }
+    
+    .resmenu .box2 ul li span {
+    font-size: 11px;
+     }
+      
+      .resmenu .box2 ul li a {
+        margin: 3px 0px 3px 0px;  
+        font-size: 12px; 
+      }  
     
 }
 
