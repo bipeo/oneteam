@@ -460,6 +460,150 @@
     .pageFooter .soclks li.photo a:hover {
         background-position: -88px -261px;
     }
+    /*page8*/
+    .p8H{
+        padding-top:53px;
+        width: 100%;
+    }
+    .p8H .h1bl{
+        font-size: 70px;
+        text-align: center;
+        letter-spacing: 4px;
+        padding-bottom: 55px;
+    }
+    .descBl{
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 100px;
+        padding-left: 46px;
+    }
+    .descBl .markets{
+        display: none;
+    }
+    .descBl .markets640{
+        display: block;
+    }
+    .descBl .view{
+        display: none;
+    }
+    .descBl .markets640>span{
+        float: left;
+        font-size: 30px;
+        line-height: 2.5;
+        font-weight: 700;
+        margin-right: 28px;
+    }
+    .descBl .markets640 .outcsel{
+        display: block;
+        float: left;
+        width: 384px;
+    }
+    .mapWrap{
+        background: none;
+        border: none;
+        height: auto;
+        position: static;
+        width: 100%;
+    }
+    .mapCont{
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+    .mapWrap .mapCont .rightCol{
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 10px 15px;
+        overflow: visible;
+        height: auto;
+        position: static;
+    }
+    .mapWrap .marker{
+        display: none;
+    }
+    .rightCol .blok.active{
+        width: 100%;
+        border-left: 17px solid #E20C18;
+        margin-top: 22px;
+        padding-left: 0;
+    }
+    .rightCol .blok{
+        height: 260px;
+        padding-left: 17px;
+        margin-top: 38px;
+    }
+    .rightCol .blok .number{
+        width: 57px;
+        font-size: 35px;
+        height: 260px;
+        padding-top: 20px;
+    }
+    .rightCol .blok .desc{
+        font-size: 19px;
+        padding: 0px 0 4px 0;
+    }
+    .rightCol .blok .rblH{
+        font-size: 29px;
+        padding: 5px 0 30px 0;
+        font-weight: 400;
+    }
+     .rightCol .blok .bott .rblH{
+        padding-bottom: 35px;
+    }
+    .rozd{
+        padding-top: 32px;
+        border-bottom: 2px solid #DCE1E2;
+    }
+}
+@media only screen and (max-width: 610px) {
+     /*page8*/
+    .p8H .h1bl{
+        font-size: 65px;
+        text-align: center;
+        letter-spacing: 3px;
+        padding-bottom: 40px;
+    }
+    .descBl{
+        font-size: 18px;
+        padding-bottom: 80px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .descBl .markets640>span{
+        font-size: 30px;
+        margin-right: 0;
+        width: 30%;
+    }
+    .descBl .markets640 .outcsel{
+        display: block;
+        float: left;
+        width: 70%;
+    }
+    .rightCol .blok{
+        height: 230px;
+        padding-left: 17px;
+        margin-top: 38px;
+    }
+    .rightCol .blok .number{
+        width: 50px;
+        font-size: 32px;
+        height: 230px;
+    }
+    .rightCol .blok .desc{
+        font-size: 17px;
+        padding: 0px 0 4px 0;
+    }
+    .rightCol .blok .rblH{
+        font-size: 27px;
+        padding: 5px 0 30px 0;
+        font-weight: 400;
+    }
+     .rightCol .blok .bott .rblH{
+        padding-bottom: 35px;
+    }
+    .rozd{
+        padding-top: 30px;
+    }
 }
 @media only screen and (max-width: 580px) {
     .p3Bl1 .h1norm{
@@ -561,6 +705,53 @@
     }
     .partnerBlok .pbH640{
         font-size: 45px;
+    }
+     /*page8*/
+    .p8H .h1bl{
+        font-size: 60px;
+        letter-spacing: normal;
+        padding-bottom: 30px;
+    }
+    .descBl{
+        padding-left: 0;
+    }
+    .descBl .markets640>span{
+        font-size: 25px;
+        margin-right: 0;
+        width: 30%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .descBl .markets640 .outcsel .select .active-option {
+        font-size: 25px;
+    }
+    .rightCol .blok.active{
+        border-left: 10px solid #E20C18;
+    }
+    .rightCol .blok{
+        height: 160px;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+    .rightCol .blok .number{
+        width: 50px;
+        font-size: 25px;
+        height: 160px;
+        padding-top: 10px;
+    }
+    .rightCol .blok .desc{
+        font-size: 14px;
+        padding: 0px 0 4px 0;
+    }
+    .rightCol .blok .rblH{
+        font-size: 20px;
+        padding: 5px 0 15px 0;
+    }
+     .rightCol .blok .bott .rblH{
+        padding-bottom: 25px;
+    }
+    .rozd{
+        padding-top: 10px;
     }
 }
 @media only screen and (max-width: 555px) {
@@ -790,6 +981,44 @@
     .p1BanerTop .owl_st1Top_title span{
         padding-bottom: 10px;
     }
+     /*page8*/
+    .p8H .h1bl{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .descBl .markets640>span{
+        font-size: 20px;
+    }
+    .descBl .markets640 .outcsel .select .active-option {
+        font-size: 20px;
+    }
+    .rightCol .blok.active{
+        margin-top: 0;
+    }
+    .rightCol .blok{
+        height: 140px;
+        margin-top: 20px;
+    }
+    .rightCol .blok .number{
+        width: 30px;
+        font-size: 20px;
+        height: 140px;
+        padding-top: 7px;
+    }
+    .rightCol .blok .desc{
+        font-size: 12px;
+        padding: 0;
+    }
+    .rightCol .blok .rblH{
+        font-size: 18px;
+        padding: 5px 0 12px 0;
+    }
+     .rightCol .blok .bott .rblH{
+        padding-bottom: 18px;
+    }
+    .rozd{
+        padding-top: 10px;
+    }
 }
 
 @media only screen and (max-width: 410px)  {
@@ -839,6 +1068,33 @@
     }
     .contactFormPageWrapper .contactFormPage .blDesc .hDesc{
         font-size: 16px;
+    }
+     /*page8*/
+    .p8H .h1bl{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .rightCol .blok{
+        height: 120px;
+    }
+    .rightCol .blok .number{
+        width: 25px;
+        font-size: 16px;
+        height: 120px;
+    }
+    .rightCol .blok .desc{
+        font-size: 10px;
+        padding: 0;
+    }
+    .rightCol .blok .rblH{
+        font-size: 16px;
+        padding: 5px 0 10px 0;
+    }
+     .rightCol .blok .bott .rblH{
+        padding-bottom: 15px;
+    }
+    .rozd{
+        padding-top: 7px;
     }
 }
 
@@ -950,10 +1206,63 @@
         padding-bottom: 30px;
     }
 }
-
+@media only screen and (max-width: 360px) {
+    /*page8*/
+    .p8H{
+        padding-top: 25px;
+    }
+    .p8H .h1bl{
+        font-size: 35px;
+        padding-bottom: 26px;
+        letter-spacing: 2px;
+    }
+    .descBl .markets640>span{
+        font-size: 16px;
+    }
+    .descBl .markets640 .outcsel .select .active-option {
+        font-size: 16px;
+    }
+    .rightCol .blok,.rightCol .blok.active{
+        height: 130px;
+        width: 294px;
+    }
+    .mapWrap .mapCont .rightCol{
+        padding: 8px;
+    }
+    .rightCol .blok .number{
+        width: 7%;
+        font-size: 15px;
+        height: 130px;
+        padding-top: 10px;
+    }
+    .rightCol .blok .desc{
+        font-size: 10px;
+        padding: 0;
+    }
+    .rightCol .blok .rblH{
+        font-size: 14.5px;
+        padding:7px 0 8px 0;
+    }
+    .rightCol .blok .top {
+        width: 90%;
+        float: left;
+    }
+    .rightCol .blok .bott .rblH{
+        padding:5px 0 10px 0;
+    }
+    .rightCol .blok .bott .desc{
+        padding:3px 0 8px 0;
+    }
+    .rozd{
+        padding-top: 15px;
+    }
+}
 @media only screen and (max-width: 342px) {
     /*страница 1*/
     .p1BanerTop {
         height: 240px;
+    }
+    .wrapper{
+        min-width: 301px;
     }
 }
