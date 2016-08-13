@@ -1,5 +1,5 @@
 .content_page3{
-    background-color: #F1F1F1;
+    background-color: #F2F2F2;
 }
 .p3Bl1{
     margin: 0 auto;
@@ -822,7 +822,7 @@
     margin: 55px 0 0 0;
     text-align: center;
 }
-.partnerBlok .owl-dots .owl-dot + .owl-dot {margin-left: 35px;}
+.partnerBlok .owl-dots .owl-dot + .owl-dot {margin-left: 25px;}
 
 .partnerBlok .owl-dots .owl-dot {
     border-radius: 50%;
@@ -1023,7 +1023,7 @@
     display: none;
 }
 /*page8*/
-.content_page3{
+.content_page8{
     background-color: #FFFFFF;
 }
 .p8H{
@@ -1218,4 +1218,165 @@
     display: none;
     width: 50%;
     margin: 0;
+}
+/*page6*/
+.content_page6{
+    background-color: #FFFFFF;
+}
+.p6H{
+    padding-top:61px;
+    width: 1204px;
+    margin: 0 auto;
+}
+.p6H .h1bl{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000926;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 58px;
+    text-align: center;
+    line-height: 1.28;
+}
+.p6H .desk{
+    font-size: 25px;
+    font-weight: 400;
+    color: #000926;
+    width: 100%;
+    border: 10px solid #E20C18;
+    padding: 80px 140px;
+    line-height: 1.55;
+}
+.p6H .twoCols{
+    padding-top: 55px;
+    height: 485px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.p6H .twoCols>div{
+    width: 50%;
+    float: left;
+}
+.p6H .twoCols{
+    padding-left: 173px;
+}
+.p6H .twoCols span{
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 5px;
+}
+.p6H .twoCols .colRight span{
+    padding-left: 0px;
+}
+.p6WrapBl{
+    width: 100%;
+    border-top: 20px solid #E20C18;
+    background-color: #F2F2F2;
+}
+.p6ContBl{
+    width: 945px;
+    margin: 0 auto;
+}
+.p6ContBl .hBl{
+    font-size: 45px;
+    font-weight: 600;
+    padding-top: 64px;
+    text-align: center;
+    line-height: 1.35;
+    padding-bottom: 40px;
+        width: 900px;
+        margin: 0 auto;
+}
+.p6ContBl .deskBl{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 0;
+    text-align: center;
+    line-height: 1.35;
+    padding-bottom: 70px;
+    width: 750px;
+    margin: 0 auto;
+}
+.formP6{
+    padding-bottom: 91px;
+}
+.formP6 .blok{
+    width: 100%;
+    background-color: #D9E1E4;
+    margin-bottom: 37px;
+    height: 111px;
+    padding: 12px;
+    border: 1px solid #D9E1E4;
+}
+.formP6 .blok.last .descript{
+    padding-right: 0;
+}
+.formP6 .blok.active{
+    background-color: transparent;
+    border: 1px solid #DFE5E7;
+}
+.formP6 .blok.active .descript{
+    border-right: 1px solid #DFE5E7;
+}
+.formP6 .blok .descript{
+    width: 37%;
+    float: left;
+    height: 100%;
+    border-right: 1px solid #ECEEEE;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.4;
+    padding-right: 80px;
+    color: #2C2E33;
+}
+.formP6 .blok .descript span{
+    font-size: 12px;
+    color: #484B53;
+    padding-top: 10px;
+    line-height: 1.2;
+}
+.formP6 .blok .textareaP6{
+    width: 63%;
+    float: left;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    resize: none;
+    color: #2C2E33;
+    padding-left: 44px;
+    padding-right: 15%;
+}
+.formP6 .blok .textareaP6::-webkit-scrollbar {
+    width: 12px;
+    background-color: #175D89;
+}
+ 
+.formP6 .blok .textareaP6::-webkit-scrollbar-track {
+    background-color: #D9E1E4;
+}
+ 
+.formP6 .blok .textareaP6::-webkit-scrollbar-thumb {
+    background-color: #2C2E33;
+}
+.formP6 p{
+    text-align: center;
+}
+.formButtonP6{
+    width: 300px;
+    height: 77px;
+    text-align: center;
+    color: #fff;
+    background-color: #E20C18;
+    margin: 32px auto 0 auto;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: 'Open Sans';
 }

@@ -554,6 +554,140 @@
         padding-top: 32px;
         border-bottom: 2px solid #DCE1E2;
     }
+    /*page6*/
+    .content_page6{
+        background-color: #F2F2F2;
+    }
+    .p6H{
+        padding-top:43px;
+        width: 100%;
+    }
+    .p6H .h1bl{
+        font-size: 36px;
+        letter-spacing: 3px;
+        padding-bottom: 33px;
+        line-height: 1.4;
+    }
+    .p6H .desk{
+        font-size: 25px;
+        font-weight: 400;
+        color: #000926;
+        width: 100%;
+        border: 10px solid #E20C18;
+        padding: 56px 40px 74px 58px;
+        line-height: 1.55;
+        width: 97%;
+        margin: 0 auto;
+    }
+    .p6H .twoCols{
+        padding-top: 37px;
+        height: auto;
+        font-size: 30px;
+        line-height: 1.35;
+        width: 90%;
+        margin: 0 0 0 7.5%;
+        padding-left: 0;
+    }
+    .p6H .twoCols>div{
+        width: 100%;
+        float: none;
+    }
+    .p6H .twoCols span{
+        font-size: 35px;
+        padding-left: 0;
+        line-height: 1.8;
+    }
+    .p6H .twoCols .colRight{
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    .p6WrapBl{
+        border-top: 25px solid #E20C18;
+        background-color: #fff;
+    }
+    .p6ContBl{
+        width: 100%;
+    }
+    .p6ContBl .hBl{
+        font-size: 37px;
+        padding-top: 52px;
+        line-height: 1.5;
+        padding-bottom: 30px;
+        width: 85%;
+    }
+    .p6ContBl .deskBl{
+        font-size: 29px;
+        padding-top: 0;
+        line-height: 1.4;
+        width: 85%;
+        margin: 0 0 0 7.5%;
+        padding-bottom: 16px;
+        text-align: left;
+    }
+    .formP6{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .formP6 .blok{
+        margin-bottom: 30px;
+        margin-top: 25px;
+        height: auto;
+        padding: 11px 30px;
+        border: 1px solid #D9E1E4;
+    }
+    .formP6 .blok.active{
+        background-color: transparent;
+        border: 1px solid #DFE5E7;
+    }
+    .formP6 .blok.active .descript{
+        border-right: none;
+        border-bottom: 1px solid #DFE5E7;
+    }
+    .formP6 .blok .descript{
+        width: 100%;
+        float: none;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ECEEEE;
+        padding-left: 0;
+        font-size: 28px;
+        line-height: 1.4;
+        min-height: 60px;
+        padding-bottom: 15px;
+        position: relative;
+        padding-right: 0;
+    }
+    .formP6 .blok .descript span{
+        font-size: 16px;
+        padding-top: 0;
+        display: block;
+        float: right;
+        width: 40%;
+        position: absolute;
+        right: 0;
+        top: 7px;
+    }
+    .formP6 .blok .textareaP6{
+        width: 100%;
+        float: none;
+        height: 100%;
+        font-size: 25px;
+        padding: 15px 7px;
+        font-family: 'Open Sans';
+        height: 110px;
+    }
+    .formP6 .blok.first {
+        margin-bottom: 0;
+    }
+    .formP6 .blok.first .textareaP6{
+        height: 145px;
+    }
+    .formButtonP6{
+        width: 405px;
+        height: 95px;
+        margin: 42px auto 15px auto;
+        font-size: 30px;
+    }
 }
 @media only screen and (max-width: 610px) {
      /*page8*/
@@ -603,6 +737,34 @@
     }
     .rozd{
         padding-top: 30px;
+    }
+    /*page6*/
+    .p6H .h1bl{
+        font-size: 32px;
+    }
+    .p6ContBl .deskBl{
+        font-size: 25px;
+    }
+     .p6H .twoCols{
+        font-size: 25px;
+    }
+    .p6H .twoCols span{
+        font-size: 30px;
+    }
+    .p6ContBl .hBl{
+        font-size: 32px;
+    }
+    .p6ContBl .deskBl{
+        font-size: 25px;
+    }
+    .formP6 .blok .descript{
+        font-size: 25px;
+    }
+    .formP6 .blok .descript span{
+        font-size: 14px;
+    }
+     .formP6 .blok .textareaP6{
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 580px) {
@@ -769,6 +931,46 @@
         bottom: 10px;
         top: auto;
     }
+    /*page6*/
+    .p6H .h1bl{
+        font-size: 30px;
+    }
+    .p6H .desk{
+        font-size: 20px;
+        padding: 20px;
+        border-width: 5px;
+    }
+    .p6ContBl .deskBl{
+        font-size: 22px;
+    }
+    .p6H .twoCols{
+        font-size: 22px;
+    }
+    .p6H .twoCols span{
+        font-size: 27px;
+    }
+    .p6WrapBl{
+        border-top-width: 10px;
+    }
+    .p6ContBl .hBl{
+        font-size: 27px;
+    }
+    .p6ContBl .deskBl{
+        font-size: 22px;
+    }
+    .formP6 .blok .descript{
+        font-size: 20px;
+    }
+    .formP6 .blok .descript span{
+        font-size: 12px;
+    }
+    .formButtonP6{
+        width: 70%;
+        height: 80px;
+        margin: 30px auto;
+        font-size: 25px;
+    }
+
 }
 @media only screen and (max-width: 490px) {
     .p3Bl1 .h1norm{
@@ -890,6 +1092,44 @@
 
     .footbox .soclks li.tw a:hover {
         background-position: -20px -550px;
+    }
+    /*page6*/
+    .p6H .h1bl{
+        font-size: 25px;
+        letter-spacing: normal;
+    }
+    .p6H .desk{
+        font-size: 18px;
+        padding: 20px;
+        border-width: 5px;
+    }
+    .p6H .twoCols{
+        font-size: 20px;
+    }
+    .p6H .twoCols span{
+        font-size: 25px;
+    }
+    .p6ContBl .hBl{
+        letter-spacing: normal;
+        font-size: 25px;
+    }
+    .p6ContBl .deskBl{
+        font-size: 21px;
+    }
+    .formP6 .blok{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .formP6 .blok .descript{
+        font-size: 18px;
+    }
+    .formP6 .blok .descript span{
+        font-size: 10px;
+    }
+    .formButtonP6{
+        height: 70px;
+        margin: 30px auto 10px auto;
+        font-size: 20px;
     }
 }
 
@@ -1096,6 +1336,54 @@
     .rozd{
         padding-top: 7px;
     }
+    /*page6*/
+    .p6H .h1bl{
+        font-size: 20px;
+    }
+    .p6H .desk{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .p6H .twoCols{
+        margin: 0 auto;
+        font-size: 18px;
+    }
+    .p6H .twoCols span{
+        font-size: 20px;
+    }
+    .p6ContBl .hBl{
+        font-size: 20px;
+    }
+    .p6ContBl .deskBl{
+        font-size: 16px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .formP6{
+        padding-bottom: 20px;
+    }
+    .formP6 .blok .descript{
+        font-size: 16px;
+    }
+    .formP6 .blok .descript span{
+        width: 35%;
+        top: 0;
+    }
+    .formP6 .blok .textareaP6{
+        font-size: 16px;
+        padding: 10px 5px;
+        height: 80px;
+    }
+    .formP6 .blok.first {
+        margin-bottom: 0;
+    }
+    .formP6 .blok.first .textareaP6{
+        height: 100px;
+    }
+    .formButtonP6{
+        height: 60px;
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 385px) {
@@ -1205,6 +1493,14 @@
     .partnerBlok{
         padding-bottom: 30px;
     }
+    /*page6*/
+    .p6H .twoCols{
+        margin: 0 auto;
+        font-size: 15px;
+    }
+    .p6H .twoCols span{
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 360px) {
     /*page8*/
@@ -1255,6 +1551,41 @@
     }
     .rozd{
         padding-top: 15px;
+    }
+    /*page6*/
+    .p6H{
+        padding-top: 20px;
+    }
+    .p6H .h1bl{
+        padding-bottom: 25px;
+    }
+    .p6ContBl .hBl{
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px 0 10px 0;
+    }
+    .p6ContBl .deskBl {
+        width: 90%;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+    .formP6 .blok .descript{
+        font-size: 15px;
+    }
+    .p6H .desk{
+        font-size: 15px;
+        padding: 20px;
+    }
+    .formP6 .blok .textareaP6{
+        font-size: 14px;
+    }
+    .formP6 .blok {
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .formButtonP6 {
+        font-size: 17px;
+        margin: 10px 0 20px 0;
     }
 }
 @media only screen and (max-width: 342px) {
