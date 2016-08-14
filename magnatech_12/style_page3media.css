@@ -688,6 +688,140 @@
         margin: 42px auto 15px auto;
         font-size: 30px;
     }
+    /*page5*/
+    .menushka{
+        display: none;
+    }
+    .p5H{
+        width: 100%;
+    }
+    .p5H .h1bl{
+        font-size: 75px;
+        letter-spacing: 5px;
+        padding-top: 45px;
+        padding-left: 0;
+        padding-bottom: 47px;
+        text-align: center;
+    }
+    .p5H .desk {
+        height: auto;
+    }
+    .p5H .desk .addrWrap{
+        width: 87%;
+        float: none;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 70px;
+    }
+    .p5H .desk .mapP5{
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 240px;
+    }
+    .p5H .desk .addresBlock{
+        line-height: 1.2;
+        font-size: 30px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1.0) 0%, rgba(255, 255, 255, 1.0) 11px, rgba(255, 255, 255, .0) 11px, rgba(255, 255, 255, .0) 100%), 
+                linear-gradient(to right, #E20C18 0%, #E20C18 9px, rgba(255, 255, 255, .0) 9px, rgba(255, 255, 255, .0) 100%);
+    }
+    .p5H .desk .addresBlock p{
+        padding: 36px 0 45px 0;
+    }
+    .p5H .desk .buttonBlock{
+        position: absolute;
+        bottom: -580px;
+        width: 100%;
+        padding-right: 40px;
+    }
+    .p5H .desk .buttonBlock a{
+        font-size: 30px;
+        padding: 31px 110px;
+        text-transform: uppercase;
+    }
+    .p5ContBl{
+        width: 100%;
+    }
+    .p5ContBl .hBl{
+        font-size: 60px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 3px;
+        padding-top: 73px;
+        padding-bottom: 5px;
+        line-height: 1.3;
+        color: #000926;
+    }
+    .p5ContBl .h2Bl{
+        font-size: 40px;
+        width: 90%;
+        float: none;
+        padding-left: 66px;
+        padding-top: 10px;
+        padding-bottom: 16px;
+    }
+    .p5ContBl .bloks{
+        padding-bottom: 39px;
+    }
+    .p5ContBl .blok{
+        height: auto;
+        padding-top: 44px;
+    }
+    .p5ContBl .blok.last{
+        height: auto;
+        padding-top: 34px;
+    }
+    .p5ContBl .blok.last .h2Bl{
+        padding-top: 0px;
+    }
+    .p5ContBl .blok.first{
+        border-bottom: none;
+    }
+    .p5ContBl .blok.first .col2{
+        border-bottom: 1px solid #D1D9DC;
+    }
+    .p5ContBl .blok .col1,.p5ContBl .blok .col2{
+        width: 92%;
+        margin: 0 auto;
+        float: none;
+    }
+    .p5ContBl .blok .blokMini,.p5ContBl .blok .col2 .blokMini{
+        margin: 0;
+        padding-bottom: 25px;
+    }
+    .p5ContBl .blok .blokMini h3{
+        line-height: 1.5;
+        font-size: 30px;
+    }
+    .p5ContBl .blok .blokMini p{
+        font-size: 25px;
+        line-height: 1.5;
+        padding-top: 5px;
+    }
+    .p5ContPartner{
+        width: 90%;
+    }
+    .p5ContPartner .hBl{
+        padding-top: 60px;
+        padding-left: 0;
+        padding-bottom: 40px;
+        line-height: 1.3;
+    }
+    .p5ContPartner .desk{
+        font-size: 28px;
+    }
+    .p5ContPartner .desk span{
+        display: block;
+        width: 100%;
+        padding-top: 30px;
+    }
+    .p5ContPartner .buttonPart{
+        padding: 110px 15px 110px 0;
+    }
+    .p5ContPartner .buttonPart a{
+        font-size: 30px;
+        padding: 30px 80px;
+    }
 }
 @media only screen and (max-width: 610px) {
      /*page8*/
@@ -970,7 +1104,39 @@
         margin: 30px auto;
         font-size: 25px;
     }
-
+    /*page5*/
+    .p5H .h1bl{
+        font-size: 60px;
+    }
+    .p5H .desk .addresBlock {
+        font-size: 28px;
+    }
+    .p5H .desk .buttonBlock a{
+        font-size: 30px;
+        padding: 25px 80px;
+    }
+    .p5ContBl .hBl{
+        font-size: 50px;
+    }
+    .p5ContBl .h2Bl{
+        font-size: 35px;
+    }
+    .p5ContBl .blok .blokMini h3{
+        font-size: 25px;
+    }
+    .p5ContBl .blok .blokMini p{
+        font-size: 20px;
+    }
+    .p5ContPartner .desk{
+        font-size: 20px;
+    }
+    .p5ContPartner .buttonPart{
+        padding: 60px 0 80px 0;
+    }
+    .p5ContPartner .buttonPart a{
+        font-size: 30px;
+        padding: 20px 60px;
+    }
 }
 @media only screen and (max-width: 490px) {
     .p3Bl1 .h1norm{
@@ -1131,6 +1297,51 @@
         margin: 30px auto 10px auto;
         font-size: 20px;
     }
+    /*page5*/
+    .p5H .h1bl{
+        font-size: 50px;
+        letter-spacing: normal;
+    }
+    .p5H .desk .addresBlock {
+        font-size: 25px;
+    }
+    .p5H .desk .buttonBlock{
+        bottom: -520px;
+        padding-right: 0px;
+    }
+    .p5H .desk .buttonBlock a{
+        font-size: 25px;
+        padding: 20px 60px;
+    }
+    .p5H .desk .mapP5 {
+        margin-bottom: 150px;
+    }
+    .p5ContBl .hBl{
+        font-size: 40px;
+        letter-spacing: normal;
+    }
+    .p5ContBl .h2Bl{
+        font-size: 30px;
+    }
+    .p5ContBl .blok .blokMini h3{
+        font-size: 22px;
+    }
+    .p5ContBl .blok .blokMini p{
+        font-size: 18px;
+    }
+    .p5ContPartner .desk{
+        font-size: 18px;
+    }
+    .p5ContPartner .hBl {
+        font-size: 40px;
+    }
+    .p5ContPartner .buttonPart{
+        padding: 60px 0 80px 0;
+    }
+    .p5ContPartner .buttonPart a{
+        font-size: 25px;
+        padding: 15px 30px;
+    }
 }
 
 @media only screen and (max-width: 460px)  {
@@ -1260,7 +1471,64 @@
         padding-top: 10px;
     }
 }
-
+@media only screen and (max-width: 420px)  {
+    /*page5*/
+    .p5H .h1bl{
+        font-size: 40px;
+        padding: 30px 0 40px 0;
+    }
+    .p5H .desk .addresBlock {
+        font-size: 20px;
+        padding-left: 25px;
+    }
+    .p5H .desk .addresBlock p {
+        padding: 20px 0 25px 0;
+    }
+    .p5H .desk .addrWrap {
+        padding-bottom: 30px;
+    }
+    .p5H .desk .buttonBlock{
+        bottom: -350px;
+    }
+    .p5H .desk .buttonBlock a{
+        font-size: 22px;
+        padding: 17px 50px;
+    }
+    .p5H .desk .map5{
+        display: block;
+        margin-bottom: 140px;
+    }
+    .p5H .desk .map5 img{
+        width: 100%;
+        height: auto;
+    }
+    .p5H .desk .mapP5 {
+        display: none;
+    }
+    .p5ContBl .hBl{
+        font-size: 38px;
+        padding: 20px 0 0 0;
+    }
+    .p5ContBl .h2Bl{
+        font-size: 27px;
+    }
+    .p5ContBl .blok .blokMini h3{
+        font-size: 20px;
+    }
+    .p5ContBl .blok .blokMini p{
+        font-size: 16px;
+    }
+    .p5ContPartner .desk{
+        font-size: 16px;
+    }
+    .p5ContPartner .hBl {
+        font-size: 38px;
+    }
+    .p5ContPartner .buttonPart a{
+        font-size: 22px;
+        padding: 10px 15px;
+    }
+}
 @media only screen and (max-width: 410px)  {
     .p3Bl1 .h1norm{
         font-size: 25px;
@@ -1586,6 +1854,53 @@
     .formButtonP6 {
         font-size: 17px;
         margin: 10px 0 20px 0;
+    }
+    /*page5*/
+    .p5H .h1bl{
+        font-size: 40px;
+        padding: 30px 0 40px 0;
+    }
+    .p5H .desk .addresBlock {
+        font-size: 18px;
+        padding-left: 30px;
+    }
+    .p5H .desk .buttonBlock{
+        bottom: -300px;
+    }
+    .p5H .desk .buttonBlock a{
+        font-size: 22px;
+        padding: 17px 50px;
+    }
+    .p5ContBl .hBl{
+        padding: 20px 0 0 0;
+    }
+    .p5ContBl .h2Bl{
+        font-size: 25px;
+        padding-left: 40px;
+    }
+    .p5ContBl .blok .blokMini{
+        background-size: 7% auto;
+        padding-left: 30px;
+    }
+    .p5ContBl .blok .blokMini h3{
+        font-size: 16px;
+    }
+    .p5ContBl .blok .blokMini p{
+        font-size: 13px;
+    }
+    .p5ContPartner .desk{
+        font-size: 13px;
+    }
+    .p5ContPartner .hBl {
+        letter-spacing: normal;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .p5ContPartner .desk span {
+        padding-top: 15px;
+    }
+    .p5ContPartner .buttonPart {
+        padding: 40px 0 60px 0;
     }
 }
 @media only screen and (max-width: 342px) {
