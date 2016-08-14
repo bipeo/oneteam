@@ -39,6 +39,7 @@ $(document).ready(function(){
     $(".formP6 .blok").on('click', function(){
       $(".formP6 .blok").removeClass("active");
       $(this).addClass("active");
+      $(this).children().eq(1).focus();
     });
     $(window).resize(function() {
       $(".owl_st1Top").css({

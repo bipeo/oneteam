@@ -1471,8 +1471,12 @@
     padding: 24px 63px;
     text-transform: uppercase;
 }
+.p5H .desk .map5{
+    display: none;
+}
 .p5WrapBl{
     background-color: #D9E1E4;
+    border-bottom: 17px solid #E20C18;
 }
 .p5ContBl{
     width: 1200px;
@@ -1484,22 +1488,97 @@
     font-weight: 700;
     text-align: center;
     letter-spacing: 5px;
-    padding-top: 88px;
-    padding-bottom: 20px;
+    padding-top: 73px;
+    padding-bottom: 35px;
 }
 .p5ContBl .h2Bl{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
+    width: 25%;
+    float: left;
+    padding-left: 36px;
+    padding-top: 10px;
 }
-.blok{
-    height: 355px;
+.p5ContBl .blok{
+    height: 392px;
     padding-top: 44px;
 }
-.blok>div{
-    width: 32%;
+.p5ContBl .blok.last{
+    height: 426px;
+    padding-top: 34px;
+}
+.p5ContBl .blok.last .h2Bl{
+    padding-top: 0px;
+}
+.p5ContBl .blok.first{
+    border-bottom: 1px solid #D1D9DC;
+}
+.p5ContBl .blok .col1,.p5ContBl .blok .col2{
+    width: 37%;
     float: left;
 }
-.blok.first{
-    border-bottom: 1px solid #D1D9DC;
+.p5ContBl .blok .blokMini{
+    background-image: url('img/page3/mark.png');
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    padding-bottom: 45px;
+    margin-top: 6px;
+    margin-left: 36px;
+}
+.p5ContBl .blok .col2 .blokMini{
+    margin-left: 66px;
+}
+.p5ContBl .blok .blokMini h3{
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 22px;
+}
+.p5ContBl .blok .blokMini p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-top: 5px;
+}
+.p5WrapPartner{
+    width: 100%;
+    background-color: #fff;
+}
+.p5ContPartner{
+    width: 875px;
+    margin: 0 auto;
+}
+.p5ContPartner .hBl{
+    color:#000926;
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    padding-top: 88px;
+    padding-bottom: 62px;
+    letter-spacing: 4.5px;
+    padding-left: 25px;
+}
+.p5ContPartner .desk{
+    color:#000;
+    text-align: left;
+    font-weight: 400;
+    font-size: 18.5px;
+    padding-bottom: 0;
+    padding-left: 16px;
+    line-height: 1.35;
+}
+.p5ContPartner .buttonPart{
+    text-align: center;
+    padding: 86px 15px 110px 0;
+}
+.p5ContPartner .buttonPart a{
+    color: #fff;
+    background-color: #E20C18;
+    font-size: 20px;
+    padding: 24px 65px;
+    transition: all 0.2s ease;
+}
+.p5ContPartner .buttonPart a:hover{
+    background-color: #000926;
 }
