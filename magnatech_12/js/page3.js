@@ -41,6 +41,7 @@ $(document).ready(function(){
     $('.exit,.popUpBg').click(function() { 
       popDown(); 
     });
+
     $('body').keydown(function(eventObject){
       if (eventObject.which == 27)
          popDown();
@@ -66,6 +67,25 @@ $(document).ready(function(){
       $(".formP6 .blok").removeClass("active");
       $(this).addClass("active");
       $(this).children().eq(1).focus();
+    });
+    $('.mapWrap').mouseup(function (e){
+    var div = $(".rightCol,.mapCont .centerCol");
+    if (!div.is(e.target)&& div.has(e.target).length === 0) {
+      $('.mapCont .centerCol').hide();
+      $('.mapCont .centerCol>div').hide();
+    }
+  });
+    $('.rightCol .blok').click(function() { 
+      if($('body').width()<641)
+      {
+        return false;
+      }
+      $(".rightCol .blok").removeClass("active");
+      $(this).addClass("active");
+      var ThisId=$(this).attr('id');
+      $('.mapCont .centerCol').fadeIn(300);
+      $('.mapCont .centerCol>div').hide();
+      $('.mapCont .centerCol>div.'+ThisId).fadeIn(300);
     });
     $(window).resize(function() {
       alignCenter($('.popUp'));
