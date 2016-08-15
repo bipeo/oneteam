@@ -1470,6 +1470,10 @@
     .rozd{
         padding-top: 10px;
     }
+    /*popUpP5*/
+    .popUp{
+        width:100%;
+    }
 }
 @media only screen and (max-width: 420px)  {
     /*page5*/
@@ -1488,7 +1492,7 @@
         padding-bottom: 30px;
     }
     .p5H .desk .buttonBlock{
-        bottom: -350px;
+        bottom: -300px;
     }
     .p5H .desk .buttonBlock a{
         font-size: 22px;
@@ -1497,10 +1501,8 @@
     .p5H .desk .map5{
         display: block;
         margin-bottom: 140px;
-    }
-    .p5H .desk .map5 img{
         width: 100%;
-        height: auto;
+        overflow: hidden;
     }
     .p5H .desk .mapP5 {
         display: none;
@@ -1768,6 +1770,28 @@
     }
     .p6H .twoCols span{
         font-size: 16px;
+    }
+    /*popUpP5*/
+    .popUpForm>h3{
+        font-size: 30px;
+    }
+    .popUpForm p{
+        font-size: 16px;
+    }
+    .popUpForm .inputFp5{
+        font-size: 16px;
+        color: #000;
+        height: 35px;
+    }
+    .popUpForm .textareaFp5{
+        font-size: 16px;
+        height: 130px;
+    }
+    .popUpForm .formButtonP5{
+        font-family: 'Open Sans';
+        font-size: 16px;
+        height: 70px;
+        margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 360px) {
