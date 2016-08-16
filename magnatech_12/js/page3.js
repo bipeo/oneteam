@@ -74,11 +74,31 @@ $(document).ready(function(){
       $('.mapCont .centerCol').hide();
       $('.mapCont .centerCol>div').hide();
     }
-  });
+    });
+    $('body').mouseup(function (e){
+      if($('body').width()<641)
+      {
+        var div = $(".mapCont .centerCol");
+        if (!div.is(e.target)&& div.has(e.target).length === 0) {
+          $('.mapCont .centerCol').hide();
+          $('.mapCont .centerCol>div').hide();
+        }
+      }
+      else{
+        return false;
+      }
+    });
+    $('.xPng').mouseup(function (e){
+        $('.mapCont .centerCol').hide();
+        $('.mapCont .centerCol>div').hide();
+    });
     $('.rightCol .blok').click(function() { 
       if($('body').width()<641)
       {
-        return false;
+        var position = $(this).position();
+        $('.mapCont .centerCol').css({
+          top: position.top + 'px'
+        });
       }
       $(".rightCol .blok").removeClass("active");
       $(this).addClass("active");
