@@ -96,8 +96,9 @@ $(document).ready(function(){
         $('.mapCont .centerCol').hide();
         $('.mapCont .centerCol>div').hide();
     });
+    var ThisId=$('.rightCol').attr('id');
     $('.rightCol .blok').click(function() { 
-      if($('body').width()<641)
+      if($('.mapCont .centerCol').width()<641)
       {
         var position = $(this).position();
         $('.mapCont .centerCol').css({
@@ -106,7 +107,7 @@ $(document).ready(function(){
       }
       $(".rightCol .blok").removeClass("active");
       $(this).addClass("active");
-      var ThisId=$(this).attr('id');
+      ThisId=$(this).attr('id');
       $('.mapCont .centerCol').fadeIn(300);
       $('.mapCont .centerCol>div').hide();
       $('.mapCont .centerCol>div.'+ThisId).fadeIn(300);
@@ -119,6 +120,19 @@ $(document).ready(function(){
       $(".buttonBl").css({
         marginLeft: -($(".buttonBl").width() - $(".partnerBlok").width()) / 2 + 'px'
       });
+      if($('.mapCont .centerCol').width()>640)
+      {
+        $('.mapCont .centerCol').css({
+          top: 52 + 'px'
+        });
+      }
+      if($('.mapCont .centerCol').width()<641)
+      {
+        var pos = $('#'+ThisId).position();
+        $('.mapCont .centerCol').css({
+          top: pos.top + 'px'
+        });
+      }
     })
 });
 
