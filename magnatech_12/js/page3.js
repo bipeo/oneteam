@@ -44,7 +44,11 @@ $(document).ready(function(){
 
     $('body').keydown(function(eventObject){
       if (eventObject.which == 27)
+      {
          popDown();
+          $('.mapCont .centerCol').hide();
+          $('.mapCont .centerCol>div').hide();
+      }
     });
     $('.buttonBlock a').on('click', function(event) {
       event.preventDefault();
