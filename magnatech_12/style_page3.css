@@ -1142,6 +1142,9 @@
     padding: 0 38px;
     display: none;
 }
+.mapCont .centerCol>div.xPng{
+    display: none;
+}
 .mapCont .cColText{
     float: left;
     width: 500px;
@@ -1152,7 +1155,7 @@
     background-color: #F2F2F2;
     width: 263px;
     height: 527px;
-    margin: 38px 0
+    margin: 38px 0;
 }
 .cColText .cColRow{
     font-size: 15.5px;
