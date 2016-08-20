@@ -336,8 +336,9 @@ select.soflow {
     line-height: 1.4em;
     color:#303036;
     display:block;
-    font-size:10.58px;
+    font-size:11px;
     min-height:28px;
+    font-family: Arial;
 }
 .menu_main > li.active  .dsk, .menu_main > li:hover  .dsk {
     color:#fff;
