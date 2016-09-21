@@ -12,6 +12,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Helvetica-Regular';
+  src: url("../fonts/Helvetica-Regular.eot");
+  src: url("../fonts/Helvetica-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Helvetica-Regular.woff") format('woff'), url("../fonts/Helvetica-Regular.ttf") format('truetype'), url("../fonts/Helvetica-Regular.svg#HelveticaNeue-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .container {
   max-width: 1001px;
   width: 100%;
@@ -145,6 +152,7 @@
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  padding: 0 0 3px;
   color: #fff;
   border-radius: 33px;
 }
@@ -152,11 +160,15 @@
   background: #000;
   position: relative;
   top: 0;
-  right: -295px;
+  right: -355px;
   border-top-left-radius: 33px;
   border-bottom-left-radius: 33px;
   width: auto;
   display: inline-block;
+  opacity: 1;
+}
+.time-order .text .hide-item.active {
+  opacity: 1;
 }
 .time-order .text .hide-item:after {
   content: '';
@@ -214,6 +226,7 @@
   text-align: center;
   padding: 10px 0 0 0;
   line-height: 1;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.4);
 }
 .time-order .time:after {
   content: '';
@@ -282,7 +295,7 @@ nav ul:after {
 nav li {
   float: left;
   vertical-align: top;
-  width: 20%;
+  width: 19%;
   font-size: 0;
   text-align: center;
 }
@@ -298,6 +311,9 @@ nav a:hover {
 }
 nav a.active {
   background: #dcb57b;
+}
+nav li:last-child {
+  width: 24%;
 }
 .main-content .text {
   float: left;
@@ -388,13 +404,22 @@ footer .feedback form button {
   height: 100%;
   z-index: 2;
 }
+.modal-window {
+  position: absolute;
+  z-index: 6;
+  width: 523px;
+  left: 50%;
+}
 .modal-window-calling,
-.modal-window-call {
+.modal-window-call,
+.modal-window {
   position: absolute;
   z-index: 6;
   width: 523px;
   display: none;
   background: #606060;
+  outline: 3px solid #606060;
+  border: 2px solid #dcb57b;
   color: #fff;
   top: 50%;
   left: 50%;
@@ -406,19 +431,9 @@ footer .feedback form button {
   padding: 20px 30px;
   text-align: center;
 }
-.modal-window-calling:after,
-.modal-window-call:after {
-  content: '';
-  position: absolute;
-  width: 98%;
-  height: 93%;
-  left: 3px;
-  top: 3px;
-  background: none;
-  border: 2px solid #dcb57b;
-}
 .modal-window-calling h3,
-.modal-window-call h3 {
+.modal-window-call h3,
+.modal-window h3 {
   font-size: 20px;
   font-family: 'HelveticaNeue-Bold';
   margin: 0 0 20px 0;
@@ -428,17 +443,24 @@ footer .feedback form button {
   display: inline-block;
 }
 .modal-window-calling h3:after,
-.modal-window-call h3:after {
+.modal-window-call h3:after,
+.modal-window h3:after {
   content: '';
   width: 70px;
   height: 2px;
   background: #dcb57b;
   position: absolute;
   bottom: -7px;
-  left: 15px;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .modal-window-calling .close,
-.modal-window-call .close {
+.modal-window-call .close,
+.modal-window .close {
   position: absolute;
   z-index: 6;
   cursor: pointer;
@@ -446,14 +468,16 @@ footer .feedback form button {
   right: 14px;
 }
 .modal-window-calling .close .icon,
-.modal-window-call .close .icon {
+.modal-window-call .close .icon,
+.modal-window .close .icon {
   width: 11px;
   height: 11px;
   background-position: -1px 0px;
   display: block;
 }
 .modal-window-calling img,
-.modal-window-call img {
+.modal-window-call img,
+.modal-window img {
   max-width: 100%;
 }
 .modal-window-calling {
@@ -467,6 +491,147 @@ footer .feedback form button {
 }
 .modal-window-calling h3:after {
   display: none;
+}
+.modal-window-calling {
+    top:1147px;
+}
+.modal-window {
+  display: block;
+}
+.enter-phone {
+  padding: 15px 10px 25px;
+  top: 120px;
+}
+.enter-phone h3 {
+  margin: 0 0 36px 0;
+}
+.enter-phone input {
+  border: 1px solid #dcb57b;
+  padding: 10px 10px;
+  width: 300px;
+  color: #fff;
+  margin: 0 auto 14px auto;
+  display: block;
+  outline: none;
+  background: none;
+  text-align: left;
+}
+.enter-phone .accumulation {
+  background: #dcb57b;
+  outline: 2px solid #dcb57b;
+  border: 1px solid #dcb57b;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 18px;
+  font-family: 'HelveticaNeue-Light';
+  color: #fff;
+  width: 300px;
+  margin: 0 auto 0 auto;
+}
+.enter-phone .accumulation:hover {
+  background: #d5a660;
+  border: 1px solid #606060;
+}
+.for_mask.no-valid {
+  border-color: #f00;
+}
+.bill-card {
+  top: 360px;
+  padding: 46px 27px 42px;
+}
+.bill-card table {
+  font-family: 'HelveticaNeue-Bold';
+  color: #fff;
+  font-size: 20px;
+  margin: -20px -15px 20px -15px;
+  width: 106%;
+}
+.bill-card table tr {
+  padding: 5px 0;
+}
+.bill-card table td {
+  padding: 5px 10px;
+  text-align: left;
+}
+.bill-card table tr td:nth-child(2) {
+  border-bottom: 2px dotted #dcb57b;
+  width: 95px;
+  padding: 0;
+}
+.bill-card table tr td:nth-child(1) {
+  border-left: 1px solid #dcb57b;
+}
+.bill-card table tr td:nth-child(3) {
+  border-left: 1px solid #dcb57b;
+}
+.bill-card table tr td:last-child {
+  font-family: 'HelveticaNeue-Light';
+  font-size: 16px;
+  padding: 5px 22px;
+  border: 2px dotted #dcb57b;
+}
+.bill-card button,
+.bill-card a {
+  background: #dcb57b;
+  outline: 2px solid #dcb57b;
+  border: 1px solid #dcb57b;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 18px;
+  color: #fff;
+  width: 45%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  font-family: 'HelveticaNeue-Light';
+}
+.bill-card button:hover,
+.bill-card a:hover {
+  background: #d5a660;
+  border: 1px solid #606060;
+}
+.bill-card .wrapper {
+  text-align: left;
+}
+.bill-card a {
+  float: right;
+  font-size: 18px;
+}
+.mask2 {
+  top: 680px;
+}
+.mask2 button {
+  background: #dcb57b;
+  outline: 2px solid #dcb57b;
+  border: 1px solid #dcb57b;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 18px;
+  font-family: 'HelveticaNeue-Light';
+  color: #fff;
+  width: 300px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+.mask2 button:hover {
+  background: #d5a660;
+  border: 1px solid #606060;
+}
+.mask2 input {
+  text-align: center;
+}
+.mask2 .accumulation {
+  margin-bottom: 30px;
+}
+.mask2 p {
+  margin: 0 auto 20px auto;
+  width: 262px;
+  font-weight: bold;
+}
+.mask2 p span {
+  color: #dcb57b;
+}
+.number2 {
+  top: 979px;
 }
 html {
   height: 100%;
@@ -524,7 +689,7 @@ h4 {
 }
 button {
   border: none;
-  outline: none !important;
+  outline: none;
   background: none;
   cursor: pointer;
 }
@@ -534,7 +699,7 @@ body {
   background: #fff;
   color: #000;
   font-size: 15px;
-  min-width: 320px;
+  min-width: 1001px;
   height: 100%;
   letter-spacing: 0.75px;
 }
@@ -544,240 +709,4 @@ body {
 }
 * {
   box-sizing: border-box;
-}
-@media (max-width: 1200px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
-  .top-block .logo {
-    margin: 0 20px 0 0;
-  }
-  .parameter-block {
-    min-height: 128px;
-  }
-  .block-tabs-text .item {
-    width: 25%;
-  }
-}
-@media (max-width: 1024px) {
-  .block-tabs-text .item {
-    width: 25%;
-  }
-  .main-content .text {
-    width: 100%;
-    float: none;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .main-content h3 {
-    margin: 0;
-  }
-  .bottom-block .proposal {
-    display: none;
-  }
-  .main-content .form-block {
-    float: none;
-    margin: 0 auto;
-  }
-  .contact .left-column {
-    width: 100%;
-    padding: 34px 0 0 0;
-  }
-  .special-proposal .img-wrapper {
-    width: 33%;
-  }
-  .parameter-block {
-    min-height: 177px;
-  }
-  .contact .right-column {
-    float: none;
-    margin: 0 auto;
-  }
-  .modal-window-order {
-    width: 96%;
-  }
-  .parameter-block .content .choose-tires-block.tires-type.tires-first {
-    margin: 0px 0 5px 0px;
-  }
-}
-@media (max-width: 922px) {
-  .block-tabs-text .item {
-    width: 33.33333%;
-  }
-  .parameter-block .content .choose-tires-block {
-    margin-bottom: 20px;
-  }
-  .parameter-block .content .choose-tires-block.tires-type {
-    width: 100%;
-    margin: 15px 0 0 0;
-  }
-  .additionally-option {
-    margin: 60px 0 0 0;
-  }
-  .choose-tires:nth-child(2),
-  .choose-tires:nth-child(5) {
-    min-width: 121px;
-  }
-  footer .form-block {
-    width: 100%;
-  }
-  .additionally-option .close-tires {
-    float: right;
-    margin: 0;
-  }
-  .additionally-option .find-tires {
-    margin: 0;
-    float: left;
-  }
-  .additionally-option .tire-size {
-    display: block;
-    width: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .block-tabs-text .item {
-    width: 50%;
-  }
-  .special-proposal .img-wrapper {
-    width: 46%;
-  }
-  .payment .type-method li {
-    width: 100%;
-  }
-  .payment .type-method li:last-child {
-    display: none;
-  }
-  .payment .method .hide-desktop {
-    display: block;
-    padding: 0;
-    font-weight: 500;
-  }
-  .payment .method li {
-    width: 100%;
-  }
-  .parameter-block .content {
-    padding: 20px 0px 20px 0px;
-    position: relative;
-    left: 0;
-  }
-  .parameter-block .content > .icon {
-    left: -27px;
-  }
-  .parameter-block .content.auto .icon {
-    left: -27px;
-  }
-  .bottom-block .count-order {
-    display: none;
-  }
-  .bottom-block nav {
-    text-align: center;
-    float: none;
-  }
-  .top-block .logo {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-  .phone {
-    float: left;
-  }
-  .bottom-block nav li {
-    padding: 0 10px;
-  }
-  .contact .right-column {
-    width: 100%;
-  }
-  .main-content {
-    padding: 0 0 30px 0;
-  }
-  .main-content h2 {
-    font-size: 23px;
-    padding: 0;
-  }
-  .main-content h2 .icon {
-    display: none;
-  }
-  .main-content h3 {
-    margin: 0;
-    font-size: 20px;
-  }
-  .main-content h4 {
-    font-size: 14px;
-  }
-  .main-content .form-block {
-    width: 100%;
-  }
-  .special-proposal .img-wrapper {
-    width: 100%;
-  }
-  .delivery p {
-    border-bottom: none;
-    margin: 0;
-  }
-  .payment .method {
-    margin: 0;
-    border-bottom: 0;
-  }
-  .special-proposal .img-wrapper-border {
-    box-shadow: none;
-  }
-  .special-proposal .img-wrapper {
-    margin-bottom: 15px;
-  }
-  .block-tabs-text .item {
-    margin-bottom: 10px;
-  }
-  .parameter-block .content .choose-tires-block.tires-type .choose-tires {
-    min-width: 48% !important;
-  }
-  .choose-tires:nth-child(2),
-  .choose-tires:nth-child(5) {
-    min-width: 130px;
-  }
-  footer {
-    padding: 50px 0px 40px 0px;
-  }
-  footer .form-block {
-    width: 100%;
-  }
-  footer h3 {
-    font-size: 18px;
-  }
-  footer p {
-    font-size: 16px;
-  }
-  .modal-window-order input {
-    width: 90%;
-    margin: 0 0 20px 0;
-  }
-  .modal-window-order button {
-    width: 90%;
-  }
-  .modal-window-order .form-block {
-    text-align: center;
-  }
-  .additionally-option {
-    margin: 0px 0 0 0;
-  }
-  .additionally-option .tire-size strong {
-    text-align: left;
-    display: block;
-  }
-  .parameter-block .content .choose-tires-block.tires-type.tires-first {
-    margin: 0 0 10px 0px;
-  }
-}
-@media (max-width: 480px) {
-  .block-tabs-text .item {
-    width: 100%;
-  }
-  .title {
-    font-size: 16px;
-  }
-  footer .form-block .data-phone,
-  footer .form-block button {
-    width: 100%;
-    margin: 0 0 20px 0;
-  }
 }

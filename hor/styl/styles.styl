@@ -17,6 +17,15 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Helvetica-Regular';
+  src: url("../fonts/Helvetica-Regular.eot");
+  src: url("../fonts/Helvetica-Regular.eot?#iefix") format('embedded-opentype'), 
+  url("../fonts/Helvetica-Regular.woff") format('woff'), url("../fonts/Helvetica-Regular.ttf") format('truetype'), 
+  url("../fonts/Helvetica-Regular.svg#HelveticaNeue-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .container
     max-width 1001px;
@@ -131,7 +140,7 @@
         display: inline-block;
         vertical-align: middle;
         position relative
-        //right: -299px;
+        padding: 0 0 3px;
         
         color #fff
         border-radius: 33px;
@@ -139,11 +148,14 @@
             background #000
             position: relative;
             top: 0;
-            right: -295px;
+            right: -355px;
             border-top-left-radius: 33px;
             border-bottom-left-radius: 33px;
             width: auto;
             display: inline-block;
+            opacity 1
+            &.active
+                opacity 1
             &:after
                 content: '';
                 position: absolute;
@@ -196,6 +208,7 @@
         text-align: center;
         padding: 10px 0 0 0;
         line-height: 1;
+        box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.4)
         &:after
             content ''
             position absolute
@@ -251,7 +264,7 @@ nav
     li
             float left
             vertical-align top
-            width 20%
+            width 19%
             font-size 0
             text-align center
            
@@ -265,6 +278,8 @@ nav
                 background #dcb57b
         a.active
             background #dcb57b
+    li:last-child
+        width 24%
 .main-content
     
     .text
@@ -344,13 +359,19 @@ footer
     z-index:2;
 }                
 
-
-.modal-window-calling, .modal-window-call
+.modal-window
+    position absolute
+    z-index 6
+    width 523px
+    left 50%
+.modal-window-calling, .modal-window-call, .modal-window
     position absolute
     z-index 6
     width 523px
     display none
     background #606060
+    outline 3px solid #606060
+    border 2px solid #dcb57b
     color #fff
     top 50%
     left 50%
@@ -361,15 +382,6 @@ footer
     transform: translate(-50%, -50%)  
     padding 20px 30px
     text-align center
-    &:after
-        content ''
-        position absolute
-        width 98%
-        height 93%
-        left 3px
-        top 3px
-        background none
-        border 2px solid #dcb57b
     h3
         font-size 20px
         font-family: 'HelveticaNeue-Bold';
@@ -385,7 +397,12 @@ footer
             background #dcb57b
             position: absolute;
             bottom: -7px;
-            left 15px
+            left 50%
+            -moz-transform: translate(-50%, -50%) 
+            -ms-transform: translate(-50%, -50%) 
+            -webkit-transform: translate(-50%, -50%) 
+            -o-transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%) 
     .close
         position absolute
         z-index 6
@@ -407,6 +424,123 @@ footer
         margin: 10px 0 10px 0;
     h3:after
         display none
+.modal-window
+    display block
+.enter-phone
+    padding 15px 10px 25px
+    top 120px
+    h3
+        margin 0 0 36px 0
+    input
+        border 1px solid #dcb57b
+        padding 10px 10px
+        width 300px
+        color #fff
+        margin 0 auto 14px auto
+        display block
+        outline none
+        background: none;
+        text-align: left;
+    .accumulation
+        background #dcb57b
+        outline 2px solid #dcb57b
+        border 1px solid #dcb57b
+        cursor pointer
+        padding 6px 10px
+        font-size 18px
+        font-family: 'HelveticaNeue-Light';
+        color #fff
+        width 300px
+        margin 0 auto 0 auto
+        &:hover
+            background darken(#dcb57b, 10%)
+            border 1px solid #606060
+.for_mask.no-valid
+    border-color red            
+
+.bill-card
+    top 360px
+    padding 46px 27px 42px
+    table
+        font-family: 'HelveticaNeue-Bold';
+        color #fff
+        font-size 20px
+        margin -20px -15px 20px -15px
+        width 106%
+       
+        tr
+            padding 5px 0
+        td
+            padding 5px 10px
+            text-align left
+        tr td:nth-child(2)
+            border-bottom: 2px dotted #dcb57b
+            width: 95px;
+            padding: 0;
+            
+        tr td:nth-child(1)
+            border-left 1px solid #dcb57b
+        tr td:nth-child(3)
+            border-left 1px solid #dcb57b
+        tr td:last-child
+            font-family: 'HelveticaNeue-Light';
+            font-size 16px
+            padding: 5px 22px;
+            border 2px dotted #dcb57b
+    button, a
+        background #dcb57b
+        outline 2px solid #dcb57b
+        border 1px solid #dcb57b
+        cursor pointer
+        padding 8px 10px
+        font-size 18px
+        color #fff
+        width 45%
+        margin 0 auto 0 auto
+        text-align center
+        font-family: 'HelveticaNeue-Light';
+        
+        &:hover
+            background darken(#dcb57b, 10%)
+            border 1px solid #606060
+    .wrapper
+        text-align left
+    a
+        float right
+        font-size 18px
+.mask2
+    top 680px     
+    button
+        background #dcb57b
+        outline 2px solid #dcb57b
+        border 1px solid #dcb57b
+        cursor pointer
+        padding 8px 10px
+        font-size 18px
+        font-family: 'HelveticaNeue-Light';
+        color #fff
+        width 300px
+        margin 0 auto 0 auto
+        text-align center
+        &:hover
+            background darken(#dcb57b, 10%)
+            border 1px solid #606060
+    input
+        text-align center
+    .accumulation
+        margin-bottom 30px
+    p
+        margin 0 auto 20px auto
+        width 262px
+        font-weight bold
+        span
+            color #dcb57b
+.number2
+    top 979px
+        
+
+
+
 
 
 @import 'partials/*';

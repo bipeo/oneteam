@@ -4,10 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Main Horoshiki </title>
+        <title>Horoshiki</title>
         
         <link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="js/Parserjs/Parsley.js-master/src/parsley.css" >
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/slick-theme.css">
@@ -96,9 +95,9 @@
                     <div class="feedback">
                         <a href="vkontakte.com" class="vk">vkontakte.com</a>
                         <button class="callus">Спасибо, мы уже звоним Вам!</button>
-                        <form action="/text.php">
+                        <form >
                             <label for="order-call">Заказать обратный звонок</label>
-                            <input type="text" class="for_mask" placeholder="+7 (XXX) XXX-XX-XX"  data-parsley-minlength="18" required>
+                            <input type="text" class="for_mask" placeholder="+7 (XXX) XXX-XX-XX">
                             <button>OK</button>
                         </form>
                     </div>
@@ -107,19 +106,71 @@
         </div>
         
     </div>
-<!--    <div class="modal-window-calling">
+    <div class="modal-window-calling" style="display:block;">
         <div class="close"><span class="icon"></span></div>
         <h3>Спасибо, мы уже звоним Вам! </h3>
-    </div>-->
+    </div>
     <div class="modal-window-call">
         <div class="close"><span class="icon"></span></div>
         <h3>Спасибо! </h3>
         
         <p class="text">Теперь вы будете в курсе полезных новостей и спецпредложений. А еще, мы пришлем вам подарок до 5-го числа следующего месяца </p>
     </div>
-    <div class="overlay"></div>
+    <div class="modal-window enter-phone">
+        <div class="close"><span class="icon"></span></div>
+        <h3>Введите Ваш номер телефона</h3>
+        <form >
+            <input type="text" class="for_mask" placeholder="+7 (XXX) XXX-XX-XX">
+            <button class="accumulation">Узнать накопления</button>
+        </form>
+    </div>
+    <div class="modal-window bill-card">
+        <div class="close"><span class="icon"></span></div>
+        <table cellspacing="15">
+            <tr class="spacer">
+                <td>Карта №</td>
+                <td>29231876</td>
+                <td>Баланс</td>
+                <td>965&#8381;</td>
+            </tr>
+            <tr>
+                <td>Карта №</td>
+                <td>29231876</td>
+                <td>Баланс</td>
+                <td>965&#8381;</td>
+            </tr>
+        </table>
+        <div class="wrapper">
+            <button class="call-me">Перезвоните мне</button>
+            <a href="">Перейти в меню</a>
+        </div>
+    </div>
+    <div class="modal-window enter-phone mask2">
+        <div class="close"><span class="icon"></span></div>
+        <h3>Введите Ваш номер телефона</h3>
+        <form >
+            <input type="text" class="for_mask" placeholder="+7 (XXX) XXX-XX-XX">
+            <button class="accumulation">Узнать накопления</button>
+        </form>
+        <p><span>Упс.... </span>Возможно, Вы заказывали с другого телефона, введите другой номер или мы можем перезванить Вам.</p>
+        <button class="call-me">Перезвоните мне</button>
+    </div>
+    <div class="modal-window bill-card number2">
+        <div class="close"><span class="icon"></span></div>
+        <table cellspacing="15">
+            <tr class="spacer">
+                <td>Карта №</td>
+                <td>29231876</td>
+                <td>Баланс</td>
+                <td>965&#8381;</td>
+            </tr>
+        </table>
+        <div class="wrapper">
+            <button class="call-me">Перезвоните мне</button>
+            <a href="">Перейти в меню</a>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/Parserjs/Parsley.js-master/dist/parsley.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/mask.js"></script>
     <script src="js/scripts.js"></script>
