@@ -31,17 +31,13 @@ $(function() {
     	event.preventDefault();
       event.stopPropagation();
       if(!$('.hide-item').hasClass('active')) {
-        $('.hide-item').addClass('active').animate({'right':'0px'},500);
+        $('.hide-item').addClass('active').animate({'right':'-0px'},500);
         //$('.overlay').show();
       } else {
         $('.hide-item').removeClass('active').animate({'right':'-355px'},500);
       }
     });
-    $('nav a').on('click', function(event) {
-      event.preventDefault();
-      $('nav a').removeClass('active');
-      $(this).addClass('active');
-    });
+  
     $('.time-order .text button').on('click', function(event) {
     	event.preventDefault();
     	$('.hide-item').animate({'right':'-355px'},500);
