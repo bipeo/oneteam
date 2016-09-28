@@ -118,7 +118,7 @@
   width:100%;  
   position: fixed;
   top:0px;  
-  z-index: 8;
+  z-index: 40;
   background: #dcb57b;
   padding: 4px 10px 3px 10px;
   margin: 0;
@@ -180,6 +180,7 @@
 }
 .time-order .text {
   display: inline-block;
+ 
   vertical-align: middle;
   position: relative;
   padding: 0 0 3px;
@@ -187,6 +188,7 @@
   border-radius: 33px;
 }
 .time-order .text .hide-item {
+ 
   background: #000;
   position: relative;
   top: 0;
@@ -195,24 +197,24 @@
   border-top-left-radius: 33px;
   border-bottom-left-radius: 33px;
   width: auto;
-  display: inline-block;
-  opacity: 1;
+  display:none;   
 }
-.time-order .text .hide-item.active {
-  opacity: 1;
-}
+.time-order .text .hide-item.inblock {
+  display: inline-block;   
+  }
+  
+
+
 .time-order .text .hide-item:after {
   content: '';
   position: absolute;
   width: 35px;
-  height: 56px;
+  height: 54px;
   background: #000;
-/*  background:#fff;*/
   vertical-align: top;
   top: 0;
   right: -33px;
-/*  right:-29px;*/
-/*  right:-41px;*/
+
 }
 .time-order .text span {
   font-size: 13px;
@@ -225,8 +227,7 @@
   position: relative;
   border-radius: 50%;
   width: 54px;
-  height: 56px;
-  height:54px; /*fix*/
+  height:52px;
   margin-bottom:2px;
 }
 .time-order .text button:after {
@@ -234,8 +235,8 @@
   position: absolute;
   border: 1px solid #dcb57b;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 49px;
+  height: 47px;
   left: 2px;
   top: 2px;
 }
@@ -314,7 +315,7 @@
 .wrtime .timesh {
     content:'';
     z-index:20;
-    right:-26px;
+    right:-27px;
     top:55px;
     width:24px;
     height: 4px;
@@ -381,6 +382,7 @@
   background: #dcb57b;
 }
 nav {
+     
   margin: 0 0 5px 0;
 }
 nav ul {

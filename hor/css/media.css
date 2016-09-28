@@ -1,0 +1,114 @@
+@media only screen and (max-width:1085px) {
+    
+  
+    body {
+    -moz-transform: scale(0.95); 
+    zoom: 0.95; 
+    zoom: 95%; 
+    }
+    
+}
+@media only screen and (max-width:1030px) {
+    
+  
+    body {
+    -moz-transform: scale(0.91, 0.91); 
+    zoom: 0.91; 
+    zoom: 91%; 
+    }
+    
+}
+@media only screen and (max-width:1000px) {
+    
+  
+    body {
+    -moz-transform: scale(0.88, 0.88);
+    zoom: 0.88; 
+    zoom: 88%; 
+    }
+    
+}
+@media only screen and (max-width:970px) {
+    
+  
+    body {
+    -moz-transform: scale(0.85, 0.85);     
+    zoom: 0.85; 
+    zoom: 85%; 
+    }
+    
+}
+@media only screen and (max-width:940px) {
+    
+  
+    body {
+    -moz-transform: scale(0.82, 0.82);    
+    zoom: 0.82; 
+    zoom: 82%; 
+    }
+    
+}
+@media only screen and (max-width:900px) {
+    
+  
+    body {
+    -moz-transform: scale(0.79, 0.79);     
+    zoom: 0.79; 
+    zoom: 79%; 
+    }
+    
+}
+@media only screen and (max-width:870px) {
+     
+    body {
+    -moz-transform: scale(0.76, 0.76);    
+    zoom: 0.76; 
+    zoom: 76%; 
+    }
+    
+}
+@media only screen and (max-width:850px) {
+     
+    body {
+    -moz-transform: scale(0.74, 0.74);    
+    zoom: 0.74; 
+    zoom: 74%; 
+    }
+    
+}
+@media only screen and (max-width:820px) {
+     
+    body {
+    -moz-transform: scale(0.71, 0.71);    
+    zoom: 0.71; 
+    zoom: 71%; 
+    }
+    
+}
+@media only screen and (max-width:790px) {
+     
+    body {
+    -moz-transform: scale(0.68, 0.68);    
+    zoom: 0.68; 
+    zoom: 68%; 
+    }
+    
+}
+@media only screen and (max-width:760px) {
+     
+    body {
+    -moz-transform: scale(0.65, 0.65);     
+    zoom: 0.65; 
+    zoom: 65%; 
+    }
+    
+}
+@media only screen and (max-width:730px) {
+     
+    body {
+    -moz-transform: scale(0.62, 0.62);     
+    zoom: 0.62;
+    zoom: 62%; 
+    }
+    
+}

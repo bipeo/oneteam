@@ -31,22 +31,30 @@ $(function() {
     	event.preventDefault();
       event.stopPropagation();
       if(!$('.hide-item').hasClass('active')) {
-        $('.hide-item').addClass('active').animate({'right':'-0px'},500);
+        $('.hide-item').addClass('active').addClass('inblock').animate({'right':'-0px'},500, function() {
+          //test display inlne-block
+        });
         //$('.overlay').show();
       } else {
-        $('.hide-item').removeClass('active').animate({'right':'-355px'},500);
+        $('.hide-item').removeClass('active').animate({'right':'-355px'},500, function() {
+          //$(this).css({ 'display':'none'}); //test
+            $(this).removeClass('inblock'); //test
+        });
       }
     });
   
     $('.time-order .text button').on('click', function(event) {
     	event.preventDefault();
-    	$('.hide-item').animate({'right':'-355px'},500);
+    	$('.hide-item').animate({'right':'-355px'},500, function() {
+          //  $(this).css({'display':'none'}); //test
+             $(this).removeClass('inblock'); //test
+        });
       //$('.overlay').hide();
       $('.hide-item').removeClass('active');
     });
     $('.close, .overlay').click(function(e) {
       e.preventDefault();
-      $('.hide-item').removeClass('active').animate({'right':'-355px'},500);
+      $('.hide-item').removeClass('active').animate({'right':'-355px'} );
       $('.overlay, .modal-window-call').fadeOut(400, function() {
       });
     });
@@ -61,7 +69,11 @@ $(function() {
            }
           var containerFF = $('.hide-item');
             if (!containerFF.is(event.target) && containerFF.has(event.target).length === 0){
-            $('.hide-item').removeClass('active').animate({'right':'-355px'},500);
+            $('.hide-item').removeClass('active').animate({'right':'-355px'},500, function() {
+           // $(this).css({'display':'none'}); //test
+             $(this).removeClass('inblock'); //test
+          
+        });
            }
            // if($('.for_mask').hasClass('no-valid')) {
            //  $('.for_mask.no-valid').removeClass('no-valid');
