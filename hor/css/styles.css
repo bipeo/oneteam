@@ -97,7 +97,7 @@
 }
 .phone .icon {
   position: absolute;
-  top: 13px;
+  top: 9px; /*resn*/
   left: -8px;
   width: 23px;
   height: 23px;
@@ -170,6 +170,7 @@
   color: #000;
   text-decoration: underline;
 }
+
 .time-order {
   position: absolute;
   overflow: hidden;
@@ -229,6 +230,8 @@
   width: 54px;
   height:52px;
   margin-bottom:2px;
+  background: none; /*resn*/
+  border: 0;  /*resn*/
 }
 .time-order .text button:after {
   content: '';
@@ -267,6 +270,7 @@
   padding: 10px 0 0 0;
   line-height: 1;
   box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.4);
+  box-sizing: border-box; /*resn */
 }
 .time-order .time:after {
   content: '';
@@ -552,10 +556,10 @@ footer .feedback form button {
 .modal-window h3:after {
   content: '';
   width: 70px;
-  height: 2px;
+  height: 1px;
   background: #dcb57b;
   position: absolute;
-  bottom: -7px;
+  bottom: -10px; /*resn*/
   left: 50%;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -608,7 +612,7 @@ footer .feedback form button {
   top: 120px;
 }
 .enter-phone h3 {
-  margin: 0 0 36px 0;
+  margin: 0 0 40px 0; /*resn*/
 }
 .enter-phone input {
   border: 1px solid #dcb57b;
@@ -626,7 +630,7 @@ footer .feedback form button {
   outline: 2px solid #dcb57b;
   border: 1px solid #dcb57b;
   cursor: pointer;
-  padding: 6px 10px;
+  padding: 4px 10px;
   font-size: 18px;
   font-family: 'HelveticaNeue-Light';
   color: #fff;
@@ -651,6 +655,8 @@ footer .feedback form button {
   font-size: 20px;
   margin: -20px -15px 20px -15px;
   width: 106%;
+  border-spacing: 12px 14px; /*resn */
+  border-collapse: separate; /*resn*/
 }
 .bill-card table tr {
   padding: 5px 0;
@@ -676,13 +682,14 @@ footer .feedback form button {
   padding: 5px 22px;
   border: 2px dotted #dcb57b;
 }
+.bill-card .but,
 .bill-card button,
 .bill-card a {
   background: #dcb57b;
   outline: 2px solid #dcb57b;
   border: 1px solid #dcb57b;
   cursor: pointer;
-  padding: 8px 10px;
+  padding: 7px 10px;
   font-size: 18px;
   color: #fff;
   width: 45%;
@@ -690,6 +697,10 @@ footer .feedback form button {
   text-align: center;
   font-family: 'HelveticaNeue-Light';
 }
+.bill-card .call-me {
+    float:left;
+}
+.bill-card .but:hover, 
 .bill-card button:hover,
 .bill-card a:hover {
   background: #d5a660;
@@ -710,7 +721,7 @@ footer .feedback form button {
   outline: 2px solid #dcb57b;
   border: 1px solid #dcb57b;
   cursor: pointer;
-  padding: 8px 10px;
+  padding: 4px 10px;
   font-size: 18px;
   font-family: 'HelveticaNeue-Light';
   color: #fff;
