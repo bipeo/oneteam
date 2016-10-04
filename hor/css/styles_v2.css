@@ -1,0 +1,122 @@
+/*Theme_v2*/
+.modal-window-calling,
+.modal-window-call,
+.modal-window {
+    background-color:#000; 
+}
+
+.modal-window-calling .close .icon,
+.modal-window-call .close .icon,
+.modal-window .close .icon {
+    background-image:url(../img/xclose_v2.png)
+}
+
+.modal-window-calling h3:after, .modal-window-call h3:after, .modal-window h3:after {
+    background-color:#fff;
+}
+
+.modal-window input {
+ border-color:#fff;    
+}
+.modal-window input::-webkit-input-placeholder  {color:#bfbfbf;}
+.modal-window input::-moz-placeholder {color: #bfbfbf; }
+.modal-window input:-moz-placeholder {color: #bfbfbf; }
+.modal-window input:-ms-input-placeholder  {color:#bfbfbf;}
+
+
+.bill-card table tr td:nth-child(1), .bill-card table tr td:nth-child(2),  .bill-card table tr td:nth-child(3) {
+    border-color:#fff;
+}
+
+.bill-card table tr td:last-child {
+    
+}
+
+.bill-card table tr td:last-child {
+    border-color:#fff;
+}
+
+.bill-card table td {
+    font-family: Arial;
+   
+}
+.enter-phone .accumulation {
+    padding:7px 10px;
+}
+
+.bill-card .but, .bill-card button, .bill-card a {
+    padding:8px 10px;
+}
+
+
+
+.bill-card a,
+.enter-phone .accumulation, 
+.bill-card .but, 
+.bill-card .call-me,
+.bill-card button, 
+.mask2 button,
+.modal-window-calling, .modal-window-call, .modal-window,
+ footer .feedback .callus,
+ footer .feedback .callus:after,
+.bill-card a:hover,
+.enter-phone .accumulation:hover,
+.bill-card .but:hover,
+.bill-card .call-me:hover,
+.bill-card button:hover,
+.mask2 button:hover
+ {
+outline-color: transparent;
+border-color: transparent;
+}
+
+/*.enter-phone .accumulation,
+.bill-card .but,
+.bill-card .call-me,
+.bill-card button, 
+.mask2 button {
+             Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f21416+0,f24344+100 
+background: #f21416;  Old browsers 
+background: -moz-linear-gradient(top,  #f21416 0%, #f24344 100%);  FF3.6-15 
+background: -webkit-linear-gradient(top,  #f21416 0%,#f24344 100%);  Chrome10-25,Safari5.1-6 
+background: linear-gradient(to bottom,  #f21416 0%,#f24344 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f21416', endColorstr='#f24344',GradientType=0 );  IE6-9 
+
+}*/
+.enter-phone .accumulation:hover,
+.bill-card .but:hover, 
+.bill-card .call-me:hover,
+.bill-card button:hover,
+.mask2 button:hover,
+.bill-card a:hover,
+footer .feedback .callus:hover {
+background: #f24344; 
+background: -moz-linear-gradient(top,  #f24344 0%, #f21416 100%); 
+background: -webkit-linear-gradient(top,  #f24344 0%,#f21416 100%); 
+background: linear-gradient(to bottom,  #f24344 0%,#f21416 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24344', endColorstr='#f21416',GradientType=0 );
+
+}
+
+.bill-card a, 
+footer .feedback .callus,
+.enter-phone .accumulation,
+.bill-card .but,
+.bill-card .call-me,
+.bill-card button, 
+.mask2 button  {
+background: #515151; /* Old browsers */
+background: -moz-linear-gradient(top,  #515151 0%, #2b2929 100%, #515151 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #515151 0%,#2b2929 100%,#515151 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #515151 0%,#2b2929 100%,#515151 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515151', endColorstr='#515151',GradientType=0 ); /* IE6-9 */
+  
+}
+.bill-card a:hover, footer .feedback .callus:hover {
+/*background: #2b2929;  Old browsers 
+background: -moz-linear-gradient(top,  #2b2929 0%, #515151 100%);  FF3.6-15 
+background: -webkit-linear-gradient(top,  #2b2929 0%,#515151 100%);  Chrome10-25,Safari5.1-6 
+background: linear-gradient(to bottom,  #2b2929 0%,#515151 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2929', endColorstr='#515151',GradientType=0 );  IE6-9 */
+
+} 

@@ -540,13 +540,14 @@ footer .feedback form button {
   padding: 20px 30px;
   text-align: center;
 }
+
 .modal-window-calling h3,
 .modal-window-call h3,
 .modal-window h3 {
   font-size: 20px;
   font-family: 'HelveticaNeue-Bold';
   font-weight: normal;
-  margin: 0 0 20px 0;
+  margin: 15px 0 20px 0;
   text-align: center;
   position: relative;
   display: inline-block;
@@ -559,7 +560,7 @@ footer .feedback form button {
   height: 1px;
   background: #dcb57b;
   position: absolute;
-  bottom: -10px; /*resn*/
+  bottom: -11px; /*resn*/
   left: 50%;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -584,14 +585,14 @@ footer .feedback form button {
   background-position: -1px 0px;
   display: block;
 }
+
+
 .modal-window-calling img,
 .modal-window-call img,
 .modal-window img {
   max-width: 100%;
 }
-.modal-window-calling {
-  top: 500px;
-}
+
 .modal-window-calling:after {
   height: 87%;
 }
@@ -601,18 +602,20 @@ footer .feedback form button {
 .modal-window-calling h3:after {
   display: none;
 }
-.modal-window-calling {
-    top:1147px;
-}
+
+
+
+
 .modal-window {
   display: block;
 }
 .enter-phone {
-  padding: 15px 10px 25px;
-  top: 120px;
+  padding: 15px 10px 35px 10px;
+ 
 }
 .enter-phone h3 {
-  margin: 0 0 40px 0; /*resn*/
+  margin-bottom: 40px;   
+/*  margin: 0 0 40px 0; resn*/
 }
 .enter-phone input {
   border: 1px solid #dcb57b;
@@ -630,7 +633,7 @@ footer .feedback form button {
   outline: 2px solid #dcb57b;
   border: 1px solid #dcb57b;
   cursor: pointer;
-  padding: 4px 10px;
+  padding: 6px 10px;
   font-size: 18px;
   font-family: 'HelveticaNeue-Light';
   color: #fff;
@@ -646,7 +649,7 @@ footer .feedback form button {
   border-color: #B94A48;
 }
 .bill-card {
-  top: 360px;
+ 
   padding: 46px 27px 42px;
 }
 .bill-card table {
@@ -714,14 +717,14 @@ footer .feedback form button {
   font-size: 18px;
 }
 .mask2 {
-  top: 680px;
+  
 }
 .mask2 button {
   background: #dcb57b;
   outline: 2px solid #dcb57b;
   border: 1px solid #dcb57b;
   cursor: pointer;
-  padding: 4px 10px;
+  padding: 6px 10px;
   font-size: 18px;
   font-family: 'HelveticaNeue-Light';
   color: #fff;
@@ -740,15 +743,16 @@ footer .feedback form button {
   margin-bottom: 30px;
 }
 .mask2 p {
+  line-height: 1.5em;   
   margin: 0 auto 20px auto;
   width: 262px;
-  font-weight: bold;
+ 
 }
 .mask2 p span {
   color: #dcb57b;
 }
 .number2 {
-  top: 979px;
+ 
 }
 html {
   height: 100%;
@@ -1004,7 +1008,6 @@ body {
   color: #000;
   font-size: 18px;
   font-weight: normal;
-/*  font-family: 'Helvetica-Regular';*/
   font-family: 'helveticaneueregular';
   text-align: center;
   border-bottom: 1px solid #dcb57b;
@@ -1013,4 +1016,8 @@ body {
 
 
 /*????????????????????????????????????????????????????????*/
+
+
+/* offer page */
+
 

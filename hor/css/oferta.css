@@ -1,0 +1,44 @@
+
+.offerb {
+    line-height: 20px;
+    font-family: 'helveticaneueregular';
+}
+.offerb h3 {
+    font-weight: normal;
+}
+.offerb h1 {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+    margin-top: 45px;
+    margin-bottom: 16px;
+    word-wrap: break-word;
+}
+
+.offerb h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 22px;
+    margin-bottom: 7px;
+}
+
+.offerb p {
+    padding:12px 0px;
+}
+.offerb strong {
+    font-weight: bold;
+}
+.offerb ul li, .offerb ol li {
+    padding:4px 0px; 
+}
+.offerb ul li {
+    margin-left:16px;
+    list-style-type: disc;
+}
+.offerb ol li {
+  
+}
+
+.offerb a {
+    color:#1155CC;
+}
