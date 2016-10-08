@@ -100,4 +100,9 @@ $(function() {
         $(this).prev('.enter-phone .for_mask').removeClass('no-valid');
       }
     });
+    
+    
+    $('body').sdboxScroll();
+    
+    
 });
