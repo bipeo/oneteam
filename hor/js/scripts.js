@@ -102,7 +102,10 @@ $(function() {
     });
     
     
+    if ( $.isFunction($.fn.sdboxScroll) ) {
     $('body').sdboxScroll();
+    }
+    
     
     
 });
