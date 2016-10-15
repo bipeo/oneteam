@@ -81,6 +81,16 @@ b{}
     font-weight:700;
 }
 
+@font-face {
+    font-family: "helveticaneueregular";
+    src: url("font/HelveticaNeue-Regular/HelveticaNeue.eot");
+    src: url("font/HelveticaNeue-Regular/HelveticaNeue.eot?#iefix")format("embedded-opentype"),
+    url("font/HelveticaNeue-Regular/HelveticaNeue.woff") format("woff"),
+    url("font/HelveticaNeue-Regular/HelveticaNeue.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 
 
 
@@ -218,8 +228,10 @@ body {
 .content.block3 .txt,.content.block6 .txt2{
     display: inline-block;
     color: white;
-
-    text-transform: uppercase;
+    text-transform: none;
+}
+.content.block3 .txt {
+    
 }
 .content.block3 .txt .cpr{
     font-size: 21px;
@@ -1474,6 +1486,7 @@ position: relative;
     overflow:hidden;
 }
 .fotbot {
+    overflow:hidden;
     padding:20px 0px 10px 0px;
     color:#fff;
     background-color:#000000;
@@ -1493,6 +1506,73 @@ position: relative;
 .fotbot .ztime {
     float:right;
 }
+
+
+.jbar-spacer, .jbar, .jbar-push {
+    display: none;
+    transition: margin-top .25s linear;
+    -webkit-transition: margin-top .25s linear;
+    -moz-transition: margin-top .25s linear;
+}
+
+.jbar {
+    font-family: inherit;
+    background: #f21b1d;
+    border-top: 1px solid #f21b1d;
+    border-bottom: 1px solid #f21b1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    width: 100%;
+    font-family: "helveticaneueregular";
+}
+.jbar-spacer, .jbar, .jbar-push {
+    transition: margin-top .25s linear;
+    -webkit-transition: margin-top .25s linear;
+    -moz-transition: margin-top .25s linear;
+}
+
+
+.jbar-wrap {
+    white-space: nowrap;
+    font-weight: bold;
+    padding: 0 25px;
+    margin: 3px 0 3px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.jbar form {
+    display: inline-block;
+    
+}
+
+.jbar form input {
+    padding:1px 3px;
+    font-weight:300;
+}
+.jbar form input[type=text] {
+    padding:1px 3px;
+    color:#b1a9b1;
+    
+}
+.jbar form input[type=submit] {
+    color:#1c1c2b;
+    background: #f6f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f6f6 0%, #e7e7e7 50%, #e0e0e0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f6f6f6 0%,#e7e7e7 50%,#e0e0e0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f6f6f6 0%,#e7e7e7 50%,#e0e0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
+}
+.jbar form {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 
 
