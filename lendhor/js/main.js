@@ -25,7 +25,50 @@ $(document).ready(function() {
   });
   
   
+  
+  
 
 
   
 });
+
+    $(document).ready(function() {
+
+
+    pushTool()
+
+    $(window).scroll(function() {
+
+       pushTool()
+    })
+
+    })
+
+
+
+
+    var pushTool = function() {
+        
+    var footerOffsetTop = $('.jbar').offset().top;
+    var zz = $('.block.wintop').offset().top;
+    var tt = $('.block.wintop').outerHeight();
+    var zero = $('#zero.container').outerHeight();
+    var scrt = $(window).scrollTop();
+    if(scrt>=tt + zz + zero) {
+      
+    if($('.jbar').is(':hidden')) {
+        
+           
+    var topToBottom =   $('.jbar').outerHeight();
+    $('.jbar').css('top',- topToBottom + 'px');    
+    $(".jbar").show().animate({
+        top : 0 ,
+    }, 1000);
+    
+     }  
+        
+        }
+    
+    
+
+    }

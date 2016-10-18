@@ -108,6 +108,8 @@ body {
     margin-bottom: 40px;
     border-bottom: none;
     padding: 10px 0px;
+    position: relative;
+    z-index: 999;
 }
 .content.block0{}
 .content.block0 .img{
@@ -955,8 +957,13 @@ font-size: 28px;}
   line-height: 1.1;
 }
 .title0.st_2 {
+    
     font-size:42px;
 }
+.wintop .title0.st_2 {
+    
+    margin-top:70px;
+} 
 .red {
   color: #e92226;
 }
@@ -1526,6 +1533,7 @@ position: relative;
     z-index: 998;
     width: 100%;
     font-family: "helveticaneueregular";
+    display: none;
 }
 .jbar-spacer, .jbar, .jbar-push {
     transition: margin-top .25s linear;
