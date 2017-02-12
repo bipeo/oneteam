@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+<cities>
+    
+<city>
+<id>
+0
+</id>
+<en>
+    simferopol
+</en>
+<name>
+Симферополь
+</name>
+</city>
+
+<city>
+<id>
+1
+</id>
+<en>
+    sevastopol
+</en>
+<name>
+Севастополь
+</name>
+</city>
+
+<city>
+<id>
+2
+</id>
+<en>
+    jalta
+</en>
+<name>
+Ялта
+</name>
+</city>
+
+<city>
+<id>
+3
+</id>
+<en>
+    alushta
+</en>
+<name>
+Алушта
+</name>
+</city>
+
+<city>
+<id>
+4
+</id>
+<en>
+    sudak
+</en>
+<name>
+Судак
+</name>
+</city>
+
+<city>
+<id>
+5
+</id>
+<name>
+Феодосия
+</name>
+</city>
+
+</cities>
+</data>

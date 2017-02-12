@@ -1,0 +1,996 @@
+@charset "UTF-8";
+.banners-product-list {
+  float: left;
+}
+
+.banner-product {
+  overflow: hidden;
+  width: 480px;
+  height: 400px;
+  margin: 0 0 2px 0;
+  outline: 1px solid #e6e6e6;
+  position: relative;
+}
+
+.banner-product .bg-banner {
+  width: 100%;
+  height: auto;
+}
+
+.blur-banner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 27px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 420px;
+  height: 130px;
+  background: url(../images/nb_white-blur.png) repeat;
+}
+
+.blur-banner .logo {
+  width: 130px;
+}
+
+.blur-banner .banner-text {
+  margin: 0 18px;
+}
+
+.blur-banner .banner-text h2 {
+  margin-bottom: 10px;
+  color: #e74919;
+  font-size: 20px;
+  font-family: "FranklinGothic-Demi";
+}
+
+.blur-banner .banner-text p {
+  font-family: 'Franklin Gothic';
+  font-size: 14px;
+}
+
+.arrow-button {
+  height: 34px;
+  width: 43px;
+  background: url(../images/nb_arrow.png) no-repeat;
+  background-size: cover;
+}
+
+.arrow-button:hover {
+  background: url(../images/nb_arrow.png) no-repeat;
+  background-position-y: -34px;
+  background-size: cover;
+}
+
+.news .tab-cont {
+  display: table;
+}
+
+.ready-more {
+  position: relative;
+}
+
+.center-more-button button {
+  top: 33px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.padding-top-bot_20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* для плавного исчерзновения меню с параметрами  */
+.mediasistem {
+  -webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+
+.margin_2 {
+  position: relative;
+  z-index: 2;
+}
+
+.mediasistem .paramout.overflow {
+  overflow: hidden;
+}
+
+.parametr {
+  position: relative;
+  z-index: 1;
+  /*-webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;*/
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+section .page-path {
+  width: 1200px;
+  margin: 22px auto 0;
+}
+section .page-path .cat {
+  width: 32px;
+  height: 40px;
+  background: #e5e5e5;
+  display: inline-block;
+  margin-right: -4px;
+}
+section .page-path .cur-path {
+  font-family: 'Franklin Gothic';
+  font-size: 12px;
+  height: 40px;
+  background: #f7f7f7;
+  display: inline-block;
+  line-height: 44px;
+  width: 1167px;
+  vertical-align: top;
+}
+section .page-path ul {
+  display: -webkit-flex;
+  display: flex;
+  margin-left: 10px;
+}
+section .page-path ul .path-arrow::after {
+  top: 19.5px;
+  right: 14px;
+  opacity: 0.6;
+}
+section .page-path ul li:last-child a {
+  color: #e74919;
+  text-decoration: none;
+}
+section .page-path ul li:last-child a:hover {
+  color: #e74919;
+}
+section .page-path ul li {
+  padding: 0 12px;
+}
+section .page-path a {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+section .page-path a:hover {
+  color: #e74919;
+}
+section .path-arrow::after {
+  content: " ";
+  display: block;
+  background: url(../images/nb_black-arrow.png);
+  height: 6px;
+  width: 5px;
+  margin-right: -5px;
+  right: 10px;
+  float: left;
+  position: relative;
+}
+
+section .present-tovar {
+  width: 1200px;
+  margin: 22px auto 0;
+}
+section .photo-tovar {
+  width: 596px;
+  position: relative;
+  display: inline-block;
+  /* the parent */
+}
+section .photo-tovar .slick-list {
+  margin: 0 -10px;
+}
+section .photo-tovar .slick-prev:before, section .photo-tovar .slick-next:before {
+  font-family: 'Franklin Gothic';
+  content: "";
+}
+section .photo-tovar .slick-prev, section .photo-tovar .slick-next {
+  font-family: 'Franklin Gothic';
+  background: url(../images/nb_arrow_pass.png);
+  height: 23px;
+  width: 14px;
+  line-height: 23px;
+  opacity: 1;
+  display: block;
+  content: " ";
+  position: absolute;
+}
+section .photo-tovar .slick-prev:hover, section .photo-tovar .slick-next:hover {
+  width: 12px;
+  background: url(../images/nb_arrow_pass-hover.png);
+}
+section .photo-tovar .slick-prev {
+  left: -40px;
+}
+section .photo-tovar .slick-next {
+  transform: rotate(180deg);
+  right: -39px;
+  top: 29px;
+}
+section .photo-tovar .slider-for {
+  display: inline-block;
+  width: 596px;
+  height: 620px;
+}
+section .photo-tovar .slider-for .inner-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  outline: none;
+}
+section .photo-tovar .slider-for img {
+  width: 596px;
+  height: auto;
+}
+section .photo-tovar .slider-nav {
+  display: block;
+  width: 484px;
+  position: relative;
+  margin: 8px auto 0 auto;
+}
+section .photo-tovar .slider-nav .inner-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  height: 80px;
+  outline: none;
+}
+section .photo-tovar .slider-nav .inner-item.slick-current {
+  border: 1px solid #e74919;
+}
+section .photo-tovar .slider-nav img {
+  width: 80px;
+  height: auto;
+}
+section .zoom-image {
+  background: url(../images/nb_zoom.png);
+  display: inline-block;
+  height: 35px;
+  width: 38px;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  z-index: 3;
+}
+section .zoom-image:hover {
+  background: url(../images/nb_zoom-hover.png);
+}
+section .to-order {
+  width: 600px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Franklin Gothic';
+}
+section .to-order .menu-mediasistem ul li {
+  width: 108px;
+}
+section .to-order .margin_1 {
+  margin-top: 0;
+}
+section .to-order .margin_1 h1 {
+  font-size: 32px;
+}
+section .to-order .menu-mediasistem h1 {
+  color: #e74919;
+}
+section .to-order h1 {
+  font-family: FranklinGothic-Demi;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #565656;
+}
+section .to-order h2 {
+  font-family: 'Franklin Gothic';
+  font-size: 14px;
+  color: #4c4c4c;
+  margin: 7px 0;
+}
+section .to-order h3 {
+  font-family: FranklinGothic-Demi;
+  font-size: 18px;
+  color: #8b8b8b;
+  margin: 10px 0;
+}
+section .tovar-header {
+  margin: 8px 0;
+  display: flex;
+}
+section .tovar-header h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
+  width: 440px;
+  font-size: 24px;
+}
+section .tovar-logo-star {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+}
+section .tovar-logo-star img {
+  width: 100%;
+  height: auto;
+}
+section .select-cost {
+  background-color: #f7f7f7;
+  border: 1px solid #e9e9e9;
+  padding: 0 25px 15px 25px;
+}
+section .select-cost h1 {
+  font-family: FranklinGothic-Demi;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+section .select-cost h2 {
+  font-family: 'Franklin Gothic';
+  font-size: 14px;
+  color: #4c4c4c;
+  margin: 7px 0;
+}
+section .select-cost h3 {
+  font-family: FranklinGothic-Demi;
+  font-size: 18px;
+  color: #8b8b8b;
+  margin: 10px 0;
+}
+section .select-cost .arrow-download {
+  float: left;
+  top: 2px;
+  margin-right: 3px;
+}
+section .select-cost .left-select-cost {
+  width: 323px;
+  display: inline-block;
+}
+section .select-cost .right-select-cost {
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 65px;
+}
+section .select-cost .file-icon {
+  float: left;
+  margin: 7px 10px 0 0;
+}
+section .select-cost .heart-icon {
+  float: left;
+  top: 2px;
+  margin-right: 8px;
+  margin-left: 18px;
+}
+section .heart-button {
+  text-decoration: none;
+}
+section .heart-button:hover h3 {
+  color: #e74919;
+}
+section .heart-button:hover .heart-icon {
+  background: url(../images/nb_heart-hover.png);
+}
+section .file-button {
+  text-decoration: none;
+}
+section .file-button:hover h3 {
+  color: #e74919;
+}
+section .file-button:hover .file-icon {
+  background: url(../images/nb_file-hover.png);
+}
+section .arrow-download {
+  background: url(../images/nb_download-arrow.png);
+  display: inline-block;
+  height: 11px;
+  width: 11px;
+  position: relative;
+}
+section .security-basket-icon {
+  background: url(../images/nb_sheet.png);
+  display: inline-block;
+  height: 41px;
+  width: 38px;
+  position: relative;
+}
+section .heart-icon {
+  background: url(../images/nb_heart.png);
+  display: inline-block;
+  height: 15px;
+  width: 16px;
+  position: relative;
+}
+section .file-icon {
+  background: url(../images/nb_file.png);
+  display: inline-block;
+  height: 21px;
+  width: 17px;
+  position: relative;
+}
+section .add-count, section .minus-count {
+  height: 30px;
+  width: 30px;
+  background-color: #b3b3b3;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  line-height: 29px;
+  font-size: 33px;
+  cursor: pointer;
+  border: 1.5px solid #fff;
+  top: 3px;
+  position: relative;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+section .add-count:hover, section .minus-count:hover {
+  background-color: #e74919;
+}
+section .minus-count {
+  line-height: 24px;
+  top: 0;
+}
+section .qty {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 -5px;
+  font-family: 'Franklin Gothic';
+  height: 28px;
+  top: -2px;
+  width: 100px;
+  position: relative;
+  border: 1px solid #e9e9e9;
+}
+section .tovar-cost {
+  font-size: 32px;
+  font-family: FranklinGothic-Demi;
+  margin-top: -7px;
+  margin-bottom: -7px;
+}
+section .strike-line {
+  color: #e74919;
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+section .strike-line .strike-cost {
+  font-size: 18px;
+  font-family: FranklinGothic-Demi;
+  color: #8b8b8b;
+}
+section .new-cost-project {
+  font-size: 18px;
+}
+section .buy-project, section .add-basket {
+  background: url(../images/nb_bye-button.png);
+  font-size: 17px;
+  font-family: FranklinGothic-Demi;
+  width: 201px;
+  height: 41px;
+  display: block;
+  border: 0;
+  outline: none;
+  color: #fff;
+  margin: 12px 0;
+}
+section .buy-project:hover {
+  background: #e74919;
+}
+section .add-basket {
+  background-position-y: 41px;
+  margin: 12px 0;
+}
+section .add-basket:hover {
+  background: url(../images/nb_bye-button-hover.png);
+}
+section .about-market table {
+  margin-left: 25px;
+}
+section .about-market table h1 {
+  width: 92px;
+}
+section .payment-method-list {
+  position: relative;
+  top: 5px;
+  display: inline;
+}
+section .payment-method-list li {
+  display: inline-block;
+  margin: 0 5px;
+}
+section .payment-method-list img {
+  height: 20px;
+  width: auto;
+}
+section .seti-list {
+  margin-left: 32px;
+  margin-top: 8px;
+  display: flex;
+}
+section .client-security {
+  height: 80px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  background-color: #e74919;
+}
+section .client-security h1 {
+  margin-bottom: 0;
+  margin-top: 7px;
+  color: black;
+}
+section .client-security h2 {
+  color: black;
+  margin: 3px 0 7px 0;
+}
+section .client-security h3 {
+  color: white;
+  font-size: 24px;
+  font-family: FranklinGothic-Demi;
+  display: inline-block;
+}
+section .client-security .security-basket-icon {
+  margin: 0 15px;
+}
+section .client-security .path-arrow::after {
+  top: 5px;
+}
+section .project-ask {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 98px;
+}
+section .project-ask h1 {
+  margin: 0 10px;
+}
+section .ask-button {
+  background: url(../images/nb_ask.png);
+  display: inline-block;
+  height: 31px;
+  width: 31px;
+  position: relative;
+}
+section .ask-button:hover {
+  background: url(../images/nb_ask-hover.png);
+}
+
+section .recently {
+  width: 1200px;
+  margin: -3px auto -11px;
+  text-align: right;
+}
+section .recently-button {
+  background: url(../images/nb_recently.png);
+  font-size: 14px;
+  font-family: 'Franklin Gothic';
+  display: inline-block;
+  height: 34px;
+  width: 253px;
+  position: relative;
+  border: none;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 34px;
+  margin: 20px 0;
+}
+section .recently-button:hover {
+  background: url(../images/nb_recently-hover.png);
+}
+
+section .content-text {
+  margin-top: 15px;
+}
+section .left-side {
+  display: inline-block;
+  width: 300px;
+  margin-bottom: 30px;
+}
+section .left-side .product-photo {
+  overflow: hidden;
+  width: 205px;
+  height: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+section .left-side .product-photo img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+section .left-side .product-small-left {
+  overflow: hidden;
+  margin-top: 20px;
+  width: 300px;
+}
+section .left-side .sm-prod {
+  width: 99%;
+  margin: 1px;
+}
+section .left-side .sm-prod .product-photo {
+  width: 98px;
+  height: 101px;
+}
+section .left-side .sm-prod .icons {
+  margin: 0px 34px 0 18px;
+}
+section .left-side .ready-project-list .product {
+  width: 299px;
+  height: 400px;
+  margin: 0 0 2px 0;
+}
+section .left-side .ready-category {
+  width: 300px;
+}
+section .left-side .ready-colum {
+  width: 147px;
+}
+section .left-side .ready-colum a {
+  height: 50px;
+  width: 100%;
+}
+section .left-side .ready-colum-right {
+  width: 153px;
+}
+section .left-side .ready-colum-right a {
+  height: 50px;
+  width: 99%;
+}
+section .banner-preview {
+  width: 260px;
+  height: 360px;
+  outline: 1px solid #e6e6e6;
+  padding: 20px;
+  position: relative;
+}
+section .banner-preview:hover {
+  outline: 1px solid #fbaf7c;
+  cursor: pointer;
+}
+section .banner-preview .prev-header {
+  text-align: center;
+  margin-bottom: 23px;
+}
+section .banner-preview .prev-title {
+  margin: 0 auto;
+  background: url(../images/label.png);
+  font-size: 18px;
+  font-family: "FranklinGothic-Demi";
+  display: inline-block;
+  color: #323232;
+  height: 34px;
+  width: 187px;
+  position: relative;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: 34px;
+}
+section .banner-preview .arrow-next {
+  background: url(../images/nb_arrow_pass.png);
+  height: 22px;
+  width: 13px;
+  top: 5px;
+  display: inline-block;
+  position: relative;
+  left: 50px;
+  transform: rotate(180deg);
+  margin-left: -27px;
+}
+section .banner-preview .arrow-next:hover {
+  width: 12px;
+  background: url(../images/nb_arrow_pass-hover.png);
+}
+section .banner-preview .photo-prev-prod {
+  overflow: hidden;
+  height: 200px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .banner-preview .photo-prev-prod img {
+  max-height: 200px;
+  max-width: 260px;
+}
+section .banner-preview .banner-prev-ab h1 {
+  font-family: "FranklinGothic-Demi";
+  font-size: 18px;
+  color: #1f000f;
+}
+section .banner-preview .banner-prev-ab h2 {
+  font-family: 'Franklin Gothic';
+  font-size: 16px;
+  color: #4e4e4e;
+  margin: 4px 0;
+}
+section .banner-preview .banner-prev-ab h3 {
+  font-family: 'Franklin Gothic';
+  font-size: 12px;
+  color: #808080;
+  margin-bottom: 15px;
+}
+section .banner-preview .basket-ornge-icon {
+  position: absolute;
+  right: 20px;
+  bottom: 23px;
+}
+section .slick-prev:before, section .slick-next:before {
+  font-family: 'Franklin Gothic';
+  content: "";
+}
+section .slick-prev, section .slick-next {
+  font-family: 'Franklin Gothic';
+  background: url(../images/nb_arrow_pass.png);
+  height: 22px;
+  width: 14px;
+  line-height: 23px;
+  opacity: 1;
+  display: block;
+  content: " ";
+  position: absolute;
+}
+section .slick-prev:hover, section .slick-next:hover {
+  width: 12px;
+  background: url(../images/nb_arrow_pass-hover.png);
+}
+section .slick-prev:focus, section .slick-next:focus {
+  background: url(../images/nb_arrow_pass.png);
+}
+section .slick-prev:focus:hover, section .slick-next:focus:hover {
+  width: 12px;
+  background: url(../images/nb_arrow_pass-hover.png);
+}
+section .slick-prev {
+  left: -40px;
+}
+section .slick-next {
+  transform: rotate(270deg);
+  right: -39px;
+  top: 29px;
+}
+section .basket-ornge-icon {
+  background: url(../images/media-basket.png);
+  display: inline-block;
+  height: 31px;
+  width: 38px;
+  position: relative;
+}
+section .basket-ornge-icon:hover {
+  background: url(../images/hover-media-basket.png);
+}
+section .slick_vert-carousel {
+  margin: 22px 0;
+}
+section .slick_vert-carousel .banner-preview {
+  padding: 19px;
+  margin: 1px;
+}
+section .slick_vert-carousel .slick-next, section .slick_vert-carousel .slick-prev {
+  position: relative;
+  left: 50%;
+  right: auto;
+}
+section .slick_vert-carousel .slick-next {
+  top: 20px;
+}
+section .slick_vert-carousel .slick-prev {
+  bottom: 4px;
+}
+section .slick_vert-carousel .slick-prev:before, section .slick_vert-carousel .slick-next:before {
+  font-family: 'Franklin Gothic';
+  transform: rotate(90deg);
+  opacity: 1;
+  content: "";
+}
+section .slick_vert-carousel .slick-prev {
+  transform: rotate(90deg);
+}
+section .slick_vert-carousel .slick-next {
+  top: 7px;
+}
+section .slick_vert-carousel .banner-preview {
+  height: 300px;
+}
+section .red-button {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: FranklinGothic-Demi;
+  display: inline-block;
+  background: url(../images/button-bg.png) no-repeat;
+  width: 151px;
+  height: 22px;
+  padding: 9px 0 0 0;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+section .red-button:hover {
+  background: #4c4c4c;
+}
+section .right-side {
+  width: 870px;
+  display: inline-block;
+  vertical-align: top;
+  left: 24px;
+  position: relative;
+  margin-bottom: 30px;
+}
+section .about-product {
+  outline: 1px solid #e6e6e6;
+}
+section .about-product #tabs-container li {
+  width: 217px;
+  height: 52px;
+  line-height: 52px;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  font-family: 'Franklin Gothic';
+  color: #4c4c4c;
+  text-align: center;
+}
+section .about-product #tabs-container li .arrow-download {
+  top: 1px;
+  right: 6px;
+}
+section .about-product #tabs-container li:not(.current) {
+  border-bottom: 1px solid #e6e6e6;
+}
+section .about-product #tabs-container li:hover {
+  background-color: #fff;
+}
+section .about-product #tabs-container li a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  color: #4c4c4c;
+}
+section .about-product #tabs-container li a:hover {
+  color: #e74919;
+  background-color: inherit;
+}
+section .about-product #tabs-container li.current {
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+section .about-product #tabs-container li.current a {
+  color: black;
+  background: inherit;
+}
+section .about-product .tab-content {
+  padding: 0 25px;
+}
+section .about-product .tab-content .head-about {
+  height: 40px;
+  line-height: 40px;
+  margin: 15px auto;
+  background: #f7f7f7;
+  display: block;
+  color: #4c4c4c;
+  font-size: 14px;
+  font-family: FranklinGothic-Demi;
+  padding-left: 25px;
+}
+section .about-product .tab-content td {
+  height: 28px;
+}
+section .about-product .tab-content h2 {
+  width: 110px;
+  color: #a2a2a2;
+  font-family: 'Franklin Gothic';
+  font-size: 14px;
+}
+section .about-product .tab-content h3 {
+  color: #4c4c4c;
+  font-family: 'Franklin Gothic';
+  font-size: 14px;
+  padding-right: 15px;
+}
+section .about-product .tab-content .description-product {
+  font-family: 'Franklin Gothic';
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 18px;
+}
+section .about-product .tab-content img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin: 8px auto;
+}
+section .about-product .tabs-menu {
+  float: left;
+  clear: both;
+}
+section .about-product .tabs-menu li {
+  float: left;
+}
+section .about-product .tabs-menu li.current {
+  position: relative;
+  z-index: 5;
+}
+section .about-product .tab {
+  float: left;
+  width: 100%;
+}
+section .about-product .tab-content {
+  display: none;
+}
+section .about-product #tab-1 {
+  display: block;
+}
+
+section .see-other {
+  width: 1200px;
+  margin: 22px auto 0;
+}
+section .see-other .text-header {
+  margin-bottom: 20px;
+  color: #e74919;
+  font-size: 24px;
+  font-family: FranklinGothic-Demi;
+}
+section .goriz-slider-prev {
+  outline: 1px solid #e6e6e6;
+  padding: 0 40px;
+}
+section .slick_goriz-carousel {
+  margin-bottom: 25px;
+}
+section .slick_goriz-carousel .banner-preview {
+  height: 305px;
+  outline: none;
+}
+section .slick_goriz-carousel .slick-prev {
+  left: -20px;
+  top: 118px;
+}
+section .slick_goriz-carousel .slick-next {
+  transform: rotate(180deg);
+  top: 110px;
+  right: -20px;
+}
+
+section .zakazhite {
+  z-index: 10;
+  position: relative;
+}
+section .zakazhite a {
+  font-size: 18px;
+  font-family: "FranklinGothic-Demi";
+  color: #e74919;
+  text-decoration: none;
+  background: url(../images/nb_zakazhite.png) no-repeat;
+  display: inline-block;
+  height: 88px;
+  width: 251px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 5px 0 0 112px;
+}
+section .zakazhite a span {
+  color: white;
+}

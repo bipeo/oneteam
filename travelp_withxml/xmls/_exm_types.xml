@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+<types>
+    
+<type id="0">
+<name>
+автобусный
+</name>
+</type>
+
+<type id="1">
+<name>
+пешеходный
+</name>
+</type>
+
+<type id="2">
+<name>
+водный
+</name>
+</type>
+
+
+
+</types>
+</data>

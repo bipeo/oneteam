@@ -1,0 +1,275 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+
+<data>
+<notes data-rus="симферополь" data-town="simferopol" >
+  <note>
+      <title>Активный тур 
+"Симфер насыщение"</title>
+      <pick>0_p.png</pick>
+      <type>автобусный</type>      
+      <hours>3</hours>
+      <minutes></minutes>
+      <price>1500</price>
+  </note>
+ 
+  <note>
+      <title>Симферопольская кругосветка-1</title>
+      <pick>1_p.png</pick>
+      <type>пешеходный</type> 
+      <hours></hours>
+      <minutes>15</minutes>
+      <price>1250</price>
+  </note>
+  
+  <note>
+      <title>Прыжки на Балаклавской 
+с инструктором</title>
+      <pick>2_p.png</pick>
+      <type>водный</type>       
+      <hours>2</hours>
+      <minutes></minutes>
+      <price>990</price>
+  </note>
+
+  <note>
+      <title>Гранд тур Симфер 2020 - Морское погружени </title>
+      <pick>3_p.png</pick>
+      <type>лесом</type> 
+      <hours></hours>
+      <minutes>30</minutes>
+      <price>850</price>
+  </note>
+  <note>
+      <title>Поп тур в Симферополе 2017</title>
+      <pick>3_p.png</pick>
+      <type>лесом</type> 
+      <hours></hours>
+      <minutes>30</minutes>
+      <price>850</price>
+  </note>
+</notes>
+
+
+<notes data-rus="ялта"  data-town="jalta" >
+  <note>
+      <title>Активный тур по Ялте 
+</title>
+      <pick>0_p.png</pick>
+      <type>автобусный</type>      
+      <hours>3</hours>
+      <minutes></minutes>
+      <price>1500</price>
+  </note>
+ 
+  <note>
+      <title>Ялтенская кругосветка-3</title>
+      <pick>1_p.png</pick>
+      <type>пешеходный</type> 
+      <hours></hours>
+      <minutes>15</minutes>
+      <price>1250</price>
+  </note>
+  
+  <note>
+      <title>Прыжки на медведь горе 
+с инструктором</title>
+      <pick>2_p.png</pick>
+      <type>водный</type>       
+      <hours>2</hours>
+      <minutes></minutes>
+      <price>990</price>
+  </note>
+
+  <note>
+      <title>Гранд тур -  погружени в атмосферу моря Ялты </title>
+      <pick>3_p.png</pick>
+      <type>лесом</type> 
+      <hours></hours>
+      <minutes>30</minutes>
+      <price>850</price>
+  </note>
+  
+    <note>
+      <title>Ваш гид -  будь первым в Ялте </title>
+      <pick>3_p.png</pick>
+      <type>полем</type> 
+      <hours></hours>
+      <minutes>35</minutes>
+      <price>950</price>
+  </note>
+</notes>
+
+<notes data-rus="судак" data-town="sudak" >
+  <note>
+      <title>Активный тур по Судаку 
+</title>
+      <pick>0_p.png</pick>
+      <type>автобусный</type>      
+      <hours>3</hours>
+      <minutes></minutes>
+      <price>1500</price>
+  </note>
+ 
+  <note>
+      <title>Судакская кругосветка-3</title>
+      <pick>1_p.png</pick>
+      <type>пешеходный</type> 
+      <hours></hours>
+      <minutes>15</minutes>
+      <price>1250</price>
+  </note>
+  
+  <note>
+      <title>Прыжки на озере в Судаке</title>
+      <pick>2_p.png</pick>
+      <type>водный</type>       
+      <hours>2</hours>
+      <minutes></minutes>
+      <price>990</price>
+  </note>
+
+  <note>
+      <title>Гранд тур в ночь по Судаку </title>
+      <pick>3_p.png</pick>
+      <type>лесом</type> 
+      <hours></hours>
+      <minutes>30</minutes>
+      <price>850</price>
+  </note>
+  
+    <note>
+      <title>Судакский Ваш гид -  будь всегда в курсе </title>
+      <pick>3_p.png</pick>
+      <type>полем</type> 
+      <hours></hours>
+      <minutes>35</minutes>
+      <price>950</price>
+  </note>
+  
+    <note>
+      <title>Судакская охота - найди медведя в лесу </title>
+      <pick>3_p.png</pick>
+      <type>полем</type> 
+      <hours></hours>
+      <minutes>35</minutes>
+      <price>950</price>
+  </note>
+</notes>
+
+<notes data-rus="феодосия" data-town="feodos" >
+  <note>
+      <title>Активный тур по Феодосии 
+</title>
+      <pick>0_p.png</pick>
+      <type>автобусный</type>      
+      <hours>3</hours>
+      <minutes></minutes>
+      <price>1500</price>
+  </note>
+ 
+  <note>
+      <title>Феодосийская кругосветка-2</title>
+      <pick>1_p.png</pick>
+      <type>пешеходный</type> 
+      <hours></hours>
+      <minutes>15</minutes>
+      <price>1250</price>
+  </note>
+  
+  <note>
+      <title>Прыжки в Феодосии на море</title>
+      <pick>2_p.png</pick>
+      <type>водный</type>       
+      <hours>2</hours>
+      <minutes></minutes>
+      <price>990</price>
+  </note>
+
+  <note>
+      <title>Тур в ночь по Феодосии с гидом </title>
+      <pick>3_p.png</pick>
+      <type>лесом</type> 
+      <hours></hours>
+      <minutes>30</minutes>
+      <price>850</price>
+  </note>
+  
+    <note>
+      <title>Феодосийский  гид -  будь всегда в теме </title>
+      <pick>3_p.png</pick>
+      <type>полем</type> 
+      <hours></hours>
+      <minutes>35</minutes>
+      <price>950</price>
+  </note>
+  
+    <note>
+      <title>Судакская охота - найди медведя в лесу </title>
+      <pick>3_p.png</pick>
+      <type>полем</type> 
+      <hours></hours>
+      <minutes>35</minutes>
+      <price>950</price>
+  </note>
+</notes>
+
+<notes data-rus="саки" data-town="saki" >
+  <note>
+      <title>Активный тур по сакам 
+</title>
+      <pick>0_p.png</pick>
+      <type>автобусный</type>      
+      <hours>3</hours>
+      <minutes></minutes>
+      <price>1500</price>
+  </note>
+ 
+  <note>
+      <title>Сакская кругосветка-2</title>
+      <pick>1_p.png</pick>
+      <type>пешеходный</type> 
+      <hours></hours>
+      <minutes>15</minutes>
+      <price>1250</price>
+  </note>
+  
+  <note>
+      <title>Прыжки в Саках в море</title>
+      <pick>2_p.png</pick>
+      <type>водный</type>       
+      <hours>2</hours>
+      <minutes></minutes>
+      <price>990</price>
+  </note>
+
+  <note>
+      <title>Тур в ночь по Сакам с гидом </title>
+      <pick>3_p.png</pick>
+      <type>лесом</type> 
+      <hours></hours>
+      <minutes>30</minutes>
+      <price>850</price>
+  </note>
+  
+    <note>
+      <title>Сакский  гид -  будь всегда в теме </title>
+      <pick>3_p.png</pick>
+      <type>полем</type> 
+      <hours></hours>
+      <minutes>35</minutes>
+      <price>950</price>
+  </note>
+  
+    <note>
+      <title> охота в городе Саки - найди рыбу в тазу </title>
+      <pick>3_p.png</pick>
+      <type>полем</type> 
+      <hours></hours>
+      <minutes>35</minutes>
+      <price>950</price>
+  </note>
+</notes>
+
+</data>
+
+
